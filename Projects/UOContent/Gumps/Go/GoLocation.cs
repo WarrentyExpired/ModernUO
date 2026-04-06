@@ -9,4 +9,6 @@ public class GoLocation
     [JsonPropertyName("name")] public string Name { get; set; }
 
     [JsonPropertyName("location")] public Point3D Location { get; set; }
+
+    [JsonPropertyName("map")] public string MapName { get; set; }
 }

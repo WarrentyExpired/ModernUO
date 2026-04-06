@@ -226,10 +226,23 @@ public class GoGump : Gump
                         index -= _node.Categories.Length;
                         if (index < _node.Locations.Length)
                         {
-                            from.MoveToWorld(_node.Locations[index].Location, _tree.Map);
+                            //from.MoveToWorld(_node.Locations[index].Location, _tree.Map);
+                            var loc = _node.Locations[index];
+                            Map targetMap = _tree.Map;
+                            if (!string.IsNullOrEmpty(loc.MapName))
+                            {
+                                foreach (Map m in Map.AllMaps)
+                                {
+                                    if (m != null && string.Equals(m.Name, loc.MapName, StringComparison.OrdinalIgnoreCase))
+                                    {
+                                        targetMap = m;
+                                        break;
+                                    }
+                                }
+                            }
+                            from.MoveToWorld(loc.Location, targetMap);
                         }
                     }
-
                     break;
                 }
         }
