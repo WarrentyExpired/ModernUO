@@ -1,7 +1,147 @@
 [
   {
-    "src": { "map": "Underworld", "loc": [765, 370, 0] },
-    "dst": { "map": "Underworld", "loc": [764, 368, -78] },
+    "src": { "map": "Sosaria", "loc": [2949, 1105, 0] },
+    "dst": { "map": "Sosaria", "loc": [3124, 4008, 0] },
+    "back": false
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [3123, 4008, 0] },
+    "dst": { "map": "Sosaria", "loc": [2949, 1105, 0] },
+    "back": false
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [3124, 4008, 0] },
+    "dst": { "map": "Sosaria", "loc": [2949, 1105, 0] },
+    "back": false
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [3125, 4008, 0] },
+    "dst": { "map": "Sosaria", "loc": [2949, 1105, 0] },
+    "back": false
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [3126, 4008, 0] },
+    "dst": { "map": "Sosaria", "loc": [2949, 1105, 0] },
+    "back": false
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [3063, 958, -23] },
+    "dst": { "map": "Sosaria", "loc": [5213, 1843, 12] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [3064, 958, -23] },
+    "dst": { "map": "Sosaria", "loc": [5214, 1843, 12] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [5225, 1804, 6] },
+    "dst": { "map": "Sosaria", "loc": [2378, 3530, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [3016, 944, 0] },
+    "dst": { "map": "SavagedEmpire", "loc": [273, 3297, 37] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [358, 3355, 2] },
+    "dst": { "map": "SavagedEmpire", "loc": [68, 3838, 20] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [359, 3355, 2] },
+    "dst": { "map": "SavagedEmpire", "loc": [68, 3838, 20] },
+    "back": false
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [136, 4000, -20] },
+    "dst": { "map": "SavagedEmpire", "loc": [168, 3286, 17] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [137, 4000, -20] },
+    "dst": { "map": "SavagedEmpire", "loc": [169, 3286, 17] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [237, 3353, -25] },
+    "dst": { "map": "SavagedEmpire", "loc": [135, 3306, 37] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [237, 3354, -25] },
+    "dst": { "map": "SavagedEmpire", "loc": [135, 3307, 37] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [237, 3355, -25] },
+    "dst": { "map": "SavagedEmpire", "loc": [135, 3308, 37] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [94, 3352, 5] },
+    "dst": { "map": "SavagedEmpire", "loc": [82, 3299, 5] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [43, 3302, 0] },
+    "dst": { "map": "SavagedEmpire", "loc": [55, 3273, 20] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [44, 3302, 0] },
+    "dst": { "map": "SavagedEmpire", "loc": [56, 3273, 20] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [45, 3302, 0] },
+    "dst": { "map": "SavagedEmpire", "loc": [57, 3273, 20] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [183, 3831, 5] },
+    "dst": { "map": "SavagedEmpire", "loc": [413, 3690, 5] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [184, 3831, 5] },
+    "dst": { "map": "SavagedEmpire", "loc": [414, 3690, 5] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [185, 3831, 5] },
+    "dst": { "map": "SavagedEmpire", "loc": [415, 3690, 5] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [186, 3831, 5] },
+    "dst": { "map": "SavagedEmpire", "loc": [416, 3690, 5] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [187, 3831, 5] },
+    "dst": { "map": "SavagedEmpire", "loc": [417, 3690, 5] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [188, 3831, 5] },
+    "dst": { "map": "SavagedEmpire", "loc": [418, 3690, 5] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [471, 3609, 5] },
+    "dst": { "map": "SavagedEmpire", "loc": [551, 3659, 36] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [471, 3610, 5] },
+    "dst": { "map": "SavagedEmpire", "loc": [551, 3660, 36] },
+    "back": true
+  },
+  {
+    "src": { "map": "SavagedEmpire", "loc": [654, 3553, 32] },
+    "dst": { "map": "SavagedEmpire", "loc": [509, 3585, 10] },
     "back": true
   }
 ]
