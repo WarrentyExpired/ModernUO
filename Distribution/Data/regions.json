@@ -1,2 +1,12 @@
 [
+  {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the city of Britain",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2929, "y1": 1128, "x2": 3030, "y2": 890 }
+    ],
+    "GoLocation": { "x": 2999, "y": 1044, "z": 0 }
+  }
 ]
