@@ -48,3 +48,4 @@
 
 # BuildTool native binaries (downloaded from GitHub Releases)
 /tools/
+Distribution/Data/Files/

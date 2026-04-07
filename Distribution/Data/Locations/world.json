@@ -1,0 +1,5248 @@
+{
+  "name": "World",
+  "categories": [
+    {
+      "name": "Ambrosia",
+      "categories": [
+        {
+          "name": "Dragon's Maw",
+          "locations": [
+            {
+              "name": "Entrance",
+              "location": [
+                5316,
+                3437,
+                5
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Main",
+              "location": [
+                4745,
+                3857,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Crystal Dragon",
+              "location": [
+                4464,
+                3965,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Elder Dragon",
+              "location": [
+                4350,
+                3920,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Irradiated Dragon",
+              "location": [
+                4207,
+                3992,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Tomb of Gor",
+              "location": [
+                4879,
+                3855,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Void Dragon",
+              "location": [
+                4321,
+                4039,
+                0
+              ],
+              "map": "Sosaria"
+            }
+          ]
+        },
+        {
+          "name": "Zuluu Cave",
+          "locations": [
+            {
+              "name": "Entrance",
+              "location": [
+                5904,
+                4001,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 1",
+              "location": [
+                6301,
+                3335,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 2",
+              "location": [
+                7069,
+                3890,
+                5
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Arena",
+              "location": [
+                6654,
+                3684,
+                0
+              ],
+              "map": "Sosaria"
+            }
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "name": "Caddellite Crater",
+          "location": [
+            5605,
+            3833,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "City of the Dead",
+          "location": [
+            5744,
+            3262,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Forge of Energy",
+          "location": [
+            5333,
+            3208,
+            15
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Shrine of Strength",
+          "location": [
+            5227,
+            3602,
+            15
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Shrine of Dexterity",
+          "location": [
+            5746,
+            3891,
+            5
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Shrine of Wisdom",
+          "location": [
+            5911,
+            3570,
+            2
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Shrine of Intelligence",
+          "location": [
+            5181,
+            3111,
+            0
+          ],
+          "map": "Sosaria"
+        }
+      ]
+    },
+    {
+      "name": "Atlantis",
+      "locations": [
+        {
+          "name": "Cavern of Deep Ones",
+          "location": [
+            6670,
+            617,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Hall of Ktulu",
+          "location": [
+            4214,
+            2610,
+            -127
+          ],
+          "map": "Atlantis"
+        }
+      ]
+    },
+    {
+      "name": "Bottle World",
+      "categories": [
+        {
+          "name": "Vordo's Dungeon",
+          "locations": [
+            {
+              "name": "Level 1",
+              "location": [
+                6278,
+                170,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 2",
+              "location": [
+                6379,
+                393,
+                0
+              ],
+              "map": "Sosaria"
+            }
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "name": "Bottle Gate",
+          "location": [
+            6610,
+            1082,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "City of Kuldara",
+          "location": [
+            6727,
+            1803,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Dark Druid Valley",
+          "location": [
+            6938,
+            245,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Kuldar Cemetery",
+          "location": [
+            6681,
+            1602,
+            10
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Kuldar Crypts",
+          "location": [
+            6548,
+            2949,
+            45
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Kuldara Prison",
+          "location": [
+            2188,
+            1304,
+            0
+          ],
+          "map": "SerpentIsland"
+        },
+        {
+          "name": "Kuldara Sewers",
+          "location": [
+            6210,
+            2797,
+            10
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Steamfire Cave",
+          "location": [
+            6892,
+            2314,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Vordo's Castle",
+          "location": [
+            7115,
+            2874,
+            30
+          ],
+          "map": "Sosaria"
+        }
+      ]
+    },
+    {
+      "name": "Isles of Dread",
+      "categories": [
+        {
+          "name": "Dungeons",
+          "categories": [
+            {
+              "name": "Blood Temple",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1260,
+                    1233,
+                    0
+                  ],
+                  "map": "IslesDread"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    729,
+                    2503,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Glacial Scar",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    212,
+                    178,
+                    45
+                  ],
+                  "map": "IslesDread"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    1871,
+                    1504,
+                    20
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2268,
+                    1309,
+                    20
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    1972,
+                    1391,
+                    20
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    2085,
+                    1518,
+                    -2
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    1777,
+                    1488,
+                    0
+                  ],
+                  "map": "Underworld"
+                }
+              ]
+            },
+            {
+              "name": "Ice Queen Fortress",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    318,
+                    327,
+                    5
+                  ],
+                  "map": "IslesDread"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    275,
+                    2976,
+                    44
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    406,
+                    2961,
+                    22
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    266,
+                    2848,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    414,
+                    2811,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Sanctum of Saltmarsh",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    926,
+                    874,
+                    0
+                  ],
+                  "map": "IslesDread"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    6283,
+                    1157,
+                    1
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    6138,
+                    1359,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5821,
+                    2041,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    6049,
+                    1980,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    6589,
+                    2067,
+                    -30
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 6",
+                  "location": [
+                    6229,
+                    1360,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Scurvy Reef",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    716,
+                    506,
+                    2
+                  ],
+                  "map": "IslesDread"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    479,
+                    4051,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    486,
+                    3981,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    428,
+                    3822,
+                    10
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Temple of Osirus",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    602,
+                    819,
+                    20
+                  ],
+                  "map": "IslesDread"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    6222,
+                    3931,
+                    30
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    6133,
+                    3842,
+                    -65
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    6142,
+                    3707,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    6085,
+                    4045,
+                    31
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    6180,
+                    1004,
+                    20
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "name": "Blood God Altar",
+          "location": [
+            1131,
+            1031,
+            30
+          ],
+          "map": "IslesDread"
+        },
+        {
+          "name": "Cimmeran Cave",
+          "location": [
+            967,
+            2858,
+            25
+          ],
+          "map": "SavagedEmpire"
+        },
+        {
+          "name": "Cimmeran Hold",
+          "location": [
+            358,
+            1123,
+            15
+          ],
+          "map": "IslesDread"
+        },
+        {
+          "name": "Cimmeran Mines",
+          "location": [
+            1229,
+            189,
+            0
+          ],
+          "map": "IslesDread"
+        },
+        {
+          "name": "Cimmeran Prison",
+          "location": [
+            2484,
+            1336,
+            0
+          ],
+          "map": "SerpentIsland"
+        },
+        {
+          "name": "Forgotten Lighthouse",
+          "location": [
+            716,
+            506,
+            2
+          ],
+          "map": "IslesDread"
+        },
+        {
+          "name": "Portal",
+          "location": [
+            246,
+            876,
+            5
+          ],
+          "map": "IslesDread"
+        }
+      ]
+    },
+    {
+      "name": "Lodoria",
+      "categories": [
+        {
+          "name": "Dungeons",
+          "categories": [
+            {
+              "name": "Catacombs",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5579,
+                    1924,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Lake Cave",
+                  "location": [
+                    5467,
+                    1805,
+                    7
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Torture Chambers",
+                  "location": [
+                    5552,
+                    1807,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "City of Embers",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5783,
+                    1504,
+                    20
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Covetous",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5458,
+                    1853,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5614,
+                    1997,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5517,
+                    2106,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    5672,
+                    2506,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    5831,
+                    2489,
+                    20
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Deceit",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5188,
+                    638,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5305,
+                    533,
+                    2
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5137,
+                    650,
+                    5
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    5306,
+                    652,
+                    2
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Despise",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5519,
+                    673,
+                    20
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5407,
+                    859,
+                    45
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5249,
+                    2444,
+                    55
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    5461,
+                    2573,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Destard",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5243,
+                    1006,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5143,
+                    801,
+                    4
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5137,
+                    986,
+                    5
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    6828,
+                    501,
+                    3
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    6887,
+                    535,
+                    2
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 6",
+                  "location": [
+                    6781,
+                    606,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Frozen Hells",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    227,
+                    30,
+                    30
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5879,
+                    242,
+                    -2
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Ratman Room",
+                  "location": [
+                    5834,
+                    327,
+                    18
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Ice Demon Lair",
+                  "location": [
+                    5700,
+                    305,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Hythloth",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5905,
+                    20,
+                    46
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5970,
+                    152,
+                    22
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    6083,
+                    145,
+                    -20
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    6059,
+                    89,
+                    24
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    5957,
+                    353,
+                    5
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Lizardman Cave",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5407,
+                    631,
+                    30
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Ravendark",
+              "locations": [
+                {
+                  "name": "Castle",
+                  "location": [
+                    6942,
+                    1696,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Crypts",
+                  "location": [
+                    5768,
+                    2843,
+                    10
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Gate",
+                  "location": [
+                    6627,
+                    3721,
+                    15
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Island",
+                  "location": [
+                    524,
+                    3630,
+                    2
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Tomb",
+                  "location": [
+                    5274,
+                    3676,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Village",
+                  "location": [
+                    6796,
+                    3720,
+                    14
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Woods",
+                  "location": [
+                    6985,
+                    3067,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Shame",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5395,
+                    126,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5515,
+                    11,
+                    5
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5514,
+                    148,
+                    25
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    5875,
+                    20,
+                    -5
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Stonegate Castle",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1355,
+                    405,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    6529,
+                    2823,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    6394,
+                    2291,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    6411,
+                    2683,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    6780,
+                    2632,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    6247,
+                    2395,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 6",
+                  "location": [
+                    6058,
+                    2426,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 7",
+                  "location": [
+                    6195,
+                    2852,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 8",
+                  "location": [
+                    6542,
+                    2636,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Terathan Keep",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5342,
+                    1601,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Undermountain",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5413,
+                    506,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5458,
+                    418,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5291,
+                    466,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Volcanic Caves",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    3105,
+                    3597,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Wrong",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5825,
+                    630,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5690,
+                    569,
+                    25
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5704,
+                    637,
+                    20
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    5571,
+                    1302,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Other Areas",
+          "locations": [
+            {
+              "name": "Ancient Elven Mines",
+              "location": [
+                6262,
+                3527,
+                16
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Chamber of Tyball",
+              "location": [
+                6069,
+                357,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Conjurerer's Cave",
+              "location": [
+                5248,
+                2878,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Forge of Ice",
+              "location": [
+                3977,
+                741,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Great Dwarven Forge",
+              "location": [
+                2968,
+                3469,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Lankhmar Lighthouse",
+              "location": [
+                2319,
+                2826,
+                1
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Lodoria Prison",
+              "location": [
+                1980,
+                1656,
+                0
+              ],
+              "map": "SerpentIsland"
+            },
+            {
+              "name": "Nightwood Fort",
+              "location": [
+                6678,
+                3102,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Ranger Outpost",
+              "location": [
+                5228,
+                1197,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Riverfront Ship Builders",
+              "location": [
+                2173,
+                2779,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Serpent Pillars",
+              "location": [
+                3485,
+                2456,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Tower of Stoneguard",
+              "location": [
+                5410,
+                1165,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Undersea Pass North",
+              "location": [
+                1060,
+                1065,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Undersea Pass South",
+              "location": [
+                1179,
+                1931,
+                0
+              ],
+              "map": "Lodor"
+            }
+          ]
+        },
+        {
+          "name": "Towns",
+          "categories": [
+            {
+              "name": "Kraken Reef",
+              "locations": [
+                {
+                  "name": "Docks",
+                  "location": [
+                    4800,
+                    3279,
+                    31
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Cave",
+                  "location": [
+                    5700,
+                    4073,
+                    -5
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Kraken Eye Cave",
+                  "location": [
+                    5519,
+                    4036,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            }
+          ],
+          "locations": [
+            {
+              "name": "Dusk",
+              "location": [
+                2650,
+                3181,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Elidor",
+              "location": [
+                2930,
+                1327,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Glacial Hills",
+              "location": [
+                3667,
+                391,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Greensky",
+              "location": [
+                4222,
+                2996,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Islegem",
+              "location": [
+                2812,
+                2265,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Lodoria",
+              "location": [
+                1912,
+                2187,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Lodoria Castle",
+              "location": [
+                1772,
+                2215,
+                55
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Portshine",
+              "location": [
+                845,
+                2026,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Ravendark",
+              "location": [
+                6796,
+                3720,
+                14
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Springvale",
+              "location": [
+                4223,
+                1459,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Starguide Port",
+              "location": [
+                2335,
+                3160,
+                0
+              ],
+              "map": "Lodor"
+            },
+            {
+              "name": "Whisper",
+              "location": [
+                924,
+                948,
+                0
+              ],
+              "map": "Lodor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Savaged Empire",
+      "categories": [
+        {
+          "name": "Dungeons",
+          "categories": [
+            {
+              "name": "Ancient Wyrm Lair",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    779,
+                    612,
+                    15
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Valley",
+                  "location": [
+                    275,
+                    3788,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Castle Archmage",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    464,
+                    851,
+                    -60
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    452,
+                    2037,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    555,
+                    2054,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    674,
+                    1953,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    694,
+                    1942,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Lich Isle",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1051,
+                    459,
+                    16
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    736,
+                    3365,
+                    20
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Lich King Dungeon",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    225,
+                    3168,
+                    5
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    385,
+                    2542,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    396,
+                    2255,
+                    33
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Halls of Ogrimar",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1107,
+                    1380,
+                    17
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    811,
+                    2387,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    1015,
+                    2415,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    990,
+                    2411,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    1124,
+                    2329,
+                    -29
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Demon Room",
+                  "location": [
+                    973,
+                    2343,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Ork Demigod",
+                  "location": [
+                    880,
+                    2567,
+                    -71
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Ratman Mines",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    158,
+                    1369,
+                    32
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    1037,
+                    2168,
+                    -3
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    939,
+                    2167,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Sakkhra Area",
+              "locations": [
+                {
+                  "name": "Cave",
+                  "location": [
+                    929,
+                    1977,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Dragon King",
+                  "location": [
+                    226,
+                    2593,
+                    -19
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Tomb of Kazibal",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    368,
+                    298,
+                    57
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    547,
+                    3317,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    525,
+                    3353,
+                    62
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    425,
+                    3282,
+                    72
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    482,
+                    3389,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Undersea Castle",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    282,
+                    444,
+                    15
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    598,
+                    2766,
+                    -28
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    636,
+                    3893,
+                    45
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    931,
+                    3305,
+                    12
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            }
+          ],
+          "locations": [
+            {
+              "name": "Corrupt Pass",
+              "location": [
+                148,
+                2361,
+                -29
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Rock Dungeon",
+              "location": [
+                1092,
+                1038,
+                0
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Spider Cave",
+              "location": [
+                472,
+                2646,
+                -28
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Tombs",
+              "location": [
+                154,
+                2730,
+                -28
+              ],
+              "map": "SavagedEmpire"
+            }
+          ]
+        },
+        {
+          "name": "Other Areas",
+          "locations": [
+            {
+              "name": "Cemetery",
+              "location": [
+                262,
+                1385,
+                2
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Crypt of Morphius",
+              "location": [
+                122,
+                2949,
+                0
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Cyclops Valley",
+              "location": [
+                156,
+                604,
+                50
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Desert Mansion",
+              "location": [
+                781,
+                341,
+                39
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Drake Isle",
+              "location": [
+                879,
+                172,
+                45
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Drake Peninsula",
+              "location": [
+                180,
+                311,
+                6
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Enchanted Pass",
+              "location": [
+                1104,
+                1946,
+                -29
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Forge of Poison",
+              "location": [
+                1070,
+                1168,
+                0
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Haunted Ruins",
+              "location": [
+                399,
+                939,
+                -3
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Hedge Maze",
+              "location": [
+                162,
+                3139,
+                44
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Hedge Maze Portal",
+              "location": [
+                926,
+                1777,
+                26
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Orc Fort",
+              "location": [
+                226,
+                1334,
+                3
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Ork Prison",
+              "location": [
+                2292,
+                1336,
+                0
+              ],
+              "map": "SerpentIsland"
+            },
+            {
+              "name": "Pixie Cave",
+              "location": [
+                147,
+                849,
+                98
+              ],
+              "map": "SavagedEmpire"
+            },
+            {
+              "name": "Tower of Mondain",
+              "location": [
+                59,
+                2901,
+                0
+              ],
+              "map": "SavagedEmpire"
+            }
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "name": "Barako Mines",
+          "location": [
+            1122,
+            2536,
+            -1
+          ],
+          "map": "SavagedEmpire"
+        },
+        {
+          "name": "Savage Sea Docks",
+          "location": [
+            1088,
+            316,
+            66
+          ],
+          "map": "SavagedEmpire"
+        },
+        {
+          "name": "Village of Barako",
+          "location": [
+            285,
+            1698,
+            37
+          ],
+          "map": "SavagedEmpire"
+        },
+        {
+          "name": "Village of Kurak",
+          "location": [
+            728,
+            921,
+            -2
+          ],
+          "map": "SavagedEmpire"
+        }
+      ]
+    },
+    {
+      "name": "Serpent Island",
+      "categories": [
+        {
+          "name": "City of Furnace",
+          "locations": [
+            {
+              "name": "City",
+              "location": [
+                867,
+                1132,
+                50
+              ],
+              "map": "SerpentIsland"
+            },
+            {
+              "name": "Prison",
+              "location": [
+                2388,
+                1336,
+                0
+              ],
+              "map": "SerpentIsland"
+            },
+            {
+              "name": "Mine",
+              "location": [
+                2197,
+                1681,
+                21
+              ],
+              "map": "SerpentIsland"
+            },
+            {
+              "name": "Portal",
+              "location": [
+                2520,
+                1006,
+                0
+              ],
+              "map": "SerpentIsland"
+            }
+          ]
+        },
+        {
+          "name": "Dungeons",
+          "categories": [
+            {
+              "name": "Ancient Prison",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    748,
+                    846,
+                    1
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    1931,
+                    437,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    1952,
+                    504,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Black Knight",
+              "locations": [
+                {
+                  "name": "Castle",
+                  "location": [
+                    1580,
+                    304,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1581,
+                    202,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Vault",
+                  "location": [
+                    6248,
+                    305,
+                    20
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Cave of Fire",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    561,
+                    1143,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2086,
+                    794,
+                    2
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2070,
+                    854,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Cave of Souls",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    121,
+                    1475,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2527,
+                    57,
+                    1
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2480,
+                    176,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Dungeon Ankh",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    465,
+                    1435,
+                    2
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2034,
+                    104,
+                    7
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2041,
+                    196,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Dungeon Bane",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    310,
+                    760,
+                    2
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    1945,
+                    99,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    1915,
+                    166,
+                    2
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Dungeon Hate",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1457,
+                    1220,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2213,
+                    417,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2180,
+                    485,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Dungeon Scorn",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1463,
+                    873,
+                    2
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2232,
+                    687,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2212,
+                    864,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Dungeon Torment",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1689,
+                    1224,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    1976,
+                    698,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    1971,
+                    841,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Dungeon Vile",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1554,
+                    991,
+                    2
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2337,
+                    396,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2329,
+                    518,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Dungeon Wicked",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    733,
+                    260,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2191,
+                    57,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2184,
+                    158,
+                    2
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Dungeon Wrath",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1803,
+                    918,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2356,
+                    683,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2357,
+                    829,
+                    2
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Flooded Temple",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1069,
+                    953,
+                    2
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2506,
+                    727,
+                    1
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2465,
+                    846,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Gargoyle Crypts",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1267,
+                    936,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2103,
+                    361,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2079,
+                    514,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Serpent Sanctum",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1092,
+                    1610,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2519,
+                    421,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2488,
+                    509,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            },
+            {
+              "name": "Tomb of the Fallen Wizard",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1056,
+                    1338,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    2353,
+                    105,
+                    0
+                  ],
+                  "map": "SerpentIsland"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2331,
+                    232,
+                    2
+                  ],
+                  "map": "SerpentIsland"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "name": "Serpent Sail Docks",
+          "location": [
+            912,
+            1819,
+            21
+          ],
+          "map": "SerpentIsland"
+        },
+        {
+          "name": "Ethereal Void",
+          "location": [
+            2433,
+            620,
+            5
+          ],
+          "map": "SerpentIsland"
+        },
+        {
+          "name": "Forge of Fire",
+          "location": [
+            723,
+            1153,
+            85
+          ],
+          "map": "SerpentIsland"
+        }
+      ]
+    },
+    {
+      "name": "Skara Brae",
+      "locations": [
+        {
+          "name": "Skara Brae",
+          "location": [
+            7019,
+            245,
+            0
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Cellar",
+          "location": [
+            5482,
+            2699,
+            0
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Sewers",
+          "location": [
+            6493,
+            1649,
+            15
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Catacombs Lvl 1",
+          "location": [
+            6578,
+            2033,
+            45
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Catacombs Lvl 2",
+          "location": [
+            6266,
+            2682,
+            0
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Harkyn's Castle Lvl 1",
+          "location": [
+            5839,
+            1118,
+            30
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Harkyn's Castle Lvl 2",
+          "location": [
+            5911,
+            1229,
+            10
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Kylearan's Tower",
+          "location": [
+            5766,
+            2411,
+            0
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Mangar's Tower Lvl 1",
+          "location": [
+            6295,
+            1880,
+            25
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Mangar's Tower Lvl 2",
+          "location": [
+            6290,
+            1572,
+            0
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Mangar's Tower Lvl 3",
+          "location": [
+            6482,
+            1476,
+            5
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Mangar's Tower Lvl 4",
+          "location": [
+            6568,
+            1456,
+            20
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Mangar's Tower Lvl 5",
+          "location": [
+            6653,
+            1490,
+            60
+          ],
+          "map": "Lodor"
+        },
+        {
+          "name": "Mangar's Tower Lvl 6",
+          "location": [
+            6427,
+            1541,
+            0
+          ],
+          "map": "Lodor"
+        }
+      ]
+    },
+    {
+      "name": "Sosaria",
+      "categories": [
+        {
+          "name": "Dungeons",
+          "categories": [
+            {
+              "name": "Ancient Pyramid",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1168,
+                    474,
+                    2
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5322,
+                    573,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5331,
+                    706,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5353,
+                    908,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            },
+            {
+              "name": "Castle Exodus",
+              "locations": [
+                {
+                  "name": "Castle",
+                  "location": [
+                    876,
+                    2703,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Entrance",
+                  "location": [
+                    899,
+                    2731,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5925,
+                    590,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            },
+            {
+              "name": "Cave of Banished Mages",
+              "locations": [
+                {
+                  "name": "Fortress",
+                  "location": [
+                    250,
+                    3483,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            },
+            {
+              "name": "Caverns of Poseidon",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    198,
+                    2299,
+                    12
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5199,
+                    2112,
+                    40
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5809,
+                    1690,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5585,
+                    1027,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    5849,
+                    1730,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    6039,
+                    1737,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            },
+            {
+              "name": "Clues",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    3760,
+                    2041,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5313,
+                    2273,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5557,
+                    2175,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5990,
+                    2180,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            },
+            {
+              "name": "Dardin's Pit",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    3006,
+                    448,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5697,
+                    45,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5770,
+                    390,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            },
+            {
+              "name": "Doom",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1628,
+                    2561,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5320,
+                    71,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5393,
+                    298,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            },
+            {
+              "name": "Fires Of Hell",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    3345,
+                    1650,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    6028,
+                    2045,
+                    20
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5357,
+                    1348,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5607,
+                    1310,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            },
+            {
+              "name": "Forgotten Halls",
+              "locations": [
+                {
+                  "name": "Level 1",
+                  "location": [
+                    275,
+                    3297,
+                    20
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    68,
+                    3845,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    415,
+                    3689,
+                    5
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    553,
+                    3660,
+                    36
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    514,
+                    3585,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 6",
+                  "location": [
+                    170,
+                    3291,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 7",
+                  "location": [
+                    140,
+                    3307,
+                    20
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 8",
+                  "location": [
+                    85,
+                    3303,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 9",
+                  "location": [
+                    56,
+                    3261,
+                    20
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Ice Island Dungeons",
+              "locations": [
+                {
+                  "name": "1 - Entrance",
+                  "location": [
+                    4397,
+                    1264,
+                    5
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "2 - Entrance",
+                  "location": [
+                    4460,
+                    1218,
+                    5
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "2 - Level 1",
+                  "location": [
+                    4468,
+                    3284,
+                    25
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "2 - Level 2",
+                  "location": [
+                    4319,
+                    3297,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "3 - Entrance",
+                  "location": [
+                    4459,
+                    1266,
+                    5
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "3 - Level 1",
+                  "location": [
+                    4309,
+                    3481,
+                    25
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "4 - Entrance",
+                  "location": [
+                    4628,
+                    1351,
+                    5
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "4 - Level 1",
+                  "location": [
+                    5187,
+                    2955,
+                    25
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "5 - Entrance",
+                  "location": [
+                    4702,
+                    1209,
+                    5
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "5 - Level 1",
+                  "location": [
+                    5430,
+                    2887,
+                    25
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "6 - Entrance",
+                  "location": [
+                    4809,
+                    1276,
+                    5
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "6 - Level 1",
+                  "location": [
+                    4402,
+                    3678,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "7 - Entrance",
+                  "location": [
+                    5049,
+                    1220,
+                    30
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "7 - Level 1",
+                  "location": [
+                    3721,
+                    3707,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            },
+            {
+              "name": "Mines Of Morinia",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1022,
+                    1372,
+                    2
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5898,
+                    1221,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5911,
+                    1317,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    5696,
+                    1472,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            },
+            {
+              "name": "Montor Sewers",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    3058,
+                    2562,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    6479,
+                    926,
+                    22
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Perinian Depths",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    3619,
+                    460,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5953,
+                    79,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5979,
+                    446,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            },
+            {
+              "name": "Time Awaits",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    3831,
+                    1502,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5630,
+                    594,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5560,
+                    918,
+                    0
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Time Lord Chamber",
+                  "location": [
+                    4802,
+                    3356,
+                    5
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            }
+          ],
+          "locations": [
+            {
+              "name": "Black Blade Ruins",
+              "location": [
+                4505,
+                1894,
+                2
+              ],
+              "map": "Sosaria"
+            }
+          ]
+        },
+        {
+          "name": "Dungeons (Easy)",
+          "locations": [
+            {
+              "name": "Accursed Maze",
+              "location": [
+                5860,
+                809,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Chamber of Bane",
+              "location": [
+                2786,
+                4014,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Coldhall Depths",
+              "location": [
+                2725,
+                3519,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Dark Sanctum",
+              "location": [
+                2468,
+                3239,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Dark Tombs",
+              "location": [
+                7007,
+                58,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Forgotten Tombs",
+              "location": [
+                2382,
+                3530,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Magma Vaults",
+              "location": [
+                2465,
+                3771,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Shrouded Grave",
+              "location": [
+                2398,
+                3929,
+                0
+              ],
+              "map": "Sosaria"
+            }
+          ]
+        },
+        {
+          "name": "Other Areas",
+          "locations": [
+            {
+              "name": "Abandoned Home 1",
+              "location": [
+                1914,
+                919,
+                25
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Abandoned Home 2",
+              "location": [
+                3329,
+                2063,
+                40
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Ancient Temple",
+              "location": [
+                3696,
+                533,
+                5
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Bandit Camp",
+              "location": [
+                3027,
+                384,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Baron Almric's Tomb",
+              "location": [
+                4864,
+                2800,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Castle of Shadowguard",
+              "location": [
+                4762,
+                3977,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Dark Tower",
+              "location": [
+                3508,
+                2294,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Dark Cave Portal",
+              "location": [
+                5262,
+                1073,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Dark Fortress",
+              "location": [
+                3798,
+                1880,
+                2
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Forgotten Halls",
+              "location": [
+                3015,
+                944,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Guardian's Chamber",
+              "location": [
+                4999,
+                3995,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Light House",
+              "location": [
+                3196,
+                524,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Mangar's Tower",
+              "location": [
+                2824,
+                1901,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Moon Portal",
+              "location": [
+                3696,
+                522,
+                5
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Orc Fort Small",
+              "location": [
+                572,
+                503,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Orc Fort Medium",
+              "location": [
+                3402,
+                1187,
+                1
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Orc Fort Large",
+              "location": [
+                2314,
+                1826,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Pirate Isle",
+              "location": [
+                1818,
+                2232,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Ratmen Lair",
+              "location": [
+                1303,
+                1449,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Ruins 1",
+              "location": [
+                1292,
+                1459,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Ruins 2",
+              "location": [
+                1709,
+                1819,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Serpent Pillars",
+              "location": [
+                4333,
+                2321,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Skara Brae Ruins",
+              "location": [
+                4754,
+                2791,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Sorcerer Cave",
+              "location": [
+                3888,
+                3694,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Sosaria Prison",
+              "location": [
+                1956,
+                1328,
+                0
+              ],
+              "map": "SerpentIsland"
+            },
+            {
+              "name": "Temple Ruins",
+              "location": [
+                541,
+                203,
+                1
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Tomb of Kas",
+              "location": [
+                3606,
+                3961,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Tomb of Lethe",
+              "location": [
+                4131,
+                3431,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Tomb of Malak",
+              "location": [
+                5711,
+                2654,
+                5
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Tomb of Zoda",
+              "location": [
+                4605,
+                3278,
+                0
+              ],
+              "map": "Sosaria"
+            }
+          ]
+        },
+        {
+          "name": "Towns",
+          "categories": [
+            {
+              "name": "Anchor Rock",
+              "locations": [
+                {
+                  "name": "Docks",
+                  "location": [
+                    367,
+                    1421,
+                    66
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Port",
+                  "location": [
+                    7063,
+                    730,
+                    65
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Cave",
+                  "location": [
+                    6660,
+                    4057,
+                    -5
+                  ],
+                  "map": "Sosaria"
+                },
+                {
+                  "name": "Anchored Cave",
+                  "location": [
+                    7085,
+                    340,
+                    0
+                  ],
+                  "map": "Sosaria"
+                }
+              ]
+            }
+          ],
+          "locations": [
+            {
+              "name": "Britain",
+              "location": [
+                2999,
+                1044,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Britain Castle",
+              "location": [
+                2985,
+                932,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Dawn",
+              "location": [
+                5919,
+                2881,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Death Gulch",
+              "location": [
+                3717,
+                1540,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Devil Guard",
+              "location": [
+                1656,
+                1484,
+                2
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Fawn",
+              "location": [
+                2119,
+                276,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Glacial Coast",
+              "location": [
+                4766,
+                1196,
+                2
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Grey",
+              "location": [
+                902,
+                2063,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Iceclad Fisherman",
+              "location": [
+                4326,
+                1169,
+                2
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Montor",
+              "location": [
+                3212,
+                2610,
+                1
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Moon",
+              "location": [
+                806,
+                728,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Mountain Crest",
+              "location": [
+                4514,
+                1276,
+                2
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Stone Wall Inn",
+              "location": [
+                1833,
+                756,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Umbra",
+              "location": [
+                2662,
+                3272,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Yew",
+              "location": [
+                2433,
+                876,
+                2
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Xardok's Castle",
+              "location": [
+                4478,
+                1837,
+                0
+              ],
+              "map": "Sosaria"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Umber Veil",
+      "categories": [
+        {
+          "name": "Tower of Brass",
+          "locations": [
+            {
+              "name": "Entrance",
+              "location": [
+                1593,
+                3376,
+                15
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 1",
+              "location": [
+                6952,
+                3565,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 2",
+              "location": [
+                6522,
+                3538,
+                50
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 3",
+              "location": [
+                6401,
+                3124,
+                5
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 4",
+              "location": [
+                6246,
+                3470,
+                10
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 5",
+              "location": [
+                6905,
+                3360,
+                40
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 6",
+              "location": [
+                6361,
+                3601,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 7",
+              "location": [
+                580,
+                3814,
+                100
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 8",
+              "location": [
+                5213,
+                2633,
+                21
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 9",
+              "location": [
+                6396,
+                4010,
+                5
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 10",
+              "location": [
+                6790,
+                3337,
+                10
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 11",
+              "location": [
+                6482,
+                3925,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 12",
+              "location": [
+                6837,
+                3834,
+                0
+              ],
+              "map": "Sosaria"
+            },
+            {
+              "name": "Level 13",
+              "location": [
+                6551,
+                3413,
+                0
+              ],
+              "map": "Sosaria"
+            }
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "name": "Ancient Graveyard",
+          "location": [
+            1827,
+            3316,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Eastern Ruins",
+          "location": [
+            1863,
+            3632,
+            12
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Mausoleum",
+          "location": [
+            1531,
+            3599,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Mountain Stronghold",
+          "location": [
+            1405,
+            3691,
+            45
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Renika",
+          "location": [
+            1449,
+            3787,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Renika Prison",
+          "location": [
+            2084,
+            1304,
+            0
+          ],
+          "map": "SerpentIsland"
+        },
+        {
+          "name": "Shimazu Dojo",
+          "location": [
+            5619,
+            2900,
+            3
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Western Ruins",
+          "location": [
+            1095,
+            3393,
+            12
+          ],
+          "map": "Sosaria"
+        }
+      ]
+    },
+    {
+      "name": "Underworld",
+      "categories": [
+        {
+          "name": "Dungeons",
+          "categories": [
+            {
+              "name": "Alien Ship",
+              "locations": [
+                {
+                  "name": "Alien Cave",
+                  "location": [
+                    66,
+                    561,
+                    0
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Entrance",
+                  "location": [
+                    613,
+                    2857,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    1093,
+                    3162,
+                    20
+                  ],
+                  "map": "SavagedEmpire"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    1085,
+                    3846,
+                    0
+                  ],
+                  "map": "SavagedEmpire"
+                }
+              ]
+            },
+            {
+              "name": "Argentrock Castle",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    103,
+                    999,
+                    36
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    6098,
+                    503,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5954,
+                    660,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    6058,
+                    615,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    6246,
+                    789,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    6520,
+                    1080,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Maze 1",
+                  "location": [
+                    5849,
+                    741,
+                    22
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Maze 2",
+                  "location": [
+                    5847,
+                    893,
+                    22
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Bedroom",
+                  "location": [
+                    6022,
+                    681,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Wizard Den",
+                  "location": [
+                    6264,
+                    647,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Carthax Lake",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    118,
+                    1582,
+                    0
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5764,
+                    1770,
+                    71
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    5936,
+                    1804,
+                    -5
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    6033,
+                    1737,
+                    -5
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    5769,
+                    1885,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    5455,
+                    2323,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 6",
+                  "location": [
+                    5211,
+                    2017,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 7",
+                  "location": [
+                    5176,
+                    2123,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 8",
+                  "location": [
+                    5365,
+                    2228,
+                    -10
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Daemon's Crag",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1481,
+                    835,
+                    0
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5889,
+                    2171,
+                    -7
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    6171,
+                    2089,
+                    -20
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    6369,
+                    2027,
+                    -19
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    5929,
+                    2178,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    6232,
+                    2153,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 6",
+                  "location": [
+                    6373,
+                    2162,
+                    -20
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Hall of Mountain King",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    120,
+                    111,
+                    0
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    6834,
+                    1896,
+                    50
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    6963,
+                    1831,
+                    62
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    6997,
+                    2139,
+                    90
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    6399,
+                    963,
+                    26
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    6424,
+                    1217,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 6",
+                  "location": [
+                    6505,
+                    2065,
+                    -30
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 7",
+                  "location": [
+                    6868,
+                    1801,
+                    45
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 8",
+                  "location": [
+                    5221,
+                    2790,
+                    49
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Morgaelin's Inferno",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1459,
+                    100,
+                    0
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    7003,
+                    740,
+                    -30
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    6902,
+                    1020,
+                    -7
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    7024,
+                    609,
+                    5
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    6034,
+                    2222,
+                    30
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            },
+            {
+              "name": "Stygian Abyss",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    824,
+                    907,
+                    0
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    1784,
+                    1416,
+                    -2
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    2035,
+                    1194,
+                    -15
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Codex Chamber",
+                  "location": [
+                    1842,
+                    1372,
+                    -42
+                  ],
+                  "map": "Underworld"
+                }
+              ]
+            },
+            {
+              "name": "Zealan Tombs",
+              "locations": [
+                {
+                  "name": "Entrance",
+                  "location": [
+                    1094,
+                    1229,
+                    0
+                  ],
+                  "map": "Underworld"
+                },
+                {
+                  "name": "Level 1",
+                  "location": [
+                    5553,
+                    1664,
+                    102
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 2",
+                  "location": [
+                    6519,
+                    748,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 3",
+                  "location": [
+                    6432,
+                    667,
+                    2
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 4",
+                  "location": [
+                    6548,
+                    767,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 5",
+                  "location": [
+                    6632,
+                    668,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 6",
+                  "location": [
+                    6670,
+                    770,
+                    -20
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 7",
+                  "location": [
+                    6001,
+                    879,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 8",
+                  "location": [
+                    7060,
+                    2341,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 9",
+                  "location": [
+                    6752,
+                    730,
+                    0
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 10",
+                  "location": [
+                    5662,
+                    1600,
+                    59
+                  ],
+                  "map": "Lodor"
+                },
+                {
+                  "name": "Level 11",
+                  "location": [
+                    6745,
+                    2405,
+                    0
+                  ],
+                  "map": "Lodor"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "name": "Entrance",
+          "location": [
+            1342,
+            600,
+            0
+          ],
+          "map": "Underworld"
+        },
+        {
+          "name": "Obsidian Castle",
+          "location": [
+            453,
+            303,
+            5
+          ],
+          "map": "Underworld"
+        },
+        {
+          "name": "Obsidian Fortress",
+          "location": [
+            916,
+            3440,
+            0
+          ],
+          "map": "SavagedEmpire"
+        },
+        {
+          "name": "Tenebrae",
+          "location": [
+            756,
+            392,
+            0
+          ],
+          "map": "Underworld"
+        },
+        {
+          "name": "Underworld Gate",
+          "location": [
+            1445,
+            1629,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Zealan Cemetery",
+          "location": [
+            1094,
+            1229,
+            0
+          ],
+          "map": "Underworld"
+        }
+      ]
+    },
+    {
+      "name": "Other Areas",
+      "locations": [
+        {
+          "name": "Bank",
+          "location": [
+            3437,
+            3425,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Basement",
+          "location": [
+            4111,
+            3564,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Black Magic Guild",
+          "location": [
+            3599,
+            3217,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Camping Tent Small",
+          "location": [
+            3723,
+            3978,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Camping Tent Large",
+          "location": [
+            3801,
+            3979,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Chamber of Virtue",
+          "location": [
+            2603,
+            3855,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Chamber of Corruption",
+          "location": [
+            2875,
+            3471,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Chasm Floor",
+          "location": [
+            2578,
+            3688,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Crash Site",
+          "location": [
+            4135,
+            3771,
+            1
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Dojo",
+          "location": [
+            4607,
+            3427,
+            20
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Druid Glade",
+          "location": [
+            3913,
+            3965,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Dungeon Room",
+          "location": [
+            3688,
+            3330,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Hall of Legends",
+          "location": [
+            5979,
+            2481,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Lyceum",
+          "location": [
+            1437,
+            1364,
+            75
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Port",
+          "location": [
+            7063,
+            730,
+            65
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Ship Cabin",
+          "location": [
+            3256,
+            3475,
+            20
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Tavern",
+          "location": [
+            3684,
+            3484,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Thieves Guild",
+          "location": [
+            3426,
+            3191,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Wizards Guild",
+          "location": [
+            3541,
+            3542,
+            0
+          ],
+          "map": "Sosaria"
+        }
+      ]
+    },
+    {
+      "name": "Starting Areas",
+      "locations": [
+        {
+          "name": "Gypsy Forest",
+          "location": [
+            3579,
+            3423,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Cave",
+          "location": [
+            497,
+            4066,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Desert",
+          "location": [
+            91,
+            3244,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Mountain",
+          "location": [
+            289,
+            3222,
+            20
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Pits",
+          "location": [
+            180,
+            4075,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Sea",
+          "location": [
+            27,
+            4077,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Swamp",
+          "location": [
+            92,
+            3978,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Tomb",
+          "location": [
+            362,
+            3966,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Tundra",
+          "location": [
+            625,
+            3224,
+            0
+          ],
+          "map": "Sosaria"
+        },
+        {
+          "name": "Woods",
+          "location": [
+            357,
+            4057,
+            0
+          ],
+          "map": "Sosaria"
+        }
+      ]
+    }
+  ]
+}
