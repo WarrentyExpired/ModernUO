@@ -1,12 +1,43 @@
 [
   {
+    "$type": "TownRegion",
+    "Map": "Sosaria",
+    "Name": "the town of Britain",
+    "Priority": 10,
+    "Area": [
+      { "x1": 2932, "y1": 883, "x2": 3056, "y2": 1128 }
+    ]
+  },
+  {
     "$type": "GuardedRegion",
     "Map": "Sosaria",
     "Name": "the city of Britain",
-    "Priority": 50,
+    "Parent": { "Name": "the town of Britain", "Map": "Sosaria" },
+    "Priority": 20,
     "Area": [
-      { "x1": 2929, "y1": 1128, "x2": 3030, "y2": 890 }
+      { "x1": 2929, "y1": 985, "x2":3056, "y2": 1128 }
     ],
     "GoLocation": { "x": 2999, "y": 1044, "z": 0 }
+  },
+  {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": " the Britain Castle",
+    "Parent": { "Name": "the town of Britain", "Map": "Sosaria" },
+    "Priority": 20,
+    "Area": [
+      { "x1": 2950, "y1": 890, "x2": 3030, "y2": 990 }
+    ]
+  },
+  {
+    "$type": "DungeonRegion",
+    "Entrance": { "x": 3071, "y": 1037, "z": 0 },
+    "Map": "Sosaria",
+    "Name": "the Britain Cemetry",
+    "Priority": 50,
+    "Area": [
+      { "x1": 3061, "y1": 1012, "x2": 3096, "y2": 1037 }
+    ],
+    "GoLocation": { "x": 3071, "y": 1037, "z": 0 }
   }
 ]
