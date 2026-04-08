@@ -383,6 +383,215 @@
     "src": { "map": "Sosaria", "loc": [5362, 1395, -18] },
     "dst": { "map": "Sosaria", "loc": [5607, 1318, 17] },
     "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4396, 1261, 5] },
+    "dst": { "map": "Sosaria", "loc": [5539, 2798, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4397, 1261, 5] },
+    "dst": { "map": "Sosaria", "loc": [5540, 2798, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4433, 1242, 5] },
+    "dst": { "map": "Sosaria", "loc": [5576, 2779, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4434, 1242, 5] },
+    "dst": { "map": "Sosaria", "loc": [5577, 2779, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4424, 1202, 5] },
+    "dst": { "map": "Sosaria", "loc": [5568, 2738, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4424, 1203, 5] },
+    "dst": { "map": "Sosaria", "loc": [5568, 2739, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4456, 1218, 5] },
+    "dst": { "map": "Sosaria", "loc": [4472, 3284, 25] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4456, 1219, 5] },
+    "dst": { "map": "Sosaria", "loc": [4472, 3285, 25] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4445, 3298, -13] },
+    "dst": { "map": "Sosaria", "loc": [4325, 3297, 17] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4445, 3299, -13] },
+    "dst": { "map": "Sosaria", "loc": [4325, 3298, 17] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4459, 1263, 5] },
+    "dst": { "map": "Sosaria", "loc": [4307, 3486, 25] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4460, 1263, 5] },
+    "dst": { "map": "Sosaria", "loc": [4308, 3486, 25] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4450, 3449, 25] },
+    "dst": { "map": "Sosaria", "loc": [4601, 1229, 5] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4450, 3450, 25] },
+    "dst": { "map": "Sosaria", "loc": [4601, 1230, 5] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4628, 1348, 5] },
+    "dst": { "map": "Sosaria", "loc": [5186, 2959, 25] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4629, 1348, 5] },
+    "dst": { "map": "Sosaria", "loc": [5187, 2959, 25] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4702, 1206, 5] },
+    "dst": { "map": "Sosaria", "loc": [5430, 2890, 25] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4703, 1206, 5] },
+    "dst": { "map": "Sosaria", "loc": [5431, 2890, 25] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4634, 1219, 5] },
+    "dst": { "map": "Sosaria", "loc": [4012, 3711, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4635, 1219, 5] },
+    "dst": { "map": "Sosaria", "loc": [4013, 3711, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4738, 1323, 5] },
+    "dst": { "map": "Sosaria", "loc": [4310, 3827, 17] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4738, 1324, 5] },
+    "dst": { "map": "Sosaria", "loc": [4310, 3828, 17] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4808, 1273, 5] },
+    "dst": { "map": "Sosaria", "loc": [4401, 3685, 17] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4809, 1273, 5] },
+    "dst": { "map": "Sosaria", "loc": [4402, 3685, 17] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4789, 1290, 5] },
+    "dst": { "map": "Sosaria", "loc": [3875, 3764, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4789, 1291, 5] },
+    "dst": { "map": "Sosaria", "loc": [3875, 3765, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4798, 1312, 5] },
+    "dst": { "map": "Sosaria", "loc": [3061, 3287, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4798, 1313, 5] },
+    "dst": { "map": "Sosaria", "loc": [3061, 3288, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4798, 1314, 5] },
+    "dst": { "map": "Sosaria", "loc": [3061, 3289, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4798, 1315, 5] },
+    "dst": { "map": "Sosaria", "loc": [3061, 3290, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4764, 1337, 5] },
+    "dst": { "map": "Sosaria", "loc": [5816, 2415, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4765, 1337, 5] },
+    "dst": { "map": "Sosaria", "loc": [5817, 2415, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [5815, 2415, 0] },
+    "dst": { "map": "Sosaria", "loc": [4764, 1337, 5] },
+    "back": false
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [5818, 2415, 0] },
+    "dst": { "map": "Sosaria", "loc": [4765, 1337, 5] },
+    "back": false
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4876, 1234, 5] },
+    "dst": { "map": "Sosaria", "loc": [3988, 3769, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4877, 1234, 5] },
+    "dst": { "map": "Sosaria", "loc": [3989, 3769, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [5004, 1262, 5] },
+    "dst": { "map": "Sosaria", "loc": [3690, 3824, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [5005, 1262, 5] },
+    "dst": { "map": "Sosaria", "loc": [3691, 3824, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [5049, 1217, 30] },
+    "dst": { "map": "Sosaria", "loc": [3721, 3710, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [5050, 1217, 30] },
+    "dst": { "map": "Sosaria", "loc": [3722, 3710, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [5064, 1204, 5] },
+    "dst": { "map": "Sosaria", "loc": [3901, 3694, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [5064, 1205, 5] },
+    "dst": { "map": "Sosaria", "loc": [3901, 3695, 0] },
+    "back": true
   }
 ]
-
