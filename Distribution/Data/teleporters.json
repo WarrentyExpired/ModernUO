@@ -1348,5 +1348,30 @@
     "src": { "map": "Sosaria", "loc": [5632, 1892, 20] },
     "dst": { "map": "Sosaria", "loc": [6834, 508, 0] },
     "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [4382, 1222, 2] },
+    "dst": { "map": "Sosaria", "loc": [3991, 3833, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [3991, 3834, 0] },
+    "dst": { "map": "Sosaria", "loc": [4382, 1222, 2] },
+    "back": false
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [3871, 3825, 0] },
+    "dst": { "map": "SerpentIsland", "loc": [2450, 1039, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [3871, 3826, 0] },
+    "dst": { "map": "SerpentIsland", "loc": [2450, 1040, 0] },
+    "back": true
+  },
+  {
+    "src": { "map": "Sosaria", "loc": [3871, 3827, 0] },
+    "dst": { "map": "SerpentIsland", "loc": [2450, 1041, 0] },
+    "back": true
   }
 ]

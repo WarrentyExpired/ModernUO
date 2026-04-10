@@ -1,3 +1,4 @@
+using Server;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -23,6 +24,7 @@ using Server.Guilds;
 using Server.Gumps;
 using Server.Items;
 using Server.Misc;
+using Server.Mobiles;
 using Server.Movement;
 using Server.Multis;
 using Server.Network;
@@ -41,6 +43,7 @@ using BaseQuestGump = Server.Engines.MLQuests.Gumps.BaseQuestGump;
 using CalcMoves = Server.Movement.Movement;
 using QuestOfferGump = Server.Engines.MLQuests.Gumps.QuestOfferGump;
 using RankDefinition = Server.Guilds.RankDefinition;
+using ModernUO.Serialization;
 
 namespace Server.Mobiles
 {
@@ -220,6 +223,19 @@ namespace Server.Mobiles
         public int StepsGainedPerIdleTime => 1;
 
         public TimeSpan IdleTimePerStepsGain => TimeSpan.FromSeconds(1);
+
+        [SerializableField(99)]
+        private string _characterPublicDoor;
+        [CommandProperty(AccessLevel.GameMaster)]
+        public string CharacterPublicDoor
+        {
+            get => _characterPublicDoor;
+            set
+            {
+                _characterPublicDoor = value;
+                this.MarkDirty();
+            }
+        }
 
         [CommandProperty(AccessLevel.GameMaster)]
         public DateTime AnkhNextUse { get; set; }

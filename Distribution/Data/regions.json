@@ -1,12 +1,80 @@
 [
   {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Bank",
+    "Priority": 50,
+    "Area": [{ "x1": 3430, "y1": 3411, "x2": 3463, "y2": 3443 }]
+  },
+  {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Basement",
+    "Priority": 50,
+    "Area": [{ "x1": 4065, "y1": 3407, "x2": 4130, "y2": 3583 }]
+  },
+  {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Tavern",
+    "Priority": 50,
+    "Area": [{ "x1": 3667, "y1": 3438, "x2": 3724, "y2": 3518 }]
+  },
+  {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Port",
+    "Priority": 80,
+    "Area": [{ "x1": 6905, "y1": 524, "x2": 7160, "y2": 788 }]
+  },
+  {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Wizards Guild",
+    "Priority": 50,
+    "Area": [{ "x1": 3518, "y1": 3512, "x2": 3585, "y2": 3579 }]
+  },
+  {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Thieves Guild",
+    "Priority": 50,
+    "Area": [{ "x1": 3396, "y1": 3182, "x2": 3444, "y2": 3221 }]
+  },
+  {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Black Magic Guild",
+    "Priority": 50,
+    "Area": [{ "x1": 3563, "y1": 3197, "x2": 3612, "y2": 3264 }]
+  },
+  {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Dojo",
+    "Priority": 50,
+    "Area": [{ "x1": 4598, "y1": 3419, "x2": 4636, "y2": 3458 }]
+  },
+  {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Dungeon Room",
+    "Priority": 50,
+    "Area": [{ "x1": 3681, "y1": 3319, "x2": 3717, "y2": 3353 }]
+  },
+  {
+    "$type": "GuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Camping Tent",
+    "Priority": 50,
+    "Area": [{ "x1": 3703, "y1": 3961, "x2": 3728, "y2": 3986 }]
+  },
+  {
     "$type": "TownRegion",
     "Map": "Sosaria",
     "Name": "the town of Britain",
     "Priority": 10,
-    "Area": [
-      { "x1": 2932, "y1": 883, "x2": 3056, "y2": 1128 }
-    ]
+    "Area": [{ "x1": 2932, "y1": 883, "x2": 3056, "y2": 1128 }]
   },
   {
     "$type": "GuardedRegion",
@@ -14,9 +82,7 @@
     "Name": "the city of Britain",
     "Parent": { "Name": "the town of Britain", "Map": "Sosaria" },
     "Priority": 20,
-    "Area": [
-      { "x1": 2929, "y1": 985, "x2":3056, "y2": 1128 }
-    ],
+    "Area": [{ "x1": 2929, "y1": 985, "x2": 3056, "y2": 1128 }],
     "GoLocation": { "x": 2999, "y": 1044, "z": 0 }
   },
   {
@@ -25,9 +91,7 @@
     "Name": " the Britain Castle",
     "Parent": { "Name": "the town of Britain", "Map": "Sosaria" },
     "Priority": 20,
-    "Area": [
-      { "x1": 2950, "y1": 890, "x2": 3030, "y2": 990 }
-    ]
+    "Area": [{ "x1": 2950, "y1": 890, "x2": 3030, "y2": 990 }]
   },
   {
     "$type": "DungeonRegion",
@@ -35,9 +99,7 @@
     "Map": "Sosaria",
     "Name": "the Britain Cemetry",
     "Priority": 50,
-    "Area": [
-      { "x1": 3061, "y1": 1012, "x2": 3096, "y2": 1037 }
-    ],
+    "Area": [{ "x1": 3061, "y1": 1012, "x2": 3096, "y2": 1037 }],
     "GoLocation": { "x": 3071, "y": 1037, "z": 0 }
   }
 ]
