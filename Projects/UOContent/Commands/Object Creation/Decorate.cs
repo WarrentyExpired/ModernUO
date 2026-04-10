@@ -34,12 +34,13 @@ namespace Server.Commands
 
             NetState.FlushAll();
 
-            Generate("Data/Decoration/Britannia", Map.Trammel, Map.Felucca);
-            Generate("Data/Decoration/Trammel", Map.Trammel);
-            Generate("Data/Decoration/Felucca", Map.Felucca);
-            Generate("Data/Decoration/Ilshenar", Map.Ilshenar);
-            Generate("Data/Decoration/Malas", Map.Malas);
-            Generate("Data/Decoration/Tokuno", Map.Tokuno);
+            //Generate("Data/Decoration/Britannia", Map.Trammel, Map.Felucca);
+            Generate("Data/Decoration/Sosaria", Map.Trammel);
+            Generate("Data/Decoration/Lodor", Map.Felucca);
+            Generate("Data/Decoration/Underworld", Map.Ilshenar);
+            Generate("Data/Decoration/SerpentIsland", Map.Malas);
+            Generate("Data/Decoration/IslesDread", Map.Tokuno);
+            Generate("Data/Decoration/SavagedEmpire", Map.TerMur);
 
             if (PlayerMurderSystem.BountiesEnabled)
             {
