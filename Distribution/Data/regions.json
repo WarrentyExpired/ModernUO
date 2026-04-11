@@ -1,6 +1,6 @@
 [
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Bank",
     "Priority": 50,
@@ -8,7 +8,7 @@
     "GoLocation": { "x": 3445, "y": 3427, "z": 0 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Basement",
     "Priority": 50,
@@ -16,7 +16,7 @@
     "GoLocation": { "x": 4111, "y": 3564, "z": 0 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Black Magic Guild",
     "Priority": 50,
@@ -24,7 +24,7 @@
     "GoLocation": { "x": 3591, "y": 3227, "z": 0 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Camping Tent",
     "Priority": 50,
@@ -32,7 +32,7 @@
     "GoLocation": { "x": 3716, "y": 3971, "z": 0 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Large Camping Tent",
     "Priority": 50,
@@ -40,7 +40,7 @@
     "GoLocation": { "x": 3790, "y": 3972, "z": 0 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Dojo",
     "Priority": 50,
@@ -48,7 +48,7 @@
     "GoLocation": { "x": 4617, "y": 3438, "z": 0 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Dungeon Room",
     "Priority": 50,
@@ -56,7 +56,28 @@
     "GoLocation": { "x": 3700, "y": 3333, "z": 0 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
+    "Map": "Sosaria",
+    "Name": " the Hall of Legends",
+    "Priority": 50,
+    "Area": [{ "x1": 5940, "y1": 2435, "x2": 6017, "y2": 2498 }]
+  },
+  {
+    "$type": "GreetingGuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Ship's Lower Deck",
+    "Priority": 50,
+    "Area": [{ "x1": 3219, "y1": 3421, "x2": 3289, "y2": 3517 }]
+  },
+  {
+    "$type": "GreetingGuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Druid's Glade",
+    "Priority": 50,
+    "Area": [{ "x1": 3880, "y1": 3935, "x2": 3940, "y2": 3995 }]
+  },
+  {
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Lyceum",
     "Priority": 50,
@@ -64,7 +85,7 @@
     "GoLocation": { "x": 1427, "y": 1364, "z": 75 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Port",
     "Priority": 80,
@@ -72,7 +93,14 @@
     "GoLocation": { "x": 7037, "y": 636, "z": 65 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
+    "Map": "Sosaria",
+    "Name": "Shimazu's Dojo",
+    "Priority": 65,
+    "Area": [{ "x1": 5588, "y1": 2863, "x2": 5653, "y2": 2928 }]
+  },
+  {
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Tavern",
     "Priority": 50,
@@ -80,7 +108,7 @@
     "GoLocation": { "x": 3685, "y": 3485, "z": 0 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Thieves Guild",
     "Priority": 50,
@@ -88,12 +116,138 @@
     "GoLocation": { "x": 3423, "y": 3199, "z": 0 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Wizards Guild",
     "Priority": 50,
     "Area": [{ "x1": 3518, "y1": 3512, "x2": 3585, "y2": 3579 }],
     "GoLocation": { "x": 3552, "y": 3542, "z": 0 }
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Castle of Shadowguard",
+    "Priority": 100,
+    "Area": [{ "x1": 4729, "y1": 3951, "x2": 4782, "y2": 4006 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Guardian's Chamber",
+    "Priority": 100,
+    "Area": [{ "x1": 4981, "y1": 3978, "x2": 5007, "y2": 4008 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Tomb of Lethe",
+    "Priority": 100,
+    "Area": [{ "x1": 4117, "y1": 3411, "x2": 4147, "y2": 3441 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "Seggallion's Cave",
+    "Priority": 100,
+    "Area": [{ "x1": 5024, "y1": 3820, "x2": 5056, "y2": 3848 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "Garamon's Mansion",
+    "Priority": 100,
+    "Area": [{ "x1": 5016, "y1": 3741, "x2": 5048, "y2": 3766 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Crash Site",
+    "Priority": 100,
+    "Area": [{ "x1": 4086, "y1": 3745, "x2": 4146, "y2": 3805 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Forest",
+    "Priority": 50,
+    "Area": [{ "x1": 3533, "y1": 3378, "x2": 3593, "y2": 3438 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Swamp",
+    "Priority": 100,
+    "Area": [{ "x1": 69, "y1": 3952, "x2": 111, "y2": 3995 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Tomb",
+    "Priority": 100,
+    "Area": [{ "x1": 343, "y1": 3943, "x2": 374, "y2": 3988 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Sea",
+    "Priority": 100,
+    "Area": [{ "x1": 6, "y1": 4043, "x2": 46, "y2": 4088 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Pits",
+    "Priority": 100,
+    "Area": [{ "x1": 155, "y1": 4042, "x2": 200, "y2": 2088 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Woods",
+    "Priority": 100,
+    "Area": [{ "x1": 324, "y1": 4034, "x2": 370, "y2": 4088 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Cave",
+    "Priority": 100,
+    "Area": [{ "x1": 463, "y1": 4043, "x2": 509, "y2": 4087 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Tundra",
+    "Priority": 100,
+    "Area": [{ "x1": 596, "y1": 3204, "x2": 644, "y2": 3248 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Desert",
+    "Priority": 100,
+    "Area": [{ "x1": 64, "y1": 3221, "x2": 109, "y2": 3266 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Mountains",
+    "Priority": 100,
+    "Area": [{ "x1": 265, "y1": 3200, "x2": 310, "y2": 3245 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Barge of the Dead",
+    "Priority": 50,
+    "Area": [{ "x1": 5404, "y1": 3945, "x2": 5438, "y2": 3956 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Chasm",
+    "Priority": 50,
+    "Area": [{ "x1": 2557, "y1": 3654, "x2": 2629, "y2": 3726 }]
   },
   {
     "$type": "GreetingTownRegion",
@@ -102,6 +256,34 @@
     "Priority": 100,
     "Area": [{ "x1": 223, "y1": 1229, "x2": 439, "y2": 1448 }],
     "GoLocation": { "x": 368, "y": 1420, "z": 66 }
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "Chamber of Virtue",
+    "Priority": 100,
+    "Area": [{ "x1": 2563, "y1": 3824, "x2": 2633, "y2": 3894 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Chamber of Corruption",
+    "Priority": 100,
+    "Area": [{ "x1": 2835, "y1": 3438, "x2": 2905, "y2": 3508 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Anchored Cave",
+    "Priority": 100,
+    "Area": [{ "x1": 7033, "y1": 291, "x2": 7133, "y2": 366 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "Shipwreck Grotto",
+    "Priority": 100,
+    "Area": [{ "x1": 6537, "y1": 3779, "x2": 6780, "y2": 4079 }]
   },
   {
     "$type": "GreetingTownRegion",
@@ -122,6 +304,20 @@
   {
     "$type": "BaseRegion",
     "Map": "Sosaria",
+    "Name": "the Celestial Moon of Luna",
+    "Priority": 20,
+    "Area": [{ "x1": 5801, "y1": 2716, "x2": 6125, "y2": 3034 }]
+  },
+  {
+    "$type": "BaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Core of the Moon",
+    "Priority": 90,
+    "Area": [{ "x1": 5619, "y1": 1862, "x2": 5729, "y2": 1937 }]
+  },
+  {
+    "$type": "BaseRegion",
+    "Map": "Sosaria",
     "Name": "Death Gulch",
     "Priority": 50,
     "Area": [{ "x1": 3673, "y1": 1472, "x2": 3717, "y2": 1540 }],
@@ -134,6 +330,13 @@
     "Priority": 50,
     "Area": [{ "x1": 1581, "y1": 1439, "x2": 1751, "y2": 1605 }],
     "GoLocation": { "x": 1656, "y": 1484, "z": 2 }
+  },
+  {
+    "$type": "GreetingGuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Farmland of Devil Guard",
+    "Priority": 50,
+    "Area": [{ "x1": 6555, "y1": 3152, "x2": 6655, "y2": 3281 }]
   },
   {
     "$type": "GreetingTownRegion",
@@ -160,12 +363,33 @@
     "GoLocation": { "x": 902, "y": 2063, "z": 0 }
   },
   {
+    "$type": "GreetingGuardedRegion",
+    "Map": "Sosaria",
+    "Name": "the Grey Archeological Dig",
+    "Priority": 49,
+    "Area": [{ "x1": 3481, "y1": 3289, "x2": 3531, "y2": 3339 }]
+  },
+  {
     "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "Iceclad Fisherman's Village",
     "Priority": 50,
     "Area": [{ "x1": 4287, "y1": 1233, "x2": 4344, "y2": 1199 }],
     "GoLocation": { "x": 2899, "y": 676, "z": 54 }
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Sosaria",
+    "Name": "the City of Kuldara",
+    "Priority": 50,
+    "Area": [
+      { "x1": 6727, "y1": 1604, "x2": 6817, "y2": 1660 },
+      { "x1": 6695, "y1": 1638, "x2": 6845, "y2": 1703 },
+      { "x1": 6698, "y1": 1699, "x2": 6826, "y2": 1889 },
+      { "x1": 6679, "y1": 1798, "x2": 6707, "y2": 1886 },
+      { "x1": 6620, "y1": 1806, "x2": 6684, "y2": 1927 },
+      { "x1": 6579, "y1": 1842, "x2": 6626, "y2": 1897 }
+    ]
   },
   {
     "$type": "GreetingTownRegion",
@@ -184,6 +408,14 @@
     "GoLocation": { "x": 806, "y": 728, "z": 0 }
   },
   {
+    "$type": "BaseRegion",
+    "Map": "Sosaria",
+    "Name": "Moonlight Cavern",
+    "Priority": 100,
+    "Area": [{ "x1": 6735, "y1": 486, "x2": 6868, "y2": 562 }]
+  },
+
+  {
     "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "the Town of Mountain Crest",
@@ -192,7 +424,31 @@
     "GoLocation": { "x": 4514, "y": 1276, "z": 2 }
   },
   {
-    "$type": "GuardedRegion",
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Tower",
+    "Priority": 90,
+    "Area": [{ "x1": 4373, "y1": 1212, "x2": 4394, "y2": 1230 }]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Sosaria",
+    "Name": "the Town of Renika",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1409, "y1": 3737, "x2": 1487, "y2": 3810 },
+      { "x1": 1450, "y1": 3759, "x2": 1517, "y2": 3816 }
+    ]
+  },
+  {
+    "$type": "Graveyard",
+    "Map": "Sosaria",
+    "Name": "the Church of the Divine",
+    "Priority": 65,
+    "Area": [{ "x1": 1386, "y1": 3767, "x2": 1391, "y2": 3797 }]
+  },
+  {
+    "$type": "GreetingGuardedRegion",
     "Map": "Sosaria",
     "Name": "the Fort of Stonewall",
     "Priority": 50,
@@ -206,6 +462,13 @@
     "Priority": 70,
     "Area": [{ "x1": 2607, "y1": 3196, "x2": 2743, "y2": 3352 }],
     "GoLocation": { "x": 2659, "y": 3219, "z": 0 }
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Sosaria",
+    "Name": "the Dark Caves",
+    "Priority": 50,
+    "Area": [{ "x1": 5206, "y1": 1035, "x2": 5421, "y2": 1306 }]
   },
   {
     "$type": "GreetingTownRegion",
@@ -240,8 +503,8 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
-    "Name": "the Cave of Banished Mages",
-    "Priority": 50,
+    "Name": "the Fort of Banished Mages",
+    "Priority": 60,
     "Area": [{ "x1": 223, "y1": 3481, "x2": 252, "y2": 3517 }],
     "GoLocation": { "x": 237, "y": 3498, "z": 0 }
   },
@@ -413,13 +676,159 @@
     "Area": [{ "x1": 2316, "y1": 3907, "x2": 2518, "y2": 4073 }]
   },
   {
-    "$type": "WildernessRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
-    "Name": "the Orc Fort",
+    "Name": "the Ratmen Lair",
+    "Priority": 50,
+    "Area": [{ "x1": 2681, "y1": 3684, "x2": 2827, "y2": 3827 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "Steamfire Cave",
+    "Priority": 50,
+    "Area": [{ "x1": 6655, "y1": 436, "x2": 778, "y2": 482 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "Vordo's Castle Grounds",
+    "Priority": 50,
+    "Area": [{ "x1": 7018, "y1": 2803, "x2": 7141, "y2": 2949 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Kuldara Sewers",
+    "Priority": 50,
+    "Area": [{ "x1": 6162, "y1": 2786, "x2": 6378, "y2": 3045 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Crypts of Kuldar",
+    "Priority": 50,
+    "Area": [{ "x1": 6451, "y1": 2811, "x2": 6612, "y2": 2964 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "Vordo's Castle",
+    "Priority": 50,
+    "Area": [{ "x1": 6856, "y1": 2809, "x2": 6979, "y2": 2955 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Castle of Vordo",
+    "Priority": 80,
+    "Area": [
+      { "x1": 6598, "y1": 1670, "x2": 6699, "y2": 1785 },
+      { "x1": 6591, "y1": 1782, "x2": 6706, "y2": 1802 },
+      { "x1": 6686, "y1": 1661, "x2": 6705, "y2": 1681 },
+      { "x1": 6590, "y1": 1661, "x2": 6610, "y2": 1682 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "Vordo's Dungeon",
+    "Priority": 50,
+    "Area": [{ "x1": 6118, "y1": 0, "x2": 6538, "y2": 762 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Tower of Brass",
+    "Priority": 90,
+    "Area": [
+      { "x1": 6916, "y1": 3473, "x2": 6972, "y2": 3628 },
+      { "x1": 6787, "y1": 3787, "x2": 6862, "y2": 3884 },
+      { "x1": 6785, "y1": 3575, "x2": 6843, "y2": 3633 },
+      { "x1": 6170, "y1": 3724, "x2": 6503, "y2": 4049 },
+      { "x1": 6494, "y1": 3520, "x2": 6542, "y2": 3594 },
+      { "x1": 6491, "y1": 3349, "x2": 6551, "y2": 3480 },
+      { "x1": 6313, "y1": 3543, "x2": 6389, "y2": 3620 },
+      { "x1": 6169, "y1": 3411, "x2": 6294, "y2": 3504 },
+      { "x1": 6380, "y1": 3072, "x2": 6422, "y2": 3136 },
+      { "x1": 6711, "y1": 3074, "x2": 6828, "y2": 3426 },
+      { "x1": 5198, "y1": 2542, "x2": 5459, "y2": 2661 },
+      { "x1": 437, "y1": 3787, "x2": 641, "y2": 3899 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Dragon's Maw",
+    "Priority": 100,
+    "Area": [
+      { "x1": 4079, "y1": 3916, "x2": 4235, "y2": 4031 },
+      { "x1": 4419, "y1": 3899, "x2": 4519, "y2": 3973 },
+      { "x1": 4285, "y1": 3956, "x2": 4400, "y2": 4056 },
+      { "x1": 4292, "y1": 3883, "x2": 4387, "y2": 3930 },
+      { "x1": 4548, "y1": 3540, "x2": 4903, "y2": 3885 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Cave of the Zuluu",
     "Priority": 50,
     "Area": [
-      { "x1": 559, "y1": 475, "x2": 588, "y2": 502 },
-      { "x1": 2279, "y1": 1772, "x2": 2353, "y2": 1836 }
+      { "x1": 6211, "y1": 3106, "x2": 6435, "y2": 3352 },
+      { "x1": 6932, "y1": 3779, "x2": 7097, "y2": 3935 },
+      { "x1": 6625, "y1": 3618, "x2": 6682, "y2": 3700 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Mausoleum",
+    "Priority": 50,
+    "Area": [{ "x1": 3793, "y1": 3217, "x2": 4058, "y2": 3512 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Cave of Banised Mages",
+    "Priority": 50,
+    "Area": [{ "x1": 46, "y1": 3259, "x2": 665, "y2": 3931 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Valley of Dark Druids",
+    "Priority": 50,
+    "Area": [{ "x1": 6638, "y1": 78, "x2": 6960, "y2": 357 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Stygian Abyss",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1635, "y1": 1146, "x2": 1913, "y2": 1437 },
+      { "x1": 1969, "y1": 1136, "x2": 2063, "y2": 1232 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Ruins of the Black Blade",
+    "Priority": 50,
+    "Area": [{ "x1": 4947, "y1": 3484, "x2": 5059, "y2": 3590 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Sosaria",
+    "Name": "the Caverns of Poseidon",
+    "Priority": 100,
+    "Area": [
+      { "x1": 5701, "y1": 1664, "x2": 5813, "y2": 1720 },
+      { "x1": 5780, "y1": 1722, "x2": 5913, "y2": 1797 },
+      { "x1": 5960, "y1": 1677, "x2": 6074, "y2": 1742 },
+      { "x1": 5181, "y1": 1855, "x2": 5428, "y2": 2141 },
+      { "x1": 5564, "y1": 959, "x2": 5701, "y2": 1044 }
     ]
   },
   {
@@ -437,10 +846,369 @@
     "Area": [{ "x1": 1280, "y1": 1438, "x2": 1304, "y2": 1460 }]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "WildernessRegion",
     "Map": "Sosaria",
-    "Name": "the Ratmen Lair",
+    "Name": "the Orc Fort",
     "Priority": 50,
-    "Area": [{ "x1": 2681, "y1": 3684, "x2": 2827, "y2": 3827 }]
+    "Area": [
+      { "x1": 559, "y1": 475, "x2": 588, "y2": 502 },
+      { "x1": 2279, "y1": 1772, "x2": 2353, "y2": 1836 }
+    ]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the British Family Tomb",
+    "Priority": 50,
+    "Area": [{ "x1": 5188, "y1": 1783, "x2": 5236, "y2": 1847 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Devil's Mine",
+    "Priority": 65,
+    "Area": [{ "x1": 5198, "y1": 1552, "x2": 5254, "y2": 1611 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Pirate Cave",
+    "Priority": 65,
+    "Area": [{ "x1": 5420, "y1": 1662, "x2": 5489, "y2": 1710 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "Hot Spring Cave",
+    "Priority": 65,
+    "Area": [
+      { "x1": 5258, "y1": 1647, "x2": 5290, "y2": 1682 },
+      { "x1": 5281, "y1": 1637, "x2": 5348, "y2": 1717 }
+    ]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Cave of Virtue",
+    "Priority": 65,
+    "Area": [{ "x1": 5160, "y1": 1685, "x2": 5276, "y2": 1765 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "Mountain Crest Mine",
+    "Priority": 65,
+    "Area": [{ "x1": 5522, "y1": 1890, "x2": 5617, "y2": 1993 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "Junglewall Cave",
+    "Priority": 65,
+    "Area": [{ "x1": 5643, "y1": 2319, "x2": 5742, "y2": 2385 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "Avalance Grotto",
+    "Priority": 65,
+    "Area": [{ "x1": 5776, "y1": 2349, "x2": 5868, "y2": 2426 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Mines of Moon",
+    "Priority": 65,
+    "Area": [{ "x1": 5632, "y1": 2399, "x2": 5754, "y2": 2500 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Elidor Tunnel",
+    "Priority": 65,
+    "Area": [{ "x1": 5313, "y1": 2435, "x2": 5440, "y2": 2523 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Sorcerer Cave",
+    "Priority": 65,
+    "Area": [{ "x1": 3895, "y1": 3661, "x2": 3906, "y2": 3712 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Twisted Cave",
+    "Priority": 65,
+    "Area": [{ "x1": 3973, "y1": 3657, "x2": 4029, "y2": 3728 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Cavern of Echoes",
+    "Priority": 65,
+    "Area": [{ "x1": 3840, "y1": 3743, "x2": 3879, "y2": 3780 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Cavern of the Deep Ones",
+    "Priority": 65,
+    "Area": [{ "x1": 6579, "y1": 580, "x2": 6690, "y2": 652 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Frostwind Grotto",
+    "Priority": 65,
+    "Area": [{ "x1": 3968, "y1": 3750, "x2": 4005, "y2": 3780 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Serpent Pass",
+    "Priority": 65,
+    "Area": [{ "x1": 3865, "y1": 3793, "x2": 3998, "y2": 3851 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "Coldrock Cavern",
+    "Priority": 65,
+    "Area": [{ "x1": 3672, "y1": 3752, "x2": 3756, "y2": 3831 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "Nightshadow Cave",
+    "Priority": 65,
+    "Area": [{ "x1": 3387, "y1": 3836, "x2": 3506, "y2": 3931 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Old Grey Mine",
+    "Priority": 65,
+    "Area": [{ "x1": 3464, "y1": 3657, "x2": 3548, "y2": 3764 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "Fallwater Cavern",
+    "Priority": 65,
+    "Area": [{ "x1": 3342, "y1": 3996, "x2": 3428, "y2": 4060 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Volcanic Pass",
+    "Priority": 65,
+    "Area": [{ "x1": 3183, "y1": 3603, "x2": 3395, "y2": 3829 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Ambrosian Cavern",
+    "Priority": 65,
+    "Area": [{ "x1": 3219, "y1": 3865, "x2": 3348, "y2": 3949 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Britain Mines",
+    "Priority": 65,
+    "Area": [{ "x1": 3007, "y1": 3823, "x2": 3170, "y2": 4020 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Montor Mine",
+    "Priority": 65,
+    "Area": [{ "x1": 3039, "y1": 3696, "x2": 3148, "y2": 3795 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Old Umber Cave",
+    "Priority": 65,
+    "Area": [{ "x1": 2927, "y1": 3668, "x2": 3004, "y2": 3726 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Yew Mines",
+    "Priority": 65,
+    "Area": [{ "x1": 2938, "y1": 3531, "x2": 3135, "y2": 3655 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "Cavern of Sermillon",
+    "Priority": 65,
+    "Area": [{ "x1": 3193, "y1": 3239, "x2": 3347, "y2": 3336 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Tomb of Kas The Bloody Handed",
+    "Priority": 65,
+    "Area": [{ "x1": 3592, "y1": 3953, "x2": 3614, "y2": 3974 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Tomb of Baron Almric",
+    "Priority": 65,
+    "Area": [{ "x1": 7027, "y1": 3169, "x2": 7057, "y2": 3199 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Tomb of Malak",
+    "Priority": 65,
+    "Area": [{ "x1": 5689, "y1": 2635, "x2": 5729, "y2": 2675 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Tomb of Zoda",
+    "Priority": 65,
+    "Area": [{ "x1": 4593, "y1": 3267, "x2": 4697, "y2": 3307 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "Highrock Mine",
+    "Priority": 65,
+    "Area": [{ "x1": 6919, "y1": 445, "x2": 7023, "y2": 513 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "Waterfall Cavern",
+    "Priority": 65,
+    "Area": [{ "x1": 6785, "y1": 669, "x2": 6884, "y2": 725 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Sosaria",
+    "Name": "the Crumbling Cave",
+    "Priority": 65,
+    "Area": [{ "x1": 6701, "y1": 693, "x2": 6774, "y2": 782 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Blade of Neptune",
+    "Priority": 50,
+    "Area": [{ "x1": 185, "y1": 173, "x2": 269, "y2": 257 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Captain's Whore",
+    "Priority": 50,
+    "Area": [{ "x1": 408, "y1": 925, "x2": 492, "y2": 1009 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Pearl of Hades",
+    "Priority": 50,
+    "Area": [{ "x1": 386, "y1": 1950, "x2": 470, "y2": 2034 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Rage of the Nine",
+    "Priority": 50,
+    "Area": [{ "x1": 401, "y1": 2781, "x2": 485, "y2": 2865 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Bloody Wave",
+    "Priority": 50,
+    "Area": [{ "x1": 1170, "y1": 2350, "x2": 1191, "y2": 2434 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Cruel Mistress",
+    "Priority": 50,
+    "Area": [{ "x1": 1649, "y1": 285, "x2": 1733, "y2": 369 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Morbid Sail",
+    "Priority": 50,
+    "Area": [{ "x1": 3352, "y1": 421, "x2": 3436, "y2": 505 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Silver Sun",
+    "Priority": 50,
+    "Area": [{ "x1": 4737, "y1": 315, "x2": 4821, "y2": 399 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Night's Raid",
+    "Priority": 50,
+    "Area": [{ "x1": 4074, "y1": 1908, "x2": 4158, "y2": 1992 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Dragon's Wave",
+    "Priority": 50,
+    "Area": [{ "x1": 4169, "y1": 836, "x2": 4253, "y2": 920 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Kraken's Heart",
+    "Priority": 50,
+    "Area": [{ "x1": 4817, "y1": 1661, "x2": 4901, "y2": 1745 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Damned Skull",
+    "Priority": 50,
+    "Area": [{ "x1": 2200, "y1": 2853, "x2": 2284, "y2": 2937 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Whispering Wind",
+    "Priority": 60,
+    "Area": [{ "x1": 1752, "y1": 2223, "x2": 1777, "y2": 2266 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Sosaria",
+    "Name": "the Waters of the Jewel of the Deep",
+    "Priority": 60,
+    "Area": [{ "x1": 1782, "y1": 2265, "x2": 1827, "y2": 2294 }]
+  },
+  {
+    "$type": "Graveyard",
+    "Map": "Sosaria",
+    "Name": "the Graveyard",
+    "Priority": 50,
+    "Area": [
+      { "x1": 5867, "y1": 2583, "x2": 5920, "y2": 2639 },
+      { "x1": 1744, "y1": 1607, "x2": 1767, "y2": 1629 },
+      { "x1": 1753, "y1": 1672, "x2": 1767, "y2": 1635 },
+      { "x1": 2159, "y1": 351, "x2": 2177, "y2": 370 },
+      { "x1": 802, "y1": 598, "x2": 830, "y2": 630 },
+      { "x1": 928, "y1": 1972, "x2": 987, "y2": 2011 },
+      { "x1": 3236, "y1": 2784, "x2": 3269, "y2": 2824 },
+      { "x1": 3062, "y1": 1013, "x2": 3095, "y2": 1036 },
+      { "x1": 4858, "y1": 2796, "x2": 4886, "y2": 2821 }
+    ]
   }
 ]

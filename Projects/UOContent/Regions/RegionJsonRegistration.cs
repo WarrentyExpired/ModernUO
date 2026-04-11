@@ -59,8 +59,15 @@ public static class RegionJsonRegistration
 
         // Myrmidex
         RegionJsonSerializer.Register<BattleRegion>();
+
+        // Custom Regions
         RegionJsonSerializer.Register<GreetingDungeonRegion>();
         RegionJsonSerializer.Register<GreetingTownRegion>();
         RegionJsonSerializer.Register<WildernessRegion>();
+        RegionJsonSerializer.Register<GraveyardRegion>();
+        RegionJsonSerializer.Register<CaveRegion>();
+        RegionJsonSerializer.Register<PirateRegion>();
+        RegionJsonSerializer.Register<GreetingBaseRegion>();
+        RegionJsonSerializer.Register<GreetingGuardedRegion>();
     }
 }
