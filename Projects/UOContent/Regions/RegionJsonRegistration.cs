@@ -1,4 +1,4 @@
-﻿namespace Server.Regions;
+namespace Server.Regions;
 
 public static class RegionJsonRegistration
 {
@@ -59,5 +59,8 @@ public static class RegionJsonRegistration
 
         // Myrmidex
         RegionJsonSerializer.Register<BattleRegion>();
+        RegionJsonSerializer.Register<GreetingDungeonRegion>();
+        RegionJsonSerializer.Register<GreetingTownRegion>();
+        RegionJsonSerializer.Register<WildernessRegion>();
     }
 }

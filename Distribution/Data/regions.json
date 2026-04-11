@@ -96,7 +96,7 @@
     "GoLocation": { "x": 3552, "y": 3542, "z": 0 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "Anchor Rock Docks",
     "Priority": 100,
@@ -104,7 +104,7 @@
     "GoLocation": { "x": 368, "y": 1420, "z": 66 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "the town of Britain",
     "Priority": 50,
@@ -112,7 +112,7 @@
     "GoLocation": { "x": 2999, "y": 1044, "z": 0 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "the Lunar City of Dawn",
     "Priority": 50,
@@ -128,7 +128,7 @@
     "GoLocation": { "x": 3716, "y": 1500, "z": 0 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "the Town of Devil Guard",
     "Priority": 50,
@@ -136,7 +136,7 @@
     "GoLocation": { "x": 1656, "y": 1484, "z": 2 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "the Village of Fawn",
     "Priority": 50,
@@ -144,7 +144,7 @@
     "GoLocation": { "x": 2119, "y": 276, "z": 0 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "Glacial Coast Village",
     "Priority": 50,
@@ -152,7 +152,7 @@
     "GoLocation": { "x": 4754, "y": 1178, "z": 2 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "the Village of Grey",
     "Priority": 50,
@@ -160,7 +160,7 @@
     "GoLocation": { "x": 902, "y": 2063, "z": 0 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "Iceclad Fisherman's Village",
     "Priority": 50,
@@ -168,7 +168,7 @@
     "GoLocation": { "x": 2899, "y": 676, "z": 54 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "the City of Montor",
     "Priority": 50,
@@ -176,7 +176,7 @@
     "GoLocation": { "x": 3212, "y": 2610, "z": 1 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "the Town of Moon",
     "Priority": 50,
@@ -184,7 +184,7 @@
     "GoLocation": { "x": 806, "y": 728, "z": 0 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "the Town of Mountain Crest",
     "Priority": 50,
@@ -200,7 +200,7 @@
     "GoLocation": { "x": 1833, "y": 756, "z": 0 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "the Undercity of Umbra",
     "Priority": 70,
@@ -208,7 +208,7 @@
     "GoLocation": { "x": 2659, "y": 3219, "z": 0 }
   },
   {
-    "$type": "TownRegion",
+    "$type": "GreetingTownRegion",
     "Map": "Sosaria",
     "Name": "the Village of Yew",
     "Priority": 50,
@@ -224,21 +224,21 @@
     "GoLocation": { "x": 4478, "y": 1837, "z": 0 }
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Ancient Pyramid",
     "Priority": 50,
     "Area": [{ "x1": 5192, "y1": 422, "x2": 5432, "y2": 968 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "Dungeon Exodus",
     "Priority": 50,
     "Area": [{ "x1": 5816, "y1": 537, "x2": 6055, "y2": 720 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Cave of Banished Mages",
     "Priority": 50,
@@ -246,7 +246,7 @@
     "GoLocation": { "x": 237, "y": 3498, "z": 0 }
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "Dungeon Clues",
     "Priority": 50,
@@ -257,7 +257,7 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "Dardin's Pit",
     "Priority": 50,
@@ -267,14 +267,14 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "Dungeon Doom",
     "Priority": 50,
     "Area": [{ "x1": 5187, "y1": 35, "x2": 5441, "y2": 391 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Fires of Hell",
     "Priority": 50,
@@ -285,7 +285,7 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "SavagedEmpire",
     "Name": "the Forgotten Halls",
     "Priority": 50,
@@ -296,7 +296,7 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Frozen Dungeon",
     "Priority": 50,
@@ -307,14 +307,14 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "Frostwall Cavern",
     "Priority": 50,
     "Area": [{ "x1": 2856, "y1": 3204, "x2": 3081, "y2": 3403 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Mines of Morinia",
     "Priority": 50,
@@ -325,21 +325,21 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Montor Sewer",
     "Priority": 50,
     "Area": [{ "x1": 6448, "y1": 892, "x2": 6625, "y2": 1033 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Perinian Depths",
     "Priority": 50,
     "Area": [{ "x1": 5824, "y1": 32, "x2": 6047, "y2": 507 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Dungeon of Time Awaits",
     "Priority": 50,
@@ -350,70 +350,70 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Time Lord Chamber",
     "Priority": 50,
     "Area": [{ "x1": 4724, "y1": 3282, "x2": 4886, "y2": 3431 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Accursed Maze",
     "Priority": 50,
     "Area": [{ "x1": 5830, "y1": 751, "x2": 6018, "y2": 868 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Chamber of Bane",
     "Priority": 50,
     "Area": [{ "x1": 2662, "y1": 3936, "x2": 2840, "y2": 4054 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "Coldhall Depths",
     "Priority": 50,
     "Area": [{ "x1": 2606, "y1": 3452, "x2": 2757, "y2": 3581 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Dark Sanctum",
     "Priority": 50,
     "Area": [{ "x1": 2371, "y1": 3217, "x2": 2505, "y2": 3333 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Forgotten Tombs",
     "Priority": 50,
     "Area": [{ "x1": 2359, "y1": 3460, "x2": 2501, "y2": 3590 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Magma Vaults",
     "Priority": 50,
     "Area": [{ "x1": 2313, "y1": 3657, "x2": 2496, "y2": 3827 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Dark Tombs",
     "Priority": 50,
     "Area": [{ "x1": 6989, "y1": 5, "x2": 7147, "y2": 156 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Shrouded Grave",
     "Priority": 50,
     "Area": [{ "x1": 2316, "y1": 3907, "x2": 2518, "y2": 4073 }]
   },
   {
-    "$type": "BaseRegion",
+    "$type": "WildernessRegion",
     "Map": "Sosaria",
     "Name": "the Orc Fort",
     "Priority": 50,
@@ -423,21 +423,21 @@
     ]
   },
   {
-    "$type": "BaseRegion",
+    "$type": "WildernessRegion",
     "Map": "Sosaria",
     "Name": "the Ratman Fort",
     "Priority": 50,
     "Area": [{ "x1": 3384, "y1": 1157, "x2": 3421, "y2": 1194 }]
   },
   {
-    "$type": "BaseRegion",
+    "$type": "WildernessRegion",
     "Map": "Sosaria",
     "Name": "the Ratman Ruins",
     "Priority": 50,
     "Area": [{ "x1": 1280, "y1": 1438, "x2": 1304, "y2": 1460 }]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Ratmen Lair",
     "Priority": 50,
