@@ -16,7 +16,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x482, $"You have entered the depths of {this.Name}.");
+                m.SendMessage(0x482, $"You have entered {this.Name}.");
             }
         }
 

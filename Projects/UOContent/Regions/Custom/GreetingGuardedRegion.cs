@@ -16,7 +16,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x59, $"You have entered the protected zone of {this.Name}.");
+                m.SendMessage(0x59, $"You have entered {this.Name}.");
             }
         }
 
@@ -26,7 +26,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x59, $"You are no longer under the protection of {this.Name}.");
+                m.SendMessage(0x59, $"You have left {this.Name}.");
             }
         }
     }

@@ -16,7 +16,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x47E, $"The air grows damp as you enter {this.Name}.");
+                m.SendMessage(0x47E, $"You have entered {this.Name}.");
             }
         }
 
@@ -26,7 +26,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x47E, $"You emerge from the darkness of {this.Name}.");
+                m.SendMessage(0x47E, $"You have left {this.Name}.");
             }
         }
     }

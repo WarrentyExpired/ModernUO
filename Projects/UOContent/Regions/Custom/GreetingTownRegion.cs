@@ -16,7 +16,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x35, $"Welcome to the city of {this.Name}.");
+                m.SendMessage(0x35, $"Welcome to {this.Name}.");
             }
         }
 
@@ -26,7 +26,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x35, $"You have left the city of {this.Name}.");
+                m.SendMessage(0x35, $"You have left {this.Name}.");
             }
         }
     }

@@ -16,7 +16,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x3F, $"You have entered the wilderness of {this.Name}.");
+                m.SendMessage(0x3F, $"You have entered {this.Name}.");
             }
         }
 

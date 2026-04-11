@@ -441,7 +441,7 @@
     ]
   },
   {
-    "$type": "Graveyard",
+    "$type": "GraveyardRegion",
     "Map": "Sosaria",
     "Name": "the Church of the Divine",
     "Priority": 65,
@@ -1171,7 +1171,7 @@
     "Area": [{ "x1": 1782, "y1": 2265, "x2": 1827, "y2": 2294 }]
   },
   {
-    "$type": "Graveyard",
+    "$type": "GraveyardRegion",
     "Map": "Sosaria",
     "Name": "the Graveyard",
     "Priority": 50,
@@ -1252,7 +1252,7 @@
     "Name": "the Dark Fortress",
     "Priority": 50,
     "Area": [
-      { "x1": 3777, "y1": 1846, "x2": 3789, "y2": 1860 }
+      { "x1": 3777, "y1": 1846, "x2": 3789, "y2": 1860 },
       { "x1": 3785, "y1": 1846, "x2": 3903, "y2": 1878 }
     ]
   },
@@ -1283,13 +1283,6 @@
     "Name": "the Lich Tower",
     "Priority": 50,
     "Area": [{ "x1": 3489, "y1": 2264, "x2": 3530, "y2": 2302}]
-  },
-  {
-    "$type": "WildernessRegion",
-    "Map": "Sosaria",
-    "Name": "",
-    "Priority": 50,
-    "Area": [{ "x1": , "y1": , "x2": , "y2": }]
   },
   {
     "$type": "WildernessRegion",

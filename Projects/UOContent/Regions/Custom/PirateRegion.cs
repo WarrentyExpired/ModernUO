@@ -16,7 +16,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x22, $"Warning: You have entered the territory of {this.Name}!");
+                m.SendMessage(0x22, $"You have entered {this.Name}!");
             }
         }
 
@@ -26,7 +26,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x22, $"The sails of {this.Name} fade into the distance.");
+                m.SendMessage(0x22, $"You have left {this.Name}.");
             }
         }
 

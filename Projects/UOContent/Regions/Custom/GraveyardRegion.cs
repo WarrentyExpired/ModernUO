@@ -16,7 +16,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x482, $"A cold chill runs down your spine as you enter {this.Name}...");
+                m.SendMessage(0x482, $"You have entered {this.Name}.");
             }
         }
 
@@ -26,7 +26,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x482, $"the air feels warmer as you leave the graves behind.");
+                m.SendMessage(0x482, $"You have left {this.Name}.");
             }
         }
 
