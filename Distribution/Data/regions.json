@@ -1008,6 +1008,302 @@
     ]
   },
   {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Lodoria Sewers",
+    "Priority": 50,
+    "Area": [{ "x1": 6027, "y1": 1425, "x2": 6130, "y2": 1513 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Lizadman Cave",
+    "Priority": 50,
+    "Area": [{ "x1": 537, "y1": 509, "x2": 5517, "y2": 643 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Ratmen Cave",
+    "Priority": 50,
+    "Area": [{ "x1": 5801, "y1": 319, "x2": 5864, "y2": 385 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Crypt",
+    "Priority": 50,
+    "Area": [{ "x1": 5222, "y1": 3057, "x2": 5255, "y2": 3129 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "Dungeon Wrong",
+    "Priority": 50,
+    "Area": [
+      { "x1": 5379, "y1": 1283, "x2": 5627, "y2": 1509 },
+      { "x1": 5639, "y1": 508, "x2": 5888, "y2": 688 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Volcanic Cave",
+    "Priority": 50,
+    "Area": [{ "x1": 5830, "y1": 3361, "x2": 6040, "y2": 3541 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "Terathan Keep",
+    "Priority": 50,
+    "Area": [{ "x1": 5125, "y1": 1536, "x2": 5377, "y2": 1782 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "Dungeon Shame",
+    "Priority": 50,
+    "Area": [
+      { "x1": 5628, "y1": 1, "x2": 5893, "y2": 126 },
+      { "x1": 5375, "y1": 2, "x2": 5634, "y2": 255 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Ice Fiend Lair",
+    "Priority": 50,
+    "Area": [{ "x1": 5653, "y1": 300, "x2": 5708, "y2": 337 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Frozen Hells",
+    "Priority": 50,
+    "Area": [{ "x1": 5665, "y1": 132, "x2": 5889, "y2": 263 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "Dungeon Hythloth",
+    "Priority": 50,
+    "Area": [
+      { "x1": 5902, "y1": 14, "x2": 6140, "y2": 241 },
+      { "x1": 5941, "y1": 335, "x2": 5968, "y2": 366 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Mind Flayer City",
+    "Priority": 50,
+    "Area": [{ "x1": 5122, "y1": 7, "x2": 5371, "y2": 254 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the City of Embers",
+    "Priority": 50,
+    "Area": [{ "x1": 5632, "y1": 1282, "x2": 5890, "y2": 1524 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "Dungeon Destard",
+    "Priority": 100,
+    "Area": [
+      { "x1": 6764, "y1": 463, "x2": 6931, "y2": 621 },
+      { "x1": 5123, "y1": 770, "x2": 5369, "y2": 1025 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "Dugeon Despise",
+    "Priority": 50,
+    "Area": [
+      { "x1": 5377, "y1": 646, "x2": 5531, "y2": 777 },
+      { "x1": 5374, "y1": 768, "x2": 5629, "y2": 1023 },
+      { "x1": 5145, "y1": 2393, "x2": 5346, "y2": 2674 },
+      { "x1": 5370, "y1": 2397, "x2": 5549, "y2": 2600 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "Dungeon Deceit",
+    "Priority": 50,
+    "Area": [{ "x1": 5125, "y1": 525, "x2": 5353, "y2": 768 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "Dungeon Covetous",
+    "Priority": 50,
+    "Area": [
+      { "x1": 5377, "y1": 1843, "x2": 5510, "y2": 1966 },
+      { "x1": 5376, "y1": 1947, "x2": 5622, "y2": 2043 },
+      { "x1": 5436, "y1": 2080, "x2": 5574, "y2": 2165 },
+      { "x1": 5559, "y1": 2468, "x2": 5870, "y2": 2592 },
+      { "x1": 5273, "y1": 2696, "x2": 5324, "y2": 2749 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Lodoria Catacombs",
+    "Priority": 50,
+    "Area": [
+      { "x1": 5531, "y1": 1821, "x2": 5628, "y2": 1931 },
+      { "x1": 5398, "y1": 1788, "x2": 5632, "y2": 1839 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Halls of Undermountain",
+    "Priority": 50,
+    "Area": [{ "x1": 5205, "y1": 291, "x2": 5441, "y2": 509 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Vault of the Black Knight",
+    "Priority": 50,
+    "Area": [{ "x1": 6181, "y1": 21, "x2": 6672, "y2": 604 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Crypts of Dracula",
+    "Priority": 50,
+    "Area": [{ "x1": 5724, "y1": 2668, "x2": 5845, "y2": 2857 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "Stonegate Castle",
+    "Priority": 20,
+    "Area": [{ "x1": 5979, "y1": 2243, "x2": 7001, "y2": 2049 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Castle of Dracula",
+    "Priority": 50,
+    "Area": [{ "x1": 6744, "y1": 1396, "x2": 7104, "y2": 1750 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Montor Sewers",
+    "Priority": 50,
+    "Area": [{ "x1": 6448, "y1": 892, "x2": 6625, "y2": 1033 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Depths of Carthax Lake",
+    "Priority": 50,
+    "Area": [
+      { "x1": 5732, "y1": 1582, "x2": 6133, "y2": 1908 },
+      { "x1": 5157, "y1": 1837, "x2": 5310, "y2": 2141 },
+      { "x1": 5154, "y1": 2192, "x2": 5529, "y2": 2378 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "Morgaelin's Inferno",
+    "Priority": 50,
+    "Area": [
+      { "x1": 6883, "y1": 529, "x2": 7143, "y2": 875 },
+      { "x1": 6662, "y1": 909, "x2": 7022, "y2": 1353 },
+      { "x1": 7017, "y1": 958, "x2": 7138, "y2": 1192 },
+      { "x1": 5990, "y1": 2092, "x2": 6079, "y2": 2238 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Zealan Tombs",
+    "Priority": 50,
+    "Area": [
+      { "x1": 6246, "y1": 640, "x2": 6846, "y2": 842 },
+      { "x1": 5966, "y1": 861, "x2": 6012, "y2": 917 },
+      { "x1": 5423, "y1": 1545, "x2": 5708, "y2": 1785 },
+      { "x1": 6679, "y1": 2239, "x2": 6916, "y2": 2446 },
+      { "x1": 6924, "y1": 2218, "x2": 7125, "y2": 2561 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Temple of Osirus",
+    "Priority": 50,
+    "Area": [
+      { "x1": 6043, "y1": 3504, "x2": 6216, "y2": 3730 },
+      { "x1": 6020, "y1": 3741, "x2": 6169, "y2": 4073 },
+      { "x1": 6190, "y1": 3778, "x2": 6320, "y2": 3969 },
+      { "x1": 6053, "y1": 879, "x2": 6201, "y2": 1040 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "Argentrock Castle",
+    "Priority": 50,
+    "Area": [
+      { "x1": 5929, "y1": 429, "x2": 6170, "y2": 803 },
+      { "x1": 5783, "y1": 690, "x2": 5911, "y2": 958 },
+      { "x1": 6194, "y1": 622, "x2": 6298, "y2": 822 },
+      { "x1": 6499, "y1": 1043, "x2": 6539, "y2": 1088 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Daemon's Crag",
+    "Priority": 60,
+    "Area": [
+      { "x1": 5866, "y1": 2080, "x2": 5951, "y2": 2232 },
+      { "x1": 6135, "y1": 1954, "x2": 6440, "y2": 2216 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Hall of the Mountain King",
+    "Priority": 50,
+    "Area": [
+      { "x1": 6747, "y1": 1758, "x2": 7121, "y2": 1997 },
+      { "x1": 6472, "y1": 2053, "x2": 6534, "y2": 2121 },
+      { "x1": 6956, "y1": 1022, "x2": 7125, "y2": 2164 },
+      { "x1": 6227, "y1": 882, "x2": 6402, "y2": 1046 },
+      { "x1": 6354, "y1": 1165, "x2": 6550, "y2": 1362 },
+      { "x1": 6335, "y1": 1187, "x2": 6371, "y2": 1222 },
+      { "x1": 6303, "y1": 1206, "x2": 6412, "y2": 1357 },
+      { "x1": 5155, "y1": 2702, "x2": 5242, "y2": 2814 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Lodor",
+    "Name": "the Sanctum of Saltmarsh",
+    "Priority": 80,
+    "Area": [
+      { "x1": 5683, "y1": 1963, "x2": 5825, "y2": 2120 },
+      { "x1": 5909, "y1": 1943, "x2": 6060, "y2": 2025 },
+      { "x1": 6554, "y1": 2044, "x2": 6643, "y2": 2144 },
+      { "x1": 6241, "y1": 1094, "x2": 6402, "y2": 1157 },
+      { "x1": 6067, "y1": 1124, "x2": 6285, "y2": 1387 },
+      { "x1": 6278, "y1": 1147, "x2": 6329, "y2": 1195 },
+      { "x1": 6293, "y1": 1094, "x2": 6338, "y2": 1189 },
+      { "x1": 6319, "y1": 1100, "x2": 6397, "y2": 1174 }
+    ]
+  },
+  {
     "$type": "CaveRegion",
     "Map": "Sosaria",
     "Name": "the British Family Tomb",
@@ -1491,6 +1787,97 @@
     "Name": "the Waters of the Jewel of the Deep",
     "Priority": 60,
     "Area": [{ "x1": 1782, "y1": 2265, "x2": 1827, "y2": 2294 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Mad Wolf",
+    "Priority": 50,
+    "Area": [{ "x1": 4646, "y1": 3677, "x2": 4730, "y2": 3761 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Shameful Captain",
+    "Priority": 50,
+    "Area": [{ "x1": 3463, "y1": 3779, "x2": 3547, "y2": 3863 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Angry Hangman",
+    "Priority": 50,
+    "Area": [{ "x1": 3385, "y1": 2773, "x2": 3469, "y2": 2857 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Dark Treasure",
+    "Priority": 50,
+    "Area": [{ "x1": 2264, "y1": 1677, "x2": 2348, "y2": 1761 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Privateer's Greed",
+    "Priority": 50,
+    "Area": [{ "x1": 4384, "y1": 2085, "x2": 4468, "y2": 2169 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Rage of the Sea",
+    "Priority": 50,
+    "Area": [{ "x1": 3256, "y1": 1933, "x2": 3340, "y2": 2017 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Screaming Serpent",
+    "Priority": 50,
+    "Area": [{ "x1": 4713, "y1": 1133, "x2": 4797, "y2": 1217 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Hellish Eel",
+    "Priority": 50,
+    "Area": [{ "x1": 4040, "y1": 253, "x2": 4124, "y2": 337 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Darkened Sea",
+    "Priority": 50,
+    "Area": { "x1": 1744, "y1": 643, "x2": 1828, "y2": 727 }
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Poisoned Blade",
+    "Priority": 50,
+    "Area": [{ "x1": 240, "y1": 342, "x2": 324, "y2": 426 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Golden Sail",
+    "Priority": 50,
+    "Area": [{ "x1": 871, "y1": 1452, "x2": 955, "y2": 1535 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Barge of Poseidon",
+    "Priority": 50,
+    "Area": [{ "x1": 343, "y1": 2956, "x2": 427, "y2": 2956 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "Lodor",
+    "Name": "the Waters of the Demon's Scurvy",
+    "Priority": 50,
+    "Area": [{ "x1": 896, "y1": 3764, "x2": 980, "y2": 3848 }]
   },
   {
     "$type": "GraveyardRegion",
