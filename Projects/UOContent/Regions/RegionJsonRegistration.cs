@@ -69,5 +69,6 @@ public static class RegionJsonRegistration
         RegionJsonSerializer.Register<PirateRegion>();
         RegionJsonSerializer.Register<GreetingBaseRegion>();
         RegionJsonSerializer.Register<GreetingGuardedRegion>();
+        RegionJsonSerializer.Register<GreetingJailRegion>();
     }
 }

@@ -615,6 +615,30 @@
     "Area": [{ "x1": 1847, "y1": 2365, "x2": 1925, "y2": 2405 }]
   },
   {
+    "$type": "GreetingTownRegion",
+    "Map": "IslesDread",
+    "Name": "the Cimmeran Hold",
+    "Priority": 50,
+    "Area": [
+      { "x1": 379, "y1": 1202, "x2": 404, "y2": 1227 },
+      { "x1": 379, "y1": 1224, "x2": 393, "y2": 1265 },
+      { "x1": 340, "y1": 1249, "x2": 389, "y2": 1266 },
+      { "x1": 303, "y1": 1207, "x2": 350, "y2": 1253 },
+      { "x1": 244, "y1": 1148, "x2": 322, "y2": 1216 },
+      { "x1": 319, "y1": 1161, "x2": 350, "y2": 1189 },
+      { "x1": 427, "y1": 1020, "x2": 449, "y2": 1040 },
+      { "x1": 248, "y1": 1080, "x2": 299, "y2": 1115 },
+      { "x1": 293, "y1": 1028, "x2": 444, "y2": 1101 },
+      { "x1": 321, "y1": 1097, "x2": 444, "y2": 1151 },
+      { "x1": 390, "y1": 1146, "x2": 445, "y2": 1170 },
+      { "x1": 330, "y1": 1142, "x2": 337, "y2": 1168 },
+      { "x1": 318, "y1": 1223, "x2": 346, "y2": 1251 },
+      { "x1": 336, "y1": 1217, "x2": 393, "y2": 1265 },
+      { "x1": 304, "y1": 1164, "x2": 418, "y2": 1226 },
+      { "x1": 244, "y1": 1079, "x2": 399, "y2": 1171 }
+    ]
+  },
+  {
     "$type": "GreetingBaseRegion",
     "Map": "Lodor",
     "Name": "the Chamber of Tyball",
@@ -660,6 +684,44 @@
       { "x1": 2297, "y1": 2822, "x2": 2314, "y2": 2836 },
       { "x1": 2311, "y1": 2808, "x2": 2326, "y2": 2872 },
       { "x1": 2321, "y1": 2832, "x2": 2337, "y2": 2872 }
+    ]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Lodor",
+    "Name": "the Ethereal Plane",
+    "Priority": 50,
+    "Area": [{ "x1": 5906, "y1": 3887, "x2": 6021, "y2": 3999 }]
+  },
+  {
+    "$type": "GreetingGuardedRegion",
+    "Map": "Lodor",
+    "Name": "Nightwood Fort",
+    "Priority": 100,
+    "Area": [
+      { "x1": 6652, "y1": 3090, "x2": 6669, "y2": 3139 },
+      { "x1": 6652, "y1": 3090, "x2": 6675, "y2": 3116 },
+      { "x1": 6652, "y1": 3090, "x2": 6679, "y2": 3111 },
+      { "x1": 6652, "y1": 3090, "x2": 6688, "y2": 3109 },
+      { "x1": 6687, "y1": 3084, "x2": 6699, "y2": 3099 },
+      { "x1": 6677, "y1": 3085, "x2": 6682, "y2": 3091 }
+    ]
+  },
+  {
+    "$type": "GreetingGuardedRegion",
+    "Map": "Lodor",
+    "Name": "the Ravendark Tomb",
+    "Priority": 100,
+    "Area": [{ "x1": 5233, "y1": 3642, "x2": 5289, "y2": 3694 }]
+  },
+  {
+    "$type": "GreetingGuardedRegion",
+    "Map": "IslesDread",
+    "Name": "the Forgotten Lighthouse",
+    "Priority": 50,
+    "Area": [
+      { "x1": 702, "y1": 476, "x2": 736, "y2": 540 },
+      { "x1": 673, "y1": 506, "x2": 736, "y2": 540 }
     ]
   },
   {
@@ -1880,6 +1942,69 @@
     "Area": [{ "x1": 896, "y1": 3764, "x2": 980, "y2": 3848 }]
   },
   {
+    "$type": "PirateRegion",
+    "Map": "IslesDread",
+    "Name": "the Waters of the Screaming Mermaid",
+    "Priority": 50,
+    "Area": [{ "x1": 9, "y1": 183, "x2": 93, "y2": 267 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "IslesDread",
+    "Name": "the Waters of the Siren's Blood",
+    "Priority": 50,
+    "Area": [{ "x1": 971, "y1": 760, "x2": 1005, "y2": 819 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "IslesDread",
+    "Name": "the Waters of the Doom of the Isles",
+    "Priority": 50,
+    "Area": [{ "x1": 422, "y1": 10, "x2": 506, "y2": 94 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "IslesDread",
+    "Name": "the Waters of the Fearful Eye of Neptune",
+    "Priority": 50,
+    "Area": [{ "x1": 918, "y1": 92, "x2": 1002, "y2": 176 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "IslesDread",
+    "Name": "the Waters of The Sea's Wrath",
+    "Priority": 50,
+    "Area": [{ "x1": 575, "y1": 347, "x2": 659, "y2": 431 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "IslesDread",
+    "Name": "the Waters of the Plunderer's Skull",
+    "Priority": 50,
+    "Area": [{ "x1": 1232, "y1": 530, "x2": 1316, "y2": 614 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "IslesDread",
+    "Name": "the Waters of the Maiden's Anchor",
+    "Priority": 50,
+    "Area": [{ "x1": 390, "y1": 789, "x2": 474, "y2": 873 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "IslesDread",
+    "Name": "the Waters of the Bloody Wave",
+    "Priority": 50,
+    "Area": [{ "x1": 78, "y1": 1315, "x2": 162, "y2": 1399 }]
+  },
+  {
+    "$type": "PirateRegion",
+    "Map": "IslesDread",
+    "Name": "the Waters of the Dreams of Gold",
+    "Priority": 50,
+    "Area": [{ "x1": 625, "y1": 1266, "x2": 709, "y2": 1350 }]
+  },
+  {
     "$type": "GraveyardRegion",
     "Map": "Sosaria",
     "Name": "the Graveyard",
@@ -1894,6 +2019,18 @@
       { "x1": 3236, "y1": 2784, "x2": 3269, "y2": 2824 },
       { "x1": 3062, "y1": 1013, "x2": 3095, "y2": 1036 },
       { "x1": 4858, "y1": 2796, "x2": 4886, "y2": 2821 }
+    ]
+  },
+  {
+    "$type": "GraveyardRegion",
+    "Map": "Lodor",
+    "Priority": 50,
+    "Name": "the Graveyard",
+    "Area": [
+      { "x1": 2129, "y1": 2681, "x2": 2153, "y2": 2700 },
+      { "x1": 2690, "y1": 2151, "x2": 2710, "y2": 2176 },
+      { "x1": 4146, "y1": 2936, "x2": 4178, "y2": 2962 },
+      { "x1": 4346, "y1": 1724, "x2": 4384, "y2": 1755 }
     ]
   },
   {
@@ -2076,5 +2213,97 @@
     "Name": "the Altar of Golden Rangers",
     "Priority": 80,
     "Area": [{ "x1": 5202, "y1": 1300, "x2": 5207, "y2": 1306 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Lodor",
+    "Name": "the Great Dwarven Forge",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2969, "y1": 3456, "x2": 2976, "y2": 3480 },
+      { "x1": 2962, "y1": 3451, "x2": 2971, "y2": 3485 },
+      { "x1": 2941, "y1": 3453, "x2": 2948, "y2": 3460 },
+      { "x1": 2947, "y1": 3449, "x2": 2963, "y2": 3492 },
+      { "x1": 2925, "y1": 3465, "x2": 2938, "y2": 3484 },
+      { "x1": 2934, "y1": 3459, "x2": 2954, "y2": 3501 }
+    ]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Lodor",
+    "Name": "Ravendark Woods",
+    "Priority": 50,
+    "Area": [
+      { "x1": 6445, "y1": 3053, "x2": 7008, "y2": 3478 },
+      { "x1": 6537, "y1": 3450, "x2": 7002, "y2": 3907 }
+    ]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Lodor",
+    "Name": "the Village of Ravendark",
+    "Priority": 100,
+    "Area": [
+      { "x1": 6752, "y1": 3625, "x2": 6794, "y2": 3657 },
+      { "x1": 6744, "y1": 3644, "x2": 6853, "y2": 3732 },
+      { "x1": 6725, "y1": 3688, "x2": 6812, "y2": 3748 },
+      { "x1": 6700, "y1": 3735, "x2": 6798, "y2": 3773 },
+      { "x1": 6725, "y1": 3766, "x2": 6757, "y2": 3801 }
+    ]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Lodor",
+    "Name": "the Island of Dracula",
+    "Priority": 50,
+    "Area": [
+      { "x1": 490, "y1": 3570, "x2": 534, "y2": 3652 },
+      { "x1": 467, "y1": 3546, "x2": 495, "y2": 3663 },
+      { "x1": 464, "y1": 3651, "x2": 516, "y2": 3697 },
+      { "x1": 433, "y1": 3500, "x2": 472, "y2": 3700 },
+      { "x1": 297, "y1": 3473, "x2": 445, "y2": 3694 },
+      { "x1": 324, "y1": 3688, "x2": 572, "y2": 3800 },
+      { "x1": 455, "y1": 3796, "x2": 475, "y2": 3829 },
+      { "x1": 506, "y1": 3599, "x2": 549, "y2": 3638 }
+    ]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Lodor",
+    "Priority": 50,
+    "Name": "the Terathan Keep",
+    "Area": [{ "x1": 597, "y1": 2393, "x2": 622, "y2": 2417 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Lodor",
+    "Name": "the Ratmen Ruins",
+    "Priority": 50,
+    "Area": [{ "x1": 1541, "y1": 2254, "x2": 1561, "y2": 2255 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Lodor",
+    "Name": "the Island of Stonegate",
+    "Priority": 50,
+    "Area": [{ "x1": 1178, "y1": 219, "x2": 1576, "y2": 489 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "IslesDread",
+    "Name": "the Alter of the Blood God",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1146, "y1": 956, "x2": 1173, "y2": 990 },
+      { "x1": 1097, "y1": 991, "x2": 1151, "y2": 994 },
+      { "x1": 1111, "y1": 991, "x2": 1151, "y2": 1035 }
+    ]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "IslesDread",
+    "Name": "the Natives' Camp",
+    "Priority": 50,
+    "Area": [{ "x1": 105, "y1": 732, "x2": 136, "y2": 791 }]
   }
 ]
