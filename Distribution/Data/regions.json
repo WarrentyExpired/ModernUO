@@ -487,6 +487,182 @@
     "GoLocation": { "x": 4478, "y": 1837, "z": 0 }
   },
   {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "the Village of Whisper",
+    "Priority": 50,
+    "Area": [{ "x1": 800, "y1": 871, "x2": 922, "y2": 1004 }]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "the Town of Glacial Hills",
+    "Priority": 50,
+    "Area": [
+      { "x1": 3684, "y1": 245, "x2": 3747, "y2": 293 },
+      { "x1": 3671, "y1": 276, "x2": 3687, "y2": 291 },
+      { "x1": 3654, "y1": 286, "x2": 3678, "y2": 304 },
+      { "x1": 3644, "y1": 301, "x2": 3670, "y2": 326 },
+      { "x1": 3642, "y1": 324, "x2": 3672, "y2": 368 },
+      { "x1": 3612, "y1": 364, "x2": 3747, "y2": 478 }
+    ]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "the Village of Springvale",
+    "Priority": 50,
+    "Area": [
+      { "x1": 4136, "y1": 1400, "x2": 4197, "y2": 1499 },
+      { "x1": 4195, "y1": 1414, "x2": 4304, "y2": 1488 },
+      { "x1": 4235, "y1": 1382, "x2": 4311, "y2": 1472 },
+      { "x1": 4236, "y1": 1482, "x2": 4272, "y2": 1528 },
+      { "x1": 4286, "y1": 4286, "x2": 4300, "y2": 1498 }
+    ]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "the City of Elidor",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2875, "y1": 1221, "x2": 2986, "y2": 1246 },
+      { "x1": 2875, "y1": 1246, "x2": 2968, "y2": 1307 },
+      { "x1": 2875, "y1": 1307, "x2": 2979, "y2": 1335 },
+      { "x1": 2856, "y1": 1328, "x2": 2998, "y2": 1470 },
+      { "x1": 2941, "y1": 1259, "x2": 2989, "y2": 1289 },
+      { "x1": 2966, "y1": 1343, "x2": 3019, "y2": 1403 }
+    ]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "the Village of Islegem",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2803, "y1": 2199, "x2": 2864, "y2": 2275 },
+      { "x1": 2762, "y1": 2257, "x2": 2811, "y2": 2271 },
+      { "x1": 2756, "y1": 2248, "x2": 2770, "y2": 2260 },
+      { "x1": 2727, "y1": 2239, "x2": 2759, "y2": 2265 }
+    ]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "Greensky Village",
+    "Priority": 50,
+    "Area": [{ "x1": 4196, "y1": 2957, "x2": 4266, "y2": 3033 }]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "the Port of Dusk",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2640, "y1": 3146, "x2": 2744, "y2": 3213 },
+      { "x1": 2587, "y1": 3170, "x2": 2642, "y2": 3282 },
+      { "x1": 2636, "y1": 3207, "x2": 2688, "y2": 3257 }
+    ]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "the Port of Starguide",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2297, "y1": 3121, "x2": 2386, "y2": 3188 },
+      { "x1": 2321, "y1": 3100, "x2": 2346, "y2": 3136 },
+      { "x1": 2366, "y1": 3149, "x2": 2401, "y2": 3170 },
+      { "x1": 2295, "y1": 3158, "x2": 2380, "y2": 3202 }
+    ]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "the Village of Portshine",
+    "Priority": 50,
+    "Area": [
+      { "x1": 804, "y1": 1987, "x2": 894, "y2": 2046 },
+      { "x1": 830, "y1": 1976, "x2": 892, "y2": 2024 },
+      { "x1": 869, "y1": 2018, "x2": 901, "y2": 2034 }
+    ]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "the Castle of Knowledge",
+    "Priority": 55,
+    "Area": [{ "x1": 1755, "y1": 2190, "x2": 1800, "y2": 2238 }]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "the City of Lodoria",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2040, "y1": 2125, "x2": 2167, "y2": 2203 },
+      { "x1": 2085, "y1": 2196, "x2": 2115, "y2": 2255 },
+      { "x1": 1957, "y1": 2147, "x2": 2100, "y2": 2263 },
+      { "x1": 1799, "y1": 2118, "x2": 1960, "y2": 2256 },
+      { "x1": 1829, "y1": 2252, "x2": 2013, "y2": 2294 }
+    ]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Lodor",
+    "Name": "the Lodoria Cemetery",
+    "Priority": 50,
+    "Area": [{ "x1": 1847, "y1": 2365, "x2": 1925, "y2": 2405 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Lodor",
+    "Name": "the Chamber of Tyball",
+    "Priority": 50,
+    "Area": [{ "x1": 6037, "y1": 332, "x2": 6090, "y2": 376 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Lodor",
+    "Name": "the Obsidian Tower",
+    "Priority": 50,
+    "Area": [{ "x1": 5393, "y1": 1140, "x2": 5434, "y2": 1180 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Lodor",
+    "Name": "Kraken Reef Docks",
+    "Priority": 100,
+    "Area": [{ "x1": 4655, "y1": 3077, "x2": 4890, "y2": 3312 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "Barnacled Cavern",
+    "Priority": 100,
+    "Area": [{ "x1": 5581, "y1": 3798, "x2": 5818, "y2": 4089 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Kraken Eye Cave",
+    "Priority": 100,
+    "Area": [{ "x1": 5420, "y1": 4011, "x2": 5533, "y2": 4073 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "Lodor",
+    "Name": "the Lankhmar Lighthouse",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2274, "y1": 2840, "x2": 2290, "y2": 2872 },
+      { "x1": 2282, "y1": 2833, "x2": 2299, "y2": 2872 },
+      { "x1": 2297, "y1": 2822, "x2": 2314, "y2": 2836 },
+      { "x1": 2311, "y1": 2808, "x2": 2326, "y2": 2872 },
+      { "x1": 2321, "y1": 2832, "x2": 2337, "y2": 2872 }
+    ]
+  },
+  {
     "$type": "GreetingDungeonRegion",
     "Map": "Sosaria",
     "Name": "the Ancient Pyramid",
@@ -1073,6 +1249,152 @@
     "Area": [{ "x1": 6701, "y1": 693, "x2": 6774, "y2": 782 }]
   },
   {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Undersea Pass",
+    "Priority": 50,
+    "Area": [
+      { "x1": 6272, "y1": 3595, "x2": 6460, "y2": 3982 },
+      { "x1": 6251, "y1": 3231, "x2": 6384, "y2": 3601 }
+    ]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Ancient Elven Mines",
+    "Priority": 50,
+    "Area": [{ "x1": 6807, "y1": 2614, "x2": 6986, "y2": 2769 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "Craghole Cavern",
+    "Priority": 65,
+    "Area": [{ "x1": 5800, "y1": 3635, "x2": 5899, "y2": 3705 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Lodoria Mine",
+    "Priority": 65,
+    "Area": [{ "x1": 5668, "y1": 3609, "x2": 5784, "y2": 3807 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Whispering Cavern",
+    "Priority": 65,
+    "Area": [{ "x1": 5664, "y1": 3684, "x2": 5780, "y2": 3785 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "Dusklight Mine",
+    "Priority": 65,
+    "Area": [{ "x1": 5340, "y1": 3719, "x2": 5471, "y2": 3807 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Old Minotaur Caves",
+    "Priority": 65,
+    "Area": [{ "x1": 5222, "y1": 3825, "x2": 5478, "y2": 3963 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Lost Dwarven Mines",
+    "Priority": 65,
+    "Area": [{ "x1": 5293, "y1": 3517, "x2": 5450, "y2": 3655 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Ancient Dwarf Mines",
+    "Priority": 65,
+    "Area": [{ "x1": 5568, "y1": 3375, "x2": 5752, "y2": 3541 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Thunderous Hall Cavern",
+    "Priority": 65,
+    "Area": [{ "x1": 5209, "y1": 3143, "x2": 5452, "y2": 3418 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the One Eyed Tunnel",
+    "Priority": 65,
+    "Area": [{ "x1": 5558, "y1": 3172, "x2": 5642, "y2": 3276 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Seaside Cavern",
+    "Priority": 65,
+    "Area": [{ "x1": 5648, "y1": 3149, "x2": 5747, "y2": 3219 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Giant Hold Cave",
+    "Priority": 65,
+    "Area": [{ "x1": 5898, "y1": 3175, "x2": 6130, "y2": 3334 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Windchill Cavern",
+    "Priority": 65,
+    "Area": [{ "x1": 5989, "y1": 2965, "x2": 6094, "y2": 3031 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Rockfall Grotto",
+    "Priority": 65,
+    "Area": [{ "x1": 5808, "y1": 3004, "x2": 5939, "y2": 3081 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Ogredug Grotto",
+    "Priority": 65,
+    "Area": [{ "x1": 5724, "y1": 2953, "x2": 5841, "y2": 3000 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Spingvale Mine",
+    "Priority": 65,
+    "Area": [{ "x1": 5189, "y1": 2975, "x2": 5300, "y2": 3048 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Lost Canyon Cave",
+    "Priority": 65,
+    "Area": [{ "x1": 5446, "y1": 2942, "x2": 5514, "y2": 2994 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Oasis Cave",
+    "Priority": 65,
+    "Area": [
+      { "x1": 5312, "y1": 2914, "x2": 5410, "y2": 3004 },
+      { "x1": 5283, "y1": 2922, "x2": 5347, "y2": 2966 }
+    ]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "Lodor",
+    "Name": "the Conjurer's Cave",
+    "Priority": 65,
+    "Area": [{ "x1": 5222, "y1": 2835, "x2": 5281, "y2": 2903 }]
+  },
+  {
     "$type": "PirateRegion",
     "Map": "Sosaria",
     "Name": "the Waters of the Blade of Neptune",
@@ -1230,7 +1552,7 @@
     "Map": "Sosaria",
     "Name": "the Ruins of Skara Brae",
     "Priority": 50,
-    "Area": [{ "x1": 4755, "y1": 2757, "x2": 4803, "y2": 2815}]
+    "Area": [{ "x1": 4755, "y1": 2757, "x2": 4803, "y2": 2815 }]
   },
   {
     "$type": "WildernessRegion",
@@ -1261,7 +1583,7 @@
     "Map": "Sosaria",
     "Name": "Castle Exodus",
     "Priority": 50,
-    "Area": [{ "x1": 852, "y1": 2647, "x2": 901, "y2": 2699}]
+    "Area": [{ "x1": 852, "y1": 2647, "x2": 901, "y2": 2699 }]
   },
   {
     "$type": "WildernessRegion",
@@ -1282,7 +1604,7 @@
     "Map": "Sosaria",
     "Name": "the Lich Tower",
     "Priority": 50,
-    "Area": [{ "x1": 3489, "y1": 2264, "x2": 3530, "y2": 2302}]
+    "Area": [{ "x1": 3489, "y1": 2264, "x2": 3530, "y2": 2302 }]
   },
   {
     "$type": "WildernessRegion",
@@ -1328,7 +1650,7 @@
     "Map": "Sosaria",
     "Name": "Shrine of Dexterity",
     "Priority": 80,
-    "Area": [{ "x1":5741 , "y1": 3879, "x2": 5750, "y2": 3888}]
+    "Area": [{ "x1": 5741, "y1": 3879, "x2": 5750, "y2": 3888 }]
   },
   {
     "$type": "WildernessRegion",
@@ -1339,5 +1661,33 @@
       { "x1": 6632, "y1": 1597, "x2": 6672, "y2": 1615 },
       { "x1": 6632, "y1": 1547, "x2": 1598, "y2": 1598 }
     ]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Lodor",
+    "Name": "the Great Forge of Ice",
+    "Priority": 65,
+    "Area": [{ "x1": 3971, "y1": 728, "x2": 3989, "y2": 746 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Lodor",
+    "Name": "the Ranger Outpost",
+    "Priority": 50,
+    "Area": [{ "x1": 5157, "y1": 1095, "x2": 5296, "y2": 1401 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Lodor",
+    "Name": "the Glowing Pond",
+    "Priority": 80,
+    "Area": [{ "x1": 5216, "y1": 1330, "x2": 5239, "y2": 1350 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Lodor",
+    "Name": "the Altar of Golden Rangers",
+    "Priority": 80,
+    "Area": [{ "x1": 5202, "y1": 1300, "x2": 5207, "y2": 1306 }]
   }
 ]
