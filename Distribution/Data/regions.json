@@ -160,6 +160,20 @@
   },
   {
     "$type": "GreetingBaseRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Tower of Modain",
+    "Priority": 50,
+    "Area": [{ "x1": 52, "y1": 2885, "x2": 74, "y2": 2909 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Crypt of Morphius",
+    "Priority": 50,
+    "Area": [{ "x1": 111, "y1": 2932, "x2": 137, "y2": 2958 }]
+  },
+  {
+    "$type": "GreetingBaseRegion",
     "Map": "Sosaria",
     "Name": "the Crash Site",
     "Priority": 100,
@@ -716,6 +730,39 @@
     ]
   },
   {
+    "$type": "GreetingTownRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Village of Barako",
+    "Priority": 50,
+    "Area": [
+      { "x1": 138, "y1": 1649, "x2": 314, "y2": 1764 },
+      { "x1": 142, "y1": 1724, "x2": 288, "y2": 1788 },
+      { "x1": 253, "y1": 1633, "x2": 328, "y2": 1708 }
+    ]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Village of Kurak",
+    "Priority": 50,
+    "Area": [
+      { "x1": 667, "y1": 818, "x2": 849, "y2": 1010 },
+      { "x1": 840, "y1": 933, "x2": 874, "y2": 969 },
+      { "x1": 821, "y1": 927, "x2": 853, "y2": 980 }
+    ]
+  },
+  {
+    "$type": "GreetingTownRegion",
+    "Map": "Underworld",
+    "Name": "the Fort of Tenebrae",
+    "Priority": 50,
+    "Area": [
+      { "x1": 706, "y1": 349, "x2": 778, "y2": 372 },
+      { "x1": 706, "y1": 349, "x2": 771, "y2": 338 },
+      { "x1": 706, "y1": 349, "x2": 760, "y2": 397 }
+    ]
+  },
+  {
     "$type": "GreetingBaseRegion",
     "Map": "Lodor",
     "Name": "the Chamber of Tyball",
@@ -785,6 +832,13 @@
     "Area": [{ "x1": 849, "y1": 1768, "x2": 998, "y2": 1849 }]
   },
   {
+    "$type": "GreetingBaseRegion",
+    "Map": "Underworld",
+    "Name": "a Dungeon Dwelling",
+    "Priority": 70,
+    "Area": [{ "x1": 1625, "y1": 1, "x2": 2311, "y2": 1068 }]
+  },
+  {
     "$type": "GreetingGuardedRegion",
     "Map": "SerpentIsland",
     "Name": "the Burning Mines",
@@ -797,6 +851,13 @@
     "Name": "the Furnace Vorpal Dock",
     "Priority": 100,
     "Area": [{ "x1": 1954, "y1": 1734, "x2": 2011, "y2": 1798 }]
+  },
+  {
+    "$type": "GreetingGuardedRegion",
+    "Map": "SavagedEmpire",
+    "Name": "Savage Sea Docks",
+    "Priority": 100,
+    "Area": [{ "x1": 1052, "y1": 309, "x2": 1117, "y2": 349 }]
   },
   {
     "$type": "GreetingGuardedRegion",
@@ -1589,6 +1650,211 @@
     "Area": [{ "x1": 2262, "y1": 20, "x2": 2393, "y2": 382 }]
   },
   {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Blood Temple",
+    "Priority": 50,
+    "Area": [{ "x1": 653, "y1": 2480, "x2": 809, "y2": 2725 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Tombs",
+    "Priority": 50,
+    "Area": [{ "x1": 1, "y1": 2496, "x2": 181, "y2": 2830 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Corrupt Pass",
+    "Priority": 50,
+    "Area": [{ "x1": 2, "y1": 2073, "x2": 170, "y2": 2441 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Crypt",
+    "Priority": 50,
+    "Area": [{ "x1": 363, "y1": 2443, "x2": 511, "y2": 2575 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Great Pyramid",
+    "Priority": 50,
+    "Area": [{ "x1": 851, "y1": 2479, "x2": 938, "y2": 2657 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Altar of The Dragon King",
+    "Priority": 50,
+    "Area": [{ "x1": 190, "y1": 2574, "x2": 259, "y2": 2642 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Ice Queen Fortress",
+    "Priority": 50,
+    "Area": [{ "x1": 241, "y1": 2744, "x2": 498, "y2": 2999 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Dungeon of the Lich King",
+    "Priority": 50,
+    "Area": [{ "x1": 259, "y1": 2111, "x2": 536, "y2": 2385 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Dungeon of the Mad Archmage",
+    "Priority": 50,
+    "Area": [{ "x1": 366, "y1": 1889, "x2": 783, "y2": 2075 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Halls of Ogrimar",
+    "Priority": 50,
+    "Area": [{ "x1": 798, "y1": 2272, "x2": 1215, "y2": 2457 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Pixie Cave",
+    "Priority": 50,
+    "Area": [{ "x1": 1088, "y1": 2107, "x2": 1188, "y2": 2229 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Ratmen Mines",
+    "Priority": 50,
+    "Area": [{ "x1": 850, "y1": 2110, "x2": 1053, "y2": 2239 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "Dungeon Rock",
+    "Priority": 50,
+    "Area": [{ "x1": 597, "y1": 2163, "x2": 772, "y2": 2380 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Sakkhra Tunnel",
+    "Priority": 50,
+    "Area": [{ "x1": 887, "y1": 1949, "x2": 974, "y2": 1994 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Spider Cave",
+    "Priority": 50,
+    "Area": [{ "x1": 359, "y1": 2602, "x2": 496, "y2": 2677 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Storm Giant Lair",
+    "Priority": 50,
+    "Area": [{ "x1": 545, "y1": 2670, "x2": 648, "y2": 2783 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Cave of the Ancient Wyrm",
+    "Priority": 50,
+    "Area": [
+      { "x1": 16, "y1": 1904, "x2": 140, "y2": 1017 },
+      { "x1": 270, "y1": 3804, "x2": 284, "y2": 3820 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Hidden Valley",
+    "Priority": 50,
+    "Area": [{ "x1": 112, "y1": 3704, "x2": 295, "y2": 3804 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Undersea Castle",
+    "Priority": 50,
+    "Area": [
+      { "x1": 605, "y1": 3768, "x2": 828, "y2": 4092 },
+      { "x1": 901, "y1": 3249, "x2": 951, "y2": 3317 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Tomb of Kazibal",
+    "Priority": 50,
+    "Area": [{ "x1": 404, "y1": 3252, "x2": 609, "y2": 3429 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Catacombs of Azerok",
+    "Priority": 50,
+    "Area": [{ "x1": 619, "y1": 3259, "x2": 835, "y2": 3470 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Azure Castle",
+    "Priority": 50,
+    "Area": [{ "x1": 156, "y1": 3583, "x2": 359, "y2": 3715 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Scurvy Reef",
+    "Priority": 50,
+    "Area": [{ "x1": 315, "y1": 3812, "x2": 500, "y2": 4073 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Ancient Sky Ship",
+    "Priority": 50,
+    "Area": [
+      { "x1": 981, "y1": 2906, "x2": 1236, "y2": 3179 },
+      { "x1": 886, "y1": 3634, "x2": 1243, "y2": 4050 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Ancent Crash Site",
+    "Priority": 50,
+    "Area": [{ "x1": 571, "y1": 2828, "x2": 765, "y2": 3113 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Hedge Maze",
+    "Priority": 95,
+    "Area": [{ "x1": 31, "y1": 3005, "x2": 272, "y2": 465 }]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "the Glacial Scar",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2104, "y1": 1118, "x2": 2282, "y2": 1385 },
+      { "x1": 1943, "y1": 1264, "x2": 2067, "y2": 1414 },
+      { "x1": 1925, "y1": 1459, "x2": 2049, "y2": 1589 },
+      { "x1": 2129, "y1": 1442, "x2": 2244, "y2": 1549 },
+      { "x1": 1663, "y1": 1455, "x2": 1794, "y2": 1572 },
+      { "x1": 1835, "y1": 1476, "x2": 1885, "y2": 1525 }
+    ]
+  },
+  {
     "$type": "CaveRegion",
     "Map": "Sosaria",
     "Name": "the British Family Tomb",
@@ -2102,6 +2368,48 @@
     "Area": [{ "x1": 1906, "y1": 264, "x2": 1979, "y2": 329 }]
   },
   {
+    "$type": "CaveRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Cimmeran Mines",
+    "Priority": 50,
+    "Area": [{ "x1": 941, "y1": 2772, "x2": 1082, "y2": 2874 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Barako Mines",
+    "Priority": 50,
+    "Area": [{ "x1": 992, "y1": 2510, "x2": 1137, "y2": 2657 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Obsidian Fortress",
+    "Priority": 50,
+    "Area": [{ "x1": 881, "y1": 3380, "x2": 948, "y2": 3448 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Kurak Mine",
+    "Priority": 65,
+    "Area": [{ "x1": 998, "y1": 3476, "x2": 1119, "y2": 3571 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "SavagedEmpire",
+    "Name": "Dust Air Cavern",
+    "Priority": 65,
+    "Area": [{ "x1": 1133, "y1": 3425, "x2": 1236, "y2": 3496 }]
+  },
+  {
+    "$type": "CaveRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Quiet Cave",
+    "Priority": 65,
+    "Area": [{ "x1": 1007, "y1": 4308, "x2": 1100, "y2": 3453 }]
+  },
+  {
     "$type": "PirateRegion",
     "Map": "Sosaria",
     "Name": "the Waters of the Blade of Neptune",
@@ -2381,6 +2689,13 @@
       { "x1": 4146, "y1": 2936, "x2": 4178, "y2": 2962 },
       { "x1": 4346, "y1": 1724, "x2": 4384, "y2": 1755 }
     ]
+  },
+  {
+    "$type": "GraveyardRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Graveyard",
+    "Priority": 50,
+    "Area": [{ "x1": 211, "y1": 1347, "x2": 258, "y2": 1386 }]
   },
   {
     "$type": "WildernessRegion",
@@ -2683,5 +2998,106 @@
     "Name": "the Castle of the Black Knight",
     "Priority": 70,
     "Area": [{ "x1": 1543, "y1": 238, "x2": 1605, "y2": 301 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Enchanted Pass",
+    "Priority": 50,
+    "Area": [{ "x1": 988, "y1": 1873, "x2": 1195, "y2": 1959 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Isle of the Lich",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1040, "y1": 393, "x2": 1057, "y2": 406 },
+      { "x1": 1027, "y1": 405, "x2": 1056, "y2": 422 },
+      { "x1": 1021, "y1": 421, "x2": 1058, "y2": 471 },
+      { "x1": 1070, "y1": 387, "x2": 1087, "y2": 455 },
+      { "x1": 1055, "y1": 387, "x2": 1072, "y2": 466 }
+    ]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Castle of the Mad Archmage",
+    "Priority": 50,
+    "Area": [{ "x1": 416, "y1": 797, "x2": 509, "y2": 876 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Mage Mansion",
+    "Priority": 50,
+    "Area": [
+      { "x1": 769, "y1": 330, "x2": 795, "y2": 340 },
+      { "x1": 764, "y1": 311, "x2": 800, "y2": 331 }
+    ]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Island of the Storm Giant",
+    "Priority": 50,
+    "Area": [
+      { "x1": 261, "y1": 392, "x2": 307, "y2": 480 },
+      { "x1": 262, "y1": 479, "x2": 303, "y2": 490 },
+      { "x1": 295, "y1": 399, "x2": 321, "y2": 475 },
+      { "x1": 248, "y1": 398, "x2": 263, "y2": 478 }
+    ]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Orc Fort",
+    "Priority": 50,
+    "Area": [{ "x1": 210, "y1": 398, "x2": 250, "y2": 1336 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "SavagedEmpire",
+    "Name": "the Sickening Forge of Venom",
+    "Priority": 65,
+    "Area": [{ "x1": 1061, "y1": 1164, "x2": 1070, "y2": 1170 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Underworld",
+    "Name": "the Obsidian Fortress",
+    "Priority": 50,
+    "Area": [{ "x1": 426, "y1": 246, "x2": 478, "y2": 297 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Underworld",
+    "Name": "the Zealan Graveyard",
+    "Priority": 50,
+    "Area": [{ "x1": 1074, "y1": 1203, "x2": 1111, "y2": 1233 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Underworld",
+    "Name": "the Hall of the Mountain King",
+    "Priority": 50,
+    "Area": [{ "x1": 115, "y1": 97, "x2": 125, "y2": 101 }]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Underworld",
+    "Name": "Argentrock",
+    "Priority": 50,
+    "Area": [
+      { "x1": 67, "y1": 983, "x2": 97, "y2": 1015 },
+      { "x1": 95, "y1": 983, "x2": 103, "y2": 997 },
+      { "x1": 95, "y1": 1001, "x2": 103, "y2": 1016 }
+    ]
+  },
+  {
+    "$type": "WildernessRegion",
+    "Map": "Underworld",
+    "Name": "the Tower of Wisdom",
+    "Area": [{ "x1": 822, "y1": 878, "x2": 835, "y2": 900 }]
   }
 ]
