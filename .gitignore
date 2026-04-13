@@ -28,6 +28,7 @@
 /Distribution/nohup.out
 /Distribution/ref
 /Distribution/web
+/Distribution/Data/Files
 
 /Projects/*/obj
 /Projects/*/bin
