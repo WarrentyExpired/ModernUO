@@ -2260,7 +2260,7 @@
     "Map": "Lodor",
     "Name": "the Waters of the Darkened Sea",
     "Priority": 50,
-    "Area": { "x1": 1744, "y1": 643, "x2": 1828, "y2": 727 }
+    "Area": [{ "x1": 1744, "y1": 643, "x2": 1828, "y2": 727 }]
   },
   {
     "$type": "PirateRegion",

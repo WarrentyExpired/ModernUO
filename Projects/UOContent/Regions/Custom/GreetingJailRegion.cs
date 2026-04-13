@@ -9,9 +9,6 @@ namespace Server.Regions
             : base(name, map, priority, area)
         {
         }
-
-        public override bool IsDisabled => false;
-
         public override void OnEnter(Mobile m)
         {
             base.OnEnter(m);
