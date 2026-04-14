@@ -94,7 +94,7 @@ public static partial class CharacterCreation
         new("Trinsic", "The Traveler's Inn", 1075076, 1845, 2745, 0, Map.Felucca),
         new("Magincia", "The Great Horns Tavern", 1075077, 3734, 2222, 20, Map.Felucca),
         new("Jhelom", "The Mercenary Inn", 1075078, 1374, 3826, 0, Map.Felucca),
-        new("Skara Brae", "The Falconer's Inn", 1075079, 618, 2234, 0, Map.Felucca),
+        new("Skara Brae", "The Falconer's Inn", 1075079, 6927, 213, 0, Map.Felucca),
         new("Vesper", "The Ironwood Inn", 1075080, 2771, 976, 0, Map.Felucca)
     ];
 
@@ -105,7 +105,7 @@ public static partial class CharacterCreation
         new("Moonglow", "The Scholars Inn", 1075075, 4408, 1168, 0, Map.Trammel),
         new("Trinsic", "The Traveler's Inn", 1075076, 1845, 2745, 0, Map.Trammel),
         new("Jhelom", "The Mercenary Inn", 1075078, 1374, 3826, 0, Map.Trammel),
-        new("Skara Brae", "The Falconer's Inn", 1075079, 618, 2234, 0, Map.Trammel),
+        new("Skara Brae", "The Falconer's Inn", 1075079, 6927, 213, 0, Map.Felucca),
         new("Vesper", "The Ironwood Inn", 1075080, 2771, 976, 0, Map.Trammel),
     ];
 
@@ -286,7 +286,8 @@ public static partial class CharacterCreation
         }
 
         var city = GetStartLocation(args);
-        newChar.MoveToWorld(city.Location, city.Map);
+        CityInfo hubCity = new CityInfo(" Starting area", "The Starting Area", 6927, 213 , 0, Map.Felucca);
+        newChar.MoveToWorld(hubCity.Location, hubCity.Map);
 
         logger.Information(
             "Login: {0}: New character being created (account={1}, character={2}, serial={3}, started.city={4}, started.location={5}, started.map={6})",
