@@ -1,5 +1,23 @@
 [
   {
+    "src": { "x": 3010, "y": 1015, "z": 5, "map": "Sosaria" },
+    "dst": { "x": 4607, "y": 3427, "z": 20, "map": "Sosaria" },
+    "id": 708,
+    "name": "the Amaturasu Dojo"
+  },
+  {
+    "src": { "x": 4606, "y": 3427, "z": 20, "map": "Sosaria" },
+    "dst": { "x": 3009, "y": 1015, "z": 5, "map": "Sosaria" },
+    "id": 15796,
+    "name": "ladder"
+  },
+  {
+    "src": { "x": 5611, "y": 2893, "z": 3, "map": "Sosaria" },
+    "dst": { "x": 4607, "y": 3427, "z": 20, "map": "Sosaria" },
+    "id": 708,
+    "name": "Shimazu's Training Room"
+  },
+  {
     "src": { "x": 3017, "y": 1055, "z": 5, "map": "Sosaria" },
     "dst": { "x": 3446, "y": 3442, "z": 0, "map": "Sosaria" },
     "id": 1703,

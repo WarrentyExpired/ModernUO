@@ -224,7 +224,7 @@ namespace Server.Mobiles
 
         public TimeSpan IdleTimePerStepsGain => TimeSpan.FromSeconds(1);
 
-        [SerializableField(99)]
+        //[SerializableField(99)]
         private string _characterPublicDoor;
         [CommandProperty(AccessLevel.GameMaster)]
         public string CharacterPublicDoor
@@ -2891,6 +2891,11 @@ namespace Server.Mobiles
 
             switch (version)
             {
+                case 35:
+                    {
+                        _characterPublicDoor = reader.ReadString();
+                        goto case 34;
+                    }
                 case 34: // Acquired Recipes is now a Set
                 case 33: // Removes champion title
                 case 32: // Removes virtue properties
@@ -3235,8 +3240,9 @@ namespace Server.Mobiles
         {
             base.Serialize(writer);
 
-            writer.Write(34); // version
+            writer.Write((int)35); // version
 
+            writer.Write(_characterPublicDoor);
             if (Stabled == null)
             {
                 writer.Write(0);
@@ -3262,7 +3268,6 @@ namespace Server.Mobiles
             {
                 writer.Write(false);
             }
-
             writer.Write(PeacedUntil);
             writer.Write(AnkhNextUse);
             if (AutoStabled == null)
