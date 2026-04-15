@@ -1,26 +1,1474 @@
 [
   {
-    "src": { "x": 3010, "y": 1015, "z": 5, "map": "Sosaria" },
-    "dst": { "x": 4607, "y": 3427, "z": 20, "map": "Sosaria" },
-    "id": 708,
-    "name": "the Amaturasu Dojo"
+    "src": {
+      "x": 3683,
+      "y": 1475,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3461,
+      "y": 3425,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1775,
+    "name": "The Mountain Gold"
   },
   {
-    "src": { "x": 4606, "y": 3427, "z": 20, "map": "Sosaria" },
-    "dst": { "x": 3009, "y": 1015, "z": 5, "map": "Sosaria" },
+    "src": {
+      "x": 3683,
+      "y": 1476,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3461,
+      "y": 3425,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1773,
+    "name": "The Mountain Gold"
+  },
+  {
+    "src": {
+      "x": 402,
+      "y": 1278,
+      "z": 92,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3461,
+      "y": 3426,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "The Siron's Safe"
+  },
+  {
+    "src": {
+      "x": 402,
+      "y": 1279,
+      "z": 92,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3461,
+      "y": 3426,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1709,
+    "name": "The Siron's Safe"
+  },
+  {
+    "src": {
+      "x": 790,
+      "y": 748,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3461,
+      "y": 3425,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Riches of Moon Bank"
+  },
+  {
+    "src": {
+      "x": 790,
+      "y": 749,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3461,
+      "y": 3426,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1709,
+    "name": "the Riches of Moon Bank"
+  },
+  {
+    "src": {
+      "x": 871,
+      "y": 2073,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3461,
+      "y": 3426,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1709,
+    "name": "the Sunken Sea Chest Bank"
+  },
+  {
+    "src": {
+      "x": 1437,
+      "y": 3784,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3445,
+      "y": 3442,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1701,
+    "name": "the Giant's Hold Bank"
+  },
+  {
+    "src": {
+      "x": 2074,
+      "y": 278,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3461,
+      "y": 3425,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Golden Fleece Bank"
+  },
+  {
+    "src": {
+      "x": 2476,
+      "y": 860,
+      "z": 7,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3445,
+      "y": 3442,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1701,
+    "name": "the Dragon's Chest Bank"
+  },
+  {
+    "src": {
+      "x": 2657,
+      "y": 3288,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3461,
+      "y": 3425,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1775,
+    "name": "the Spectre's Safe Bank"
+  },
+  {
+    "src": {
+      "x": 2657,
+      "y": 3289,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3461,
+      "y": 3426,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1773,
+    "name": "the Spectre's Safe Bank"
+  },
+  {
+    "src": {
+      "x": 3017,
+      "y": 1055,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3446,
+      "y": 3442,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1703,
+    "name": "the Bank of Britain"
+  },
+  {
+    "src": {
+      "x": 3101,
+      "y": 2605,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3445,
+      "y": 3442,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1701,
+    "name": "the Greedy Goblin Bank"
+  },
+  {
+    "src": {
+      "x": 5946,
+      "y": 2910,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3445,
+      "y": 3442,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1703,
+    "name": "the Bank of Holding"
+  },
+  {
+    "src": {
+      "x": 1641,
+      "y": 1458,
+      "z": 7,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3445,
+      "y": 3442,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1701,
+    "name": "the Golden Trove Bank"
+  },
+  {
+    "src": {
+      "x": 1829,
+      "y": 766,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3445,
+      "y": 3442,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1701,
+    "name": "the Stone Wall Bank"
+  },
+  {
+    "src": {
+      "x": 1830,
+      "y": 766,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3446,
+      "y": 3442,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1703,
+    "name": "the Stone Wall Bank"
+  },
+  {
+    "src": {
+      "x": 6734,
+      "y": 1796,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3445,
+      "y": 3442,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1701,
+    "name": "the Bank of Kuldara"
+  },
+  {
+    "src": {
+      "x": 6735,
+      "y": 1796,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3446,
+      "y": 3442,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1703,
+    "name": "the Bank of Kuldara"
+  },
+  {
+    "src": {
+      "x": 268,
+      "y": 1344,
+      "z": 41,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1733,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 269,
+      "y": 1344,
+      "z": 41,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1735,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 6658,
+      "y": 1563,
+      "z": 10,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 706,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 806,
+      "y": 613,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 806,
+      "y": 614,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 955,
+      "y": 1992,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 955,
+      "y": 1993,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 1390,
+      "y": 3793,
+      "z": 2,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 1390,
+      "y": 3794,
+      "z": 2,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 1745,
+      "y": 1621,
+      "z": -18,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 1745,
+      "y": 1622,
+      "z": -18,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 2241,
+      "y": 250,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 2241,
+      "y": 251,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 2653,
+      "y": 3249,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 2653,
+      "y": 3250,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 3136,
+      "y": 2571,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 3136,
+      "y": 2572,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 3605,
+      "y": 3216,
+      "z": 26,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 3605,
+      "y": 3217,
+      "z": 26,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 4461,
+      "y": 1803,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1653,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 4462,
+      "y": 1803,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1655,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 4788,
+      "y": 1209,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 4788,
+      "y": 1210,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 5188,
+      "y": 1832,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 5188,
+      "y": 1833,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 6744,
+      "y": 543,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 6744,
+      "y": 544,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 6794,
+      "y": 1690,
+      "z": 10,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 6794,
+      "y": 1690,
+      "z": 10,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3216,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1654,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 6794,
+      "y": 1691,
+      "z": 10,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 6794,
+      "y": 1691,
+      "z": 10,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3604,
+      "y": 3217,
+      "z": 22,
+      "map": "Sosaria"
+    },
+    "id": 1658,
+    "name": "the Black Magic Guild"
+  },
+  {
+    "src": {
+      "x": 6727,
+      "y": 1834,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3721,
+      "y": 3495,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Blue Boar Tavern"
+  },
+  {
+    "src": {
+      "x": 6727,
+      "y": 1835,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3721,
+      "y": 3496,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1709,
+    "name": "the Blue Boar Tavern"
+  },
+  {
+    "src": {
+      "x": 6771,
+      "y": 1623,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3679,
+      "y": 3471,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1701,
+    "name": "the Woodside Inn"
+  },
+  {
+    "src": {
+      "x": 6772,
+      "y": 1623,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3680,
+      "y": 3471,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1703,
+    "name": "the Woodside Inn"
+  },
+  {
+    "src": {
+      "x": 6791,
+      "y": 1729,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3679,
+      "y": 3471,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1701,
+    "name": "the Sweet Dreams Inn"
+  },
+  {
+    "src": {
+      "x": 6792,
+      "y": 1729,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3680,
+      "y": 3471,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1703,
+    "name": "the Sweet Dreams Inn"
+  },
+  {
+    "src": {
+      "x": 5922,
+      "y": 2871,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3690,
+      "y": 3515,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1701,
+    "name": "the Drunken Mage Tavern"
+  },
+  {
+    "src": {
+      "x": 5923,
+      "y": 2871,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3691,
+      "y": 3515,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1703,
+    "name": "the Drunken Mage Tavern"
+  },
+  {
+    "src": {
+      "x": 5927,
+      "y": 2862,
+      "z": 6,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3704,
+      "y": 3456,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1702,
+    "name": "the Moon Light Inn"
+  },
+  {
+    "src": {
+      "x": 5932,
+      "y": 2868,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3721,
+      "y": 3495,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Drunken Mage Tavern"
+  },
+  {
+    "src": {
+      "x": 5932,
+      "y": 2869,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3721,
+      "y": 3496,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1713,
+    "name": "the Drunken Mage Tavern"
+  },
+  {
+    "src": {
+      "x": 3716,
+      "y": 1483,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3680,
+      "y": 3471,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1703,
+    "name": "the Crag Crack Inn"
+  },
+  {
+    "src": {
+      "x": 3321,
+      "y": 2636,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3721,
+      "y": 3495,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Sorcerer's Stein Tavern"
+  },
+  {
+    "src": {
+      "x": 2151,
+      "y": 259,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3704,
+      "y": 3457,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1709,
+    "name": "the Fawn Bed and Breakfast Inn"
+  },
+  {
+    "src": {
+      "x": 2446,
+      "y": 893,
+      "z": 7,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3721,
+      "y": 3495,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Bottled Wine Tavern"
+  },
+  {
+    "src": {
+      "x": 2446,
+      "y": 894,
+      "z": 7,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3721,
+      "y": 3496,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1709,
+    "name": "the Bottled Wine Tavern"
+  },
+  {
+    "src": {
+      "x": 2489,
+      "y": 850,
+      "z": 7,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3704,
+      "y": 3456,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Sawing Logs Inn"
+  },
+  {
+    "src": {
+      "x": 2690,
+      "y": 3261,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3690,
+      "y": 3515,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1765,
+    "name": "the Drunken Demon Tavern"
+  },
+  {
+    "src": {
+      "x": 2691,
+      "y": 3261,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3691,
+      "y": 3515,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1767,
+    "name": "the Drunken Demon Tavern"
+  },
+  {
+    "src": {
+      "x": 2704,
+      "y": 3251,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3721,
+      "y": 3495,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1775,
+    "name": "the Drunken Demon Tavern"
+  },
+  {
+    "src": {
+      "x": 2704,
+      "y": 3252,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3721,
+      "y": 3496,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1773,
+    "name": "the Drunken Demon Tavern"
+  },
+  {
+    "src": {
+      "x": 2981,
+      "y": 1089,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3721,
+      "y": 3495,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Unicorn's Horn Tavern"
+  },
+  {
+    "src": {
+      "x": 3118,
+      "y": 2636,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3704,
+      "y": 3456,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Feastly King Inn"
+  },
+  {
+    "src": {
+      "x": 916,
+      "y": 2069,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3721,
+      "y": 3496,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1709,
+    "name": "the Sea Wave Tavern"
+  },
+  {
+    "src": {
+      "x": 1302,
+      "y": 3864,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3679,
+      "y": 3471,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1703,
+    "name": "the Sleepy Island Inn"
+  },
+  {
+    "src": {
+      "x": 1427,
+      "y": 3799,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3704,
+      "y": 3456,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Crazy Cyclops Inn"
+  },
+  {
+    "src": {
+      "x": 1608,
+      "y": 1499,
+      "z": 7,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3704,
+      "y": 3456,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Morning Dew Inn"
+  },
+  {
+    "src": {
+      "x": 1829,
+      "y": 758,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3704,
+      "y": 3456,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1711,
+    "name": "the Stone Wall Inn"
+  },
+  {
+    "src": {
+      "x": 1829,
+      "y": 759,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3704,
+      "y": 3457,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1709,
+    "name": "the Stone Wall Inn"
+  },
+  {
+    "src": {
+      "x": 833,
+      "y": 691,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3679,
+      "y": 3471,
+      "z": 30,
+      "map": "Sosaria"
+    },
+    "id": 1701,
+    "name": "the Full Moon Inn"
+  },
+  {
+    "src": {
+      "x": 294,
+      "y": 1394,
+      "z": 66,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3690,
+      "y": 3515,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1701,
+    "name": "The Pirate's Tankard"
+  },
+  {
+    "src": {
+      "x": 295,
+      "y": 1394,
+      "z": 66,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 3691,
+      "y": 3515,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1703,
+    "name": "The Pirate's Tankard"
+  },
+  {
+    "src": {
+      "x": 6802,
+      "y": 1628,
+      "z": 40,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 4607,
+      "y": 3427,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "id": 708,
+    "name": "The Jade Training Room"
+  },
+  {
+    "src": {
+      "x": 3010,
+      "y": 1015,
+      "z": 5,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 4607,
+      "y": 3427,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "id": 708,
+    "name": "the Amaterasu Dojo"
+  },
+  {
+    "src": {
+      "x": 4606,
+      "y": 3427,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 4607,
+      "y": 3427,
+      "z": 20,
+      "map": "Sosaria"
+    },
     "id": 15796,
     "name": "ladder"
   },
   {
-    "src": { "x": 5611, "y": 2893, "z": 3, "map": "Sosaria" },
-    "dst": { "x": 4607, "y": 3427, "z": 20, "map": "Sosaria" },
+    "src": {
+      "x": 5611,
+      "y": 2894,
+      "z": 3,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 4607,
+      "y": 3427,
+      "z": 20,
+      "map": "Sosaria"
+    },
     "id": 708,
     "name": "Shimazu's Training Room"
   },
   {
-    "src": { "x": 3017, "y": 1055, "z": 5, "map": "Sosaria" },
-    "dst": { "x": 3446, "y": 3442, "z": 0, "map": "Sosaria" },
-    "id": 1703,
-    "name": "Thru Door"
+    "src": {
+      "x": 3313,
+      "y": 2065,
+      "z": 40,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 4607,
+      "y": 3427,
+      "z": 20,
+      "map": "Sosaria"
+    },
+    "id": 708,
+    "name": "the Shotoku Dojo"
+  },
+  {
+    "src": {
+      "x": 3240,
+      "y": 1701,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 5979,
+      "y": 2494,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1653,
+    "name": "the Hall of Legends"
+  },
+  {
+    "src": {
+      "x": 3241,
+      "y": 1701,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 5980,
+      "y": 2494,
+      "z": 0,
+      "map": "Sosaria"
+    },
+    "id": 1655,
+    "name": "the Hall of Legends"
+  },
+  {
+    "src": {
+      "x": 367,
+      "y": 1417,
+      "z": 65,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 7063,
+      "y": 736,
+      "z": 65,
+      "map": "Sosaria"
+    },
+    "id": 1669,
+    "name": "The Port of Anchor Rock"
+  },
+  {
+    "src": {
+      "x": 368,
+      "y": 1417,
+      "z": 65,
+      "map": "Sosaria"
+    },
+    "dst": {
+      "x": 7064,
+      "y": 736,
+      "z": 65,
+      "map": "Sosaria"
+    },
+    "id": 1671,
+    "name": "The Port of Anchor Rock"
   }
 ]
