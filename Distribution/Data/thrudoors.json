@@ -1,0 +1,8 @@
+[
+  {
+    "src": { "x": 3017, "y": 1055, "z": 5, "map": "Sosaria" },
+    "dst": { "x": 3446, "y": 3442, "z": 0, "map": "Sosaria" },
+    "id": 1703,
+    "name": "Thru Door"
+  }
+]

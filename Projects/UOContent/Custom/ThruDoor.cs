@@ -6,7 +6,7 @@ using ModernUO.Serialization;
 
 namespace Server.Items
 {
-    [SerializationGenerator(1, false)] // Version 1, ReadInt() format
+    [SerializationGenerator(0)]
     public partial class ThruDoor : BaseDoor
     {
         [SerializableField(0)]
@@ -21,23 +21,14 @@ namespace Server.Items
         [SerializedCommandProperty(AccessLevel.GameMaster)]
         private int _rules;
 
-        [Constructible] // Correct ModernUO spelling
-        public ThruDoor() : this(DoorFacing.WestCW)
-        {
-        }
+        [Constructible]
+        public ThruDoor() : this(DoorFacing.WestCW) { }
 
         [Constructible]
-        public ThruDoor(DoorFacing facing) : base(0x6A5, 0x6A5, 0xEA, 0xEA, BaseDoor.GetOffset(facing))
-        {
-            Name = "a door";
-        }
+        public ThruDoor(int itemID) : base(itemID, itemID, 0xEA, 0xEA, Point3D.Zero) { }
 
-        // Fixes error CS1501: This method is required by the generator for legacy support
-        private void Deserialize(IGenericReader reader, int version)
-        {
-            // If you have no old RunUO saves to migrate, leave this empty.
-            // The generator handles version 1+ automatically via attributes.
-        }
+        [Constructible]
+        public ThruDoor(DoorFacing facing) : base(0x6A5, 0x6A5, 0xEA, 0xEA, BaseDoor.GetOffset(facing)) { }
 
         public override void Use(Mobile m)
         {
@@ -47,53 +38,42 @@ namespace Server.Items
                 m.SendLocalizedMessage(500295);
         }
 
-        public override bool OnMoveOver(Mobile m)
+        public virtual void DoTeleport(Mobile m)
         {
-            if (m.Player)
-                DoTeleport(m);
+            if (m is not PlayerMobile pm) return;
 
-            return true;
-        }
-        public void DoTeleport(Mobile m)
-        {
-            // 1. Check if this is a "Return" door (PointDest is 0,0,0)
-            if (PointDest == Point3D.Zero && m is PlayerMobile pm && !string.IsNullOrEmpty(pm.CharacterPublicDoor))
+            // Rules 0: Return Path Logic
+            if (_rules == 0 && !string.IsNullOrEmpty(pm.CharacterPublicDoor))
             {
-                try
+                string[] split = pm.CharacterPublicDoor.Split('#');
+                if (split.Length >= 4)
                 {
-                    // Split the saved string: "X#Y#Z#Map#Zone"
-                    string[] split = pm.CharacterPublicDoor.Split('#');
-                    if (split.Length >= 4)
+                    try
                     {
                         int x = Convert.ToInt32(split[0]);
                         int y = Convert.ToInt32(split[1]);
                         int z = Convert.ToInt32(split[2]);
                         Map map = Map.Parse(split[3]);
-                        // Move to the saved street location
-                        BaseCreature.TeleportPets(pm, new Point3D(x, y, z), map);
-                        pm.MoveToWorld(new Point3D(x, y, z), map);
-                        // Clear the string so it doesn't loop
-                        pm.CharacterPublicDoor = "";
-                        pm.MarkDirty();
-                        Effects.PlaySound(pm.Location, pm.Map, 0x1FE);
-                        return; // Exit early since we found the return path
-                    }
-                }
-                catch
-                {
-                    m.SendMessage("The magic of this door fails to find your way home.");
+                        if (map != null && map != Map.Internal)
+                        {
+                            pm.MoveToWorld(new Point3D(x, y, z), map);
+                            pm.CharacterPublicDoor = "";
+                            pm.MarkDirty();
+                            Effects.PlaySound(pm.Location, pm.Map, 0x1FE);
+                            return;
+                        }
+                    } catch { }
                 }
             }
-            // 2. Standard Teleport Logic (Entry Doors)
-            if (MapDest == null || MapDest == Map.Internal)
-                return;
-            // Save location for Rule 0 before leaving
-            if (Rules == 0 && m is PlayerMobile rpm)
+
+            if (MapDest == null || MapDest == Map.Internal) return;
+
+            if (_rules == 0)
             {
-                rpm.CharacterPublicDoor = $"{m.X}#{m.Y}#{m.Z}#{m.Map.Name}#{this.Name ?? "the Building"}";
-                rpm.MarkDirty();
+                pm.CharacterPublicDoor = $"{m.X}#{m.Y}#{m.Z}#{m.Map.Name}#{this.Name}";
+                pm.MarkDirty();
             }
-            // Standard Move
+
             BaseCreature.TeleportPets(m, PointDest, MapDest);
             m.MoveToWorld(PointDest, MapDest);
             Effects.PlaySound(m.Location, m.Map, 0x1FE);
