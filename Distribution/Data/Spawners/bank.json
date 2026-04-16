@@ -1,0 +1,137 @@
+[
+  {
+    "type": "Spawner",
+    "guid": "55243971-6848-4e42-8b78-325d0ce1226a",
+    "location": {
+      "x": 3440,
+      "y": 3435,
+      "z": 0
+    },
+    "map": "Sosaria",
+    "count": 1,
+    "entries": [
+      {
+        "name": "banker",
+        "probability": 1,
+        "maxCount": 1
+      }
+    ],
+    "name": "Spawner",
+    "walkingRange": 2,
+    "maxSpawnAttempts": 0,
+    "spawnBounds": {
+      "x1": 3438,
+      "y1": 3433,
+      "x2": 3443,
+      "y2": 3438
+    }
+  },
+  {
+    "type": "Spawner",
+    "guid": "fdc75df4-9f30-4abf-b232-bc9ba9fdf3fb",
+    "location": {
+      "x": 3444,
+      "y": 3416,
+      "z": 0
+    },
+    "map": "Sosaria",
+    "count": 1,
+    "entries": [
+      {
+        "name": "banker",
+        "probability": 1,
+        "maxCount": 1
+      }
+    ],
+    "name": "Spawner",
+    "walkingRange": 1,
+    "maxSpawnAttempts": 0,
+    "spawnBounds": {
+      "x1": 3443,
+      "y1": 3415,
+      "x2": 3446,
+      "y2": 3418
+    }
+  },
+  {
+    "type": "Spawner",
+    "guid": "e77e95f4-3dbb-410f-b135-b03ea0117ff6",
+    "location": {
+      "x": 3449,
+      "y": 3416,
+      "z": 0
+    },
+    "map": "Sosaria",
+    "count": 1,
+    "entries": [
+      {
+        "name": "banker",
+        "probability": 1,
+        "maxCount": 1
+      }
+    ],
+    "name": "Spawner",
+    "walkingRange": 2,
+    "maxSpawnAttempts": 0,
+    "spawnBounds": {
+      "x1": 3447,
+      "y1": 3414,
+      "x2": 3452,
+      "y2": 3419
+    }
+  },
+  {
+    "type": "Spawner",
+    "guid": "392a8d71-0b75-43a4-b03a-ef71bb125564",
+    "location": {
+      "x": 3452,
+      "y": 3416,
+      "z": 0
+    },
+    "map": "Sosaria",
+    "count": 1,
+    "entries": [
+      {
+        "name": "banker",
+        "probability": 1,
+        "maxCount": 1
+      }
+    ],
+    "name": "Spawner",
+    "walkingRange": 2,
+    "maxSpawnAttempts": 0,
+    "spawnBounds": {
+      "x1": 3450,
+      "y1": 3414,
+      "x2": 3455,
+      "y2": 3419
+    }
+  },
+  {
+    "type": "Spawner",
+    "guid": "b7f861d7-460b-40d7-9067-454691a7a9a6",
+    "location": {
+      "x": 3456,
+      "y": 3416,
+      "z": 0
+    },
+    "map": "Sosaria",
+    "count": 1,
+    "entries": [
+      {
+        "name": "banker",
+        "probability": 1,
+        "maxCount": 1
+      }
+    ],
+    "name": "Spawner",
+    "walkingRange": 2,
+    "maxSpawnAttempts": 0,
+    "spawnBounds": {
+      "x1": 3454,
+      "y1": 3414,
+      "x2": 3459,
+      "y2": 3419
+    }
+  }
+]

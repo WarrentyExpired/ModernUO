@@ -116,7 +116,7 @@ namespace Server.Gumps
                 AdminGumpPage.Administer_Access,
                 AdminGumpPage.Administer_Commands,
                 AdminGumpPage.Administer_Server,
-                AdminGumpPage.Administer_WorldBuilding,
+                //AdminGumpPage.Administer_WorldBuilding,
                 AdminGumpPage.Administer_Access_Lockdown
             );
             AddPageButton(10, 50, GetButtonID(0, 2), "CLIENT LIST", AdminGumpPage.Clients, AdminGumpPage.ClientInfo);
@@ -429,7 +429,7 @@ namespace Server.Gumps
                     }
                 case AdminGumpPage.Administer:
                     {
-                        AddPageButton(200, 20, GetButtonID(3, 0), "World Building", AdminGumpPage.Administer_WorldBuilding);
+                        //AddPageButton(200, 20, GetButtonID(3, 0), "World Building", AdminGumpPage.Administer_WorldBuilding);
                         AddPageButton(200, 40, GetButtonID(3, 1), "Server", AdminGumpPage.Administer_Server);
                         AddPageButton(
                             200,
