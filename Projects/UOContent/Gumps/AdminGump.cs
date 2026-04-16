@@ -116,7 +116,7 @@ namespace Server.Gumps
                 AdminGumpPage.Administer_Access,
                 AdminGumpPage.Administer_Commands,
                 AdminGumpPage.Administer_Server,
-                //AdminGumpPage.Administer_WorldBuilding,
+                AdminGumpPage.Administer_WorldBuilding,
                 AdminGumpPage.Administer_Access_Lockdown
             );
             AddPageButton(10, 50, GetButtonID(0, 2), "CLIENT LIST", AdminGumpPage.Clients, AdminGumpPage.ClientInfo);
@@ -258,6 +258,9 @@ namespace Server.Gumps
                     }
                 case AdminGumpPage.Administer_WorldBuilding:
                     {
+                        m_From.SendGump(new WorldBuildingGump(m_From));
+                        break;
+                        /*
                         AddHtml(10, 125, 400, 20, "Generating".Center(LabelColor32));
 
                         AddButtonLabeled(20, 175, GetButtonID(3, 101), "Teleporters");
@@ -282,6 +285,7 @@ namespace Server.Gumps
                         AddButtonLabeled(220, 325, GetButtonID(3, 114), "Do everything");
 
                         goto case AdminGumpPage.Administer;
+                        */
                     }
                 case AdminGumpPage.Administer_Server:
                     {
@@ -429,7 +433,7 @@ namespace Server.Gumps
                     }
                 case AdminGumpPage.Administer:
                     {
-                        //AddPageButton(200, 20, GetButtonID(3, 0), "World Building", AdminGumpPage.Administer_WorldBuilding);
+                        AddPageButton(200, 20, GetButtonID(3, 0), "World Building", AdminGumpPage.Administer_WorldBuilding);
                         AddPageButton(200, 40, GetButtonID(3, 1), "Server", AdminGumpPage.Administer_Server);
                         AddPageButton(
                             200,
