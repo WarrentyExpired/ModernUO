@@ -26,7 +26,7 @@ namespace Server.Commands
     public static class GenTeleporter
     {
         private const int SuccessHue = 72, WarningHue = 53, ErrorHue = 33;
-        private static readonly string TeleporterJsonDataPath = Path.Combine(Core.BaseDirectory, "Data/teleporters.json");
+        private static readonly string TeleporterJsonDataPath = Path.Combine(Core.BaseDirectory, "Data/Decoration/teleporters.json");
 
         public static void Configure()
         {

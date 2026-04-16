@@ -29,14 +29,14 @@ namespace Server.Commands
 
     public static class GenThruDoor
     {
-        private static readonly string ThruDoorJsonPath = Path.Combine(Core.BaseDirectory, "Data/thrudoors.json");
+        private static readonly string ThruDoorJsonPath = Path.Combine(Core.BaseDirectory, "Data/Decoration/thrudoors.json");
 
         public static void Configure()
         {
-            CommandSystem.Register("ThruGen", AccessLevel.Developer, ThruGen_OnCommand);
+            CommandSystem.Register("GenThruDoor", AccessLevel.Developer, ThruGen_OnCommand);
         }
 
-        [Usage("ThruGen")]
+        [Usage("GenThurDoor")]
         public static void ThruGen_OnCommand(CommandEventArgs e)
         {
             var from = e.Mobile;
