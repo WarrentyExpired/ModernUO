@@ -286,7 +286,7 @@ public static partial class CharacterCreation
         }
 
         var city = GetStartLocation(args);
-        CityInfo hubCity = new CityInfo(" Starting area", "The Starting Area", 6927, 213 , 0, Map.Felucca);
+        CityInfo hubCity = new CityInfo(" Starting area", "The Starting Area", 3000, 1040, 0, Map.Trammel);
         newChar.MoveToWorld(hubCity.Location, hubCity.Map);
 
         logger.Information(
