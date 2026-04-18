@@ -59,7 +59,7 @@ namespace Server.Items
                             pm.MoveToWorld(new Point3D(x, y, z), map);
                             pm.CharacterPublicDoor = "";
                             pm.MarkDirty();
-                            Effects.PlaySound(pm.Location, pm.Map, 0x1FE);
+                            Effects.PlaySound(pm.Location, pm.Map, 0xEA);
                             return;
                         }
                     } catch { }
@@ -76,7 +76,7 @@ namespace Server.Items
 
             BaseCreature.TeleportPets(m, PointDest, MapDest);
             m.MoveToWorld(PointDest, MapDest);
-            Effects.PlaySound(m.Location, m.Map, 0x1FE);
+            Effects.PlaySound(m.Location, m.Map, 0xEA);
         }
     }
 }
