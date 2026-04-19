@@ -1,1 +1,1 @@
-dotnet publish Projects/Application/Application.csproj -c Release -r linux-x64 --no-restore --self-contained=false
+dotnet publish Projects/Application/Application.csproj -c Release -r linux-x64 --self-contained=false --force -p:NuGetAudit=false
