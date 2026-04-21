@@ -26,12 +26,12 @@ namespace Server.Commands
     public static class GenTeleporter
     {
         private const int SuccessHue = 72, WarningHue = 53, ErrorHue = 33;
-        private static readonly string TeleporterJsonDataPath = Path.Combine(Core.BaseDirectory, "Data/teleporters.json");
+        private static readonly string TeleporterJsonDataPath = Path.Combine(Core.BaseDirectory, "Data/Decoration/teleporters.json");
 
         public static void Configure()
         {
-            CommandSystem.Register("TelGen", AccessLevel.Developer, GenTeleporter_OnCommand);
-            CommandSystem.Register("TelGenDelete", AccessLevel.Developer, TelGenDelete_OnCommand);
+            CommandSystem.Register("GenTele", AccessLevel.Developer, GenTeleporter_OnCommand);
+            CommandSystem.Register("GenDeleteTele", AccessLevel.Developer, TelGenDelete_OnCommand);
         }
 
         [Usage("TelGenDelete")]

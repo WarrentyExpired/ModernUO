@@ -33,19 +33,8 @@ namespace Server.Commands
             m_Mobile.SendMessage("Generating world decoration, please wait.");
 
             NetState.FlushAll();
-
-            Generate("Data/Decoration/Britannia", Map.Trammel, Map.Felucca);
-            Generate("Data/Decoration/Trammel", Map.Trammel);
-            Generate("Data/Decoration/Felucca", Map.Felucca);
-            Generate("Data/Decoration/Ilshenar", Map.Ilshenar);
-            Generate("Data/Decoration/Malas", Map.Malas);
-            Generate("Data/Decoration/Tokuno", Map.Tokuno);
-
-            if (PlayerMurderSystem.BountiesEnabled)
-            {
-                Generate("Data/Decoration/BountyBoards", Map.Felucca);
-            }
-
+            Generate("Data/Decoration/Theomara", Map.Tokuno);
+            Generate("Data/Decoration/Common", Map.Ilshenar);
             m_Mobile.SendMessage($"World generating complete. {m_Count} items were generated.");
         }
 

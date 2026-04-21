@@ -28,7 +28,9 @@
 /Distribution/nohup.out
 /Distribution/ref
 /Distribution/web
-
+/Distribution/Data/Files/
+/Distribution/Data/Spawners/
+/Distribution/Data/Decoration/
 /Projects/*/obj
 /Projects/*/bin
 /Projects/*/Generated

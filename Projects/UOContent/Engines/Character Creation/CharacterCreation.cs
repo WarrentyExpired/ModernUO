@@ -286,7 +286,8 @@ public static partial class CharacterCreation
         }
 
         var city = GetStartLocation(args);
-        newChar.MoveToWorld(city.Location, city.Map);
+        CityInfo startCity = new CityInfo("Theomara", "Theomara", 408, 1071, 15, Map.Tokuno);
+        newChar.MoveToWorld(startCity.Location, startCity.Map);
 
         logger.Information(
             "Login: {0}: New character being created (account={1}, character={2}, serial={3}, started.city={4}, started.location={5}, started.map={6})",
