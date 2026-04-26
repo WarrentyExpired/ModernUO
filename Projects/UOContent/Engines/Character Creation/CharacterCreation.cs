@@ -286,7 +286,7 @@ public static partial class CharacterCreation
         }
 
         var city = GetStartLocation(args);
-        CityInfo startCity = new CityInfo("Theomara", "Theomara", 408, 1071, 15, Map.Tokuno);
+        CityInfo startCity = new CityInfo("Theomara", "Theomara", 709, 1022, 16, Map.Ilshenar);
         newChar.MoveToWorld(startCity.Location, startCity.Map);
 
         logger.Information(
