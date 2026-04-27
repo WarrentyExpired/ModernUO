@@ -8,19 +8,15 @@ namespace Server.Utilities
         {
             if (m is PlayerMobile pm && pm.Mounted && pm.Mount is Mobile mountPet)
             {
-                // Unmount
                 pm.Mount.Rider = null;
-
                 if (mountPet is BaseCreature bc)
                 {
                     bc.Internalize();
                     bc.IsStabled = true;
-
-                    // Uses the lazy-initializer we set up in PlayerMobile
                     pm.AutoStabled.Add(bc);
 
-                    pm.SendMessage(0x22, "The unholy energy of the grounds forces you to dismount!");
-                    pm.PlaySound(0x124); // Optional: Horse sound
+                    pm.SendMessage(0x22, "Your mount is waiting safely for you to return.");
+                    pm.PlaySound(0x124);
                 }
             }
         }
