@@ -35,7 +35,8 @@
 /Projects/*/obj
 /Projects/*/bin
 /Projects/*/Generated
-
+Distribution/Data/map-definitions.json
+Distribution
 *.swp
 *.log
 *.user
