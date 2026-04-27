@@ -404,7 +404,13 @@ namespace Server.Mobiles
         public HashSet<Mobile> Stabled { get; private set; }
 
         // WARNING - This can be null!!
-        public HashSet<Mobile> AutoStabled { get; private set; }
+        //public HashSet<Mobile> AutoStabled { get; private set; }
+        private HashSet<Mobile> _autoStabled;
+        public HashSet<Mobile> AutoStabled
+        {
+            get => _autoStabled ??= new HashSet<Mobile>();
+            private set => _autoStabled = value;
+        }
 
         public bool NinjaWepCooldown { get; set; }
 

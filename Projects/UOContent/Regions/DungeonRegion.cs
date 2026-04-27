@@ -1,4 +1,5 @@
 using System.Text.Json.Serialization;
+using Server.Utilities;
 
 namespace Server.Regions;
 
@@ -30,4 +31,14 @@ public class DungeonRegion : BaseRegion
     }
 
     public override bool CanUseStuckMenu(Mobile m) => Map != Map.Felucca && base.CanUseStuckMenu(m);
+    public override void OnEnter(Mobile m)
+    {
+        base.OnEnter(m);
+        AutoStable.HandleEntry(m);
+    }
+    public override void OnExit(Mobile m)
+    {
+        base.OnExit(m);
+        AutoStable.HandleExit(m);
+    }
 }
