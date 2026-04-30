@@ -18,14 +18,14 @@ namespace Server.Engines.Farming
         private static readonly Rectangle2D[] m_ThalassaPlot1D = { new(1278, 3416, 10, 10), };
         private static readonly Type[] m_ThalassaCrops1D = { typeof(FarmableCarrot)};
 
-        private static readonly Rectangle2D[] m_ThalassaPlot2A = { new(1329, 3432, 12, 8), };
+        private static readonly Rectangle2D[] m_ThalassaPlot2A = { new(1330, 3433, 11, 7), };
         private static readonly Type[] m_ThalassaCrops2A = { typeof(FarmableWheat)};
-        private static readonly Rectangle2D[] m_ThalassaPlot2B = { new(1329, 3440, 12, 5), };
+        private static readonly Rectangle2D[] m_ThalassaPlot2B = { new(1330, 3440, 11, 5), };
         private static readonly Type[] m_ThalassaCrops2B = { typeof(FarmableFlax)};
 
-        private static readonly Rectangle2D[] m_ThalassaPlot3A = { new(1348, 3432, 12, 8), };
+        private static readonly Rectangle2D[] m_ThalassaPlot3A = { new(1349, 3433, 11, 7), };
         private static readonly Type[] m_ThalassaCrops3A = { typeof(FarmableTurnip)};
-        private static readonly Rectangle2D[] m_ThalassaPlot3B = { new(1348, 3440, 12, 5), };
+        private static readonly Rectangle2D[] m_ThalassaPlot3B = { new(1349, 3440, 11, 5), };
         private static readonly Type[] m_ThalassaCrops3B = { typeof(FarmableCotton)};
         public static void Initialize()
         {
