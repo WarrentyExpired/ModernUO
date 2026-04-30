@@ -33,8 +33,8 @@ namespace Server.Commands
             m_Mobile.SendMessage("Generating world decoration, please wait.");
 
             NetState.FlushAll();
-            Generate("Data/Decoration/Theomara", Map.Tokuno);
-            Generate("Data/Decoration/Common", Map.Ilshenar);
+            Generate("Data/Decoration/Towns", Map.Trammel);
+            Generate("Data/Decoration/Dungeons", Map.Trammel);
             m_Mobile.SendMessage($"World generating complete. {m_Count} items were generated.");
         }
 

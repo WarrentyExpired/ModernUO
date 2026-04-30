@@ -51,7 +51,7 @@ namespace Server.Gumps
             y += 30;
 
             AddButton(20, y, 4005, 4007, 2);
-            AddLabel(55, y, 1152, "World Decoration from Data/Decoration/<Map Folder>/");
+            AddLabel(55, y, 1152, "World Decoration from Data/Decoration/<Folder>/*.cfg");
             y += 30;
 
             AddButton(20, y, 4005, 4007, 3);
@@ -64,6 +64,10 @@ namespace Server.Gumps
 
             AddButton(20, y, 4005, 4007, 5);
             AddLabel(55, y, 1152, "Generate ThruDoors from Data/Decoration/thrudoors.json");
+            y += 30;
+
+            AddButton(20, y, 4005, 4007, 6);
+            AddLabel(55, y, 1152, "Generate Signs from Data/Decoration/signs.cfg");
             y += 30;
 
             AddButton(20, y, 4017, 4019, 0);
@@ -81,6 +85,7 @@ namespace Server.Gumps
                 case 3: InvokeCommand("GenerateSpawners Data/Spawners/**.json"); break;
                 case 4: InvokeCommand("ExportSpawners"); break;
                 case 5: InvokeCommand("GenThruDoor"); break;
+                case 6: InvokeCommand("SignGen"); break;
                 default: return;
             }
             from.SendGump(new WorldBuildingGump(from));

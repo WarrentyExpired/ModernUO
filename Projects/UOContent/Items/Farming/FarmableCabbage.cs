@@ -6,11 +6,11 @@ namespace Server.Items;
 public partial class FarmableCabbage : FarmableCrop
 {
     [Constructible]
-    public FarmableCabbage() : base(GetCropID())
+    public FarmableCabbage() : base(3195)
     {
     }
 
-    public static int GetCropID() => 0x0C7B;
+    public static int GetCropID() => 3195;
 
     public override Item GetCropObject() =>
         new Cabbage

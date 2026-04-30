@@ -13,6 +13,35 @@ public abstract partial class FarmableCrop : Item
 
     public abstract Item GetCropObject();
     public abstract int GetPickedID();
+    public override void AddNameProperties(IPropertyList list)
+    {
+    }
+
+    public override bool HandlesOnMovement => true;
+
+    public override void OnMovement(Mobile m, Point3D oldLocation)
+    {
+        if (m.Player && m.Alive && !_picked && m.InRange(this.Location, 2))
+        {
+            Timer.DelayCall(TimeSpan.FromMilliseconds(100), () =>
+            {
+                if (m.InRange(this.Location, 2) && !_picked)
+                {
+                    OnPicked(m, Location, Map);
+                }
+            });
+        }
+        base.OnMovement(m, oldLocation);
+    }
+
+    public override bool OnMoveOver(Mobile from)
+    {
+        if (from != null && from.Alive && from.Player && !_picked)
+        {
+            OnPicked(from, this.Location, this.Map);
+        }
+        return base.OnMoveOver(from);
+    }
 
     public override void OnDoubleClick(Mobile from)
     {
@@ -39,14 +68,22 @@ public abstract partial class FarmableCrop : Item
         ItemID = GetPickedID();
 
         var spawn = GetCropObject();
-
-        spawn?.MoveToWorld(loc, map);
-
+        if (spawn != null)
+        {
+            if (from.Backpack == null || !from.Backpack.CheckHold(from, spawn, true, true))
+            {
+                spawn.MoveToWorld(loc, map);
+                from.SendMessage("Your backpack is full, the crop was placed on the ground.");
+            }
+            else
+            {
+                from.AddToBackpack(spawn);
+                from.PlaySound(0x13E); // Harvest sound
+            }
+        }
         _picked = true;
-
         Unlink();
-
-        Timer.StartTimer(TimeSpan.FromMinutes(5.0), Delete);
+        Timer.StartTimer(TimeSpan.FromMinutes(1.0), Delete);
     }
 
     public void Unlink()
@@ -59,11 +96,10 @@ public abstract partial class FarmableCrop : Item
     }
 
     [AfterDeserialization]
-    private void AfterDeserialization()
+    public void AfterDeserialize()
     {
         if (_picked)
         {
-            Unlink();
             Delete();
         }
     }
