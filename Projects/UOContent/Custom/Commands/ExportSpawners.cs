@@ -41,22 +41,25 @@ namespace Server.Commands
                         });
                     }
 
-                    int x1, y1, x2, y2;
+                    // Define the 3D Box for the export
+                    int x, y, z;
+
                     if (spawner.SpawnBounds != default)
                     {
-                        x1 = spawner.SpawnBounds.X;
-                        y1 = spawner.SpawnBounds.Y;
-                        x2 = spawner.SpawnBounds.X + spawner.SpawnBounds.Width;
-                        y2 = spawner.SpawnBounds.Y + spawner.SpawnBounds.Height;
+                        // Use existing precise 3D bounds
+                        x = spawner.SpawnBounds.X;
+                        y = spawner.SpawnBounds.Y;
+                        z = spawner.SpawnBounds.Z;
                     }
                     else
                     {
-                        x1 = spawner.X - spawner.HomeRange;
-                        y1 = spawner.Y - spawner.HomeRange;
-                        x2 = spawner.X + spawner.HomeRange;
-                        y2 = spawner.Y + spawner.HomeRange;
-                    }
+                        // Fallback to HomeRange calculation
+                        // Z defaults to spawner Z, depth defaults to 0 (flat surface check)
+                        x = spawner.X - spawner.HomeRange;
+                        y = spawner.Y - spawner.HomeRange;
+                        z = spawner.Z;
 
+                    }
                     spawnerList.Add(new
                     {
                         type = "Spawner",
@@ -64,15 +67,26 @@ namespace Server.Commands
                         location = new { x = spawner.X, y = spawner.Y, z = spawner.Z },
                         map = map.Name,
                         count = spawner.Count,
+                        homeRange = spawner.HomeRange,
+                        spawnPositionMode = spawner.SpawnPositionMode.ToString(),
                         group = spawner.Group,
                         minDelay = spawner.MinDelay,
                         maxDelay = spawner.MaxDelay,
-                        useSpiralScan = spawner.UseSpiralScan, // Added this field
-                        entries = entries,
+                        team = spawner.Team,
+                        isGroup = spawner.Group,
+                        useSpiralScan = spawner.UseSpiralScan,
+                        spawnLocationIsHome = spawner.SpawnLocationIsHome,
+                        maxSpawnAttempts = spawner.MaxSpawnAttempts,
                         name = spawner.Name ?? "Spawner",
                         walkingRange = spawner.WalkingRange,
-                        maxSpawnAttempts = 0,
-                        spawnBounds = new { x1, y1, x2, y2 }
+                        //spawnBounds = new { x1, y1, x2, y2 },
+                        spawnBounds = new
+                        {
+                            x,
+                            y,
+                            z
+                        },
+                        entries = entries
                     });
                     count++;
                 }
