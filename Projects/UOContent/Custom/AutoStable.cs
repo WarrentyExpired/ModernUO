@@ -27,6 +27,11 @@ namespace Server.Utilities
             {
                 BaseCreature mountToClaim = null;
 
+                if (!pm.Alive)
+                {
+                    return;
+                }
+
                 foreach (Mobile pet in pm.AutoStabled)
                 {
                     if (pet is BaseMount bm)

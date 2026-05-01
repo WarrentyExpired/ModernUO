@@ -1,4 +1,5 @@
 using Server;
+using Server.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -105,47 +106,19 @@ namespace Server.Mobiles
 
         private static readonly Point3D[] m_TrammelDeathDestinations =
         {
-            new(1481, 1612, 20),
-            new(2708, 2153, 0),
-            new(2249, 1230, 0),
-            new(5197, 3994, 37),
-            new(1412, 3793, 0),
-            new(3688, 2232, 20),
-            new(2578, 604, 0),
-            new(4397, 1089, 0),
-            new(5741, 3218, -2),
-            new(2996, 3441, 15),
-            new(624, 2225, 0),
-            new(1916, 2814, 0),
-            new(2929, 854, 0),
-            new(545, 967, 0),
-            new(3665, 2587, 0)
+            new(1323, 3504, 0),
         };
 
         private static readonly Point3D[] m_IlshenarDeathDestinations =
         {
-            new(1216, 468, -13),
-            new(723, 1367, -60),
-            new(745, 725, -28),
-            new(281, 1017, 0),
-            new(986, 1011, -32),
-            new(1175, 1287, -30),
-            new(1533, 1341, -3),
-            new(529, 217, -44),
-            new(1722, 219, 96)
         };
 
         private static readonly Point3D[] m_MalasDeathDestinations =
         {
-            new(2079, 1376, -70),
-            new(944, 519, -71)
         };
 
         private static readonly Point3D[] m_TokunoDeathDestinations =
         {
-            new(1166, 801, 27),
-            new(782, 1228, 25),
-            new(268, 624, 15)
         };
 
         private HashSet<int> _acquiredRecipes;
@@ -2425,6 +2398,7 @@ namespace Server.Mobiles
                 {
                     deathRobe.Delete();
                 }
+                Server.Utilities.AutoStable.HandleExit(this);
             }
         }
 
