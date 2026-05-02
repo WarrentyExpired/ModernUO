@@ -94,7 +94,7 @@ namespace Server.Gumps
                 case 1: InvokeCommand("GenTele", from); break;
                 case 2: InvokeCommand("Decorate", from); break;
                 case 3: InvokeCommand("GenerateSpawners Data/Spawners/**.json", from); break;
-                case 4: InvokeCommand("ExportSpawners", from); break;
+                case 4: InvokeCommand("ExportAllSpawners", from); break;
                 case 5: InvokeCommand("GenThruDoors", from); break;
                 case 6: InvokeCommand("SignGen", from); break;
                 case 7: InvokeCommand("ClearAll", from); break; // Executes the map wipe
