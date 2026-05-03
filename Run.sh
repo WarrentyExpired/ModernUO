@@ -1,3 +1,3 @@
 echo "Starting Server."
-dotnet ./Distribution/ModernUO.dll
+dotnet ../Distribution/ModernUO.dll
 
