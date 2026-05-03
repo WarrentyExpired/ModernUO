@@ -64,5 +64,6 @@ public static class RegionJsonRegistration
         RegionJsonSerializer.Register<GreetingTownRegion>();
         RegionJsonSerializer.Register<GreetingGraveyardRegion>();
         RegionJsonSerializer.Register<GreetingBusinessRegion>();
+        RegionJsonSerializer.Register<GreetingDungeonRegion>();
     }
 }
