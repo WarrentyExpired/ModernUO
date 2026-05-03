@@ -3218,6 +3218,15 @@ namespace Server.Mobiles
 
         public override void OnDeath(Container c)
         {
+            Mobile destinyKiller = FindMostRecentDamager(true);
+            if (destinyKiller is BaseCreature destinyBc)
+                destinyKiller = destinyBc.GetMaster();
+            if (destinyKiller is PlayerMobile destinyPm)
+            {
+                int pointsGained = (this.Fame / 100) + 1;
+                destinyPm.HesperiaPoints += pointsGained;
+                destinyPm.SendMessage(0x3F, $"You have gained {pointsGained} Destiny Points from this enemy.");
+            }
             if (IsBonded)
             {
                 Effects.PlaySound(this, GetDeathSound());

@@ -197,7 +197,6 @@ namespace Server.Mobiles
 
         public TimeSpan IdleTimePerStepsGain => TimeSpan.FromSeconds(1);
 
-        //[SerializableField(99)]
         private string _characterPublicDoor;
         [CommandProperty(AccessLevel.GameMaster)]
         public string CharacterPublicDoor
@@ -208,6 +207,40 @@ namespace Server.Mobiles
                 _characterPublicDoor = value;
                 this.MarkDirty();
             }
+        }
+
+        private int m_HesperiaPoints;
+        private int m_MaxStatCap = 100;
+        private int m_MaxSkillCap = 3000; // 300.0 total skill
+        private bool m_InsuranceUnlocked;
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int HesperiaPoints
+        {
+            get => m_HesperiaPoints;
+            set { m_HesperiaPoints = value; Delta(MobileDelta.Attributes); }
+        }
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int MaxStatCap
+        {
+            get => m_MaxStatCap;
+            set { m_MaxStatCap = value; Delta(MobileDelta.Attributes); }
+        }
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int MaxSkillCap
+        {
+            get => m_MaxSkillCap;
+            set { m_MaxSkillCap = value; Delta(MobileDelta.Attributes); }
+        }
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool InsuranceUnlocked
+        {
+            get => m_InsuranceUnlocked;
+            set
+            { m_InsuranceUnlocked = value; Delta(MobileDelta.Attributes); }
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -2392,6 +2425,17 @@ namespace Server.Mobiles
 
             if (Alive && !wasAlive)
             {
+                if (Backpack != null)
+                {
+                    for (int i = Backpack.Items.Count - 1; i >= 0; i--)
+                    {
+                        Item item = Backpack.Items[i];
+                        if (!item.Insured)
+                        {
+                            item.Delete();
+                        }
+                    }
+                }
                 var deathRobe = new DeathRobe();
 
                 if (!EquipItem(deathRobe))
@@ -2468,6 +2512,10 @@ namespace Server.Mobiles
 
         private bool CheckInsuranceOnDeath(Item item)
         {
+            if (!m_InsuranceUnlocked)
+            {
+                return false;
+            }
             if (!InsuranceEnabled || !item.Insured)
             {
                 return false;
@@ -2571,11 +2619,30 @@ namespace Server.Mobiles
             {
                 SendLocalizedMessage(1061115);
             }
-
             base.OnDeath(c);
 
+            if (c != null && !c.Deleted)
+            {
+                c.Delete();
+            }
+            this.RawStr = 60;
+            this.RawDex = 20;
+            this.RawInt = 20;
+            for (int i = 0; i < Skills.Length; ++i)
+            {
+                Skill sk = Skills[i];
+                sk.Base = 0;
+                if (sk.SkillName == SkillName.Focus || sk.SkillName == SkillName.Meditation)
+                {
+                    sk.SetLockNoRelay(SkillLock.Locked);
+                }
+                else
+                {
+                    sk.SetLockNoRelay(SkillLock.Up);
+                }
+                sk.Update();
+            }
             EquipSnapshot = null;
-
             HueMod = -1;
             NameMod = null;
             SavagePaintExpiration = TimeSpan.Zero;
@@ -2587,106 +2654,33 @@ namespace Server.Mobiles
                 RemoveBuff(BuffIcon.Fly);
             }
 
-            if (PermaFlags.Count > 0)
-            {
-                PermaFlags.Clear();
-
-                if (c is Corpse corpse)
-                {
-                    corpse.Criminal = true;
-                }
-
-                if (Stealing.ClassicMode)
-                {
-                    Criminal = true;
-                }
-            }
-
-            if (Murderer && Core.Now >= m_NextJustAward)
-            {
-                var m = FindMostRecentDamager(false);
-
-                if (m is BaseCreature bc)
-                {
-                    m = bc.GetMaster();
-                }
-
-                if (m != this && m is PlayerMobile pm)
-                {
-                    var gainedPath = false;
-
-                    var pointsToGain = 0;
-
-                    pointsToGain += (int)Math.Sqrt(GameTime.TotalSeconds * 4);
-                    pointsToGain *= 5;
-                    pointsToGain += (int)Math.Pow(Skills.Total / 250.0, 2);
-
-                    if (VirtueSystem.Award(pm, VirtueName.Justice, pointsToGain, ref gainedPath))
-                    {
-                        if (gainedPath)
-                        {
-                            m.SendLocalizedMessage(1049367); // You have gained a path in Justice!
-                        }
-                        else
-                        {
-                            m.SendLocalizedMessage(1049363); // You have gained in Justice.
-                        }
-
-                        m.FixedParticles(0x375A, 9, 20, 5027, EffectLayer.Waist);
-                        m.PlaySound(0x1F7);
-
-                        m_NextJustAward = Core.Now + TimeSpan.FromMinutes(pointsToGain / 3.0);
-                    }
-                }
-            }
-
-            if (m_InsuranceAward is PlayerMobile insurancePm && insurancePm.m_InsuranceBonus > 0)
-            {
-                // ~1_AMOUNT~ gold has been deposited into your bank box.
-                insurancePm.SendLocalizedMessage(1060397, insurancePm.m_InsuranceBonus.ToString());
-            }
-
-            var killer = FindMostRecentDamager(true);
-
-            if (killer is BaseCreature bcKiller)
-            {
-                var master = bcKiller.GetMaster();
-                if (master != null)
-                {
-                    killer = master;
-                }
-            }
-
-            if (Young && DuelContext == null && YoungDeathTeleport())
-            {
-                Timer.StartTimer(TimeSpan.FromSeconds(2.5), SendYoungDeathNotice);
-            }
-
-            if (DuelContext?.Registered != true || !DuelContext.Started || m_DuelPlayer?.Eliminated != false)
-            {
-                Faction.HandleDeath(this, killer);
-            }
-
-            Guilds.Guild.HandleDeath(this, killer);
-
             if (m_BuffTable != null)
             {
                 using var queue = PooledRefQueue<BuffIcon>.Create();
-
                 foreach (var buff in m_BuffTable.Values)
                 {
                     if (!buff.RetainThroughDeath)
-                    {
                         queue.Enqueue(buff.ID);
-                    }
                 }
-
                 while (queue.Count > 0)
-                {
-                    RemoveBuff(queue.Dequeue());
-                }
+                RemoveBuff(queue.Dequeue());
             }
 
+            Point3D hallOfDestinies = new Point3D(1060, 3175, 0);
+            this.MoveToWorld(hallOfDestinies, Map.Trammel);
+
+            Timer.DelayCall(TimeSpan.FromSeconds(3.5), () =>
+            {
+                if (!this.Alive)
+                {
+                    this.Resurrect();
+                    this.PlaySound(0x214); // Play a celestial "arrival" sound
+                    this.SendMessage(0x35, "Your physical journey ends, but your destiny is rewritten...");
+                    this.SendMessage(0x35, "Your skills and attributes have withered away with your previous form.");
+                }
+            });
+
+            // Notify the system that a player death occurred
             PlayerDeathEvent(this);
         }
 
@@ -2871,9 +2865,18 @@ namespace Server.Mobiles
 
             switch (version)
             {
+                case 36:
+                    {
+                        m_HesperiaPoints = reader.ReadInt();
+                        m_MaxStatCap = reader.ReadInt();
+                        m_MaxSkillCap = reader.ReadInt();
+                        m_InsuranceUnlocked = reader.ReadBool();
+                        goto case 35;
+                    }
                 case 35:
                     {
                         _characterPublicDoor = reader.ReadString();
+
                         goto case 34;
                     }
                 case 34: // Acquired Recipes is now a Set
@@ -3220,8 +3223,11 @@ namespace Server.Mobiles
         {
             base.Serialize(writer);
 
-            writer.Write((int)35); // version
-
+            writer.Write((int)36); // version
+            writer.Write(m_HesperiaPoints);
+            writer.Write(m_MaxStatCap);
+            writer.Write(m_MaxSkillCap);
+            writer.Write(m_InsuranceUnlocked);
             writer.Write(_characterPublicDoor);
             if (Stabled == null)
             {
@@ -4147,7 +4153,7 @@ namespace Server.Mobiles
 
         public override void OnSkillChange(SkillName skill, double oldBase)
         {
-            if (Young && SkillsTotal >= 4500)
+            if (Young && SkillsTotal >= 3000)
             {
                 // You have successfully obtained a respectable skill level, and have outgrown your status as a young player!
                 ((Account)Account)?.RemoveYoungStatus(1019036);

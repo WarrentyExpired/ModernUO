@@ -204,7 +204,6 @@ public static class SkillCheck
 
         return from is not PlayerMobile mobile || AntiMacroSystem.AntiMacroCheck(mobile, skill, obj);
     }
-
     public static void Gain(Mobile from, Skill skill)
     {
         if (from is BaseCreature { IsDeadPet: true })
@@ -219,7 +218,7 @@ public static class SkillCheck
 
         if (skill.Base < skill.Cap && skill.Lock == SkillLock.Up)
         {
-            var toGain = 1;
+            int toGain = 1;
 
             if (skill.Base <= 10.0)
             {
@@ -228,59 +227,67 @@ public static class SkillCheck
 
             var skills = from.Skills;
 
-            if (from.Player && skills.Total / (double)skills.Cap >= Utility.RandomDouble())
+            // --- ROGUELITE CHANGE START ---
+            int currentCap = skills.Cap;
+            if (from is PlayerMobile pm)
+            {
+                currentCap = pm.MaxSkillCap; // Use our 300.0 cap
+            }
+            // --- ROGUELITE CHANGE END ---
+
+            // This handles "Atrophy" (lowering a skill to gain another)
+            // We use currentCap here to ensure players rotate skills properly within their 300.0 limit
+            if (from.Player && skills.Total / (double)currentCap >= Utility.RandomDouble())
             {
                 for (var i = 0; i < skills.Length; ++i)
                 {
                     var toLower = skills[i];
-
-                    if (toLower != skill && toLower.Lock == SkillLock.Down && toLower.BaseFixedPoint >= toGain)
-                    {
-                        toLower.BaseFixedPoint = Math.Max(toLower.BaseFixedPoint - toGain, 0);
-                        break;
-                    }
+                if (toLower != skill && toLower.Lock == SkillLock.Down && toLower.BaseFixedPoint >= toGain)
+                {
+                    toLower.BaseFixedPoint = Math.Max(toLower.BaseFixedPoint - toGain, 0);
+                    break;
                 }
-            }
-
-            if (from is PlayerMobile pm && skill.SkillName == pm.AcceleratedSkill && pm.AcceleratedStart > Core.Now)
-            {
-                toGain *= Utility.RandomMinMax(2, 5);
-            }
-
-            if (!from.Player || skills.Total < skills.Cap)
-            {
-                skill.BaseFixedPoint = Math.Min(skill.BaseFixedPoint + toGain, skill.CapFixedPoint);
             }
         }
 
-        if (_usePub45StatGain && skill.Lock == SkillLock.Up)
+        // We check 'pm' again here, but we use a different name 'ppm' to avoid the "already defined" error
+        if (from is PlayerMobile ppm && skill.SkillName == ppm.AcceleratedSkill && ppm.AcceleratedStart > Core.Now)
         {
-            var info = skill.Info;
+            toGain *= Utility.RandomMinMax(2, 5);
+        }
 
-            var primaryStat = info.PrimaryStat;
-            var secondaryStat = info.SecondaryStat;
-
-            var primaryStatLock = primaryStat.ToLock(from);
-            var secondaryStatLock = secondaryStat.ToLock(from);
-
-            if (primaryStatLock != StatLockType.Up && secondaryStatLock != StatLockType.Up)
-            {
-                return;
-            }
-
-            // Flat 1 in 20 chance to gain anything
-            if (0.05 * _statGainChanceMultiplier > Utility.RandomDouble())
-            {
-                // 75% for primary, 25% for secondary - Unless primary is not set to gain.
-                var statToGain = primaryStatLock is StatLockType.Up && _primaryStatGainChance > Utility.RandomDouble()
-                    ? primaryStat
-                    : secondaryStat;
-
-                GainStat(from, statToGain);
-            }
+        // FINALLY: Apply the gain only if under the Roguelite Cap
+        if (!from.Player || skills.Total < currentCap)
+        {
+            skill.BaseFixedPoint = Math.Min(skill.BaseFixedPoint + toGain, skill.CapFixedPoint);
         }
     }
 
+    // Standard Stat Gain logic follows...
+    if (_usePub45StatGain && skill.Lock == SkillLock.Up)
+    {
+        var info = skill.Info;
+        var primaryStat = info.PrimaryStat;
+        var secondaryStat = info.SecondaryStat;
+
+        var primaryStatLock = primaryStat.ToLock(from);
+        var secondaryStatLock = secondaryStat.ToLock(from);
+
+        if (primaryStatLock != StatLockType.Up && secondaryStatLock != StatLockType.Up)
+        {
+            return;
+        }
+
+        if (0.05 * _statGainChanceMultiplier > Utility.RandomDouble())
+        {
+            var statToGain = primaryStatLock is StatLockType.Up && _primaryStatGainChance > Utility.RandomDouble()
+                ? primaryStat
+                : secondaryStat;
+
+            GainStat(from, statToGain);
+        }
+    }
+}
     public static void LegacyGain(Mobile from, SkillInfo info)
     {
         if (info.StrGain > 0 && from.StrLock == StatLockType.Up && RollStatIncreaseChance(info.StrGain))
@@ -324,12 +331,15 @@ public static class SkillCheck
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static bool CanRaise(Mobile from, Stat stat)
     {
-        if (!(from is BaseCreature creature && creature.Controlled))
+        if (from is PlayerMobile pm)
+        {
+            if (from.RawStatTotal >= pm.MaxStatCap)
+                return false;
+        }
+        else if (!(from is BaseCreature creature && creature.Controlled))
         {
             if (from.RawStatTotal >= from.StatCap)
-            {
                 return false;
-            }
         }
 
         return stat switch
