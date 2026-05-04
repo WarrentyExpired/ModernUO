@@ -244,6 +244,33 @@ namespace Server.Mobiles
             }
         }
 
+        private Dictionary<SkillName, double> m_SkillTome;
+        [CommandProperty(AccessLevel.GameMaster)]
+        public Dictionary<SkillName, double> SkillTome
+        {
+            get
+            {
+                if (m_SkillTome == null) m_SkillTome = new Dictionary<SkillName, double>();
+                return m_SkillTome;
+            }
+        }
+
+        public void RecordKnowledge()
+        {
+            foreach (Skill skill in this.Skills)
+            {
+                // Only record if it's above your 30.1 threshold
+                if (skill.Base >= 30.1)
+                {
+                    // If we don't have a record yet, or this life's skill is higher than the record
+                    if (!SkillTome.ContainsKey(skill.SkillName) || skill.Base > SkillTome[skill.SkillName])
+                    {
+                        SkillTome[skill.SkillName] = skill.Base;
+                    }
+                }
+            }
+        }
+
         [CommandProperty(AccessLevel.GameMaster)]
         public int DestinyPoints
         {
@@ -2662,13 +2689,15 @@ namespace Server.Mobiles
             {
                 SendLocalizedMessage(1061115);
             }
+            this.RecordKnowledge();
+            this.TotalDeaths++;
+            this.GenerateTemplateChoices();
             base.OnDeath(c);
 
             if (c != null && !c.Deleted)
             {
                 c.Delete();
             }
-            this.TotalDeaths++;
             this.RawStr = 60;
             this.RawDex = 20;
             this.RawInt = 20;
@@ -2909,6 +2938,17 @@ namespace Server.Mobiles
 
             switch (version)
             {
+                case 37:
+                    {
+                        int tomeCount = reader.ReadInt();
+                        for (int i = 0; i < tomeCount; i++)
+                        {
+                            SkillName name = (SkillName)reader.ReadInt();
+                            double val = reader.ReadDouble();
+                            SkillTome[name] = val;
+                        }
+                        goto case 36;
+                    }
                 case 36:
                     {
                         m_DestinyPoints = reader.ReadInt();
@@ -3272,7 +3312,13 @@ namespace Server.Mobiles
         {
             base.Serialize(writer);
 
-            writer.Write((int)36); // version
+            writer.Write((int)37); // version
+            writer.Write(SkillTome.Count);
+            foreach (var entry in SkillTome)
+            {
+                writer.Write((int)entry.Key);
+                writer.Write(entry.Value);
+            }
             writer.Write(m_DestinyPoints);
             writer.Write(m_MaxStatCap);
             writer.Write(m_MaxSkillCap);
@@ -3282,6 +3328,7 @@ namespace Server.Mobiles
             writer.Write(m_TotalDeaths);
             writer.Write(m_StatCapPurchases);
             writer.Write(m_SkillCapPurchases);
+
             writer.Write(_characterPublicDoor);
             if (Stabled == null)
             {

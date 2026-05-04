@@ -1,8 +1,9 @@
 using System;
-using System.Collections.Generic; // Added for List
+using System.Collections.Generic;
 using Server.Network;
 using Server.Mobiles;
-using Server.Destiny; // Link to your Templates.cs
+using Server.Destiny;
+using Server.Items;
 
 namespace Server.Gumps
 {
@@ -153,10 +154,14 @@ namespace Server.Gumps
                 pm.Skills[entry.Key].Base = entry.Value;
             }
 
+            if (pm.Backpack != null && pm.Backpack.FindItemByType(typeof(TomeOfKnowledge)) == null)
+            {
+                pm.AddToBackpack(new TomeOfKnowledge());
+                pm.SendMessage(0x3F, "A Tome of Previous Knowledge has been placed in your backpack.");
+            }
+
             template.GiveStartingLoot?.Invoke(pm);
             pm.SendMessage(0x3F, $"You have embraced the destiny of a {template.Name}.");
-
-            // Fix for the CloseGump error
             pm.CloseGump<DestinyShopGump>();
         }
 
