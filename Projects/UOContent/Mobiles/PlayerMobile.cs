@@ -209,7 +209,7 @@ namespace Server.Mobiles
                 this.MarkDirty();
             }
         }
-
+// Start of Destiny Stuff
         private int m_DestinyPoints;
         private int m_MaxStatCap = 100;
         private int m_MaxSkillCap = 3000;
@@ -219,6 +219,10 @@ namespace Server.Mobiles
         private int m_StatCapPurchases;
         private int m_SkillCapPurchases;
         private bool m_InsuranceUnlocked;
+        private bool m_TomeUnlockTier1;
+        private int m_TomeSkillBoost;
+        private bool m_HasPickedTemplate;
+
         private List<DestinyTemplate> m_CurrentTemplateChoices;
         public List<DestinyTemplate> CurrentTemplateChoices
         {
@@ -313,6 +317,49 @@ namespace Server.Mobiles
         [CommandProperty(AccessLevel.GameMaster)]
         public int TotalDeaths { get => m_TotalDeaths; set => m_TotalDeaths = value; }
 
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool TomeUnlockTier1 { get => m_TomeUnlockTier1; set => m_TomeUnlockTier1 = value; }
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int TomeSkillBoost { get => m_TomeSkillBoost; set => m_TomeSkillBoost = value; }
+
+        public double CurrentTomeStartingCap => 40.0 + (m_TomeSkillBoost * 5.0);
+
+        private List<SkillName> m_AvailableResonanceSkills;
+
+        public List<SkillName> AvailableResonanceSkills
+        {
+            get
+            {
+                if (m_AvailableResonanceSkills == null)
+                    GenerateResonanceSkills();
+                return m_AvailableResonanceSkills;
+            }
+        }
+
+        public void GenerateResonanceSkills()
+        {
+            m_AvailableResonanceSkills = new List<SkillName>();
+
+            // Get all skills from the Tome
+            List<SkillName> pool = new List<SkillName>(SkillTome.Keys);
+            if (pool.Count == 0) return;
+
+            // Determine how many to show (half, minimum of 1)
+            int countToPick = Math.Max(1, pool.Count / 2);
+            System.Random rnd = new System.Random();
+
+            for (int i = 0; i < countToPick && pool.Count > 0; i++)
+            {
+                int index = rnd.Next(pool.Count);
+                m_AvailableResonanceSkills.Add(pool[index]);
+                pool.RemoveAt(index);
+            }
+        }
+        [CommandProperty(AccessLevel.GameMaster)]
+        public bool HasPickedTemplate { get => m_HasPickedTemplate; set => m_HasPickedTemplate = value; }
+
+// End of Destiny Stuff
         [CommandProperty(AccessLevel.GameMaster)]
         public DateTime AnkhNextUse { get; set; }
 
@@ -2512,7 +2559,12 @@ namespace Server.Mobiles
                 {
                     deathRobe.Delete();
                 }
+
                 Server.Utilities.AutoStable.HandleExit(this);
+                if (Backpack != null && Backpack.FindItemByType(typeof(Server.Items.TomeOfKnowledge)) == null)
+                {
+                    Backpack.DropItem(new Server.Items.TomeOfKnowledge());
+                }
             }
         }
 
@@ -2689,9 +2741,11 @@ namespace Server.Mobiles
             {
                 SendLocalizedMessage(1061115);
             }
+            this.m_HasPickedTemplate = false;
             this.RecordKnowledge();
             this.TotalDeaths++;
             this.GenerateTemplateChoices();
+            this.GenerateResonanceSkills();
             base.OnDeath(c);
 
             if (c != null && !c.Deleted)
@@ -2938,30 +2992,35 @@ namespace Server.Mobiles
 
             switch (version)
             {
-                case 37:
-                    {
-                        int tomeCount = reader.ReadInt();
-                        for (int i = 0; i < tomeCount; i++)
-                        {
-                            SkillName name = (SkillName)reader.ReadInt();
-                            double val = reader.ReadDouble();
-                            SkillTome[name] = val;
-                        }
-                        goto case 36;
-                    }
                 case 36:
+                {
+                    int tomeCount = reader.ReadInt();
+                    for (int i = 0; i < tomeCount; i++)
                     {
-                        m_DestinyPoints = reader.ReadInt();
-                        m_MaxStatCap = reader.ReadInt();
-                        m_MaxSkillCap = reader.ReadInt();
-                        m_InsuranceUnlocked = reader.ReadBool();
-                        m_LifetimeDestinyPoints = reader.ReadInt();
-                        m_TotalPointsSpent = reader.ReadInt();
-                        m_TotalDeaths = reader.ReadInt();
-                        m_StatCapPurchases = reader.ReadInt();
-                        m_SkillCapPurchases = reader.ReadInt();
-                        goto case 35;
+                        SkillName name = (SkillName)reader.ReadInt();
+                        double val = reader.ReadDouble();
+                        SkillTome[name] = val;
                     }
+                    m_DestinyPoints = reader.ReadInt();
+                    m_MaxStatCap = reader.ReadInt();
+                    m_MaxSkillCap = reader.ReadInt();
+                    m_InsuranceUnlocked = reader.ReadBool();
+                    m_LifetimeDestinyPoints = reader.ReadInt();
+                    m_TotalPointsSpent = reader.ReadInt();
+                    m_TotalDeaths = reader.ReadInt();
+                    m_StatCapPurchases = reader.ReadInt();
+                    m_SkillCapPurchases = reader.ReadInt();
+                    m_TomeUnlockTier1 = reader.ReadBool();
+                    m_TomeSkillBoost = reader.ReadInt();
+                    m_HasPickedTemplate = reader.ReadBool();
+                    int resonanceCount = reader.ReadInt();
+                    m_AvailableResonanceSkills = new List<SkillName>();
+                    for (int i = 0; i < resonanceCount; i++)
+                    {
+                        m_AvailableResonanceSkills.Add((SkillName)reader.ReadInt());
+                    }
+                    goto case 35;
+                }
                 case 35:
                     {
                         _characterPublicDoor = reader.ReadString();
@@ -3312,7 +3371,7 @@ namespace Server.Mobiles
         {
             base.Serialize(writer);
 
-            writer.Write((int)37); // version
+            writer.Write((int)36); // version
             writer.Write(SkillTome.Count);
             foreach (var entry in SkillTome)
             {
@@ -3328,6 +3387,21 @@ namespace Server.Mobiles
             writer.Write(m_TotalDeaths);
             writer.Write(m_StatCapPurchases);
             writer.Write(m_SkillCapPurchases);
+            writer.Write(m_TomeUnlockTier1);
+            writer.Write(m_TomeSkillBoost);
+            writer.Write(m_HasPickedTemplate);
+            if (m_AvailableResonanceSkills == null)
+            {
+                writer.Write(0);
+            }
+            else
+            {
+                writer.Write(m_AvailableResonanceSkills.Count);
+                foreach (SkillName sn in m_AvailableResonanceSkills)
+                {
+                    writer.Write((int)sn);
+                }
+            }
 
             writer.Write(_characterPublicDoor);
             if (Stabled == null)
