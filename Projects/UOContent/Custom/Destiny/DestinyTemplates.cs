@@ -23,8 +23,8 @@ namespace Server.Destiny
         public static List<DestinyTemplate> AllTemplates = new List<DestinyTemplate>()
         {
             new DestinyTemplate("Warrior", "30 Swords, Tactics, Anatomy",
-                new Dictionary<SkillName, double>{{SkillName.Swords, 30.0}, {SkillName.Tactics, 30.0}, {SkillName.Anatomy, 30.0}},
-                (pm) => { pm.AddToBackpack(new VikingSword()); pm.AddToBackpack(new WoodenShield()); }),
+                new Dictionary<SkillName, double>{{SkillName.Swords, 30.0}, {SkillName.Tactics, 30.0}, {SkillName.Anatomy, 30.0}, {SkillName.Healing, 30}},
+                (pm) => { pm.AddToBackpack(new Katana()); pm.AddToBackpack(new Buckler()); pm.AddToBackpack(new Bandage(100)); }),
 
             new DestinyTemplate("Mage", "30 Magery, EvalInt, Med",
                 new Dictionary<SkillName, double>{{SkillName.Magery, 30.0}, {SkillName.EvalInt, 30.0}, {SkillName.Meditation, 30.0}},
@@ -36,11 +36,11 @@ namespace Server.Destiny
 
             new DestinyTemplate("Bard", "30 Music, Provo, Discord",
                 new Dictionary<SkillName, double>{{SkillName.Musicianship, 30.0}, {SkillName.Provocation, 30.0}, {SkillName.Discordance, 30.0}},
-                (pm) => { pm.AddToBackpack(new Tambourine()); }),
+                (pm) => { pm.AddToBackpack(new Tambourine()); pm.AddToBackpack(new Drums()); }),
 
             new DestinyTemplate("Tamer", "30 Taming, Lore, Vet",
                 new Dictionary<SkillName, double>{{SkillName.AnimalTaming, 30.0}, {SkillName.AnimalLore, 30.0}, {SkillName.Veterinary, 30.0}},
-                (pm) => { pm.AddToBackpack(new ShepherdsCrook()); }),
+                (pm) => { pm.AddToBackpack(new ShepherdsCrook()); pm.AddToBackpack(new Bandage(100)); }),
 
             new DestinyTemplate("Rogue", "30 Fencing, Hiding, Stealth",
                 new Dictionary<SkillName, double>{{SkillName.Fencing, 30.0}, {SkillName.Hiding, 30.0}, {SkillName.Stealth, 30.0}},

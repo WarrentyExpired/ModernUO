@@ -81,10 +81,10 @@ namespace Server.Gumps
                     }
                     break;
                 case 20: // Tome Unlock
-                    if (!m_Player.TomeUnlockTier1 && Purchase(5000)) m_Player.TomeUnlockTier1 = true;
+                    if (!m_Player.TomeUnlockTier1 && Purchase(1000)) m_Player.TomeUnlockTier1 = true;
                     break;
                 case 21: // Tome Boost
-                    int bCost = GetCurrentCost(2000, m_Player.TomeSkillBoost);
+                    int bCost = GetCurrentCost(1000, m_Player.TomeSkillBoost);
                     if (m_Player.TomeUnlockTier1 && m_Player.CurrentTomeStartingCap < 120 && Purchase(bCost))
                         m_Player.TomeSkillBoost++;
                     break;
