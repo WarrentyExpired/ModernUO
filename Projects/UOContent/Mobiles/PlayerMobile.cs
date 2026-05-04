@@ -45,6 +45,7 @@ using CalcMoves = Server.Movement.Movement;
 using QuestOfferGump = Server.Engines.MLQuests.Gumps.QuestOfferGump;
 using RankDefinition = Server.Guilds.RankDefinition;
 using ModernUO.Serialization;
+using Server.Destiny;
 
 namespace Server.Mobiles
 {
@@ -209,16 +210,45 @@ namespace Server.Mobiles
             }
         }
 
-        private int m_HesperiaPoints;
+        private int m_DestinyPoints;
         private int m_MaxStatCap = 100;
-        private int m_MaxSkillCap = 3000; // 300.0 total skill
+        private int m_MaxSkillCap = 3000;
+        private int m_LifetimeDestinyPoints;
+        private int m_TotalPointsSpent;
+        private int m_TotalDeaths;
+        private int m_StatCapPurchases;
+        private int m_SkillCapPurchases;
         private bool m_InsuranceUnlocked;
+        private List<DestinyTemplate> m_CurrentTemplateChoices;
+        public List<DestinyTemplate> CurrentTemplateChoices
+        {
+            get
+            {
+                if (m_CurrentTemplateChoices == null || m_CurrentTemplateChoices.Count == 0)
+                GenerateTemplateChoices();
+                return m_CurrentTemplateChoices;
+            }
+        }
+
+        public void GenerateTemplateChoices()
+        {
+            m_CurrentTemplateChoices = new List<DestinyTemplate>();
+            List<DestinyTemplate> pool = new List<DestinyTemplate>(DestinyTemplate.AllTemplates);
+            System.Random rnd = new System.Random();
+
+            for (int i = 0; i < 5 && pool.Count > 0; i++)
+            {
+                int index = rnd.Next(pool.Count);
+                m_CurrentTemplateChoices.Add(pool[index]);
+                pool.RemoveAt(index);
+            }
+        }
 
         [CommandProperty(AccessLevel.GameMaster)]
-        public int HesperiaPoints
+        public int DestinyPoints
         {
-            get => m_HesperiaPoints;
-            set { m_HesperiaPoints = value; Delta(MobileDelta.Attributes); }
+            get => m_DestinyPoints;
+            set { m_DestinyPoints = value; Delta(MobileDelta.Attributes); }
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -234,6 +264,11 @@ namespace Server.Mobiles
             get => m_MaxSkillCap;
             set { m_MaxSkillCap = value; Delta(MobileDelta.Attributes); }
         }
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int StatCapPurchases { get => m_StatCapPurchases; set => m_StatCapPurchases = value; }
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int SkillCapPurchases { get => m_SkillCapPurchases; set => m_SkillCapPurchases = value; }
 
         [CommandProperty(AccessLevel.GameMaster)]
         public bool InsuranceUnlocked
@@ -242,6 +277,14 @@ namespace Server.Mobiles
             set
             { m_InsuranceUnlocked = value; Delta(MobileDelta.Attributes); }
         }
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int LifetimeDestinyPoints { get => m_LifetimeDestinyPoints; set => m_LifetimeDestinyPoints = value; }
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int TotalPointsSpent { get => m_TotalPointsSpent; set => m_TotalPointsSpent = value; }
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int TotalDeaths { get => m_TotalDeaths; set => m_TotalDeaths = value; }
 
         [CommandProperty(AccessLevel.GameMaster)]
         public DateTime AnkhNextUse { get; set; }
@@ -2625,6 +2668,7 @@ namespace Server.Mobiles
             {
                 c.Delete();
             }
+            this.TotalDeaths++;
             this.RawStr = 60;
             this.RawDex = 20;
             this.RawInt = 20;
@@ -2867,10 +2911,15 @@ namespace Server.Mobiles
             {
                 case 36:
                     {
-                        m_HesperiaPoints = reader.ReadInt();
+                        m_DestinyPoints = reader.ReadInt();
                         m_MaxStatCap = reader.ReadInt();
                         m_MaxSkillCap = reader.ReadInt();
                         m_InsuranceUnlocked = reader.ReadBool();
+                        m_LifetimeDestinyPoints = reader.ReadInt();
+                        m_TotalPointsSpent = reader.ReadInt();
+                        m_TotalDeaths = reader.ReadInt();
+                        m_StatCapPurchases = reader.ReadInt();
+                        m_SkillCapPurchases = reader.ReadInt();
                         goto case 35;
                     }
                 case 35:
@@ -3224,10 +3273,15 @@ namespace Server.Mobiles
             base.Serialize(writer);
 
             writer.Write((int)36); // version
-            writer.Write(m_HesperiaPoints);
+            writer.Write(m_DestinyPoints);
             writer.Write(m_MaxStatCap);
             writer.Write(m_MaxSkillCap);
             writer.Write(m_InsuranceUnlocked);
+            writer.Write(m_LifetimeDestinyPoints);
+            writer.Write(m_TotalPointsSpent);
+            writer.Write(m_TotalDeaths);
+            writer.Write(m_StatCapPurchases);
+            writer.Write(m_SkillCapPurchases);
             writer.Write(_characterPublicDoor);
             if (Stabled == null)
             {

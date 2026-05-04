@@ -3224,7 +3224,8 @@ namespace Server.Mobiles
             if (destinyKiller is PlayerMobile destinyPm)
             {
                 int pointsGained = (this.Fame / 100) + 1;
-                destinyPm.HesperiaPoints += pointsGained;
+                destinyPm.DestinyPoints += pointsGained;
+                destinyPm.LifetimeDestinyPoints += pointsGained;
                 destinyPm.SendMessage(0x3F, $"You have gained {pointsGained} Destiny Points from this enemy.");
             }
             if (IsBonded)
