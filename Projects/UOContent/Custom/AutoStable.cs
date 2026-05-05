@@ -43,6 +43,9 @@ namespace Server.Utilities
 
                 if (mountToClaim != null)
                 {
+                    mountToClaim.ControlMaster = pm;
+                    mountToClaim.Controlled = true;
+                    mountToClaim.ControlOrder = OrderType.Follow;
                     mountToClaim.MoveToWorld(pm.Location, pm.Map);
                     mountToClaim.IsStabled = false;
                     mountToClaim.ControlOrder = OrderType.Follow;
