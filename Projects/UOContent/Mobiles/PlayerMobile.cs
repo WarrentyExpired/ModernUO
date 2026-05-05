@@ -2554,6 +2554,12 @@ namespace Server.Mobiles
                         }
                     }
                 }
+                BankBox bank = this.FindBankNoCreate();
+                if (bank != null)
+                {
+                    for (int i = bank.Items.Count - 1; i >= 0; i--)
+                        bank.Items[i].Delete();
+                }
                 var deathRobe = new DeathRobe();
 
                 if (!EquipItem(deathRobe))
