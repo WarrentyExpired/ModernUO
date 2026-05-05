@@ -924,8 +924,8 @@ namespace Server.Mobiles
         public static bool BondingEnabled { get; private set; }
 
         public virtual bool IsBondable => BondingEnabled && !Summoned;
-        public virtual TimeSpan BondingDelay => TimeSpan.FromDays(7.0);
-        public virtual TimeSpan BondingAbandonDelay => TimeSpan.FromDays(1.0);
+        public virtual TimeSpan BondingDelay => TimeSpan.FromMinutes(30.0);
+        public virtual TimeSpan BondingAbandonDelay => TimeSpan.FromMinutes(1.0);
 
         public override bool CanRegenHits => !IsDeadPet && !Summoned && base.CanRegenHits;
         public override bool CanRegenStam => !IsParagon && !IsDeadPet && base.CanRegenStam;
