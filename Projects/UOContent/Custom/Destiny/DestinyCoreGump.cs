@@ -4,6 +4,7 @@ using Server.Network;
 using Server.Mobiles;
 using Server.Destiny;
 using Server.Items;
+
 namespace Server.Gumps
 {
     public class DestinyCoreGump : DestinyBaseGump
@@ -54,12 +55,33 @@ namespace Server.Gumps
                 else
                     AddLabel(255, startY, 0x481, "Soul Heritage: MAXED (120.0)");
             }
+
+            startY += 60; // Increment for the next section
+
+            // Pet vault slot upgrade
+            int vaultCost = GetVaultUpgradeCost(m_Player.MaxPetVaultSlots);
+            bool isMaxed = m_Player.MaxPetVaultSlots >= 10;
+
+            // Fixed: Changed 'y' to 'startY'
+            AddLabel(230, startY, 1152, "Soul Archive Expansion");
+            AddLabel(230, startY + 20, 0x481, $"Current Slots: {m_Player.MaxPetVaultSlots} / 10");
+
+            if (!isMaxed)
+            {
+                AddButton(550, startY + 5, 4005, 4007, 22, GumpButtonType.Reply, 0);
+                AddLabel(590, startY + 5, 0x3F, $"{vaultCost:N0} Points");
+            }
+            else
+            {
+                AddLabel(550, startY + 5, 0x44, "MAXED");
+            }
         }
 
         public override void OnResponse(NetState sender, in RelayInfo info)
         {
             if (info.ButtonID == 0)
                 return;
+
             base.OnResponse(sender, info); // Handles tabs
 
             switch (info.ButtonID)
@@ -72,6 +94,7 @@ namespace Server.Gumps
                         m_Player.StatCapPurchases++;
                     }
                     break;
+
                 case 2: // Skill Cap
                     int skCost = GetCurrentCost(500, m_Player.SkillCapPurchases);
                     if (m_Player.SkillCapPurchases < 40 && Purchase(skCost))
@@ -80,10 +103,13 @@ namespace Server.Gumps
                         m_Player.SkillCapPurchases++;
                     }
                     break;
+
                 case 20: // Tome Unlock
-                    if (!m_Player.TomeUnlockTier1 && Purchase(1000)) m_Player.TomeUnlockTier1 = true;
+                    if (!m_Player.TomeUnlockTier1 && Purchase(1000))
+                        m_Player.TomeUnlockTier1 = true;
                     break;
-                case 21:
+
+                case 21: // Heritage Cap
                     int heritageCost = GetHeritageCost(2000, m_Player.TomeSkillBoost);
                     if (m_Player.TomeUnlockTier1 && m_Player.CurrentTomeStartingCap < 120.0 && Purchase(heritageCost))
                     {
@@ -91,19 +117,43 @@ namespace Server.Gumps
                         m_Player.SendMessage(0x3F, "Your soul's capacity for ancient memories has expanded.");
                     }
                     break;
-            }
+
+                case 22: // Soul Archive Expansion
+                    int cost = GetVaultUpgradeCost(m_Player.MaxPetVaultSlots);
+                    if (m_Player.MaxPetVaultSlots >= 10)
+                    {
+                        m_Player.SendMessage(0x22, "Your soul can hold no more companions.");
+                    }
+                    else if (m_Player.DestinyPoints < cost)
+                    {
+                        m_Player.SendMessage(0x22, "You do not have enough Destiny Points to expand your soul.");
+                    }
+                    else
+                    {
+                        m_Player.DestinyPoints -= cost;
+                        m_Player.MaxPetVaultSlots += 1;
+                        m_Player.FixedEffect(0x375A, 10, 15);
+                        m_Player.PlaySound(0x1F2);
+                        m_Player.SendMessage(0x3F, $"Your Soul Archive has expanded to {m_Player.MaxPetVaultSlots} slots!");
+                    }
+                    break;
+            } // <--- FIXED: Added missing closing brace for the switch statement
+
             if (info.ButtonID < 900)
             {
                 m_Player.SendGump(new DestinyCoreGump(m_Player));
             }
         }
+
         private int GetHeritageCost(int baseCost, int boostLevel)
         {
-            // Formula: Base * (1.75 ^ Level)
-            // Level 0 (to get to 45) = 2000
-            // Level 1 (to get to 50) = 3500
-            // Level 15 (to get to 120) = ~3.2 Million
             return (int)(baseCost * Math.Pow(1.75, boostLevel));
+        }
+
+        public static int GetVaultUpgradeCost(int currentSlots)
+        {
+            int upgradeLevel = currentSlots - 1;
+            return upgradeLevel * 5000;
         }
     }
 }

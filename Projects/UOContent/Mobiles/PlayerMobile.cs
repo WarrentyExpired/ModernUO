@@ -46,6 +46,7 @@ using QuestOfferGump = Server.Engines.MLQuests.Gumps.QuestOfferGump;
 using RankDefinition = Server.Guilds.RankDefinition;
 using ModernUO.Serialization;
 using Server.Destiny;
+using System.Linq;
 
 namespace Server.Mobiles
 {
@@ -222,7 +223,9 @@ namespace Server.Mobiles
         private bool m_TomeUnlockTier1;
         private int m_TomeSkillBoost;
         private bool m_HasPickedTemplate;
+        private int m_MaxPetVaultSlots = 2;
 
+        private List<BaseCreature> m_PetVault;
         private List<DestinyTemplate> m_CurrentTemplateChoices;
         public List<DestinyTemplate> CurrentTemplateChoices
         {
@@ -359,7 +362,18 @@ namespace Server.Mobiles
         [CommandProperty(AccessLevel.GameMaster)]
         public bool HasPickedTemplate { get => m_HasPickedTemplate; set => m_HasPickedTemplate = value; }
 
+        [CommandProperty(AccessLevel.GameMaster)]
+        public List<BaseCreature> PetVault => m_PetVault ??= new List<BaseCreature>();
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int MaxPetVaultSlots
+        {
+            get => m_MaxPetVaultSlots;
+            set => m_MaxPetVaultSlots = value;
+        }
+
 // End of Destiny Stuff
+
         [CommandProperty(AccessLevel.GameMaster)]
         public DateTime AnkhNextUse { get; set; }
 
@@ -2543,6 +2557,7 @@ namespace Server.Mobiles
 
             if (Alive && !wasAlive)
             {
+                // Clear the Players backpack.
                 if (Backpack != null)
                 {
                     for (int i = Backpack.Items.Count - 1; i >= 0; i--)
@@ -2554,12 +2569,54 @@ namespace Server.Mobiles
                         }
                     }
                 }
+                // Clear the players bank box
                 BankBox bank = this.FindBankNoCreate();
                 if (bank != null)
                 {
                     for (int i = bank.Items.Count - 1; i >= 0; i--)
                         bank.Items[i].Delete();
                 }
+                // Clear the players Stabled pets and current unbonded pets.
+                if (this.AllFollowers != null)
+                {
+                    Mobile[] activeFollowers = this.AllFollowers.ToArray();
+                    foreach (Mobile m in activeFollowers)
+                    {
+                        if (m is BaseCreature bc)
+                        {
+                            if (bc.IsBonded && PetVault.Count < this.MaxPetVaultSlots)
+                            {
+                                Server.Utilities.PetVaultController.VaultPet(this, bc);
+                            }
+                            else
+                            {
+                                bc.Delete();
+                            }
+                        }
+                    }
+                }
+                if (this.Stabled != null && this.Stabled.Count > 0)
+                {
+                    Mobile[] stableArray = this.Stabled.ToArray();
+                    foreach (Mobile m in stableArray)
+                    {
+                        if (m is BaseCreature bc)
+                        {
+                            if (bc.IsBonded && this.PetVault.Count < this.MaxPetVaultSlots)
+                            {
+                                Server.Utilities.PetVaultController.VaultPet(this, bc);
+                            }
+                            else
+                            {
+                                bc.Delete();
+                            }
+                        }
+                    }
+                    this.Stabled.Clear();
+                }
+                this.SendMessage(0x35, "Bonded companions have been anchored to your soul; all others have faded.");
+                this.Followers = 0;
+
                 var deathRobe = new DeathRobe();
 
                 if (!EquipItem(deathRobe))
@@ -3020,6 +3077,18 @@ namespace Server.Mobiles
                     m_TomeUnlockTier1 = reader.ReadBool();
                     m_TomeSkillBoost = reader.ReadInt();
                     m_HasPickedTemplate = reader.ReadBool();
+                    int vaultCount = reader.ReadInt();
+                    m_PetVault = new List<BaseCreature>(vaultCount);
+                    for (int i = 0; i < vaultCount; ++i)
+                    {
+                        Serial s = reader.ReadSerial();
+                        BaseCreature bc = World.FindMobile(s) as BaseCreature;
+                        if (bc != null)
+                        {
+                            m_PetVault.Add(bc);
+                        }
+                    }
+                    m_MaxPetVaultSlots = reader.ReadInt();
                     int resonanceCount = reader.ReadInt();
                     m_AvailableResonanceSkills = new List<SkillName>();
                     for (int i = 0; i < resonanceCount; i++)
@@ -3397,6 +3466,12 @@ namespace Server.Mobiles
             writer.Write(m_TomeUnlockTier1);
             writer.Write(m_TomeSkillBoost);
             writer.Write(m_HasPickedTemplate);
+            writer.Write(PetVault.Count);
+            writer.Write(m_MaxPetVaultSlots);
+            foreach (BaseCreature bc in PetVault)
+            {
+                writer.Write(bc != null ? bc.Serial : Serial.MinusOne);
+            }
             if (m_AvailableResonanceSkills == null)
             {
                 writer.Write(0);
