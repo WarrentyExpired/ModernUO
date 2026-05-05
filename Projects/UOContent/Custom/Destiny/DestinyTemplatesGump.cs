@@ -53,21 +53,22 @@ namespace Server.Gumps
                 pm.SendMessage(0x22, "You have already embraced a destiny for this life.");
                 return;
             }
-
-            // 1. Wipe all skills to 0.0 first (In case they gained 0.1 accidentally)
-           for (int i = 0; i < pm.Skills.Length; ++i)
+            for (int i = 0; i < pm.Skills.Length; ++i)
                 pm.Skills[i].Base = 0.0;
-
-            // 2. Set the Template skills
             foreach (var entry in template.Skills)
             {
-                pm.Skills[entry.Key].Base = entry.Value;
+                double finalValue = entry.Value;
+                if (pm.TomeUnlockTier1 && pm.SkillTome.ContainsKey(entry.Key))
+                {
+                    double storedValue = pm.SkillTome[entry.Key];
+                    double heritageCap = pm.CurrentTomeStartingCap;
+                    double reclaimed = Math.Min(storedValue, heritageCap);
+                    finalValue = Math.Max(finalValue, reclaimed);
+                }
+                pm.Skills[entry.Key].Base = finalValue;
             }
-
-            // 3. Mark the template as picked
             pm.HasPickedTemplate = true;
-
-            // ... Give Loot, etc ...
+            template.GiveStartingLoot?.Invoke(pm);
             pm.SendMessage(0x3F, $"You have embraced the destiny of a {template.Name}.");
             pm.CloseGump<DestinyTemplatesGump>();
         }

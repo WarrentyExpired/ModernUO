@@ -22,7 +22,7 @@ namespace Server.Gumps
             // Sidebar
             AddAlphaRegion(20, 20, 180, 690);
             AddLabel(45, 35, 1152, "ALTAR OF DESTINY");
-            AddLabel(40, 60, 0x480, $"Points: {m_Player.DestinyPoints}");
+            AddLabel(40, 60, 0x480, $"Points: {m_Player.DestinyPoints:N0}");
 
             // --- TABS ---
             AddButton(30, 120, 4005, 4007, 900, GumpButtonType.Reply, 0);
@@ -65,7 +65,7 @@ namespace Server.Gumps
         {
             AddButton(x, y, 4005, 4007, buttonID, GumpButtonType.Reply, 0);
             AddLabel(x + 35, y, 1152, name);
-            AddLabel(x + 550, y, 0x480, $"{cost} Pts");
+            AddLabel(x + 550, y, 0x480, $"{cost:N0} Pts");
         }
 
         protected bool Purchase(int cost)
