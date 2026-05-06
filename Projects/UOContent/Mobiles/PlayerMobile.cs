@@ -2858,7 +2858,7 @@ namespace Server.Mobiles
             }
 
             Point3D hallOfDestinies = new Point3D(1060, 3175, 0);
-            this.MoveToWorld(hallOfDestinies, Map.Trammel);
+            this.MoveToWorld(hallOfDestinies, Map.Felucca);
 
             Timer.DelayCall(TimeSpan.FromSeconds(3.5), () =>
             {
@@ -4673,7 +4673,7 @@ namespace Server.Mobiles
 
             Point3D[] list;
 
-            if (map == Map.Trammel)
+            if (map == Map.Felucca)
             {
                 list = m_TrammelDeathDestinations;
             }
