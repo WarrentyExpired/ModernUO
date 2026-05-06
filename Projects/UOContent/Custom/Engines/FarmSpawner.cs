@@ -48,7 +48,7 @@ namespace Server.Engines.Farming
 
         private static void ProcessRegion(Rectangle2D[] fields, Type[] cropTypes)
         {
-            Map map = Map.Trammel;
+            Map map = Map.Felucca;
 
             foreach (var rect in fields)
             {
