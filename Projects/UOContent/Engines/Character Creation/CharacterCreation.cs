@@ -286,7 +286,7 @@ public static partial class CharacterCreation
         }
 
         var city = GetStartLocation(args);
-        CityInfo startCity = new CityInfo("Thalassa", "Thalassa", 1366, 3426, 3, Map.Felucca);
+        CityInfo startCity = new CityInfo("Thalassa", "Thalassa", 767, 1130, 3, Map.Ilshenar);
         newChar.MoveToWorld(startCity.Location, startCity.Map);
 
         logger.Information(

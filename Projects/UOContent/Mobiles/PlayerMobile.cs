@@ -2817,8 +2817,8 @@ namespace Server.Mobiles
                 c.Delete();
             }
             this.RawStr = 60;
-            this.RawDex = 20;
-            this.RawInt = 20;
+            this.RawDex = 10;
+            this.RawInt = 10;
             for (int i = 0; i < Skills.Length; ++i)
             {
                 Skill sk = Skills[i];
@@ -2857,8 +2857,8 @@ namespace Server.Mobiles
                 RemoveBuff(queue.Dequeue());
             }
 
-            Point3D hallOfDestinies = new Point3D(1060, 3175, 0);
-            this.MoveToWorld(hallOfDestinies, Map.Felucca);
+            Point3D hallOfDestinies = new Point3D(461, 878, 0);
+            this.MoveToWorld(hallOfDestinies, Map.Ilshenar);
 
             Timer.DelayCall(TimeSpan.FromSeconds(3.5), () =>
             {

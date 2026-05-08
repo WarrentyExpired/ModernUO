@@ -26,8 +26,8 @@ namespace Server.Items
                     return;
                 }
 
-                pm.CloseGump<DestinyDashboardGump>();
-                pm.SendGump(new DestinyDashboardGump(pm));
+                pm.CloseGump<DestinyMasterGump>();
+                pm.SendGump(new DestinyMasterGump(pm, 0));
             }
         }
         public DestinyStone(Serial serial) : base(serial) { }
