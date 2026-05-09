@@ -52,3 +52,4 @@ Distribution
 
 # BuildTool native binaries (downloaded from GitHub Releases)
 /tools/
+Projects/UOContent/Migrations/
