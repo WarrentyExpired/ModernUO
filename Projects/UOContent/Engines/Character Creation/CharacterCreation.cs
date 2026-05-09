@@ -286,7 +286,7 @@ public static partial class CharacterCreation
         }
 
         var city = GetStartLocation(args);
-        CityInfo startCity = new CityInfo("Thalassa", "Thalassa", 767, 1130, 3, Map.Ilshenar);
+        CityInfo startCity = new CityInfo("the Swamp of Destiny", "the Swamp of Destiny", 2267, 51, 0, Map.Ilshenar);
         newChar.MoveToWorld(startCity.Location, startCity.Map);
 
         logger.Information(
