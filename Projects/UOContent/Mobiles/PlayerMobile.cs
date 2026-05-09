@@ -2857,7 +2857,7 @@ namespace Server.Mobiles
                 RemoveBuff(queue.Dequeue());
             }
 
-            Point3D hallOfDestinies = new Point3D(461, 878, 0);
+            Point3D hallOfDestinies = new Point3D(2181, 40, 0);
             this.MoveToWorld(hallOfDestinies, Map.Ilshenar);
 
             Timer.DelayCall(TimeSpan.FromSeconds(3.5), () =>

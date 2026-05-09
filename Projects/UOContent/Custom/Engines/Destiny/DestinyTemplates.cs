@@ -28,7 +28,7 @@ namespace Server.Destiny
 
             new DestinyTemplate("Mage", "30 Magery, EvalInt, Med",
                 new Dictionary<SkillName, double>{{SkillName.Magery, 30.0}, {SkillName.EvalInt, 30.0}, {SkillName.Meditation, 30.0}},
-                (pm) => { pm.AddToBackpack(new Spellbook()); }),
+                (pm) => { pm.AddToBackpack(new Spellbook()); pm.AddToBackpack(new BagOfAllReagents()); }),
 
             new DestinyTemplate("Archer", "30 Archery, Tactics, Anatomy",
                 new Dictionary<SkillName, double>{{SkillName.Archery, 30.0}, {SkillName.Tactics, 30.0}, {SkillName.Anatomy, 30.0}},
