@@ -69,7 +69,7 @@ namespace Server.Engines.Farming
 
         public static void Initialize()
         {
-            _timer = Timer.DelayCall(TimeSpan.FromMinutes(1.0), TimeSpan.FromMinutes(1.0), OnTick);
+            _timer = Timer.DelayCall(TimeSpan.FromMinutes(10.0), TimeSpan.FromMinutes(10.0), OnTick);
         }
 
         private static void OnTick()
