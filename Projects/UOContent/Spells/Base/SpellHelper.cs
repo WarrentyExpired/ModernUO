@@ -114,22 +114,22 @@ namespace Server.Spells
             },
             /* Recall To */
             {
-                false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
+                false, false, true, false, false, false, false, false, false, false, false, false, false, false, false,
                 false, false, false, false
             },
             /* Gate From */
             {
-                false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
+                false, false, true, false, false, false, false, false, false, false, false, false, false, false, false,
                 false, false, false, false
             },
             /* Gate To */
             {
-                false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
+                false, false, true, false, false, false, false, false, false, false, false, false, false, false, false,
                 false, false, false, false
             },
             /* Mark In */
             {
-                false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
+                false, false, true, false, false, false, false, false, false, false, false, false, false, false, false,
                 false, false, false, false
             },
             /* Tele From */
