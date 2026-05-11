@@ -21,16 +21,16 @@ namespace Server.Engines.Farming
         private static readonly Rectangle2D[] m_ThalassaPlot1D = { new(679, 1121, 9, 9), };
         private static readonly Type[] m_ThalassaCrops1D = { typeof(FarmableCabbage)};
 
-        private static readonly Rectangle2D[] m_ThalassaPlot2A = { new(731, 1138, 12, 7), };
+        private static readonly Rectangle2D[] m_ThalassaPlot2A = { new(731, 1138, 10, 7), };
         private static readonly Type[] m_ThalassaCrops2A = { typeof(FarmableWheat)};
 
-        private static readonly Rectangle2D[] m_ThalassaPlot2B = { new(731, 1145, 12, 7), };
+        private static readonly Rectangle2D[] m_ThalassaPlot2B = { new(731, 1145, 10, 7), };
         private static readonly Type[] m_ThalassaCrops2B = { typeof(FarmableOnion)};
 
-        private static readonly Rectangle2D[] m_ThalassaPlot3A = { new(750, 1138, 12, 7), };
+        private static readonly Rectangle2D[] m_ThalassaPlot3A = { new(750, 1138, 10, 7), };
         private static readonly Type[] m_ThalassaCrops3A = { typeof(FarmablePumpkin)};
 
-        private static readonly Rectangle2D[] m_ThalassaPlot3B = { new(750, 1146, 12, 7), };
+        private static readonly Rectangle2D[] m_ThalassaPlot3B = { new(750, 1146, 10, 7), };
         private static readonly Type[] m_ThalassaCrops3B = { typeof(FarmableTurnip)};
 
         //Theomara Plots
