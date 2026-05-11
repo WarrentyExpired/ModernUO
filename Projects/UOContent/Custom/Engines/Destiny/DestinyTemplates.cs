@@ -22,9 +22,9 @@ namespace Server.Destiny
 
         public static List<DestinyTemplate> AllTemplates = new List<DestinyTemplate>()
         {
-            new DestinyTemplate("Warrior", "30 Swords, Tactics, Anatomy",
-                new Dictionary<SkillName, double>{{SkillName.Swords, 30.0}, {SkillName.Tactics, 30.0}, {SkillName.Anatomy, 30.0}, {SkillName.Healing, 30}},
-                (pm) => { pm.AddToBackpack(new Katana()); pm.AddToBackpack(new Buckler()); pm.AddToBackpack(new Bandage(100)); }),
+            new DestinyTemplate("Warrior", "30 Macing, Tactics, Anatomy, Healing",
+                new Dictionary<SkillName, double>{{SkillName.Macing, 30.0}, {SkillName.Tactics, 30.0}, {SkillName.Anatomy, 30.0}, {SkillName.Healing, 30}},
+                (pm) => { pm.AddToBackpack(new Club()); pm.AddToBackpack(new Buckler()); pm.AddToBackpack(new Bandage(100)); }),
 
             new DestinyTemplate("Mage", "30 Magery, EvalInt, Med",
                 new Dictionary<SkillName, double>{{SkillName.Magery, 30.0}, {SkillName.EvalInt, 30.0}, {SkillName.Meditation, 30.0}},
@@ -42,9 +42,13 @@ namespace Server.Destiny
                 new Dictionary<SkillName, double>{{SkillName.AnimalTaming, 30.0}, {SkillName.AnimalLore, 30.0}, {SkillName.Veterinary, 30.0}},
                 (pm) => { pm.AddToBackpack(new ShepherdsCrook()); pm.AddToBackpack(new Bandage(100)); }),
 
-            new DestinyTemplate("Rogue", "30 Fencing, Hiding, Stealth",
-                new Dictionary<SkillName, double>{{SkillName.Fencing, 30.0}, {SkillName.Hiding, 30.0}, {SkillName.Stealth, 30.0}},
-                (pm) => { pm.AddToBackpack(new Kryss()); }),
+            new DestinyTemplate("Rogue", "30 Fencing, Hiding, Stealth, Ninjitsu",
+                new Dictionary<SkillName, double>{{SkillName.Fencing, 30.0}, {SkillName.Hiding, 30.0}, {SkillName.Stealth, 30.0}, {SkillName.Ninjitsu, 30}},
+                (pm) => { pm.AddToBackpack(new Kryss()); pm.AddToBackpack(new BookOfNinjitsu()); }),
+
+            new DestinyTemplate("Knight", "30 Swords, Chivalry, Tactics",
+                new Dictionary<SkillName, double>{{SkillName.Swords, 30.0}, {SkillName.Chivalry, 30.0}, {SkillName.Tactics, 30}},
+                (pm) => { pm.AddToBackpack(new Katana()); pm.AddToBackpack(new BookOfChivalry()); }),
 
             // Add more here easily!
         };

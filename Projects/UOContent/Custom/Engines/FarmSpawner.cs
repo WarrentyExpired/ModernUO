@@ -64,7 +64,7 @@ namespace Server.Engines.Farming
         private static readonly Rectangle2D[] m_TheomaraPlot6 = { new(578, 944, 12, 9), };
         private static readonly Type[] m_TheomaraCrops6 = { typeof(FarmableFlax)};
 
-        private static readonly Rectangle2D[] m_TheomaraPlot7 = { new(644, 101, 7, 3), };
+        private static readonly Rectangle2D[] m_TheomaraPlot7 = { new(644, 1001, 7, 3), };
         private static readonly Type[] m_TheomaraCrops7 = { typeof(FarmableNightshade)};
 
         public static void Initialize()
@@ -101,7 +101,9 @@ namespace Server.Engines.Farming
 
             foreach (var rect in fields)
             {
-                int maxSpawn = (rect.Width * rect.Height) / 9;
+                // CHANGE THIS LINE:
+                // / 9 is very sparse. / 2 or / 3 will fill the field significantly more.
+                int maxSpawn = (rect.Width * rect.Height) / 2;
                 int currentCount = 0;
 
                 foreach (Item item in map.GetItemsInBounds(rect))
@@ -112,15 +114,35 @@ namespace Server.Engines.Farming
 
                 if (currentCount < maxSpawn)
                 {
-                    Type type = cropTypes[Utility.Random(cropTypes.Length)];
-                    Item crop = Activator.CreateInstance(type) as Item;
+                    // We calculate how many we need to add to reach the new density
+                    int toSpawn = maxSpawn - currentCount;
 
-                    if (crop != null)
+                    for (int i = 0; i < toSpawn; i++)
                     {
-                        Point3D loc = Utility.RandomPointIn(rect, map);
-                        loc.Z = map.GetAverageZ(loc.X, loc.Y);
+                        Type type = cropTypes[Utility.Random(cropTypes.Length)];
+                        Item crop = Activator.CreateInstance(type) as Item;
 
-                        crop.MoveToWorld(loc, map);
+                        if (crop != null)
+                        {
+                            Point3D loc = Utility.RandomPointIn(rect, map);
+                            loc.Z = map.GetAverageZ(loc.X, loc.Y);
+
+                            // Final check to make sure we don't stack crops on the exact same tile
+                            bool occupied = false;
+                            foreach (Item existing in map.GetItemsInRange(loc, 0))
+                            {
+                                if (existing is FarmableCrop)
+                                {
+                                    occupied = true;
+                                    break;
+                                }
+                            }
+
+                            if (!occupied)
+                                crop.MoveToWorld(loc, map);
+                            else
+                                crop.Delete(); // Clean up if the random spot was taken
+                        }
                     }
                 }
             }
