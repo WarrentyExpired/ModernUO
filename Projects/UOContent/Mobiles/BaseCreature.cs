@@ -3223,7 +3223,13 @@ namespace Server.Mobiles
                 destinyKiller = destinyBc.GetMaster();
             if (destinyKiller is PlayerMobile destinyPm)
             {
-                int pointsGained = (this.Fame / 100) + 1;
+                int basePoints = (this.Fame / 50) + 1;
+                int pointsGained = basePoints;
+                if (Utility.RandomDouble() < 0.10)
+                {
+                    pointsGained = (int)(basePoints * 1.5);
+                    this.PublicOverheadMessage(MessageType.Regular, 0x3F, false, "Destiny Surge!");
+                }
                 destinyPm.DestinyPoints += pointsGained;
                 destinyPm.LifetimeDestinyPoints += pointsGained;
                 destinyPm.SendMessage(0x3F, $"You have gained {pointsGained} Destiny Points from this enemy.");

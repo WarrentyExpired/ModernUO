@@ -79,11 +79,14 @@ namespace Server.Gumps
             if (info.ButtonID >= 100)
             {
                 int index = info.ButtonID - 100;
-                if (index < m_Player.PetVault.Count)
+                if (PetVaultController.ClaimPet(m_Player, index))
                 {
-                    PetVaultController.ClaimPet(m_Player, m_Player.PetVault[index]);
+                    m_Player.SendGump(new KnowledgeGump(m_Player));
                 }
-                m_Player.SendGump(new KnowledgeGump(m_Player));
+                else
+                {
+                    m_Player.SendGump(new KnowledgeGump(m_Player));
+                }
             }
         }
 
