@@ -103,7 +103,7 @@ namespace Server.Engines.Farming
             {
                 // CHANGE THIS LINE:
                 // / 9 is very sparse. / 2 or / 3 will fill the field significantly more.
-                int maxSpawn = (rect.Width * rect.Height) / 2;
+                int maxSpawn = (rect.Width * rect.Height) / 4;
                 int currentCount = 0;
 
                 foreach (Item item in map.GetItemsInBounds(rect))
