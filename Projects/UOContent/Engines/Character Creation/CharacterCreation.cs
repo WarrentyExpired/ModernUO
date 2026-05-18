@@ -286,7 +286,7 @@ public static partial class CharacterCreation
         }
 
         var city = GetStartLocation(args);
-        CityInfo startCity = new CityInfo("the Swamp of Destiny", "the Swamp of Destiny", 2267, 51, 0, Map.Ilshenar);
+        CityInfo startCity = new CityInfo("the Chasm of Faith", "the Chasm of Faith", 943, 290, 2, Map.Trammel);
         newChar.MoveToWorld(startCity.Location, startCity.Map);
 
         logger.Information(

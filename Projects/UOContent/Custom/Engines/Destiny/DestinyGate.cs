@@ -37,11 +37,11 @@ namespace Server.Items
 
                 // SUCCESS: Teleport to your world coordinates
                 // Replace these coordinates with your actual world starting point
-                from.MoveToWorld(new Point3D(767, 1131, 3), Map.Ilshenar);
+                from.MoveToWorld(new Point3D(5630, 1234, 3), Map.Trammel);
 
                 from.PlaySound(0x1FE); // Portal sound
                 from.FixedEffect(0x3701, 10, 15); // Teleport spark
-                from.SendMessage(0x3F, "You step forth into the world of Hesperia.");
+                from.SendMessage(0x3F, "You step forth into the land of Hesperia.");
             }
         }
 
