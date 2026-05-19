@@ -286,7 +286,7 @@ public static partial class CharacterCreation
         }
 
         var city = GetStartLocation(args);
-        CityInfo startCity = new CityInfo("the Chasm of Faith", "the Chasm of Faith", 943, 290, 2, Map.Trammel);
+        CityInfo startCity = new CityInfo("the Chasm of Faith", "the Chasm of Faith", 689, 261, 4, Map.Trammel);
         newChar.MoveToWorld(startCity.Location, startCity.Map);
 
         logger.Information(

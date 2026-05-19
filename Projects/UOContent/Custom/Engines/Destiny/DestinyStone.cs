@@ -13,7 +13,7 @@ namespace Server.Items
         {
             Movable = false;
             Name = "The Altar of Destiny";
-            Hue = 1175; // A ghostly white/grey
+            Hue = 1161;
         }
 
         public override void OnDoubleClick(Mobile from)

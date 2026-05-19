@@ -37,7 +37,7 @@ namespace Server.Items
 
                 // SUCCESS: Teleport to your world coordinates
                 // Replace these coordinates with your actual world starting point
-                from.MoveToWorld(new Point3D(5630, 1234, 3), Map.Trammel);
+                from.MoveToWorld(new Point3D(5561, 620, -25), Map.Trammel);
 
                 from.PlaySound(0x1FE); // Portal sound
                 from.FixedEffect(0x3701, 10, 15); // Teleport spark
