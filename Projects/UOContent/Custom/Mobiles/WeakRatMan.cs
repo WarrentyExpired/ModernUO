@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public WeakRatman() : base(AIType.AI_Melee)
         {
             //Name = NameList.RandomName("weak ratman");
-            Body = 42;
+            Body = 0x08E;
             BaseSoundID = 437;
 
             SetStr(30, 60);
@@ -19,7 +19,7 @@ namespace Server.Mobiles
 
             SetHits(35, 42);
 
-            SetDamage(1, 5);
+            SetDamage(3, 7);
 
             SetDamageType(ResistanceType.Physical, 100);
 
