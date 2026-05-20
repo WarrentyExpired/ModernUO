@@ -3467,11 +3467,11 @@ namespace Server.Mobiles
             writer.Write(m_TomeSkillBoost);
             writer.Write(m_HasPickedTemplate);
             writer.Write(PetVault.Count);
-            writer.Write(m_MaxPetVaultSlots);
             foreach (BaseCreature bc in PetVault)
             {
                 writer.Write(bc != null ? bc.Serial : Serial.MinusOne);
             }
+            writer.Write(m_MaxPetVaultSlots);
             if (m_AvailableResonanceSkills == null)
             {
                 writer.Write(0);
