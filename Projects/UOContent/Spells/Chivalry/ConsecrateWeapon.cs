@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using Server.Items;
+using Server.Mobiles;
+using Server.Engines.BuffIcons;
 
 namespace Server.Spells.Chivalry
 {
@@ -88,16 +90,28 @@ namespace Server.Spells.Chivalry
                     0x100
                 );
 
-                var seconds = Math.Clamp(ComputePowerValue(20), 3.0, 11.0);
-
+                //var seconds = Math.Clamp(ComputePowerValue(20), 3.0, 11.0);
+                //var duration = TimeSpan.FromSeconds(seconds);
+                double currentKarma = Math.Max(0, Caster.Karma);
+                double seconds = 10.0 + (currentKarma / 15000.0) * 20;
+                seconds = Math.Clamp(seconds, 10.0, 30.0);
                 var duration = TimeSpan.FromSeconds(seconds);
 
                 _table.TryGetValue(weapon, out var timer);
                 timer?.Stop();
-
+                if (Caster is PlayerMobile pm)
+                {
+                    pm.RemoveBuff(BuffIcon.ConsecrateWeapon);
+                pm.AddBuff(new BuffInfo(
+                        BuffIcon.ConsecrateWeapon,
+                        1042971,
+                        1042971,
+                        duration,
+                        "Consecrate Weapon"
+                    ));
                 weapon.Consecrated = true;
-
-                _table[weapon] = timer = new ExpireTimer(weapon, duration);
+                }
+                _table[weapon] = timer = new ExpireTimer(Caster, weapon, duration);
 
                 timer.Start();
             }
@@ -107,14 +121,23 @@ namespace Server.Spells.Chivalry
 
         private class ExpireTimer : Timer
         {
+            private Mobile _caster;
             private BaseWeapon _weapon;
 
-            public ExpireTimer(BaseWeapon weapon, TimeSpan delay) : base(delay) => _weapon = weapon;
+            public ExpireTimer(Mobile caster, BaseWeapon weapon, TimeSpan delay) : base(delay)
+            {
+                _caster = caster;
+                _weapon = weapon;
+            }
 
             protected override void OnTick()
             {
                 _weapon.Consecrated = false;
                 Effects.PlaySound(_weapon.GetWorldLocation(), _weapon.Map, 0x1F8);
+                if (_caster is PlayerMobile pm)
+                {
+                    pm.RemoveBuff(BuffIcon.ConsecrateWeapon);
+                }
                 _table.Remove(_weapon);
             }
         }

@@ -104,11 +104,11 @@ namespace Server.Mobiles
                 Add(typeof(FeatheredHat), 5);
                 Add(typeof(TricorneHat), 4);
 
-                Add(typeof(SpoolOfThread), 9);
+                Add(typeof(SpoolOfThread), 2);
 
-                Add(typeof(Flax), 51);
-                Add(typeof(Cotton), 51);
-                Add(typeof(Wool), 31);
+                Add(typeof(Flax), 10);
+                Add(typeof(Cotton), 10);
+                Add(typeof(Wool), 5);
             }
         }
     }
