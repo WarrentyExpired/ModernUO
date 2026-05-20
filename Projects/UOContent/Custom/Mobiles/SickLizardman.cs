@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public SickLizardman() : base(AIType.AI_Melee)
         {
             //Name = NameList.RandomName("sick lizardman");
-            Body = Utility.RandomList(35, 36);
+            Body = 36;
             BaseSoundID = 417;
 
             SetStr(36, 46);
