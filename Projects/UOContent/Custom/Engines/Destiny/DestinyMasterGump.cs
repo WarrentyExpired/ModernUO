@@ -102,7 +102,7 @@ namespace Server.Gumps
             else {
                 AddLabel(255, startY, 0x3F, "Soul Heritage: UNLOCKED (Base 40.0)");
                 startY += 50;
-                int hCost = (int)(2000 * Math.Pow(1.75, m_Player.TomeSkillBoost));
+                int hCost = (int)(500 * Math.Pow(1.75, m_Player.TomeSkillBoost));
                 DrawUpgradeRow(startY, 4, $"Increase Heritage Cap to {m_Player.CurrentTomeStartingCap + 5.0:F1}", hCost, m_Player.CurrentTomeStartingCap < 120.0);
             }
             startY += 60;
