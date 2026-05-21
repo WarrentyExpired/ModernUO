@@ -89,16 +89,16 @@ namespace Server.Gumps
             AddLabel(400, 70, 1152, "Skill Cap:"); AddLabel(480, 70, 0x481, $"{(m_Player.MaxSkillCap / 10.0):F1}");
 
             int startY = 120;
-            DrawUpgradeRow(startY, 1, $"Expand Stat Vessel (+1) [{m_Player.StatCapPurchases}/125]", GetCurrentCost(500, m_Player.StatCapPurchases), m_Player.StatCapPurchases < 125);
+            DrawUpgradeRow(startY, 1, $"Expand Stat Vessel (+1) [{m_Player.StatCapPurchases}/125]", GetCurrentCost(200, m_Player.StatCapPurchases), m_Player.StatCapPurchases < 125);
             startY += 50;
-            DrawUpgradeRow(startY, 2, $"Mental Expansion (+10.0) [{m_Player.SkillCapPurchases}/40]", GetCurrentCost(500, m_Player.SkillCapPurchases), m_Player.SkillCapPurchases < 40);
+            DrawUpgradeRow(startY, 2, $"Mental Expansion (+10.0) [{m_Player.SkillCapPurchases}/40]", GetCurrentCost(200, m_Player.SkillCapPurchases), m_Player.SkillCapPurchases < 40);
             startY += 70;
 
             AddImageTiled(220, startY - 10, 650, 2, 0x2424);
 
             // Heritage
             if (!m_Player.TomeUnlockTier1)
-                DrawUpgradeRow(startY, 3, "Unlock Soul Heritage (Base 40.0)", 1000, true);
+                DrawUpgradeRow(startY, 3, "Unlock Soul Heritage (Base 40.0)", 500, true);
             else {
                 AddLabel(255, startY, 0x3F, "Soul Heritage: UNLOCKED (Base 40.0)");
                 startY += 50;
@@ -108,7 +108,7 @@ namespace Server.Gumps
             startY += 60;
 
             // Pet Archive
-            int vCost = (m_Player.MaxPetVaultSlots - 1) * 5000;
+            int vCost = (m_Player.MaxPetVaultSlots - 1) * 2000;
             DrawUpgradeRow(startY, 5, $"Soul Archive Expansion ({m_Player.MaxPetVaultSlots}/10)", vCost, m_Player.MaxPetVaultSlots < 10);
         }
 
@@ -161,18 +161,18 @@ namespace Server.Gumps
             // Core Upgrades
             if (m_Page == 2) {
                 switch (info.ButtonID) {
-                    case 1: HandlePurchase(GetCurrentCost(500, m_Player.StatCapPurchases), () => {
+                    case 1: HandlePurchase(GetCurrentCost(200, m_Player.StatCapPurchases), () => {
                                 m_Player.MaxStatCap++;
                                 m_Player.StatCapPurchases++;
                             }); break;
-                    case 2: HandlePurchase(GetCurrentCost(1000, m_Player.SkillCapPurchases), () => {
+                    case 2: HandlePurchase(GetCurrentCost(200, m_Player.SkillCapPurchases), () => {
                                 m_Player.MaxSkillCap += 100;
                                 m_Player.SkillCapPurchases++;
                             }); break;
-                    case 3: HandlePurchase(1000, () => m_Player.TomeUnlockTier1 = true); break;
+                    case 3: HandlePurchase(500, () => m_Player.TomeUnlockTier1 = true); break;
                     case 4: int hCost = (int)(2000 * Math.Pow(1.75, m_Player.TomeSkillBoost));
                             HandlePurchase(hCost, () => m_Player.TomeSkillBoost++); break;
-                    case 5: int vCost = (m_Player.MaxPetVaultSlots - 1) * 5000;
+                    case 5: int vCost = (m_Player.MaxPetVaultSlots - 1) * 2000;
                             HandlePurchase(vCost, () => m_Player.MaxPetVaultSlots++); break;
                 }
             }
@@ -190,7 +190,6 @@ namespace Server.Gumps
                 var list = m_Player.AvailableResonanceSkills;
                 if (idx < list.Count) ReclaimSkill(list[idx]);
             }
-
             m_Player.SendGump(new DestinyMasterGump(m_Player, m_Page));
         }
 
@@ -203,7 +202,7 @@ namespace Server.Gumps
             } else m_Player.SendMessage(0x22, "Insufficient Destiny Points.");
         }
 
-        private void ApplyTemplate(DestinyTemplate t) // (Logic from your previous TemplateGump)
+        private void ApplyTemplate(DestinyTemplate t)
         {
             if (m_Player.HasPickedTemplate) return;
             foreach (var s in m_Player.Skills) s.Base = 0.0;
@@ -212,7 +211,7 @@ namespace Server.Gumps
             t.GiveStartingLoot?.Invoke(m_Player);
         }
 
-        private void ReclaimSkill(SkillName sn) // (Logic from your previous SkillsGump)
+        private void ReclaimSkill(SkillName sn)
         {
             double target = Math.Min(m_Player.SkillTome[sn], m_Player.CurrentTomeStartingCap);
             double gain = Math.Min(target - m_Player.Skills[sn].Base, (m_Player.MaxSkillCap - m_Player.SkillsTotal) / 10.0);
