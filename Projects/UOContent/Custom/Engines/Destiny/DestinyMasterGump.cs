@@ -170,7 +170,7 @@ namespace Server.Gumps
                                 m_Player.SkillCapPurchases++;
                             }); break;
                     case 3: HandlePurchase(500, () => m_Player.TomeUnlockTier1 = true); break;
-                    case 4: int hCost = (int)(2000 * Math.Pow(1.75, m_Player.TomeSkillBoost));
+                    case 4: int hCost = (int)(500 * Math.Pow(1.75, m_Player.TomeSkillBoost));
                             HandlePurchase(hCost, () => m_Player.TomeSkillBoost++); break;
                     case 5: int vCost = (m_Player.MaxPetVaultSlots - 1) * 2000;
                             HandlePurchase(vCost, () => m_Player.MaxPetVaultSlots++); break;
