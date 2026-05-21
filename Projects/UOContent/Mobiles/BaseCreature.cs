@@ -3225,9 +3225,11 @@ namespace Server.Mobiles
             {
                 int basePoints = (this.Fame / 50) + 1;
                 int pointsGained = basePoints;
-                if (Utility.RandomDouble() < 0.10)
+                double surgeChance = 0.10 + (destinyPm.SurgeChancePurchases * 0.05);
+                double surgeBoost = 0.10 + (destinyPm.SurgeBoostPurchases * 0.05);
+                if (Utility.RandomDouble() < surgeChance)
                 {
-                    pointsGained = (int)(basePoints * 1.5);
+                    pointsGained = (int)(basePoints * (1.0 + surgeBoost));
                     this.PublicOverheadMessage(MessageType.Regular, 0x3F, false, "Destiny Surge!");
                 }
                 destinyPm.DestinyPoints += pointsGained;

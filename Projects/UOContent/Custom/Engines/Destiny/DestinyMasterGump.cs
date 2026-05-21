@@ -32,7 +32,7 @@ namespace Server.Gumps
             AddLabel(45, 35, 1152, "ALTAR OF DESTINY");
             AddLabel(40, 60, 0x480, $"Points: {m_Player.DestinyPoints:N0}");
 
-            // --- TAB BUTTONS ---
+            // Tab Buttons
             AddButton(30, 120, m_Page == 0 ? 4007 : 4005, 4007, 900, GumpButtonType.Reply, 0);
             AddLabel(65, 120, m_Page == 0 ? 0x3F : 1152, "Dashboard");
 
@@ -62,8 +62,7 @@ namespace Server.Gumps
             int y = 80;
             AddLabel(220, y, 0x3F, "--- Current Essence ---"); y += 30;
             AddLabel(230, y, 1152, "Stat Cap:"); AddLabel(400, y, 0x481, m_Player.MaxStatCap.ToString()); y += 25;
-            AddLabel(230, y, 1152, "Skill Cap:"); AddLabel(400, y, 0x481, (m_Player.MaxSkillCap / 10.0).ToString("F1")); y += 45;
-
+            AddLabel(230, y, 1152, "Skill Cap:"); AddLabel(400, y, 0x481, $"{(m_Player.MaxSkillCap / 10.0):F1}"); y += 45;
             AddLabel(220, y, 0x3F, "--- Lifetime Legacy ---"); y += 30;
             AddLabel(230, y, 1152, "Total Points Earned:"); AddLabel(400, y, 0x480, m_Player.LifetimeDestinyPoints.ToString()); y += 25;
             AddLabel(230, y, 1152, "Total Deaths:"); AddLabel(400, y, 33, m_Player.TotalDeaths.ToString());
@@ -95,21 +94,33 @@ namespace Server.Gumps
             startY += 70;
 
             AddImageTiled(220, startY - 10, 650, 2, 0x2424);
-
-            // Heritage
             if (!m_Player.TomeUnlockTier1)
                 DrawUpgradeRow(startY, 3, "Unlock Soul Heritage (Base 40.0)", 500, true);
             else {
                 AddLabel(255, startY, 0x3F, "Soul Heritage: UNLOCKED (Base 40.0)");
                 startY += 50;
                 int hCost = (int)(500 * Math.Pow(1.75, m_Player.TomeSkillBoost));
-                DrawUpgradeRow(startY, 4, $"Increase Heritage Cap to {m_Player.CurrentTomeStartingCap + 5.0:F1}", hCost, m_Player.CurrentTomeStartingCap < 120.0);
+                string heritageLabel = m_Player.CurrentTomeStartingCap < 120.0
+                    ? $"Increase Heritage Cap to {m_Player.CurrentTomeStartingCap + 5.0:F1}"
+                    : $"Heritage Cap {m_Player.CurrentTomeStartingCap:F0}";
+                DrawUpgradeRow(startY, 4, heritageLabel, hCost, m_Player.CurrentTomeStartingCap < 120.0);
             }
             startY += 60;
 
             // Pet Archive
             int vCost = (m_Player.MaxPetVaultSlots - 1) * 2000;
             DrawUpgradeRow(startY, 5, $"Soul Archive Expansion ({m_Player.MaxPetVaultSlots}/10)", vCost, m_Player.MaxPetVaultSlots < 10);
+            startY += 50;
+
+            AddImageTiled(220, startY - 10, 650, 2, 0x2424);
+
+            // Surge Upgrades
+            int surgeChanceCost = GetExponentialCost(1000, 1.5, m_Player.SurgeChancePurchases);
+            DrawUpgradeRow(startY, 6, $"Surge Resonance (+5% Chance) [{m_Player.SurgeChancePurchases}/8]", surgeChanceCost, m_Player.SurgeChancePurchases < 8);
+            startY += 50;
+
+            int surgeBoostCost = GetExponentialCost(1000, 1.25, m_Player.SurgeBoostPurchases);
+            DrawUpgradeRow(startY, 7, $"Surge Intensity (+5% Bonus Yield) [{m_Player.SurgeBoostPurchases}/18]", surgeBoostCost, m_Player.SurgeBoostPurchases < 18);
         }
 
         private void RenderSkills()
@@ -174,6 +185,12 @@ namespace Server.Gumps
                             HandlePurchase(hCost, () => m_Player.TomeSkillBoost++); break;
                     case 5: int vCost = (m_Player.MaxPetVaultSlots - 1) * 2000;
                             HandlePurchase(vCost, () => m_Player.MaxPetVaultSlots++); break;
+                    case 6: HandlePurchase(GetExponentialCost(1000, 1.5, m_Player.SurgeChancePurchases), () => {
+                                m_Player.SurgeChancePurchases++;
+                            }); break;
+                    case 7: HandlePurchase(GetExponentialCost(1000, 1.25, m_Player.SurgeBoostPurchases), () => {
+                                m_Player.SurgeBoostPurchases++;
+                            }); break;
                 }
             }
 
@@ -222,6 +239,11 @@ namespace Server.Gumps
         {
             int priceTier = currentpurchases / 5;
             return (int)(baseCost * Math.Pow(1.5, priceTier));
+        }
+
+        private int GetExponentialCost(int baseCost, double multiplier, int currentPurchases)
+        {
+            return (int)(baseCost * Math.Pow(multiplier, currentPurchases));
         }
     }
 }
