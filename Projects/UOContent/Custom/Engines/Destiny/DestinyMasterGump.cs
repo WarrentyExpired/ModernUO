@@ -96,7 +96,8 @@ namespace Server.Gumps
             AddImageTiled(220, startY - 10, 650, 2, 0x2424);
             if (!m_Player.TomeUnlockTier1)
                 DrawUpgradeRow(startY, 3, "Unlock Soul Heritage (Base 40.0)", 500, true);
-            else {
+            else
+            {
                 AddLabel(255, startY, 0x3F, "Soul Heritage: UNLOCKED (Base 40.0)");
                 startY += 50;
                 int hCost = (int)(500 * Math.Pow(1.75, m_Player.TomeSkillBoost));
@@ -110,22 +111,31 @@ namespace Server.Gumps
             // Pet Archive
             int vCost = (m_Player.MaxPetVaultSlots - 1) * 2000;
             DrawUpgradeRow(startY, 5, $"Soul Archive Expansion ({m_Player.MaxPetVaultSlots}/10)", vCost, m_Player.MaxPetVaultSlots < 10);
-            startY += 50;
+            startY += 70;
 
             AddImageTiled(220, startY - 10, 650, 2, 0x2424);
 
             // Surge Upgrades
-            int surgeChanceCost = GetExponentialCost(1000, 1.5, m_Player.SurgeChancePurchases);
+            int surgeChanceCost = GetExponentialCost(500, 1.5, m_Player.SurgeChancePurchases);
             DrawUpgradeRow(startY, 6, $"Surge Resonance (+5% Chance) [{m_Player.SurgeChancePurchases}/8]", surgeChanceCost, m_Player.SurgeChancePurchases < 8);
             startY += 50;
 
-            int surgeBoostCost = GetExponentialCost(1000, 1.25, m_Player.SurgeBoostPurchases);
+            int surgeBoostCost = GetExponentialCost(500, 1.25, m_Player.SurgeBoostPurchases);
             DrawUpgradeRow(startY, 7, $"Surge Intensity (+5% Bonus Yield) [{m_Player.SurgeBoostPurchases}/18]", surgeBoostCost, m_Player.SurgeBoostPurchases < 18);
+            startY += 70;
+
+            AddImageTiled(220, startY - 10, 650, 2, 0x2424);
+
+            // Innate Proc Chance
+            int innateProcCost = GetExponentialCost(500, 1.5, m_Player.InnateProcPurchases);
+            DrawUpgradeRow(startY, 8, $"Innate Resonance (+2% Innate Weapon Proc) [{m_Player.InnateProcPurchases}/5]", innateProcCost, m_Player.InnateProcPurchases < 5);
+            startY += 50;
         }
 
         private void RenderSkills()
         {
-            if (!m_Player.HasPickedTemplate) {
+            if (!m_Player.HasPickedTemplate)
+            {
                 AddLabel(250, 150, 0x22, "You must embrace a Template before reclaiming memories.");
                 return;
             }
@@ -134,10 +144,12 @@ namespace Server.Gumps
 
             var available = m_Player.AvailableResonanceSkills;
             int y = 130;
-            for (int i = 0; i < available.Count; i++) {
+            for (int i = 0; i < available.Count; i++)
+            {
                 SkillName sn = available[i];
                 double possible = Math.Min(m_Player.SkillTome[sn], m_Player.CurrentTomeStartingCap);
-                if (m_Player.Skills[sn].Base < possible) {
+                if (m_Player.Skills[sn].Base < possible)
+                {
                     AddButton(230, y + 5, 4005, 4007, 300 + i, GumpButtonType.Reply, 0);
                     AddLabel(270, y, 1152, $"{sn}");
                     AddLabel(450, y, 0x481, $"Stored: {m_Player.SkillTome[sn]:F1} (Restorable to {possible:F1})");
@@ -148,11 +160,14 @@ namespace Server.Gumps
 
         private void DrawUpgradeRow(int y, int id, string name, int cost, bool available)
         {
-            if (available) {
+            if (available)
+            {
                 AddButton(220, y, 4005, 4007, id, GumpButtonType.Reply, 0);
                 AddLabel(255, y, 1152, name);
                 AddLabel(750, y, 0x3F, $"{cost:N0} Pts");
-            } else {
+            }
+            else
+            {
                 AddLabel(255, y, 0x22, name + " [MAXED]");
             }
         }
@@ -164,45 +179,65 @@ namespace Server.Gumps
             if (info.ButtonID == 0) return;
 
             // Tab Switching
-            if (info.ButtonID >= 900 && info.ButtonID <= 903) {
+            if (info.ButtonID >= 900 && info.ButtonID <= 903)
+            {
                 m_Player.SendGump(new DestinyMasterGump(m_Player, info.ButtonID - 900));
                 return;
             }
 
             // Core Upgrades
-            if (m_Page == 2) {
-                switch (info.ButtonID) {
-                    case 1: HandlePurchase(GetCurrentCost(200, m_Player.StatCapPurchases), () => {
-                                m_Player.MaxStatCap++;
-                                m_Player.StatCapPurchases++;
-                            }); break;
-                    case 2: HandlePurchase(GetCurrentCost(200, m_Player.SkillCapPurchases), () => {
-                                m_Player.MaxSkillCap += 100;
-                                m_Player.SkillCapPurchases++;
-                            }); break;
+            if (m_Page == 2)
+            {
+                switch (info.ButtonID)
+                {
+                    case 1:
+                        HandlePurchase(GetCurrentCost(200, m_Player.StatCapPurchases), () =>
+                        {
+                            m_Player.MaxStatCap++;
+                            m_Player.StatCapPurchases++;
+                        }); break;
+                    case 2:
+                        HandlePurchase(GetCurrentCost(200, m_Player.SkillCapPurchases), () =>
+                        {
+                            m_Player.MaxSkillCap += 100;
+                            m_Player.SkillCapPurchases++;
+                        }); break;
                     case 3: HandlePurchase(500, () => m_Player.TomeUnlockTier1 = true); break;
-                    case 4: int hCost = (int)(500 * Math.Pow(1.75, m_Player.TomeSkillBoost));
-                            HandlePurchase(hCost, () => m_Player.TomeSkillBoost++); break;
-                    case 5: int vCost = (m_Player.MaxPetVaultSlots - 1) * 2000;
-                            HandlePurchase(vCost, () => m_Player.MaxPetVaultSlots++); break;
-                    case 6: HandlePurchase(GetExponentialCost(1000, 1.5, m_Player.SurgeChancePurchases), () => {
-                                m_Player.SurgeChancePurchases++;
-                            }); break;
-                    case 7: HandlePurchase(GetExponentialCost(1000, 1.25, m_Player.SurgeBoostPurchases), () => {
-                                m_Player.SurgeBoostPurchases++;
-                            }); break;
+                    case 4:
+                        int hCost = (int)(500 * Math.Pow(1.75, m_Player.TomeSkillBoost));
+                        HandlePurchase(hCost, () => m_Player.TomeSkillBoost++); break;
+                    case 5:
+                        int vCost = (m_Player.MaxPetVaultSlots - 1) * 2000;
+                        HandlePurchase(vCost, () => m_Player.MaxPetVaultSlots++); break;
+                    case 6:
+                        HandlePurchase(GetExponentialCost(500, 1.5, m_Player.SurgeChancePurchases), () =>
+                        {
+                            m_Player.SurgeChancePurchases++;
+                        }); break;
+                    case 7:
+                        HandlePurchase(GetExponentialCost(500, 1.25, m_Player.SurgeBoostPurchases), () =>
+                        {
+                            m_Player.SurgeBoostPurchases++;
+                        }); break;
+                    case 8:
+                        HandlePurchase(GetExponentialCost(500, 1.5, m_Player.InnateProcPurchases), () =>
+                        {
+                            m_Player.InnateProcPurchases++;
+                        }); break;
                 }
             }
 
             // Template Selection
-            if (m_Page == 1 && info.ButtonID >= 100) {
+            if (m_Page == 1 && info.ButtonID >= 100)
+            {
                 int idx = info.ButtonID - 100;
                 if (idx < m_Player.CurrentTemplateChoices.Count)
                     ApplyTemplate(m_Player.CurrentTemplateChoices[idx]);
             }
 
             // Skill Reclaim
-            if (m_Page == 3 && info.ButtonID >= 300) {
+            if (m_Page == 3 && info.ButtonID >= 300)
+            {
                 int idx = info.ButtonID - 300;
                 var list = m_Player.AvailableResonanceSkills;
                 if (idx < list.Count) ReclaimSkill(list[idx]);
@@ -212,11 +247,13 @@ namespace Server.Gumps
 
         private void HandlePurchase(int cost, Action onSuccess)
         {
-            if (m_Player.DestinyPoints >= cost) {
+            if (m_Player.DestinyPoints >= cost)
+            {
                 m_Player.DestinyPoints -= cost;
                 onSuccess();
                 m_Player.PlaySound(0x1F2);
-            } else m_Player.SendMessage(0x22, "Insufficient Destiny Points.");
+            }
+            else m_Player.SendMessage(0x22, "Insufficient Destiny Points.");
         }
 
         private void ApplyTemplate(DestinyTemplate t)

@@ -3230,7 +3230,7 @@ namespace Server.Mobiles
                 if (Utility.RandomDouble() < surgeChance)
                 {
                     pointsGained = (int)(basePoints * (1.0 + surgeBoost));
-                    this.PublicOverheadMessage(MessageType.Regular, 0x3F, false, "Destiny Surge!");
+                    destinyPm.PublicOverheadMessage(MessageType.Regular, 0x3F, false, "Destiny Surge!");
                 }
                 destinyPm.DestinyPoints += pointsGained;
                 destinyPm.LifetimeDestinyPoints += pointsGained;

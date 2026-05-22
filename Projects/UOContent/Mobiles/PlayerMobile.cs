@@ -226,7 +226,7 @@ namespace Server.Mobiles
         private int m_MaxPetVaultSlots = 2;
         private int m_SurgeChancePurchases;
         private int m_SurgeBoostPurchases;
-
+        private int m_InnateProcPurchases;
         private List<BaseCreature> m_PetVault;
         private List<DestinyTemplate> m_CurrentTemplateChoices;
         public List<DestinyTemplate> CurrentTemplateChoices
@@ -388,6 +388,12 @@ namespace Server.Mobiles
             set { m_SurgeBoostPurchases = value; }
         }
 
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int InnateProcPurchases
+        {
+            get { return m_InnateProcPurchases; }
+            set { m_InnateProcPurchases = value; }
+        }
 // End of Destiny Stuff
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -3107,6 +3113,7 @@ namespace Server.Mobiles
                     m_MaxPetVaultSlots = reader.ReadInt();
                     m_SurgeChancePurchases = reader.ReadInt();
                     m_SurgeBoostPurchases = reader.ReadInt();
+                    m_InnateProcPurchases = reader.ReadInt();
                     int resonanceCount = reader.ReadInt();
                     m_AvailableResonanceSkills = new List<SkillName>();
                     for (int i = 0; i < resonanceCount; i++)
@@ -3492,6 +3499,7 @@ namespace Server.Mobiles
             writer.Write(m_MaxPetVaultSlots);
             writer.Write(m_SurgeChancePurchases);
             writer.Write(m_SurgeBoostPurchases);
+            writer.Write(m_InnateProcPurchases);
             if (m_AvailableResonanceSkills == null)
             {
                 writer.Write(0);
