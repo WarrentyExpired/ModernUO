@@ -2602,24 +2602,42 @@ namespace Server.Mobiles
                 if (this.AllFollowers != null)
                 {
                     Mobile[] activeFollowers = this.AllFollowers.ToArray();
+                    int followVault = 0;
+                    int followDelete = 0;
                     foreach (Mobile m in activeFollowers)
                     {
                         if (m is BaseCreature bc)
                         {
+                            if (bc.Summoned)
+                            {
+                                bc.Delete();
+                            }
                             if (bc.IsBonded && PetVault.Count < this.MaxPetVaultSlots)
                             {
                                 Server.Utilities.PetVaultController.VaultPet(this, bc);
+                                followVault++;
                             }
                             else
                             {
                                 bc.Delete();
+                                followDelete++;
                             }
                         }
+                    }
+                    if (followVault > 0)
+                    {
+                        this.SendMessage(0x3F, $"{followVault} bonded companion{(followVault > 1 ? "s have" : " has")} been recovered and sent to your Soul Archive.");
+                    }
+                    if (followDelete > 0)
+                    {
+                        this.SendMessage(0x22, $"{followDelete} companion{(followDelete > 1 ? "s" : "")} could not be saved and perished eternally.");
                     }
                 }
                 if (this.Stabled != null && this.Stabled.Count > 0)
                 {
                     Mobile[] stableArray = this.Stabled.ToArray();
+                    int vaultedCount = 0;
+                    int deletedCount = 0;
                     foreach (Mobile m in stableArray)
                     {
                         if (m is BaseCreature bc)
@@ -2627,16 +2645,26 @@ namespace Server.Mobiles
                             if (bc.IsBonded && this.PetVault.Count < this.MaxPetVaultSlots)
                             {
                                 Server.Utilities.PetVaultController.VaultPet(this, bc);
+                                vaultedCount++;
                             }
                             else
                             {
                                 bc.Delete();
+                                deletedCount++;
                             }
                         }
                     }
                     this.Stabled.Clear();
+                    if (vaultedCount > 0)
+                    {
+                        this.SendMessage(0x3F, $"{vaultedCount} bonded companion{(vaultedCount > 1 ? "s have" : " has")} been recovered and sent to your Soul Archive.");
+                    }
+                    if (deletedCount > 0)
+                    {
+                        this.SendMessage(0x22, $"{deletedCount} companion{(deletedCount > 1 ? "s" : "")} could not be saved and perished eternally.");
+                    }
                 }
-                this.SendMessage(0x35, "Bonded companions have been anchored to your soul; all others have faded.");
+
                 this.Followers = 0;
 
                 var deathRobe = new DeathRobe();
