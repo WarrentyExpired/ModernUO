@@ -3229,7 +3229,7 @@ namespace Server.Mobiles
                 double surgeBoost = 0.10 + (destinyPm.SurgeBoostPurchases * 0.05);
                 if (Utility.RandomDouble() < surgeChance)
                 {
-                    pointsGained = (int)(basePoints * (1.0 + surgeBoost));
+                    pointsGained = (int)Math.Ceiling(basePoints * (1.0 + surgeBoost));
                     destinyPm.PublicOverheadMessage(MessageType.Regular, 0x3F, false, "Destiny Surge!");
                 }
                 destinyPm.DestinyPoints += pointsGained;
