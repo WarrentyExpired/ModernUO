@@ -2583,7 +2583,6 @@ namespace Server.Mobiles
                     deathRobe.Delete();
                 }
 
-                Server.Utilities.AutoStable.HandleExit(this);
                 Server.Combat.DestinyDeathEngine.HandleResurrection(this);
         }
 
