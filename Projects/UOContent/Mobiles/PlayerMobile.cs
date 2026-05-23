@@ -2576,97 +2576,6 @@ namespace Server.Mobiles
             var wasAlive = Alive;
 
             base.Resurrect();
-
-            if (Alive && !wasAlive)
-            {
-                // Clear the Players backpack.
-                if (Backpack != null)
-                {
-                    for (int i = Backpack.Items.Count - 1; i >= 0; i--)
-                    {
-                        Item item = Backpack.Items[i];
-                        if (!item.Insured)
-                        {
-                            item.Delete();
-                        }
-                    }
-                }
-                // Clear the players bank box
-                BankBox bank = this.FindBankNoCreate();
-                if (bank != null)
-                {
-                    for (int i = bank.Items.Count - 1; i >= 0; i--)
-                        bank.Items[i].Delete();
-                }
-                // Clear the players Stabled pets and current unbonded pets.
-                if (this.AllFollowers != null)
-                {
-                    Mobile[] activeFollowers = this.AllFollowers.ToArray();
-                    int followVault = 0;
-                    int followDelete = 0;
-                    foreach (Mobile m in activeFollowers)
-                    {
-                        if (m is BaseCreature bc)
-                        {
-                            if (bc.Summoned)
-                            {
-                                bc.Delete();
-                            }
-                            if (bc.IsBonded && PetVault.Count < this.MaxPetVaultSlots)
-                            {
-                                Server.Utilities.PetVaultController.VaultPet(this, bc);
-                                followVault++;
-                            }
-                            else
-                            {
-                                bc.Delete();
-                                followDelete++;
-                            }
-                        }
-                    }
-                    if (followVault > 0)
-                    {
-                        this.SendMessage(0x3F, $"{followVault} bonded companion{(followVault > 1 ? "s have" : " has")} been recovered and sent to your Soul Archive.");
-                    }
-                    if (followDelete > 0)
-                    {
-                        this.SendMessage(0x22, $"{followDelete} companion{(followDelete > 1 ? "s" : "")} could not be saved and perished eternally.");
-                    }
-                }
-                if (this.Stabled != null && this.Stabled.Count > 0)
-                {
-                    Mobile[] stableArray = this.Stabled.ToArray();
-                    int vaultedCount = 0;
-                    int deletedCount = 0;
-                    foreach (Mobile m in stableArray)
-                    {
-                        if (m is BaseCreature bc)
-                        {
-                            if (bc.IsBonded && this.PetVault.Count < this.MaxPetVaultSlots)
-                            {
-                                Server.Utilities.PetVaultController.VaultPet(this, bc);
-                                vaultedCount++;
-                            }
-                            else
-                            {
-                                bc.Delete();
-                                deletedCount++;
-                            }
-                        }
-                    }
-                    this.Stabled.Clear();
-                    if (vaultedCount > 0)
-                    {
-                        this.SendMessage(0x3F, $"{vaultedCount} bonded companion{(vaultedCount > 1 ? "s have" : " has")} been recovered and sent to your Soul Archive.");
-                    }
-                    if (deletedCount > 0)
-                    {
-                        this.SendMessage(0x22, $"{deletedCount} companion{(deletedCount > 1 ? "s" : "")} could not be saved and perished eternally.");
-                    }
-                }
-
-                this.Followers = 0;
-
                 var deathRobe = new DeathRobe();
 
                 if (!EquipItem(deathRobe))
@@ -2675,11 +2584,7 @@ namespace Server.Mobiles
                 }
 
                 Server.Utilities.AutoStable.HandleExit(this);
-                if (Backpack != null && Backpack.FindItemByType(typeof(Server.Items.TomeOfKnowledge)) == null)
-                {
-                    Backpack.DropItem(new Server.Items.TomeOfKnowledge());
-                }
-            }
+                Server.Combat.DestinyDeathEngine.HandleResurrection(this);
         }
 
         public override void OnWarmodeChanged()
@@ -2855,33 +2760,12 @@ namespace Server.Mobiles
             {
                 SendLocalizedMessage(1061115);
             }
-            this.m_HasPickedTemplate = false;
-            this.RecordKnowledge();
-            this.TotalDeaths++;
-            this.GenerateTemplateChoices();
-            this.GenerateResonanceSkills();
+
             base.OnDeath(c);
 
             if (c != null && !c.Deleted)
             {
                 c.Delete();
-            }
-            this.RawStr = 60;
-            this.RawDex = 10;
-            this.RawInt = 10;
-            for (int i = 0; i < Skills.Length; ++i)
-            {
-                Skill sk = Skills[i];
-                sk.Base = 0;
-                if (sk.SkillName == SkillName.Focus || sk.SkillName == SkillName.Meditation)
-                {
-                    sk.SetLockNoRelay(SkillLock.Locked);
-                }
-                else
-                {
-                    sk.SetLockNoRelay(SkillLock.Up);
-                }
-                sk.Update();
             }
             EquipSnapshot = null;
             HueMod = -1;
@@ -2906,21 +2790,7 @@ namespace Server.Mobiles
                 while (queue.Count > 0)
                 RemoveBuff(queue.Dequeue());
             }
-
-            Point3D hallOfDestinies = new Point3D(742, 267, 0);
-            this.MoveToWorld(hallOfDestinies, Map.Trammel);
-
-            Timer.DelayCall(TimeSpan.FromSeconds(3.5), () =>
-            {
-                if (!this.Alive)
-                {
-                    this.Resurrect();
-                    this.PlaySound(0x214); // Play a celestial "arrival" sound
-                    this.SendMessage(0x35, "Your physical journey ends, but your destiny is rewritten...");
-                    this.SendMessage(0x35, "Your skills and attributes have withered away with your previous form.");
-                }
-            });
-
+            Server.Combat.DestinyDeathEngine.HandleDeath(this);
             // Notify the system that a player death occurred
             PlayerDeathEvent(this);
         }
