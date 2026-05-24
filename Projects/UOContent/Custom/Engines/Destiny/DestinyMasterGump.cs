@@ -134,11 +134,6 @@ namespace Server.Gumps
 
         private void RenderSkills()
         {
-            if (!m_Player.HasPickedTemplate)
-            {
-                AddLabel(250, 150, 0x22, "You must embrace a Template before reclaiming memories.");
-                return;
-            }
             AddLabel(225, 85, 0x481, $"Mental Capacity: {(m_Player.SkillsTotal / 10.0):F1} / {(m_Player.MaxSkillCap / 10.0):F1}");
             AddImageTiled(220, 110, 650, 2, 0x2424);
 

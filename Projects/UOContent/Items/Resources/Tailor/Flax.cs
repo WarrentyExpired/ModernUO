@@ -40,6 +40,7 @@ public partial class Flax : Item
         }
     }
 
+    // Left intact for structural consistency, but bypassed by the new target handler below
     public virtual void OnSpun(ISpinningWheel wheel, Mobile from, int hue)
     {
         from.AddToBackpack(new SpoolOfThread(6)
@@ -85,8 +86,22 @@ public partial class Flax : Item
             }
             else
             {
-                m_Flax.Consume();
-                wheel.BeginSpin(m_Flax.OnSpun, from, m_Flax.Hue);
+                // 1. Capture the stack size and color parameters before destroying the item
+                int amountToProcess = m_Flax.Amount;
+                int flaxHue = m_Flax.Hue;
+
+                // 2. Delete the whole stack immediately to prevent anti-duping/exploits during the spinning delay
+                m_Flax.Delete();
+
+                // 3. Use an inline lambda to dynamically multiply the spools of thread yield
+                wheel.BeginSpin((w, mobile, h) =>
+                {
+                    mobile.AddToBackpack(new SpoolOfThread(6 * amountToProcess)
+                    {
+                        Hue = h
+                    });
+                    mobile.SendLocalizedMessage(1010577); // You put the spools of thread in your backpack.
+                }, from, flaxHue);
             }
         }
     }

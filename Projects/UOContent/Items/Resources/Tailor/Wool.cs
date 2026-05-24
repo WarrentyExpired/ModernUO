@@ -15,6 +15,9 @@ public partial class Wool : Item, IDyable
 
     public override double DefaultWeight => 4.0;
 
+    // Extensible property to handle distinct yields for subclasses safely
+    public virtual int YarnMultiplier => 3;
+
     public bool Dye(Mobile from, DyeTub sender)
     {
         if (Deleted)
@@ -40,6 +43,7 @@ public partial class Wool : Item, IDyable
         }
     }
 
+    // Left intact for backend stability, but bypassed by the new bulk lambda target handler below
     public virtual void OnSpun(ISpinningWheel wheel, Mobile from, int hue)
     {
         from.AddToBackpack(new DarkYarn(3)
@@ -81,8 +85,27 @@ public partial class Wool : Item, IDyable
                 }
                 else
                 {
-                    m_Wool.Consume();
-                    wheel.BeginSpin(m_Wool.OnSpun, from, m_Wool.Hue);
+                    // 1. Capture stack parameters and the polymorphic multiplier before destroying the item
+                    int amountToProcess = m_Wool.Amount;
+                    int woolHue = m_Wool.Hue;
+                    int multiplier = m_Wool.YarnMultiplier;
+
+                    // 2. Delete the stack immediately to secure resources up front
+                    m_Wool.Delete();
+
+                    // 3. Process the bulk conversion inside the wheel's spin callback closure
+                    wheel.BeginSpin((w, mobile, h) =>
+                    {
+                        int totalYarnEarned = multiplier * amountToProcess;
+
+                        mobile.AddToBackpack(new DarkYarn(totalYarnEarned)
+                        {
+                            Hue = h
+                        });
+
+                        // Dynamically adjusts localization messaging based on singular or plural results
+                        mobile.SendLocalizedMessage(totalYarnEarned > 1 ? 1010576 : 1010574);
+                    }, from, woolHue);
                 }
             }
             else
@@ -105,6 +128,10 @@ public partial class TaintedWool : Wool
 
     public override double DefaultWeight => 4.0;
 
+    // Overrides the base multiplier to safely reduce bulk yields to a 1:1 ratio
+    public override int YarnMultiplier => 1;
+
+    // Left intact for structural consistency
     public override void OnSpun(ISpinningWheel wheel, Mobile from, int hue)
     {
         from.AddToBackpack(new DarkYarn
