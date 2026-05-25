@@ -2561,6 +2561,12 @@ public abstract partial class BaseWeapon
         var lumberBonus = Type == WeaponType.Axe
             ? GetBonus(attacker.Skills.Lumberjacking.Value, 0.200, 100.0, 10.00)
             : 0.0;
+        var fletchBonus = Type == WeaponType.Ranged
+            ? GetBonus(attacker.Skills.Fletching.Value, 0.200, 100.0, 10.00)
+            : 0.0;
+        var miningBonus = Type == WeaponType.Bashing
+            ? GetBonus(attacker.Skills.Mining.Value, 0.200, 100.0, 10.00)
+            : 0.0;
 
         /*
          * The following are damage modifiers whose effect shows on the status bar.
@@ -2598,7 +2604,7 @@ public abstract partial class BaseWeapon
             damageBonus = 100;
         }
 
-        var totalBonus = strengthBonus + anatomyBonus + tacticsBonus + lumberBonus +
+        var totalBonus = strengthBonus + anatomyBonus + tacticsBonus + lumberBonus + fletchBonus + miningBonus +
                          (damageBonus + GetDamageBonus()) / 100.0;
 
         return damage + damage * totalBonus;
