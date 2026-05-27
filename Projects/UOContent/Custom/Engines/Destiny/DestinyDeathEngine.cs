@@ -39,7 +39,7 @@ namespace Server.Combat
                 sk.Update();
             }
 
-            Point3D hallOfDestinies = new Point3D(742, 267, 0);
+            Point3D hallOfDestinies = new Point3D(15, 1174, 0);
             pm.MoveToWorld(hallOfDestinies, Map.Trammel);
 
             Timer.DelayCall(TimeSpan.FromSeconds(3.5), () =>
