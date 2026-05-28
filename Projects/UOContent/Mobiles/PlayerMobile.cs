@@ -1461,7 +1461,7 @@ namespace Server.Mobiles
             }
 
             VirtueSystem.CheckAtrophies(from);
-            //from.ClaimAutoStabledPets();
+            from.ClaimAutoStabledPets();
             AnimalForm.GetContext(from)?.Timer.Start();
             //Server.Utilities.AutoStable.HandleExit(from);
             from.ResendBuffs();
