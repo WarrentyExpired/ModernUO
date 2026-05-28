@@ -8,21 +8,45 @@ namespace Server.Engines.Farming
     {
         private static Timer _timer;
 
-        private static readonly Rectangle2D[] m_FlaxPlot = { new(5558, 730, 7, 5), };
-        private static readonly Type[] m_FlaxCrop = { typeof(FarmableFlax)};
-
-        private static readonly Rectangle2D[] m_CottonPlot = { new(5558, 735, 7, 5), };
-        private static readonly Type[] m_CottonCrop = { typeof(FarmableCotton)};
-
-        private static readonly Rectangle2D[] m_WheatPlot = { new(5567, 730, 7, 5), };
+        private static readonly Rectangle2D[] m_WheatPlot = { new(795, 771, 8, 8), };
         private static readonly Type[] m_WheatCrop = { typeof(FarmableWheat)};
 
-        private static readonly Rectangle2D[] m_PumpkinPlot = { new(5567, 735, 7, 5), };
+        private static readonly Rectangle2D[] m_CottonPlot = { new(805, 771, 8, 8), };
+        private static readonly Type[] m_CottonCrop = { typeof(FarmableCotton)};
+
+        private static readonly Rectangle2D[] m_FlaxPlot = { new(796, 779, 8, 8), };
+        private static readonly Type[] m_FlaxCrop = { typeof(FarmableFlax)};
+
+        private static readonly Rectangle2D[] m_PumpkinPlot = { new(805, 779, 7, 8), };
         private static readonly Type[] m_PumpkinCrop = { typeof(FarmablePumpkin)};
+
+        private static readonly Rectangle2D[] m_BloodmossPlot = { new(820, 843, 5, 8), };
+        private static readonly Type[] m_BloodmossCrop = { typeof(FarmableBloodmoss)};
+
+        private static readonly Rectangle2D[] m_MandrakeRootPlot = { new(826, 843, 5, 8), };
+        private static readonly Type[] m_MandrakeRootCrop = { typeof(FarmableMandrakeRoot)};
+
+        private static readonly Rectangle2D[] m_SpidersSilkPlot = { new( 832, 843, 5, 8), };
+        private static readonly Type[] m_SpiderSilkCrop = { typeof(FarmableSpidersSilk)};
+
+        private static readonly Rectangle2D[] m_SulfurousAshPlot = { new( 838, 843, 6, 8), };
+        private static readonly Type[] m_SulfurousAshCrop = { typeof(FarmableSulfurousAsh)};
+
+        private static readonly Rectangle2D[] m_GinsengPlot = { new( 820, 852, 5, 8), };
+        private static readonly Type[] m_GinsengCrop = {typeof(FarmableGinseng)};
+
+        private static readonly Rectangle2D[] m_BlackPearlPlot = { new( 826, 852, 5, 8), };
+        private static readonly Type[] m_BlackPearlCrop = { typeof(FarmableBlackPearl)};
+
+        private static readonly Rectangle2D[] m_GarlicPlot = { new( 832, 852, 5, 8), };
+        private static readonly Type[] m_GarlicCrop = { typeof(FarmableGarlic)};
+
+        private static readonly Rectangle2D[] m_NightshadePlot = { new( 838, 852, 6, 8), };
+        private static readonly Type[] m_NightshadeCrop = { typeof(FarmableNightshade)};
 
         public static void Initialize()
         {
-            _timer = Timer.DelayCall(TimeSpan.FromMinutes(5.0), TimeSpan.FromMinutes(5.0), OnTick);
+            _timer = Timer.DelayCall(TimeSpan.FromMinutes(1.0), TimeSpan.FromMinutes(1.0), OnTick);
         }
 
         private static void OnTick()
@@ -31,6 +55,14 @@ namespace Server.Engines.Farming
             ProcessRegion(m_CottonPlot, m_CottonCrop);
             ProcessRegion(m_PumpkinPlot, m_PumpkinCrop);
             ProcessRegion(m_WheatPlot, m_WheatCrop);
+            ProcessRegion(m_BloodmossPlot, m_BloodmossCrop);
+            ProcessRegion(m_MandrakeRootPlot, m_MandrakeRootCrop);
+            ProcessRegion(m_SpidersSilkPlot, m_SpiderSilkCrop);
+            ProcessRegion(m_SulfurousAshPlot, m_SulfurousAshCrop);
+            ProcessRegion(m_GinsengPlot, m_GinsengCrop);
+            ProcessRegion(m_BlackPearlPlot, m_BlackPearlCrop);
+            ProcessRegion(m_GarlicPlot, m_GarlicCrop);
+            ProcessRegion(m_NightshadePlot, m_NightshadeCrop);
         }
 
         private static void ProcessRegion(Rectangle2D[] fields, Type[] cropTypes)
