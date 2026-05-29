@@ -257,7 +257,7 @@ namespace Server.SkillHandlers
                             m_Instrument.ConsumeUse(from);
                         }
 
-                        from.NextSkillTime = Core.TickCount + 12000;
+                        from.NextSkillTime = Core.TickCount + 5000;
                     }
                     else
                     {
