@@ -227,17 +227,13 @@ public static class SkillCheck
 
             var skills = from.Skills;
 
-            // --- ROGUELITE CHANGE START ---
             int currentCap = skills.Cap;
             if (from is PlayerMobile pm)
             {
-                currentCap = pm.MaxSkillCap; // Use our 300.0 cap
+                currentCap = pm.MaxSkillCap;
             }
-            // --- ROGUELITE CHANGE END ---
 
-            // This handles "Atrophy" (lowering a skill to gain another)
-            // We use currentCap here to ensure players rotate skills properly within their 300.0 limit
-            if (from.Player && skills.Total / (double)currentCap >= Utility.RandomDouble())
+            if (from.Player && !skill.IsSecondarySkill() && skills.Total / (double)currentCap >= Utility.RandomDouble())
             {
                 for (var i = 0; i < skills.Length; ++i)
                 {
@@ -250,20 +246,16 @@ public static class SkillCheck
             }
         }
 
-        // We check 'pm' again here, but we use a different name 'ppm' to avoid the "already defined" error
         if (from is PlayerMobile ppm && skill.SkillName == ppm.AcceleratedSkill && ppm.AcceleratedStart > Core.Now)
         {
             toGain *= Utility.RandomMinMax(2, 5);
         }
 
-        // FINALLY: Apply the gain only if under the Roguelite Cap
-        if (!from.Player || skills.Total < currentCap)
-        {
+        if (!from.Player || skills.Total < currentCap || skill.IsSecondarySkill())        {
             skill.BaseFixedPoint = Math.Min(skill.BaseFixedPoint + toGain, skill.CapFixedPoint);
         }
     }
 
-    // Standard Stat Gain logic follows...
     if (_usePub45StatGain && skill.Lock == SkillLock.Up)
     {
         var info = skill.Info;

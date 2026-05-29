@@ -89,6 +89,31 @@ public class Skill
     private ushort m_Base;
     private ushort m_Cap;
 
+    public bool IsSecondarySkill()
+    {
+        switch (SkillName)
+        {
+            // Crafting Skills
+            case SkillName.Alchemy:
+            case SkillName.Blacksmith:
+            case SkillName.Fletching: // Adjusted to match your enum layout
+            case SkillName.Carpentry:
+            case SkillName.Cooking:
+            case SkillName.Inscribe:
+            case SkillName.Tailoring:
+            case SkillName.Tinkering:
+                return true;
+
+            // Gathering Skills
+            case SkillName.Mining:
+            case SkillName.Lumberjacking:
+            case SkillName.Forensics
+                return true;
+
+            default:
+                return false;
+        }
+    }
     public Skill(Skills owner, SkillInfo info, IGenericReader reader)
     {
         Owner = owner;
@@ -182,7 +207,10 @@ public class Skill
 
             if (m_Base != sv)
             {
-                Owner.Total = Owner.Total - m_Base + sv;
+                if (m_Base != sv)
+                {
+                    Owner.Total = Owner.Total - m_Base + sv;
+                }
 
                 m_Base = sv;
 
@@ -510,7 +538,7 @@ public class Skills
                             if (sk.BaseFixedPoint != 0 || sk.CapFixedPoint != 1000 || sk.Lock != SkillLock.Up)
                             {
                                 m_Skills[i] = sk;
-                                Total += sk.BaseFixedPoint;
+                                if (!sk.IsSecondarySkill()) Total += sk.BaseFixedPoint;
                             }
                         }
                         else
@@ -833,7 +861,7 @@ public class Skills
             else
             {
                 sk.Serialize(writer);
-                Total += sk.BaseFixedPoint;
+                if (!sk.IsSecondarySkill()) Total += sk.BaseFixedPoint;
             }
         }
     }

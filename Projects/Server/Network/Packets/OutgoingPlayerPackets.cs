@@ -138,7 +138,7 @@ public static class OutgoingPlayerPackets
 
             writer.Write((ushort)(s.Info.SkillID + 1));
             writer.Write((ushort)uv);
-            writer.Write((ushort)s.BaseFixedPoint);
+            writer.Write((ushort)(!s.IsSecondarySkill() ? s.BaseFixedPoint : 0));
             writer.Write((byte)s.Lock);
             writer.Write((ushort)s.CapFixedPoint);
         }
@@ -168,7 +168,7 @@ public static class OutgoingPlayerPackets
         writer.Write((byte)0xDF); // type: delta, capped
         writer.Write((ushort)skill.Info.SkillID);
         writer.Write((ushort)uv);
-        writer.Write((ushort)skill.BaseFixedPoint);
+        writer.Write((ushort)(!skill.IsSecondarySkill() ? skill.BaseFixedPoint : 0));
         writer.Write((byte)skill.Lock);
         writer.Write((ushort)skill.CapFixedPoint);
 
