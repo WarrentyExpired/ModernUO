@@ -107,7 +107,7 @@ public class Skill
             // Gathering Skills
             case SkillName.Mining:
             case SkillName.Lumberjacking:
-            case SkillName.Forensics
+            case SkillName.Forensics:
                 return true;
 
             default:
