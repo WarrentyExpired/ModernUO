@@ -3864,59 +3864,72 @@ namespace Server.Mobiles
             {
                 return;
             }
-
             if (!Alive)
             {
-                // Your pet was unable to join you while you are a ghost.  Please re-login once you have ressurected to claim your pets.
                 SendLocalizedMessage(1076251);
                 return;
             }
-
-            foreach (var stabled in AutoStabled)
+            Timer.DelayCall(TimeSpan.FromMilliseconds(500), () =>
             {
-                if (stabled is not BaseCreature pet)
+                 if (AutoStabled == null || AutoStabled.Count == 0 || !Alive)
                 {
-                    continue;
+                    return;
                 }
-
-                if (pet.Deleted)
+                var currentRegion = Region.Find(Location, Map);
+                bool insideForbiddenZone = currentRegion != null && currentRegion.GetType().Name.StartsWith("Greeting");
+                List<Mobile> remainStabled = new List<Mobile>();
+                foreach (var stabled in new List<Mobile>(AutoStabled))
                 {
-                    pet.IsStabled = false;
-                    pet.StabledBy = null;
-
-                    Stabled?.Remove(pet);
-                    continue;
-                }
-
-                if (Followers + pet.ControlSlots <= FollowersMax)
-                {
-                    pet.SetControlMaster(this);
-
-                    if (pet.Summoned)
+                    if (stabled is not BaseCreature pet)
                     {
-                        pet.SummonMaster = this;
+                        continue;
                     }
-
-                    pet.ControlTarget = this;
-                    pet.ControlOrder = OrderType.Follow;
-
-                    pet.MoveToWorld(Location, Map);
-
-                    pet.IsStabled = false;
-                    pet.StabledBy = null;
-
-                    pet.Loyalty = BaseCreature.MaxLoyalty; // Wonderfully Happy
-
-                    Stabled?.Remove(pet);
+                    if (pet.Deleted)
+                    {
+                        pet.IsStabled = false;
+                        pet.StabledBy = null;
+                        Stabled?.Remove(pet);
+                        continue;
+                    }
+                    if (pet is BaseMount && insideForbiddenZone)
+                    {
+                        remainStabled.Add(pet);
+                        continue;
+                    }
+                    if (Followers + pet.ControlSlots <= FollowersMax)
+                    {
+                        pet.SetControlMaster(this);
+                        if (pet.Summoned)
+                        {
+                            pet.SummonMaster = this;
+                        }
+                        pet.ControlTarget = this;
+                        pet.ControlOrder = OrderType.Follow;
+                        pet.MoveToWorld(Location, Map);
+                        pet.IsStabled = false;
+                        pet.StabledBy = null;
+                        pet.Loyalty = BaseCreature.MaxLoyalty;
+                        Stabled?.Remove(pet);
+                    }
+                    else
+                    {
+                        SendLocalizedMessage(1049612, pet.Name);
+                        remainStabled.Add(pet);
+                    }
+                }
+                if (remainStabled.Count > 0)
+                {
+                    AutoStabled.Clear();
+                    foreach (var p in remainStabled)
+                    {
+                        AutoStabled.Add(p);
+                    }
                 }
                 else
                 {
-                    // ~1_NAME~ remained in the stables because you have too many followers.
-                    SendLocalizedMessage(1049612, pet.Name);
+                    AutoStabled = null;
                 }
-            }
-
-            AutoStabled = null;
+            });
         }
 
         public void RecoverAmmo()
