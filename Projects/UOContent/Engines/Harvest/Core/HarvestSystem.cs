@@ -140,9 +140,10 @@ namespace Server.Engines.Harvest
             var resource = MutateResource(from, tool, def, map, loc, vein, primary, fallback);
 
             var skillBase = from.Skills[def.Skill].Base;
-            // double skillValue = from.Skills[def.Skill].Value;
 
             Type type = null;
+
+            bool stopAutoHarvest = false;
 
             if (skillBase >= resource.ReqSkill && from.CheckSkill(def.Skill, resource.MinSkill, resource.MaxSkill))
             {
@@ -163,7 +164,6 @@ namespace Server.Engines.Harvest
                     }
                     else
                     {
-                        // The whole harvest system is kludgy and I'm sure this is just adding to it.
                         if (item.Stackable)
                         {
                             var amount = def.ConsumedPerHarvest;
@@ -204,6 +204,8 @@ namespace Server.Engines.Harvest
                         {
                             SendPackFullTo(from, item, def, resource);
                             item.Delete();
+
+                            stopAutoHarvest = true;
                         }
 
                         var bonus = def.GetBonusResource();
@@ -212,7 +214,6 @@ namespace Server.Engines.Harvest
                         {
                             var bonusItem = Construct(bonus.Type, from);
 
-                            // Bonuses always allow placing at feet, even if pack is full irregrdless of def
                             if (Give(from, bonusItem, true))
                             {
                                 bonus.SendSuccessTo(from);
@@ -236,6 +237,8 @@ namespace Server.Engines.Harvest
                             {
                                 tool.Delete();
                                 def.SendMessageTo(from, def.ToolBrokeMessage);
+
+                                stopAutoHarvest = true;
                             }
                         }
                     }
@@ -248,6 +251,10 @@ namespace Server.Engines.Harvest
             }
 
             OnHarvestFinished(from, tool, def, vein, bank, resource, toHarvest);
+            if (tool != null && !tool.Deleted && !stopAutoHarvest)
+            {
+                StartHarvesting(from, tool, toHarvest);
+            }
         }
 
         public virtual void OnHarvestFinished(
