@@ -1242,7 +1242,8 @@ namespace Server.Engines.Craft
                 {
                     from.SendLocalizedMessage(num);
                 }
-
+                CraftResult result = (ignored == 2) ? CraftResult.Exceptional : CraftResult.Success;
+                CraftQueueManager.HandleQueueItemCompleted(from, result, craftSystem, tool);
                 return;
             }
 
@@ -1307,6 +1308,7 @@ namespace Server.Engines.Craft
             {
                 from.SendLocalizedMessage(num);
             }
+            CraftQueueManager.HandleQueueItemCompleted(from, CraftResult.Failure, craftSystem, tool);
         }
 
         private class InternalTimer : Timer
