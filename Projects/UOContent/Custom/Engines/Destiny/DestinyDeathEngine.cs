@@ -100,15 +100,23 @@ namespace Server.Combat
                             continue;
                         }
 
+                        // FIXED: Added an explicit check to make sure the vault doesn't already have this pet reference saved!
                         if (bc.IsBonded && pm.PetVault.Count < pm.MaxPetVaultSlots)
                         {
-                            Server.Utilities.PetVaultController.VaultPet(pm, bc);
-                            followVault++;
+                            if (!pm.PetVault.Contains(bc))
+                            {
+                                Server.Utilities.PetVaultController.VaultPet(pm, bc);
+                                followVault++;
+                            }
                         }
                         else
                         {
-                            bc.Delete();
-                            followDelete++;
+                            // Safety Check: Only delete if it wasn't successfully vaulted or already in the vault
+                            if (!pm.PetVault.Contains(bc))
+                            {
+                                bc.Delete();
+                                followDelete++;
+                            }
                         }
                     }
                 }
@@ -134,15 +142,22 @@ namespace Server.Combat
                 {
                     if (m is BaseCreature bc)
                     {
+                        // FIXED: Added an explicit check here as well to intercept double-processed overlapping pets!
                         if (bc.IsBonded && pm.PetVault.Count < pm.MaxPetVaultSlots)
                         {
-                            Server.Utilities.PetVaultController.VaultPet(pm, bc);
-                            vaultedCount++;
+                            if (!pm.PetVault.Contains(bc))
+                            {
+                                Server.Utilities.PetVaultController.VaultPet(pm, bc);
+                                vaultedCount++;
+                            }
                         }
                         else
                         {
-                            bc.Delete();
-                            deletedCount++;
+                            if (!pm.PetVault.Contains(bc))
+                            {
+                                bc.Delete();
+                                deletedCount++;
+                            }
                         }
                     }
                 }
