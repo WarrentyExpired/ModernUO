@@ -9,7 +9,7 @@ namespace Server.Items
     public partial class TomeOfKnowledge : Item
     {
         [Constructible]
-        public TomeOfKnowledge() : base(0x2AAA)
+        public TomeOfKnowledge() : base(0xA1FB)
         {
             Name = "Tome of Previous Knowledge";
             Weight = 1.0;
