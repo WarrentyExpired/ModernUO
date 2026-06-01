@@ -370,14 +370,14 @@ public partial class Plank : Item, ILockable
                 return;
             }
 
-            int avgZ = map.GetAverageZ(p.X, p.Y);
+            // FIXED: Use the actual Z coordinate of the clicked surface (the dock deck),
+            // instead of map.GetAverageZ which calculates the underwater sea floor height!
+            int targetZ = p.Z;
 
-            // Verify map constraints and ensure target location is not part of another multi structure
-            if (map.CanFit(p.X, p.Y, avgZ, 16, false, false) &&
-                !SpellHelper.CheckMulti(new Point3D(p.X, p.Y, avgZ), map))
+            if (map.CanFit(p.X, p.Y, targetZ, 16, false, false))
             {
-                // Leap to shore smoothly
-                from.Location = new Point3D(p.X, p.Y, avgZ);
+                // Leap to the dock deck smoothly
+                from.Location = new Point3D(p.X, p.Y, targetZ);
                 from.ProcessDelta();
 
                 // Automatically close the plank behind them for pristine aesthetics
