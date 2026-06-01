@@ -273,7 +273,8 @@ public partial class Plank : Item, ILockable
             {
                 if (IsOpen)
                 {
-                    Close();
+                    from.SendMessage("Target a location on shore to leap off the vessel.");
+                    from.Target = new PlankDisembarkTarget(this);
                 }
                 else
                 {
@@ -319,6 +320,72 @@ public partial class Plank : Item, ILockable
                 {
                     from.LocalOverheadMessage(MessageType.Regular, 0x00, 502503); // That is locked.
                 }
+            }
+        }
+    }
+
+    private class PlankDisembarkTarget : Server.Targeting.Target
+    {
+        private readonly Plank _plank;
+
+        public PlankDisembarkTarget(Plank plank) : base(16, true, Server.Targeting.TargetFlags.None)
+        {
+            _plank = plank;
+        }
+
+        protected override void OnTarget(Mobile from, object targeted)
+        {
+            if (_plank == null || _plank.Deleted || _plank.Boat == null)
+                return;
+
+            if (!from.InRange(_plank.GetWorldLocation(), 8) || !_plank.Boat.Contains(from))
+            {
+                from.SendMessage("You are too far away from the plank or no longer on the boat.");
+                return;
+            }
+
+            Point3D p;
+            if (targeted is Point3D point)
+                p = point;
+            else if (targeted is IPoint3D ip)
+                p = new Point3D(ip.X, ip.Y, ip.Z);
+            else
+                return;
+
+            Map map = from.Map;
+            if (map == null || map == Map.Internal)
+                return;
+
+            // UX Tweak: If they target the plank itself, treat it as a command to close the plank
+            if (p.X == _plank.X && p.Y == _plank.Y)
+            {
+                _plank.Close();
+                return;
+            }
+
+            // Enforce maximum leap distance constraint (16 tiles max)
+            if (!from.InRange(p, 16))
+            {
+                from.SendMessage("That location is too far away to safely jump.");
+                return;
+            }
+
+            int avgZ = map.GetAverageZ(p.X, p.Y);
+
+            // Verify map constraints and ensure target location is not part of another multi structure
+            if (map.CanFit(p.X, p.Y, avgZ, 16, false, false) &&
+                !SpellHelper.CheckMulti(new Point3D(p.X, p.Y, avgZ), map))
+            {
+                // Leap to shore smoothly
+                from.Location = new Point3D(p.X, p.Y, avgZ);
+                from.ProcessDelta();
+
+                // Automatically close the plank behind them for pristine aesthetics
+                _plank.Close();
+            }
+            else
+            {
+                from.SendMessage("You cannot safely land there.");
             }
         }
     }
