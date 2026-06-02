@@ -227,6 +227,7 @@ namespace Server.Mobiles
         private int m_SurgeChancePurchases;
         private int m_SurgeBoostPurchases;
         private int m_InnateProcPurchases;
+        private int m_SoulAtlasMask = 0;
         private List<BaseCreature> m_PetVault;
         private List<DestinyTemplate> m_CurrentTemplateChoices;
         public List<DestinyTemplate> CurrentTemplateChoices
@@ -394,6 +395,14 @@ namespace Server.Mobiles
             get { return m_InnateProcPurchases; }
             set { m_InnateProcPurchases = value; }
         }
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int SoulAtlasMask
+        {
+            get => m_SoulAtlasMask;
+            set => m_SoulAtlasMask = value;
+        }
+
 // End of Destiny Stuff
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -3011,6 +3020,7 @@ namespace Server.Mobiles
                     m_SurgeChancePurchases = reader.ReadInt();
                     m_SurgeBoostPurchases = reader.ReadInt();
                     m_InnateProcPurchases = reader.ReadInt();
+                    m_SoulAtlasMask = reader.ReadInt();
                     int resonanceCount = reader.ReadInt();
                     m_AvailableResonanceSkills = new List<SkillName>();
                     for (int i = 0; i < resonanceCount; i++)
@@ -3369,7 +3379,7 @@ namespace Server.Mobiles
         {
             base.Serialize(writer);
 
-            writer.Write((int)36); // version
+            writer.Write((int)36);
             writer.Write(SkillTome.Count);
             foreach (var entry in SkillTome)
             {
@@ -3397,6 +3407,7 @@ namespace Server.Mobiles
             writer.Write(m_SurgeChancePurchases);
             writer.Write(m_SurgeBoostPurchases);
             writer.Write(m_InnateProcPurchases);
+            writer.Write(m_SoulAtlasMask);
             if (m_AvailableResonanceSkills == null)
             {
                 writer.Write(0);
