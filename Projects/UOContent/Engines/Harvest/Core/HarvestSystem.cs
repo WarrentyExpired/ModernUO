@@ -196,7 +196,7 @@ namespace Server.Engines.Harvest
 
                         bank.Consume(item.Amount, from);
 
-                        if (Give(from, item, def.PlaceAtFeetIfFull))
+                        if (Give(from, item, true))
                         {
                             SendSuccessTo(from, item, resource);
                         }
