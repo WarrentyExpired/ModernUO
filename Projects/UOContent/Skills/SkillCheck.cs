@@ -113,7 +113,13 @@ public static class SkillCheck
                 gc += (skill.Cap - skill.Base) / skill.Cap;
                 gc /= 2;
 
-                gc += (1.0 - chance) * (success ? 0.5 : Core.AOS ? 0.0 : 0.2);
+                //gc += (1.0 - chance) * (success ? 0.5 : Core.AOS ? 0.0 : 0.2);
+                // REMOVED AOS PENALTY: Custom gain multipliers for success vs failure
+                // 0.5 means a 50% bonus modifier on success.
+                // 0.3 means a 30% bonus modifier on failure (Classic AOS forced this to 0.0!)
+                double failureBonus = success ? 0.5 : 0.3;
+
+                gc += (1.0 - chance) * failureBonus;
                 gc /= 2;
 
                 gc *= skill.Info.GainFactor;
