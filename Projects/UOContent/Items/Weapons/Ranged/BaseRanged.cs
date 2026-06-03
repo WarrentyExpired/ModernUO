@@ -238,6 +238,10 @@ namespace Server.Items
 
         private void ApplyWoodBonuses(Type resource)
         {
+            if (resource == null)
+            {
+                return;
+            }
             var craftResource = CraftResources.GetFromType(resource);
 
             switch (craftResource)
