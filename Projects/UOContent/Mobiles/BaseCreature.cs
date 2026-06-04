@@ -3219,19 +3219,39 @@ namespace Server.Mobiles
         public override void OnDeath(Container c)
         {
             Mobile destinyKiller = FindMostRecentDamager(true);
+
             if (destinyKiller is BaseCreature destinyBc)
-                destinyKiller = destinyBc.GetMaster();
+            {
+                Mobile master = destinyBc.GetMaster();
+
+                if (master == null && destinyBc.BardMaster != null && Core.Now < destinyBc.BardEndTime)
+                {
+                    master = destinyBc.BardMaster;
+                }
+                destinyKiller = master;
+            }
+
+            // 3. Retaliation Trap Fallback: If the killer was a completely wild un-barded monster,
+            // check if THIS dying creature was the one provoked into the fight by a bard.
+            if (destinyKiller == null && this.BardMaster != null && Core.Now < this.BardEndTime)
+            {
+                destinyKiller = this.BardMaster;
+            }
+
+            // The rest of your point calculations flow perfectly untouched!
             if (destinyKiller is PlayerMobile destinyPm)
             {
                 int basePoints = (this.Fame / 50) + 1;
                 int pointsGained = basePoints;
                 double surgeChance = 0.10 + (destinyPm.SurgeChancePurchases * 0.05);
                 double surgeBoost = 0.10 + (destinyPm.SurgeBoostPurchases * 0.05);
+
                 if (Utility.RandomDouble() < surgeChance)
                 {
                     pointsGained = (int)Math.Ceiling(basePoints * (1.0 + surgeBoost));
                     destinyPm.PublicOverheadMessage(MessageType.Regular, 0x3F, false, "Destiny Surge!");
                 }
+
                 destinyPm.DestinyPoints += pointsGained;
                 destinyPm.LifetimeDestinyPoints += pointsGained;
                 destinyPm.SendMessage(0x3F, $"You have gained {pointsGained} Destiny Points from this enemy.");
