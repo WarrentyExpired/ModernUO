@@ -39,6 +39,15 @@ public static class SkillCheck
         Mobile.SkillCheckDirectTargetHandler = Mobile_SkillCheckDirectTarget;
     }
 
+    private static int GetMaxStatCap(Mobile from)
+    {
+        if (from is PlayerMobile pm)
+        {
+            return pm.MaxStatCap;
+        }
+        return from.StatCap;
+    }
+
     public static bool Mobile_SkillCheckLocation(Mobile from, SkillName skillName, double minSkill, double maxSkill)
     {
         var skill = from.Skills[skillName];
@@ -331,7 +340,7 @@ public static class SkillCheck
     {
         if (from is PlayerMobile pm)
         {
-            if (from.RawStatTotal >= pm.MaxStatCap)
+            if (from.RawStatTotal >= GetMaxStatCap(from))
                 return false;
         }
         else if (!(from is BaseCreature creature && creature.Controlled))
@@ -351,7 +360,7 @@ public static class SkillCheck
 
     public static void IncreaseStat(Mobile from, Stat stat, bool atrophy)
     {
-        atrophy = atrophy || from.RawStatTotal >= from.StatCap;
+        atrophy = atrophy || from.RawStatTotal >= GetMaxStatCap(from);
 
         switch (stat)
         {
@@ -478,7 +487,7 @@ public static class SkillCheck
                 }
         }
 
-        var atrophy = from.RawStatTotal / (double)from.StatCap >= Utility.RandomDouble();
+        var atrophy = from.RawStatTotal / (double)GetMaxStatCap(from) >= Utility.RandomDouble();
 
         IncreaseStat(from, stat, atrophy);
     }
