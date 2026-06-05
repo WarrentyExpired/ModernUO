@@ -186,6 +186,7 @@ namespace Server.Mobiles
 
             m_GameTime = TimeSpan.Zero;
             m_GuildRank = RankDefinition.Lowest;
+            StashBox = new StashContainer();
         }
 
         public PlayerMobile(Serial s) : base(s)
@@ -402,6 +403,9 @@ namespace Server.Mobiles
             get => m_SoulAtlasMask;
             set => m_SoulAtlasMask = value;
         }
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public StashContainer StashBox { get; set; }
 
 // End of Destiny Stuff
 
@@ -1467,6 +1471,14 @@ namespace Server.Mobiles
 
                 from.SendGump(new ServerLockdownNoticeGump(notice));
                 return;
+            }
+            if (from.StashBox == null)
+            {
+                from.StashBox = new StashContainer();
+            }
+            if (from.BankBox != null && from.StashBox.Parent != from.BankBox)
+            {
+                from.BankBox.DropItem(from.StashBox);
             }
 
             VirtueSystem.CheckAtrophies(from);
@@ -2984,6 +2996,7 @@ namespace Server.Mobiles
 
             switch (version)
             {
+                case 37:
                 case 36:
                 {
                     int tomeCount = reader.ReadInt();
@@ -3026,6 +3039,15 @@ namespace Server.Mobiles
                     for (int i = 0; i < resonanceCount; i++)
                     {
                         m_AvailableResonanceSkills.Add((SkillName)reader.ReadInt());
+                    }
+                    if (version >= 37)
+                    {
+                        Serial stashSerial = reader.ReadSerial();
+                        StashBox = World.FindItem(stashSerial) as StashContainer;
+                    }
+                    if (StashBox == null)
+                    {
+                        StashBox = new StashContainer();
                     }
                     goto case 35;
                 }
@@ -3379,7 +3401,7 @@ namespace Server.Mobiles
         {
             base.Serialize(writer);
 
-            writer.Write((int)36);
+            writer.Write((int)37);
             writer.Write(SkillTome.Count);
             foreach (var entry in SkillTome)
             {
@@ -3420,7 +3442,7 @@ namespace Server.Mobiles
                     writer.Write((int)sn);
                 }
             }
-
+            writer.Write(StashBox != null ? StashBox.Serial : Serial.MinusOne);
             writer.Write(_characterPublicDoor);
             if (Stabled == null)
             {

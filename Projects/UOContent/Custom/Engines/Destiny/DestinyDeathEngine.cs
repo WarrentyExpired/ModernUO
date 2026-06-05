@@ -66,6 +66,10 @@ namespace Server.Combat
                 for (int i = pm.Backpack.Items.Count - 1; i >= 0; i--)
                 {
                     Item item = pm.Backpack.Items[i];
+                    if (item == pm.StashBox || item is StashContainer)
+                    {
+                        continue;
+                    }
                     if (!item.Insured)
                     {
                         item.Delete();
@@ -79,7 +83,12 @@ namespace Server.Combat
             {
                 for (int i = bank.Items.Count - 1; i >= 0; i--)
                 {
-                    bank.Items[i].Delete();
+                    Item item = bank.Items[i];
+                    if (item == pm.StashBox || item is StashContainer)
+                    {
+                        continue;
+                    }
+                    item.Delete();
                 }
             }
 
