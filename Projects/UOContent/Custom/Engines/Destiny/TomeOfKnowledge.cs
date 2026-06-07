@@ -9,19 +9,18 @@ namespace Server.Items
     public partial class TomeOfKnowledge : Item
     {
         [Constructible]
-        public TomeOfKnowledge() : base(0xA1FB)
+        public TomeOfKnowledge() : base(0xC4F2)
         {
             Name = "Tome of Previous Knowledge";
             Weight = 1.0;
             LootType = LootType.Blessed;
-            Hue = 1161; // Ancient teal
+            Hue = 1161;
         }
 
         public override void OnDoubleClick(Mobile from)
         {
             if (from is PlayerMobile pm)
             {
-                // Basic range check to ensure they have it in their pack or nearby
                 if (!from.InRange(GetWorldLocation(), 2))
                 {
                     from.SendLocalizedMessage(500446); // That is too far away.

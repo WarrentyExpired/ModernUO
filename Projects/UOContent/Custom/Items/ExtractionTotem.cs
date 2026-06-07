@@ -8,11 +8,11 @@ namespace Server.Items;
 public partial class ExtractionTotem : Item
 {
     [Constructible]
-    public ExtractionTotem() : base(0xA1F3) // FIXED: Bank Vault Door graphic
+    public ExtractionTotem() : base(0xB0DA)
     {
         Movable = false;
         Name = "Extraction Totem";
-        Hue = 0; // Customize if you want a spectral/magic look later
+        Hue = 0;
     }
 
     public override void OnDoubleClick(Mobile from)
@@ -20,7 +20,6 @@ public partial class ExtractionTotem : Item
         if (from is not PlayerMobile pm)
             return;
 
-        // Proximity Safety: Ensure they aren't accessing it from across the room
         if (!from.InRange(GetWorldLocation(), 3))
         {
             from.SendLocalizedMessage(500446); // That is too far away.
@@ -33,9 +32,6 @@ public partial class ExtractionTotem : Item
             return;
         }
         pm.StashBox.OpenVault(pm);
-        //pm.Backpack.DropItem(pm.StashBox);
-        //pm.StashBox.DisplayTo(pm);
-        //pm.BankBox.DropItem(pm.StashBox);
         pm.SendMessage(0x3F, $"Vault link established. Stash Box capacity: {pm.StashBox.Items.Count}/125 items.");
     }
 }

@@ -11,13 +11,12 @@ namespace Server.Items
         public override int DefaultMaxItems => 125;
         public override int DefaultMaxWeight => 0;
 
-        // Background lease timer tracking
         private Timer _hideTimer;
 
-        public StashContainer() : base(0x9AB) // Secure Chest graphic
+        public StashContainer() : base(0xA1F3)
         {
-            Movable = false; // Prevents dragging the chest icon out of the pack
-            Weight = 0.0;    // Weighs nothing while temporarily leased
+            Movable = false;
+            Weight = 0.0;
         }
 
         public void OpenVault(PlayerMobile pm)
@@ -26,14 +25,11 @@ namespace Server.Items
 
             StopHideTimer();
 
-            // 1. Lease the box to the active backpack layout so the client syncs
             pm.Backpack.DropItem(this);
 
-            // 2. Open the visual grid layout window
             DisplayTo(pm);
 
-            // 3. Begin the 20-second countdown to secure and close the vault
-            _hideTimer = Timer.DelayCall(TimeSpan.FromSeconds(20.0), () => HideVault(pm));
+            _hideTimer = Timer.DelayCall(TimeSpan.FromSeconds(10.0), () => HideVault(pm));
         }
 
         public void RefreshTimer(PlayerMobile pm)
@@ -41,7 +37,7 @@ namespace Server.Items
             if (_hideTimer != null && pm != null)
             {
                 StopHideTimer();
-                _hideTimer = Timer.DelayCall(TimeSpan.FromSeconds(20.0), () => HideVault(pm));
+                _hideTimer = Timer.DelayCall(TimeSpan.FromSeconds(10.0), () => HideVault(pm));
             }
         }
 
@@ -72,7 +68,6 @@ namespace Server.Items
         {
             if (check is PlayerMobile pm && pm.StashBox == this)
             {
-                // Toggle item interactive safety properties depending on world coordinates
                 bool inSafeZone = check.Region != null && check.Region.Name.Equals("the Chamber of Destiny", StringComparison.OrdinalIgnoreCase);
 
                 foreach (Item item in Items)
@@ -96,7 +91,7 @@ namespace Server.Items
 
             if (from is PlayerMobile pm)
             {
-                RefreshTimer(pm); // Reset the 20-second lease because they are interacting!
+                RefreshTimer(pm);
             }
 
             return base.OnDragDrop(from, dropped);
@@ -112,7 +107,7 @@ namespace Server.Items
 
             if (from is PlayerMobile pm)
             {
-                RefreshTimer(pm); // Reset the 20-second lease because they are interacting!
+                RefreshTimer(pm);
             }
 
             return base.OnDragDropInto(from, dropped, p);
