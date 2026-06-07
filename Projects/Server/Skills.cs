@@ -102,6 +102,7 @@ public class Skill
             case SkillName.Inscribe:
             case SkillName.Tailoring:
             case SkillName.Tinkering:
+            case SkillName.ArmsLore:
                 return true;
 
             // Gathering Skills

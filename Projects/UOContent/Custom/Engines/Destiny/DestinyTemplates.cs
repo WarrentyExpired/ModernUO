@@ -85,16 +85,16 @@ namespace Server.Destiny
                             pm.AddToBackpack(new Katana());
                             pm.AddToBackpack(new BookOfChivalry());
                         }),
-            new DestinyTemplate("Tailor", "30 Tailor, Tinker",
-                new Dictionary<SkillName, double>{{SkillName.Tailoring, 30}, {SkillName.Tinkering, 30}},
+            new DestinyTemplate("Tailor", "30 Tailor, Tinker, Arms Lore",
+                new Dictionary<SkillName, double>{{SkillName.Tailoring, 30}, {SkillName.Tinkering, 30}, {SkillName.ArmsLore, 30}},
                 (pm) => {
                             pm.AddToBackpack(new SewingKit());
                             pm.AddToBackpack(new TinkerTools());
                             pm.AddToBackpack(new UncutCloth(50));
                             pm.AddToBackpack(new IronIngot(50));
                         }),
-            new DestinyTemplate("Blacksmith", "30 Smithing, Mining, Tinkering",
-                new Dictionary<SkillName, double>{{SkillName.Blacksmith, 30}, {SkillName.Mining, 30}, {SkillName.Tinkering, 30}},
+            new DestinyTemplate("Blacksmith", "30 Smithing, Mining, Tinkering, Arms Lore",
+                new Dictionary<SkillName, double>{{SkillName.Blacksmith, 30}, {SkillName.Mining, 30}, {SkillName.Tinkering, 30}, {SkillName.ArmsLore, 30}},
                 (pm) => {
                             pm.AddToBackpack(new SmithHammer());
                             pm.AddToBackpack(new Pickaxe());
