@@ -10,8 +10,9 @@ namespace Server.Combat
         {
             if (attacker == null || defender == null || weapon == null || !defender.Alive)
                 return;
+            double anatomy = attacker.Skills[SkillName.Anatomy].Value;
 
-            double procChance = 0.99;
+            double procChance = 0.10 + ((anatomy / 120.0) * 0.15);
 
             if (Utility.RandomDouble() >= procChance)
                 return;
