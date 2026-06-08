@@ -314,13 +314,13 @@ public class CraftGumpItem : DynamicGump
         // Back Button
         if (info.ButtonID == 0)
         {
-            var craftGump = new CraftGump(from, _craftSystem, _tool, null);
-            from.SendGump(craftGump);
+            CraftItem.ShowCraftMenu(from, _craftSystem, _tool, null);
         }
         else // Make Button
         {
             if (info.ButtonID == 1)
             {
+                // RESOLVED: Keep HEAD's capability check to define 'num'
                 var num = _craftSystem.CanCraft(from, _tool, _craftItem.ItemType);
 
                 if (num > 0)
