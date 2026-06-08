@@ -1471,8 +1471,15 @@ namespace Server.Engines.Craft
                             item.Amount = maxAmount;
                         }
                     }
-
-                    from.AddToBackpack(item);
+                    Item salvageBag = from.Backpack.FindItemByType(typeof(Server.Items.SalvageBag));
+                    if (salvageBag is Container salvageContainer && !salvageContainer.Deleted)
+                    {
+                        salvageContainer.DropItem(item);
+                    }
+                    else
+                    {
+                        from.AddToBackpack(item);
+                    }
 
                     if (from.AccessLevel > AccessLevel.Player)
                     {
@@ -1562,7 +1569,8 @@ namespace Server.Engines.Craft
                 {
                     from.SendLocalizedMessage(num);
                 }
-
+                CraftResult result = (ignored == 2) ? CraftResult.Exceptional : CraftResult.Success;
+                CraftQueueManager.HandleQueueItemCompleted(from, result, craftSystem, tool);
                 return;
             }
 
@@ -1828,6 +1836,7 @@ namespace Server.Engines.Craft
             {
                 from.SendLocalizedMessage(num);
             }
+            CraftQueueManager.HandleQueueItemCompleted(from, CraftResult.Failure, craftSystem, tool);
         }
 
         private class InternalTimer : Timer
