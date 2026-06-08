@@ -102,21 +102,7 @@ namespace Server.Mobiles
 
         private static readonly Point3D[] m_TrammelDeathDestinations =
         {
-            new(1481, 1612, 20),
-            new(2708, 2153, 0),
-            new(2249, 1230, 0),
-            new(5197, 3994, 37),
-            new(1412, 3793, 0),
-            new(3688, 2232, 20),
-            new(2578, 604, 0),
-            new(4397, 1089, 0),
-            new(5741, 3218, -2),
-            new(2996, 3441, 15),
-            new(624, 2225, 0),
-            new(1916, 2814, 0),
-            new(2929, 854, 0),
-            new(545, 967, 0),
-            new(3665, 2587, 0)
+            new(865, 605, 1)
         };
 
         private static readonly Point3D[] m_IlshenarDeathDestinations =

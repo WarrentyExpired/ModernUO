@@ -258,6 +258,9 @@ namespace Server.Gumps
                     }
                 case AdminGumpPage.Administer_WorldBuilding:
                     {
+                        m_From.SendGump(new WorldBuildingGump(m_From));
+                        break;
+                        /*
                         AddHtml(10, 125, 400, 20, "Generating".Center(LabelColor32));
 
                         AddButtonLabeled(20, 175, GetButtonID(3, 101), "Teleporters");
@@ -282,6 +285,7 @@ namespace Server.Gumps
                         AddButtonLabeled(220, 325, GetButtonID(3, 114), "Do everything");
 
                         goto case AdminGumpPage.Administer;
+                        */
                     }
                 case AdminGumpPage.Administer_Server:
                     {
