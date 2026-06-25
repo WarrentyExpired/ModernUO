@@ -6,7 +6,7 @@ namespace Server.Items;
 public partial class FarmableBloodmoss : FarmableCrop
 {
     [Constructible]
-    public FarmableBloodmoss() : base(0xA8DB)
+    public FarmableBloodmoss() : base(0x9FFF)
     {
         Name = "Bloodmoss";
     }
