@@ -102,6 +102,16 @@ public class CraftGump : DynamicGump
         }
         // ****************************************
 
+        // Skill Guide
+        builder.AddButton(415, 342, 4011, 4012, GetButtonID(6, 9));
+        builder.AddLabel(445, 345, LabelHue, "Skill Guide");
+        // ****************************************
+
+        // Crafting Queue
+        builder.AddButton(415, 362, 4011, 4012, GetButtonID(6, 10));
+        builder.AddLabel(445, 365, LabelHue, "Craft Queue");
+        // ****************************************
+
         // Enhance option
         if (_craftSystem.CanEnhance)
         {
@@ -723,6 +733,16 @@ public class CraftGump : DynamicGump
                                     Enhance.BeginTarget(_from, _craftSystem, _tool);
                                 }
 
+                                break;
+                            }
+                        case 9: //Skill gain guide
+                            {
+                                _from.SendGump(new CraftOptimizerGump(_from, _craftSystem, _tool));
+                                break;
+                            }
+                        case 10: //Crafting Queue
+                            {
+                                _from.SendGump(new CraftQueueGump(_from, _craftSystem, _tool));
                                 break;
                             }
                     }

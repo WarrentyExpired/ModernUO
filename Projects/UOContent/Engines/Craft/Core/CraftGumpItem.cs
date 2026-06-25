@@ -83,6 +83,10 @@ public class CraftGumpItem : DynamicGump
             builder.AddHtmlLocalized(305, 390, 150, 18, 1044151, LabelColor); // MAKE NOW
         }
 
+        // Crafting Queue
+        builder.AddButton(380, 387, 4011, 4012, 2);
+        builder.AddLabel(415, 390, LabelHue, "Add To Queue");
+
         if (_craftItem.NameNumber > 0)
         {
             builder.AddHtmlLocalized(330, 40, 180, 18, _craftItem.NameNumber, LabelColor);
@@ -314,30 +318,39 @@ public class CraftGumpItem : DynamicGump
         }
         else // Make Button
         {
-            var num = _craftSystem.CanCraft(from, _tool, _craftItem.ItemType);
-
-            if (num > 0)
+            if (info.ButtonID == 1)
             {
-                CraftItem.ShowCraftMenu(from, _craftSystem, _tool, num);
-            }
-            else
-            {
-                Type type = null;
+                // RESOLVED: Keep HEAD's capability check to define 'num'
+                var num = _craftSystem.CanCraft(from, _tool, _craftItem.ItemType);
 
-                var context = _craftSystem.GetContext(from);
-
-                if (context != null)
+                if (num > 0)
                 {
-                    var res = _craftItem.UseSubRes2 ? _craftSystem.CraftSubRes2 : _craftSystem.CraftSubRes;
-                    var resIndex = _craftItem.UseSubRes2 ? context.LastResourceIndex2 : context.LastResourceIndex;
-
-                    if (resIndex > -1)
-                    {
-                        type = res.GetAt(resIndex).ItemType;
-                    }
+                    from.SendGump(new CraftGump(from, _craftSystem, _tool, num));
                 }
+                else
+                {
+                    Type type = null;
 
-                _craftSystem.CreateItem(from, _craftItem.ItemType, type, _tool, _craftItem);
+                    var context = _craftSystem.GetContext(from);
+
+                    if (context != null)
+                    {
+                        var res = _craftItem.UseSubRes2 ? _craftSystem.CraftSubRes2 : _craftSystem.CraftSubRes;
+                        var resIndex = _craftItem.UseSubRes2 ? context.LastResourceIndex2 : context.LastResourceIndex;
+
+                        if (resIndex > -1)
+                        {
+                            type = res.GetAt(resIndex).ItemType;
+                        }
+                    }
+
+                    _craftSystem.CreateItem(from, _craftItem.ItemType, type, _tool, _craftItem);
+                }
+            }
+            else if (info.ButtonID == 2) // ADDED: Queue Router Connection
+            {
+                CraftQueueManager.AddToQueue(from, _craftItem, _craftSystem);
+                from.SendGump(new CraftQueueGump(from, _craftSystem, _tool)); // Immediate view feedback loop
             }
         }
     }
