@@ -65,26 +65,48 @@ public abstract partial class BaseClothMaterial : Item, IDyable
                 {
                     from.SendLocalizedMessage(1042001); // That must be in your pack for you to use it.
                 }
-                else if (loom.Phase < 4)
-                {
-                    m_Material.Consume();
-
-                    if (targeted is Item item)
-                    {
-                        item.SendLocalizedMessageTo(from, 1010001 + loom.Phase++);
-                    }
-                }
                 else
                 {
-                    var create = new BoltOfCloth
-                    {
-                        Hue = m_Material.Hue
-                    };
+                    // 1. Capture stack values and current loom state before deletion
+                    int totalThreads = m_Material.Amount;
+                    int currentPhase = loom.Phase;
+                    int materialHue = m_Material.Hue;
 
-                    m_Material.Consume();
-                    loom.Phase = 0;
-                    from.SendLocalizedMessage(500368); // You create some cloth and put it in your backpack.
-                    from.AddToBackpack(create);
+                    // 2. Combine the loom's current contents with the incoming stack
+                    int totalEffectiveThreads = currentPhase + totalThreads;
+
+                    // 3. Calculate bolts earned (5 threads per bolt) and the leftover phase remainder
+                    int boltsToMake = totalEffectiveThreads / 5;
+                    int newPhase = totalEffectiveThreads % 5;
+
+                    // 4. Safely delete the resource stack up front to prevent any anti-duping movement exploits
+                    m_Material.Delete();
+
+                    // 5. Commit the new leftover phase back to the loom structure
+                    loom.Phase = newPhase;
+
+                    // 6. Award the bulk bolts of cloth if thresholds were met
+                    if (boltsToMake > 0)
+                    {
+                        var create = new BoltOfCloth
+                        {
+                            Hue = materialHue,
+                            Amount = boltsToMake
+                        };
+
+                        from.SendLocalizedMessage(500368); // You create some cloth and put it in your backpack.
+                        from.AddToBackpack(create);
+                    }
+
+                    // 7. If no bolts were finished but progress was added, send the proper progression message
+                    if (boltsToMake == 0 && newPhase > 0)
+                    {
+                        if (targeted is Item item)
+                        {
+                            // Matches the original localization offsets (Phase 1 = 1010001, Phase 4 = 1010004)
+                            item.SendLocalizedMessageTo(from, 1010000 + newPhase);
+                        }
+                    }
                 }
             }
             else

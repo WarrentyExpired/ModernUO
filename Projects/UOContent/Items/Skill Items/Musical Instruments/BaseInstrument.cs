@@ -507,7 +507,7 @@ public abstract partial class BaseInstrument : Item, ICraftable, ISlayer
             SetInstrument(from, this);
 
             // Delay of 6 second before being able to play another instrument again
-            Timer.StartTimer(TimeSpan.FromSeconds(6), from.EndAction<BaseInstrument>);
+            Timer.StartTimer(TimeSpan.FromSeconds(2), from.EndAction<BaseInstrument>);
 
             if (CheckMusicianship(from))
             {

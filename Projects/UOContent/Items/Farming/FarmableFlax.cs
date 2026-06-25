@@ -6,11 +6,10 @@ namespace Server.Items;
 public partial class FarmableFlax : FarmableCrop
 {
     [Constructible]
-    public FarmableFlax() : base(GetCropID())
+    public FarmableFlax() : base(6810)
     {
     }
-
-    public static int GetCropID() => Utility.Random(6809, 3);
+    public static int GetCropID() => 6810;
 
     public override Item GetCropObject() =>
         new Flax

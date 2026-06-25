@@ -40,6 +40,7 @@ public partial class Cotton : Item, IDyable
         }
     }
 
+    // Left intact for structural consistency, but bypassed by the new bulk lambda target handler below
     public virtual void OnSpun(ISpinningWheel wheel, Mobile from, int hue)
     {
         from.AddToBackpack(new SpoolOfThread(6)
@@ -85,8 +86,22 @@ public partial class Cotton : Item, IDyable
             }
             else
             {
-                m_Cotton.Consume();
-                wheel.BeginSpin(m_Cotton.OnSpun, from, m_Cotton.Hue);
+                // 1. Capture the stack size and any custom dyed colors before destroying the item
+                int amountToProcess = m_Cotton.Amount;
+                int cottonHue = m_Cotton.Hue;
+
+                // 2. Delete the whole stack immediately to secure the resources up front
+                m_Cotton.Delete();
+
+                // 3. Process the bulk thread conversion inside an anonymous callback closure
+                wheel.BeginSpin((w, mobile, h) =>
+                {
+                    mobile.AddToBackpack(new SpoolOfThread(6 * amountToProcess)
+                    {
+                        Hue = h
+                    });
+                    mobile.SendLocalizedMessage(1010577); // You put the spools of thread in your backpack.
+                }, from, cottonHue);
             }
         }
     }

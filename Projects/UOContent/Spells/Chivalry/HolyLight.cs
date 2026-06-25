@@ -71,8 +71,10 @@ namespace Server.Spells.Chivalry
                 {
                     var m = queue.Dequeue();
 
-                    var damage = Math.Clamp(ComputePowerValue(10) + Utility.RandomMinMax(0, 2), 8, 24);
-
+                    //var damage = Math.Clamp(ComputePowerValue(10) + Utility.RandomMinMax(0, 2), 8, 24);
+                    int baseDamage = ComputePowerValue(10);
+                    double karmaBonus = (Math.Max(0, Caster.Karma) / 15000.0) * 20.0;
+                    int damage = Math.Clamp((int)(baseDamage + karmaBonus) + Utility.RandomMinMax(0, 2), 8, 45);
                     Caster.DoHarmful(m);
                     SpellHelper.Damage(this, m, damage, 0, 0, 0, 0, 100);
                 }

@@ -538,7 +538,10 @@ public class BandageContext : Timer
             {
                 patient.SendLocalizedMessage(1008078, false, healer.Name); // : Attempting to heal you.
             }
-
+            if (healer is PlayerMobile pm)
+            {
+                pm.AddBuff(new BuffInfo(BuffIcon.Healing, 1042971, TimeSpan.FromMilliseconds(seconds), "Healing"));
+            }
             healer.SendLocalizedMessage(500956); // You begin applying the bandages.
             return context;
         }
