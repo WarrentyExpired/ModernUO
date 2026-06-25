@@ -8,6 +8,7 @@ public partial class FarmableBlackPearl : FarmableCrop
     [Constructible]
     public FarmableBlackPearl() : base(0x48E4)
     {
+        Name = "BlackPearl";
     }
 
     public static int GetCropID() => 3962;
