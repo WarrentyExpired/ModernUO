@@ -23,7 +23,7 @@ namespace Server.Commands
 
         public static void Parse(Mobile from)
         {
-            var cfg = Path.Combine(Core.BaseDirectory, "Data/signs.cfg");
+            var cfg = Path.Combine(Core.BaseDirectory, "Data/Decoration/signs.cfg");
 
             if (File.Exists(cfg))
             {
