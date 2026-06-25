@@ -2,18 +2,19 @@ using ModernUO.Serialization;
 using Server.Engines.Craft;
 using Server.Mobiles;
 using Server.Targeting;
+using System.Collections.Generic;
 
 namespace Server.Items;
 
 [SerializationGenerator(2, false)]
 public abstract partial class BaseOre : Item
 {
-    public BaseOre(CraftResource resource, int amount = 1) : base(RandomSize())
+    public BaseOre(CraftResource resource, int amount = 1) : base(0x19B9)
     {
         Stackable = true;
         Amount = amount;
         Hue = CraftResources.GetHue(resource);
-
+        Weight = 1.0;
         _resource = resource;
     }
 
@@ -55,17 +56,8 @@ public abstract partial class BaseOre : Item
         // Use this line instead if you are getting world loading issues
         _resource = (CraftResource)reader.ReadByte();
         // _resource = (CraftResource)reader.ReadInt();
+
     }
-
-    private static int RandomSize() =>
-        Utility.RandomDouble() switch
-        {
-            < 0.125  => 0x19B7, // Small
-            < 0.1875 => 0x19B8, // Medium clump
-            < 0.25   => 0x19BA, // Medium
-            _        => 0x19B9  // Large
-        };
-
     public override bool CanStackWith(Item dropped) =>
         base.CanStackWith(dropped) &&
         (dropped as BaseOre)?._resource == _resource;
