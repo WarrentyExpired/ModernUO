@@ -251,7 +251,7 @@ namespace Server.Engines.Harvest
             }
 
             OnHarvestFinished(from, tool, def, vein, bank, resource, toHarvest);
-            if (tool != null && !tool.Deleted && !stopAUtoHarvest)
+            if (tool != null && !tool.Deleted && !stopAutoHarvest)
             {
                 StartHarvesting(from, tool, toHarvest);
             }
