@@ -32,7 +32,7 @@ jobs:
             artifact: build-tool-linux-arm64
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0 # Full clone required for Nerdbank.GitVersioning
 
@@ -115,7 +115,7 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Move tag to current commit
         run: |
@@ -149,7 +149,7 @@ jobs:
           sha256sum build-tool-* > checksums-sha256.txt
 
       - name: Create or update release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: build-tool-latest
           name: Build Tool (Latest)

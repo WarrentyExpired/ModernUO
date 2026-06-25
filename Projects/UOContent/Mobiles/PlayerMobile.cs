@@ -522,8 +522,6 @@ namespace Server.Mobiles
             set => SetFlag(PlayerFlag.RefuseTrades, value);
         }
 
-        public Dictionary<Type, int> RecoverableAmmo { get; set; }
-
         [CommandProperty(AccessLevel.GameMaster)]
         public DateTime AcceleratedStart { get; set; }
 
@@ -2367,11 +2365,6 @@ namespace Server.Mobiles
             ReceivedHonorContext?.OnTargetDamaged(from, amount);
             SentHonorContext?.OnSourceDamaged(from, amount);
 
-            if (willKill && from is PlayerMobile mobile)
-            {
-                Timer.StartTimer(TimeSpan.FromSeconds(10), mobile.RecoverAmmo);
-            }
-
             base.OnDamage(amount, from, willKill);
         }
 
@@ -2389,14 +2382,6 @@ namespace Server.Mobiles
                 {
                     deathRobe.Delete();
                 }
-            }
-        }
-
-        public override void OnWarmodeChanged()
-        {
-            if (!Warmode)
-            {
-                Timer.StartTimer(TimeSpan.FromSeconds(10), RecoverAmmo);
             }
         }
 
@@ -2450,8 +2435,6 @@ namespace Server.Mobiles
 
             ReceivedHonorContext?.OnTargetKilled();
             SentHonorContext?.OnSourceKilled();
-
-            RecoverAmmo();
 
             return base.OnBeforeDeath();
         }
@@ -2810,13 +2793,10 @@ namespace Server.Mobiles
             // If the blood oath caster will die then damage is not reflected back to the attacker
             if (hasBloodOath && Alive && !Deleted && !IsDeadBondedPet)
             {
-                // In some expansions resisting spells reduces reflect dmg from monster blood oath
-                var resistReflectedDamage = !from.Player && Core.ML && !Core.HS
-                    ? (from.Skills.MagicResist.Value * 0.5 + 10) / 100
-                    : 0;
-
-                // Reflect damage to the attacker
-                from.Damage((int)(amount * (1.0 - resistReflectedDamage)), this);
+                // Reflect the attacker's original damage back to them, attributed to the caster.
+                // The caster is a player, so the Publish 48 resist mitigation does not apply
+                // (it only reduces reflected damage from creature casters).
+                from.Damage(BloodOathSpell.ComputeReflectedDamage(amount, 0, applyResistMitigation: false), this);
             }
         }
 
@@ -3716,50 +3696,6 @@ namespace Server.Mobiles
             AutoStabled = null;
         }
 
-        public void RecoverAmmo()
-        {
-            if (!Core.SE || !Alive || RecoverableAmmo == null)
-            {
-                return;
-            }
-
-            foreach (var kvp in RecoverableAmmo)
-            {
-                if (kvp.Value > 0)
-                {
-                    Item ammo = null;
-
-                    try
-                    {
-                        ammo = kvp.Key.CreateInstance<Item>();
-                    }
-                    catch
-                    {
-                        // ignored
-                    }
-
-                    if (ammo == null)
-                    {
-                        continue;
-                    }
-
-                    ammo.Amount = kvp.Value;
-
-                    var name = ammo.Name ?? ammo switch
-                    {
-                        Arrow _ => $"arrow{(ammo.Amount != 1 ? "s" : "")}",
-                        Bolt _ => $"bolt{(ammo.Amount != 1 ? "s" : "")}",
-                        _ => $"#{ammo.LabelNumber}"
-                    };
-
-                    PlaceInBackpack(ammo);
-                    SendLocalizedMessage(1073504, $"{ammo.Amount}\t{name}"); // You recover ~1_NUM~ ~2_AMMO~.
-                }
-            }
-
-            RecoverableAmmo.Clear();
-        }
-
         private static int GetInsuranceCost(Item item) => 600;
 
         private void ToggleItemInsurance()
@@ -4160,6 +4096,8 @@ namespace Server.Mobiles
         {
             ReceivedHonorContext?.Cancel();
             SentHonorContext?.Cancel();
+
+            AmmoRecovery.Forget(this);
 
             if (Stabled != null)
             {
