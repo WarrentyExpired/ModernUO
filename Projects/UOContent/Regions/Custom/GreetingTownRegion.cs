@@ -16,7 +16,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x35, $"Welcome to {this.Name}.");
+                m.SendMessage($"You have entered <BASEFONT COLOR='#00FF00'>{this.Name}</BASEFONT>.");
             }
         }
 
@@ -26,7 +26,7 @@ namespace Server.Regions
 
             if (m.Player)
             {
-                m.SendMessage(0x35, $"You have left {this.Name}.");
+                m.SendMessage($"You have left <BASEFONT COLOR='#00FF00'>{this.Name}</BASEFONT>.");
             }
         }
     }
