@@ -109,7 +109,7 @@ public static class SkillCheck
             }
             else if (AllowGain(from, skill, amObj))
             {
-                var gc = (double)(from.Skills.Cap - from.Skills.Total) / from.Skills.Cap;
+                var gc = skill.IsSecondarySkill() ? 1.0 : (double)(from.Skills.Cap - from.Skills.Total) / from.Skills.Cap;
                 gc += (skill.Cap - skill.Base) / skill.Cap;
                 gc /= 2;
 
@@ -228,13 +228,13 @@ public static class SkillCheck
 
             var skills = from.Skills;
 
-            if (from.Player && skills.Total / (double)skills.Cap >= Utility.RandomDouble())
+            if (from.Player && !skill.IsSecondarySkill() && skills.Total / (double)skills.Cap >= Utility.RandomDouble())
             {
                 for (var i = 0; i < skills.Length; ++i)
                 {
                     var toLower = skills[i];
 
-                    if (toLower != skill && toLower.Lock == SkillLock.Down && toLower.BaseFixedPoint >= toGain)
+                    if (toLower != skill && !toLower.IsSecondarySkill() && toLower.Lock == SkillLock.Down && toLower.BaseFixedPoint >= toGain)
                     {
                         toLower.BaseFixedPoint = Math.Max(toLower.BaseFixedPoint - toGain, 0);
                         break;
@@ -247,7 +247,7 @@ public static class SkillCheck
                 toGain *= Utility.RandomMinMax(2, 5);
             }
 
-            if (!from.Player || skills.Total < skills.Cap)
+            if (!from.Player || skill.IsSecondarySkill() || skills.Total < skills.Cap)
             {
                 skill.BaseFixedPoint = Math.Min(skill.BaseFixedPoint + toGain, skill.CapFixedPoint);
             }
