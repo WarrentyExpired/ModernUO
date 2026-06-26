@@ -250,6 +250,7 @@ namespace Server.Mobiles
             typeof(AncientSmithyHammer), typeof(Scorp)
         };
 
+        private bool _isLosHidden;
         private bool _summoned;
 
         private bool m_bTamable;
@@ -3593,6 +3594,45 @@ namespace Server.Mobiles
         public virtual void OnThink()
         {
             var tc = Core.TickCount;
+
+            if (!Controlled && !Summoned && Region is Server.Regions.DungeonRegion)
+            {
+                if (Combatant == null)
+                {
+                    bool someoneSeesMe = false;
+
+                    foreach (Mobile m in Map.GetMobilesInRange(Location, 18))
+                    {
+                        if (m is PlayerMobile { Alive: true, AccessLevel: AccessLevel.Player } player)
+                        {
+                            if (player.InLOS(this))
+                            {
+                                someoneSeesMe = true;
+                                break;
+                            }
+                        }
+                    }
+
+                    if (!someoneSeesMe && !Hidden)
+                    {
+                        _isLosHidden = true;
+                        Hidden = true;
+                        CantWalk = true;
+                    }
+                    else if (someoneSeesMe && Hidden && _isLosHidden)
+                    {
+                        _isLosHidden = false;
+                        Hidden = false;
+                        CantWalk = false;
+                    }
+                }
+                else if (Hidden && _isLosHidden)
+                {
+                    _isLosHidden = false;
+                    Hidden = false;
+                    CantWalk = false;
+                }
+            }
 
             if (EnableRummaging && CanRummageCorpses && !Summoned && !Controlled && tc - m_NextRummageTime >= 0)
             {
