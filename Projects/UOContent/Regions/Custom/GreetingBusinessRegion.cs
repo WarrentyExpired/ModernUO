@@ -16,6 +16,15 @@ namespace Server.Regions
             {
                 m.SendMessage($"Welcome to <BASEFONT COLOR='#FFD700'>{this.Name}</BASEFONT>.");
             }
+            if (m is PlayerMobile pm)
+            {
+                if (pm.Mounted)
+                {
+                    Server.Commands.StableMountCommand.ForceDismountAndStore(pm);
+                    pm.SendMessage("Your mount waits outside.");
+                }
+            }
+
         }
 
         public override void OnExit(Mobile m)
@@ -24,6 +33,14 @@ namespace Server.Regions
             if (m.Player)
             {
                 m.SendMessage($"You have left <BASEFONT COLOR='#FFD700'>{this.Name}</BASEFONT>.");
+            }
+            if (m is PlayerMobile { Alive: true } pm)
+            {
+                Server.Commands.RetrieveMountCommand.AutoRemountPlayer(pm);
+                if (pm.Mounted)
+                {
+                    pm.SendMessage("Your mount has returned to you.");
+                }
             }
         }
     }
