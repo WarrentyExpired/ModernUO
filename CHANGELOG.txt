@@ -5,12 +5,19 @@ Crafting Changes:
 -- Spinning wheels and looms now process the entire stack of thread, wool, cotton, or flax.
 -- Added skill optimizer gump to crafting menues. Click the button on the craft menu will bring up a gump showing you the % chance to craft things at your current skill level.
 -- Added Crafting queue system. You can now add things to the queue menu and craft them all at onces instead of digging through the crafting menu and hitting "Make Last" 100 times.
+-- When an item is crafted it now checks for a SalvageBag in the players backpack. If found it adds the crafted item to the
+SalvageBag. If not found it drops it in the main backpack like normal.
+
 Misc:
 -- Added a farmspawn engine.
 -- Added farmable reagents. Mage reagens only for now.
 -- Added greeting enter/exit message regions. You will now get a "You have entered <name of place>" when entering certian regions.
+
+
 Weapons:
 -- Each weapon skill has its own "innate" ability that has a base %10 chance of procing. Anatomy skill can increase the % chance.
+
+
 Mobs:
 -- Mobs that spawn in dungeons and are out of line of sight hide so you can't see them until you have LOS. Makes dungeons
 more interesting.

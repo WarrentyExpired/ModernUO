@@ -1637,6 +1637,7 @@ namespace Server.Engines.Craft
             {
                 from.SendLocalizedMessage(num);
             }
+            CraftQueueManager.HandleQueueItemCompleted(from, CraftResult.Failure, craftSystem, tool);
         }
 
         /// <summary>
