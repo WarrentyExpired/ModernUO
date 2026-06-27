@@ -47,8 +47,8 @@ namespace Server.Commands
             if (count > 0)
             {
                 string timestamp = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
-                string fileName = $"native_export_{timestamp}.json";
-                string folderPath = Path.Combine(Core.BaseDirectory, "Data", "Spawners");
+                string fileName = $"export_{timestamp}.json";
+                string folderPath = Path.Combine(Core.BaseDirectory, "Data", "Spawners", "NPCs", "Exported");
 
                 if (!Directory.Exists(folderPath))
                     Directory.CreateDirectory(folderPath);
@@ -59,7 +59,7 @@ namespace Server.Commands
                 {
                     // Use the native Serializer with the native options
                     JsonConfig.Serialize(path, spawnRecords, options);
-                    from.SendMessage($"{count} spawners exported to Data/Spawners/{fileName}");
+                    from.SendMessage($"{count} spawners exported to Data/Spawners/NPCs/Exported/{fileName}");
                     from.SendMessage("These can be re-imported using [ImportSpawners.");
                 }
                 catch (Exception ex)
