@@ -13,6 +13,7 @@ Misc:
 -- Added farmable reagents. Mage reagens only for now.
 -- Added greeting enter/exit message regions. You will now get a "You have entered <name of place>" when entering certian regions.
 -- You now auto dismount/remount when entering/exiting certian regions.
+-- Added a simple dungeon chest spawner to use it [add DungeonChestSpawner <loot level 0-6> <respawn time>
 
 Weapons:
 -- Each weapon skill has its own "innate" ability that has a base %10 chance of procing. Anatomy skill can increase the % chance.

@@ -71,11 +71,13 @@ namespace Server.Items
         {
             LootPack pack = level switch
             {
-                0 => LootPack.Meager,
-                1 => LootPack.Average,
-                2 => LootPack.Rich,
-                3 => LootPack.UltraRich,
-                _ => LootPack.SuperBoss
+                1 => LootPack.Meager,
+                2 => LootPack.Average,
+                3 => LootPack.Rich,
+                4 => LootPack.FilthyRich,
+                5 => LootPack.UltraRich,
+                6 => LootPack.SuperBoss,
+                0 or _ => LootPack.Poor
             };
 
             int baseMin = (level + 1) * 40;
