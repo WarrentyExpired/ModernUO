@@ -114,6 +114,7 @@ public partial class ProximitySpawner : Spawner
         return m.AccessLevel == AccessLevel.Player && (m.Player || m.Alive && !m.Hidden && m.CanBeDamaged());
     }
 
+    /*
     public override void OnMovement(Mobile m, Point3D oldLocation)
     {
         if (!Running)
@@ -129,6 +130,53 @@ public partial class ProximitySpawner : Spawner
             DoTimer();
             Spawn();
 
+            if (InstantFlag)
+            {
+                foreach (var spawned in Spawned.Keys)
+                {
+                    if (spawned is Mobile mobile)
+                    {
+                        mobile.Combatant = m;
+                    }
+                }
+            }
+        }
+    }
+    */
+    public override void OnMovement(Mobile m, Point3D oldLocation)
+    {
+        if (!Running)
+        {
+            return;
+        }
+
+        // It checks if it's empty, if the timer allows, and if a valid player stepped inside the TriggerRange
+        if (IsEmpty && End <= Core.Now && m.InRange(GetWorldLocation(), TriggerRange) &&
+            m.Location != oldLocation && ValidTrigger(m))
+        {
+            SpawnMessage.SendMessageTo(m);
+
+            DoTimer();
+
+            // --- SAFE BURST SPAWN LOGIC ---
+            // Calculate how many mobs are needed to reach the global 'Count' max limit
+            int missingMobs = Count - (Spawned?.Count ?? 0);
+
+            for (int i = 0; i < missingMobs; i++)
+            {
+                int previousCount = Spawned?.Count ?? 0;
+
+                // Spawn one mob per loop iteration
+                Spawn();
+
+                // FAILSAFE: Break out if the spawner couldn't generate a mob
+                if ((Spawned?.Count ?? 0) == previousCount)
+                {
+                    break;
+                }
+            }
+
+            // If the Instant flag is checked, force all newly burst-spawned mobs to attack the player
             if (InstantFlag)
             {
                 foreach (var spawned in Spawned.Keys)
