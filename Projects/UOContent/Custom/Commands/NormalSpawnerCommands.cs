@@ -7,15 +7,15 @@ using Server.Json;
 
 namespace Server.Commands
 {
-    public static class ExportAllSpawners
+    public static class ExportNormalSpawner
     {
         public static void Configure()
         {
-            CommandSystem.Register("ExportAllSpawners", AccessLevel.Developer, ExportAllSpawners_OnCommand);
+            CommandSystem.Register("ExportNormalSpawners", AccessLevel.Developer, ExportNormalSpawners_OnCommand);
         }
 
-        [Usage("ExportAllSpawners")]
-        public static void ExportAllSpawners_OnCommand(CommandEventArgs e)
+        [Usage("ExportNormalSpawners")]
+        public static void ExportNormalSpawners_OnCommand(CommandEventArgs e)
         {
             var from = e.Mobile;
             var map = from.Map;
@@ -24,18 +24,14 @@ namespace Server.Commands
 
             from.SendMessage($"Using Native Serialization to export {map.Name} spawners...");
 
-            // Use the server's native JSON options (crucial for Rectangle3D/TimeSpan support)
             var options = JsonConfig.GetOptions(new TextDefinitionConverterFactory());
             var spawnRecords = new List<DynamicJson>();
             int count = 0;
 
             foreach (Item item in World.Items.Values)
             {
-                // Only grab spawners on the current map that aren't in containers
                 if (item is BaseSpawner spawner && item.Map == map && item.Parent == null)
                 {
-                    // This is the "Magic" Native Part:
-                    // It creates a JSON object that exactly matches the Spawner's internal variables
                     var dynamicJson = DynamicJson.Create(spawner.GetType());
                     spawner.ToJson(dynamicJson, options);
 
@@ -48,7 +44,7 @@ namespace Server.Commands
             {
                 string timestamp = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
                 string fileName = $"export_{timestamp}.json";
-                string folderPath = Path.Combine(Core.BaseDirectory, "Data", "Spawners", "NPCs", "Exported");
+                string folderPath = Path.Combine(Core.BaseDirectory, "Data", "Spawners", "Normal", "Exported");
 
                 if (!Directory.Exists(folderPath))
                     Directory.CreateDirectory(folderPath);
@@ -57,10 +53,9 @@ namespace Server.Commands
 
                 try
                 {
-                    // Use the native Serializer with the native options
                     JsonConfig.Serialize(path, spawnRecords, options);
-                    from.SendMessage($"{count} spawners exported to Data/Spawners/NPCs/Exported/{fileName}");
-                    from.SendMessage("These can be re-imported using [ImportSpawners.");
+                    from.SendMessage($"{count} spawners exported to Data/Spawners/Normal/Exported/{fileName}");
+                    from.SendMessage("These can be re-imported using [ImportNormalSpawner.");
                 }
                 catch (Exception ex)
                 {

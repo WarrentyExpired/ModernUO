@@ -25,9 +25,8 @@ namespace Server.Gumps
 
             AddPage(0);
 
-            // Increased height to 500 to accommodate the extra button
-            AddBackground(0, 0, 450, 500, 9270);
-            AddAlphaRegion(10, 10, 430, 480);
+            AddBackground(0, 0, 450, 560, 9270);
+            AddAlphaRegion(10, 10, 430, 540);
 
             AddLabel(165, 15, 1152, "WORLD BUILDING MENU");
             int y = 45;
@@ -49,35 +48,43 @@ namespace Server.Gumps
             y += 30;
 
             AddButton(20, y, 4005, 4007, 4, GumpButtonType.Reply, 0);
-            AddLabel(55, y, 1152, "Generate NPC Spawners");
+            AddLabel(55, y, 1152, "Generate Normal Spawners");
             y += 30;
 
             AddButton(20, y, 4005, 4007, 5, GumpButtonType.Reply, 0);
             AddLabel( 55, y, 1152, "Generate Dungeon Chests");
+            y += 30;
+
+            AddButton(20, y, 4005, 4007, 6, GumpButtonType.Reply, 0);
+            AddLabel( 55, y, 1152, "Generate Advanced Spawners");
             y += 40;
 
             // --- CATEGORY: UTILITIES ---
             AddLabel(20, y, 1152, "--- Utilities ---");
             y += 30;
 
-            AddButton(20, y, 4005, 4007, 6, GumpButtonType.Reply, 0);
-            AddLabel(55, y, 1152, "Export NPC Spawners");
+            AddButton(20, y, 4005, 4007, 7, GumpButtonType.Reply, 0);
+            AddLabel(55, y, 1152, "Export Normal Spawners");
             y += 30;
 
-            AddButton(20, y, 4005, 4007, 7, GumpButtonType.Reply, 0);
+            AddButton(20, y, 4005, 4007, 8, GumpButtonType.Reply, 0);
             AddLabel(55, y, 1152, "Export Dungeon Chest Spawners");
+            y += 30;
+
+            AddButton(20, y, 4005, 4007, 9, GumpButtonType.Reply, 0);
+            AddLabel(55, y, 1152, "Export Advanced Spawners");
             y += 40;
 
             // --- CATEGORY: DANGER ZONE ---
             AddLabel(20, y, 33, "--- Danger Zone ---");
             y += 30;
 
-            AddButton(20, y, 4017, 4019, 8, GumpButtonType.Reply, 0);
+            AddButton(20, y, 4017, 4019, 10, GumpButtonType.Reply, 0);
             AddLabel(55, y, 33, "CLEAR ENTIRE MAP (Be Careful!)");
             y += 35;
 
-            // NEW BUTTON: POPULATE AND DECORATE
-            AddButton(20, y, 4005, 4007, 9, GumpButtonType.Reply, 0);
+            // POPULATE AND DECORATE
+            AddButton(20, y, 4005, 4007, 11, GumpButtonType.Reply, 0);
             AddLabel(55, y, 0x3F, "POPULATE AND DECORATE (Full Automation)");
             y += 40;
 
@@ -99,21 +106,27 @@ namespace Server.Gumps
                 case 1: InvokeCommand("TelGen", from); break;
                 case 2: InvokeCommand("Decorate", from); break;
                 case 3: InvokeCommand("SignGen", from); break;
-                case 4: InvokeCommand("GenerateSpawners Data/Spawners/NPCs/**.json", from); break;
-                case 5: InvokeCommand("ImportDungeonChests", from);break;
+                case 4: InvokeCommand("GenerateSpawners Data/Spawners/Normal/**.json", from); break;
+                case 5: InvokeCommand("ImportDungeonChests", from); break;
+                case 6: InvokeCommand("ImportAdvancedSpawners", from); break;
+
                 //Export Objects
-                case 6: InvokeCommand("ExportAllSpawners", from); break;
-                case 7: InvokeCommand("ExportDungeonChests", from); break;
+                case 7: InvokeCommand("ExportNormalSpawners", from); break;
+                case 8: InvokeCommand("ExportDungeonChests", from); break;
+                case 9: InvokeCommand("ExportAdvancedSpawners", from); break;
+
                 //Clear Map
-                case 8: InvokeCommand("ClearAll", from); break;
+                case 10: InvokeCommand("ClearAll", from); break;
+
                 //Spawn the world
-                case 9: // THE FULL AUTOMATION
+                case 11: // THE FULL AUTOMATION
                     from.SendMessage(0x3F, "Starting full world population...");
                     InvokeCommand("TelGen", from);
                     InvokeCommand("Decorate", from);
                     InvokeCommand("SignGen", from);
-                    InvokeCommand("GenerateSpawners Data/Spawners/**.json", from);
+                    InvokeCommand("GenerateSpawners Data/Spawners/Normal/**.json", from);
                     InvokeCommand("ImportDungeonChests", from);
+                    InvokeCommand("ImportAdvancedSpawners", from);
                     from.SendMessage(0x3F, "World population complete.");
                     break;
             }

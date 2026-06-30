@@ -31,7 +31,7 @@ namespace Server.Commands.Custom
         public static void ExportDungeonChests_OnCommand(CommandEventArgs e)
         {
             string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
-            string exportFile = Path.Combine(ExportFolder, $"exported-dungeonchests-{timestamp}.cfg");
+            string exportFile = Path.Combine(ExportFolder, $"dungeonchests-{timestamp}.cfg");
 
             using (StreamWriter writer = new StreamWriter(exportFile))
             {
@@ -97,7 +97,7 @@ namespace Server.Commands.Custom
                 }
             }
 
-            LogMessage(from, $"Dungeon reset! Loaded {loaded} spawners from {files.Length} files.");
+            LogMessage(from, $"Dungeon chests reset! Loaded {loaded} spawners from {files.Length} files.");
         }
     }
 }
