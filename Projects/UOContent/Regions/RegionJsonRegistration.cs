@@ -28,7 +28,7 @@ public static class RegionJsonRegistration
         RegionJsonSerializer.Register<PoisonedCemeteryRegion>();
 
         // Wrong Jail
-        RegionJsonSerializer.Register<WrongLevel3Region>();
+        //RegionJsonSerializer.Register<WrongLevel3Region>();
         RegionJsonSerializer.Register<WrongJailRegion>();
 
         // Blackthorn Dungeon
@@ -64,5 +64,6 @@ public static class RegionJsonRegistration
         RegionJsonSerializer.Register<GreetingDungeonRegion>();
         RegionJsonSerializer.Register<GreetingTownRegion>();
         RegionJsonSerializer.Register<GreetingBusinessRegion>();
+        RegionJsonSerializer.Register<MontorJailRegion>();
     }
 }

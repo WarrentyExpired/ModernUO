@@ -6,7 +6,7 @@ namespace Server.Items;
 public partial class FarmableBlackPearl : FarmableCrop
 {
     [Constructible]
-    public FarmableBlackPearl() : base(0x9FFE)
+    public FarmableBlackPearl() : base(0xFFDB)
     {
         Name = "BlackPearl";
     }
