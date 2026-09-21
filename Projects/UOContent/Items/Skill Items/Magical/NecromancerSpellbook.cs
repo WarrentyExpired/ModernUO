@@ -7,7 +7,7 @@ public partial class NecromancerSpellbook : Spellbook
 {
     [Constructible]
     public NecromancerSpellbook(ulong content = 0) : base(content, 0x2253) =>
-        Layer = Core.ML ? Layer.OneHanded : Layer.Invalid;
+        Layer = Layer.OneHanded;
 
     public override SpellbookType SpellbookType => SpellbookType.Necromancer;
     public override int BookOffset => 100;
