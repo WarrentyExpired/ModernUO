@@ -144,6 +144,8 @@ namespace Server.Engines.Harvest
 
             Type type = null;
 
+            bool stopAutoHarvest = false;
+
             if (skillBase >= resource.ReqSkill && from.CheckSkill(def.Skill, resource.MinSkill, resource.MaxSkill))
             {
                 type = GetResourceType(from, tool, def, map, loc, resource);
@@ -204,6 +206,7 @@ namespace Server.Engines.Harvest
                         {
                             SendPackFullTo(from, item, def, resource);
                             item.Delete();
+                            stopAutoHarvest = true;
                         }
 
                         var bonus = def.GetBonusResource();
@@ -236,6 +239,7 @@ namespace Server.Engines.Harvest
                             {
                                 tool.Delete();
                                 def.SendMessageTo(from, def.ToolBrokeMessage);
+                                stopAutoHarvest = true;
                             }
                         }
                     }
@@ -248,6 +252,10 @@ namespace Server.Engines.Harvest
             }
 
             OnHarvestFinished(from, tool, def, vein, bank, resource, toHarvest);
+            if (tool != null && !tool.Deleted && !stopAutoHarvest)
+            {
+                StartHarvesting(from, tool, toHarvest);
+            }
         }
 
         public virtual void OnHarvestFinished(
