@@ -1,11 +1,38 @@
 {
   "name": "The World",
   "categories": [
-    { "name": "Fel", "categories": [
-      { "name": "Towns", "locations": [
-          { "name": "Brit Fel", "location": [1592, 1680, 10], "map": "Felucca" } ] } ] },
-    { "name": "Tram", "categories": [
-      { "name": "Towns", "locations": [
-            { "name": "Brit Tram", "location": [1592, 1680, 10], "map": "Trammel" } ] } ] }
+    {
+      "name": "Underworld",
+      "categories": [
+        {
+          "name": "Dungeons",
+          "categories": [
+            {
+              "name": "Shame",
+              "locations": [
+                { "name": "Level 1", "location": [1203, 170, 0], "map": "Underworld" }
+              ]
+            },
+            {
+              "name": "Covetous",
+              "locations": [
+                { "name": "Level 1", "location": [1784, 128, 0], "map": "Underworld" }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Veridia",
+      "categories": [
+        {
+          "name": "Towns",
+          "locations": [
+            { "name": "Bastion", "location": [1839, 2005, 0], "map": "Veridia" }
+          ]
+        }
+      ]
+    }
   ]
 }
