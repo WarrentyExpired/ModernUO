@@ -261,11 +261,15 @@ namespace Server.Mobiles
             typeof(AncientSmithyHammer), typeof(Scorp)
         };
 
-        // --- Serialized state ---------------------------------------------------------
-        // Fields matching their defaults (including npc-speeds table values) are elided by [SaveFlag].
+
+        private bool _isLosHidden;
+
+        private bool m_bTamable;
+        private int m_ColdResistance;
 
         [SerializableField(0, setter: "private")]
         private AIType _defaultAI;
+
 
         [SerializableField(1, setter: "private")]
         [SaveFlag(nameof(ShouldSerializeCurrentAI), nameof(CurrentAIDefaultValue))]
@@ -1704,27 +1708,27 @@ namespace Server.Mobiles
                 return false;
             }
 
-            var c = m as BaseCreature;
-            var cMaster = c?.GetMaster();
-
             var ourEthic = EthicAllegiance;
-            var pl = Ethics.Player.Find(cMaster ?? m, false);
+            var pl = Ethics.Player.Find(m, true);
 
             if (pl?.IsShielded == true && (ourEthic == null || ourEthic == pl.Ethic))
             {
                 return false;
             }
 
-            // Player-only protections; they must veto before the non-creature early return below.
-            if (VirtueSystem.GetVirtues(m as PlayerMobile)?.HonorActive == true ||
-                TransformationSpellHelper.UnderTransformation(m, typeof(EtherealVoyageSpell)))
+            if (VirtueSystem.GetVirtues(m as PlayerMobile)?.HonorActive == true)
             {
                 return false;
             }
 
-            if (c == null || m is MilitiaFighter)
+            if (m is not BaseCreature c || m is MilitiaFighter)
             {
                 return true;
+            }
+
+            if (TransformationSpellHelper.UnderTransformation(m, typeof(EtherealVoyageSpell)))
+            {
+                return false;
             }
 
             if (_team != c.Team || FightMode == FightMode.Evil && m.Karma < 0 || c.FightMode == FightMode.Evil && Karma < 0)
@@ -1733,6 +1737,7 @@ namespace Server.Mobiles
             }
 
             var master = GetMaster();
+            var cMaster = c.GetMaster();
 
             if (master == null)
             {
@@ -2523,12 +2528,9 @@ namespace Server.Mobiles
         {
             AIObject?.AITimer.Stop();
 
-            // Read once: each read constructs an AI whose ctor may start its timer.
-            var forced = ForcedAI;
-
-            if (forced != null)
+            if (ForcedAI != null)
             {
-                AIObject = forced;
+                AIObject = ForcedAI;
                 return;
             }
 
@@ -2735,17 +2737,21 @@ namespace Server.Mobiles
                 aggressor.Aggressors.Add(AggressorInfo.Create(this, aggressor, true));
             }
 
-            var toldToStandDown = _controlled && _controlMaster != null && Commandable &&
-                                  BaseAI.IsStandDownOrder(_controlOrder);
+            var ct = _controlOrder;
 
-            if (StandsDownOnCommand && toldToStandDown)
+            if (AIObject != null)
             {
-                AIObject?.DebugSay("I'm being attacked but my master told me not to fight.");
-                Warmode = false;
-                return;
+                if (!StandsDownOnCommand || !BaseAI.IsStandDownOrder(ct))
+                {
+                    AIObject.OnAggressiveAction(aggressor);
+                }
+                else
+                {
+                    AIObject.DebugSay("I'm being attacked but my master told me not to fight.");
+                    Warmode = false;
+                    return;
+                }
             }
-
-            AIObject?.OnAggressiveAction(aggressor);
 
             StopFlee();
 
@@ -2762,7 +2768,7 @@ namespace Server.Mobiles
             }
 
             // Only reachable when the pet does not stand down: the orders above returned early.
-            if (aggressor.ChangingCombatant && toldToStandDown)
+            if (aggressor.ChangingCombatant && (_controlled || _summoned) && BaseAI.IsStandDownOrder(ct))
             {
                 IssueOrder(OrderType.Attack, null, aggressor);
             }
@@ -3100,20 +3106,13 @@ namespace Server.Mobiles
                 pack?.DisplayTo(from);
             }
 
-            if (DeathAdderCharmable && from.CanBeHarmful(this, false) &&
-                SummonFamiliarSpell.Table.TryGetValue(from, out var bc) && bc is DeathAdder { Deleted: false } deathAddr &&
-                deathAddr.Map == from.Map)
+            if (DeathAdderCharmable && from.CanBeHarmful(this, false))
             {
-                if (from.NetState.HasProtocolChanges(ProtocolChanges.Version7000))
-                {
-                    from.SendLocalizedMessage(1114362); // You charm the snake.  Select a target to attack.
-                }
-                else
+                if (SummonFamiliarSpell.Table.TryGetValue(from, out var bc) && (bc as DeathAdder)?.Deleted == false)
                 {
                     from.SendAsciiMessage("You charm the snake.  Select a target to attack.");
+                    from.Target = new DeathAdderCharmTarget(this);
                 }
-
-                from.Target = new DeathAdderCharmTarget(this);
             }
 
             if (MLQuestSystem.Enabled && CanGiveMLQuest && from is PlayerMobile mobile)
@@ -3819,6 +3818,45 @@ namespace Server.Mobiles
         public virtual void OnThink()
         {
             var tc = Core.TickCount;
+
+            if (!Controlled && !Summoned && Region is Server.Regions.DungeonRegion)
+            {
+                if (Combatant == null)
+                {
+                    bool someoneSeesMe = false;
+
+                    foreach (Mobile m in Map.GetMobilesInRange(Location, 18))
+                    {
+                        if (m is PlayerMobile { Alive: true, AccessLevel: AccessLevel.Player } player)
+                        {
+                            if (player.InLOS(this))
+                            {
+                                someoneSeesMe = true;
+                                break;
+                            }
+                        }
+                    }
+
+                    if (!someoneSeesMe && !Hidden)
+                    {
+                        _isLosHidden = true;
+                        Hidden = true;
+                        CantWalk = true;
+                    }
+                    else if (someoneSeesMe && Hidden && _isLosHidden)
+                    {
+                        _isLosHidden = false;
+                        Hidden = false;
+                        CantWalk = false;
+                    }
+                }
+                else if (Hidden && _isLosHidden)
+                {
+                    _isLosHidden = false;
+                    Hidden = false;
+                    CantWalk = false;
+                }
+            }
 
             if (EnableRummaging && CanRummageCorpses && !Summoned && !Controlled && tc - m_NextRummageTime >= 0)
             {
