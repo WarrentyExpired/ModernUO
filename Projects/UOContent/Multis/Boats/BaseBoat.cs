@@ -50,7 +50,7 @@ namespace Server.Multis
         }
 
         private static readonly Rectangle2D[] BritWrap =
-            { new(16, 16, 5120 - 32, 4096 - 32), new(5136, 2320, 992, 1760) };
+            { new(16, 16, 4276 - 32, 4096 - 32), new(5136, 2320, 992, 1760) };
         private static readonly Rectangle2D[] IlshWrap = { new(16, 16, 2304 - 32, 1600 - 32) };
         private static readonly Rectangle2D[] TokunoWrap = { new(16, 16, 1448 - 32, 1448 - 32) };
 
@@ -962,7 +962,7 @@ namespace Server.Multis
                 return false;
             }
 
-            if (Map != Map.Trammel && Map != Map.Felucca || NextNavPoint < 0 || NextNavPoint >= MapItem.Pins.Count)
+            if (Map != Map.Felucca && Map != Map.Trammel || NextNavPoint < 0 || NextNavPoint >= MapItem.Pins.Count)
             {
                 if (message)
                 {
@@ -1590,7 +1590,7 @@ namespace Server.Multis
 
                 return false;
             }
-            else if (Map != Map.Trammel && Map != Map.Felucca || NextNavPoint < 0 || NextNavPoint >= MapItem.Pins.Count)
+            else if (Map != Map.Felucca && Map != Map.Trammel || NextNavPoint < 0 || NextNavPoint >= MapItem.Pins.Count)
             {
                 if (message)
                 {
