@@ -85,8 +85,17 @@ public partial class Flax : Item
             }
             else
             {
-                m_Flax.Consume();
-                wheel.BeginSpin(m_Flax.OnSpun, from, m_Flax.Hue);
+                int amountToProcess = m_Flax.Amount;
+                int flaxHue = m_Flax.Hue;
+                m_Flax.Delete();
+                wheel.BeginSpin((w, mobile, h) =>
+                {
+                    mobile.AddToBackpack(new SpoolOfThread(6 * amountToProcess)
+                    {
+                        Hue = h
+                    });
+                    mobile.SendLocalizedMessage(1010577); // You put the spools of thread in your backpack.
+                }, from, flaxHue);
             }
         }
     }

@@ -14,6 +14,7 @@ public partial class Wool : Item, IDyable
     }
 
     public override double DefaultWeight => 4.0;
+    public virtual int YarnMultiplier => 3;
 
     public bool Dye(Mobile from, DyeTub sender)
     {
@@ -81,8 +82,21 @@ public partial class Wool : Item, IDyable
                 }
                 else
                 {
-                    m_Wool.Consume();
-                    wheel.BeginSpin(m_Wool.OnSpun, from, m_Wool.Hue);
+                    int amountToProcess = m_Wool.Amount;
+                    int woolHue = m_Wool.Hue;
+                    int multiplier = m_Wool.YarnMultiplier;
+                    m_Wool.Delete();
+                    wheel.BeginSpin((w, mobile, h) =>
+                    {
+                        int totalYarnEarned = multiplier * amountToProcess;
+
+                        mobile.AddToBackpack(new DarkYarn(totalYarnEarned)
+                        {
+                            Hue = h
+                        });
+
+                        mobile.SendLocalizedMessage(totalYarnEarned > 1 ? 1010576 : 1010574);
+                    }, from, woolHue);
                 }
             }
             else
@@ -104,7 +118,7 @@ public partial class TaintedWool : Wool
     }
 
     public override double DefaultWeight => 4.0;
-
+    public override int YarnMultiplier => 1;
     public override void OnSpun(ISpinningWheel wheel, Mobile from, int hue)
     {
         from.AddToBackpack(new DarkYarn

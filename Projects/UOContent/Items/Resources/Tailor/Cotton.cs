@@ -85,8 +85,17 @@ public partial class Cotton : Item, IDyable
             }
             else
             {
-                m_Cotton.Consume();
-                wheel.BeginSpin(m_Cotton.OnSpun, from, m_Cotton.Hue);
+                int amountToProcess = m_Cotton.Amount;
+                int cottonHue = m_Cotton.Hue;
+                m_Cotton.Delete();
+                wheel.BeginSpin((w, mobile, h) =>
+                {
+                    mobile.AddToBackpack(new SpoolOfThread(6 * amountToProcess)
+                    {
+                        Hue = h
+                    });
+                    mobile.SendLocalizedMessage(1010577); // You put the spools of thread in your backpack.
+                }, from, cottonHue);
             }
         }
     }
