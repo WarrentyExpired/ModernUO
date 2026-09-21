@@ -4,7 +4,7 @@
     "id": 0,
     "fileIndex": 0,
     "name": "Felucca",
-    "width": 7168,
+    "width": 6144,
     "height": 4096,
     "season": 4,
     "rules": "FeluccaRules"
@@ -14,7 +14,7 @@
     "id": 1,
     "fileIndex": 1,
     "name": "Trammel",
-    "width": 7168,
+    "width": 6144,
     "height": 4096,
     "season": 0,
     "rules": "TrammelRules"
