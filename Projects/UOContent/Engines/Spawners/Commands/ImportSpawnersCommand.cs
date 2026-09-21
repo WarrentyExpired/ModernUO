@@ -24,7 +24,7 @@ public static class ImportSpawnersCommand
     }
 
     [Usage("ImportSpawners <relative search pattern to distribution>")]
-    [Aliases("ImportSpawner", "GenerateSpawners", "GenSpawners")]
+    [Aliases("ImportSpawner", "GenerateSpawners", "GenSpawners", "IS")]
     [Description("Imports JSON, Nerun Premium, and RunUO spawner files. Supports basic globbing.")]
     private static void GenerateSpawners_OnCommand(CommandEventArgs e)
     {
@@ -350,7 +350,7 @@ public static class ImportSpawnersCommand
                 {
                     var parts = line.Split('|');
                     var mapId = mapIdOverride != -1 ? mapIdOverride : int.Parse(parts[10]);
-                    Map[] maps = mapId == 0 ? [Map.Felucca, Map.Trammel] : [Map.Maps[mapId - 1]];
+                    Map[] maps = mapId == 0 ? [Map.Trammel, Map.Felucca] : [Map.Maps[mapId - 1]];
 
                     foreach (var map in maps)
                     {
