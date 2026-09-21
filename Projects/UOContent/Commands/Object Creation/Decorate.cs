@@ -34,17 +34,8 @@ namespace Server.Commands
 
             NetState.FlushAll();
 
-            Generate("Data/Decoration/Britannia", Map.Trammel, Map.Felucca);
-            Generate("Data/Decoration/Trammel", Map.Trammel);
-            Generate("Data/Decoration/Felucca", Map.Felucca);
-            Generate("Data/Decoration/Ilshenar", Map.Ilshenar);
-            Generate("Data/Decoration/Malas", Map.Malas);
-            Generate("Data/Decoration/Tokuno", Map.Tokuno);
-
-            if (PlayerMurderSystem.BountiesEnabled)
-            {
-                Generate("Data/Decoration/BountyBoards", Map.Felucca);
-            }
+            Generate("Data/Decoration/Overworld", Map.Trammel);
+            Generate("Data/Decoration/Underworld", Map.Felucca);
 
             m_Mobile.SendMessage($"World generating complete. {m_Count} items were generated.");
         }
@@ -888,7 +879,7 @@ namespace Server.Commands
             else if (item is InteractionTeleporter itp)
             {
                 itp.ItemID = m_ItemID;
-                
+
                 for (var i = 0; i < m_Params.Length; ++i)
                 {
                     if (m_Params[i].StartsWithOrdinal("PointDest"))
