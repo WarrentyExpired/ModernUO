@@ -2102,9 +2102,13 @@ public abstract partial class BaseWeapon
             {
                 var caster = bc.ControlMaster ?? bc.SummonMaster;
 
-                if (caster != null && caster.Map == bc.Map)
+                if (caster != null && caster.Map == bc.Map && caster.InRange(bc, 2))
                 {
                     caster.Hits += damage;
+                }
+                else
+                {
+                    bc.Hits += damage;
                 }
             }
 
@@ -2227,6 +2231,7 @@ public abstract partial class BaseWeapon
             {
                 attacker.ApplyPoison(defender, Poison.Regular);
             }
+            Server.Combat.InnateWeaponAbilities.CheckProc(attacker, defender, this);
         }
     }
 
