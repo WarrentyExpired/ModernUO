@@ -10,13 +10,56 @@
             {
               "name": "Shame",
               "locations": [
-                { "name": "Level 1", "location": [1203, 170, 0], "map": "Underworld" }
+                { "name": "Level 1", "location": [1203, 170, 0], "map": "Underworld" },
+                { "name": "Level 2", "location": [1325, 62, 0], "map": "Underworld" },
+                { "name": "Level 3", "location": [1324, 189, 20], "map": "Underworld" },
+                { "name": "Level 4", "location": [1314, 227, 0], "map": "Underworld" },
+                { "name": "Level 5", "location": [1427, 338, -10], "map": "Underworld" }
               ]
             },
             {
               "name": "Covetous",
               "locations": [
-                { "name": "Level 1", "location": [1784, 128, 0], "map": "Underworld" }
+                { "name": "Level 1", "location": [1784, 128, 0], "map": "Underworld" },
+                { "name": "Level 2", "location": [1939, 262, 0], "map": "Underworld" },
+                { "name": "Level 3", "location": [1907, 183, 0], "map": "Underworld" },
+                { "name": "Level 4", "location": [1880, 72, 0], "map": "Underworld" },
+                { "name": "Level 5", "location": [1796, 73, 0], "map": "Underworld" }
+              ]
+            },
+            {
+              "name": "Deciet",
+              "locations": [
+                { "name": "Level 1", "location": [1515, 164, 0], "map": "Underworld" },
+                { "name": "Level 2", "location": [1635, 65, 0], "map": "Underworld" },
+                { "name": "Level 3", "location": [1466, 182, 0], "map": "Underworld" },
+                { "name": "Level 4", "location": [1635, 183, 0], "map": "Underworld" }
+              ]
+            },
+            {
+              "name": "Hythloth",
+              "locations": [
+                { "name": "Level 1", "location": [1986, 71, 44], "map": "Underworld" },
+                { "name": "Level 2", "location": [2050, 219, 0], "map": "Underworld" },
+                { "name": "Level 3", "location": [2163, 197, -22], "map": "Underworld" },
+                { "name": "Level 4", "location": [2141, 137, 22], "map": "Underworld" }
+              ]
+            },
+            {
+              "name": "Despise",
+              "locations": [
+                { "name": "Level 1", "location": [2436, 183, 30], "map": "Underworld" },
+                { "name": "Level 2", "location": [2355, 122, 59], "map": "Underworld" },
+                { "name": "Level 3", "location": [2371, 225, 20], "map": "Underworld" },
+                { "name": "Level 4", "location": [2476, 147, 45], "map": "Underworld" }
+              ]
+            },
+            {
+              "name": "Destard",
+              "locations": [
+                { "name": "Level 1", "location": [2845, 280, 0], "map": "Underworld" },
+                { "name": "Level 2", "location": [2743, 87, 0], "map": "Underworld" },
+                { "name": "Level 3", "location": [2740, 266, 0], "map": "Underworld" }
               ]
             }
           ]
@@ -29,7 +72,16 @@
         {
           "name": "Towns",
           "locations": [
-            { "name": "Bastion", "location": [1839, 2005, 0], "map": "Veridia" }
+            { "name": "Bastion", "location": [1839, 2005, 0], "map": "Veridia" },
+            { "name": "Mireport", "location": [390, 1278, 0], "map": "Veridia" },
+            { "name": "Stonehollow", "location": [756, 1225, 0], "map": "Veridia" },
+            { "name": "Cresthaven", "location": [1604, 1164, 2], "map": "Veridia" },
+            { "name": "West Rivermouth", "location": [1162, 1723, 0], "map": "Veridia" },
+            { "name": "East Rivermouth", "location": [1402, 1722, 0], "map": "Veridia" },
+            { "name": "Teareek", "location": [414, 1855, 1], "map": "Veridia" },
+            { "name": "Myrish", "location": [1559, 2941, 2], "map": "Veridia" },
+            { "name": "Coldbarrow", "location": [3362, 2380,  2], "map": "Veridia" },
+            { "name": "Wharf's End", "location": [3501, 377, 2], "map": "Veridia" }
           ]
         }
       ]

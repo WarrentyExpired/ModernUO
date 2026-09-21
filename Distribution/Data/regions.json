@@ -1960,7 +1960,7 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
-    "Name": "the Dungeon Shame Level 1",
+    "Name": "the Dungeon Shame - Level 1",
     "Priority": 50,
     "Area": [
       { "x1": 1190, "y1": 53, "x2": 1307, "y2": 172 }
@@ -1969,7 +1969,7 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
-    "Name": "the Dungeon Shame Level 2",
+    "Name": "Shame - Level 2",
     "Priority": 50,
     "Area": [
       { "x1": 1314, "y1": 50, "x2": 1436, "y2": 171 }
@@ -1978,7 +1978,7 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
-    "Name": "the Dungeon Shame Level 3",
+    "Name": "Shame - Level 3",
     "Priority": 50,
     "Area": [
       { "x1": 1186, "y1": 181, "x2": 1439, "y2": 302 }
@@ -1987,7 +1987,7 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
-    "Name": "the Dungeon Shame Level 4",
+    "Name": "Shame - Level 4",
     "Priority": 55,
     "Area": [
       { "x1": 1301, "y1": 205, "x2": 1333, "y2": 243 }
@@ -1996,10 +1996,196 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
-    "Name": "the Dungeon Shame Level 5",
+    "Name": "Shame - Level 5",
     "Priority": 50,
     "Area": [
       { "x1": 1186, "y1": 310, "x2": 1447, "y2": 444 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "the Dungeon Deciet - Level 1",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1464, "y1": 49, "x2": 1571, "y2": 170 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Deciet - Level 2",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1595, "y1": 37, "x2": 1690, "y2": 166 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Deciet - Level 3",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1450, "y1": 170, "x2": 1570, "y2": 301 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Deciet - Level 4",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1574, "y1": 165, "x2": 1673, "y2": 295 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "the Dungeon Covetous - Level 1",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1700, "y1": 105, "x2": 1753, "y2": 226 },
+      { "x1": 1753, "y1": 105, "x2": 1842, "y2": 208 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Covetous - Level 2",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1706, "y1": 228, "x2": 1753, "y2": 302 },
+      { "x1": 1753, "y1": 209, "x2": 1955, "y2": 309 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Covetous - Level 3",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1860, "y1": 86, "x2": 1958, "y2": 194 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Covetous - Level 4",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1824, "y1": 60, "x2": 1884, "y2": 84 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Covetous - Level 5",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1725, "y1": 48, "x2": 1817, "y2": 102 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "the Dungeon Hythloth - Level 1",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1982, "y1": 61, "x2": 2082, "y2": 162 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Hythloth - Level 2",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1985, "y1": 183, "x2": 2085, "y2": 292 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Hythloth - Level 3",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2095, "y1": 182, "x2": 2211, "y2": 283 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Hythloth - Level 4",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2123, "y1": 74, "x2": 2204, "y2": 158 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "the Dungeon Despise - Level 1",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2417, "y1": 170, "x2": 2446, "y2": 196 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Despise - Level 2",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2230, "y1": 66, "x2": 2379, "y2": 192 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Despise - Level 3",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2232, "y1": 193, "x2": 2390, "y2": 322 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Despise - Level 4",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2450, "y1": 49, "x2": 2700, "y2": 321 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "the Dungeon Destard - Level 1",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2712, "y1": 30, "x2": 2977, "y2": 306 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Destard - Level 2",
+    "Priority": 55,
+    "Area": [
+      { "x1": 2714, "y1": 69, "x2": 2791, "y2": 168 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "Destard - Level 3",
+    "Priority": 55,
+    "Area": [
+      {
+        "x1": 2717, "y1": 272, "x2": 2801, "y2": 304 },
+      { "x1": 2718, "y1": 230, "x2": 2750, "y2": 271 },
+      { "x1": 2750, "y1": 238, "x2": 2755, "y2": 272 },
+      { "x1": 2755, "y1": 261, "x2": 2773, "y2": 272 }
     ]
   }
 ]
