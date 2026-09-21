@@ -1,0 +1,11 @@
+{
+  "name": "The World",
+  "categories": [
+    { "name": "Fel", "categories": [
+      { "name": "Towns", "locations": [
+          { "name": "Brit Fel", "location": [1592, 1680, 10], "map": "Felucca" } ] } ] },
+    { "name": "Tram", "categories": [
+      { "name": "Towns", "locations": [
+            { "name": "Brit Tram", "location": [1592, 1680, 10], "map": "Trammel" } ] } ] }
+  ]
+}
