@@ -10,6 +10,7 @@
             {
               "name": "Shame",
               "locations": [
+                { "name": "Entrance", "location": [1585, 1960, 2], "map": "Veridia" },
                 { "name": "Level 1", "location": [1203, 170, 0], "map": "Underworld" },
                 { "name": "Level 2", "location": [1325, 62, 0], "map": "Underworld" },
                 { "name": "Level 3", "location": [1324, 189, 20], "map": "Underworld" },
@@ -20,6 +21,7 @@
             {
               "name": "Covetous",
               "locations": [
+                { "name": "Entrance", "location": [927, 1249, 2], "map": "Veridia" },
                 { "name": "Level 1", "location": [1784, 128, 0], "map": "Underworld" },
                 { "name": "Level 2", "location": [1939, 262, 0], "map": "Underworld" },
                 { "name": "Level 3", "location": [1907, 183, 0], "map": "Underworld" },
@@ -30,6 +32,7 @@
             {
               "name": "Deciet",
               "locations": [
+                { "name": "Entrance", "location": [1068, 1512, 10], "map": "Veridia" },
                 { "name": "Level 1", "location": [1515, 164, 0], "map": "Underworld" },
                 { "name": "Level 2", "location": [1635, 65, 0], "map": "Underworld" },
                 { "name": "Level 3", "location": [1466, 182, 0], "map": "Underworld" },
@@ -60,6 +63,13 @@
                 { "name": "Level 1", "location": [2845, 280, 0], "map": "Underworld" },
                 { "name": "Level 2", "location": [2743, 87, 0], "map": "Underworld" },
                 { "name": "Level 3", "location": [2740, 266, 0], "map": "Underworld" }
+              ]
+            },
+            {
+              "name": "Terathan Keep",
+              "locations": [
+                { "name": "Entrance", "location": [517, 2678, 5], "map": "Veridia" },
+                { "name": "Level 1", "location": [3967, 143, 0], "map": "Underworld" }
               ]
             }
           ]

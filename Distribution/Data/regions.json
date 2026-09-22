@@ -2187,5 +2187,14 @@
       { "x1": 2750, "y1": 238, "x2": 2755, "y2": 272 },
       { "x1": 2755, "y1": 261, "x2": 2773, "y2": 272 }
     ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "the Dungeon Terathan Keep",
+    "Priority": 50,
+    "Area": [
+      { "x1": 3748, "y1": 47, "x2": 4014, "y2": 327 }
+    ]
   }
 ]
