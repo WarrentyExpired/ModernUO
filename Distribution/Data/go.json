@@ -42,6 +42,7 @@
             {
               "name": "Hythloth",
               "locations": [
+                { "name": "Entrance", "location": [2900, 2343, 0], "map": "Veridia" },
                 { "name": "Level 1", "location": [1986, 71, 44], "map": "Underworld" },
                 { "name": "Level 2", "location": [2050, 219, 0], "map": "Underworld" },
                 { "name": "Level 3", "location": [2163, 197, -22], "map": "Underworld" },
@@ -51,6 +52,7 @@
             {
               "name": "Despise",
               "locations": [
+                { "name": "Entrance", "location": [2620, 1143, 0], "map": "Underworld" },
                 { "name": "Level 1", "location": [2436, 183, 30], "map": "Underworld" },
                 { "name": "Level 2", "location": [2355, 122, 59], "map": "Underworld" },
                 { "name": "Level 3", "location": [2371, 225, 20], "map": "Underworld" },
@@ -60,6 +62,7 @@
             {
               "name": "Destard",
               "locations": [
+                { "name": "Entrance", "location": [3432, 3399, 5], "map": "Veridia" },
                 { "name": "Level 1", "location": [2845, 280, 0], "map": "Underworld" },
                 { "name": "Level 2", "location": [2743, 87, 0], "map": "Underworld" },
                 { "name": "Level 3", "location": [2740, 266, 0], "map": "Underworld" }
