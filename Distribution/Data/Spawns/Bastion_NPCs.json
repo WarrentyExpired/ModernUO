@@ -867,5 +867,33 @@
     "entries": [
       { "name": "warriorguard", "probability": 100, "maxCount": 1 }
     ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f267640c-48db-4bff-a218-0a381cea407a",
+    "location": [1827, 2122, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "carpenter", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0866500a-8fa6-48cb-a750-e2d017069488",
+    "location": [1819, 2122, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "carpenter", "probability": 100, "maxCount": 1 }
+    ]
   }
 ]

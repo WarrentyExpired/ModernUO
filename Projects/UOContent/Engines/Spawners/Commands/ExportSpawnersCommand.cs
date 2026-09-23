@@ -46,7 +46,7 @@ public class ExportSpawnersCommand : BaseCommand
 
         if (string.IsNullOrEmpty(path))
         {
-            path = Path.Combine(Core.BaseDirectory, $"Data/Spawns/{Utility.GetTimeStamp()}.json");
+            path = Path.Combine(Core.BaseDirectory, $"Data/Spawns/Exported/{Utility.GetTimeStamp()}.json");
         }
         else
         {
