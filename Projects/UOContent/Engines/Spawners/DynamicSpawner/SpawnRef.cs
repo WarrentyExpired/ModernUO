@@ -110,41 +110,22 @@ namespace Server.Items
                     spawnable.Spawner = this;
                 }
 
-                int scatterRange = 25;
-
-                foreach (Item item in savedMap.GetItemsInRange(savedLocation, 0))
-                {
-                    if (item is ISpawner spawner && item != this)
-                    {
-                        scatterRange = spawner.WalkingRange;
-                        break;
-                    }
-                }
+                // Set this to how far you want the animal to drift from the proxy's location.
+                int proxyScatterRange = 20;
 
                 Point3D spawnPoint = savedLocation;
 
                 for (int i = 0; i < 15; i++)
                 {
-                    int x = savedLocation.X + Utility.RandomMinMax(-scatterRange, scatterRange);
-                    int y = savedLocation.Y + Utility.RandomMinMax(-scatterRange, scatterRange);
+                    int x = savedLocation.X + Utility.RandomMinMax(-proxyScatterRange, proxyScatterRange);
+                    int y = savedLocation.Y + Utility.RandomMinMax(-proxyScatterRange, proxyScatterRange);
                     int z = savedMap.GetAverageZ(x, y);
                     Point3D testPoint = new(x, y, z);
 
-                    if (this is SpawnWater)
+                    if (savedMap.CanFit(x, y, z, 16, false, false))
                     {
-                        if (SpawnList.GetTerrain(savedMap, testPoint, x, y) == Terrain.Water)
-                        {
-                            spawnPoint = testPoint;
-                            break;
-                        }
-                    }
-                    else
-                    {
-                        if (savedMap.CanFit(x, y, z, 16, false, false))
-                        {
-                            spawnPoint = testPoint;
-                            break;
-                        }
+                        spawnPoint = testPoint;
+                        break;
                     }
                 }
 
@@ -158,90 +139,26 @@ namespace Server.Items
         }
     }
 
-    public class SpawnWater : BaseProxySpawner
-    {
-        [Constructible] public SpawnWater() {}
-        public SpawnWater(Serial serial) : base(serial) {}
-        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
-        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
-    }
-
-    public class SpawnCave : BaseProxySpawner
-    {
-        [Constructible] public SpawnCave() {}
-        public SpawnCave(Serial serial) : base(serial) {}
-        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
-        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
-    }
-
-    public class SpawnDirt : BaseProxySpawner
-    {
-        [Constructible] public SpawnDirt() {}
-        public SpawnDirt(Serial serial) : base(serial) {}
-        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
-        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
-    }
-
-    public class SpawnForest : BaseProxySpawner
-    {
-        [Constructible] public SpawnForest() {}
-        public SpawnForest(Serial serial) : base(serial) {}
-        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
-        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
-    }
-
-    public class SpawnGrass : BaseProxySpawner
-    {
-        [Constructible] public SpawnGrass() {}
-        public SpawnGrass(Serial serial) : base(serial) {}
-        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
-        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
-    }
-
-    public class SpawnJungle : BaseProxySpawner
-    {
-        [Constructible] public SpawnJungle() {}
-        public SpawnJungle(Serial serial) : base(serial) {}
-        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
-        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
-    }
-
-    public class SpawnRock : BaseProxySpawner
-    {
-        [Constructible] public SpawnRock() {}
-        public SpawnRock(Serial serial) : base(serial) {}
-        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
-        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
-    }
-
-    public class SpawnSand : BaseProxySpawner
-    {
-        [Constructible] public SpawnSand() {}
-        public SpawnSand(Serial serial) : base(serial) {}
-        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
-        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
-    }
-
-    public class SpawnSwamp : BaseProxySpawner
-    {
-        [Constructible] public SpawnSwamp() {}
-        public SpawnSwamp(Serial serial) : base(serial) {}
-        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
-        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
-    }
-
-    public class SpawnSnow : BaseProxySpawner
-    {
-        [Constructible] public SpawnSnow() {}
-        public SpawnSnow(Serial serial) : base(serial) {}
-        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
-        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
-    }
-
     public class SpawnCritters : BaseProxySpawner
     {
         [Constructible] public SpawnCritters() {}
         public SpawnCritters(Serial serial) : base(serial) {}
+        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
+        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
+    }
+
+    public class SpawnBirds : BaseProxySpawner
+    {
+        [Constructible] public SpawnBirds() {}
+        public SpawnBirds(Serial serial) : base(serial) {}
+        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
+        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
+    }
+
+    public class SpawnAnimals : BaseProxySpawner
+    {
+        [Constructible] public SpawnAnimals() {}
+        public SpawnAnimals(Serial serial) : base(serial) {}
         public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
         public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
     }

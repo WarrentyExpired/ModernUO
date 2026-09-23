@@ -204,17 +204,35 @@ namespace Server.Custom.DynamicSpawns
             })
             _terrainLookup[id] = Terrain.Snow;
         }
-
-        private static readonly Type[] CaveCritters = [typeof(Rat) ];
-        private static readonly Type[] DirtCritters = [typeof(Rat) ];
-        private static readonly Type[] ForestCritters = [typeof(GreatHart) ];
-        private static readonly Type[] GrassCritters = [typeof(Squirrel) ];
-        private static readonly Type[] JungleCritters = [typeof(Gorilla) ];
-        private static readonly Type[] RockCritters = [ ];
-        private static readonly Type[] SandCritters = [typeof(Scorpion) ];
-        private static readonly Type[] SwampCritters = [typeof(Slime) ];
-        private static readonly Type[] SnowCritters = [typeof(PolarBear) ];
-        private static readonly Type[] WaterCritters = [typeof(Dolphin) ];
+        private static readonly Type[] ForestBirds = [typeof(Eagle), typeof(Crane)];
+        private static readonly Type[] GrassBirds = [typeof(Chicken)];
+        private static readonly Type[] JungleBirds = [typeof(Crane)];
+        private static readonly Type[] SnowBirds = [typeof(Eagle)];
+        private static readonly Type[] DesertBirds = [typeof(Eagle)];
+        private static readonly Type[] SwampBirds = [typeof(Crane)];
+        private static readonly Type[] CaveBirds = [];
+        private static readonly Type[] DirtBirds = [typeof(Bird)];
+        private static readonly Type[] RockBirds = [typeof(Bird), typeof(Eagle)];
+        private static readonly Type[] CaveCritters = [typeof(Rat), typeof(SewerRat) ];
+        private static readonly Type[] DirtCritters = [typeof(Rat), typeof(Ferret) ];
+        private static readonly Type[] ForestCritters = [typeof(Rabbit), typeof(Squirrel), typeof(Ferret), typeof(Rat) ];
+        private static readonly Type[] GrassCritters = [typeof(Rabbit), typeof(JackRabbit), typeof(Squirrel) ];
+        private static readonly Type[] JungleCritters = [typeof(Rat), typeof(BullFrog) ];
+        private static readonly Type[] RockCritters = [typeof(Rat) ];
+        private static readonly Type[] SandCritters = [typeof(JackRabbit), typeof(Rat) ];
+        private static readonly Type[] SwampCritters = [typeof(BullFrog), typeof(GiantToad), typeof(Slime) ];
+        private static readonly Type[] SnowCritters = [typeof(Rabbit), typeof(JackRabbit), typeof(FrostOoze) ];
+        private static readonly Type[] WaterCritters = [];
+        private static readonly Type[] ForestAnimals = [typeof(BlackBear), typeof(BrownBear), typeof(GrizzlyBear), typeof(Cougar), typeof(TimberWolf), typeof(DireWolf), typeof(Hind), typeof(GreatHart), typeof(Boar), typeof(ForestOstard), typeof(GiantSpider) ];
+        private static readonly Type[] GrassAnimals = [typeof(Cow), typeof(Bull), typeof(Goat), typeof(Sheep), typeof(Pig), typeof(Horse), typeof(Llama), typeof(Dog), typeof(Cat) ];
+        private static readonly Type[] CaveAnimals = [typeof(GreyWolf), typeof(GiantRat), typeof(GiantSpider), typeof(BlackBear), typeof(Beetle) ];
+        private static readonly Type[] DirtAnimals = [typeof(Boar), typeof(BlackBear), typeof(GreyWolf), typeof(Snake) ];
+        private static readonly Type[] JungleAnimals = [typeof(Panther), typeof(Gorilla), typeof(GiantSerpent), typeof(SilverSerpent), typeof(Gaman), typeof(FrenziedOstard) ];
+        private static readonly Type[] RockAnimals = [typeof(MountainGoat), typeof(Cougar), typeof(GreyWolf), typeof(Eagle) ];
+        private static readonly Type[] SandAnimals = [typeof(Scorpion), typeof(GiantBlackWidow), typeof(Snake), typeof(DesertOstard)];
+        private static readonly Type[] SwampAnimals = [typeof(Alligator), typeof(GiantToad), typeof(GiantSerpent), typeof(Mongbat), typeof(SwampDragon), typeof(CorrosiveSlime)];
+        private static readonly Type[] SnowAnimals = [typeof(PolarBear), typeof(SnowLeopard), typeof(WhiteWolf), typeof(Walrus), typeof(IceSnake), typeof(FrostSpider), typeof(Walrus)];
+        private static readonly Type[] WaterCreatures = [typeof(Dolphin), typeof(SeaHorse)];
 
         public static Terrain GetTerrain(Map map, Point3D location, int x, int y)
         {
@@ -294,17 +312,34 @@ namespace Server.Custom.DynamicSpawns
                         Terrain.Snow => Construct(SnowCritters),
                         _ => null
                     },
-                    SpawnWater => terrain == Terrain.Water ? Construct(WaterCritters) : null,
-                    SpawnCave => terrain == Terrain.Cave ? Construct(CaveCritters) : null,
-                    SpawnDirt => terrain == Terrain.Dirt ? Construct(DirtCritters) : null,
-                    SpawnForest => terrain == Terrain.Forest ? Construct(ForestCritters) : null,
-                    SpawnGrass => terrain == Terrain.Grass ? Construct(GrassCritters) : null,
-                    SpawnJungle => terrain == Terrain.Jungle ? Construct(JungleCritters) : null,
-                    SpawnRock => terrain == Terrain.Rock ? Construct(RockCritters) : null,
-                    SpawnSand => terrain == Terrain.Sand ? Construct(SandCritters) : null,
-                    SpawnSwamp => terrain == Terrain.Swamp ? Construct(SwampCritters) : null,
-                    SpawnSnow => terrain == Terrain.Snow ? Construct(SnowCritters) : null,
-                    _ => null
+                    SpawnBirds => terrain switch
+                    {
+                        Terrain.Water => null, // Birds don't spawn in water
+                        Terrain.Cave => Construct(CaveBirds),
+                        Terrain.Dirt => Construct(DirtBirds),
+                        Terrain.Forest => Construct(ForestBirds),
+                        Terrain.Grass => Construct(GrassBirds),
+                        Terrain.Jungle => Construct(JungleBirds),
+                        Terrain.Rock => Construct(RockBirds),
+                        Terrain.Sand => Construct(DesertBirds),
+                        Terrain.Swamp => Construct(SwampBirds),
+                        Terrain.Snow => Construct(SnowBirds),
+                        _ => null
+                    },
+                    SpawnAnimals => terrain switch
+                    {
+                        Terrain.Water => null, // Land animals don't spawn in water
+                        Terrain.Cave => Construct(CaveAnimals),
+                        Terrain.Dirt => Construct(DirtAnimals),
+                        Terrain.Forest => Construct(ForestAnimals),
+                        Terrain.Grass => Construct(GrassAnimals),
+                        Terrain.Jungle => Construct(JungleAnimals),
+                        Terrain.Rock => Construct(RockAnimals),
+                        Terrain.Sand => Construct(SandAnimals),
+                        Terrain.Swamp => Construct(SwampAnimals),
+                        Terrain.Snow => Construct(SnowAnimals),
+                        _ => null
+                    },
                 };
             }
 
