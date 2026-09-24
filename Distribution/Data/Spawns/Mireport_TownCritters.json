@@ -1,0 +1,69 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "8e32979b-ad03-4dce-8d45-734353627d1b",
+    "location": [364, 1277, 1],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "cat", "probability": 100, "maxCount": 2 },
+      { "name": "dog", "probability": 100, "maxCount": 2 },
+      { "name": "rat", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8cab6cc1-e513-4d28-939e-81792c75e934",
+    "location": [438, 1311, 0],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "cat", "probability": 100, "maxCount": 2 },
+      { "name": "dog", "probability": 100, "maxCount": 2 },
+      { "name": "rat", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6c5227e3-8846-43e2-9cc3-e2891873d4b0",
+    "location": [358, 1248, 1],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 15,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "cat", "probability": 100, "maxCount": 1 },
+      { "name": "rat", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "73f7e36c-2a22-4687-ba84-00f2eea0f297",
+    "location": [414, 1278, 0],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "cat", "probability": 100, "maxCount": 2 },
+      { "name": "dog", "probability": 100, "maxCount": 2 },
+      { "name": "rat", "probability": 100, "maxCount": 3 }
+    ]
+  }
+]

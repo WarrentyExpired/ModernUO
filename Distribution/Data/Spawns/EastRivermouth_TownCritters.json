@@ -1,0 +1,92 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "cdb865d6-57b1-4543-a495-282276d6d1e3",
+    "location": [1408, 1728, -3],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "rat", "probability": 100, "maxCount": 3 },
+      { "name": "cat", "probability": 100, "maxCount": 2 },
+      { "name": "dog", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "063d491c-8520-4728-b4dd-32398e4c8c26",
+    "location": [1418, 1695, 0],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d2c0fd7b-e3e8-4f0c-b82a-c0c9230dc62a",
+    "location": [1437, 1740, 0],
+    "map": "Veridia",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 15,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3e47b90e-9ad7-46d3-99fc-9d5308721d32",
+    "location": [1358, 1755, 0],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "43a21c36-3314-432b-9448-bb0fddc90d40",
+    "location": [1358, 1701, 0],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d45b6385-fe92-4d64-bc27-36cf20d5451e",
+    "location": [1360, 1723, 0],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "rat", "probability": 100, "maxCount": 3 },
+      { "name": "cat", "probability": 100, "maxCount": 2 },
+      { "name": "dog", "probability": 100, "maxCount": 2 }
+    ]
+  }
+]
