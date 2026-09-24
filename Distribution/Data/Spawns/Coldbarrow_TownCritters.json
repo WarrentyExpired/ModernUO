@@ -1,0 +1,91 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "e60aa583-6b65-4df0-be88-572a7df7b48f",
+    "location": [3389, 2356, 7],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 3389, "y1": 2356, "z1": -128, "x2": 3390, "y2": 2357, "z2": 128 },
+    "walkingRange": 1,
+    "entries": [
+      { "name": "goat", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "228817e0-1fb7-4d81-8043-15100dca7d20",
+    "location": [3380, 2378, 2],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 15,
+    "walkingRange": 20,
+    "entries": [
+      { "name": "cat", "probability": 100, "maxCount": 1 },
+      { "name": "dog", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2824b228-d5d7-411e-aa28-42cc6015d414",
+    "location": [3393, 2356, 7],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 3393, "y1": 2356, "z1": -128, "x2": 3394, "y2": 2357, "z2": 128 },
+    "walkingRange": 1,
+    "entries": [
+      { "name": "pig", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "32492e9b-9cde-4372-816d-d7aa64af19ac",
+    "location": [3404, 2361, 5],
+    "map": "Veridia",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "horse", "probability": 100, "maxCount": 1 },
+      { "name": "cow", "probability": 100, "maxCount": 1 },
+      { "name": "llama", "probability": 100, "maxCount": 1 },
+      { "name": "bull", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5e980b26-294a-41d1-ba02-069afc560242",
+    "location": [3391, 2356, 7],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 3391, "y1": 2356, "z1": -128, "x2": 3392, "y2": 2357, "z2": 128 },
+    "walkingRange": 1,
+    "entries": [
+      { "name": "sheep", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b429f505-e440-4940-bf40-ee4b387f5f33",
+    "location": [3361, 2379, 2],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 15,
+    "walkingRange": 20,
+    "entries": [
+      { "name": "cat", "probability": 100, "maxCount": 1 },
+      { "name": "dog", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

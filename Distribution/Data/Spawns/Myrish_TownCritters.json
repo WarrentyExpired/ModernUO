@@ -1,0 +1,70 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "3251c1ff-e0eb-4421-9b4d-3db292ee3233",
+    "location": [1596, 2932, 2],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "rat", "probability": 100, "maxCount": 3 },
+      { "name": "dog", "probability": 100, "maxCount": 2 },
+      { "name": "cat", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fcd43c66-9905-4172-aba4-91f8fd0c1ef7",
+    "location": [1546, 2982, 2],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "rat", "probability": 100, "maxCount": 3 },
+      { "name": "dog", "probability": 100, "maxCount": 2 },
+      { "name": "cat", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d28a8d0c-deed-4ad4-bdf7-c3016f724d92",
+    "location": [1557, 2946, 2],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "rat", "probability": 100, "maxCount": 3 },
+      { "name": "dog", "probability": 100, "maxCount": 2 },
+      { "name": "cat", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2d74e992-7dcb-4fa3-87f4-3b4f50c14c0a",
+    "location": [1563, 2906, 2],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "rat", "probability": 100, "maxCount": 3 },
+      { "name": "dog", "probability": 100, "maxCount": 2 },
+      { "name": "cat", "probability": 100, "maxCount": 2 }
+    ]
+  }
+]

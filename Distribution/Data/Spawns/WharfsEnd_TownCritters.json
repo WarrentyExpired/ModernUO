@@ -1,0 +1,32 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "863fca6d-f529-48e5-ac0d-ea07afbd68bd",
+    "location": [3517, 389, 2],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 10,
+    "walkingRange": 20,
+    "entries": [
+      { "name": "cat", "probability": 100, "maxCount": 1 },
+      { "name": "dog", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d4e4251f-e9f2-475c-a35e-de1534851625",
+    "location": [3500, 376, 2],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 10,
+    "walkingRange": 20,
+    "entries": [
+      { "name": "cat", "probability": 100, "maxCount": 1 },
+      { "name": "dog", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

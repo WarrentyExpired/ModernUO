@@ -1,0 +1,148 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "352389a4-4851-4855-bd8b-39c7dac9562b",
+    "location": [397, 1839, 1],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1e8f3f06-f322-47a4-8037-f0a520b65f4d",
+    "location": [445, 1892, 1],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7505ffc7-6251-459f-ba5b-fc7cd63d1ca2",
+    "location": [399, 1884, 1],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bc1793ec-4e14-46cd-8e19-778a3e49f39c",
+    "location": [386, 1886, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 386, "y1": 1886, "z1": -128, "x2": 387, "y2": 1887, "z2": 128 },
+    "walkingRange": 1,
+    "entries": [
+      { "name": "boar", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "adbca2ce-e92a-4e16-858a-970fb636f770",
+    "location": [386, 1888, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 386, "y1": 1888, "z1": -128, "x2": 387, "y2": 1889, "z2": 128 },
+    "walkingRange": 1,
+    "entries": [
+      { "name": "bull", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d0a4a62a-9fcc-45d4-a848-7c5cbe657f0f",
+    "location": [386, 1890, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 386, "y1": 1890, "z1": -128, "x2": 387, "y2": 1891, "z2": 128 },
+    "walkingRange": 1,
+    "entries": [
+      { "name": "llama", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ce42b738-cdb8-4131-b6e6-8e53d72ffdc2",
+    "location": [391, 1892, 1],
+    "map": "Veridia",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "sheep", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4221d9f8-e423-45fb-a77c-358d2e075751",
+    "location": [391, 1888, 1],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "chicken", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c579418c-ee4f-4e2f-b5c3-2439a303276d",
+    "location": [419, 1856, 1],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "rat", "probability": 100, "maxCount": 3 },
+      { "name": "dog", "probability": 100, "maxCount": 2 },
+      { "name": "cat", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e0d3352f-9f1a-4f61-8bf6-81a0572e7b6f",
+    "location": [455, 1858, 1],
+    "map": "Veridia",
+    "count": 17,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 40,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "rat", "probability": 100, "maxCount": 3 },
+      { "name": "dog", "probability": 100, "maxCount": 2 },
+      { "name": "cat", "probability": 100, "maxCount": 2 }
+    ]
+  }
+]

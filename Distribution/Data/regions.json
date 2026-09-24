@@ -1564,7 +1564,7 @@
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
     "Parent": { "Name": "the Town of Coldbarrow", "Map": "Veridia" },
-    "Name": "the Coldbarrow Blacsmith Shop",
+    "Name": "the Coldbarrow Blacksmith Shop",
     "Priority": 55,
     "Area": [
       { "x1": 3375, "y1": 2353, "x2": 3386, "y2": 2360 }
