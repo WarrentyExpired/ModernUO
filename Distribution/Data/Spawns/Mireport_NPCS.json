@@ -52,7 +52,7 @@
     "spawnBounds": { "x1": 347, "y1": 1286, "z1": -128, "x2": 348, "y2": 1287, "z2": 128 },
     "walkingRange": 4,
     "entries": [
-      { "name": "weaponsmith", "probability": 100, "maxCount": 1 }
+      { "name": "tinker", "probability": 100, "maxCount": 1 }
     ]
   },
   {

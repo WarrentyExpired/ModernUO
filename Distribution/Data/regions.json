@@ -634,7 +634,7 @@
   {
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
-    "Name": "the Mireport Weapons Shop",
+    "Name": "the Mireport Tinker Shop",
     "Parent": { "Name": "the Town of Mireport", "Map": "Veridia" },
     "Priority": 55,
     "Area": [

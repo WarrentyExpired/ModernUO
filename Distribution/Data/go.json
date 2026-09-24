@@ -52,7 +52,7 @@
             {
               "name": "Despise",
               "locations": [
-                { "name": "Entrance", "location": [2620, 1143, 0], "map": "Underworld" },
+                { "name": "Entrance", "location": [2620, 1143, 0], "map": "Veridia" },
                 { "name": "Level 1", "location": [2436, 183, 30], "map": "Underworld" },
                 { "name": "Level 2", "location": [2355, 122, 59], "map": "Underworld" },
                 { "name": "Level 3", "location": [2371, 225, 20], "map": "Underworld" },
