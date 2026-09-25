@@ -249,5 +249,85 @@
     "src": { "map": "Underworld", "loc": [ 2241, 309, -12 ] },
     "dst": { "map": "Underworld", "loc": [ 2485, 148, 65 ] },
     "back": true
+  },
+  {
+    "src": { "map": "Veridia", "loc": [ 3430, 3388, 5 ] },
+    "dst": { "map": "Underworld", "loc": [ 2842, 287, 0 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Veridia", "loc": [ 3431, 3388, 5 ] },
+    "dst": { "map": "Underworld", "loc": [ 2843, 287, 0 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Veridia", "loc": [ 3432, 3388, 5 ] },
+    "dst": { "map": "Underworld", "loc": [ 2844, 287, 0 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Veridia", "loc": [ 3433, 3388, 5 ] },
+    "dst": { "map": "Underworld", "loc": [ 2844, 287, 0 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Veridia", "loc": [ 3434, 3388, 5 ] },
+    "dst": { "map": "Underworld", "loc": [ 2844, 287, 0 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Veridia", "loc": [ 3435, 3388, 5 ] },
+    "dst": { "map": "Underworld", "loc": [ 2844, 287, 0 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2729, 189, -28 ] },
+    "dst": { "map": "Underworld", "loc": [ 2742, 77, 22 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2730, 189, -28 ] },
+    "dst": { "map": "Underworld", "loc": [ 2743, 77, 22 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2731, 189, -28 ] },
+    "dst": { "map": "Underworld", "loc": [ 2744, 77, 22 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2732, 189, -28 ] },
+    "dst": { "map": "Underworld", "loc": [ 2745, 77, 22 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2753, 88, -25 ] },
+    "dst": { "map": "Underworld", "loc": [ 2733, 264, 22 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2753, 89, -25 ] },
+    "dst": { "map": "Underworld", "loc": [ 2733, 265, 22 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2753, 90, -25 ] },
+    "dst": { "map": "Underworld", "loc": [ 2733, 266, 22 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2753, 91, -25 ] },
+    "dst": { "map": "Underworld", "loc": [ 2733, 267, 22 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Veridia", "loc": [ 512, 2677, -18 ] },
+    "dst": { "map": "Underworld", "loc": [ 3975, 126, 57 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Veridia", "loc": [ 512, 2678, -18 ] },
+    "dst": { "map": "Underworld", "loc": [ 3975, 127, 57 ] },
+    "back": true
   }
 ]
