@@ -2196,5 +2196,99 @@
     "Area": [
       { "x1": 3748, "y1": 47, "x2": 4014, "y2": 327 }
     ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Brigand Camp",
+    "Priority": 55,
+    "Area": [
+      { "x1": 2115, "y1": 851, "x2": 2134, "y2": 878 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Evil Wizards Fortress",
+    "Priority": 55,
+    "Area": [
+      { "x1": 676, "y1": 3335, "x2": 682, "y2": 3346 },
+      { "x1": 682, "y1": 3335, "x2": 708, "y2": 3364 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Ratman Fortress",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1715, "y1": 2672, "x2": 1760, "y2": 2710 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Tower of the Lich",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1611, "y1": 585, "x2": 1624, "y2": 598 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Church of Ruin",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1187, "y1": 2918, "x2": 1216, "y2": 2927 },
+      { "x1": 1193, "y1": 2911, "x2": 1203, "y2": 2932 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Orc Fort",
+    "Priority": 55,
+    "Area": [
+      { "x1": 2098, "y1": 1935, "x2": 2113, "y2": 1951 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Rivermouth Cemetery",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1033, "y1": 1492, "x2": 1086, "y2": 1541 },
+      { "x1": 1033, "y1": 1541, "x2": 1071, "y2": 1558 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Myrish Cemetery",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1559, "y1": 2815, "x2": 1582, "y2": 2846 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Bastion Cemetery",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1902, "y1": 1957, "x2": 1935, "y2": 1980 },
+      { "x1": 1914, "y1": 1980, "x2": 1935, "y2": 2010 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Mireport Cemetery",
+    "Priority": 55,
+    "Area": [
+      { "x1": 441, "y1": 1189, "x2": 498, "y2": 1225 }
+    ]
   }
 ]
