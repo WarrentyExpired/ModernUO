@@ -1,0 +1,198 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "d3dfaaff-43d0-437b-973c-eb63e23a6dea",
+    "location": [2142, 845, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f6b37b41-d6af-48bd-a2cf-85ed04435bd2",
+    "location": [2119, 858, 40],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2119, "y1": 858, "z1": 40, "x2": 2120, "y2": 859, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "16c2c604-a0af-4d5a-892c-8cefb9a8bce6",
+    "location": [2124, 863, 40],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2124, "y1": 863, "z1": 40, "x2": 2125, "y2": 864, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fbb40a92-7356-4b25-abbd-308377be5675",
+    "location": [2124, 886, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ffb26f16-cb34-4fa6-b570-e9d3085d9b6c",
+    "location": [2140, 871, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cc852ddf-c85d-4ed4-867d-1ed954f480a5",
+    "location": [2124, 861, 20],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2124, "y1": 861, "z1": 20, "x2": 2125, "y2": 862, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "56912f12-37d8-4e35-b64f-fe5c6db74e2c",
+    "location": [2116, 867, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2116, "y1": 867, "z1": -128, "x2": 2117, "y2": 868, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ff679056-7917-4919-bc98-1905696803b3",
+    "location": [2123, 861, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2123, "y1": 861, "z1": -128, "x2": 2124, "y2": 862, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c2d1dffa-3cc6-4cee-b44c-914db5c81b9d",
+    "location": [2118, 874, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2118, "y1": 874, "z1": -128, "x2": 2119, "y2": 875, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8cb3a1ef-c2ad-4727-bb1b-5b9078269f40",
+    "location": [2121, 853, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2121, "y1": 853, "z1": -128, "x2": 2122, "y2": 854, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "96133f8f-243d-4f69-8e09-cbd0fdbfe092",
+    "location": [2130, 874, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2130, "y1": 874, "z1": -128, "x2": 2131, "y2": 875, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "68048440-f692-454c-aec7-caed22d7e0fb",
+    "location": [2109, 861, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5059ca92-c55a-4b3a-9e40-9d64542c960b",
+    "location": [2114, 845, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b0755702-1218-46aa-a67a-f54d65bbd349",
+    "location": [2110, 876, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

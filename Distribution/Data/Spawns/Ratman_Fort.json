@@ -1,0 +1,478 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "dae91200-1aec-4479-aada-4cc714d8ed5e",
+    "location": [1737, 2702, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "db46c1e1-cf69-44ce-ab05-79114d8bf83e",
+    "location": [1721, 2678, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1717, "y1": 2674, "z1": 22, "x2": 1726, "y2": 2683, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9195634e-fec4-445a-9d46-7686a19197a2",
+    "location": [1735, 2689, 1],
+    "map": "Veridia",
+    "count": 10,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 10,
+    "walkingRange": 15,
+    "entries": [
+      { "name": "giantrat", "probability": 50, "maxCount": 10 },
+      { "name": "sewerrat", "probability": 50, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a32addb4-675d-43d5-a6a4-f3fcefb08aad",
+    "location": [1733, 2680, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1729, "y1": 2676, "z1": 22, "x2": 1738, "y2": 2685, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratmanarcher", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4bf3bc13-8732-4ecb-989b-6f582b99958e",
+    "location": [1737, 2684, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1733, "y1": 2680, "z1": 22, "x2": 1742, "y2": 2689, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratmanarcher", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a2b53f81-d9d1-4da7-8b6c-7ca87248aa8d",
+    "location": [1721, 2690, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1717, "y1": 2686, "z1": 22, "x2": 1726, "y2": 2695, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "de9b2155-0f47-4d93-b136-ab61e8608b8d",
+    "location": [1721, 2691, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1717, "y1": 2687, "z1": 22, "x2": 1726, "y2": 2696, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "96dbf5bb-2f98-4007-b279-8ea29a0957ce",
+    "location": [1721, 2678, 42],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1717, "y1": 2674, "z1": 42, "x2": 1726, "y2": 2683, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dcb2548a-011e-456e-9251-ee9d4df79f57",
+    "location": [1746, 2692, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1742, "y1": 2688, "z1": 22, "x2": 1751, "y2": 2697, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "208fe70a-2e06-46d3-8600-404e95bf63a1",
+    "location": [1738, 2703, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1734, "y1": 2699, "z1": 22, "x2": 1743, "y2": 2708, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e657680f-7e9e-407d-98da-a7a4a2f52714",
+    "location": [1729, 2692, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fa328306-54bf-450d-9ac0-9525f36355c4",
+    "location": [1731, 2680, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9f725692-6972-4785-8269-81f5d4a5a9df",
+    "location": [1742, 2680, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b7ea407e-e0d7-47ca-a3d3-001032cf9f87",
+    "location": [1737, 2683, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "14e0e6e5-9788-4623-bc11-3b0dae170c36",
+    "location": [1720, 2703, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b6cb68cf-7416-434e-b1e6-0e9f4b8e4459",
+    "location": [1754, 2690, 42],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1750, "y1": 2686, "z1": 42, "x2": 1759, "y2": 2695, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a2039401-25a1-486f-9493-0b20d9974ba8",
+    "location": [1721, 2702, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d16def88-4c0e-49cf-b518-71332adf0e29",
+    "location": [1720, 2678, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b47e45b9-901f-4391-8187-c4a9336fda0d",
+    "location": [1752, 2688, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "38c7d36d-6148-4854-8650-010c82a6eaee",
+    "location": [1752, 2693, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5026378e-f249-4052-b61d-5b3c837a8860",
+    "location": [1766, 2704, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "af49b0d7-16c8-4b5f-8f08-c219222403f3",
+    "location": [1721, 2702, 42],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1717, "y1": 2698, "z1": 42, "x2": 1726, "y2": 2707, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e0694c45-212c-49e1-bb7f-63f26908696f",
+    "location": [1767, 2688, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5ad525ad-3636-437b-9c10-fee28acb1d04",
+    "location": [1740, 2680, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1736, "y1": 2676, "z1": 22, "x2": 1745, "y2": 2685, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratmanarcher", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fbbfe26e-c751-4512-b65b-5124ac0ca42d",
+    "location": [1747, 2716, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "19a217e2-d950-4c18-b4ba-88c3b72a843a",
+    "location": [1754, 2679, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1750, "y1": 2675, "z1": 22, "x2": 1759, "y2": 2684, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7153820a-a5c0-4600-88a9-731650492ffa",
+    "location": [1731, 2714, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "28ffde30-e671-4e1b-855d-4bfa7370b50b",
+    "location": [1753, 2703, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "724a38a1-5959-4583-ae5d-93f1f1243ab2",
+    "location": [1720, 2687, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bb327c0a-e449-4ef9-b53e-4ee756de83f8",
+    "location": [1721, 2693, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 }
+    ]
+  }
+]

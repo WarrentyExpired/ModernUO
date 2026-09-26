@@ -1,0 +1,314 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "acac1aa1-f0cd-46a3-8efa-44d7ca1e4ff3",
+    "location": [1637, 629, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1637, "y1": 629, "z1": -128, "x2": 1638, "y2": 630, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e23bddce-35fe-4c34-92a3-a5514c568c1f",
+    "location": [1613, 590, 13],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1613, "y1": 590, "z1": -128, "x2": 1614, "y2": 591, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "lich", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ef44e9fd-ab10-43eb-a536-b4549654d7fe",
+    "location": [1616, 571, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1616, "y1": 571, "z1": -128, "x2": 1617, "y2": 572, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "945fed77-b251-4f75-89af-5d35b4d61e0b",
+    "location": [1618, 554, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "lich", "probability": 90, "maxCount": 1 },
+      { "name": "lichlord", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e2e6cccd-d6f0-4fb6-94e8-004de471071d",
+    "location": [1621, 553, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1621, "y1": 553, "z1": -128, "x2": 1622, "y2": 554, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d11ef5c9-3554-46d2-9b19-2525442b0729",
+    "location": [1615, 592, 57],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1615, "y1": 592, "z1": 57, "x2": 1616, "y2": 593, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "lich", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ae4fa3c8-4c98-427a-a98d-27099bfbc672",
+    "location": [1618, 606, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1618, "y1": 606, "z1": -128, "x2": 1619, "y2": 607, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1c7ad99c-0d8a-413f-b108-3333361f2ff5",
+    "location": [1619, 589, 57],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1619, "y1": 589, "z1": 57, "x2": 1620, "y2": 590, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "lich", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a47e79f5-8af0-497b-b25a-27873ffb07f1",
+    "location": [1615, 594, 35],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1615, "y1": 594, "z1": 35, "x2": 1616, "y2": 595, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "lich", "probability": 33, "maxCount": 1 },
+      { "name": "wraith", "probability": 33, "maxCount": 1 },
+      { "name": "ghoul", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "00194673-db00-44eb-ac82-f19895108c4c",
+    "location": [1618, 588, 35],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1618, "y1": 588, "z1": 35, "x2": 1619, "y2": 589, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "lich", "probability": 33, "maxCount": 1 },
+      { "name": "wraith", "probability": 33, "maxCount": 1 },
+      { "name": "ghoul", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f25d82fd-de5f-4e16-a7ba-311841bc82b0",
+    "location": [1627, 553, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "lich", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fdac7f11-8e48-4dcb-9097-751f23a501f3",
+    "location": [1630, 620, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1630, "y1": 620, "z1": -128, "x2": 1631, "y2": 621, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6df2b167-408c-43e5-9b28-ac1d5194abd9",
+    "location": [1616, 591, 79],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1616, "y1": 591, "z1": 79, "x2": 1617, "y2": 592, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "lichlord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ea18ef35-0b3a-4fb5-9668-5d7f1dc1eb6b",
+    "location": [1620, 590, 13],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1620, "y1": 590, "z1": -128, "x2": 1621, "y2": 591, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "lich", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "12ff619b-4a04-49cd-9889-02083e748717",
+    "location": [1619, 573, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1619, "y1": 573, "z1": -128, "x2": 1620, "y2": 574, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1f0a2ff4-2ae3-47a3-a11a-d6b9b45444c5",
+    "location": [1621, 619, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1621, "y1": 619, "z1": -128, "x2": 1622, "y2": 620, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8d54f584-8b7b-4560-82d4-bbd0569400fa",
+    "location": [1625, 600, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1625, "y1": 600, "z1": -128, "x2": 1626, "y2": 601, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8013b108-e3ff-4032-9426-9882fed19199",
+    "location": [1613, 604, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1613, "y1": 604, "z1": -128, "x2": 1614, "y2": 605, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 }
+    ]
+  }
+]

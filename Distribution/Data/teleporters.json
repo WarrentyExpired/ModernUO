@@ -329,5 +329,15 @@
     "src": { "map": "Veridia", "loc": [ 512, 2678, -18 ] },
     "dst": { "map": "Underworld", "loc": [ 3975, 127, 57 ] },
     "back": true
+  },
+  {
+    "src": { "map": "Veridia", "loc": [ 1867, 2013, -18 ] },
+    "dst": { "map": "Underworld", "loc": [ 152, 780, 0 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 152, 781, 0 ] },
+    "dst": { "map": "Veridia", "loc": [ 1867, 2013, -18 ] },
+    "back": false
   }
 ]

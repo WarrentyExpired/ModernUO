@@ -2209,7 +2209,7 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Veridia",
-    "Name": "the Evil Wizards Fortress",
+    "Name": "the Evil Mage Fortress",
     "Priority": 55,
     "Area": [
       { "x1": 676, "y1": 3335, "x2": 682, "y2": 3346 },

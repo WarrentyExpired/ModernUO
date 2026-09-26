@@ -1,0 +1,79 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "5eaca461-28bc-4966-960a-bbf462c3b8f8",
+    "location": [1563, 2820, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1563, "y1": 2820, "z1": -128, "x2": 1564, "y2": 2821, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "wraith", "probability": 33, "maxCount": 1 },
+      { "name": "spectre", "probability": 33, "maxCount": 1 },
+      { "name": "ghoul", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b481e681-8390-4a65-89d5-60023051682c",
+    "location": [1563, 2839, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1563, "y1": 2839, "z1": -128, "x2": 1564, "y2": 2840, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "wraith", "probability": 33, "maxCount": 1 },
+      { "name": "spectre", "probability": 33, "maxCount": 1 },
+      { "name": "ghoul", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cc84802d-bd07-49e8-a622-4107b190b3fd",
+    "location": [1565, 2829, 2],
+    "map": "Veridia",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "zombie", "probability": 50, "maxCount": 3 },
+      { "name": "skeleton", "probability": 50, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a764f65a-a1c7-405f-bc33-b922103e3571",
+    "location": [1575, 2838, 2],
+    "map": "Veridia",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "zombie", "probability": 50, "maxCount": 2 },
+      { "name": "skeleton", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4599a6a6-ddf6-4532-b28d-6d93de9019d0",
+    "location": [1576, 2822, 2],
+    "map": "Veridia",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "zombie", "probability": 50, "maxCount": 3 },
+      { "name": "skeleton", "probability": 50, "maxCount": 3 }
+    ]
+  }
+]

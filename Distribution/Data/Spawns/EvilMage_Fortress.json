@@ -1,0 +1,281 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "2028abad-2629-4bfe-bf3a-81e0bd68739c",
+    "location": [680, 3339, 62],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 680, "y1": 3339, "z1": 62, "x2": 681, "y2": 3340, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmagelord", "probability": 33, "maxCount": 1 },
+      { "name": "daemon", "probability": 33, "maxCount": 1 },
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0d0db709-e34c-48e9-a1d7-c31a224a5bda",
+    "location": [703, 3339, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 701, "y1": 3337, "z1": 22, "x2": 706, "y2": 3342, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 95, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 5, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "20be43ec-ace6-4e54-8fe1-fe1c47cc28ef",
+    "location": [705, 3352, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 705, "y1": 3352, "z1": 22, "x2": 706, "y2": 3353, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 95, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 5, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "eb781419-2e34-452f-a053-b75357a218a8",
+    "location": [687, 3338, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 685, "y1": 3336, "z1": 22, "x2": 690, "y2": 3341, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 95, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 5, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b8eb5ef1-cfe2-4d82-9794-bc3a7b523d76",
+    "location": [687, 3357, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 687, "y1": 3357, "z1": 22, "x2": 688, "y2": 3358, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 70, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 10, "maxCount": 1 },
+      { "name": "daemon", "probability": 10, "maxCount": 1 },
+      { "name": "bloodelemental", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d817efcc-9596-4f14-973a-8e527a7b89fb",
+    "location": [697, 3343, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 95, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 5, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1125d3fe-130f-4c7c-8786-6508cef65b56",
+    "location": [701, 3361, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 701, "y1": 3361, "z1": -128, "x2": 702, "y2": 3362, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmagelord", "probability": 33, "maxCount": 1 },
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "daemon", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b52f94e2-8e9d-4030-97b6-999301863da7",
+    "location": [678, 3337, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 95, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 5, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dc2857cb-cc81-4cb4-b49f-2527debffff1",
+    "location": [689, 3337, 42],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 689, "y1": 3337, "z1": 42, "x2": 690, "y2": 3338, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 70, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 10, "maxCount": 1 },
+      { "name": "daemon", "probability": 10, "maxCount": 1 },
+      { "name": "bloodelemental", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "82d3328d-dde7-459b-8294-71ebcd589abc",
+    "location": [705, 3352, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 95, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 5, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "36d8ea3f-da28-4400-9aa4-7e045e9e3e07",
+    "location": [678, 3341, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 678, "y1": 3341, "z1": 22, "x2": 679, "y2": 3342, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 70, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 10, "maxCount": 1 },
+      { "name": "daemon", "probability": 10, "maxCount": 1 },
+      { "name": "bloodelemental", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a6895162-f23e-4001-879a-6cb1551a70d7",
+    "location": [688, 3356, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 686, "y1": 3354, "z1": 22, "x2": 691, "y2": 3359, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 95, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 5, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a69a4852-eb32-4627-a883-9e5f77b3d642",
+    "location": [703, 3339, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 90, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 5, "maxCount": 1 },
+      { "name": "daemon", "probability": 5, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "85fd2ae8-776e-464b-b58b-f50869977c9c",
+    "location": [688, 3338, 62],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 688, "y1": 3338, "z1": 62, "x2": 689, "y2": 3339, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmagelord", "probability": 33, "maxCount": 1 },
+      { "name": "daemon", "probability": 33, "maxCount": 1 },
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1cefff9f-240b-4ebe-a188-88f234664538",
+    "location": [687, 3352, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 95, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 5, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "263ed662-9bd1-425e-a69e-0d675455122e",
+    "location": [686, 3359, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 95, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 5, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "708d8299-8b2f-465d-8b0a-7ec68e8663ce",
+    "location": [687, 3343, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 95, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 5, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7d3b2ca8-9de6-47dd-b3f5-9def126f5020",
+    "location": [697, 3355, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 697, "y1": 3355, "z1": -128, "x2": 698, "y2": 3356, "z2": 128 },
+    "walkingRange": 2,
+    "entries": [
+      { "name": "bloodelemental", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

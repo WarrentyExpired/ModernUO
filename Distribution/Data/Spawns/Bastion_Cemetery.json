@@ -1,0 +1,155 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "0413cc85-6745-4f5f-8b91-72d96ca9b5a8",
+    "location": [1906, 1970, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b7e52fe0-37f2-437a-8f0b-95119ee07ac2",
+    "location": [1927, 1972, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2fdc001f-98a8-47d3-8956-a5d711a0f074",
+    "location": [1929, 1989, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e78bfd41-0fbf-4500-9eea-9cb8c4678827",
+    "location": [1906, 1962, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c8a3ef53-32ab-4585-934d-b12f53245ace",
+    "location": [1913, 1974, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1eb4bd2b-fffd-4e86-9fbc-c29c7d99eb5c",
+    "location": [1929, 1962, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "477242b3-4b74-47ca-bc6d-929f1c90515f",
+    "location": [1929, 2004, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2af36195-b52c-465c-9830-285c2f9c5b99",
+    "location": [1922, 1994, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6d0ea9aa-c3c8-4485-a23e-67d4604c8ad3",
+    "location": [1919, 1966, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "skeleton", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 25, "maxCount": 1 }
+    ]
+  }
+]
