@@ -1,0 +1,2949 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "46084e5d-8439-4808-9451-65e8912c9931",
+    "location": [840, 1091, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dee15cdc-71fc-494b-99d5-d585978b40bb",
+    "location": [851, 1410, 5],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2c8732f3-ca11-41fe-a743-c3e155810de1",
+    "location": [851, 1562, 6],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4effd710-ff7d-44d5-aeff-2bd101b9d929",
+    "location": [851, 1712, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "079f5a36-ff14-41dc-b2bf-50994b897b1b",
+    "location": [57, 75, 1],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8ad2054c-a8a1-4634-9310-0e4e6250ce2b",
+    "location": [851, 1862, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0784f2ef-33d7-4fd0-8f98-e9af5a423651",
+    "location": [851, 2012, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8e55a7d9-7f0e-483a-9f02-f5599dcd9799",
+    "location": [851, 2162, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ceb3e208-ee7f-410c-998a-a7e7508437b2",
+    "location": [851, 2312, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fd30bdd8-6acb-46bf-a03e-77de431df83a",
+    "location": [1001, 2912, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "748e4a9e-72ce-4e2e-87ce-5fa17bf027c2",
+    "location": [1002, 2311, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "477b76f6-44f0-474b-88e5-f89ecb5bd9c2",
+    "location": [1001, 2162, 6],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "af2642bb-a953-494c-b3bd-7f159d875ff3",
+    "location": [1001, 2012, 6],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "aafbca76-8403-4533-a319-5c0d5de06bb8",
+    "location": [1002, 1862, 10],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d55173a3-f834-4b0d-88d9-ac31c7030e63",
+    "location": [1001, 1712, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "23811053-f11f-4d52-8a9d-2985a1d2fda5",
+    "location": [1001, 1562, 6],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "712cbdd4-5b4c-4554-afd6-ef5083898c65",
+    "location": [1001, 1412, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4e629937-908f-48f4-b9f8-8c9d2225bc6b",
+    "location": [1001, 1262, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e6ac602a-2c23-4985-baad-6ace40fa5ed3",
+    "location": [998, 1106, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d494227c-2d1d-415a-9e10-2a267dbda572",
+    "location": [1150, 1108, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9f527c36-c0ac-400d-aad4-093d7f6fdf4b",
+    "location": [1151, 1262, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3b73cd0c-7bfb-4d65-9b36-cc69437ee20c",
+    "location": [1151, 1412, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d3152cb3-9d2a-4b2c-b925-b6e053108699",
+    "location": [1151, 1563, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "62c920a4-4142-4f58-a363-4d4cb778e52f",
+    "location": [1151, 1862, 10],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "390fe9fe-8ed7-4c1f-a923-070abeba7fe6",
+    "location": [1151, 2012, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5af309ca-061a-48ab-ad18-9909414bdf45",
+    "location": [1151, 2312, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "72fa147f-0f8c-44d6-b569-e73f48261370",
+    "location": [1151, 2762, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "60a728d8-bfd1-4f18-82e7-2d1f39e42b19",
+    "location": [1151, 2912, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6f669929-a662-4c74-ba5f-104d4f95b2b3",
+    "location": [1151, 3062, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "558b2749-e45a-4042-86c5-7a929075b89e",
+    "location": [1301, 2912, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e358a0e4-f4c8-4629-a54c-3325faae3d6a",
+    "location": [1301, 2762, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "92db2076-a4a3-4f43-b9bc-caf01a93b31a",
+    "location": [1301, 2612, 10],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a4e1a94c-5906-4074-88b7-c22af75959a4",
+    "location": [1301, 2462, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0cc25879-7d6d-455b-be5d-b94d459142ad",
+    "location": [1300, 1860, 10],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6e183abe-acae-46c3-8f30-0650e38adb21",
+    "location": [1452, 1635, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 15 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "47c088c8-ed4a-4a6e-bdfb-4f3635b4bce5",
+    "location": [1296, 1564, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5c181b36-761f-4ebe-9caa-c37ee5790a5d",
+    "location": [1301, 1412, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "48dc1eff-7022-4aec-9af1-01acf93e3b80",
+    "location": [1301, 1262, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6b3fad6b-9a2d-4b07-9934-925c6df76641",
+    "location": [1301, 962, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d3088f41-7535-4a65-aa0e-af58ca1f4e25",
+    "location": [1452, 962, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3fb9fe4c-53a6-485f-b9d9-568e814b13fe",
+    "location": [1451, 1262, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a6d8b633-7d22-468f-9241-0a777569b45e",
+    "location": [100, 108, 1],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6dcd8b37-5f5a-4f26-91d2-fcf05b829e69",
+    "location": [1451, 1862, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c588f5a3-6f54-4004-97fd-973636148c4f",
+    "location": [1437, 2159, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 30 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 3 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 10 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d8e70a77-1226-48bc-b13a-50e0a637e9c9",
+    "location": [1452, 2462, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9fd72282-268e-4527-b7e6-97579223051e",
+    "location": [1451, 2613, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "410d0581-b7fb-4dc5-9988-b29ebad7e2ed",
+    "location": [1451, 2763, 12],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "35b16c25-3167-4df8-9d2f-b2a98c29ca97",
+    "location": [1451, 2912, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "98c2030b-71ee-44c3-97f8-86c78ae95590",
+    "location": [1452, 3062, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6e4525e9-2ffa-4c08-8464-645174c30782",
+    "location": [2310, 1965, 12],
+    "map": "Veridia",
+    "count": 100,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 125,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 20 },
+      { "name": "spawnanimals", "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "99e92f1b-6b64-4640-916e-972bdf8831a0",
+    "location": [1626, 619, 8],
+    "map": "Veridia",
+    "count": 100,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 150,
+    "walkingRange": 200,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 5 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1859e2f1-4cb8-42dd-8884-5abca83e8584",
+    "location": [575, 3363, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 200,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 40 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 40 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c343eb74-fc2a-4e09-90eb-eb5c4bb15b30",
+    "location": [391, 3488, 0],
+    "map": "Veridia",
+    "count": 45,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 90,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 20 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 5 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 10 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c574c3af-0dae-4e94-8814-c2e3ea056bc0",
+    "location": [559, 2721, 2],
+    "map": "Veridia",
+    "count": 25,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 50,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 5 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 5 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8038e8c3-2923-4ac7-92b6-0ab91989f55f",
+    "location": [3563, 3370, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "10778cd9-6121-4181-a4ae-25884541538b",
+    "location": [509, 2673, 25],
+    "map": "Veridia",
+    "count": 25,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 50,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 5 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 5 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bf0b5ccc-c594-4935-a335-5fbc09fff160",
+    "location": [564, 2618, 2],
+    "map": "Veridia",
+    "count": 25,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 50,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 5 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 2 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 2 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b71528a5-5ae8-4665-ac62-2cf195ff5593",
+    "location": [666, 2614, 2],
+    "map": "Veridia",
+    "count": 25,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 50,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 5 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 2 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 2 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "187d74a5-8ccd-4957-a807-b2f9b1dcaebf",
+    "location": [629, 2606, 2],
+    "map": "Veridia",
+    "count": 25,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 50,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 5 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 2 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 2 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f55d872e-27f9-4aab-b8ed-56cceda61c97",
+    "location": [3147, 3641, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "671337f2-4959-4ff6-a106-1cac59a013d9",
+    "location": [3563, 3470, 6],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "05f901fa-f92b-419b-a505-f03542110a3d",
+    "location": [156, 69, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": []
+  },
+  {
+    "$type": "Spawner",
+    "guid": "34d6d429-d544-4a8b-bc73-c4dad23ada61",
+    "location": [3413, 3470, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d8f95d67-788c-48e5-8e18-f88e13f7622d",
+    "location": [3402, 3352, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3f9911c6-bba2-4558-99c5-2edf407e7105",
+    "location": [156, 69, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": []
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1541e369-8fde-49eb-bb70-7f121d22f0b3",
+    "location": [3413, 3621, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9e5518af-d603-4f59-98c0-653430268ec2",
+    "location": [3162, 2741, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ce65fa4d-fcf8-4762-aea5-a38608be336b",
+    "location": [3162, 2891, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f6f555b8-03ec-4a3e-8c0b-bf21148cee74",
+    "location": [3012, 2890, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0d8b2a36-a7dc-40c5-a558-5f1e4391063d",
+    "location": [3012, 2741, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a90a95ad-5a14-4252-945e-7c822948aa29",
+    "location": [3012, 2591, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ca04d1e1-66a6-4882-abdb-35fea3a1989e",
+    "location": [3008, 2435, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7db05502-e1a0-45da-b4a3-095d42f52270",
+    "location": [3362, 2291, 3],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e225c31c-e30f-4609-9694-e68d966d14be",
+    "location": [3512, 2291, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "44851ae3-7c63-4beb-85e1-070f05fce367",
+    "location": [3662, 2291, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "27f79343-0aca-402d-86d5-7f456f6ec345",
+    "location": [3813, 2292, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ee85fb0e-a888-4ae2-b199-23a3e2ba2e96",
+    "location": [3662, 2441, 1],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a31ef9bc-e645-4884-8ce1-0fdaaed2d269",
+    "location": [3517, 2496, 1],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0c9abbe7-c362-4df6-ae0f-fb889ad43e31",
+    "location": [3235, 2611, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0148b8b5-5837-4c82-92f2-d1dcd720518e",
+    "location": [3204, 3027, 0],
+    "map": "Veridia",
+    "count": 50,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 30 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 15 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e17e44bb-4ca0-4c45-a9c9-8b4293efa9d9",
+    "location": [2833, 2446, 3],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "143a5ffb-0130-4b08-ae4c-ff864d68159a",
+    "location": [2782, 2315, 4],
+    "map": "Veridia",
+    "count": 30,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 30,
+    "walkingRange": 60,
+    "entries": [
+      { "name": "spawnbirds", "probability": 100, "maxCount": 5 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 10 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6d233319-9724-40cc-a1d1-4dde2743ea17",
+    "location": [3101, 503, 2],
+    "map": "Veridia",
+    "count": 50,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 5 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 20 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "301305cc-a240-4a9c-910f-c193c41aefd5",
+    "location": [3262, 338, 4],
+    "map": "Veridia",
+    "count": 50,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 5 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 20 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0409fc36-1900-4df3-a86d-d003f32258fa",
+    "location": [3368, 529, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ccd94632-1f19-4da3-8771-4f2dc8e165ca",
+    "location": [3505, 736, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3a231532-a2a7-4940-b0a8-25355118b07a",
+    "location": [3577, 528, 3],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2643190c-94bc-4531-93dc-ecbe97b3b99a",
+    "location": [550, 1110, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 40 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 40 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3274d81e-928c-48a8-8ec4-c30977e28e96",
+    "location": [551, 1862, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 40 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 40 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "350e8781-5e21-48a7-b6f3-883c6a108522",
+    "location": [551, 1412, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 40 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 40 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "895cc336-03bf-4352-8ec1-ae4566ae89ef",
+    "location": [551, 1712, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 40 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 40 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e8f8f966-4afb-4dc6-993b-45f12e17ea07",
+    "location": [551, 2012, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7da497da-ea81-4fe3-b122-481ccb02e292",
+    "location": [551, 2162, 6],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "41a2eadd-ef32-4581-81e8-da83febffa03",
+    "location": [551, 2312, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d0422d40-fb8a-483e-afee-da4b287e406b",
+    "location": [701, 2312, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "886d42b7-6af0-45ec-9979-76becbcd1fd7",
+    "location": [701, 2161, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4a40c30c-912f-4b2a-869d-c3a5320480db",
+    "location": [701, 2012, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "735c0523-43db-48a7-b4bf-04b5931e873b",
+    "location": [701, 1862, 5],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2eea1545-8adc-4292-a3e7-2d9f4ed06a76",
+    "location": [701, 1412, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3ca2d6b8-bb02-4774-ab6f-de80a0af8fa8",
+    "location": [1601, 3212, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "da54f426-f5a4-470a-b8cd-374276be2688",
+    "location": [1601, 3043, 6],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "42d818b6-a133-48d1-8ff9-52443631f249",
+    "location": [1601, 2744, 10],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "37119630-dbf5-4e84-a8fc-8bb09aec83fe",
+    "location": [1601, 2595, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "81bac494-cba8-486c-8137-47411c26f0bd",
+    "location": [1600, 2445, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3740973c-b08c-435a-8800-4944b672d7fe",
+    "location": [1601, 2294, 3],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4acf0a16-ad9e-4bf7-93af-c0e5c81a870c",
+    "location": [1601, 1844, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "69084f91-beeb-4dd0-8e9c-d79c15c053e0",
+    "location": [1601, 1694, 6],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4d1383c5-39a5-431c-a047-767266625924",
+    "location": [1601, 1244, 5],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f7477992-ed1c-4e83-b33c-872c4f406891",
+    "location": [1602, 1394, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0e9da622-9a1e-40a3-927f-16f636415741",
+    "location": [1601, 1074, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "78c66f1a-9e20-4e89-91af-bd43bcb78303",
+    "location": [1751, 1094, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "32a1478a-f12f-44f7-8056-0e1072f64113",
+    "location": [1751, 1395, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ea35474c-733f-423c-885a-b149fa234bb8",
+    "location": [1751, 1844, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a0933671-c9c8-40d4-bdd4-c100ae19e835",
+    "location": [1751, 2145, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3fa04a05-7f67-4f25-9824-2271225c24b7",
+    "location": [1752, 2294, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e558e898-c789-4d60-80c3-9bc61da2221a",
+    "location": [1752, 2445, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "824a1a83-af15-4d0b-ba39-53a6c63f4faa",
+    "location": [1751, 2594, 12],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f9fe045f-3858-44ae-b4ba-49a65ff9cd62",
+    "location": [1751, 2744, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8c742858-63bf-4db3-ab80-8292da280edf",
+    "location": [1753, 2908, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fec01211-948b-467f-9558-0901f7130928",
+    "location": [1751, 3044, 6],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "15484bd8-a465-4e24-8459-ee0c77cb2160",
+    "location": [1901, 2993, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ea644b54-ae41-42e6-8c0a-74f21422757c",
+    "location": [1901, 2844, 12],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2eb8f7c0-8bae-42d5-8baa-cad13a86f342",
+    "location": [1901, 2694, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2e77c1e8-ff3e-4818-9739-e93f4e1b1e8f",
+    "location": [1901, 2544, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "428d7f64-d1ba-4315-98a6-1d1c77e363bd",
+    "location": [1901, 2394, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "45c9cc35-f72b-4b88-9459-ea73cc9b6eb2",
+    "location": [1901, 2244, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3e4edb19-14a1-43df-9b83-a01e1769717e",
+    "location": [1902, 2094, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6d1cdc90-bdba-4625-9e7e-71aab663fa65",
+    "location": [1901, 1344, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "75c0d9bc-69df-4496-a20a-c687670e2372",
+    "location": [1901, 1045, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ee47594c-cf95-4d0c-89c8-89bd63396828",
+    "location": [2051, 894, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "becac79d-ece6-4609-8efb-6e9aaaf28f07",
+    "location": [2051, 1044, 1],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "174b3ec2-837a-4624-b708-3579572d60ec",
+    "location": [2051, 1194, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f6cfbb20-c8de-4615-bbcf-0f1af79ef26d",
+    "location": [2051, 1419, 1],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 30 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 4 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 15 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "037e8517-527f-4a4b-9394-f01a0f9a8760",
+    "location": [2051, 1944, 3],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9894accc-b3cf-4198-92ed-bb720560079b",
+    "location": [2051, 2094, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "826c3818-a2f5-475a-b7b5-108f8d4d4c6b",
+    "location": [2052, 2244, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9ad605e7-6265-4ebb-a3af-eeecd8f71497",
+    "location": [2051, 2394, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3495fd9a-68ec-45c6-8d81-0862f206c4b8",
+    "location": [2051, 2544, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c3e2a32f-06ee-4df1-bfcf-53961494be8a",
+    "location": [2053, 2694, 10],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e44cc217-6d97-49b0-9d56-05fff2785b3b",
+    "location": [2051, 2845, 10],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f287c73e-03c3-4599-8ee2-45bdb22e1d6a",
+    "location": [2050, 2994, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "981d041d-d174-4c35-ba7f-0161f3829c9c",
+    "location": [2201, 2744, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bbe41ebe-9792-435e-9c74-25e1c1741e00",
+    "location": [2201, 2544, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "41731e0f-69fe-430c-8f57-f2fefce1aeb2",
+    "location": [2201, 2394, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1e07dc39-ba4e-4bab-8692-2887fb6eb1cc",
+    "location": [2201, 2245, 3],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0b5840bd-1886-4699-a012-c378cb0ec7cb",
+    "location": [2201, 2094, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e2bb2a75-d389-4bbc-9539-2667c70c2e88",
+    "location": [2200, 1944, 6],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0c3610e1-d006-4cdd-bd24-a2b58c897c46",
+    "location": [2201, 1794, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ae06c9fc-5125-4470-9e6f-1d4ee401c44a",
+    "location": [2201, 1644, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5378b6a0-e3a3-4b5f-9b9c-db9ef1fc1f25",
+    "location": [2201, 1344, 1],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "34350187-de2e-4e0d-91db-f6014d623c01",
+    "location": [2200, 1048, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7374f644-5651-4768-9633-56a91236ef3b",
+    "location": [2346, 1044, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a716140a-8864-4d3d-800d-12bfea93936a",
+    "location": [2351, 1344, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0bccfaff-db5f-46b8-a5c9-fbbc8610665a",
+    "location": [2352, 1644, 12],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b4553750-150c-495e-acfb-8c1cf3c5cefc",
+    "location": [2351, 1499, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7aa7667a-65d4-4008-9ad6-e02e17570b86",
+    "location": [2352, 1793, 10],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5ddc6ef7-0bdd-4cae-a401-b5e64f535901",
+    "location": [2352, 1943, 12],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "84e14f88-8d4e-4942-a9d2-eed713c22e10",
+    "location": [2351, 2094, 10],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1475aa87-644b-4371-adf4-67c8d4b42a73",
+    "location": [2351, 2244, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b1771384-3e85-4e0d-9c21-327570028238",
+    "location": [2349, 2396, 8],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6747cf52-3cdd-4dcb-aaf9-a795f6caa34a",
+    "location": [2350, 2546, 12],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "231416a7-0552-4e53-926d-244d18e18fb6",
+    "location": [2352, 2695, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "83e47f1a-8608-4292-b76e-474250946c38",
+    "location": [2502, 2092, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a9f6f4d0-7a9a-4199-a3a7-e7ded41903c2",
+    "location": [2500, 1944, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9807d5bd-b9ad-4981-887e-11a3c4604950",
+    "location": [2501, 1794, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "169b5295-7758-4cfb-bc89-6e24738606b3",
+    "location": [2501, 1269, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "98c95888-b0b4-495e-a8e7-146e91bb8e8e",
+    "location": [2501, 1044, 1],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6672759e-8c10-4b62-866d-f5949fa64d78",
+    "location": [2651, 1045, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 20 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 3 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 10 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b1712e78-94aa-475b-8ad7-2f9d69a8563a",
+    "location": [2653, 1202, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3fe6171b-0ca8-4624-b47d-4d692f622b5a",
+    "location": [2652, 1343, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3a99d5e0-ca10-4163-9ba4-ee514b93b3f4",
+    "location": [2630, 1648, 0],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "eb1892e4-f67b-4923-afe2-6e59b390fd5f",
+    "location": [2802, 1494, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "253e8c84-5e82-42e0-a11c-9e41491bdf6b",
+    "location": [2801, 1344, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "407e93fc-1283-4175-a310-cc7bb2d5df31",
+    "location": [2802, 1345, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+    ]
+  }
+]
