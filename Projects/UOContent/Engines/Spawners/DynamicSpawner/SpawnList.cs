@@ -233,7 +233,12 @@ namespace Server.Custom.DynamicSpawns
         private static readonly Type[] SwampAnimals = [typeof(Alligator), typeof(GiantToad), typeof(GiantSerpent), typeof(Mongbat), typeof(SwampDragon), typeof(CorrosiveSlime)];
         private static readonly Type[] SnowAnimals = [typeof(PolarBear), typeof(SnowLeopard), typeof(WhiteWolf), typeof(Walrus), typeof(IceSnake), typeof(FrostSpider), typeof(Walrus)];
         private static readonly Type[] WaterCreatures = [typeof(Dolphin), typeof(SeaHorse)];
-
+        private static readonly Type[] ForestMobs = [typeof(Reaper), typeof(Gazer), typeof(Imp), typeof(Troll), typeof(Wisp)];
+        private static readonly Type[] GrassMobs = [typeof(Corpser), typeof(Orc), typeof(Ettin), typeof(SkitteringHopper), typeof(HeadlessOne)];
+        private static readonly Type[] JungleMobs = [typeof(Ogre), typeof(Orc), typeof(Bogle), typeof(VampireBat), typeof(Corpser)];
+        private static readonly Type[] SandMobs = [typeof(Skeleton), typeof(Mummy), typeof(Shade), typeof(HellHound), typeof(SandVortex)];
+        private static readonly Type[] SnowMobs = [typeof(IceElemental), typeof(FrostTroll), typeof(Ogre), typeof(Orc)];
+        private static readonly Type[] SwampMobs = [typeof(Savage), typeof(SwampTentacle), typeof(WhippingVine), typeof(Lizardman), typeof(DarkWisp)];
         public static Terrain GetTerrain(Map map, Point3D location, int x, int y)
         {
             if (map == Map.Internal || x < 0 || y < 0 || x >= map.Width || y >= map.Height)
@@ -338,6 +343,20 @@ namespace Server.Custom.DynamicSpawns
                         Terrain.Sand => Construct(SandAnimals),
                         Terrain.Swamp => Construct(SwampAnimals),
                         Terrain.Snow => Construct(SnowAnimals),
+                        _ => null
+                    },
+                    SpawnMobs => terrain switch
+                    {
+                        Terrain.Water => null,
+                        Terrain.Cave => null,
+                        Terrain.Dirt => null,
+                        Terrain.Forest => Construct(ForestMobs),
+                        Terrain.Grass => Construct(GrassMobs),
+                        Terrain.Jungle => Construct(JungleMobs),
+                        Terrain.Rock => null,
+                        Terrain.Sand => Construct(SandMobs),
+                        Terrain.Swamp => Construct(SwampMobs),
+                        Terrain.Snow => Construct(SnowMobs),
                         _ => null
                     },
                 };

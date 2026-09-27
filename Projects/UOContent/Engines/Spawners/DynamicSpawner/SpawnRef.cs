@@ -111,7 +111,7 @@ namespace Server.Items
                 }
 
                 // Set this to how far you want the animal to drift from the proxy's location.
-                int proxyScatterRange = 20;
+                int proxyScatterRange = 0;
 
                 Point3D spawnPoint = savedLocation;
 
@@ -159,6 +159,14 @@ namespace Server.Items
     {
         [Constructible] public SpawnAnimals() {}
         public SpawnAnimals(Serial serial) : base(serial) {}
+        public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
+        public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
+    }
+
+    public class SpawnMobs : BaseProxySpawner
+    {
+        [Constructible] public SpawnMobs() {}
+        public SpawnMobs(Serial serial) : base(serial) {}
         public override void Serialize(IGenericWriter writer) { base.Serialize(writer); writer.Write(0); }
         public override void Deserialize(IGenericReader reader) { base.Deserialize(reader); int version = reader.ReadInt(); }
     }
