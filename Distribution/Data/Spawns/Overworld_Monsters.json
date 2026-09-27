@@ -481,21 +481,7 @@
     "count": 15,
     "minDelay": "00:05:00",
     "maxDelay": "00:10:00",
-    "homeRange": 100,
-    "walkingRange": 100,
-    "entries": [
-      { "name": "spawnmobs", "probability": 100, "maxCount": 25 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "ee37aeeb-51da-46a4-bb12-dba1181f39b4",
-    "location": [2176, 2062, 2],
-    "map": "Veridia",
-    "count": 15,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 100,
+    "homeRange": 50,
     "walkingRange": 100,
     "entries": [
       { "name": "spawnmobs", "probability": 100, "maxCount": 25 }
@@ -2133,7 +2119,7 @@
     "count": 15,
     "minDelay": "00:05:00",
     "maxDelay": "00:10:00",
-    "homeRange": 100,
+    "homeRange": 50,
     "walkingRange": 100,
     "entries": [
       { "name": "spawnmobs", "probability": 100, "maxCount": 25 }
@@ -2489,27 +2475,13 @@
   },
   {
     "$type": "Spawner",
-    "guid": "0ef91b64-c8d4-4e76-982a-762d5d92dbb6",
-    "location": [2302, 2063, 2],
-    "map": "Veridia",
-    "count": 15,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 100,
-    "walkingRange": 100,
-    "entries": [
-      { "name": "spawnmobs", "probability": 100, "maxCount": 25 }
-    ]
-  },
-  {
-    "$type": "Spawner",
     "guid": "fe9618a8-84ca-4777-8588-c9fd895ee8b8",
     "location": [2302, 1937, 10],
     "map": "Veridia",
     "count": 15,
     "minDelay": "00:05:00",
     "maxDelay": "00:10:00",
-    "homeRange": 100,
+    "homeRange": 50,
     "walkingRange": 100,
     "entries": [
       { "name": "spawnmobs", "probability": 100, "maxCount": 25 }
