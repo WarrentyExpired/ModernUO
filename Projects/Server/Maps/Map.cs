@@ -34,7 +34,7 @@ public enum MapRules
     FreeMovement = 0x0002,           // Anyone can move over anyone else without taking stamina loss
     BeneficialRestrictions = 0x0004, // Disallow performing beneficial actions on criminals/murderers
     HarmfulRestrictions = 0x0008,    // Disallow performing harmful actions on innocents
-    TrammelRules = FreeMovement | BeneficialRestrictions | HarmfulRestrictions,
+    TrammelRules = FreeMovement, //| BeneficialRestrictions | HarmfulRestrictions,
     FeluccaRules = None
 }
 
