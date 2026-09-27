@@ -2945,5 +2945,39 @@
       { "name": "spawncritters", "probability": 100, "maxCount": 30 },
       { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
     ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a6182c74-0b47-4343-b368-d00f8b3737ee",
+    "location": [401, 1711, 4],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 40 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 40 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "84fc6448-eaa2-4623-89f1-fcdebf1626b4",
+    "location": [411, 2004, 2],
+    "map": "Veridia",
+    "count": 150,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 100,
+    "walkingRange": 150,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 50 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 40 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 40 }
+    ]
   }
 ]
