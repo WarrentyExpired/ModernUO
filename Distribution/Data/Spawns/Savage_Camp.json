@@ -1,0 +1,336 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "0c3714e0-fe32-4be0-8972-6abf12505987",
+    "location": [1050, 2974, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savagerider", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e637f7c3-0b22-423e-a970-0c0606bfdf58",
+    "location": [1046, 3015, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1046, "y1": 3015, "z1": -128, "x2": 1047, "y2": 3016, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3ad20828-8a92-4a70-a341-7c59cb4144cd",
+    "location": [1090, 3039, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1090, "y1": 3039, "z1": -128, "x2": 1091, "y2": 3040, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9c6dab8f-843f-4b8b-80be-7004a58b95ba",
+    "location": [1083, 3027, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1083, "y1": 3027, "z1": -128, "x2": 1084, "y2": 3028, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "257b7ad0-83eb-485f-b972-d93ebe16c3af",
+    "location": [1104, 3028, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1104, "y1": 3028, "z1": -128, "x2": 1105, "y2": 3029, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6e39e4d7-d294-4bb6-af8b-7031e7ceba2a",
+    "location": [1081, 3001, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1081, "y1": 3001, "z1": -128, "x2": 1082, "y2": 3002, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "182eebf3-54de-4a78-8540-700545cf1eb2",
+    "location": [1071, 2999, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1071, "y1": 2999, "z1": -128, "x2": 1072, "y2": 3000, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 75, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ee471fce-c9a8-4d63-9852-1239d68118e8",
+    "location": [1071, 3004, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1071, "y1": 3004, "z1": -128, "x2": 1072, "y2": 3005, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 75, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8f4a6907-53be-462a-b5d7-90cc6aa9a784",
+    "location": [1071, 3011, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1071, "y1": 3011, "z1": -128, "x2": 1072, "y2": 3012, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 75, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4029b7fd-fb29-41a7-bcf0-f5520f159fbe",
+    "location": [1095, 3030, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1095, "y1": 3030, "z1": -128, "x2": 1096, "y2": 3031, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 75, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e05d3cd9-91d3-42ab-a611-668655461f1e",
+    "location": [1094, 3030, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1094, "y1": 3030, "z1": -128, "x2": 1095, "y2": 3031, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 75, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "69d724da-fc9d-49c1-8f54-ca81c8e797e6",
+    "location": [1124, 3027, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1124, "y1": 3027, "z1": -128, "x2": 1125, "y2": 3028, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f0ebfac8-7668-4009-be0d-964532cf9125",
+    "location": [1067, 3031, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1067, "y1": 3031, "z1": -128, "x2": 1068, "y2": 3032, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "17fee439-ffcb-499f-8dc8-a04afadc043c",
+    "location": [1064, 2966, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1064, "y1": 2966, "z1": -128, "x2": 1065, "y2": 2967, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ffa2da0b-1600-4456-920d-b3337ac15bc5",
+    "location": [1108, 3003, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savagerider", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "da1169ac-50fe-43f8-a2c7-695609a1e53b",
+    "location": [1044, 2990, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1044, "y1": 2990, "z1": -128, "x2": 1045, "y2": 2991, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ebd567af-ca10-4309-973f-4b2f93e3561d",
+    "location": [1095, 2991, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savagerider", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "97ebff91-956a-4fc9-8479-98a7bd9decb5",
+    "location": [1081, 2959, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savagerider", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b2273964-7a4a-4a04-ac4c-f341fc8829d7",
+    "location": [1114, 3014, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savagerider", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7d08012f-3bf2-4078-83e1-829e7098e030",
+    "location": [1055, 3005, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savagerider", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9d7b4582-5054-4ed3-b856-6ac0a7952bc6",
+    "location": [1079, 3022, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savagerider", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "02dc4f15-474f-4c39-aa64-de1c32e0a373",
+    "location": [1118, 3043, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "savage", "probability": 50, "maxCount": 1 },
+      { "name": "savagerider", "probability": 25, "maxCount": 1 },
+      { "name": "savageshaman", "probability": 25, "maxCount": 1 }
+    ]
+  }
+]

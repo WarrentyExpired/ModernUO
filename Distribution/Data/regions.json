@@ -2247,10 +2247,38 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Veridia",
+    "Name": "the Ruined Farm",
+    "Priority": 55,
+    "Area": [
+      { "x1": 2171, "y1": 2512, "x2": 2239, "y2": 2566 },
+      { "x1": 2171, "y1": 2566, "x2": 2245, "y2": 2619 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
     "Name": "the Orc Fort",
     "Priority": 55,
     "Area": [
       { "x1": 2098, "y1": 1935, "x2": 2113, "y2": 1951 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Savage Camp",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1022, "y1": 2941, "x2": 1136, "y2": 3051 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Veridia",
+    "Name": "the Church of Daemons",
+    "Priority": 55,
+    "Area": [
+      { "x1": 2170, "y1": 2237, "x2": 2290, "y2": 1311 }
     ]
   },
   {

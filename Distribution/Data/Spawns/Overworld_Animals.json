@@ -469,10 +469,10 @@
     "homeRange": 100,
     "walkingRange": 150,
     "entries": [
-      { "name": "bird", "probability": 100, "maxCount": 25 },
-      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
-      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
-      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "spawnbirds", "probability": 100, "maxCount": 3 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 10 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 10 }
     ]
   },
   {
@@ -2414,9 +2414,9 @@
     "walkingRange": 150,
     "entries": [
       { "name": "bird", "probability": 100, "maxCount": 25 },
-      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
-      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
-      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+      { "name": "spawnbirds", "probability": 100, "maxCount": 3 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 10 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 10 }
     ]
   },
   {
@@ -2431,9 +2431,9 @@
     "walkingRange": 150,
     "entries": [
       { "name": "bird", "probability": 100, "maxCount": 25 },
-      { "name": "spawnbirds", "probability": 100, "maxCount": 10 },
-      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
-      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
+      { "name": "spawnbirds", "probability": 100, "maxCount": 5 },
+      { "name": "spawncritters", "probability": 100, "maxCount": 10 },
+      { "name": "spawnanimals", "probability": 100, "maxCount": 10 }
     ]
   },
   {

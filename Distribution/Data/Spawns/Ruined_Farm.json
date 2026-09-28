@@ -1,0 +1,135 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "4a6c9d9d-0b18-4cf0-8e6c-e9266c4575d8",
+    "location": [2218, 2600, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ogre", "probability": 40, "maxCount": 1 },
+      { "name": "troll", "probability": 40, "maxCount": 1 },
+      { "name": "cyclops", "probability": 10, "maxCount": 1 },
+      { "name": "ettin", "probability": 40, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a9e0259c-bf51-4f9d-bc37-8545f08632f8",
+    "location": [2199, 2584, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ogre", "probability": 40, "maxCount": 1 },
+      { "name": "troll", "probability": 40, "maxCount": 1 },
+      { "name": "cyclops", "probability": 10, "maxCount": 1 },
+      { "name": "ettin", "probability": 40, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b0e4d926-1d4e-47a2-8a97-511b0dff4878",
+    "location": [2215, 2580, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ogre", "probability": 40, "maxCount": 1 },
+      { "name": "troll", "probability": 40, "maxCount": 1 },
+      { "name": "cyclops", "probability": 10, "maxCount": 1 },
+      { "name": "ettin", "probability": 40, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "28800190-6d72-4c12-b0e5-43522527ba89",
+    "location": [2207, 2530, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ogre", "probability": 40, "maxCount": 1 },
+      { "name": "troll", "probability": 40, "maxCount": 1 },
+      { "name": "cyclops", "probability": 10, "maxCount": 1 },
+      { "name": "ettin", "probability": 40, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9648e378-fe2c-4e9c-8504-b4f85a02af02",
+    "location": [2190, 2544, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ogre", "probability": 40, "maxCount": 1 },
+      { "name": "troll", "probability": 40, "maxCount": 1 },
+      { "name": "cyclops", "probability": 10, "maxCount": 1 },
+      { "name": "ettin", "probability": 40, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7173ca42-76c9-4eba-8602-50ef9bff8b4b",
+    "location": [2211, 2516, 7],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ogre", "probability": 40, "maxCount": 1 },
+      { "name": "troll", "probability": 40, "maxCount": 1 },
+      { "name": "cyclops", "probability": 10, "maxCount": 1 },
+      { "name": "ettin", "probability": 40, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "02d64c71-82cf-4cbf-9437-5b7584f34b98",
+    "location": [2209, 2558, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "cyclops", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "01af6256-6c09-4501-b6bb-bd7972bd3f10",
+    "location": [2189, 2523, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ogre", "probability": 40, "maxCount": 1 },
+      { "name": "troll", "probability": 40, "maxCount": 1 },
+      { "name": "cyclops", "probability": 10, "maxCount": 1 },
+      { "name": "ettin", "probability": 40, "maxCount": 1 }
+    ]
+  }
+]
