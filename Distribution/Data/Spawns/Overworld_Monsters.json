@@ -937,34 +937,6 @@
   },
   {
     "$type": "Spawner",
-    "guid": "c210ad21-d9c8-462a-bcfa-a79071614c30",
-    "location": [1803, 1320, 2],
-    "map": "Veridia",
-    "count": 15,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 100,
-    "walkingRange": 100,
-    "entries": [
-      { "name": "spawnmobs", "probability": 100, "maxCount": 10 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "ab0aede3-83f8-48df-b035-31943d72e46c",
-    "location": [1802, 1436, 2],
-    "map": "Veridia",
-    "count": 15,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 100,
-    "walkingRange": 100,
-    "entries": [
-      { "name": "spawnmobs", "probability": 100, "maxCount": 10 }
-    ]
-  },
-  {
-    "$type": "Spawner",
     "guid": "abad4142-c3f4-4274-8ba6-b0ee4acdd7a7",
     "location": [1802, 1186, 4],
     "map": "Veridia",
@@ -1273,30 +1245,16 @@
   },
   {
     "$type": "Spawner",
-    "guid": "f5fecec8-334f-4927-809a-97f2a66157d9",
-    "location": [1676, 1437, 2],
-    "map": "Veridia",
-    "count": 15,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 100,
-    "walkingRange": 100,
-    "entries": [
-      { "name": "spawnmobs", "probability": 100, "maxCount": 10 }
-    ]
-  },
-  {
-    "$type": "Spawner",
     "guid": "525c3e0f-3a59-4a91-b8cc-0104448923c0",
     "location": [1677, 1312, 2],
     "map": "Veridia",
-    "count": 15,
+    "count": 5,
     "minDelay": "00:05:00",
     "maxDelay": "00:10:00",
-    "homeRange": 100,
+    "homeRange": 50,
     "walkingRange": 100,
     "entries": [
-      { "name": "spawnmobs", "probability": 100, "maxCount": 25 }
+      { "name": "spawnmobs", "probability": 100, "maxCount": 5 }
     ]
   },
   {
@@ -3869,20 +3827,6 @@
     "$type": "Spawner",
     "guid": "24e34102-b2df-498e-9feb-f14acf35d85a",
     "location": [3642, 2480, 4],
-    "map": "Veridia",
-    "count": 5,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 50,
-    "walkingRange": 50,
-    "entries": [
-      { "name": "spawnmobs", "probability": 100, "maxCount": 5 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "b140813d-93c8-456f-a0e8-872e90989f54",
-    "location": [3531, 2627, 0],
     "map": "Veridia",
     "count": 5,
     "minDelay": "00:05:00",
