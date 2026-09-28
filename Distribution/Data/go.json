@@ -112,7 +112,8 @@
             { "name": "Teareek", "location": [414, 1855, 1], "map": "Veridia" },
             { "name": "Myrish", "location": [1559, 2941, 2], "map": "Veridia" },
             { "name": "Coldbarrow", "location": [3362, 2380,  2], "map": "Veridia" },
-            { "name": "Wharf's End", "location": [3501, 377, 2], "map": "Veridia" }
+            { "name": "Wharf's End", "location": [3501, 377, 2], "map": "Veridia" },
+            { "name": "Landow", "location": [1810, 1388, 2], "map": "Veridia" }
           ]
         }
       ]

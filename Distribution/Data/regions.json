@@ -1958,6 +1958,155 @@
     ]
   },
   {
+    "$type": "GreetingTownRegion",
+    "Map": "Veridia",
+    "Name": "the town of Landow",
+    "Priority": 50,
+    "Area": [
+      { "x1": 1782, "y1": 1349, "x2": 1844, "y2": 1400 },
+      { "x1": 1782, "y1": 1400, "x2": 1817, "y2": 1429 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the town of Landow", "Map": "Veridia" },
+    "Name": "the Landow West Guard House",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1778, "y1": 1409, "x2": 1784, "y2": 1415 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the town of Landow", "Map": "Veridia" },
+    "Name": "the Landow Healers",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1783, "y1": 1362, "x2": 1790, "y2": 1374 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the town of Landow", "Map": "Veridia" },
+    "Name": "the Landow Smith Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1793, "y1": 1355, "x2": 1803, "y2": 1360 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the town of Landow", "Map": "Veridia" },
+    "Name": "the Landow North Guards House",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1805, "y1": 1354, "x2": 1811, "y2": 1360 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the town of Landow", "Map": "Veridia" },
+    "Name": "the Landow Provisioners",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1797, "y1": 1376, "x2": 1805, "y2": 1388 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the town of Landow", "Map": "Veridia" },
+    "Name": "the Landow Leatherworks",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1791, "y1": 1393, "x2": 1805, "y2": 1399 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the town of Landow", "Map": "Veridia" },
+    "Name": "the Landow Bowyer",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1818, "y1": 1393, "x2": 1828, "y2": 1400 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the town of Landow", "Map": "Veridia" },
+    "Name": "the Landow East Guard House",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1830, "y1": 1394, "x2": 1836, "y2": 1400 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Name": "the Landow Docks",
+    "Priority": 55,
+    "Area": [
+      { "x1": 1708, "y1": 1457, "x2": 1747, "y2": 1516 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the Landow Docks", "Map": "Veridia" },
+    "Name": "the Dock Shipwright",
+    "Priority": 60,
+    "Area": [
+      { "x1": 1709, "y1": 1460, "x2": 1714, "y2": 1470 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the Landow Docks", "Map": "Veridia" },
+    "Name": "the Dock Storage Room",
+    "Priority": 60,
+    "Area": [
+      { "x1": 1709, "y1": 1471, "x2": 1714, "y2": 1482 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the Landow Docks", "Map": "Veridia" },
+    "Name": "the Dock Mapmaker",
+    "Priority": 60,
+    "Area": [
+      { "x1": 1721, "y1": 1473, "x2": 1734, "y2": 1478 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the Landow Docks", "Map": "Veridia" },
+    "Name": "the Dock Fish House",
+    "Priority": 60,
+    "Area": [
+      { "x1": 1741, "y1": 1471, "x2": 1746, "y2": 1482 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the Landow Docks", "Map": "Veridia" },
+    "Name": "the Dock Rest House",
+    "Priority": 60,
+    "Area": [
+      { "x1": 1741, "y1": 1460, "x2": 1746, "y2": 1470 }
+    ]
+  },
+  {
     "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
     "Name": "the Dungeon Shame - Level 1",
