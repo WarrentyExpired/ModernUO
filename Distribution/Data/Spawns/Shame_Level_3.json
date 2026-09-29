@@ -1,0 +1,1081 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "54a4b525-6d74-47ac-877b-441c211ea313",
+    "location": [1392, 291, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "fireelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "53248b26-ace5-418b-898c-c3e690a9cb13",
+    "location": [1355, 242, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e9fdc139-cec6-4bb8-9710-ae5d36ab879c",
+    "location": [1275, 290, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5f5e56b5-5578-456e-b971-049870dc7a4d",
+    "location": [1221, 228, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e9bb2db8-c5aa-492b-91ac-76c10643f7e2",
+    "location": [1219, 249, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "fireelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5fa81a2c-653d-4700-ba3f-09d5de3c1857",
+    "location": [1279, 274, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "airelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "64b8d3e0-cd38-4d44-8611-b7e305f0ba94",
+    "location": [1215, 238, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "fireelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "63903992-334f-4c5e-a2bf-289844dd16b9",
+    "location": [1264, 269, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c8b63d4b-0124-4349-8516-161bbe51a113",
+    "location": [1253, 258, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "62d6110b-a83d-4bbe-9a8b-6d5ae41cd6c5",
+    "location": [1231, 257, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "05eda957-4059-4ce3-a8b0-145d7e4bbaf9",
+    "location": [1283, 225, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "785ee0b9-dae1-47a8-a061-635677bead00",
+    "location": [1298, 187, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "fireelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f5ac1d22-b128-41d9-afdb-062a251d99fc",
+    "location": [1347, 265, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2ee13a74-6eae-4a4f-8a62-3e9cb05b9f49",
+    "location": [1379, 268, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "22a461e8-ef6e-4268-a4a1-bb349ee3fe4d",
+    "location": [1247, 230, 5],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3a456a1d-d2f1-4898-8263-07907c29e6e5",
+    "location": [1335, 253, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a3e1dc07-6a5d-43a7-9524-bce49af4673a",
+    "location": [1379, 285, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "earthelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f05bbefc-fc15-4c47-b594-e0c32866d506",
+    "location": [1301, 290, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0b3aac5a-d338-4e20-874f-a714b6872efc",
+    "location": [1250, 286, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "poisonelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ab76fcb6-950f-4878-b044-0824844a0765",
+    "location": [1217, 221, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "fireelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "50878167-6037-4461-8091-de72604b58fa",
+    "location": [1253, 205, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1253, "y1": 205, "z1": -128, "x2": 1254, "y2": 206, "z2": 128 },
+    "walkingRange": 1,
+    "entries": [
+      { "name": "lich", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7c3225c8-f824-4748-ad7d-cb031e12b33f",
+    "location": [1260, 210, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "116ceb36-97a2-4197-add3-e549de507a73",
+    "location": [1249, 232, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1245, "y1": 228, "z1": 45, "x2": 1254, "y2": 237, "z2": 128 },
+    "walkingRange": -1,
+    "entries": [
+      { "name": "daemon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "286e4067-ad12-4b44-b8d7-3ed9e5eafd5a",
+    "location": [1257, 232, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1257, "y1": 232, "z1": -128, "x2": 1258, "y2": 233, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0f04c85b-2c78-4f25-9324-632433609f4d",
+    "location": [1422, 282, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d2eae8ef-3c07-4ed6-a82c-dd0fade241c8",
+    "location": [1427, 271, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "poisonelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a136d16c-5f3e-4182-a2c7-0e93b32eac8f",
+    "location": [1386, 242, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1386, "y1": 242, "z1": 22, "x2": 1387, "y2": 243, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "99f7dd00-7945-492b-b14f-f1ad6c6e577e",
+    "location": [1379, 241, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1379, "y1": 241, "z1": 22, "x2": 1380, "y2": 242, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "16822db7-9d5e-42a8-a4b3-83c0c81f3ee4",
+    "location": [1392, 234, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cb694b50-4047-4da5-86b1-cefc6a4cf487",
+    "location": [1360, 244, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "02a65d08-f9e1-46e2-a1c4-43a2366136a8",
+    "location": [1391, 234, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1391, "y1": 234, "z1": 22, "x2": 1392, "y2": 235, "z2": 128 },
+    "walkingRange": -1,
+    "entries": [
+      { "name": "evilmagelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "aeb04b41-7c90-41a7-b4bf-7cd092cc2023",
+    "location": [1382, 249, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1382, "y1": 249, "z1": 22, "x2": 1383, "y2": 250, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6fd37b10-994b-499b-b27a-a0a50f1347db",
+    "location": [1228, 212, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ee644fd9-168d-4e31-9c8e-f619a0e9f426",
+    "location": [1322, 263, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "fireelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f6a6f4ab-4605-4613-b6be-c96228de6007",
+    "location": [1248, 232, 25],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1248, "y1": 232, "z1": 25, "x2": 1249, "y2": 233, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "evilmagelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ec3e2130-d12d-46ce-add1-f50f7732f806",
+    "location": [1379, 218, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bfbf2f90-2b03-4dab-842c-a50ba293cbde",
+    "location": [1384, 202, -10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "fireelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7653c460-8172-4d47-b481-5859cbd167aa",
+    "location": [1246, 241, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1246, "y1": 241, "z1": -128, "x2": 1247, "y2": 242, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1afb807a-bce7-46fa-a87e-10d67a1bc9bf",
+    "location": [1296, 250, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "zombie", "probability": 85, "maxCount": 3 },
+      { "name": "rottingcorpse", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6042b224-65d3-4ff4-a6be-7f73c58d001c",
+    "location": [1299, 249, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "poisonelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0596512a-c42f-4c29-afd6-bf59470ff1a2",
+    "location": [1279, 234, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 10,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b75411ec-2e13-4a6f-8521-a0a33d8c3f54",
+    "location": [1292, 205, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "30f42919-71c1-4ada-a688-9d982e65959e",
+    "location": [1364, 219, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cac0a484-d213-4199-a50b-e2cc4b47af62",
+    "location": [1381, 249, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1381, "y1": 249, "z1": 22, "x2": 1382, "y2": 250, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "22aa9ffd-e32e-4a28-ae3e-0bd6d786a3fe",
+    "location": [1364, 290, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "fireelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5c6df56a-19b5-48b4-bb51-07c895b1fa09",
+    "location": [1390, 249, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1390, "y1": 249, "z1": 22, "x2": 1391, "y2": 250, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "db3280a4-0ffe-4409-833a-e777d479d5d3",
+    "location": [135, 109, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": []
+  },
+  {
+    "$type": "Spawner",
+    "guid": "57c2a42e-41c6-4473-aad0-2d622d021337",
+    "location": [1391, 234, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1391, "y1": 234, "z1": -128, "x2": 1392, "y2": 235, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "evilmagelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d37b8df8-13e7-41eb-b310-4bd28a800318",
+    "location": [1383, 232, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3065f7c7-81a7-4dd9-80d4-bd21527f3371",
+    "location": [1383, 236, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1383, "y1": 236, "z1": -128, "x2": 1384, "y2": 237, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6c5856ff-4c31-43dd-88d5-22d02edaa609",
+    "location": [1389, 250, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1a554087-553b-4136-aba6-368b1c7651e3",
+    "location": [1405, 277, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "airelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d45a65ee-09c0-40d9-85cd-b3c658afeffb",
+    "location": [1383, 242, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "795ea033-d293-4adf-b121-4275c4ccd3c6",
+    "location": [1383, 242, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "987ecd5f-d994-4d96-82ed-edc7031006e0",
+    "location": [1415, 241, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ff7faafe-dc1b-45a7-98e6-c2b59657ccc6",
+    "location": [1405, 264, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "485629ae-e86f-4a6e-86af-fcbd1f7db7c1",
+    "location": [1406, 219, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c4fe19dc-50e8-4be2-b6fb-0adcf6d27836",
+    "location": [1411, 229, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8cbe3357-4c7b-40a9-b869-ca7645e9b20c",
+    "location": [1403, 199, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "earthelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a0ec3701-fcdf-4fa1-a806-8b0edb07713a",
+    "location": [1403, 196, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "87fa54f5-c057-4562-a925-84065cf2476c",
+    "location": [1394, 184, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dbc7dbcf-44c2-4f0d-abfe-1c2acb40ed0e",
+    "location": [1381, 186, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "41332133-ca51-4df1-ade2-f2923c8eafd2",
+    "location": [1297, 290, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "89d966d1-ce2c-4b81-8f96-0ac2714e729e",
+    "location": [1366, 187, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "earthelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8aacf64e-c62c-4354-bebd-acc336e36c42",
+    "location": [1352, 201, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "fireelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c7de55da-5b85-4673-929b-da13c30b7439",
+    "location": [1339, 196, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2ab31890-03e2-4ad5-90fb-9f0830219d4f",
+    "location": [1412, 219, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d768b795-08c3-4b47-a22a-6d3d30440de7",
+    "location": [1340, 188, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "earthelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b1279525-bb06-4ed8-90ed-84c066dccbce",
+    "location": [1361, 192, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "scorpion", "probability": 33, "maxCount": 1 },
+      { "name": "slime", "probability": 33, "maxCount": 1 },
+      { "name": "brigand", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bb5f58be-6e44-4b4c-8aad-8fad42aef6f9",
+    "location": [1324, 189, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "scorpion", "probability": 100, "maxCount": 1 },
+      { "name": "slime", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dee9af41-6b88-43bc-8614-5bdce850c95d",
+    "location": [1237, 248, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 12,
+    "entries": [
+      { "name": "seaserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f52c8f37-1096-4504-b115-ed6f61b53922",
+    "location": [1302, 276, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 10,
+    "entries": [
+      { "name": "kraken", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3f4538c2-eee1-42d5-9d17-c22e3fee7178",
+    "location": [1381, 249, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0a43e440-ff7f-4361-8179-bf306c6360ac",
+    "location": [1372, 257, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "deepseaserpent", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "fc5afbdf-75f9-4677-96bf-51da4f5f1f6d",
+    "location": [1314, 234, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "eldergazer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "110dbbb7-7113-4395-891a-d5ab741eaed8",
+    "location": [1315, 235, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "earthelemental", "probability": 99, "maxCount": 1 },
+      { "name": "evilmagelord", "probability": 1, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "202e9170-c7c3-4c2e-9825-825268db44a6",
+    "location": [1314, 227, 0],
+    "map": "Underworld",
+    "count": 4,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1314, "y1": 227, "z1": -128, "x2": 1315, "y2": 228, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "giantrat", "probability": 100, "maxCount": 4 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e4ab0fb6-e17b-4c8f-9700-b9bdcbf83669",
+    "location": [1307, 227, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 3,
+    "entries": [
+      { "name": "eldergazer", "probability": 100, "maxCount": 2 }
+    ]
+  }
+]

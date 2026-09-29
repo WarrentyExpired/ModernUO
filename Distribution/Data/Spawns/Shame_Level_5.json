@@ -1,0 +1,982 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "40b7b65d-12f4-4865-a22a-990ecb0ceb19",
+    "location": [1310, 368, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 3,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "bloodelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6c8f3675-5048-45c8-b6ba-baa728500fdf",
+    "location": [1361, 361, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 10,
+    "entries": [
+      { "name": "deepseaserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "926c0b00-fa6e-4b7d-899b-742c18f8aa78",
+    "location": [1294, 361, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 10,
+    "entries": [
+      { "name": "kraken", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5a331640-1ce8-48c7-b825-45ecb0af129a",
+    "location": [1289, 406, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 10,
+    "entries": [
+      { "name": "kraken", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ccfd7584-7e60-422b-a82a-7cfffb174edf",
+    "location": [1253, 346, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "69b559e9-c592-4a1c-89a0-2fc0f0f61e61",
+    "location": [1264, 343, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "29252e6d-9c93-4c75-99e3-de40867b752b",
+    "location": [1272, 343, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "acidelemental", "probability": 33, "maxCount": 1 },
+      { "name": "poisonelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7dc5c1b4-2f90-437c-b87c-590529aff429",
+    "location": [1266, 388, 5],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f7ea584d-c6b1-4b13-bf20-9096b6ec8fdf",
+    "location": [1267, 379, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "04:00:00",
+    "maxDelay": "05:00:00",
+    "spawnBounds": { "x1": 1267, "y1": 379, "z1": -128, "x2": 1268, "y2": 380, "z2": 128 },
+    "walkingRange": 10,
+    "entries": [
+      { "name": "nightmare", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "204e1a30-0a12-4433-aab2-7cb22f0f27b3",
+    "location": [1274, 385, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "acidelemental", "probability": 33, "maxCount": 1 },
+      { "name": "poisonelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c9d6593f-107a-4722-86d3-bd8546fe9c23",
+    "location": [1261, 383, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "acidelemental", "probability": 33, "maxCount": 1 },
+      { "name": "poisonelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "32774803-f5ab-4006-ba2f-8c9a8bfd128d",
+    "location": [1291, 333, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c80cdd56-8665-4b3a-a0a2-843e764101bd",
+    "location": [1283, 425, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "acidelemental", "probability": 33, "maxCount": 1 },
+      { "name": "poisonelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "524ad1ac-0625-43a6-8259-adab6f0da6fb",
+    "location": [1256, 419, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6db63de0-c9d6-44a7-8d20-f0c564543b4a",
+    "location": [1235, 424, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "acidelemental", "probability": 33, "maxCount": 1 },
+      { "name": "poisonelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ba0e975a-da79-4500-b535-07a4b1fe7ce3",
+    "location": [1228, 413, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9699fc27-d3b7-4720-a88a-a60a151e9c21",
+    "location": [1282, 322, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d0bb54c5-f2d6-455f-941a-e4e7c6044bc8",
+    "location": [1271, 323, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f37e38bf-849c-44d0-b783-e54370842983",
+    "location": [1211, 366, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "58ba91ce-982a-4b6e-900a-8bcaf0a91d85",
+    "location": [1211, 365, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "41a5f6ee-d9a8-4478-929f-d2864af6fcd1",
+    "location": [1212, 427, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "acidelemental", "probability": 33, "maxCount": 1 },
+      { "name": "poisonelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b845a720-3a27-4db9-82e6-1961dd388ef3",
+    "location": [1201, 412, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "acidelemental", "probability": 33, "maxCount": 1 },
+      { "name": "poisonelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4a4bd9ca-18cb-4631-a2c1-0614db86a9e3",
+    "location": [1221, 404, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "aff3930b-12b0-4d85-a7d0-162ff85d2540",
+    "location": [1221, 396, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "acidelemental", "probability": 33, "maxCount": 1 },
+      { "name": "poisonelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5c6544e4-bdd8-4804-b815-9e2c9e1743d8",
+    "location": [1204, 393, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "eb5c973d-8be8-48ed-b62d-620007f8e1d9",
+    "location": [1205, 374, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "28786b66-a754-4150-8f6c-ba4b2ca500b2",
+    "location": [1225, 323, -10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "bloodelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "558e6082-0280-449b-95c6-ce8ac4ee7544",
+    "location": [1212, 336, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fd4d75b7-28c3-447c-9383-263f21378138",
+    "location": [1215, 341, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "acidelemental", "probability": 33, "maxCount": 1 },
+      { "name": "poisonelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9446900d-d790-4368-8b2c-306858325865",
+    "location": [1232, 343, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "acidelemental", "probability": 33, "maxCount": 1 },
+      { "name": "poisonelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "88cbe2d8-1c86-438c-b34d-2d17485a6a5a",
+    "location": [1253, 324, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "bloodelemental", "probability": 33, "maxCount": 1 },
+      { "name": "acidelemental", "probability": 33, "maxCount": 1 },
+      { "name": "poisonelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b61197bc-8a86-4327-a1cf-cda8defb6591",
+    "location": [1313, 331, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "842e8788-d960-43c9-ad72-bf547e6db6a4",
+    "location": [1372, 361, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "02d705c8-84e8-461d-b737-868ae50b0615",
+    "location": [1419, 422, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "acidelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "928e5367-041d-4977-b766-16de20e35f8c",
+    "location": [1371, 362, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bloodelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "afaafb8c-e0fd-4be7-8924-77289bfd7eaa",
+    "location": [1419, 396, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1a4b8ce6-a569-478e-979e-98f94909f7dc",
+    "location": [1390, 362, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "62b7240d-e20c-4450-a1c6-2ab0b2dded34",
+    "location": [1393, 350, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5aae0014-571a-4a50-bfe0-1a280c4178ee",
+    "location": [1383, 342, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "882076cc-28f2-4199-9da6-980712129304",
+    "location": [1369, 338, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "49d924a1-2b38-4b78-88db-cd44159c9f4b",
+    "location": [1394, 362, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4662b7ef-9ee8-4d4e-9bb3-4733575e0a7a",
+    "location": [1361, 321, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "acidelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4518dd51-c55a-4338-bff3-b1fe60ef0682",
+    "location": [1347, 346, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "da617c19-a183-415c-a4d8-8dd5880931c0",
+    "location": [1349, 353, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c5e2388d-ee08-4e6a-9f80-39bdd7ff976e",
+    "location": [1340, 352, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "543b5dc6-6e1f-4390-99f8-5e9a66cd461d",
+    "location": [1335, 334, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d1c5690f-44c5-4957-adc7-29c1aec1ab8d",
+    "location": [1324, 346, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b0e45d9f-b8e5-4a69-852d-373681c3b843",
+    "location": [1317, 353, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 3,
+    "walkingRange": 3,
+    "entries": [
+      { "name": "bloodelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dc8f54a1-d4eb-422e-9930-d26cc03cc60a",
+    "location": [1304, 407, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "91d77f95-c754-412b-af35-0757de1cd8e9",
+    "location": [1305, 415, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4428367a-28f1-4c41-a89e-2dc340f84ee2",
+    "location": [1323, 417, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "bloodelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b2f19931-af58-44a4-8aff-5a372d8660f3",
+    "location": [1330, 411, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3b5cddb0-3d4b-4fdd-97bb-411aa5454fb9",
+    "location": [1341, 424, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2867de1a-8228-420b-a6ae-47cc1ded2bce",
+    "location": [1362, 426, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "56d2fdbf-02d2-475f-9a5a-b36449a57aa6",
+    "location": [1370, 392, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "eldergazer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bf2051d0-098d-4412-8e69-ea15e0f9b2aa",
+    "location": [1382, 418, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "52092a0f-e3ee-4793-af4c-1584b232ff37",
+    "location": [1399, 419, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "77ba07fc-dc6e-462d-9475-e22c83e319c9",
+    "location": [1420, 376, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6f6f5700-6f2a-4c58-8855-bd29cf7e3122",
+    "location": [98, 136, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fa031b2d-d95b-4f35-8df5-a868686f0666",
+    "location": [1412, 411, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3111f7a0-3b1e-4c78-8ffb-3fdb9349b861",
+    "location": [1427, 354, -10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "airelemental", "probability": 33, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 33, "maxCount": 1 },
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bbf24669-db59-4b2e-9952-ce2421fe4a14",
+    "location": [1268, 384, 5],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 7,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "eldergazer", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b24c38d8-6c6b-41cf-88b2-e3345c492edb",
+    "location": [1427, 341, -10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantserpent", "probability": 33, "maxCount": 1 },
+      { "name": "giantspider", "probability": 33, "maxCount": 1 },
+      { "name": "scorpion", "probability": 33, "maxCount": 1 }
+    ]
+  }
+]
