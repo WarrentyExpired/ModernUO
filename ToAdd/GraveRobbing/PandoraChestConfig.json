@@ -1,0 +1,62 @@
+{
+  "Spawn": {
+    "Levels": 5,
+    "BaseSpawnChance": 0.08,
+    "MiningFactor": 0.0006,
+    "SpiritSpeakFactor": 0.0008,
+    "NecromancyFactor": 0.0008,
+    "MaxSpawnChance": 0.6
+  },
+  "LevelQualityBase": [0.0, 0.10, 0.25, 0.45, 0.85],
+  "GoldRangeByLevel": [
+    { "Min": 10, "Max": 60 },
+    { "Min": 30, "Max": 120 },
+    { "Min": 80, "Max": 300 },
+    { "Min": 200, "Max": 1200 },
+    { "Min": 1500, "Max": 5000 }
+  ],
+  "RareDrop": { "BaseChance": 0.02 },
+  "Reagents": {
+    "MinPerLevel": [1, 2, 3, 4, 6],
+    "MaxPerLevel": [2, 4, 6, 8, 12]
+  },
+  "Weights": {
+    "Mining": 0.6,
+    "SpiritSpeak": 1.2,
+    "Necromancy": 1.2,
+    "Level": 0.1
+  },
+  "Guardian": {
+    "BaseChance": 0.05,
+    "LevelMultiplier": 0.06,
+    "MaxChance": 0.95,
+    "HpMultiplierPerQuality": 1.0,
+    "DamageMultiplierPerQuality": 0.8
+  },
+  "Logging": {
+    "Enabled": true,
+    "MaxFileSizeBytes": 10485760,
+    "FlushIntervalMs": 500,
+    "LocationCooldownSeconds": 60,
+    "AccountCooldownSeconds": 30
+  },
+  "Magic": {
+    "Enabled": true,
+    "BaseChanceByLevelMultiplier": 0.02,
+    "DecayMinutesIfDropped": 30,
+    "MaxAffixesByLevelBase": 1,
+    "TreasureMapChancePerLevel": 0.03,
+    "AffixRanges": {
+      "BonusStr": { "Min": 1, "Max": 5 },
+      "BonusDex": { "Min": 1, "Max": 5 },
+      "BonusHits": { "Min": 1, "Max": 10 },
+      "WeaponDamage": { "Min": 1, "Max": 10 },
+      "ArmorPhysical": { "Min": 1, "Max": 10 }
+    }
+  },
+  "MapMultiplier": {
+    "Felucca": 1.15,
+    "Trammel": 1.0
+  },
+  "HueByLevel": [0, 114, 114, 118, 118]
+}
