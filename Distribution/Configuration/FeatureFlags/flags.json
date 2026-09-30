@@ -110,11 +110,11 @@
   {
     "Key": "young_player_system",
     "Description": "Enable the young player system",
-    "Enabled": true,
+    "Enabled": false,
     "DefaultEnabled": true,
     "Category": "System",
-    "LastModified": "2026-09-21T12:58:21.3413169Z",
-    "LastModifiedBy": "System"
+    "LastModified": "2026-09-29T17:27:58.2253397Z",
+    "LastModifiedBy": "Dungeon Keeper"
   },
   {
     "Key": "bitmap_pathfinding_cache",
