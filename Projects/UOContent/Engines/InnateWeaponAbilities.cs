@@ -31,7 +31,7 @@ namespace Server.Combat
                 return;
 
             // Ensure you drop this back down to 0.10 if you raised it for testing!
-            double procChance = 1.0;
+            double procChance = 0.10;
 
             if (Utility.RandomDouble() >= procChance)
                 return;

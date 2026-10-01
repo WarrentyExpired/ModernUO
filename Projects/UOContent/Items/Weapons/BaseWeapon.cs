@@ -2231,8 +2231,8 @@ public abstract partial class BaseWeapon
             {
                 attacker.ApplyPoison(defender, Poison.Regular);
             }
-            Server.Combat.InnateWeaponAbilities.CheckProc(attacker, defender, this);
         }
+        Server.Combat.InnateWeaponAbilities.CheckProc(attacker, defender, this);
     }
 
     public virtual double GetAosDamage(Mobile attacker, int bonus, int dice, int sides)
