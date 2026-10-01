@@ -1,5 +1,8 @@
 using System;
+using System.Collections.Generic;
+using Server;
 using Server.Commands;
+using Server.Mobiles;
 using Server.Network;
 
 namespace Server.Gumps
@@ -11,12 +14,36 @@ namespace Server.Gumps
         public static void Configure()
         {
             CommandSystem.Register("BuildWorld", AccessLevel.GameMaster, WorldBuilding_OnCommand);
+            CommandSystem.Register("WipeWildMobs", AccessLevel.GameMaster, WipeWildMobs_OnCommand);
         }
 
         [Usage("BuildWorld")]
         public static void WorldBuilding_OnCommand(CommandEventArgs e)
         {
             e.Mobile.SendGump(new WorldBuildingGump(e.Mobile));
+        }
+
+        [Usage("WipeWildMobs")]
+        [Description("Deletes all uncontrolled BaseCreatures (excluding Player Vendors) to prep for a clean spawn.")]
+        public static void WipeWildMobs_OnCommand(CommandEventArgs e)
+        {
+            List<Mobile> toDelete = new List<Mobile>();
+
+            foreach (Mobile m in World.Mobiles.Values)
+            {
+                // Exclude controlled pets, summoned creatures, and Player Vendors
+                if (m is BaseCreature bc && !bc.Controlled && !bc.Summoned && !(bc is PlayerVendor))
+                {
+                    toDelete.Add(bc);
+                }
+            }
+
+            foreach (Mobile m in toDelete)
+            {
+                m.Delete();
+            }
+
+            e.Mobile.SendMessage(0x3F, $"Wiped {toDelete.Count} wild creatures from the world.");
         }
 
         public WorldBuildingGump(Mobile from) : base(50, 50)
@@ -46,6 +73,10 @@ namespace Server.Gumps
             AddLabel(55, y, 1152, "Generate Spawners (Json)");
             y += 30;
 
+            AddButton(20, y, 4005, 4007, 4, GumpButtonType.Reply, 0);
+            AddLabel(55, y, 1152, "Wipe Wild Creatures (Cleanup)");
+            y += 30;
+
             AddLabel(20, y, 33, "--- Danger Zone ---");
             y += 30;
 
@@ -72,17 +103,27 @@ namespace Server.Gumps
             {
                 case 1: InvokeCommand("TelGen", from); break;
                 case 2: InvokeCommand("Decorate", from); break;
-                case 3: InvokeCommand("IS Data/Spawns/Overworld/**.json", from);
-                        InvokeCommand("IS Data/Spawns/Underworld/**.json", from);
-                        break;
-                case 7: InvokeCommand("ClearAll", from); break;
+                case 3:
+                    InvokeCommand("IS Data/Spawns/Overworld/**.json", from);
+                    InvokeCommand("IS Data/Spawns/Underworld/**.json", from);
+                    break;
+                case 4: InvokeCommand("WipeWildMobs", from); break;
+
+                case 7:
+                    InvokeCommand("ClearAll", from);
+                    break;
 
                 case 8: // THE FULL AUTOMATION
                     from.SendMessage(0x3F, "Starting full world population...");
+
+                    // Surgically remove orphaned proxy spawns without wiping player data
+                    InvokeCommand("WipeWildMobs", from);
+
                     InvokeCommand("TelGen", from);
                     InvokeCommand("Decorate", from);
                     InvokeCommand("IS Data/Spawns/Overworld/**.json", from);
                     InvokeCommand("IS Data/Spawns/Underworld/**.json", from);
+
                     from.SendMessage(0x3F, "World population complete.");
                     break;
             }
