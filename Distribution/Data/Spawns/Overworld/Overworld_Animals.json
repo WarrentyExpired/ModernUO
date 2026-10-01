@@ -69,23 +69,6 @@
   },
   {
     "$type": "Spawner",
-    "guid": "079f5a36-ff14-41dc-b2bf-50994b897b1b",
-    "location": [57, 75, 1],
-    "map": "Veridia",
-    "count": 150,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 100,
-    "walkingRange": 150,
-    "entries": [
-      { "name": "bird", "probability": 100, "maxCount": 25 },
-      { "name": "spawnbirds", "probability": 100, "maxCount": 5 },
-      { "name": "spawncritters", "probability": 100, "maxCount": 30 },
-      { "name": "spawnanimals", "probability": 100, "maxCount": 30 }
-    ]
-  },
-  {
-    "$type": "Spawner",
     "guid": "8ad2054c-a8a1-4634-9310-0e4e6250ce2b",
     "location": [851, 1862, 2],
     "map": "Veridia",

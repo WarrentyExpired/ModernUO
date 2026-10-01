@@ -675,18 +675,6 @@
   },
   {
     "$type": "Spawner",
-    "guid": "db3280a4-0ffe-4409-833a-e777d479d5d3",
-    "location": [135, 109, 1],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": []
-  },
-  {
-    "$type": "Spawner",
     "guid": "57c2a42e-41c6-4473-aad0-2d622d021337",
     "location": [1391, 234, 0],
     "map": "Underworld",

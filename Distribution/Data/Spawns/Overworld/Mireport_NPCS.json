@@ -99,18 +99,6 @@
   },
   {
     "$type": "Spawner",
-    "guid": "b6922207-4249-4361-b287-1e8f909f9cce",
-    "location": [81, 90, 1],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": []
-  },
-  {
-    "$type": "Spawner",
     "guid": "a327d25c-9074-4677-a275-80e08d733bcd",
     "location": [409, 1268, 5],
     "map": "Veridia",
@@ -150,18 +138,6 @@
     "entries": [
       { "name": "bard", "probability": 100, "maxCount": 1 }
     ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "4c35f132-a173-4fce-ba31-9cb34dd24db2",
-    "location": [81, 90, 1],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": []
   },
   {
     "$type": "Spawner",
@@ -274,18 +250,6 @@
     "entries": [
       { "name": "mapmaker", "probability": 100, "maxCount": 1 }
     ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "d27aae1d-e95e-4098-8104-e6414f43559b",
-    "location": [81, 90, 1],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": []
   },
   {
     "$type": "Spawner",

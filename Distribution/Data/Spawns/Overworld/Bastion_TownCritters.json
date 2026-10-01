@@ -110,18 +110,6 @@
   },
   {
     "$type": "Spawner",
-    "guid": "685df890-223b-43dc-aa93-b10992725be4",
-    "location": [31, 74, 1],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": []
-  },
-  {
-    "$type": "Spawner",
     "guid": "0e7c3e45-0a73-4a38-84cc-bffcd18e89fd",
     "location": [1852, 1938, 0],
     "map": "Veridia",

@@ -1,0 +1,366 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "bc691d0f-a824-49be-9829-11841cf88a6a",
+    "location": [690, 1968, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "92a8316e-faf5-4824-94e6-471b4cd8c4f2",
+    "location": [1098, 1651, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c45c8c47-5e80-4f46-8cc9-6922135d554f",
+    "location": [1329, 1397, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a535df30-72e0-471c-bdaf-d1dd2c85da38",
+    "location": [1621, 1326, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "50e1a56e-ed35-4e5f-ba5e-99b8b142fe0c",
+    "location": [1286, 1329, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f651836f-f8b1-45db-9879-5c5a278286d6",
+    "location": [1586, 1996, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d4e0fad3-a177-4ec9-96ea-73aec4b2c2f7",
+    "location": [1382, 1003, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5af41c37-5df3-409f-9b41-33d22abeeaf0",
+    "location": [1128, 1267, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b1432831-1a89-4026-8cb9-b1cf911c2237",
+    "location": [630, 2606, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 100,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d6aa5919-204a-49b0-995d-458af6417e34",
+    "location": [3404, 3451, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ad2529ad-2321-4efc-8bad-8209baead94e",
+    "location": [2554, 1172, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "487eef03-6cd3-4a9d-8204-8cb6be7aa16b",
+    "location": [2932, 2343, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5a7cade6-86a9-4907-994b-b2c3ad223787",
+    "location": [1061, 1582, 4],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "47b174c1-3269-4efb-b4c4-83f069be1864",
+    "location": [895, 1287, 3],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8feb2880-e51f-4b2d-bb87-e2c52d611700",
+    "location": [949, 2125, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8aa21831-9b1a-443e-8701-896a4bfe1900",
+    "location": [1237, 2268, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1172386a-938b-4348-9f51-a57594626e75",
+    "location": [1284, 2478, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "69295fe8-cea3-4515-bfd6-333953968169",
+    "location": [1498, 2572, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "35f81178-b7a7-42d3-be16-6952706064d4",
+    "location": [1623, 2501, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ff5c92e7-fb6a-4721-9d34-7e6739e28214",
+    "location": [1973, 2408, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "69cd22c9-68e3-4fe8-bfcb-bf334885112f",
+    "location": [2038, 2098, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ba365bbe-a0dc-494f-bc32-9ba9b09e581b",
+    "location": [1567, 2797, 2],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "34cd687f-6473-4126-82d5-0388211ea941",
+    "location": [2336, 1676, 10],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "59796056-3128-46ab-b188-5182dc2ea686",
+    "location": [2330, 1268, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "07459397-aabf-4f8d-bee6-a7cad72ccced",
+    "location": [3191, 2783, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7802d6bf-8402-4a4a-959e-98c944d7be34",
+    "location": [659, 3390, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 30,
+    "entries": [
+      { "name": "wanderinghealer", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

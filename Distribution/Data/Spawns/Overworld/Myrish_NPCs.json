@@ -155,18 +155,6 @@
   },
   {
     "$type": "Spawner",
-    "guid": "00612199-57ad-4369-905f-68aca411208b",
-    "location": [48, 74, 1],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": []
-  },
-  {
-    "$type": "Spawner",
     "guid": "839d0d81-bdcd-4175-adc6-4a1c73248c9b",
     "location": [1534, 2961, 7],
     "map": "Veridia",
@@ -276,18 +264,6 @@
     "entries": [
       { "name": "monk", "probability": 100, "maxCount": 1 }
     ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "9a57c4c1-1350-445c-a554-ae904cb853a9",
-    "location": [48, 74, 1],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": []
   },
   {
     "$type": "Spawner",
