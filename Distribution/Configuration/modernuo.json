@@ -113,6 +113,7 @@
     "exileBestiary.damage.markTickSeconds": "00:00:02",
     "exileBestiary.damage.markTickPercent": "0.01",
     "exileBestiary.drop.chance": "-1.0",
-    "exileBestiary.drop.pityThreshold": "40"
+    "exileBestiary.drop.pityThreshold": "40",
+    "visibleDamage": "True"
   }
 }
