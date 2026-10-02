@@ -3819,7 +3819,7 @@ namespace Server.Mobiles
         {
             var tc = Core.TickCount;
 
-            if (!Controlled && !Summoned && Region is Server.Regions.DungeonRegion)
+            if (!Controlled && !Summoned && Region is Server.Regions.GreetingDungeonRegion)
             {
                 if (Combatant == null)
                 {

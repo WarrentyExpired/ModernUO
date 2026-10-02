@@ -2347,7 +2347,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Brigand Camp",
     "Priority": 55,
@@ -2356,7 +2356,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Evil Mage Fortress",
     "Priority": 55,
@@ -2366,7 +2366,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Ratman Fortress",
     "Priority": 55,
@@ -2375,7 +2375,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Tower of the Lich",
     "Priority": 55,
@@ -2384,7 +2384,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Church of Ruin",
     "Priority": 55,
@@ -2394,7 +2394,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Ruined Farm",
     "Priority": 55,
@@ -2404,7 +2404,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Orc Fort",
     "Priority": 55,
@@ -2413,7 +2413,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Savage Camp",
     "Priority": 55,
@@ -2422,7 +2422,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Church of Daemons",
     "Priority": 55,
@@ -2431,7 +2431,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Rivermouth Cemetery",
     "Priority": 55,
@@ -2441,7 +2441,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Myrish Cemetery",
     "Priority": 55,
@@ -2450,7 +2450,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Bastion Cemetery",
     "Priority": 55,
@@ -2460,7 +2460,7 @@
     ]
   },
   {
-    "$type": "GreetingDungeonRegion",
+    "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Mireport Cemetery",
     "Priority": 55,
