@@ -1,0 +1,440 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "ede34b1b-4358-46e3-92f4-0232007d0a1f",
+    "location": [1728, 200, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "stoneharpy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8e8d2926-2b3b-4fc2-a120-a873d7ecb785",
+    "location": [1739, 196, 0],
+    "map": "Underworld",
+    "count": 6,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 7,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "corpser", "probability": 100, "maxCount": 6 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0ad615e6-1ade-41a9-8d3a-5c5ab2491d0a",
+    "location": [1715, 173, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "stoneharpy", "probability": 25, "maxCount": 1 },
+      { "name": "corpser", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bf0ad8af-6b7a-4a9c-9a2f-7cf29559251f",
+    "location": [1730, 178, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "corpser", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5435609d-8b28-4a6c-9c88-667f0b95b68f",
+    "location": [1753, 164, 0],
+    "map": "Underworld",
+    "count": 4,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 5,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "zombie", "probability": 100, "maxCount": 3 },
+      { "name": "ghoul", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bebf8922-508a-42be-a8aa-ad7654385084",
+    "location": [1730, 162, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dda9c3f8-fa13-4dcd-b2b8-f9035723edc3",
+    "location": [1723, 148, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "79a57c48-2099-41bc-ad9c-bdcd8b91df17",
+    "location": [1727, 123, 0],
+    "map": "Underworld",
+    "count": 4,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 5,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "harpy", "probability": 100, "maxCount": 3 },
+      { "name": "stoneharpy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ef12c33e-27dc-47d7-b0d7-6c9f559eddff",
+    "location": [1752, 118, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "headlessone", "probability": 100, "maxCount": 2 },
+      { "name": "zombie", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a8513973-67c4-4070-b4d0-f25ff13975d2",
+    "location": [1741, 139, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a4fb9719-a0b4-4b7e-8464-56617d4776de",
+    "location": [1761, 129, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "589e7d92-0942-4740-9d31-0796746d0e3c",
+    "location": [1768, 140, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ecd232ad-1fc0-47b6-acc4-92c3c946a8e6",
+    "location": [1779, 155, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 1,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gazer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "61c26037-636d-4076-9d5a-07b045c1d8b1",
+    "location": [1770, 155, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cb7c7157-d8fb-482a-9719-f25512cdfc58",
+    "location": [1773, 185, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "zombie", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "eefb96a0-bba4-4bf5-95c2-1dc31e25819c",
+    "location": [1774, 184, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b0656eac-1a86-4e06-9bfd-dff50bf13583",
+    "location": [1783, 170, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c9e2ce3b-6bbb-4aee-b0a4-5fbb2e62dbbc",
+    "location": [1782, 198, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "734dcc4f-327e-435f-ac01-dca3add35ef8",
+    "location": [1783, 197, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bac9b8f2-0215-4428-a3dd-aafa47164b46",
+    "location": [1800, 181, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "91548d5a-7837-4e51-9f17-aa9d593e7a06",
+    "location": [1823, 185, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "gazerlarva", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d47c5e14-f244-49cd-bf92-8c34a5474357",
+    "location": [1820, 170, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 40, "maxCount": 1 },
+      { "name": "headlessone", "probability": 40, "maxCount": 1 },
+      { "name": "ghoul", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f19875fe-b8e0-4539-8ab4-341ed45332f7",
+    "location": [1805, 158, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 40, "maxCount": 1 },
+      { "name": "headlessone", "probability": 40, "maxCount": 1 },
+      { "name": "harpy", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "799ce158-37b5-4666-8438-0bfec47f73e5",
+    "location": [1828, 154, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "17860b7b-7fe7-48d9-9fa0-47faabde58cb",
+    "location": [1824, 128, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "headlessone", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5601352e-7352-4b12-8408-e1d5204e9806",
+    "location": [1801, 141, 0],
+    "map": "Underworld",
+    "count": 4,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "harpy", "probability": 100, "maxCount": 4 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "957fe295-d6cd-41dd-9308-47f5134d699c",
+    "location": [1812, 118, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "headlessone", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cb612d61-e42f-4cce-8ba5-4fa736f661a4",
+    "location": [1797, 118, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "headlessone", "probability": 50, "maxCount": 1 }
+    ]
+  }
+]

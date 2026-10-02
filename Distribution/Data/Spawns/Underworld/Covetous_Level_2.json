@@ -1,0 +1,543 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "84db30e1-123b-4fe0-b03b-288513b75a19",
+    "location": [1804, 251, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dreadspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantspider", "probability": 100, "maxCount": 1 },
+      { "name": "giantblackwidow", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "345fcd16-f54c-494e-a626-36861a4b6111",
+    "location": [1723, 274, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8ac9827c-17af-4af6-b15c-ff5f652e0e5d",
+    "location": [1743, 264, 0],
+    "map": "Underworld",
+    "count": 6,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 8,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "harpy", "probability": 100, "maxCount": 4 },
+      { "name": "stoneharpy", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1d34a955-03b5-4832-8485-8bc01ea223e1",
+    "location": [1761, 252, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9a19c0e1-cab3-4de7-9012-f4d3f1971d8b",
+    "location": [1745, 238, 0],
+    "map": "Underworld",
+    "count": 4,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "harpy", "probability": 100, "maxCount": 2 },
+      { "name": "stoneharpy", "probability": 100, "maxCount": 1 },
+      { "name": "corpser", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3e7aaead-f708-4192-862a-39ed27d5d0d0",
+    "location": [1766, 236, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8ddf3485-5d83-430d-85f7-60b5a6907a2a",
+    "location": [1767, 219, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "harpy", "probability": 50, "maxCount": 1 },
+      { "name": "stoneharpy", "probability": 100, "maxCount": 1 },
+      { "name": "corpser", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "03f20072-2c68-4496-8bbc-1fcb224aed83",
+    "location": [1803, 228, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b2c82335-842d-4c14-9135-24d3b0c78cbd",
+    "location": [1781, 240, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "df6f10d2-8ac5-418d-87a4-b89ee1dc9f91",
+    "location": [1781, 266, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e3ce49ce-4959-4364-9e06-3d6250c9d9ff",
+    "location": [1832, 260, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4decb9c2-a776-4e24-ac2a-c63cca39d456",
+    "location": [1795, 268, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "02fe0fbc-c421-498d-b1a6-d1713e52c5de",
+    "location": [1763, 277, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "eldergazer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8b98190c-614a-4979-b4b5-042922a80607",
+    "location": [1762, 285, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dreadspider", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b245ef11-4a9a-4d71-b6c1-729bf1cd4e06",
+    "location": [1765, 287, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantblackwidow", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fa959a58-99eb-4def-91b8-51eb0dc5cccf",
+    "location": [1776, 290, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 5,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dreadspider", "probability": 50, "maxCount": 1 },
+      { "name": "waterelemental", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c9790350-284f-4efe-88bb-6496ec5ca7fb",
+    "location": [1775, 289, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantspider", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9efd9bf6-bb0a-4c07-8dc9-cbf46b695ca8",
+    "location": [1797, 283, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2c6e4cc8-fcb9-4bea-b781-28e863ed3bc1",
+    "location": [1810, 294, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantspider", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cb43c90a-8723-4dec-b263-6ac8bb85c707",
+    "location": [1802, 299, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 1,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dreadspider", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "644562a0-83f0-4cc6-b010-3adab847795e",
+    "location": [1844, 247, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "eldergazer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8bb8cf9f-d47c-46a5-9cff-a209c4de8262",
+    "location": [1828, 261, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 10,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "corpser", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "802792b0-967a-4b7d-ace6-bccb95a84f6c",
+    "location": [1823, 268, 0],
+    "map": "Underworld",
+    "count": 4,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "harpy", "probability": 100, "maxCount": 3 },
+      { "name": "stoneharpy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "93483752-dd95-4d00-a687-18d02c4e2d02",
+    "location": [1836, 288, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantspider", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e7ab5be2-3bb9-492f-b867-588c337a9d2a",
+    "location": [1854, 278, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fb578d01-fbf6-4387-ab79-085615ced78e",
+    "location": [1864, 265, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantspider", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "72f4f2bc-861d-4b5f-9dfa-f22b265c8bdb",
+    "location": [1871, 280, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "06b19c7b-c402-48f1-b5de-656c72446a73",
+    "location": [1873, 297, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "corpser", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ca753bee-0bf0-442b-a3ab-8e2d5bf36f93",
+    "location": [1890, 290, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ad580bcf-66ad-4ce8-8cf0-aab4de073731",
+    "location": [1912, 291, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5a757c89-beec-4629-adea-974120ba3d7b",
+    "location": [1901, 266, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "harpy", "probability": 50, "maxCount": 1 },
+      { "name": "stoneharpy", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ec972fb3-4700-48be-9bc8-2f6d3423e6a9",
+    "location": [1732, 293, 4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "wraith", "probability": 33, "maxCount": 1 },
+      { "name": "spectre", "probability": 33, "maxCount": 1 },
+      { "name": "lich", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c89a56a0-3025-4c7a-afc9-c5db5f3f606d",
+    "location": [1908, 272, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6c7d16b7-e664-4d4c-992e-1edec1cd9eb2",
+    "location": [1922, 275, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "headlessone", "probability": 20, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 20, "maxCount": 1 },
+      { "name": "gazer", "probability": 20, "maxCount": 1 },
+      { "name": "slime", "probability": 20, "maxCount": 1 }
+    ]
+  }
+]

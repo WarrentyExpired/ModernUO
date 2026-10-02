@@ -1,0 +1,358 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "c5542ce4-1ffb-4d78-a10a-ec95e3623073",
+    "location": [1830, 70, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "569aebda-64b8-4e28-9d90-9134a7777b4d",
+    "location": [1863, 72, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d4ce98a9-5eb2-462d-96b6-c855e9c5a058",
+    "location": [1866, 78, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "mummy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "320c3c82-df18-4ac0-899e-cffe02bebf47",
+    "location": [1833, 72, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "rottingcorpse", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e4c23d48-6531-46e3-ade2-919dd210c715",
+    "location": [1831, 75, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8bb1148d-f820-4d4c-a2e5-91393794c8e0",
+    "location": [1858, 78, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "mummy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6c073ce1-3135-4c9f-9a65-87427da1d639",
+    "location": [1851, 78, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "mummy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "abe99c4b-171b-483a-b846-f3f9b306a45a",
+    "location": [1843, 79, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "mummy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "09193d56-ca7d-4ba9-9023-45341368e9d0",
+    "location": [1833, 73, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "mummy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2146b6c7-ae12-43d5-b5c3-6a3e4563ebf1",
+    "location": [1858, 66, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "mummy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bd3ae7e0-88ba-4887-b0c1-a7cf2682d579",
+    "location": [1851, 66, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "mummy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e483eadc-350f-4f2f-8c36-6acbba1143a5",
+    "location": [1843, 66, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "mummy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5825a18e-2bea-4e52-955f-1228e97995d7",
+    "location": [1867, 66, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 5,
+    "entries": [
+      { "name": "mummy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c7a6587c-3eaf-49ac-a5e8-52fff002b30e",
+    "location": [1866, 78, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "241527c0-8f24-4284-9ba3-0fcd1764dee5",
+    "location": [1858, 78, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8cc9693c-4f8f-44e8-b6fe-ae7fd5e6ece4",
+    "location": [1858, 66, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8512690b-eedf-489f-bd23-81cff27e23a9",
+    "location": [1851, 67, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5fc58984-9399-400d-9224-5dd2ad24fe6d",
+    "location": [1843, 66, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "02ecc4c9-4fa0-4916-9f4a-75fac71c891d",
+    "location": [1843, 79, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "06a8cef7-f8b2-40c0-bd3a-55f292fa0d34",
+    "location": [1851, 78, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1991b1fb-9f3f-43bb-98f9-d633752b9771",
+    "location": [1866, 66, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7239e63a-254a-4755-ae94-6dc6b2fc14d9",
+    "location": [1851, 72, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 20, "maxCount": 1 },
+      { "name": "shade", "probability": 20, "maxCount": 1 },
+      { "name": "wraith", "probability": 20, "maxCount": 1 },
+      { "name": "spectre", "probability": 20, "maxCount": 1 },
+      { "name": "skeleton", "probability": 20, "maxCount": 1 }
+    ]
+  }
+]

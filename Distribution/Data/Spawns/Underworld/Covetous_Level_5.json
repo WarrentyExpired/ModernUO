@@ -1,0 +1,86 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "da1ff8cc-144a-4e37-bad8-798263de7e22",
+    "location": [1783, 82, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "39c7e4cc-79d8-4d55-bf26-7407cff2a878",
+    "location": [1786, 78, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0167ddba-272d-497f-b1f8-5adb1d486046",
+    "location": [1792, 63, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "347c3114-587b-4c8e-ada9-a17ceff82aa0",
+    "location": [1784, 62, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "03:00:00",
+    "maxDelay": "04:00:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "nightmare", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "97d3211b-62fc-4f8a-9766-64d93dc4ff77",
+    "location": [1783, 74, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7f7c2321-f479-4056-b79c-2a10bda8a655",
+    "location": [1795, 82, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "drake", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]
