@@ -1397,7 +1397,7 @@ namespace Server.Mobiles
         public virtual bool StandsDownOnCommand => PetsStandDownOnCommand;
 
         public virtual bool IsBondable => BondingEnabled && !Summoned;
-        public virtual TimeSpan BondingDelay => TimeSpan.FromDays(7.0);
+        public virtual TimeSpan BondingDelay => TimeSpan.FromDays(ValidSettings.BondDays());
         public virtual TimeSpan BondingAbandonDelay => TimeSpan.FromDays(1.0);
 
         public override bool CanRegenHits => !IsDeadPet && !Summoned && base.CanRegenHits;
@@ -3819,7 +3819,7 @@ namespace Server.Mobiles
         {
             var tc = Core.TickCount;
 
-            if (!Controlled && !Summoned && Region is Server.Regions.GreetingDungeonRegion)
+            if (Settings.S_LineOfSight && !Controlled && !Summoned && Region is Server.Regions.GreetingDungeonRegion)
             {
                 if (Combatant == null)
                 {
@@ -3851,6 +3851,12 @@ namespace Server.Mobiles
                     }
                 }
                 else if (Hidden && _isLosHidden)
+                {
+                    _isLosHidden = false;
+                    Hidden = false;
+                    CantWalk = false;
+                }
+                else  if (Hidden && _isLosHidden)
                 {
                     _isLosHidden = false;
                     Hidden = false;
@@ -4581,7 +4587,7 @@ namespace Server.Mobiles
                             {
                                 BondingBegin = Core.Now;
                             }
-                            else if (BondingBegin + BondingDelay <= Core.Now)
+                            else if ( ( ValidSettings.BondDays() < 1 ) || BondingBegin + BondingDelay <= Core.Now)
                             {
                                 IsBonded = true;
                                 BondingBegin = DateTime.MinValue;

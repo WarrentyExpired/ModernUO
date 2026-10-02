@@ -6,6 +6,7 @@ namespace Server.Misc
         {
             EventSink.ServerCrashed += EventSink_Crashed;
             EventSink.Shutdown += EventSink_Shutdown;
+            EventSink.Disconnected += EventSink_Disconnected;
         }
 
         public static void EventSink_Crashed(ServerCrashedEventArgs e)
@@ -29,6 +30,14 @@ namespace Server.Misc
             catch
             {
                 // ignored
+            }
+        }
+
+        public static void EventSink_Disconnected(Mobile m)
+        {
+            if ( Settings.S_SaveOnCharacterLogout )
+            {
+                World.Save();
             }
         }
     }

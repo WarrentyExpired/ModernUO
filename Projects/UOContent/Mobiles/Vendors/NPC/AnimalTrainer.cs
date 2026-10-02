@@ -95,6 +95,7 @@ namespace Server.Mobiles
             {
                 max += (int)((vetern - 90.0) / 10);
             }
+            max = max + ValidSettings.ExtraStableSlots();
 
             return max;
         }

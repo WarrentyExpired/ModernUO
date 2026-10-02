@@ -94,7 +94,7 @@ public partial class Corpse : Container, ICarvable
     private static TimeSpan InstancedCorpseTime = TimeSpan.FromMinutes(3.0);
 
     private static TimeSpan _defaultDecayTime = TimeSpan.FromMinutes(7.0);
-    private static TimeSpan _boneDecayTime = TimeSpan.FromMinutes(7.0);
+    private static TimeSpan _boneDecayTime = TimeSpan.FromMinutes(ValidSettings.BoneDecay());
 
     private IDevourer _devourer; // The creature that devoured this corpse
 
