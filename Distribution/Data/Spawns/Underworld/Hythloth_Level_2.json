@@ -1,0 +1,678 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "c50398a4-1f99-418f-97c3-0a925cd4cea5",
+    "location": [2066, 235, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "evilmagelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e4830883-6f62-4a02-afd5-08821c6b07f2",
+    "location": [2059, 247, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "731f7240-becb-4176-a168-2d46789034e7",
+    "location": [2066, 250, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1218a15b-94db-4800-b449-74baed25f9b7",
+    "location": [2067, 263, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "682c0bfe-6ed7-42b4-9392-fc58cf9f1310",
+    "location": [2059, 273, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "56224c34-45ec-4d9c-b63b-0b98e9f4e600",
+    "location": [2059, 268, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6bc2c35d-865e-4a7d-adcd-c69734497edb",
+    "location": [2052, 283, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ef4faffb-a4b9-4df8-b80e-cedb6cd11c93",
+    "location": [2034, 274, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "daemon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b7d78e80-a4ab-4e4a-903f-99ac772877f5",
+    "location": [2036, 280, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e785fbfd-341f-4365-bda2-3465092e648a",
+    "location": [2028, 275, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "21dcf667-b165-4869-99cc-6bc5f1788c30",
+    "location": [2036, 251, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4c3c0f94-44f6-49d4-8db2-1270141ecc5f",
+    "location": [2043, 250, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a11d287e-120d-4fdd-bf08-54b26a387015",
+    "location": [2003, 280, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "daemon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6c494b49-1f0d-4712-ad07-b314b5f648f2",
+    "location": [2003, 283, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "51ebc791-ea8b-4d41-8ff1-282a19b93a16",
+    "location": [2043, 237, 14],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7cebeee1-788e-4b51-8e86-cbc5ed0f0546",
+    "location": [1994, 280, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "aa03fd50-f527-4eda-80dc-1f84a730e679",
+    "location": [2000, 268, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "evilmagelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "883eb3f2-4cba-4225-ab56-c04cb9462d0a",
+    "location": [1999, 269, 44],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "509f5e9e-d454-4704-b5a2-095397a21e5c",
+    "location": [2011, 256, 37],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "58697764-b91b-4082-8fb2-091e29bba226",
+    "location": [2011, 264, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "60b205bb-0141-4ba7-a2d5-5d3f06f8b824",
+    "location": [1998, 250, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f8dfa449-acb1-4140-9826-0f3cb1e8795f",
+    "location": [1995, 241, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2a4f682a-6221-4f7a-adee-7cabadfb3c37",
+    "location": [1996, 235, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "987585b0-0d64-42f6-8bb7-a82e4877772a",
+    "location": [2008, 235, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5d6dbc29-5e79-43e1-b338-e3c3bdf92249",
+    "location": [2019, 234, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d05120f8-dbba-401e-a694-8edb0e1ff0c8",
+    "location": [2018, 227, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "51421ae6-a88f-459d-a8c7-8ebfa70b9aea",
+    "location": [1999, 219, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ffeeab4a-294f-4901-a20a-bde427f478dc",
+    "location": [1996, 210, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "871d749e-2784-4c2e-b18f-caebcac6315c",
+    "location": [2003, 203, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5eb5f9c6-fb2d-454f-94e9-a9ae76687ce2",
+    "location": [2004, 195, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4776a111-22aa-48c6-9e75-b83d04af9467",
+    "location": [2018, 195, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "46af77bd-b419-4bde-a195-a8dd307297e8",
+    "location": [2032, 194, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8cf29f5d-8c2e-42e8-ab50-6388ad9f31f6",
+    "location": [2041, 194, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7d02d228-cc6d-42e3-afcd-831650269b68",
+    "location": [2050, 195, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2050, "y1": 195, "z1": -128, "x2": 2051, "y2": 196, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "daemon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c700b1a2-f4a4-41ee-8607-6251b388b1ae",
+    "location": [2046, 203, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1aadab9d-8647-418d-8f64-9978b1a84dd5",
+    "location": [2063, 219, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e6042208-5ddc-4d87-9118-954a548be33e",
+    "location": [2036, 203, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "19506f3a-03d2-43ca-8a4a-a94c6a029780",
+    "location": [2028, 207, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "739872e3-773f-44d1-a512-b73e44a05d28",
+    "location": [2027, 219, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "577f0c72-8064-4497-81ab-a8de1db69759",
+    "location": [2032, 227, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "94e47875-2181-4577-b9c0-c3c2546cb9a9",
+    "location": [2042, 228, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c7ccbe4d-e4d9-4aa1-9587-844d72be2d89",
+    "location": [2073, 199, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "evilmagelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2ef3b058-443b-4121-9ff3-0fd927fa9ed4",
+    "location": [2071, 199, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1524872d-ebf8-4429-886b-f120bc4b648d",
+    "location": [2051, 219, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "hellhound", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 }
+    ]
+  }
+]

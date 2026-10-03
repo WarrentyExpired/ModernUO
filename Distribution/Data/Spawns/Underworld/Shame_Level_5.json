@@ -903,22 +903,6 @@
   },
   {
     "$type": "Spawner",
-    "guid": "6f6f5700-6f2a-4c58-8855-bd29cf7e3122",
-    "location": [98, 136, 1],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "airelemental", "probability": 33, "maxCount": 1 },
-      { "name": "waterelemental", "probability": 33, "maxCount": 1 },
-      { "name": "fireelemental", "probability": 33, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
     "guid": "fa031b2d-d95b-4f35-8df5-a868686f0666",
     "location": [1412, 411, 0],
     "map": "Underworld",

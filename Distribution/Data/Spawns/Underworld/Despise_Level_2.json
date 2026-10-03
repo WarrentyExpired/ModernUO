@@ -1,0 +1,1069 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "adcd5e15-1cd4-451e-8003-a9936c5a95a3",
+    "location": [2352, 123, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7b013d97-4948-411a-b296-72ca1418b246",
+    "location": [2355, 115, 65],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "563a4ca7-9971-4fa4-8a11-405984443bdd",
+    "location": [2340, 124, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bf6b2246-1983-4376-b896-5e932a49dde2",
+    "location": [2341, 119, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b153c38c-6110-4923-92e7-2689de662602",
+    "location": [2339, 105, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "546ddd00-6c7f-444a-ba75-624585997f5c",
+    "location": [2352, 99, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "34d01c7e-85df-4388-8214-32d938e65b14",
+    "location": [2353, 99, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ba74555c-6643-41bb-9b3a-8aeae53442cd",
+    "location": [2355, 82, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "283f62e9-534c-4023-b74d-d5e31fc758af",
+    "location": [2359, 78, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ddd52eee-1111-4314-9a35-22573f9b4a15",
+    "location": [2363, 80, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ada641da-024d-4bca-9e90-f59eb8c93c5a",
+    "location": [2359, 86, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4a4e5aef-6fe2-45c2-a75c-3445cb2d6c41",
+    "location": [2347, 83, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bb27fd02-4157-408c-9d49-827d4a5f7dd2",
+    "location": [2329, 97, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 80, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a9b2b07d-4b2c-4d05-8a4c-3364fd9bfcd9",
+    "location": [2325, 81, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 80, "maxCount": 1 },
+      { "name": "brigand", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "28c486d6-f6b7-44b8-a05d-5e270e1a5bdb",
+    "location": [2323, 76, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "abf12e10-d61f-4a9e-912f-bcab78198b22",
+    "location": [2311, 75, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "20b3c1e6-7bd1-4512-ab15-c003f8aafe33",
+    "location": [2308, 85, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fec7566d-78aa-4334-bde0-ab91648b2be2",
+    "location": [2308, 91, 62],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4ff07b0f-6ff0-4732-91dd-3c1106922e7e",
+    "location": [2317, 99, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e68ab2c1-3093-4ea6-b4b6-608773878f3c",
+    "location": [2301, 99, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6c2abaed-f6c5-4e50-a79d-21317a6b043e",
+    "location": [2292, 92, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9829f27f-cb9e-4400-bfab-263a0b0dcdf0",
+    "location": [2292, 106, 61],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d9271f8b-bf32-40e5-8fcc-8efe67e1d32b",
+    "location": [2289, 106, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "10543695-07f9-46bf-b689-d7df5cea74b0",
+    "location": [2288, 84, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "50da9fd4-799f-461e-92c6-38a4b13b6d95",
+    "location": [2284, 77, 66],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "aaf957b4-e2c9-47e0-999a-a94b9f28abd2",
+    "location": [2270, 83, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "518c913b-3726-4f65-8c0f-906383b30f95",
+    "location": [2267, 89, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4bc15286-d0a8-468c-98be-36af0ea30cb7",
+    "location": [2244, 76, 65],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "55a5fe9b-3b4f-433b-bdb1-c31d4b3da3ba",
+    "location": [2254, 81, 65],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "13345e49-0697-45dc-82e7-37add4be9cbc",
+    "location": [2278, 99, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "23c63f1c-55c5-48bd-a40e-e1d80c083ebb",
+    "location": [2267, 102, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "21b83986-a3e7-40cb-85cc-db0fa965a610",
+    "location": [2252, 105, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "400fef6f-fa4c-4091-bec0-4849f30aac38",
+    "location": [2243, 106, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "eb8a2f0b-2e2e-4dd5-badd-88f7a0f849eb",
+    "location": [2267, 119, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "83f13fc5-925c-4e96-81b3-596846336f87",
+    "location": [2280, 122, 65],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cccfd8e3-0d13-45ad-9a6b-d0ab8227b1c6",
+    "location": [2260, 126, 62],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f3e847ec-5258-4daa-b98f-5755690cd9df",
+    "location": [2245, 140, 45],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ratman", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "85169c0c-266a-4d9a-b0c4-aec5af56535b",
+    "location": [2259, 138, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9f06290c-a195-4a89-8af6-613c014c04bf",
+    "location": [2266, 144, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b692329c-38b0-4e47-81d6-cd48509d0c9d",
+    "location": [2265, 152, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "972300bc-1b12-4145-a20c-caa76c9d6f79",
+    "location": [2266, 163, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "012e3448-b474-4363-8bc4-aad34e384af3",
+    "location": [2265, 178, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "03d47a8b-9e43-4bd0-92c4-7ccd34ee0398",
+    "location": [2247, 178, 36],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6abba93e-ab96-419c-81d5-110fcc1e2d08",
+    "location": [2246, 167, 31],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "83d5974b-f715-4bd7-b2d7-4406bf467cfc",
+    "location": [2247, 154, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "811a5b26-d1d3-43e0-8a25-4fb5687fb4bc",
+    "location": [2281, 173, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "afabe1d5-568d-4f85-b1d5-7368e34206d6",
+    "location": [2289, 177, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ff692c2e-7237-4545-841d-3199784b37e1",
+    "location": [2299, 175, 29],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "01e7cebf-36ef-4374-b8d0-a235847df615",
+    "location": [2315, 173, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b9dfb59e-9f18-4d26-ba8c-fb54b3873ce8",
+    "location": [2299, 162, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3d23ea4f-a458-4f0b-ba21-91559016499b",
+    "location": [2285, 155, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "62f12255-0077-4533-a370-7366b5b59e85",
+    "location": [2284, 144, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c2f13d52-4647-467a-aede-8c27f3aa418f",
+    "location": [2295, 139, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1707fd52-bb36-4a92-8b51-82e64c55e93b",
+    "location": [2302, 129, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "534e888f-3325-4fee-93cd-05fe58f6e50e",
+    "location": [2320, 130, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2a287083-1053-4631-aba3-d51c7debbaa4",
+    "location": [2322, 123, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "321cdd93-00df-4cc4-88c6-8fa0d7e7869d",
+    "location": [2309, 114, 61],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "94974bff-7c70-4b94-a965-ddcd6076d057",
+    "location": [2340, 145, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "329cce9e-2453-45a5-85dc-905b259a8ee3",
+    "location": [2352, 147, 46],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8b8a8dca-55ea-4b77-ab60-1275132096c8",
+    "location": [2361, 149, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "654708a6-774f-4af5-9c73-06e43a52c8d9",
+    "location": [2360, 162, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a653686e-9156-469d-8b66-f729ed65fac6",
+    "location": [2342, 162, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "49038ee5-b46b-4b1b-a63d-bf2842b405ce",
+    "location": [2338, 178, 25],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f950313c-d721-4a64-85f5-3ce11a3465a0",
+    "location": [2354, 176, 25],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ff4a4f6c-4551-4548-a9d5-54aa3be2495c",
+    "location": [2347, 179, 25],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "01e5ad5a-62b1-4b13-8dec-031f0b9c0144",
+    "location": [2357, 178, 25],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7c8a27b3-2209-4a9f-ae1e-394179d641fc",
+    "location": [2322, 150, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b6d3fa1a-8102-4fb6-b7b6-de3ebcee93f7",
+    "location": [2323, 162, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspider", "probability": 50, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f82dfe1c-bf00-4bc8-a7e4-55c97b185690",
+    "location": [2321, 163, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 2,
+    "entries": [
+      { "name": "lizardman", "probability": 50, "maxCount": 1 },
+      { "name": "ratman", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 20, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 15, "maxCount": 1 }
+    ]
+  }
+]

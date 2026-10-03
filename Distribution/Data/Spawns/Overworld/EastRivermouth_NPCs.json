@@ -57,18 +57,6 @@
   },
   {
     "$type": "Spawner",
-    "guid": "7369a126-db15-438b-b367-fd499edb9ec9",
-    "location": [158, 95, 1],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": []
-  },
-  {
-    "$type": "Spawner",
     "guid": "c67e12cc-3716-47c5-8d4d-260ca0199605",
     "location": [1402, 1709, 0],
     "map": "Veridia",
@@ -360,18 +348,6 @@
     "entries": [
       { "name": "healer", "probability": 100, "maxCount": 1 }
     ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "b1e075c0-cca6-4416-a7d2-1c10da574281",
-    "location": [158, 95, 1],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": []
   },
   {
     "$type": "Spawner",

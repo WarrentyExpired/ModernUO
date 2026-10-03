@@ -1,0 +1,601 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "1f9a45ac-215c-456e-b1b5-9b40bf5acb1e",
+    "location": [2171, 230, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2132f05e-4c0f-4bd3-9f3b-2eac7f0c5b05",
+    "location": [2179, 218, -15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c96b3893-af56-4ff4-8616-4f674ef330b5",
+    "location": [2203, 204, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "daemon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2a42ceff-00ac-4088-88b1-ea53037eef04",
+    "location": [2203, 216, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "97d7999a-f2bf-4e6b-bc9f-3af8a5641a3a",
+    "location": [2203, 210, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ccf0c211-9338-475b-ba23-43103dc8a4c8",
+    "location": [2200, 227, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "46bcf3a8-5426-4224-a94d-0b3d4fa6cbaa",
+    "location": [2197, 227, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "40aede8f-4564-4506-8ec6-98d0de9b70df",
+    "location": [2202, 268, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "044cbace-84ae-4c89-9732-6c226f9f393c",
+    "location": [2200, 260, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c2b1807e-1930-4fb6-b345-42201805ee27",
+    "location": [2199, 272, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "449f0a11-584d-4849-91cd-57913d02effc",
+    "location": [2165, 233, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "688fd6d0-815f-443d-a945-4075ca981efe",
+    "location": [2199, 267, 22],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 7,
+    "walkingRange": 10,
+    "entries": [
+      { "name": "daemon", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "71732281-ffdd-4c18-af5b-17cf3d56d775",
+    "location": [2179, 266, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d4c102d5-c785-42ba-bbae-c0d081704469",
+    "location": [2178, 255, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c2ce8d04-d405-4bcf-931a-4934f1ac4464",
+    "location": [2179, 250, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dbfc875f-1fdf-4f51-9ca9-3a0d7f7b2586",
+    "location": [2187, 227, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "66b5b871-e4a7-4476-83d9-4c266dead73b",
+    "location": [2187, 227, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4cc746d8-56a0-428e-9a68-1d92c9195b0e",
+    "location": [2118, 251, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "02f4e15c-0266-4047-b532-f4c4b94ace3c",
+    "location": [2107, 243, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2107, "y1": 243, "z1": -128, "x2": 2108, "y2": 244, "z2": 128 },
+    "walkingRange": 1,
+    "entries": [
+      { "name": "skeletaldragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "50ff9f60-6197-49ac-b129-4aa0de26e2de",
+    "location": [2124, 243, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b80ec9c2-d691-4f97-a571-1564f311b22b",
+    "location": [2138, 250, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ec8049bf-6303-4983-a6e0-56eda0e4c8b5",
+    "location": [2138, 239, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "798e782c-848d-4e96-962e-a62af3907ef9",
+    "location": [2139, 235, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "78862e94-4e0d-4c4d-8ec8-f53202f8d8f8",
+    "location": [2138, 224, 7],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7d5e9d9d-0d19-4ea6-8c9a-cc51be1fa456",
+    "location": [2138, 207, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ce8887b0-452f-42fb-b2e5-e1ffb0a9a528",
+    "location": [2131, 209, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "541c746b-4970-42bd-ba43-2006c703cffb",
+    "location": [2130, 202, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9ab2f20a-2583-401f-8015-f8f950c945cf",
+    "location": [2148, 219, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5de1243d-3387-4b62-bcb8-8f0c3c344673",
+    "location": [2153, 218, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cd6d5e2e-21e0-4a07-b40d-049110424430",
+    "location": [2165, 226, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2165, "y1": 226, "z1": -128, "x2": 2166, "y2": 227, "z2": 128 },
+    "walkingRange": -1,
+    "entries": [
+      { "name": "balron", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dab721ba-3a14-4b2d-9c80-84b575ae20f7",
+    "location": [2164, 218, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "efaaa558-f05e-423d-a3f7-e52eb7d6917f",
+    "location": [2186, 211, -22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e16e9965-7b15-422a-a9e4-3f5d884594ea",
+    "location": [2181, 203, -22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6b95c2da-2576-4ab6-89c5-baead9f03534",
+    "location": [2172, 203, -22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cf2e4afa-bd25-4f29-bf7f-8eaa3aa710ab",
+    "location": [2134, 205, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "succubus", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bd40a56d-e01b-4f73-9afd-8a4f64aa68cd",
+    "location": [2117, 244, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 30, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 30, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "15a8dd40-e63d-476e-a8e3-5f37d142c427",
+    "location": [2163, 201, -22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "imp", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 },
+      { "name": "gazer", "probability": 25, "maxCount": 1 },
+      { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
+    ]
+  }
+]

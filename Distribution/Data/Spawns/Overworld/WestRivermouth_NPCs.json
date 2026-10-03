@@ -379,18 +379,6 @@
   },
   {
     "$type": "Spawner",
-    "guid": "e700554f-95a1-4627-a872-f11d4662a1ce",
-    "location": [147, 123, 1],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": []
-  },
-  {
-    "$type": "Spawner",
     "guid": "98b271f1-f5c5-4baf-b693-cbb3caf394d4",
     "location": [1153, 1688, 40],
     "map": "Veridia",
@@ -402,18 +390,6 @@
     "entries": [
       { "name": "warriorguard", "probability": 100, "maxCount": 1 }
     ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "8f6ac2fc-0fd8-4985-9571-dde421cabb13",
-    "location": [147, 123, 1],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": []
   },
   {
     "$type": "Spawner",

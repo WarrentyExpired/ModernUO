@@ -1,0 +1,464 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "285b0b6d-6530-4856-a9f7-1186d13c9651",
+    "location": [2141, 143, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8a0942ce-50e0-4097-b8c2-9ad0271afe83",
+    "location": [2146, 106, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "36d6b141-965f-4aae-aad5-eda6688582cc",
+    "location": [2147, 141, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "df0518e2-d7d1-413e-9eba-a5d90291c382",
+    "location": [2149, 131, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6c6f9a68-a0ad-4baa-b783-de612df69a28",
+    "location": [2163, 138, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "acd3ee98-4556-4951-a562-6aa86c41d8d5",
+    "location": [2165, 98, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "76ffb257-5ea2-40e6-acbf-0559ef6c7672",
+    "location": [2162, 91, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "61765943-3804-4b0e-8a37-06470cf3e5f4",
+    "location": [2178, 99, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bf63a43a-cbe3-4c15-aadd-581814018b41",
+    "location": [2183, 87, 33],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0aec4e99-94b1-4540-b6a8-f85e242eda1c",
+    "location": [2183, 81, 27],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "balron", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6f26e422-04bd-4edc-af46-f0f375a6987d",
+    "location": [2150, 114, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e2e19847-8628-4850-a3a3-becec6a7bdbb",
+    "location": [2139, 116, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a27df2b1-ac17-4373-a1e5-38f2ed38793e",
+    "location": [2147, 100, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4601467b-017b-498c-bdac-648d4ee641e4",
+    "location": [2140, 93, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e5306f5a-fbdd-4a7f-819f-7881892a70c4",
+    "location": [2134, 96, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "succubus", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d23ebafa-f567-4cdd-9c55-2ef7660cdb18",
+    "location": [2130, 100, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "271e3db8-b4ec-440c-be29-5ebb0cadf253",
+    "location": [2176, 115, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "addf621f-f35a-48d3-861c-3d7fa7776278",
+    "location": [2187, 115, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "27789ddf-1efc-4ed4-ab5c-7fb1862d3296",
+    "location": [2178, 129, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3f1b634e-a380-4900-9e50-0331fa314b12",
+    "location": [2191, 131, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f8d4ce30-7f5b-47e1-a1be-fc17da63ab5d",
+    "location": [2186, 139, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "succubus", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d127dad0-fab1-4b04-beb1-93883d75ac5f",
+    "location": [2194, 139, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "29218f4f-9799-496e-afe5-371e04ba6550",
+    "location": [2157, 131, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fd6ee0ef-5127-46a5-9b04-98d989c593f6",
+    "location": [2162, 115, 27],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2160, "y1": 113, "z1": 27, "x2": 2165, "y2": 118, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "firegargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "chaosdaemon", "probability": 15, "maxCount": 1 },
+      { "name": "arcanedaemon", "probability": 15, "maxCount": 1 },
+      { "name": "enslavedgargoyle", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyleenforcer", "probability": 15, "maxCount": 1 },
+      { "name": "gargoyledestroyer", "probability": 15, "maxCount": 1 },
+      { "name": "daemon", "probability": 15, "maxCount": 1 }
+    ]
+  }
+]

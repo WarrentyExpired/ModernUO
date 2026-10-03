@@ -1,0 +1,58 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "5a86013f-e12b-4546-9010-ec1744baf2e5",
+    "location": [517, 2679, 25],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 516, "y1": 2678, "z1": 25, "x2": 519, "y2": 2681, "z2": 128 },
+    "walkingRange": 1,
+    "entries": [
+      { "name": "terathanwarrior", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8c4cfa7a-8398-4dd3-be27-3e5eff11051f",
+    "location": [509, 2679, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "terathandrone", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "894d4391-1ff1-4c35-a5c1-85b3fab09460",
+    "location": [508, 2676, 25],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 507, "y1": 2675, "z1": 25, "x2": 510, "y2": 2678, "z2": 128 },
+    "walkingRange": -1,
+    "entries": [
+      { "name": "terathanwarrior", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "11672beb-bcf2-462f-a34a-a2c949250980",
+    "location": [517, 2671, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "terathandrone", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

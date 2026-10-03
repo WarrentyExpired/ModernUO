@@ -1,0 +1,664 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "0d0662c8-5fb2-4bd6-a588-5c6580498fba",
+    "location": [1984, 148, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1984, "y1": 148, "z1": -128, "x2": 1985, "y2": 149, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8ab8b693-72a4-421e-ad4d-968ee03ccbf6",
+    "location": [2074, 154, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9279495a-d13c-4b6d-b742-bdf78f53ec0c",
+    "location": [2066, 156, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "33234f64-4f65-496b-ad68-53057ad1453b",
+    "location": [1990, 102, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ba7eddde-b580-46e6-a4ba-9f95461db663",
+    "location": [1993, 151, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1993, "y1": 151, "z1": -128, "x2": 1994, "y2": 152, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "df6ebc1f-2ff7-4422-a488-0a6420217f60",
+    "location": [2016, 114, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3fdce39c-a01d-40a5-a83b-23b7ebb6532a",
+    "location": [2067, 85, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e4d23bba-6c4f-45c4-b44a-8a5ea4c133d1",
+    "location": [2067, 95, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f9818f38-b485-4bfa-8c51-1391364c37df",
+    "location": [2070, 111, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7a0d1df4-79e9-4c9a-9ab5-d8f005336ec2",
+    "location": [2076, 110, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5fa5bd46-be5c-41ea-85ab-5318be63b2ad",
+    "location": [2042, 99, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "88462e04-f237-497f-a244-d87bbcb98398",
+    "location": [2036, 139, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f20915ff-7605-444a-af7a-5ffe82a39aaa",
+    "location": [2075, 140, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "95b0484a-db39-469a-9f32-44ec6b9e41de",
+    "location": [2043, 115, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "39205e4d-684b-41ed-80ce-5131f8a1bf06",
+    "location": [2070, 130, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d137364f-f84a-48ca-bb96-5bcbb7a1ee82",
+    "location": [2034, 125, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "41c57f98-45c1-46f7-ae70-363502b86830",
+    "location": [2024, 149, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8c22a7f6-b2b8-4430-9867-8d596c7e97e1",
+    "location": [2067, 146, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "50e44694-838e-4309-b76d-1f44a8f7d7fc",
+    "location": [2063, 73, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dfeca2e3-90b8-43a6-9717-aaafa7a6ef53",
+    "location": [2059, 74, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e0b58c85-f5ef-4be4-8839-a659d6c9fec2",
+    "location": [2033, 74, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "410b7134-8dcc-4e6c-953a-ece2e8838fa8",
+    "location": [2028, 75, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "22d97a04-59b1-4f64-850e-4b3f67480095",
+    "location": [2004, 131, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e0f9bfe1-0037-4626-b2f7-5d5f33e33f60",
+    "location": [1995, 136, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "45111aee-68f6-4415-8765-6fb6a55eb674",
+    "location": [1989, 154, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1989, "y1": 154, "z1": -128, "x2": 1990, "y2": 155, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "68ebaf09-5e3b-4606-9ceb-4513e53e092c",
+    "location": [2049, 127, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7d45c000-8a50-463c-9e16-51009f3143a1",
+    "location": [2044, 127, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ab616ac9-e331-49bf-9f77-03811d2ae321",
+    "location": [2026, 154, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "09f3f7a7-c8fe-4b08-8ac2-875d2c824cba",
+    "location": [2020, 149, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6fba35b1-183b-4695-9ec9-95d0a451459a",
+    "location": [2068, 73, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f8b71c71-3400-4e0a-89d2-c0ec3dca37e0",
+    "location": [2043, 109, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6a48c55a-d872-45d5-9d2d-990c0374c246",
+    "location": [2071, 113, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cc869972-470e-4d4b-84cc-cbe3c16ffe41",
+    "location": [2043, 76, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "68b43ca0-2a82-49b0-9b28-d27ebaffe847",
+    "location": [2042, 98, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0170c6d3-bcd1-4a8e-8bbb-f121be029a0b",
+    "location": [1995, 98, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4ec8c48e-860a-43e1-a91e-84c17aae1a9f",
+    "location": [2019, 99, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "firegargoyle", "probability": 33, "maxCount": 1 },
+      { "name": "stonegargoyle", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "08946d2a-d9d6-46cc-8c39-a9355f15ffca",
+    "location": [2042, 85, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0c8fa984-1981-4fd4-9ecd-5169f8405ead",
+    "location": [2028, 99, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "acab0a0d-0776-4679-bc52-f156364ea7de",
+    "location": [1993, 106, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5d004c9c-3a90-499f-b3d9-e5a520d7c9ff",
+    "location": [2006, 98, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5f15bad1-eb56-4129-9cbf-239c693b26b4",
+    "location": [1996, 151, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1996, "y1": 151, "z1": -128, "x2": 1997, "y2": 152, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e70b846e-72e0-4236-8450-f7bfda7ca5d0",
+    "location": [2003, 86, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "34d5969e-a34e-4ffe-afd9-4617529c3aeb",
+    "location": [1995, 75, 44],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "imp", "probability": 50, "maxCount": 1 },
+      { "name": "hellhound", "probability": 50, "maxCount": 1 }
+    ]
+  }
+]

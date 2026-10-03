@@ -1,0 +1,1881 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "251fcedd-cf06-4abd-8c9c-91718a05e3ee",
+    "location": [2676, 158, 45],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dreadspider", "probability": 100, "maxCount": 1 },
+      { "name": "giantspider", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "73812acb-3969-4546-a826-9b30c021dd8d",
+    "location": [2672, 168, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "457192a4-8da8-4432-8d1e-9288f7246d6c",
+    "location": [2654, 184, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5bf8ad11-4268-4aad-8144-272a9d90484e",
+    "location": [2638, 177, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c211c07f-9e0a-47a4-b73f-952e726d6c71",
+    "location": [2629, 201, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "59e6ea19-c75e-4f8c-9e3e-bce2e53ede3f",
+    "location": [2612, 208, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c63d2e72-1156-4d4f-914a-e112cf38ad07",
+    "location": [2612, 189, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2612, "y1": 189, "z1": -128, "x2": 2613, "y2": 190, "z2": 128 },
+    "walkingRange": 8,
+    "entries": [
+      { "name": "skeletaldragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f4cfae02-ca7b-497f-b9fc-660980d42306",
+    "location": [2588, 193, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7666a040-4dbe-469c-b5b9-b2382ee71b30",
+    "location": [2586, 173, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ogrelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "60eeb856-43a0-4fb9-81f2-9daeaedac948",
+    "location": [2595, 165, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ogrelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1bfb29b8-b4ef-4331-88ca-5d6a7082113b",
+    "location": [2600, 180, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "de769676-13c4-4037-96b8-6b6f0b968631",
+    "location": [2613, 170, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f69d0495-f8b2-4cb6-8557-ad5104edf2cf",
+    "location": [2629, 109, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogrelord", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cee4649d-2e55-40f7-8d6e-d5f389a13d16",
+    "location": [2631, 112, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "280df164-afa9-4b35-b1ed-54d21a1f1b0a",
+    "location": [2628, 116, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "79c73491-55c5-4493-9051-3999325d485d",
+    "location": [2595, 149, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fa9c7635-3c4a-47ec-b29a-2efc675644fc",
+    "location": [2620, 151, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3c5245df-4227-4a99-a94f-9c90aa21e2d8",
+    "location": [2634, 152, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0d40dc44-d44e-472f-b96d-d8e62e44f097",
+    "location": [2646, 150, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4887dcb3-c05e-4ad2-9b6e-fb1a2bf32713",
+    "location": [2673, 138, 45],
+    "map": "Underworld",
+    "count": 4,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ratman", "probability": 100, "maxCount": 2 },
+      { "name": "ratmanarcher", "probability": 100, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "60ee017d-2b62-46c2-8b42-43fe8b49643b",
+    "location": [2658, 139, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "08bb9c88-7ce3-4c88-9503-4cc3a0703887",
+    "location": [2667, 119, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ac998ff7-5169-4c3d-82c5-4756053e9fcd",
+    "location": [2686, 111, 60],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dreadspider", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f53f3e1d-17c1-4213-be21-35de8c094486",
+    "location": [2679, 93, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e98e2add-6faf-4407-bdb6-ee9514bb760f",
+    "location": [2684, 81, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "titan", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "23184bf4-e797-4367-a7fc-0f7603595ba4",
+    "location": [2673, 75, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cc7a0bc6-d9c5-4455-9186-a7be55e89556",
+    "location": [2660, 79, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e629bcbc-e339-465e-9643-3b47d4692277",
+    "location": [2642, 66, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "titan", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "02e7adcb-786e-47f0-a2e8-44a19f3e9583",
+    "location": [2631, 75, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8f4611d2-19d8-47f2-b86b-6706a33ecc2c",
+    "location": [2620, 74, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "40f2479e-edfa-49c2-9f60-71eee5ac3fbc",
+    "location": [2603, 82, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f2ca7cdb-c248-4017-8a41-2970a417df3c",
+    "location": [2603, 74, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ogrelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "925b4080-ab57-494b-b954-34168f8bad94",
+    "location": [2581, 92, 63],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "37d5990a-3a4b-4f3c-bd5a-54ec175cef75",
+    "location": [2588, 103, 60],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "98abc4b1-604b-4a26-8bd9-b88f9de25ec8",
+    "location": [2640, 88, 45],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 },
+      { "name": "scorpion", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a43c0103-8ad2-4efd-ab44-b28444ceb4a3",
+    "location": [2623, 86, 45],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 },
+      { "name": "scorpion", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5e3a8593-9488-4fb1-b1bc-b08f7836e791",
+    "location": [2606, 97, 45],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 },
+      { "name": "scorpion", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0efd3d06-1c2d-49c2-b2c6-c78c48dadc9d",
+    "location": [2594, 112, 60],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 },
+      { "name": "scorpion", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "08b27531-bc84-42ec-a11b-e923484bf3b9",
+    "location": [2597, 129, 45],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 },
+      { "name": "scorpion", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a6ec21d7-0af6-4bfc-a20e-9ddcc6f76a8d",
+    "location": [2582, 133, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d000cc81-e860-48f8-9f46-ad6328ba5089",
+    "location": [2566, 130, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "eaea41ae-92c2-419b-87b5-3f5d28b61d88",
+    "location": [2546, 153, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "titan", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3c60d720-1aae-4b6e-b9e9-5e4ac33ab4cc",
+    "location": [2538, 137, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e84bea33-dd60-48eb-85a8-3db1c60789e2",
+    "location": [2539, 117, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "47edb762-8f71-42d4-b76b-efb8690fd343",
+    "location": [2532, 217, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "cyclops", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9e69e862-3b95-419c-b50c-d94971313d1c",
+    "location": [2542, 226, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "11e5313d-ddd3-452a-be3e-194ff4e8721e",
+    "location": [2559, 228, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3695e389-2b24-4ef8-8304-f9b8ad760d86",
+    "location": [2583, 228, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ogrelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bdc80eb3-f389-4177-8c78-785b7c06b140",
+    "location": [2582, 211, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e8a67cb5-97a1-4118-84fa-c99f45328bab",
+    "location": [2562, 211, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5d4842b7-1e6e-4292-bfda-b0a678740bdf",
+    "location": [2546, 182, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5a202a52-9e1b-4bc3-a0ba-72d23b1aff19",
+    "location": [2561, 190, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "547676d8-1608-4e0e-806f-984fad2f3496",
+    "location": [2466, 111, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "efd5c0e3-81c4-4549-b022-ca1cfc0758e6",
+    "location": [2568, 250, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "87868e57-6cdf-4fc2-a6f7-3dd4aa7cea53",
+    "location": [2579, 260, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e6b5e407-240c-4f9b-88b7-1708053c34d7",
+    "location": [2528, 75, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8734140c-e795-4112-be92-7a9d7b9cf7b3",
+    "location": [2470, 267, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ogrelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "002e65ff-3d53-42f4-bb83-a53b6f5a36cf",
+    "location": [2460, 228, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "db5a61f8-8dd0-4d72-a21d-eaf5ca0694b2",
+    "location": [2498, 168, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "747b0503-6730-4e00-a22f-c59e6107cfe2",
+    "location": [2508, 145, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5b23cb08-3b58-4055-a259-2823deb322fd",
+    "location": [2464, 188, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cecb7e34-0eb5-4111-b945-1fd635c94cf7",
+    "location": [2472, 194, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c11da3d5-a57a-48a0-b349-7a3752ff7a74",
+    "location": [2499, 139, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ac2dba54-be93-42fa-a603-e04a11cd7612",
+    "location": [2596, 293, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ogrelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "875189cf-5eec-44c8-8836-5153d15b9fc3",
+    "location": [2595, 292, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "730009f6-b84a-494c-ba14-1ea35d729b6b",
+    "location": [2580, 294, 3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2580, "y1": 294, "z1": -128, "x2": 2581, "y2": 295, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "59292400-e979-4cfb-be54-212326c35963",
+    "location": [2575, 299, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6361dc75-2072-40a5-b7ed-5b0df847c751",
+    "location": [2572, 281, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "999d6f5c-9481-467d-89a0-ae33505790a6",
+    "location": [2556, 281, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1604a013-e6ac-4b51-9a6f-edaa60d7ae86",
+    "location": [2540, 280, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dd3d1a83-77f2-49ec-b320-6716d39ae3c0",
+    "location": [2542, 262, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c8026178-ad70-4229-94a0-58ed1bc5d350",
+    "location": [2540, 252, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "148d2ca0-5e71-4af7-98bd-f2544bba9dff",
+    "location": [2521, 284, 5],
+    "map": "Underworld",
+    "count": 4,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ratman", "probability": 100, "maxCount": 2 },
+      { "name": "ratmanarcher", "probability": 100, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a6ed35d2-02bd-4a09-9302-d060cd93fd7e",
+    "location": [2533, 169, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a145c2d4-2511-4117-96aa-623fecf05ad7",
+    "location": [2520, 261, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8eff4dc0-9b90-4a33-a5e1-5d525b0b4bbe",
+    "location": [2516, 256, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f90fa872-35be-4589-80f6-ba1f633073d4",
+    "location": [2498, 247, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f7deebcb-7435-4069-9891-cb90b51a0f8e",
+    "location": [2489, 234, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8eb09379-bd4f-4d80-a3a4-cdb593fb7d05",
+    "location": [2532, 66, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ogrelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "862db7ed-36d7-400e-854b-c4842348b88c",
+    "location": [2470, 285, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "acidelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4ed99aa9-b2cb-431a-9d2b-9967b742d0ce",
+    "location": [2460, 183, 31],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "cyclops", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fcffb8ca-4e17-40ac-bfb4-4c8e4a0758ac",
+    "location": [2459, 270, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "97bf75f4-c1b9-43e0-b616-5faa34788b2c",
+    "location": [2499, 220, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4b3253cf-8e03-40bf-87df-23e6435b023a",
+    "location": [2475, 258, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f9abb11c-36c3-42c9-adf4-34aad17d512e",
+    "location": [2498, 185, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c9e064ec-a6df-4d9a-8258-6bda18b10e6c",
+    "location": [2523, 158, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "316db3b4-2895-42be-a8ae-39f088ce88ec",
+    "location": [2484, 176, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7e6f8f8b-f4d4-493e-94b1-f58151a43417",
+    "location": [2520, 131, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ogrelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1722ba58-c4cd-4305-90b5-2a8d7e7e9df4",
+    "location": [2484, 194, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ae55a220-16c6-478b-a93a-7240c5089e5b",
+    "location": [2498, 125, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a679339d-b3c5-4d16-81d2-ca2271728148",
+    "location": [2490, 110, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b1c3a4cd-d16a-4de7-8883-69745fa1404c",
+    "location": [2498, 110, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3253c84a-f5b5-4543-9f6a-62508d545e94",
+    "location": [2517, 109, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2f928d5e-3dce-4540-9fe2-30df2c6eea5e",
+    "location": [2499, 216, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "30cbbc40-81de-4917-9105-73b1c55888f6",
+    "location": [2533, 99, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "638f975d-2b90-48c3-94a8-fc3b371bf2e3",
+    "location": [2512, 68, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e9d8ea91-a7e6-42cb-ad51-0d01e7c172a0",
+    "location": [2504, 91, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c95bc71e-c031-4d00-b936-ca62bb5ea01a",
+    "location": [2497, 80, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c29e7bd6-2864-4a1a-ae41-63a9f6521fd2",
+    "location": [2505, 90, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ogrelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "11235a00-7ffa-4eb8-a00f-c75768f3c0ed",
+    "location": [2459, 244, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2b5bad79-bbb8-4fa6-9d0b-1100469880aa",
+    "location": [2462, 254, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5d500e26-74bf-48b4-aaae-ccd9fdca1e3a",
+    "location": [2561, 266, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5f689b5d-ee41-4618-87d1-3d24717fb9a5",
+    "location": [2573, 268, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "cyclops", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6728cf4f-7133-4deb-a60a-b55b28f7bcb5",
+    "location": [2499, 69, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bdc4fb6a-a47e-401b-862a-836704cde8ec",
+    "location": [2482, 72, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ca940b83-ce6e-4150-9abc-8d9273fbe419",
+    "location": [2468, 66, 75],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a622b84a-717a-4498-83cd-cb272c09578d",
+    "location": [2478, 173, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "cyclops", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "640252b3-bf83-4c47-b252-8d44184e5318",
+    "location": [2476, 208, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "88bc4e72-f455-482c-9d65-14b539a2e1a7",
+    "location": [2475, 217, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3fa80e3b-ddc7-403c-ba9b-e6fc627bf7d5",
+    "location": [2529, 92, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0f602bb0-bf12-40b8-ac32-92c157f145e0",
+    "location": [2472, 71, 66],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f0b5920b-2753-4acc-b446-28bd286b655b",
+    "location": [2470, 80, 66],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5612cc57-9e40-4205-82f2-02fb6d78393e",
+    "location": [2465, 97, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "068ded9c-e3d7-4870-9d09-f44cbe4f6f24",
+    "location": [2468, 131, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0bf3e48b-8c62-45a4-a72f-253e1712c076",
+    "location": [2519, 73, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ea6e1c75-7940-4bff-bb87-7bf43f1b065f",
+    "location": [2470, 146, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ettin", "probability": 33, "maxCount": 1 },
+      { "name": "troll", "probability": 33, "maxCount": 1 },
+      { "name": "ogre", "probability": 33, "maxCount": 1 }
+    ]
+  }
+]
