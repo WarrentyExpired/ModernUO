@@ -42,7 +42,7 @@ using BaseMLQuestGump = Server.Engines.MLQuests.Gumps.BaseMLQuestGump;
 using CalcMoves = Server.Movement.Movement;
 using QuestOfferGump = Server.Engines.MLQuests.Gumps.QuestOfferGump;
 using RankDefinition = Server.Guilds.RankDefinition;
-
+using Server.Custom.UI;
 namespace Server.Mobiles
 {
     [Flags]
@@ -728,6 +728,22 @@ namespace Server.Mobiles
 
         [CommandProperty(AccessLevel.Counselor, canModify: true)]
         public VirtueContext Virtues => VirtueSystem.GetOrCreateVirtues(this);
+
+
+        private int m_MonsterKillPoints;
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int MonsterKillPoints {
+            get => m_MonsterKillPoints;
+            set
+            {
+                int oldValue = m_MonsterKillPoints;
+                if (oldValue != value)
+                {
+                    m_MonsterKillPoints = value;
+                    OnMonsterKillPointsChanged(oldValue);
+                }
+            }
+        }
 
         public HonorContext ReceivedHonorContext { get; set; }
 
@@ -2771,6 +2787,11 @@ namespace Server.Mobiles
 
             switch (version)
             {
+                case 35:
+                    {
+                        m_MonsterKillPoints = reader.ReadInt();
+                        goto case 34;
+                    }
                 case 34: // Acquired Recipes is now a Set
                 case 33: // Removes champion title
                 case 32: // Removes virtue properties
@@ -3118,7 +3139,9 @@ namespace Server.Mobiles
         {
             base.Serialize(writer);
 
-            writer.Write(34); // version
+            writer.Write(35); // version
+
+            writer.Write(MonsterKillPoints);
 
             if (Stabled == null)
             {
@@ -3793,10 +3816,32 @@ namespace Server.Mobiles
 
         public override void OnKarmaChange(int oldValue)
         {
+            StatusBar.Refresh(this);
         }
 
         public override void OnFameChange(int oldValue)
         {
+            StatusBar.Refresh(this);
+        }
+
+        public override void OnHungerChanged(int oldValue)
+        {
+            StatusBar.Refresh(this);
+        }
+
+        public override void OnThirstChanged(int oldValue)
+        {
+            StatusBar.Refresh(this);
+        }
+
+        public override void OnTithingPointsChange(int oldValue)
+        {
+            StatusBar.Refresh(this);
+        }
+
+        public virtual void OnMonsterKillPointsChanged(int oldValue)
+        {
+            StatusBar.Refresh(this);
         }
 
         public override void OnSkillChange(SkillName skill, double oldBase)

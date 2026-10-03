@@ -3453,6 +3453,17 @@ namespace Server.Mobiles
                     Paragon.GiveArtifactTo(mob);
                 }
             }
+            if (mob is PlayerMobile player)
+            {
+                int points = this.Fame / 200;
+
+                if (points > 0)
+                {
+                    player.MonsterKillPoints += points;
+
+                    player.SendMessage(0x43, $"You earned {points} kill points. (Total: {player.MonsterKillPoints})");
+                }
+            }
         }
 
         public override void OnDeath(Container c)

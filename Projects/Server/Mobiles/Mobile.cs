@@ -825,11 +825,17 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
         {
             if (m_TithingPoints != value)
             {
+                int oldValue = m_TithingPoints;
                 m_TithingPoints = value;
 
                 Delta(MobileDelta.TithingPoints);
+                OnTithingPointsChange(oldValue);
             }
         }
+    }
+
+    public virtual void OnTithingPointsChange(int oldValue)
+    {
     }
 
     [CommandProperty(AccessLevel.GameMaster)]
