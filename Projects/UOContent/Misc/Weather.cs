@@ -59,7 +59,7 @@ public partial class Weather
 
     public static void Initialize()
     {
-        m_Facets = [Map.Felucca, Map.Trammel];
+        m_Facets = [Map.Trammel];
 
         /* Static weather:
          *
@@ -67,21 +67,24 @@ public partial class Weather
          *   AddWeather( temperature, chanceOfPrecipitation, chanceOfExtremeTemperature, <area ...> );
          */
 
-        // ice island
+        // Cold Regions
         AddWeather(
             -15,
             100,
             5,
-            new Rectangle2D(3850, 160, 390, 320),
-            new Rectangle2D(3900, 480, 380, 180),
-            new Rectangle2D(4160, 660, 150, 110)
+            // Port Grim && Wharf's End
+            new Rectangle2D(2904, 296, 397, 383),
+            new Rectangle2D(3209, 234, 92, 58),
+            new Rectangle2D(3301, 234, 66, 637),
+            new Rectangle2D(3367, 291, 330, 580),
+            //Coldbarrow
+            new Rectangle2D(3194, 2185, 785, 291),
+            new Rectangle2D(3426, 2476, 346, 87),
+            new Rectangle2D(2629, 2218, 243, 670),
+            new Rectangle2D(2935, 2248, 50, 560),
+            new Rectangle2D(2985, 2326, 81, 368),
+            new Rectangle2D(3066, 2364, 128, 139)
         );
-
-        // covetous entrance, around vesper and minoc
-        AddWeather(+15, 50, 5, new Rectangle2D(2425, 725, 250, 250));
-
-        // despise entrance, north of britain
-        AddWeather(+15, 50, 5, new Rectangle2D(1245, 1045, 250, 250));
 
         /* Dynamic weather:
          *
@@ -91,7 +94,7 @@ public partial class Weather
 
         for (var i = 0; i < 15; ++i)
         {
-            AddDynamicWeather(+15, 100, 5, 8, 400, 400, new Rectangle2D(0, 0, 5120, 4096));
+            AddDynamicWeather(+15, 100, 5, 8, 400, 400, new Rectangle2D(0, 0, 4275, 4095));
         }
     }
 

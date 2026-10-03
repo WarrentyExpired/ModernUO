@@ -208,22 +208,6 @@
   },
   {
     "$type": "Spawner",
-    "guid": "940fe9de-3a26-40a4-88c5-c2df52a97f12",
-    "location": [0, 0, 1],
-    "map": "Veridia",
-    "count": 7,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 20,
-    "walkingRange": 30,
-    "entries": [
-      { "name": "bird", "probability": 100, "maxCount": 5 },
-      { "name": "dog", "probability": 100, "maxCount": 1 },
-      { "name": "cat", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
     "guid": "b72043a4-012a-4b6a-962b-42edbb5a0314",
     "location": [1818, 1903, 0],
     "map": "Veridia",
