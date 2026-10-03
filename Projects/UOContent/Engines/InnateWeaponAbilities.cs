@@ -125,7 +125,7 @@ namespace Server.Combat
             int damage = Utility.RandomMinMax(15, 25);
             AOS.Damage(defender, attacker, damage, 100, 0, 0, 0, 0);
 
-            attacker.SendMessage(0x21, $"You brutally sever your opponent, dealing {damage} extra damage!");
+            attacker.SendMessage(0x21, $"You brutally sever your opponent, dealing extra damage!");
             defender.SendMessage(0x22, "A brutal strike tears into your flesh!");
         }
 
