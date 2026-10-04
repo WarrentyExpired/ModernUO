@@ -770,6 +770,14 @@ namespace Server.Mobiles
             set => m_TotalPlayerDeaths = value;
         }
 
+        private int m_ExhaustionDamageTracker;
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int ExhaustionDamageTracker
+        {
+            get => m_ExhaustionDamageTracker;
+            set => m_ExhaustionDamageTracker = value;
+        }
+
         public HonorContext ReceivedHonorContext { get; set; }
 
         public QuestArrow QuestArrow
@@ -2417,6 +2425,35 @@ namespace Server.Mobiles
             SentHonorContext?.OnSourceDamaged(from, amount);
 
             base.OnDamage(amount, from, willKill);
+            if (this.Alive && amount > 0)
+            {
+                m_ExhaustionDamageTracker += amount;
+
+                if (m_ExhaustionDamageTracker >= 200)
+                {
+                    int drops = m_ExhaustionDamageTracker / 200;
+                    bool statsDropped = false;
+
+                    if (this.Hunger > 0)
+                    {
+                        this.Hunger = Math.Max(0, this.Hunger - drops);
+                        statsDropped = true;
+                    }
+
+                    if (this.Thirst > 0)
+                    {
+                        this.Thirst = Math.Max(0, this.Thirst - drops);
+                        statsDropped = true;
+                    }
+
+                    if (statsDropped)
+                    {
+                        this.SendMessage(33, "The physical toll of combat leaves you exhausted.");
+                        StatusBar.Refresh(this);
+                    }
+                    m_ExhaustionDamageTracker %= 200;
+                }
+            }
         }
 
         public override void Resurrect()
