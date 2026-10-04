@@ -7,6 +7,7 @@ using Server.Gumps;
 using Server.Misc;
 using Server.Mobiles;
 using Server.Targeting;
+using Server.Engines.BuffIcons;
 
 namespace Server.Items;
 
@@ -162,6 +163,10 @@ public class BandageContext : Timer
 
     public void StopHeal()
     {
+        if (Healer is PlayerMobile pm)
+        {
+            pm.RemoveBuff(BuffIcon.Healing);
+        }
         _table.Remove(Healer);
         Stop();
     }
@@ -537,6 +542,10 @@ public class BandageContext : Timer
             if (!onSelf)
             {
                 patient.SendLocalizedMessage(1008078, false, healer.Name); // : Attempting to heal you.
+            }
+            if (healer is PlayerMobile pm)
+            {
+                pm.AddBuff(new BuffInfo(BuffIcon.Healing, 1042971, TimeSpan.FromMilliseconds(seconds), "Healing"));
             }
 
             healer.SendLocalizedMessage(500956); // You begin applying the bandages.
