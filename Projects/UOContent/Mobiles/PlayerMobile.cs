@@ -732,17 +732,34 @@ namespace Server.Mobiles
 
         private int m_MonsterKillPoints;
         [CommandProperty(AccessLevel.GameMaster)]
-        public int MonsterKillPoints {
+        public int MonsterKillPoints
+        {
             get => m_MonsterKillPoints;
-            set
-            {
-                int oldValue = m_MonsterKillPoints;
-                if (oldValue != value)
-                {
-                    m_MonsterKillPoints = value;
-                    OnMonsterKillPointsChanged(oldValue);
-                }
-            }
+            set => m_MonsterKillPoints = value;
+        }
+
+        private int m_TotalGoldLooted;
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int TotalGoldLooted
+        {
+            get => m_TotalGoldLooted;
+            set => m_TotalGoldLooted = value;
+        }
+
+        private int m_TotalMonstersKilled;
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int TotalMonstersKilled
+        {
+            get => m_TotalMonstersKilled;
+            set => m_TotalMonstersKilled = value;
+        }
+
+        private int m_TotalPlayerDeaths;
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int TotalPlayerDeaths
+        {
+            get => m_TotalPlayerDeaths;
+            set => m_TotalPlayerDeaths = value;
         }
 
         public HonorContext ReceivedHonorContext { get; set; }
@@ -2497,6 +2514,8 @@ namespace Server.Mobiles
         {
             base.OnDeath(c);
 
+            m_TotalPlayerDeaths += 1;
+
             EquipSnapshot = null;
 
             HueMod = -1;
@@ -2789,6 +2808,9 @@ namespace Server.Mobiles
             {
                 case 35:
                     {
+                        m_TotalPlayerDeaths = reader.ReadInt();
+                        m_TotalMonstersKilled = reader.ReadInt();
+                        m_TotalGoldLooted = reader.ReadInt();
                         m_MonsterKillPoints = reader.ReadInt();
                         goto case 34;
                     }
@@ -3141,7 +3163,10 @@ namespace Server.Mobiles
 
             writer.Write(35); // version
 
-            writer.Write(MonsterKillPoints);
+            writer.Write(m_TotalPlayerDeaths);
+            writer.Write(m_TotalMonstersKilled);
+            writer.Write(m_TotalGoldLooted);
+            writer.Write(m_MonsterKillPoints);
 
             if (Stabled == null)
             {
@@ -3835,11 +3860,6 @@ namespace Server.Mobiles
         }
 
         public override void OnTithingPointsChange(int oldValue)
-        {
-            StatusBar.Refresh(this);
-        }
-
-        public virtual void OnMonsterKillPointsChanged(int oldValue)
         {
             StatusBar.Refresh(this);
         }

@@ -68,29 +68,27 @@ namespace Server.Custom.UI
 
             if (m_IsVertical)
             {
-                AddBackground(0, 0, 150, 200, 9270);
+                AddBackground(0, 0, 150, 175, 9270);
 
                 AddHtml(15, 15, 120, 20, $"<BASEFONT COLOR=#FCCA03>Fame:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Fame}</BASEFONT>", false, false);
                 AddHtml(15, 40, 120, 20, $"<BASEFONT COLOR=#FCCA03>Karma:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Karma}</BASEFONT>", false, false);
                 AddHtml(15, 65, 120, 20, $"<BASEFONT COLOR=#FCCA03>Hunger:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Hunger}/20</BASEFONT>", false, false);
                 AddHtml(15, 90, 120, 20, $"<BASEFONT COLOR=#FCCA03>Thirst:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Thirst}/20</BASEFONT>", false, false);
                 AddHtml(15, 115, 120, 20, $"<BASEFONT COLOR=#FCCA03>Tithing:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.TithingPoints}</BASEFONT>", false, false);
-                AddHtml(15, 140, 120, 20, $"<BASEFONT COLOR=#FCCA03>Kills:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.MonsterKillPoints}</BASEFONT>", false, false);
 
-                AddButton(115, 167, 9720, 9722, 2, GumpButtonType.Reply, 0);
+                AddButton(115, 142, 9720, 9722, 2, GumpButtonType.Reply, 0);
             }
             else
             {
-                AddBackground(0, 0, 650, 45, 9270);
+                AddBackground(0, 0, 550, 45, 9270);
 
                 AddHtml(15, 12, 110, 20, $"<BASEFONT COLOR=#FCCA03>Fame:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Fame}</BASEFONT>", false, false);
                 AddHtml(110, 12, 110, 20, $"<BASEFONT COLOR=#FCCA03>Karma:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Karma}</BASEFONT>", false, false);
                 AddHtml(215, 12, 110, 20, $"<BASEFONT COLOR=#FCCA03>Hunger:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Hunger}/20</BASEFONT>", false, false);
                 AddHtml(315, 12, 110, 20, $"<BASEFONT COLOR=#FCCA03>Thirst:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Thirst}/20</BASEFONT>", false, false);
                 AddHtml(410, 12, 110, 20, $"<BASEFONT COLOR=#FCCA03>Tithing:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.TithingPoints}</BASEFONT>", false, false);
-                AddHtml(510, 12, 110, 20, $"<BASEFONT COLOR=#FCCA03>Kills:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.MonsterKillPoints}</BASEFONT>", false, false);
 
-                AddButton(625, 15, 9720, 9722, 2, GumpButtonType.Reply, 0);
+                AddButton(525, 15, 9720, 9722, 2, GumpButtonType.Reply, 0);
             }
         }
 

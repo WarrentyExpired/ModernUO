@@ -100,8 +100,8 @@ public static partial class CharacterCreation
 
     public static readonly CityInfo[] NewHavenStartingCities =
     [
-        new("Fairwinds", "The Bountiful Harvest Inn", 1150168, 2272, 2812, 0, Map.Trammel),
         new("Bastion", "The Wayfarer's Inn", 1075074, 1839, 2004, 0, Map.Trammel),
+        new("Fairwinds", "The Bountiful Harvest Inn", 1150168, 2272, 2812, 0, Map.Trammel),
     ];
 
     public static readonly CityInfo[] StartingCitiesSA =

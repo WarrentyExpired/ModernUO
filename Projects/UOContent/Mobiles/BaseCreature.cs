@@ -3453,17 +3453,6 @@ namespace Server.Mobiles
                     Paragon.GiveArtifactTo(mob);
                 }
             }
-            if (mob is PlayerMobile player)
-            {
-                int points = this.Fame / 200;
-
-                if (points > 0)
-                {
-                    player.MonsterKillPoints += points;
-
-                    player.SendMessage(0x43, $"You earned {points} kill points. (Total: {player.MonsterKillPoints})");
-                }
-            }
         }
 
         public override void OnDeath(Container c)
@@ -3655,6 +3644,32 @@ namespace Server.Mobiles
 
             base.OnDeath(c);
 
+            if (c != null)
+            {
+                // Identify the killer (this naturally routes credit from tamed pets to their owner)
+                Mobile killer = this.LastKiller;
+                if (killer is BaseCreature pet && pet.ControlMaster != null)
+                {
+                    killer = pet.ControlMaster;
+                }
+
+                if (killer is PlayerMobile pm)
+                {
+                    // Scan the newly generated corpse for the exact amount of gold created
+                    int goldFound = c.GetAmount(typeof(Gold));
+
+                    if (goldFound > 0)
+                    {
+                        pm.TotalGoldLooted += goldFound;
+                        pm.TotalMonstersKilled += 1;
+                        int points = this.Fame /200;
+                        if (points > 0)
+                        {
+                            pm.MonsterKillPoints += points;
+                        }
+                    }
+                }
+            }
             if (DeleteCorpseOnDeath)
             {
                 c.Delete();
