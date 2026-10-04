@@ -3646,7 +3646,6 @@ namespace Server.Mobiles
 
             if (c != null)
             {
-                // Identify the killer (this naturally routes credit from tamed pets to their owner)
                 Mobile killer = this.LastKiller;
                 if (killer is BaseCreature pet && pet.ControlMaster != null)
                 {
@@ -3655,7 +3654,6 @@ namespace Server.Mobiles
 
                 if (killer is PlayerMobile pm)
                 {
-                    // Scan the newly generated corpse for the exact amount of gold created
                     int goldFound = c.GetAmount(typeof(Gold));
 
                     if (goldFound > 0)
@@ -3666,6 +3664,7 @@ namespace Server.Mobiles
                         if (points > 0)
                         {
                             pm.MonsterKillPoints += points;
+                            pm.LifetimeKillPoints += points;
                         }
                     }
                 }

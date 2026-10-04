@@ -754,6 +754,14 @@ namespace Server.Mobiles
             set => m_TotalMonstersKilled = value;
         }
 
+        private int m_LifetimeKillPoints;
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int LifetimeKillPoints
+        {
+            get => m_LifetimeKillPoints;
+            set => m_LifetimeKillPoints = value;
+        }
+
         private int m_TotalPlayerDeaths;
         [CommandProperty(AccessLevel.GameMaster)]
         public int TotalPlayerDeaths
@@ -2808,6 +2816,7 @@ namespace Server.Mobiles
             {
                 case 35:
                     {
+                        m_LifetimeKillPoints = reader.ReadInt();
                         m_TotalPlayerDeaths = reader.ReadInt();
                         m_TotalMonstersKilled = reader.ReadInt();
                         m_TotalGoldLooted = reader.ReadInt();
@@ -3163,6 +3172,7 @@ namespace Server.Mobiles
 
             writer.Write(35); // version
 
+            writer.Write(m_LifetimeKillPoints);
             writer.Write(m_TotalPlayerDeaths);
             writer.Write(m_TotalMonstersKilled);
             writer.Write(m_TotalGoldLooted);
