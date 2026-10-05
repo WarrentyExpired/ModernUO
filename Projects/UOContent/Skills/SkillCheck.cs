@@ -2,6 +2,7 @@ using System;
 using System.Runtime.CompilerServices;
 using Server.Factions;
 using Server.Mobiles;
+using Server.Regions;
 
 namespace Server.Misc;
 
@@ -142,6 +143,11 @@ public static class SkillCheck
                     gc *= 2;
                 }
 
+                if (from.Region is NewbieDungeonRegion)
+                {
+                    gc *= 3.0;
+                }
+
                 if (gc >= Utility.RandomDouble())
                 {
                     Gain(from, skill);
@@ -235,6 +241,12 @@ public static class SkillCheck
 
     public static void Gain(Mobile from, Skill skill)
     {
+        if (from.Region is NewbieDungeonRegion)
+        {
+            if (skill.Base >= 80.0)
+                return;
+        }
+
         if (from is BaseCreature { IsDeadPet: true })
         {
             return;
