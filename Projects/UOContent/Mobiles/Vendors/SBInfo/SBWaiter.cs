@@ -24,6 +24,7 @@ namespace Server.Mobiles
                 Add(new BeverageBuyInfo(typeof(Pitcher), BeverageType.Wine, 11, 20, 0x1F9B, 0));
                 Add(new BeverageBuyInfo(typeof(Pitcher), BeverageType.Water, 11, 20, 0x1F9D, 0));
 
+                Add(new GenericBuyInfo(typeof(WaterSkin), 15, 20, 0x098F, 0));
                 Add(new GenericBuyInfo(typeof(BreadLoaf), 6, 10, 0x103B, 0));
                 Add(new GenericBuyInfo(typeof(CheeseWheel), 21, 10, 0x97E, 0));
                 Add(new GenericBuyInfo(typeof(CookedBird), 17, 20, 0x9B7, 0));

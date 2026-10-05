@@ -29,6 +29,7 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo(typeof(CheeseWheel), 21, 10, 0x97E, 0));
                 Add(new GenericBuyInfo(typeof(CookedBird), 17, 20, 0x9B7, 0));
                 Add(new GenericBuyInfo(typeof(LambLeg), 8, 20, 0x160A, 0));
+                Add(new GenericBuyInfo(typeof(WaterSkin), 15, 20, 0x098F, 0));
 
                 Add(new GenericBuyInfo(typeof(WoodenBowlOfCarrots), 3, 20, 0x15F9, 0));
                 Add(new GenericBuyInfo(typeof(WoodenBowlOfCorn), 3, 20, 0x15FA, 0));

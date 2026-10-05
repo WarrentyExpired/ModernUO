@@ -59,6 +59,7 @@ namespace Server.Mobiles
                 Add(new BeverageBuyInfo(typeof(BeverageBottle), BeverageType.Wine, 7, 20, 0x9C7, 0));
                 Add(new BeverageBuyInfo(typeof(BeverageBottle), BeverageType.Liquor, 7, 20, 0x99B, 0));
                 Add(new BeverageBuyInfo(typeof(Jug), BeverageType.Cider, 13, 20, 0x9C8, 0));
+                Add(new GenericBuyInfo(typeof(WaterSkin), 15, 20, 0x098F, 0));
 
                 Add(new GenericBuyInfo(typeof(Pear), 3, 20, 0x994, 0));
                 Add(new GenericBuyInfo(typeof(Apple), 3, 20, 0x9D0, 0));
