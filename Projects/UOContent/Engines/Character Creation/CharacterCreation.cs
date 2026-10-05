@@ -213,6 +213,7 @@ public static partial class CharacterCreation
         newChar.Female = args.Female;
         newChar.Hue = newChar.Race.ClipSkinHue(args.Hue & 0x3FFF) | 0x8000;
         newChar.Hunger = 20;
+        newChar.Thirst = 20;
 
         SetName(newChar, args.Name);
         newChar.AddBackpack();
