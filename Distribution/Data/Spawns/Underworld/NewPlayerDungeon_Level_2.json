@@ -1,0 +1,1041 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "99fd0adc-1fad-4c17-acd3-70b1106d939c",
+    "location": [2586, 691, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2584, "y1": 689, "z1": 22, "x2": 2589, "y2": 694, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e8cf775b-1244-4fbc-a735-6617b5f2c5c4",
+    "location": [2577, 684, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2575, "y1": 682, "z1": 22, "x2": 2580, "y2": 687, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4f041320-27c6-4e14-9f9d-958e56e3182c",
+    "location": [2579, 675, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cc9e55ed-4cf1-436a-b5e6-8ac926b1b29c",
+    "location": [2667, 651, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "04c69d8d-3dd9-4467-a16e-dac0839cb477",
+    "location": [2667, 650, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "98671994-0f0f-468c-97fd-f21d4c3a33ae",
+    "location": [2664, 662, -2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fcb02768-adb5-4495-8794-1929eeacc635",
+    "location": [2678, 654, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "15307471-d6ea-4181-944d-1144b7864669",
+    "location": [2674, 643, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "09626b30-51be-43c6-9349-c0e729e7d5ab",
+    "location": [2662, 640, 9],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "85a8261e-7c1c-466e-904d-c7cdd4f10dab",
+    "location": [2682, 628, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "14987fd5-bb52-4109-b5be-cf99ccd86014",
+    "location": [2691, 603, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e1d6f06d-83fd-463c-a9d0-8abccf2f1ff3",
+    "location": [2659, 562, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "85d40069-8a8a-4512-a6dc-e550dab01b0a",
+    "location": [2650, 566, -2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b237529e-76ba-4aed-bb3d-edef801f42f5",
+    "location": [2691, 566, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7e90e1e0-d961-49ea-96e4-379cffa39c14",
+    "location": [2691, 604, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e54042b5-38b9-4329-be9a-036a4cebb784",
+    "location": [2687, 561, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "438dec47-15ef-40f7-bffa-38d17013a077",
+    "location": [2666, 570, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f12c1911-fc56-4200-b133-df445c2503ee",
+    "location": [2658, 562, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9b51575e-ef6b-4090-bcc5-4d0d8fa5c56e",
+    "location": [2685, 568, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cc792deb-fc0a-4cbc-8126-c6c9193c2d12",
+    "location": [2675, 587, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0bc62c44-9b45-4bcd-8118-c55f5988a641",
+    "location": [2660, 587, -2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2f8fdcaf-e7ae-4e77-bfca-f8a7e36d2e18",
+    "location": [2605, 608, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "407ac584-740a-406f-bd34-9acc3c5b6206",
+    "location": [2627, 619, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e5d3f683-a8ed-462b-8a00-1260161cfeaa",
+    "location": [2627, 619, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "190e6d30-60b5-4108-b5d2-4eb3cb56db0f",
+    "location": [2631, 605, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5c68e31d-9c28-4a5a-a8e7-87bc0362f764",
+    "location": [2644, 621, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f8d9bfce-7d91-4eae-86b2-f7046df8510d",
+    "location": [2643, 642, 2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "301732c2-91b1-44de-9c84-3ccd36ca3810",
+    "location": [2628, 646, 2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fff95f31-f456-437a-8515-56d3f9335f83",
+    "location": [2627, 653, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d3e9b30e-430e-4b95-8982-32fd3a0bdf47",
+    "location": [2615, 660, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bae2f91f-e998-43c8-be90-941549bf695b",
+    "location": [2590, 661, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3f3b90e0-b6bc-45bd-8712-6b9ede5cfee1",
+    "location": [2604, 648, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9888e0b0-e53d-43d6-83bc-b4a57e248365",
+    "location": [2586, 634, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cfb6d9e1-846c-49b1-b547-e37c3c697e09",
+    "location": [2588, 619, 2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1719aa72-f515-4858-9dc2-e0fd35ddd96b",
+    "location": [2596, 635, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1f003ec8-622c-47da-90ee-73d9ed7706d4",
+    "location": [2586, 635, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8321738b-a33b-4c48-99a0-fa806c011965",
+    "location": [2603, 597, -2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "499880b1-672d-4440-9d1e-5e41ce05c60d",
+    "location": [2586, 674, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f1500cc1-c89b-454b-9a38-77131c181e94",
+    "location": [2585, 678, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2583, "y1": 676, "z1": 22, "x2": 2588, "y2": 681, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8bf462b5-665f-4d7d-b58c-892b757a3533",
+    "location": [2585, 680, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2583, "y1": 678, "z1": 22, "x2": 2588, "y2": 683, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a83a8c14-256d-42f7-a555-2b42ea7cf858",
+    "location": [2582, 613, 3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "966ce862-7b30-4ae6-ba9a-6b07768a7e6f",
+    "location": [2623, 573, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c1c88981-6b45-4f9c-9b75-0f6f4cdf0b78",
+    "location": [2591, 584, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9b04c8a8-2ea6-4fca-9a7e-d23f1e43ab6c",
+    "location": [2603, 587, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "95e8f7bd-bd9b-40b7-aad7-5bd1e3ec4e7c",
+    "location": [2636, 582, 2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "858d2653-d0db-4efe-b149-2170be42696d",
+    "location": [2671, 619, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0432e3ce-de87-490d-9066-8d619ed3e7f9",
+    "location": [2584, 711, 22],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2582, "y1": 709, "z1": 22, "x2": 2587, "y2": 714, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e8f110ef-7bf2-4a2a-a0b4-cabc0c44f259",
+    "location": [2587, 715, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2585, "y1": 713, "z1": 0, "x2": 2590, "y2": 718, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3ef81364-50f5-4596-97f6-56ed6c969f4e",
+    "location": [2586, 706, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2584, "y1": 704, "z1": 0, "x2": 2589, "y2": 709, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "01960371-c75a-448b-9306-019ec62f9c19",
+    "location": [2579, 707, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2577, "y1": 705, "z1": 0, "x2": 2582, "y2": 710, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2b23b4d3-db49-4817-9364-0c52268a3c63",
+    "location": [2578, 684, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "23d8026e-b027-45bf-af42-33138fa7578c",
+    "location": [2586, 680, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d570b224-c1d1-4475-85f8-e97610207970",
+    "location": [2587, 689, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "brigand", "probability": 50, "maxCount": 1 },
+      { "name": "evilmage", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "727fb383-9e33-4877-a993-05f4f0fdc511",
+    "location": [2655, 610, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spectre", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "shade", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "orcishmage", "probability": 25, "maxCount": 1 },
+      { "name": "airelemental", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "71544d4b-8be4-484e-935b-9a82242bb592",
+    "location": [2651, 600, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 1 },
+      { "name": "ogre", "probability": 25, "maxCount": 1 },
+      { "name": "troll", "probability": 25, "maxCount": 1 },
+      { "name": "ratman", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 },
+      { "name": "earthelemental", "probability": 25, "maxCount": 1 },
+      { "name": "giantspider", "probability": 25, "maxCount": 1 },
+      { "name": "giantserpent", "probability": 25, "maxCount": 1 }
+    ]
+  }
+]

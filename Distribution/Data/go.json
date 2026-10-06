@@ -8,6 +8,14 @@
           "name": "Dungeons",
           "categories": [
             {
+              "name": "New Player Dungeon",
+              "locations": [
+                { "name": "Entrance", "location": [1922, 1986, 0], "map": "Veridia" },
+                { "name": "Level 1", "location": [2623, 695, 38], "map": "Underworld" },
+                { "name": "Level 2", "location": [2638, 585, 0], "map": "Underworld" }
+              ]
+            },
+            {
               "name": "Shame",
               "locations": [
                 { "name": "Entrance", "location": [1585, 1960, 2], "map": "Veridia" },
