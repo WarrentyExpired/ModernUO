@@ -26,6 +26,7 @@ using Server.Spells.Necromancy;
 using Server.Spells.Sixth;
 using Server.Spells.Spellweaving;
 using Server.Targeting;
+using Server.Custom;
 
 namespace Server.Mobiles
 {
@@ -3650,6 +3651,23 @@ namespace Server.Mobiles
                 if (killer is BaseCreature pet && pet.ControlMaster != null)
                 {
                     killer = pet.ControlMaster;
+                }
+
+                Region deathRegion = Region.Find(c.Location, c.Map);
+
+                if (DailyDungeonManager.IsActive(deathRegion))
+                {
+                    c.DropItem(new Server.Items.Gold(Utility.RandomMinMax(100, 300)));
+
+                    if (Utility.RandomDouble() <= 0.05)
+                    {
+                        c.DropItem(new Server.Items.SpecialHairDye());
+                    }
+
+                    if (killer != null)
+                    {
+                        killer.SendMessage(38, "You have killed a daily mob and earned bonus loot!");
+                    }
                 }
 
                 if (killer is PlayerMobile pm)

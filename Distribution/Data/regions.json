@@ -2109,7 +2109,7 @@
   {
     "$type": "NewbieDungeonRegion",
     "Map": "Underworld",
-    "Name": "New Player Dungeon",
+    "Name": "the New Player Dungeon",
     "Priority": 60,
     "Area": [
       { "x1": 2561, "y1": 546, "x2": 2831, "y2": 795 }

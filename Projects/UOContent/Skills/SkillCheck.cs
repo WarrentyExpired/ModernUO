@@ -3,6 +3,7 @@ using System.Runtime.CompilerServices;
 using Server.Factions;
 using Server.Mobiles;
 using Server.Regions;
+using Server.Custom;
 
 namespace Server.Misc;
 
@@ -146,6 +147,10 @@ public static class SkillCheck
                 if (from.Region is NewbieDungeonRegion)
                 {
                     gc *= 3.0;
+                }
+                else if (DailyDungeonManager.IsActive(from.Region))
+                {
+                    gc *= 2.0;
                 }
 
                 if (gc >= Utility.RandomDouble())
