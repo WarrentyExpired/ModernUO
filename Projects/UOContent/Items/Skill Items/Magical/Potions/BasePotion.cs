@@ -50,7 +50,7 @@ public abstract partial class BasePotion : Item, ICraftable, ICommodity
     {
         _potionEffect = effect;
 
-        Stackable = Core.ML;
+        Stackable = true; //Core.ML;
     }
 
     public override double DefaultWeight => 1.0;
