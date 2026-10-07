@@ -895,33 +895,5 @@
     "entries": [
       { "name": "carpenter", "probability": 100, "maxCount": 1 }
     ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "2126cd7b-a05a-48c9-b863-115cd1d797c1",
-    "location": [1732, 2031, 0],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 2,
-    "walkingRange": 5,
-    "entries": [
-      { "name": "keeperofchivalry", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "36e3210f-3fa0-439d-92cc-65a12c7cbd86",
-    "location": [1750, 1997, 0],
-    "map": "Veridia",
-    "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
-    "homeRange": 3,
-    "walkingRange": -1,
-    "entries": [
-      { "name": "necromancer", "probability": 100, "maxCount": 1 }
-    ]
   }
 ]

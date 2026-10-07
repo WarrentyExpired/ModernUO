@@ -303,7 +303,7 @@
   {
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
-    "Name": "Bastion Keeper of Chivalry",
+    "Name": "Monster Points Dealer",
     "Parent": { "Name": "the Town of Bastion", "Map": "Veridia" },
     "Priority": 55,
     "Area": [
