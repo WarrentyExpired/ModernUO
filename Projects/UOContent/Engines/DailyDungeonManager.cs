@@ -90,7 +90,7 @@ namespace Server.Custom
             }
 
             m.SendMessage(1161, $"*** Dungeon of the Day: {displayName} ***");
-            m.SendMessage(259, "Active Bonuses: Increased Skill gains, extra gold drops, and a chance for rare items!");
+            m.SendMessage(259, "Active Bonuses: Increased Skill gains, 50% more gold, 25% more Monster Kill  Points, and a chance for rare items!");
         }
     }
 }

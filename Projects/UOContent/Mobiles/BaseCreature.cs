@@ -3655,9 +3655,18 @@ namespace Server.Mobiles
 
                 Region deathRegion = Region.Find(c.Location, c.Map);
 
+                int baseGold = c.GetAmount(typeof(Server.Items.Gold));
+
                 if (DailyDungeonManager.IsActive(deathRegion))
                 {
-                    c.DropItem(new Server.Items.Gold(Utility.RandomMinMax(100, 300)));
+                    if (baseGold > 0)
+                    {
+                        int bonusGold = (int)(baseGold * 0.50);
+                        if (bonusGold > 0)
+                        {
+                            c.DropItem(new Server.Items.Gold(bonusGold));
+                        }
+                    }
 
                     if (Utility.RandomDouble() <= 0.05)
                     {
@@ -3672,13 +3681,19 @@ namespace Server.Mobiles
 
                 if (killer is PlayerMobile pm)
                 {
-                    int goldFound = c.GetAmount(typeof(Gold));
+                    int totalGoldFound = c.GetAmount(typeof(Server.Items.Gold));
 
-                    if (goldFound > 0)
+                    if (totalGoldFound > 0)
                     {
-                        pm.TotalGoldLooted += goldFound;
+                        pm.TotalGoldLooted += totalGoldFound;
                         pm.TotalMonstersKilled += 1;
-                        int points = this.Fame /200;
+
+                        int points = this.Fame / 200;
+                        if (DailyDungeonManager.IsActive(deathRegion))
+                        {
+                            points = (int)(points * 1.25);
+                        }
+
                         if (points > 0)
                         {
                             pm.MonsterKillPoints += points;
