@@ -3696,19 +3696,22 @@ namespace Server.Mobiles
 
                     if (totalGoldFound > 0)
                     {
-                        pm.TotalGoldLooted += totalGoldFound;
-                        pm.TotalMonstersKilled += 1;
-
-                        int points = this.Fame / 200;
-                        if (DailyDungeonManager.IsActive(deathRegion))
+                        if (!(deathRegion is NewbieDungeonRegion))
                         {
-                            points = (int)(points * 1.25);
-                        }
+                            pm.TotalGoldLooted += totalGoldFound;
+                            pm.TotalMonstersKilled += 1;
 
-                        if (points > 0)
-                        {
-                            pm.MonsterKillPoints += points;
-                            pm.LifetimeKillPoints += points;
+                            int points = this.Fame / 200;
+                            if (DailyDungeonManager.IsActive(deathRegion))
+                            {
+                                points = (int)(points * 1.25);
+                            }
+
+                            if (points > 0)
+                            {
+                                pm.MonsterKillPoints += points;
+                                pm.LifetimeKillPoints += points;
+                            }
                         }
                     }
                 }
