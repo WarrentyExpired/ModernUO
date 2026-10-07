@@ -5,8 +5,8 @@
     "location": [517, 2679, 25],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "spawnBounds": { "x1": 516, "y1": 2678, "z1": 25, "x2": 519, "y2": 2681, "z2": 128 },
     "walkingRange": 1,
     "entries": [
@@ -19,8 +19,8 @@
     "location": [509, 2679, 5],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 4,
     "walkingRange": 4,
     "entries": [
@@ -33,8 +33,8 @@
     "location": [508, 2676, 25],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "spawnBounds": { "x1": 507, "y1": 2675, "z1": 25, "x2": 510, "y2": 2678, "z2": 128 },
     "walkingRange": -1,
     "entries": [
@@ -47,8 +47,8 @@
     "location": [517, 2671, 5],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 4,
     "walkingRange": -1,
     "entries": [

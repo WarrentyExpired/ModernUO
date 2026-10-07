@@ -5,14 +5,14 @@
     "location": [1906, 1970, 0],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 2,
     "walkingRange": 4,
     "entries": [
       { "name": "ghoul", "probability": 25, "maxCount": 1 },
       { "name": "spectre", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
     ]
   },
   {
@@ -21,14 +21,14 @@
     "location": [1927, 1972, 0],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 4,
     "walkingRange": 4,
     "entries": [
       { "name": "skeleton", "probability": 25, "maxCount": 1 },
       { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
     ]
   },
   {
@@ -37,14 +37,14 @@
     "location": [1929, 1989, 0],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 4,
     "walkingRange": 4,
     "entries": [
       { "name": "skeleton", "probability": 25, "maxCount": 1 },
       { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
     ]
   },
   {
@@ -53,14 +53,14 @@
     "location": [1906, 1962, 0],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 2,
     "walkingRange": 4,
     "entries": [
       { "name": "ghoul", "probability": 25, "maxCount": 1 },
       { "name": "spectre", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
     ]
   },
   {
@@ -69,14 +69,14 @@
     "location": [1913, 1974, 0],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 4,
     "walkingRange": 4,
     "entries": [
       { "name": "skeleton", "probability": 25, "maxCount": 1 },
       { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
     ]
   },
   {
@@ -85,14 +85,14 @@
     "location": [1929, 1962, 0],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 2,
     "walkingRange": 4,
     "entries": [
       { "name": "ghoul", "probability": 25, "maxCount": 1 },
       { "name": "spectre", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
     ]
   },
   {
@@ -101,14 +101,14 @@
     "location": [1929, 2004, 0],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 4,
     "walkingRange": 4,
     "entries": [
       { "name": "skeleton", "probability": 25, "maxCount": 1 },
       { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
     ]
   },
   {
@@ -117,14 +117,14 @@
     "location": [1922, 1994, 0],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 4,
     "walkingRange": 4,
     "entries": [
       { "name": "skeleton", "probability": 25, "maxCount": 1 },
       { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
     ]
   },
   {
@@ -133,14 +133,14 @@
     "location": [1919, 1966, 0],
     "map": "Veridia",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 4,
     "walkingRange": -1,
     "entries": [
       { "name": "skeleton", "probability": 25, "maxCount": 1 },
       { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
     ]
   }
 ]
