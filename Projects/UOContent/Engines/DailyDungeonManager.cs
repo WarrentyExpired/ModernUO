@@ -1,6 +1,7 @@
 using System;
 using Server;
 using Server.Commands;
+using Server.Items;
 
 namespace Server.Custom
 {
@@ -63,6 +64,83 @@ namespace Server.Custom
             World.Broadcast(1161, true, $"The magical energies of the world have shifted. {ActiveDungeon} is now the Dungeon of the Day!");
         }
 
+        private static readonly Func<Server.Item>[] DailyRares = new Func<Server.Item>[]
+        {
+            // --- Cosmetics & Status ---
+            () => new ClothingBlessDeed(),
+            () => new SpecialHairDye(),
+            () => new SpecialBeardDye(),
+            () => new LeatherDyeTub(),
+            () => new FurnitureDyeTub(),
+            () => new BlackDyeTub(),
+            () => new MetallicLeatherDyeTub(),
+            () => new RunebookDyeTub(),
+            () => new SpecialDyeTub(),
+            () => new WhiteClothDyeTub(),
+            () => new WhiteLeatherDyeTub(),
+
+            // --- Wealth & Adventure ---
+            // Forces a Level 5 (Devious) Treasure Map
+            () => new TreasureMap(5, Map.Trammel),
+            // A fat bank check for 5,000 gold
+            () => new BankCheck(5000),
+
+            // --- Classic UOR Deco Rares ---
+            () => new DecoGoldIngot(),
+            () => new DecoGoldIngot2(),
+            () => new DecoGoldIngots(),
+            () => new DecoGoldIngots2(),
+            () => new DecoGoldIngots3(),
+            () => new DecoGoldIngots4(),
+            () => new DecoIronIngot(),
+            () => new DecoIronIngot2(),
+            () => new DecoIronIngots(),
+            () => new DecoIronIngots2(),
+            () => new DecoIronIngots3(),
+            () => new DecoIronIngots4(),
+            () => new DecoIronIngots5(),
+            () => new DecoIronIngots6(),
+            () => new DecoSilverIngot(),
+            () => new DecoSilverIngot2(),
+            () => new DecoSilverIngots(),
+            () => new DecoSilverIngots2(),
+            () => new DecoSilverIngots3(),
+            () => new DecoSilverIngots4(),
+            () => new DecoSilverIngots5(),
+            () => new Bucket(),
+            () => new ClosedBarrel(),
+            () => new WaterBarrel(),
+            () => new DecoCrystalBall(),
+            () => new DecoMagicalCrystal(),
+            () => new DecoHay(),
+            () => new DecoHay2(),
+            () => new DecoHorseDung(),
+            () => new EmptyToolKit(),
+            () => new Lockpicks(),
+
+            // --- Rare Resources ---
+            // Drops exactly 50 Valorite Ingots
+            () => new ValoriteIngot(50),
+            () => new VeriteIngot(50),
+            () => new AgapiteIngot(50),
+            () => new GoldIngot(50),
+
+            // --- Weaons and Armor ---
+            () =>
+            {
+                var halberd = new Halberd();
+                halberd.DamageLevel = WeaponDamageLevel.Vanq;
+                halberd.DurabilityLevel = WeaponDurabilityLevel.Indestructible;
+                return halberd;
+            }
+
+        };
+
+        public static Server.Item GetRandomRare()
+        {
+            Func<Server.Item> createItem = DailyRares[Utility.Random(DailyRares.Length)];
+            return createItem();
+        }
         [Usage("ForceDungeonSwap")]
         [Description("Forces the Dungeon of the Day to rotate immediately.")]
         private static void ForceSwap_OnCommand(CommandEventArgs e)

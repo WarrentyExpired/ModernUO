@@ -2181,7 +2181,7 @@
   {
     "$type": "DungeonRegion",
     "Map": "Underworld",
-    "Name": "the Dungeon Deciet",
+    "Name": "the Dungeon Deceit",
     "Priority": 50,
     "Area": [
       { "x1": 1464, "y1": 49, "x2": 1571, "y2": 170 },
@@ -2193,8 +2193,8 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
-    "Parent": { "Map": "Underworld", "Name": "the Dungeon Deciet" },
-    "Name": "the Dungeon Deciet - Level 1",
+    "Parent": { "Map": "Underworld", "Name": "the Dungeon Deceit" },
+    "Name": "the Dungeon Deceit - Level 1",
     "Priority": 55,
     "Area": [
       { "x1": 1464, "y1": 49, "x2": 1571, "y2": 170 }
@@ -2203,8 +2203,8 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
-    "Parent": { "Map": "Underworld", "Name": "the Dungeon Deciet" },
-    "Name": "Deciet - Level 2",
+    "Parent": { "Map": "Underworld", "Name": "the Dungeon Deceit" },
+    "Name": "Deceit - Level 2",
     "Priority": 55,
     "Area": [
       { "x1": 1595, "y1": 37, "x2": 1690, "y2": 166 }
@@ -2213,8 +2213,8 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
-    "Parent": { "Map": "Underworld", "Name": "the Dungeon Deciet" },
-    "Name": "Deciet - Level 3",
+    "Parent": { "Map": "Underworld", "Name": "the Dungeon Deceit" },
+    "Name": "Deceit - Level 3",
     "Priority": 55,
     "Area": [
       { "x1": 1450, "y1": 170, "x2": 1570, "y2": 301 }
@@ -2223,8 +2223,8 @@
   {
     "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
-    "Parent": { "Map": "Underworld", "Name": "the Dungeon Deciet" },
-    "Name": "Deciet - Level 4",
+    "Parent": { "Map": "Underworld", "Name": "the Dungeon Deceit" },
+    "Name": "Deceit - Level 4",
     "Priority": 55,
     "Area": [
       { "x1": 1574, "y1": 165, "x2": 1673, "y2": 295 }

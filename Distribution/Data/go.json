@@ -38,7 +38,7 @@
               ]
             },
             {
-              "name": "Deciet",
+              "name": "Deceit",
               "locations": [
                 { "name": "Entrance", "location": [1068, 1512, 10], "map": "Veridia" },
                 { "name": "Level 1", "location": [1515, 164, 0], "map": "Underworld" },

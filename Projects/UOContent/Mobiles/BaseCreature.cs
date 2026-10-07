@@ -3668,9 +3668,20 @@ namespace Server.Mobiles
                         }
                     }
 
+                    // 2% chance to drop a random rare from your curated list
                     if (Utility.RandomDouble() <= 0.05)
                     {
-                        c.DropItem(new Server.Items.SpecialHairDye());
+                        Server.Item rareLoot = Custom.DailyDungeonManager.GetRandomRare();
+                        if (rareLoot != null)
+                        {
+                            c.DropItem(rareLoot);
+
+                            // Optional: Add a special effect or sound when a rare drops!
+                            if (killer != null)
+                            {
+                                killer.SendMessage(1161, "A rare item has dropped into the corpse!");
+                            }
+                        }
                     }
 
                     if (killer != null)
