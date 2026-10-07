@@ -26,7 +26,7 @@ namespace Server.Mobiles
                 AddItem(new ShortPants(Utility.RandomNeutralHue()));
             }
 
-            SetStr(56, 700);
+            SetStr(56, 70);
             SetDex(31, 65);
             SetInt(61, 75);
 
