@@ -1392,7 +1392,7 @@ namespace Server.Items
             from.NetState.SendDisplayEquipmentInfo(Serial, number, _crafter, false, attrs);
         }
 
-        public void OnSingleClickPreUOTD(Mobile from)
+        /*public void OnSingleClickPreUOTD(Mobile from)
         {
             var isMagicItem = _durability != ArmorDurabilityLevel.Regular ||
                               _protectionLevel != ArmorProtectionLevel.Regular;
@@ -1454,6 +1454,96 @@ namespace Server.Items
                     ? $"{name} crafted with exceptional quality by {Crafter}"
                     : $"{name} crafted by {Crafter}"
             );
+        }
+        */
+        public void OnSingleClickPreUOTD(Mobile from)
+        {
+            var isMagicItem = _durability != ArmorDurabilityLevel.Regular ||
+                              _protectionLevel != ArmorProtectionLevel.Regular;
+
+            // 1. Display the main item name
+            if (isMagicItem && !_identified)
+            {
+                LabelTo(from, $"an unidentified {Name ?? Localization.GetText(LabelNumber).ToLowerInvariant()}");
+            }
+            else
+            {
+                var name = Name;
+                var articleAnName = (TileData.ItemTable[ItemID].Flags & TileFlag.ArticleAn) != 0;
+
+                if (isMagicItem)
+                {
+                    var builder = new ValueStringBuilder(stackalloc char[128]);
+
+                    var durabilityText = DurabilityText(out var articleAnDurability);
+                    if (durabilityText != null)
+                    {
+                        builder.AppendSpaceWithArticle(durabilityText, articleAnDurability);
+                    }
+
+                    if (name == null)
+                    {
+                        builder.AppendSpaceWithArticle(Localization.GetText(LabelNumber).ToLowerInvariant(), articleAnName);
+                    }
+                    else if (builder.Length != 0)
+                    {
+                        builder.Append($" {name}");
+                    }
+                    else
+                    {
+                        builder.Append(name);
+                    }
+
+                    var protectionText = ProtectionText;
+                    if (protectionText != null)
+                    {
+                        builder.Append($" of {protectionText}");
+                    }
+
+                    LabelTo(from, builder.ToString());
+                    builder.Dispose();
+                }
+                else
+                {
+                    name ??= $"{(articleAnName ? "an" : "a")} {Localization.GetText(LabelNumber).ToLowerInvariant()}";
+
+                    if (Crafter == null)
+                    {
+                        LabelTo(from, Quality == ArmorQuality.Exceptional ? $"{name} of exceptional quality" : name);
+                    }
+                    else
+                    {
+                        LabelTo(
+                            from,
+                            Quality == ArmorQuality.Exceptional
+                                ? $"{name} crafted with exceptional quality by {Crafter}"
+                                : $"{name} crafted by {Crafter}"
+                        );
+                    }
+                }
+            }
+
+            // 2. --- Sovereign Realm: Custom UOR Stat Display ---
+
+            // Show Strength Requirement
+            int strReq = ComputeStatReq(StatType.Str);
+            if (strReq > 0)
+            {
+                LabelTo(from, $"Strength Requirement: {strReq}");
+            }
+
+            // Show Dexterity Penalty (using Math.Abs to format "-5" as just "5")
+            int dexBonus = ComputeStatBonus(StatType.Dex);
+            if (dexBonus < 0)
+            {
+                LabelTo(from, $"Dexterity Penalty: {Math.Abs(dexBonus)}");
+            }
+
+            // Show Durability (using HitPoints / MaxHitPoints)
+            if (_maxHitPoints > 0)
+            {
+                LabelTo(from, $"Durability: {_hitPoints} / {_maxHitPoints}");
+            }
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]

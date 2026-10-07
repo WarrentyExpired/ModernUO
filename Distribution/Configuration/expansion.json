@@ -1,14 +1,14 @@
 {
-  "Id": 5,
-  "Name": "Age of Shadows",
-  "ClientFlags": "Malas",
+  "Id": 2,
+  "Name": "Renaissance",
+  "ClientFlags": "Trammel",
   "SupportedFeatures": {
     "ExpansionT2A": true,
     "T2A": true,
     "UOR": true,
     "UOTD": false,
-    "LBR": true,
-    "AOS": true,
+    "LBR": false,
+    "AOS": false,
     "SixthCharacterSlot": false,
     "SE": false,
     "ML": false,
@@ -19,7 +19,7 @@
     "SeventhCharacterSlot": false,
     "RoleplayFaces": false,
     "TrialAccount": false,
-    "LiveAccount": true,
+    "LiveAccount": false,
     "SA": false,
     "HS": false,
     "Gothic": false,
@@ -40,7 +40,7 @@
     "ExpansionUOR": true,
     "ContextMenus": true,
     "SlotLimit": false,
-    "AOS": true,
+    "AOS": false,
     "SixthCharacterSlot": false,
     "SE": false,
     "ML": false,
@@ -53,8 +53,8 @@
     "NewFeluccaAreas": false
   },
   "HousingFlags": {
-    "AOS": true,
-    "HousingAOS": true,
+    "AOS": false,
+    "HousingAOS": false,
     "SE": false,
     "ML": false,
     "Crystal": false,
@@ -67,12 +67,12 @@
     "TOL": false,
     "EJ": false
   },
-  "MobileStatusVersion": 6,
+  "MobileStatusVersion": 3,
   "MapSelectionFlags": {
     "Felucca": true,
     "Trammel": true,
-    "Ilshenar": true,
-    "Malas": true,
+    "Ilshenar": false,
+    "Malas": false,
     "Tokuno": false,
     "TerMur": false
   }

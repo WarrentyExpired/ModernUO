@@ -3228,7 +3228,7 @@ public abstract partial class BaseWeapon
         from.NetState.SendDisplayEquipmentInfo(Serial, number, _crafter, false, attrs);
     }
 
-    public virtual void OnSingleClickPreUOTD(Mobile from)
+    /*public virtual void OnSingleClickPreUOTD(Mobile from)
     {
         var isMagicItem = _durabilityLevel > WeaponDurabilityLevel.Regular ||
                           _accuracyLevel > WeaponAccuracyLevel.Regular ||
@@ -3306,6 +3306,112 @@ public abstract partial class BaseWeapon
                 ? $"{name} crafted with exceptional quality by {Crafter}"
                 : $"{name} crafted by {Crafter}"
         );
+    }
+    */
+    public virtual void OnSingleClickPreUOTD(Mobile from)
+    {
+        var isMagicItem = _durabilityLevel > WeaponDurabilityLevel.Regular ||
+                          _accuracyLevel > WeaponAccuracyLevel.Regular ||
+                          _damageLevel > WeaponDamageLevel.Regular ||
+                          _slayer != SlayerName.None;
+
+        // 1. Display the main item name
+        if (isMagicItem && !_identified)
+        {
+            LabelTo(from, $"an unidentified {Name ?? Localization.GetText(LabelNumber).ToLowerInvariant()}");
+        }
+        else
+        {
+            var name = Name;
+            var articleAnName = (TileData.ItemTable[ItemID].Flags & TileFlag.ArticleAn) != 0;
+
+            if (isMagicItem)
+            {
+                var builder = new ValueStringBuilder(stackalloc char[160]);
+
+                var durabilityText = DurabilityText(out var articleAnDurability);
+                if (durabilityText != null)
+                {
+                    builder.AppendSpaceWithArticle(durabilityText, articleAnDurability);
+                }
+
+                var accuracyText = AccuracyText(out var articleAnAccuracy);
+                if (accuracyText != null)
+                {
+                    builder.AppendSpaceWithArticle(accuracyText, articleAnAccuracy);
+                }
+
+                var slayerEntry = SlayerGroup.GetEntryByName(_slayer);
+                if (slayerEntry != null)
+                {
+                    builder.AppendSpaceWithArticle(slayerEntry.SlayerText(out var articleAnSlayer), articleAnSlayer);
+                }
+
+                if (name == null)
+                {
+                    builder.AppendSpaceWithArticle(Localization.GetText(LabelNumber).ToLowerInvariant(), articleAnName);
+                }
+                else if (builder.Length != 0)
+                {
+                    builder.Append($" {name}");
+                }
+                else
+                {
+                    builder.Append(name);
+                }
+
+                var weaponDamageText = WeaponDamageText;
+                if (weaponDamageText != null)
+                {
+                    builder.Append($" of {weaponDamageText}");
+                }
+
+                // TODO: Spells (of Ghoul's Touch)
+
+                LabelTo(from, builder.ToString());
+                builder.Dispose();
+            }
+            else
+            {
+                // Handles regular, non-magic, or crafted weapons
+                name ??= $"{(articleAnName ? "an" : "a")} {Localization.GetText(LabelNumber).ToLowerInvariant()}";
+
+                if (Crafter == null)
+                {
+                    LabelTo(from, Quality == WeaponQuality.Exceptional ? $"{name} of exceptional quality" : name);
+                }
+                else
+                {
+                    LabelTo(
+                        from,
+                        Quality == WeaponQuality.Exceptional
+                            ? $"{name} crafted with exceptional quality by {Crafter}"
+                            : $"{name} crafted by {Crafter}"
+                    );
+                }
+            }
+        }
+
+        // 2. --- Sovereign Realm: Custom UOR Stat Display ---
+
+        // Show Damage
+        LabelTo(from, $"Damage: {MinDamage} to {MaxDamage}");
+
+        // Show Weapon Speed
+        LabelTo(from, $"Speed: {Speed}");
+
+        // Show Strength Requirement
+        int strReq = StrRequirement; // Usually named StrRequirement or DefStrReq depending on the emulator version
+        if (strReq > 0)
+        {
+            LabelTo(from, $"Strength Requirement: {strReq}");
+        }
+
+        // Show Durability
+        if (MaxHitPoints > 0)
+        {
+            LabelTo(from, $"Durability: {HitPoints} / {MaxHitPoints}");
+        }
     }
 
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
