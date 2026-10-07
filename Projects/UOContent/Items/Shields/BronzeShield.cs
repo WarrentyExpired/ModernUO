@@ -22,6 +22,6 @@ public partial class BronzeShield : BaseShield
     public override int InitMaxHits => 30;
 
     public override int AosStrReq => 35;
-
+    public override int OldStrReq => 35;
     public override int ArmorBase => 10;
 }

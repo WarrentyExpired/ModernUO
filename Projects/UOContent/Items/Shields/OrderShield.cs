@@ -27,6 +27,7 @@ public partial class OrderShield : BaseShield
     public override int InitMaxHits => 125;
 
     public override int AosStrReq => 95;
+    public override int OldStrReq => 95;
 
     public override int ArmorBase => 30;
 

@@ -21,6 +21,7 @@ public partial class GargishWoodenShield : BaseShield
     public override int InitMinHits => 20;
     public override int InitMaxHits => 25;
     public override int AosStrReq => 20;
+    public override int OldStrReq => 20;
 
     public override int RequiredRaces => Race.AllowGargoylesOnly;
 

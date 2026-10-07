@@ -22,6 +22,7 @@ public partial class MetalKiteShield : BaseShield, IDyable
     public override int InitMaxHits => 60;
 
     public override int AosStrReq => 45;
+    public override int OldStrReq => 45;
 
     public override int ArmorBase => 16;
 

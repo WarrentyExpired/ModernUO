@@ -22,6 +22,7 @@ public partial class MetalShield : BaseShield
     public override int InitMaxHits => 65;
 
     public override int AosStrReq => 45;
+    public override int OldStrReq => 45;
 
     public override int ArmorBase => 11;
 }

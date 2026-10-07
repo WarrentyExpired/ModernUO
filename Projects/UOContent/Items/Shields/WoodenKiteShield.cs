@@ -22,6 +22,7 @@ public partial class WoodenKiteShield : BaseShield
     public override int InitMaxHits => 65;
 
     public override int AosStrReq => 20;
+    public override int OldStrReq => 20;
 
     public override int ArmorBase => 12;
 

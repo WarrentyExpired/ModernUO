@@ -22,6 +22,7 @@ public partial class Buckler : BaseShield
     public override int InitMaxHits => 50;
 
     public override int AosStrReq => 20;
+    public override int OldStrReq => 20;
 
     public override int ArmorBase => 7;
 }

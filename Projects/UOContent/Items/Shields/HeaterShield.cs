@@ -22,6 +22,7 @@ public partial class HeaterShield : BaseShield
     public override int InitMaxHits => 65;
 
     public override int AosStrReq => 90;
+    public override int OldStrReq => 90;
 
     public override int ArmorBase => 23;
 }
