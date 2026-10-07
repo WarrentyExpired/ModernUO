@@ -2674,9 +2674,16 @@ public abstract partial class BaseWeapon
     {
         var scale = 100;
 
-        if (_maxHitPoints > 0 && _hitPoints < _maxHitPoints)
+        if (_maxHitPoints > 0)
         {
+            if (_hitPoints >= _maxHitPoints * 0.90)
+            {
+                scale = 110;
+            }
+            else
+            {
             scale = 50 + 50 * _hitPoints / _maxHitPoints;
+            }
         }
 
         return AOS.Scale(damage, scale);
