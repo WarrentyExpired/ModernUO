@@ -80,7 +80,7 @@
     "pathfinding.recorder.enable": "False",
     "pathfinding.recorder.path": "/home/warrentyexpired/Projects/SovereignRealm/Server/Distribution/Data/Pathfinding/recordings/pathfinds.jsonl",
     "pingServer.enabled": "True",
-    "questSystem.enableMLQuests": "False",
+    "questSystem.enableMLQuests": "True",
     "serverListing.address": null,
     "serverListing.autoDetect": "True",
     "serverListing.serverName": "Sovereign Realm",

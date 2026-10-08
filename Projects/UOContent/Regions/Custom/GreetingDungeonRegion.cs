@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Regions
 {
-    public class GreetingDungeonRegion : DungeonRegion
+    public class GreetingDungeonRegion : NoTravelSpellsAllowedRegion
     {
         public GreetingDungeonRegion(string name, Map map, int priority, params Rectangle3D[] area)
             : base(name, map, priority, area)
