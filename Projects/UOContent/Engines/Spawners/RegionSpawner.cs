@@ -115,6 +115,30 @@ public partial class RegionSpawner : Spawner
         }
     }
 
+    public override void OnMapChange()
+    {
+        base.OnMapChange();
+        UpdateRegionFromLocation();
+    }
+
+    public override void OnLocationChange(Point3D oldLocation)
+    {
+        base.OnLocationChange(oldLocation);
+        UpdateRegionFromLocation();
+    }
+
+    private void UpdateRegionFromLocation()
+    {
+        if (Map != null && Map != Map.Internal)
+        {
+            var currentRegion = Region.Find(Location, Map) as BaseRegion;
+            if (currentRegion != null && currentRegion != _spawnRegion)
+            {
+                SpawnRegion = currentRegion;
+            }
+        }
+    }
+
     [AfterDeserialization(false)]
     private void AfterDeserialization()
     {
