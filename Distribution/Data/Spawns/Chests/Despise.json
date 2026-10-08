@@ -1,0 +1,242 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "0d8f7e1d-ed97-41e4-b2c3-a621a6841fcb",
+    "name": "DespiseLevel4",
+    "location": [2588, 193, 30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a4c8fe3d-ea40-4a12-936d-9e3dd55f2cb1",
+    "name": "DespiseLevel4",
+    "location": [2546, 156, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 3,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "abac52ce-53bd-4ae7-81b5-1d592f4ab035",
+    "name": "DespiseLevel4",
+    "location": [2519, 287, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d82c5338-07a4-4954-8d45-33207a15333a",
+    "name": "DespiseLevel4",
+    "location": [2612, 187, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9e837239-8b2b-46e7-82ab-0cc7afa8971f",
+    "name": "DespiseLevel4",
+    "location": [2570, 299, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2570, "y1": 299, "z1": -128, "x2": 2571, "y2": 300, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f2c95e77-0ce9-40fd-9c92-88b6f301f18c",
+    "name": "DespiseLevel4",
+    "location": [2587, 98, 60],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9a905c18-7abd-4b42-825b-4d751abc1d47",
+    "name": "DespiseLevel4",
+    "location": [2676, 158, 45],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b0f08d80-b857-44cd-89c3-03bc69906e89",
+    "name": "DespiseLevel4",
+    "location": [2629, 110, 45],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a64e0355-a3bc-4c9d-bddd-6c3147557e59",
+    "name": "DespiseLevel4",
+    "location": [2597, 292, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1051118f-b84e-475e-a950-48747ddc9288",
+    "name": "DespiseLevel4",
+    "location": [2628, 115, 45],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "72857ce1-59bd-4c2c-956c-db33672bf798",
+    "name": "DespiseLevel4",
+    "location": [2506, 91, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "564b2f75-82c5-48b6-8d7e-1fa6476bcfb5",
+    "name": "DespiseLevel4",
+    "location": [2469, 285, 5],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 2 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "26e74496-3051-4d87-b1ca-707835182d85",
+    "name": "DespiseLevel4",
+    "location": [2538, 170, 30],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Despise - Level 4",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "treasurechestlevel2", "probability": 30, "maxCount": 3 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 7 },
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "52c06b6d-f47f-48bb-bb65-476e0c1a707f",
+    "name": "DespiseLevel3",
+    "location": [2286, 248, 20],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Despise - Level 3",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "treasurechestlevel1", "probability": 30, "maxCount": 5 },
+      { "name": "treasurechestlevel2", "probability": 70, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "958d1114-2339-45bf-92cc-eb19def3a439",
+    "name": "DespiseLevel1",
+    "location": [2281, 122, 65],
+    "map": "Underworld",
+    "count": 10,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Despise - Level 2",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "treasurechestlevel1", "probability": 100, "maxCount": 10 }
+    ]
+  }
+]

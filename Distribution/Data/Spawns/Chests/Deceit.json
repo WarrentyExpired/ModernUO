@@ -1,0 +1,362 @@
+[
+  {
+    "$type": "RegionSpawner",
+    "guid": "6bda1387-8775-49dd-ba57-b6bdf19d1281",
+    "name": "DeceitLevel4",
+    "location": [1627, 211, 0],
+    "map": "Underworld",
+    "count": 12,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Deceit - Level 4",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 30, "maxCount": 5 },
+      { "name": "treasurechestlevel4", "probability": 70, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "221bc457-c407-47b7-b830-253a8fcaae31",
+    "name": "DeceitLevel2",
+    "location": [1623, 152, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "treasurechestlevel2", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b1ea27d7-cabf-4bef-b668-5e910a2b9ea7",
+    "name": "DeceitLevel2",
+    "location": [1624, 151, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "treasurechestlevel2", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "52aff3af-f4da-44da-9ce8-b30354f00b4e",
+    "name": "DeceitLevel3",
+    "location": [1497, 228, 0],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Deceit - Level 3",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 70, "maxCount": 15 },
+      { "name": "treasurechestlevel2", "probability": 30, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ea5b4e95-94d1-400c-a4c5-907a349a2070",
+    "name": "DeceitLevel1",
+    "location": [1554, 79, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 7,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "treasurechestlevel1", "probability": 50, "maxCount": 3 },
+      { "name": "treasurechestlevel2", "probability": 50, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "9c19147b-1b66-48e2-be43-4c9493f6a8d9",
+    "name": "DeceitLevel2",
+    "location": [1634, 106, 0],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Deceit - Level 2",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel1", "probability": 30, "maxCount": 5 },
+      { "name": "treasurechestlevel2", "probability": 70, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f9c297c5-888b-4a82-8ae2-79643328c130",
+    "name": "DeceitLevel1",
+    "location": [1495, 97, 6],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 7,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "treasurechestlevel1", "probability": 50, "maxCount": 3 },
+      { "name": "treasurechestlevel2", "probability": 50, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7d9ca301-5991-42d8-924a-6b8f7dfa3204",
+    "name": "DeceitLevel2",
+    "location": [1667, 75, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel2", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "19ca6f0d-714b-4edb-8f0d-23b3bd47282a",
+    "name": "DeceitLevel1",
+    "location": [1517, 106, 0],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the Dungeon Deceit - Level 1",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel1", "probability": 90, "maxCount": 15 },
+      { "name": "treasurechestlevel2", "probability": 10, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ade64648-8ed5-4e5c-8d87-ed8d78416b2c",
+    "name": "DeceitLevel1",
+    "location": [1473, 146, -50],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 7,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel1", "probability": 50, "maxCount": 3 },
+      { "name": "treasurechestlevel2", "probability": 50, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3b4179f2-fe8a-4da5-afe7-1e405ad9ea55",
+    "name": "DeceitLevel4",
+    "location": [1636, 204, -20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1636, "y1": 204, "z1": -128, "x2": 1637, "y2": 205, "z2": 128 },
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d9ab3867-9841-495f-9dc4-4333909ceff1",
+    "name": "DeceitLevel3",
+    "location": [1482, 274, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1482, "y1": 274, "z1": -128, "x2": 1483, "y2": 275, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel2", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3cae6efa-2e1c-4630-af71-ca8a112e5418",
+    "name": "DeceitLevel4",
+    "location": [1592, 220, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1592, "y1": 220, "z1": -128, "x2": 1593, "y2": 221, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "22bae969-b2b5-4c06-b93e-687877ad1ef0",
+    "name": "DeceitLevel4",
+    "location": [1592, 203, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1592, "y1": 203, "z1": -128, "x2": 1593, "y2": 204, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "03ab8228-fd26-4bae-a0c1-274373b6d99b",
+    "name": "DeceitLevel4",
+    "location": [1604, 204, 6],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1604, "y1": 204, "z1": -128, "x2": 1605, "y2": 205, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2ca7dad4-1e50-450e-b751-02121bd27e64",
+    "name": "DeceitLevel4",
+    "location": [1652, 263, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1652, "y1": 263, "z1": -128, "x2": 1653, "y2": 264, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1a2979c8-5c9a-413d-a8bb-10b7c78564ee",
+    "name": "DeceitLevel4",
+    "location": [1643, 263, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1643, "y1": 263, "z1": -128, "x2": 1644, "y2": 264, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "24fb93f7-5bc3-48a3-899e-3b7ae2d223f1",
+    "name": "DeceitLevel4",
+    "location": [1639, 284, -20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1639, "y1": 284, "z1": -128, "x2": 1640, "y2": 285, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "567d8055-ec44-4a13-9e85-96ff1a563d20",
+    "name": "DeceitLevel4",
+    "location": [1652, 284, -20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1652, "y1": 284, "z1": -128, "x2": 1653, "y2": 285, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4b3c6569-96a7-4b5b-bf7e-802975f7bad1",
+    "name": "DeceitLevel3",
+    "location": [1547, 272, -20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1547, "y1": 272, "z1": -128, "x2": 1548, "y2": 273, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d33799e5-2a59-465d-a9fa-4aa4ea536b0f",
+    "name": "DeceitLevel3",
+    "location": [1515, 248, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1515, "y1": 248, "z1": -128, "x2": 1516, "y2": 249, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7e666b4c-f6cc-417f-8014-53a8d217600a",
+    "name": "DeceitLevel3",
+    "location": [1520, 223, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1520, "y1": 223, "z1": -128, "x2": 1521, "y2": 224, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a3437868-6ed2-4446-9479-547b4b8873b8",
+    "name": "DeceitLevel3",
+    "location": [1477, 228, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1477, "y1": 228, "z1": -128, "x2": 1478, "y2": 229, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6b75533d-c103-4c0b-8408-4604cfde776b",
+    "name": "DeceitLevel3",
+    "location": [1475, 274, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1475, "y1": 274, "z1": -128, "x2": 1476, "y2": 275, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel2", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  }
+]

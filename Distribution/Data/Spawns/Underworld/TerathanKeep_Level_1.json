@@ -1,0 +1,39 @@
+[
+  {
+    "$type": "RegionSpawner",
+    "guid": "69620145-d473-42bd-b04e-8271efbe882e",
+    "name": "TerathanTerritory",
+    "location": [3966, 130, 0],
+    "map": "Underworld",
+    "count": 40,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the Terathan's Territory",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "terathandrone", "probability": 50, "maxCount": 25 },
+      { "name": "terathanwarrior", "probability": 50, "maxCount": 25 },
+      { "name": "terathanavenger", "probability": 30, "maxCount": 15 },
+      { "name": "terathanmatriarch", "probability": 30, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "d14a0d0b-9bbe-42d1-8925-e889b8c24cf3",
+    "name": "OphidianTerritory",
+    "location": [3967, 142, 0],
+    "map": "Underworld",
+    "count": 25,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the Ophidian's Territory",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ophidianwarrior", "probability": 50, "maxCount": 25 },
+      { "name": "ophidianmage", "probability": 50, "maxCount": 25 },
+      { "name": "ophidianarchmage", "probability": 30, "maxCount": 10 },
+      { "name": "ophidianknight", "probability": 30, "maxCount": 10 },
+      { "name": "ophidianmatriarch", "probability": 30, "maxCount": 10 }
+    ]
+  }
+]

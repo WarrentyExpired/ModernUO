@@ -74,6 +74,10 @@ namespace Server.Gumps
             y += 30;
 
             AddButton(20, y, 4005, 4007, 4, GumpButtonType.Reply, 0);
+            AddLabel(55, y, 1152, "Generate Traps and Chests (Json)");
+            y += 30;
+
+            AddButton(20, y, 4005, 4007, 5, GumpButtonType.Reply, 0);
             AddLabel(55, y, 1152, "Wipe Wild Creatures (Cleanup)");
             y += 30;
 
@@ -107,7 +111,11 @@ namespace Server.Gumps
                     InvokeCommand("IS Data/Spawns/Overworld/**.json", from);
                     InvokeCommand("IS Data/Spawns/Underworld/**.json", from);
                     break;
-                case 4: InvokeCommand("WipeWildMobs", from); break;
+                case 4:
+                    InvokeCommand("IS Data/Spawns/traps.json", from);
+                    InvokeCommand("IS Data/Spawns/Chests/**.json", from);
+                    break;
+                case 5: InvokeCommand("WipeWildMobs", from); break;
 
                 case 7:
                     InvokeCommand("ClearAll", from);
@@ -123,6 +131,8 @@ namespace Server.Gumps
                     InvokeCommand("Decorate", from);
                     InvokeCommand("IS Data/Spawns/Overworld/**.json", from);
                     InvokeCommand("IS Data/Spawns/Underworld/**.json", from);
+                    InvokeCommand("IS Data/Spawns/traps.json", from);
+                    InvokeCommand("IS Data/Spawns/Chests/**.json", from);
 
                     from.SendMessage(0x3F, "World population complete.");
                     break;

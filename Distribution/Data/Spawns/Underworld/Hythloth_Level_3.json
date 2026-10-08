@@ -597,5 +597,26 @@
       { "name": "gazer", "probability": 25, "maxCount": 1 },
       { "name": "gazerlarva", "probability": 25, "maxCount": 1 }
     ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "63130d09-19f0-4134-aa63-691080784cea",
+    "location": [2127, 271, 22],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 8,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "daemon", "probability": 20, "maxCount": 2 },
+      { "name": "dragon", "probability": 20, "maxCount": 1 },
+      { "name": "drake", "probability": 20, "maxCount": 4 },
+      { "name": "balron", "probability": 20, "maxCount": 1 },
+      { "name": "gargoyle", "probability": 20, "maxCount": 4 },
+      { "name": "imp", "probability": 20, "maxCount": 4 },
+      { "name": "hellhound", "probability": 20, "maxCount": 4 },
+      { "name": "phoenix", "probability": 20, "maxCount": 1 }
+    ]
   }
 ]

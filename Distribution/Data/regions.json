@@ -2454,6 +2454,32 @@
     ]
   },
   {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "the Terathan's Territory",
+    "Parent": { "Map": "Underworld", "Name": "the Dungeon Terathan Keep" },
+    "Priority": 55,
+    "Area": [
+      { "x1": 3757, "y1": 61, "x2": 4003, "y2": 136 },
+      { "x1": 3756, "y1": 136, "x2": 3803, "y2": 204 },
+      { "x1": 3756, "y1": 135, "x2": 3757, "y2": 136 },
+      { "x1": 3803, "y1": 136, "x2": 3866, "y2": 177 },
+      { "x1": 3866, "y1": 136, "x2": 3898, "y2": 148 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "the Ophidian's Territory",
+    "Parent": { "Map": "Underworld", "Name": "the Dungeon Terathan Keep" },
+    "Priority": 55,
+    "Area": [
+      { "x1": 3902, "y1": 136, "x2": 4005, "y2": 312 },
+      { "x1": 3804, "y1": 178, "x2": 3903, "y2": 272 },
+      { "x1": 3756, "y1": 204, "x2": 3804, "y2": 261 }
+    ]
+  },
+  {
     "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Brigand Camp",

@@ -30,7 +30,8 @@
 /Projects/*/obj
 /Projects/*/bin
 /Projects/*/Generated
-
+*.bak
+*.orig
 *.swp
 *.log
 *.user
