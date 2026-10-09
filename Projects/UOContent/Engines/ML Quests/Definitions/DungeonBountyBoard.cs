@@ -18,6 +18,13 @@ public partial class DungeonBountyBoard : Item, IQuestGiver
     // Implementation for IQuestGiver
     public List<MLQuest> MLQuests => MLQuestSystem.FindQuestList(GetType());
 
+    // Automatically registers all bounties when the server boots up
+    public static void Initialize()
+    {
+        MLQuestSystem.Register(new DestardDrakeBounty(), typeof(DungeonBountyBoard));
+        MLQuestSystem.Register(new DeceitSkeletalKnightBounty(), typeof(DungeonBountyBoard));
+    }
+
     [Constructible]
     public DungeonBountyBoard() : base(0x1E5E) // Bulletin board Graphic ID
     {
@@ -61,7 +68,7 @@ public class DestardDrakeBounty : MLQuest
         Objectives.Add(new KillObjective(10, new[] { typeof(Drake) }, "Drakes"));
 
         // Reward: 1,200 Gold
-        Rewards.Add(new ItemReward("1,200 Gold", typeof(Gold), 1200));
+        Rewards.Add(new ItemReward("1,200 Bounty Tokens", typeof(BountyToken), 1200));
     }
 
     public override void Generate()
@@ -91,7 +98,7 @@ public class DeceitSkeletalKnightBounty : MLQuest
         Objectives.Add(new KillObjective(10, new[] { typeof(SkeletalKnight) }, "Skeletal Knights"));
 
         // Reward: 1,500 Gold
-        Rewards.Add(new ItemReward("1,500 Gold", typeof(Gold), 1500));
+        Rewards.Add(new ItemReward("1,500 Bounty Tokens", typeof(BountyToken), 1500));
     }
 
     public override void Generate()
