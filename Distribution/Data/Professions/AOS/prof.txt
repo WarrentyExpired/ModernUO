@@ -1,36 +1,35 @@
 Begin
-	Name			Paladin
-	TrueName		"Paladin"
+	Name			Thief
+	TrueName		"Thief"
 	NameId			1061177
 	DescId			1061227
 	Desc			5
 	TopLevel		true
 	Gump			5587
 	Type			Profession
-	Skill			Chivalry		50
-	Skill			Tactics 		50
-	Skill			Wrestling		0					
-	Stat			Str			30
-	Stat			Dex			25
-	Stat			Int			25
+	Skill			Hiding		40
+	Skill			Stealing 		30
+	Skill			Lockpicking		30
+	Stat			Str			45
+	Stat			Dex			20
+	Stat			Int			15
 End
 
 Begin
-	Name			Necromancer
-	TrueName		"Necromancer"
+	Name			Bard
+	TrueName		"Bard"
 	NameId			1061178
 	DescId			1061228
 	Desc			4
 	TopLevel		true
 	Gump			5557
 	Type			Profession
-	Skill			Necromancy		50
-	Skill			Swordsmanship 		30
-	Skill			Wrestling		0					
-	Skill			Tactics 		20
+	Skill			Musicianship		40
+	Skill			Peacemaking 		30
+	Skill			Provocation 		30
 	Stat			Str			25
 	Stat			Dex			20
-	Stat			Int			45
+	Stat			Int			35
 End
 
 Begin
@@ -42,9 +41,9 @@ Begin
 	TopLevel		true
 	Gump			5577
 	Type			Profession
-	Skill			Tactics			50
-	Skill			Healing			45
-	Skill			Swordsmanship		5
+	Skill			Tactics			30
+	Skill			Healing			30
+	Skill			Swordsmanship		40
 	Stat			Str			35
 	Stat			Dex			35
 	Stat			Int			10
@@ -61,7 +60,7 @@ Begin
 	Type			Profession
 	Skill			Magery			50
 	Skill			Meditation		50
-	Skill			Wrestling		0					
+	Skill			Wrestling		0
 	Stat			Str			25
 	Stat			Dex			10
 	Stat			Int			45
