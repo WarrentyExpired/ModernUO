@@ -53,6 +53,7 @@ public partial class BaseEscortable : BaseCreature
     // Used when: MLQuestSystem.Enabled && !Region.IsPartOf( "Haven Island" )
     private static readonly Dictionary<Type, (int[], int)> _mlQuestTypes = new()
     {
+        /*
         { typeof(EscortToYew), (Array.Empty<int>(), 0) },
         { typeof(EscortToVesper), (Array.Empty<int>(), 0) },
         { typeof(EscortToTrinsic), (Array.Empty<int>(), 0) },
@@ -67,6 +68,7 @@ public partial class BaseEscortable : BaseCreature
         { typeof(EscortToBritain), (Array.Empty<int>(), 0) }
         // Ocllo was removed in pub 56
         // { typeof(EscortToOcllo), (Array.Empty<int>(), 0) }
+        */
     };
 
     // ML quest system New Haven list
@@ -75,6 +77,7 @@ public partial class BaseEscortable : BaseCreature
     // that teach you where things are in a city instead of the randomly spawned ones.
     private static readonly Dictionary<Type, (int[], int)> _mlQuestTypesNH = new()
     {
+        /*
         // I am missing several components for my new potions, and I need to find the local alchemist.
         // My daughter is sick , and I need medicine. Do you know the way to the local alchemist?
         // I need some potions before I set out for a long journey. Can you take me to the alchemist in The Bottled Imp?
@@ -153,6 +156,7 @@ public partial class BaseEscortable : BaseCreature
         // You there. Do you know the way to the local archer?
         // I’m looking to go to the local archery range. Will you take me?
         { typeof(EscortToNHBowyer), ([1042803, 1042804, 1042805, 1042831], 1042818) },
+        */
     };
 
     [SerializableField(0, setter: "private")]

@@ -48,10 +48,5 @@ public partial class EvilWanderingHealer : BaseHealer
     public override void OnDeath(Container c)
     {
         base.OnDeath(c);
-
-        if (Utility.RandomBool())
-        {
-            c.DropItem(new FragmentOfAMap());
-        }
     }
 }

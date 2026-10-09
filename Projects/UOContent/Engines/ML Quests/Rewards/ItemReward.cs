@@ -7,6 +7,7 @@ namespace Server.Engines.MLQuests.Rewards
 {
     public class ItemReward : BaseReward
     {
+        /*
         public static readonly ItemReward
             SmallBagOfTrinkets = new(1072268, typeof(SmallBagOfTrinkets)); // A small bag of trinkets.
 
@@ -35,6 +36,7 @@ namespace Server.Engines.MLQuests.Rewards
 
         public static readonly ItemReward
             TinkerSatchel = new(1074282, typeof(TinkerSatchel)); // Craftsman's Satchel
+        */
 
         private readonly int m_Amount;
 

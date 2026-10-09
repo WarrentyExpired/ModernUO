@@ -60,7 +60,6 @@ namespace Server.Mobiles
         public override void OnDeath(Container c)
         {
             base.OnDeath(c);
-            c.DropItem(new GamanHorns(Utility.RandomBool() ? 1 : 2));
         }
     }
 }

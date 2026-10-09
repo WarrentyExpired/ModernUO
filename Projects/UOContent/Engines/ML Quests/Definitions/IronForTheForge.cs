@@ -11,6 +11,11 @@ namespace Server.Engines.MLQuests.Definitions;
 
 public class IronForTheForge : MLQuest
 {
+    public static void Initialize()
+    {
+        MLQuestSystem.Register(new IronForTheForge(), typeof(QuestBlacksmith));
+    }
+
     public IronForTheForge()
     {
         Activated = true;
@@ -28,20 +33,11 @@ public class IronForTheForge : MLQuest
         // Reward: 500 Gold
         Rewards.Add(new ItemReward("500 Gold", typeof(Gold), 500));
     }
-
-    public override void Generate()
-    {
-        base.Generate();
-
-        // Registers this quest and links it to QuestBlacksmith
-        MLQuestSystem.Register(this, typeof(QuestBlacksmith));
-    }
 }
 
 [SerializationGenerator(0, false)]
 public partial class QuestBlacksmith : BaseCreature, IQuestGiver
 {
-    // Implementation for IQuestGiver
     public List<MLQuest> MLQuests => MLQuestSystem.FindQuestList(GetType());
 
     [Constructible]
@@ -49,14 +45,23 @@ public partial class QuestBlacksmith : BaseCreature, IQuestGiver
     {
         Title = "the Blacksmith";
         Race = Race.Human;
-        Body = 0x190;
-        Female = false;
+
+        Female = Utility.RandomBool();
+        Body = Female ? 0x191 : 0x190;
+        Name = NameList.RandomName(Female ? "female" : "male");
+
         Hue = Race.RandomSkinHue();
 
         SetSpeed(0.5, 2.0);
         InitStats(100, 100, 25);
 
-        Utility.AssignRandomHair(this);
+        int hairHue = Race.RandomHairHue();
+        Utility.AssignRandomHair(this, hairHue);
+
+        if (!Female)
+        {
+            Utility.AssignRandomFacialHair(this, hairHue);
+        }
 
         AddItem(new Backpack());
         AddItem(new ShortPants(0x755));
@@ -67,5 +72,4 @@ public partial class QuestBlacksmith : BaseCreature, IQuestGiver
     }
 
     public override bool IsInvulnerable => true;
-    public override string DefaultName => "Gareth";
 }
