@@ -1,0 +1,18 @@
+[
+  {
+    "$type": "RegionSpawner",
+    "guid": "4cd44a80-8e94-40f3-a947-c700338761d0",
+    "location": [2510, 694, -1],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Ice - Level 2",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ratman", "probability": 50, "maxCount": 15 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 15 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 15 }
+    ]
+  }
+]

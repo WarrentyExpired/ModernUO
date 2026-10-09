@@ -523,5 +523,56 @@
       { "name": "sawtrap", "probability": 10, "maxCount": 5 },
       { "name": "spiketrap", "probability": 10, "maxCount": 5 }
     ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "f3edd271-cde3-4dca-be08-5a7247889cf0",
+    "location": [2371, 643, -1],
+    "map": "Underworld",
+    "count": 25,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the Dungeon of Ice - Level 1",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "firecolumntrap", "probability": 20, "maxCount": 10 },
+      { "name": "flamespurttrap", "probability": 20, "maxCount": 10 },
+      { "name": "gastrap", "probability": 20, "maxCount": 10 },
+      { "name": "giantspiketrap", "probability": 20, "maxCount": 10 },
+      { "name": "spiketrap", "probability": 20, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "e3d27807-7273-4aca-9f7a-1ff49d9c9cd7",
+    "location": [2511, 694, -1],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Ice - Level 2",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "gastrap", "probability": 20, "maxCount": 5 },
+      { "name": "giantspiketrap", "probability": 20, "maxCount": 5 },
+      { "name": "spiketrap", "probability": 20, "maxCount": 5 },
+      { "name": "sawtrap", "probability": 20, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "4cfae97e-21b9-4173-953a-dfac5c1bd202",
+    "location": [2505, 602, 0],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Ice - Level 3",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantspiketrap", "probability": 20, "maxCount": 5 },
+      { "name": "spiketrap", "probability": 20, "maxCount": 5 },
+      { "name": "sawtrap", "probability": 20, "maxCount": 5 }
+    ]
   }
 ]

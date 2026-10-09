@@ -77,6 +77,16 @@
               ]
             },
             {
+              "name": "Ice Dungeon",
+              "locations": [
+                { "name": "Ice Cave Entrance", "location": [3480, 541, 2], "map": "Veridia" },
+                { "name": "Dungeon Entrance", "location": [644, 284, 0], "map": "Underworld" },
+                { "name": "Level 1", "location": [2443, 607, 12], "map": "Underworld" },
+                { "name": "Level 2", "location": [2513, 664, 18], "map": "Underworld" },
+                { "name": "Level 3", "location": [2530, 594, 0], "map": "Underworld" }
+              ]
+            },
+            {
               "name": "Terathan Keep",
               "locations": [
                 { "name": "Entrance", "location": [517, 2678, 5], "map": "Veridia" },

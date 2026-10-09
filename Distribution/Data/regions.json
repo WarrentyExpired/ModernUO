@@ -2480,6 +2480,54 @@
     ]
   },
   {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Name": "the Ice Cave",
+    "Priority": 55,
+    "Area": [
+      { "x1": 589, "y1": 205, "x2": 688, "y2": 645 }
+    ]
+  },
+  {
+    "$type": "DungeonRegion",
+    "Map": "Underworld",
+    "Name": "the Dungeon of Ice",
+    "Priority": 50,
+    "Area": [
+      { "x1": 2219, "y1": 579, "x2": 2547, "y2": 730 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Parent": { "Map": "Underworld", "Name": "the Dungeon of Ice" },
+    "Name": "the Dungeon of Ice - Level 1",
+    "Priority": 55,
+    "Area": [
+      { "x1": 2219, "y1": 581, "x2": 2460, "y2": 724 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Parent": { "Map": "Underworld", "Name": "the Dungeon of Ice" },
+    "Name": "Ice - Level 2",
+    "Priority": 55,
+    "Area": [
+      { "x1": 2478, "y1": 646, "x2": 2549, "y2": 719 }
+    ]
+  },
+  {
+    "$type": "GreetingDungeonRegion",
+    "Map": "Underworld",
+    "Parent": { "Map": "Underworld", "Name": "the Dungeon of Ice" },
+    "Name": "Ice - Level 3",
+    "Priority": 55,
+    "Area": [
+      { "x1": 2477, "y1": 580, "x2": 2541, "y2": 628 }
+    ]
+  },
+  {
     "$type": "GreetingOverworldSpawnRegion",
     "Map": "Veridia",
     "Name": "the Brigand Camp",

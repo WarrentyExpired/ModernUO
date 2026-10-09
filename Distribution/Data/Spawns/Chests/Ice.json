@@ -1,0 +1,271 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "3758f568-ce87-470c-9ea6-33f0a23a2dae",
+    "name": "IceLevel1",
+    "location": [2313, 602, 8],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2313, "y1": 602, "z1": -128, "x2": 2314, "y2": 603, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fc6cda44-fb43-4089-91a7-ae31bc0a0092",
+    "name": "IceLevel1",
+    "location": [2323, 657, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2323, "y1": 657, "z1": -128, "x2": 2324, "y2": 658, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c59b423e-b3da-449c-8d76-2b114f692f57",
+    "name": "IceLevel1",
+    "location": [2445, 700, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2445, "y1": 700, "z1": -128, "x2": 2446, "y2": 701, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel2", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4cba13da-f391-4d25-b85a-db403afa8525",
+    "name": "IceLevel3",
+    "location": [2521, 602, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2521, "y1": 602, "z1": -128, "x2": 2522, "y2": 603, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "73e332ee-ff6a-4bf6-9de1-d4cbe2b7222f",
+    "name": "IceLevel3",
+    "location": [2520, 599, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2520, "y1": 599, "z1": -128, "x2": 2521, "y2": 600, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "846736cc-04dc-4280-a2e2-391ed6748d69",
+    "name": "IceLevel3",
+    "location": [2518, 599, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2518, "y1": 599, "z1": -128, "x2": 2519, "y2": 600, "z2": 128 },
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7f6ab869-441f-4e57-9354-5f8804828534",
+    "name": "IceLevel3",
+    "location": [2518, 602, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2518, "y1": 602, "z1": -128, "x2": 2519, "y2": 603, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "25baf750-4911-40b7-bc3e-dbac6a0c0b9d",
+    "name": "IceLevel1",
+    "location": [2369, 646, -1],
+    "map": "Underworld",
+    "count": 20,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the Dungeon of Ice - Level 1",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel1", "probability": 40, "maxCount": 20 },
+      { "name": "treasurechestlevel2", "probability": 30, "maxCount": 20 },
+      { "name": "treasurechestlevel3", "probability": 30, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "f1b1c6ab-e7df-4459-9c0c-bdc451033203",
+    "name": "IceLevel3",
+    "location": [2505, 602, 0],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Ice - Level 3",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 40, "maxCount": 5 },
+      { "name": "treasurechestlevel4", "probability": 60, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ac058fde-d553-4626-ab27-ec424ab9aa68",
+    "name": "IceLevel2",
+    "location": [2517, 696, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2517, "y1": 696, "z1": -128, "x2": 2518, "y2": 697, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bffc8089-b4af-461b-9a48-14d61aabce17",
+    "name": "IceLevel2",
+    "location": [2520, 696, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2520, "y1": 696, "z1": -128, "x2": 2521, "y2": 697, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "bd6cd756-48ee-458a-93b3-0b561cadcd49",
+    "name": "IceLevel2",
+    "location": [2510, 693, 0],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Ice - Level 2",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "treasurechestlevel1", "probability": 50, "maxCount": 5 },
+      { "name": "treasurechestlevel2", "probability": 50, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "721b893f-fc81-4d72-89ac-7d1528c70760",
+    "name": "IceLevel2",
+    "location": [2502, 687, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2502, "y1": 687, "z1": -128, "x2": 2503, "y2": 688, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel3", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "45b6f96d-0dc6-4434-8010-bfd4f85f3336",
+    "name": "IceLevel1",
+    "location": [2253, 632, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2253, "y1": 632, "z1": -128, "x2": 2254, "y2": 633, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e0578599-f149-48ba-bf83-343d7cf388a8",
+    "name": "IceLevel1",
+    "location": [2273, 633, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2273, "y1": 633, "z1": -128, "x2": 2274, "y2": 634, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "74ffc557-2c10-465f-9709-72e6d1ea8552",
+    "name": "IceLevel1",
+    "location": [2240, 635, -6],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2240, "y1": 635, "z1": -128, "x2": 2241, "y2": 636, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f3aee26a-a577-4969-a130-f042f9ba0919",
+    "name": "IceLevel1",
+    "location": [2243, 632, -7],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2243, "y1": 632, "z1": -128, "x2": 2244, "y2": 633, "z2": 128 },
+    "entries": [
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "97f460d5-fa7b-413f-9204-5aced118d3fc",
+    "name": "IceLevel1",
+    "location": [2445, 698, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2445, "y1": 698, "z1": -128, "x2": 2446, "y2": 699, "z2": 128 },
+    "walkingRange": -1,
+    "entries": [
+      { "name": "treasurechestlevel2", "probability": 50, "maxCount": 1 },
+      { "name": "treasurechestlevel3", "probability": 50, "maxCount": 1 }
+    ]
+  }
+]

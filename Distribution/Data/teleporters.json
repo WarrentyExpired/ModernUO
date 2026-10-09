@@ -374,5 +374,70 @@
     "src": { "map": "Underworld", "loc": [ 2724, 607, -13 ] },
     "dst": { "map": "Underworld", "loc": [ 2639, 592, 16 ] },
     "back": true
+  },
+  {
+    "src": { "map": "Veridia", "loc": [ 3480, 538, 2 ] },
+    "dst": { "map": "Underworld", "loc": [643, 286, 0 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Veridia", "loc": [ 3481, 538, 2 ] },
+    "dst": { "map": "Underworld", "loc": [644, 286, 0 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 680, 267, 0 ] },
+    "dst": { "map": "Underworld", "loc": [ 2444, 602, 25 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 681, 267, 0 ] },
+    "dst": { "map": "Underworld", "loc": [ 2445, 602, 26 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2443, 602, 25 ] },
+    "dst": { "map": "Underworld", "loc": [ 680, 267, 0 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2417, 695, -25 ] },
+    "dst": { "map": "Underworld", "loc": [ 2512, 658, 40 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2418, 695, -25 ] },
+    "dst": { "map": "Underworld", "loc": [ 2513, 658, 40 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2419, 695, -25 ] },
+    "dst": { "map": "Underworld", "loc": [ 2514, 658, 40 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2420, 695, -25 ] },
+    "dst": { "map": "Underworld", "loc": [ 2515, 658, 40 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2273, 601, -45 ] },
+    "dst": { "map": "Underworld", "loc": [ 2538, 592, 10 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2273, 602, -45 ] },
+    "dst": { "map": "Underworld", "loc": [ 2538, 593, 10 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2273, 603, -45 ] },
+    "dst": { "map": "Underworld", "loc": [ 2538, 594, 10 ] },
+    "back": true
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2273, 604, -45 ] },
+    "dst": { "map": "Underworld", "loc": [ 2538, 595, 10 ] },
+    "back": true
   }
 ]

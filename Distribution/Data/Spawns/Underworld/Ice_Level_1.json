@@ -1,0 +1,983 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "9ece8d75-2ce4-420a-9aaf-4a1078a3e1b0",
+    "location": [2246, 661, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "acidelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4562b794-8d8f-4db7-97e7-7c5213facd0f",
+    "location": [2250, 647, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "acidelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "eb40537d-dbd5-49d8-8ecf-ae7e5047bfd5",
+    "location": [2241, 660, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d97dc3ef-9d75-4b5f-9f12-1f41602a6ded",
+    "location": [2251, 641, -7],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0af63bbc-6193-4b38-9b56-2cb4ff736b58",
+    "location": [2262, 659, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3bccc81e-7fae-4786-9aff-dbfc4a4301b7",
+    "location": [2271, 658, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 },
+      { "name": "arcticogrelord", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e6b3685c-5152-4612-a7ee-9d483f04602d",
+    "location": [2302, 667, -2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "25493b3d-66a7-4334-aac3-75cce5ebb04e",
+    "location": [2291, 649, -2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 },
+      { "name": "arcticogrelord", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d028c8ff-eafa-476a-a4ab-a6bf336f0ec1",
+    "location": [2275, 638, -6],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "774c1aae-b415-4f55-a4ba-ad565ccba5a2",
+    "location": [2275, 628, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f9a70445-46a7-4f95-80fc-36359116a3d7",
+    "location": [2280, 602, -37],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "344eebc6-544c-442c-a58c-02a7ed8f481b",
+    "location": [2303, 617, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d3490244-e364-4f7c-a576-f1c910f10a55",
+    "location": [2317, 628, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 25, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d49b0e36-61e0-40fe-9114-f52ae6bc2e2b",
+    "location": [2292, 608, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 },
+      { "name": "arcticogrelord", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dca5ea18-35de-4eb2-b87c-816dc67c977c",
+    "location": [2335, 625, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "af396436-cc17-404d-8539-1c47fe45905d",
+    "location": [2318, 603, 10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bea3083b-c649-45c7-a744-334162ed1895",
+    "location": [2325, 597, 3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "df5db301-9ebf-42f7-a72b-3db3a3b07bf1",
+    "location": [2318, 602, 9],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "03:00:00",
+    "maxDelay": "04:00:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "whitewyrm", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9b137529-8305-4eab-be61-a74f8335380c",
+    "location": [2347, 603, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d9b52ed7-99ed-4908-ab56-7af42f461800",
+    "location": [2372, 598, -7],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b395d9b7-09de-447b-ba20-9d96642c6eec",
+    "location": [2366, 603, -6],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4dde7706-8aae-46b1-b43a-116aac42b7ec",
+    "location": [2384, 603, -6],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "27c29a81-6c5b-44f2-9c98-db9200e587c7",
+    "location": [2405, 602, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6bba10b0-715f-4d27-a330-aea9ba6fb8f5",
+    "location": [2418, 603, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9599d610-9837-4f21-b5b8-945115256026",
+    "location": [2331, 643, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "arcticogrelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7262958b-7cb4-4b7e-81e1-cc443a0f1d61",
+    "location": [2339, 652, -2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "17d3ec05-8fe5-43ae-98d9-ccdba9385489",
+    "location": [2362, 650, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "77a7b7a7-a4d5-40e6-9311-535086d3f02a",
+    "location": [2371, 641, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c93c3dab-d519-4da6-ac66-5d9123e017ed",
+    "location": [2370, 635, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b348541e-28aa-418e-a872-0e3c568f13e5",
+    "location": [2353, 626, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "00114cc0-eb7d-42d3-99ba-a1e8a6cdde00",
+    "location": [2367, 618, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fbf6cf44-2fd2-4589-8ff3-7dca458d9a36",
+    "location": [2370, 618, -1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "586dde4a-76db-45c1-a185-3461998be1b8",
+    "location": [2385, 618, -2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a2ce91c4-03b3-499b-9874-9c6dedc28134",
+    "location": [2395, 627, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "672e2f02-340f-4dff-aa61-58a9b4b43f20",
+    "location": [2406, 627, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a088d8b3-18ee-4914-8f7b-e9b4f3e2e7b3",
+    "location": [2323, 659, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "arcticogrelord", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d87cfa5f-9f70-4bd7-889c-9263c918a369",
+    "location": [2316, 674, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "123f4710-4a00-4282-a847-f25d97411c6f",
+    "location": [2313, 682, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0f3db13c-25f1-4a98-8273-d455785a64e7",
+    "location": [2323, 683, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "34a43271-1ec5-4b03-a379-8650951902fa",
+    "location": [2339, 672, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "66683203-59fc-4c5a-acbb-f6328a639e0d",
+    "location": [2344, 681, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d0fc6f96-8e70-4eb3-81e4-223d7b0a61e2",
+    "location": [2349, 684, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c7fe5309-53d6-4289-8a9c-5654d5b8ba18",
+    "location": [2371, 699, -2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0fbaaacb-e6b0-4819-a97b-972d08949a57",
+    "location": [2386, 698, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e0606ce7-c3aa-4b97-833a-5183b0c1613c",
+    "location": [2403, 699, -3],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "ratman", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanarcher", "probability": 33, "maxCount": 1 },
+      { "name": "ratmanmage", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "14fe2077-7af9-4385-b548-5ebbd6b578ed",
+    "location": [2388, 684, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2e57ca1a-8321-462d-96a9-0bd0b490a697",
+    "location": [2395, 689, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "73136913-353c-4943-b096-76dfb8d281c9",
+    "location": [2396, 675, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e6dd1433-5610-49f4-9171-4e650f51c3ed",
+    "location": [2411, 676, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ad91f66b-b2ee-48d5-b695-c4ef5c4efad6",
+    "location": [2418, 676, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5334c3f5-095c-447a-9355-db04764256e1",
+    "location": [2441, 698, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d7585d7a-4112-43a3-96e7-28b85f853a02",
+    "location": [2438, 700, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bf9e2813-8b79-4db4-8d4d-6e36c036689a",
+    "location": [2435, 694, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "12c52900-8e1c-4e8e-ac62-ca192976f535",
+    "location": [2435, 688, -6],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "716d2aa2-6563-431a-84e7-0baaf3cd0dd0",
+    "location": [2435, 659, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7002963b-f176-4a52-84a0-89e45f30d3a4",
+    "location": [2435, 668, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cac58f7a-4775-4e04-9d01-b94a5db83dbc",
+    "location": [2422, 658, -3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0bc790f4-11d9-4f30-bbf5-b50668f38893",
+    "location": [2418, 659, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ed6e721c-fc5d-443b-b5d4-7cdd1fcadac1",
+    "location": [2420, 621, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "frosttroll", "probability": 33, "maxCount": 1 },
+      { "name": "iceelemental", "probability": 33, "maxCount": 1 },
+      { "name": "snowelemental", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "02a9afe0-8cd5-4b40-8d30-efd38dda702d",
+    "location": [2436, 615, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "frostspider", "probability": 25, "maxCount": 1 },
+      { "name": "iceserpent", "probability": 25, "maxCount": 1 },
+      { "name": "icesnake", "probability": 25, "maxCount": 1 },
+      { "name": "frostooze", "probability": 25, "maxCount": 1 }
+    ]
+  }
+]

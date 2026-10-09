@@ -12,7 +12,8 @@ namespace Server.Custom
         private static readonly string[] DungeonRoster =
         {
             "the Dungeon Deceit", "the Dungeon Despise", "the Dungeon Destard",
-            "the Dungeon Covetous", "the Dungeon Shame", "the Dungeon Hythloth"
+            "the Dungeon Covetous", "the Dungeon Shame", "the Dungeon Hythloth",
+            "the Dungeon of Ice"
         };
 
         public static void Initialize()
