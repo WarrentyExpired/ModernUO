@@ -1,5 +1,14 @@
 [
   {
+    "$type": "BaseRegion",
+    "Map": "Veridia",
+    "Name": "the Lands of Veridia",
+    "Priority": 30,
+    "Area": [
+      { "x1": 0, "y1": 0, "x2": 4277, "y2": 4095 }
+    ]
+  },
+  {
     "$type": "GreetingTownRegion",
     "Map": "Veridia",
     "Name": "the Town of Bastion",
