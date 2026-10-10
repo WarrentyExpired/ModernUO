@@ -3720,7 +3720,7 @@ namespace Server.Mobiles
             {
                 c.Delete();
             }
-
+            Server.Engines.Bounties.BountySystem.OnCreatureDeath(this);
             CreatureEvents.CreatureDeathEvent(this);
         }
 
