@@ -9,6 +9,7 @@ using Server.Network;
 namespace Server.Items;
 
 [SerializationGenerator(0, false)]
+[Flippable(0x1E5E, 0x1E5F)]
 public partial class DungeonBountyBoard : Item
 {
     [Constructible]

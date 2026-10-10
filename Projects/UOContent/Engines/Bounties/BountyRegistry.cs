@@ -58,11 +58,17 @@ public static class BountyRegistry
     public static void Initialize()
     {
         // ==========================================
+        // Amount, Fame, Tokens, Gold
+        // 15, 0, 5, 500
+        // ==========================================
+
+        // ==========================================
         // TIER 1: Local Adventurer (Fame 0) - Rewards: 5 Tokens, 500g
         // ==========================================
         Add(1, new BountyDefinition(1, "Covetous Harpies", new[] { typeof(Harpy) }, 15, 0, 5, 500, "Covetous"));
         Add(1, new BountyDefinition(2, "Shame Earth Elementals", new[] { typeof(EarthElemental) }, 10, 0, 5, 500, "Shame"));
         Add(1, new BountyDefinition(3, "Despise Lizardmen", new[] { typeof(Lizardman) }, 15, 0, 5, 500, "Despise"));
+        Add(1, new BountyDefinition(4, "Deceit - Skeletons", new[] { typeof(Skeleton) }, 15, 0, 5, 500, "Deceit"));
 
         // ==========================================
         // TIER 2: Estimable Hunter (Fame 1250) - Rewards: 15 Tokens, 1200g
@@ -81,7 +87,7 @@ public static class BountyRegistry
         Add(4, new BountyDefinition(7, "Destard Dragons", new[] { typeof(Dragon) }, 3, 5000, 60, 5000, "Destard"));
 
         // ==========================================
-        // TIER 5: Glorious Legend (Fame 10000) - Rewards: 100 Tokens, 10000g
+        // TIER 5: Glorious Lord (Fame 10000) - Rewards: 100 Tokens, 10000g
         // ==========================================
         Add(5, new BountyDefinition(8, "Hythloth Balrons", new[] { typeof(Balron) }, 2, 10000, 100, 10000, "Hythloth"));
     }

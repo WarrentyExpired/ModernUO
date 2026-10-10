@@ -895,5 +895,19 @@
     "entries": [
       { "name": "carpenter", "probability": 100, "maxCount": 1 }
     ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "218dfe64-cedf-4976-9693-04c7e22376b6",
+    "location": [1731, 2032, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1731, "y1": 2032, "z1": -128, "x2": 1732, "y2": 2033, "z2": 128 },
+    "walkingRange": -1,
+    "entries": [
+      { "name": "bountyvendor", "probability": 100, "maxCount": 1 }
+    ]
   }
 ]
