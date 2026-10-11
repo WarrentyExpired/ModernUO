@@ -29,7 +29,7 @@ public partial class TreasureChestLevel2 : LockableContainer
         //  Gems
 
         // Gold
-        DropItem(new Gold(Utility.Random(70, 100)));
+        DropItem(new Gold(Utility.Random(80, 150)));
 
         // Drop bolts
         // DropItem( new Arrow( 10 ) );

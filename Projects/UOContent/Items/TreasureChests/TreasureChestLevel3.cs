@@ -34,7 +34,7 @@ public partial class TreasureChestLevel3 : LockableContainer
         //  Magic jewelry  (not implemented)
 
         // Gold
-        DropItem(new Gold(Utility.Random(180, 240)));
+        DropItem(new Gold(Utility.Random(250, 350)));
 
         // Drop bolts
         // DropItem( new Arrow( 10 ) );

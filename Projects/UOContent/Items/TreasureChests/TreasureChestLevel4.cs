@@ -35,7 +35,7 @@ public partial class TreasureChestLevel4 : LockableContainer
         //  Crystal ball (not implemented)
 
         // Gold
-        DropItem(new Gold(Utility.Random(200, 400)));
+        DropItem(new Gold(Utility.Random(500, 900)));
 
         // Reagents
         for (var i = Utility.Random(4); i > 0; i--)
