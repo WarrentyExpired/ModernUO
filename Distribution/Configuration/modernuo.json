@@ -104,6 +104,7 @@
     "world.enableAutoRestart": "False",
     "world.savePath": "Saves",
     "world.useMultithreadedSaves": "True",
-    "opl.enable": "Core.AOS"
+    "opl.enable": "Core.AOS",
+    "factions.enabled": "False"
   }
 }

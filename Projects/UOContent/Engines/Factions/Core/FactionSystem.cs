@@ -11,6 +11,9 @@ public class FactionSystem : GenericPersistence
     {
         Enabled = ServerConfiguration.GetSetting("factions.enabled", false);
 
+        if (!FactionSystem.Enabled)
+            return;
+
         if (Enabled)
         {
             _factionSystem = new();

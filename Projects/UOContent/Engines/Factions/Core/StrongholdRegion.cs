@@ -15,7 +15,10 @@ public class StrongholdRegion : BaseRegion
         Faction = faction;
         GoLocation = faction.Definition.Stronghold.FactionStone;
 
-        Register();
+        if (FactionSystem.Enabled)
+        {
+            Register();
+        }
     }
 
     public Faction Faction { get; set; }
