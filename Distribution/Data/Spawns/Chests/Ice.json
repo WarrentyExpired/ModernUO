@@ -115,7 +115,10 @@
     "entries": [
       { "name": "treasurechestlevel1", "probability": 40, "maxCount": 20 },
       { "name": "treasurechestlevel2", "probability": 30, "maxCount": 20 },
-      { "name": "treasurechestlevel3", "probability": 30, "maxCount": 20 }
+      { "name": "treasurechestlevel3", "probability": 30, "maxCount": 20 },
+      { "name": "treasurebaglevel1", "probability": 40, "maxCount": 20 },
+      { "name": "treasurebaglevel2", "probability": 30, "maxCount": 20 },
+      { "name": "treasurebaglevel3", "probability": 30, "maxCount": 20 }
     ]
   },
   {
@@ -131,7 +134,10 @@
     "walkingRange": -1,
     "entries": [
       { "name": "treasurechestlevel3", "probability": 40, "maxCount": 5 },
-      { "name": "treasurechestlevel4", "probability": 60, "maxCount": 5 }
+      { "name": "treasurechestlevel4", "probability": 60, "maxCount": 5 },
+      { "name": "treasurebaglevel3", "probability": 40, "maxCount": 5 },
+      { "name": "treasurebaglevel4", "probability": 60, "maxCount": 5 }
+
     ]
   },
   {
@@ -175,7 +181,10 @@
     "walkingRange": 4,
     "entries": [
       { "name": "treasurechestlevel1", "probability": 50, "maxCount": 5 },
-      { "name": "treasurechestlevel2", "probability": 50, "maxCount": 5 }
+      { "name": "treasurechestlevel2", "probability": 50, "maxCount": 5 },
+      { "name": "treasurebaglevel1", "probability": 50, "maxCount": 5 },
+      { "name": "treasurebaglevel2", "probability": 50, "maxCount": 5 }
+
     ]
   },
   {

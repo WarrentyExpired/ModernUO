@@ -205,7 +205,10 @@
     "entries": [
       { "name": "treasurechestlevel2", "probability": 30, "maxCount": 3 },
       { "name": "treasurechestlevel3", "probability": 50, "maxCount": 7 },
-      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 15 }
+      { "name": "treasurechestlevel4", "probability": 50, "maxCount": 15 },
+      { "name": "treasurebaglevel2", "probability": 30, "maxCount": 3 },
+      { "name": "treasurebaglevel3", "probability": 50, "maxCount": 7 },
+      { "name": "treasurebaglevel4", "probability": 50, "maxCount": 15 }
     ]
   },
   {
@@ -221,7 +224,9 @@
     "walkingRange": 4,
     "entries": [
       { "name": "treasurechestlevel1", "probability": 30, "maxCount": 5 },
-      { "name": "treasurechestlevel2", "probability": 70, "maxCount": 15 }
+      { "name": "treasurechestlevel2", "probability": 70, "maxCount": 15 },
+      { "name": "treasurebaglevel1", "probability": 30, "maxCount": 5 },
+      { "name": "treasurebaglevel2", "probability": 70, "maxCount": 15 }
     ]
   },
   {
@@ -236,7 +241,8 @@
     "region": "Despise - Level 2",
     "walkingRange": 4,
     "entries": [
-      { "name": "treasurechestlevel1", "probability": 100, "maxCount": 10 }
+      { "name": "treasurechestlevel1", "probability": 100, "maxCount": 10 },
+      { "name": "treasurebaglevel1", "probability": 100, "maxCount": 10 }
     ]
   }
 ]
