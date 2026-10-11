@@ -7,6 +7,7 @@ using Server.Factions;
 using Server.Items;
 using Server.Misc;
 using Server.Mobiles;
+using Server.Network;
 using Server.Spells;
 using Server.Spells.Fifth;
 using Server.Spells.Ninjitsu;
@@ -44,6 +45,9 @@ public static class Stealing
 
     public static bool IsEmptyHanded(Mobile from) =>
         from.FindItemOnLayer(Layer.OneHanded) == null && from.FindItemOnLayer(Layer.TwoHanded) == null;
+
+    private static bool IsInLockedContainer(Item item) =>
+        item.Parent is Item parent && (parent is LockableContainer { Locked: true } || IsInLockedContainer(parent));
 
     public static TimeSpan OnUse(Mobile m)
     {
@@ -249,14 +253,23 @@ public static class Stealing
             {
                 _thief.SendLocalizedMessage(502710); // You can't steal that!
             }
+            else if (_thief.AccessLevel < AccessLevel.GameMaster && IsInLockedContainer(toSteal))
+            {
+                _thief.SendLocalizedMessage(501747); // It appears to be locked.
+            }
             else
             {
                 var w = toSteal.Weight + toSteal.TotalWeight;
+                var reject = LRReason.Inspecific;
 
                 if (w > MaxWeightToSteal)
                 {
                     // This item is too heavy to steal from someone's backpack.
                     _thief.SendLocalizedMessage(502722);
+                }
+                else if (root is Container { IsDecoContainer: false } && !toSteal.CheckLift(_thief, toSteal, ref reject))
+                {
+                    _thief.SendLocalizedMessage(502710); // You can't steal that!
                 }
                 else
                 {
@@ -368,6 +381,11 @@ public static class Stealing
 
             if (stolen != null)
             {
+                if (root is Container)
+                {
+                    stolen.OnItemLifted(from, stolen);
+                }
+
                 from.AddToBackpack(stolen);
 
                 if (!(stolen is Container || stolen.Stackable))

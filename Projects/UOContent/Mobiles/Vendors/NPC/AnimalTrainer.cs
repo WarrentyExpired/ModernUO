@@ -256,7 +256,6 @@ namespace Server.Mobiles
                     pet.Internalize();
 
                     pet.SetControlMaster(null);
-                    pet.SummonMaster = null;
 
                     pet.IsStabled = true;
                     pet.StabledBy = from;
@@ -357,11 +356,6 @@ namespace Server.Mobiles
         private void DoClaim(Mobile from, BaseCreature pet)
         {
             pet.SetControlMaster(from);
-
-            if (pet.SummonMaster != null)
-            {
-                pet.SummonMaster = from;
-            }
 
             pet.ControlTarget = from;
             pet.ControlOrder = OrderType.Follow;
