@@ -3608,7 +3608,7 @@ namespace Server.Mobiles
                                           region.IsPartOf("Fan Dancer's Dojo")))
                     {
                         givenToTKill = true;
-                        TreasuresOfTokuno.HandleKill(this, ds.m_Mobile);
+                        //TreasuresOfTokuno.HandleKill(this, ds.m_Mobile);
                     }
 
                     if (ds.m_Mobile is PlayerMobile pm)

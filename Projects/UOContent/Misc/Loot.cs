@@ -243,24 +243,14 @@ namespace Server
 
         public static Type[] GrimmochJournalTypes { get; } =
         {
-            typeof(GrimmochJournal1), typeof(GrimmochJournal2), typeof(GrimmochJournal3),
-            typeof(GrimmochJournal6), typeof(GrimmochJournal7), typeof(GrimmochJournal11),
-            typeof(GrimmochJournal14), typeof(GrimmochJournal17), typeof(GrimmochJournal23)
         };
 
         public static Type[] LysanderNotebookTypes { get; } =
         {
-            typeof(LysanderNotebook1), typeof(LysanderNotebook2), typeof(LysanderNotebook3),
-            typeof(LysanderNotebook7), typeof(LysanderNotebook8), typeof(LysanderNotebook11)
         };
 
         public static Type[] TavarasJournalTypes { get; } =
         {
-            typeof(TavarasJournal1), typeof(TavarasJournal2), typeof(TavarasJournal3),
-            typeof(TavarasJournal6), typeof(TavarasJournal7), typeof(TavarasJournal8),
-            typeof(TavarasJournal9), typeof(TavarasJournal11), typeof(TavarasJournal14),
-            typeof(TavarasJournal16), typeof(TavarasJournal16b), typeof(TavarasJournal17),
-            typeof(TavarasJournal19)
         };
 
         public static Type[] NewWandTypes { get; } =
