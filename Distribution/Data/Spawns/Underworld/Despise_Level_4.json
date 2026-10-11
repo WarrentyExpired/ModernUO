@@ -1877,5 +1877,20 @@
       { "name": "troll", "probability": 33, "maxCount": 1 },
       { "name": "ogre", "probability": 33, "maxCount": 1 }
     ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b5e96df3-b50a-4ba3-b43f-4c5339db9037",
+    "location": [2463, 309, 25],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2461, "y1": 307, "z1": 25, "x2": 2466, "y2": 312, "z2": 128 },
+    "walkingRange": -1,
+    "entries": [
+      { "name": "savage", "probability": 100, "maxCount": 2 },
+      { "name": "savageshaman", "probability": 100, "maxCount": 1 }
+    ]
   }
 ]
