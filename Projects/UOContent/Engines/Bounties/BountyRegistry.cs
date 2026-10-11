@@ -65,16 +65,16 @@ public static class BountyRegistry
         // ==========================================
         // TIER 1: Local Adventurer (Fame 0) - Rewards: 5 Tokens, 500g
         // ==========================================
-        Add(1, new BountyDefinition(1, "Covetous Harpies", new[] { typeof(Harpy) }, 15, 0, 5, 500, "Covetous"));
-        Add(1, new BountyDefinition(2, "Shame Earth Elementals", new[] { typeof(EarthElemental) }, 10, 0, 5, 500, "Shame"));
-        Add(1, new BountyDefinition(3, "Despise Lizardmen", new[] { typeof(Lizardman) }, 15, 0, 5, 500, "Despise"));
-        Add(1, new BountyDefinition(4, "Deceit - Skeletons", new[] { typeof(Skeleton) }, 15, 0, 5, 500, "Deceit"));
+        Add(1, new BountyDefinition(1, "Goats in the lands of Veridia.", new[] { typeof(Goat) }, 10, 0, 5, 500, "Veridia"));
+        Add(1, new BountyDefinition(2, "Great Harts in the lands of Veridia.", new[] { typeof(GreatHart) }, 10, 0, 5, 500, "Veridia"));
+        Add(1, new BountyDefinition(3, "Hinds in the lands of Veridia.", new[] { typeof(Hind) }, 10, 0, 5, 500, "Veridia"));
+        Add(1, new BountyDefinition(4, "Brown Bears in the lands of Veridia.", new[] { typeof(BrownBear) }, 10, 0, 5, 500, "Veridia"));
 
         // ==========================================
         // TIER 2: Estimable Hunter (Fame 1250) - Rewards: 15 Tokens, 1200g
         // ==========================================
-        Add(2, new BountyDefinition(4, "Deceit Skeletal Knights", new[] { typeof(SkeletalKnight) }, 10, 1250, 15, 1200, "Deceit"));
-        Add(2, new BountyDefinition(5, "Destard Drakes", new[] { typeof(Drake) }, 10, 1250, 15, 1200, "Destard"));
+        Add(2, new BountyDefinition(4, "Skeletal Knights in the Dungeon Deceit", new[] { typeof(SkeletalKnight) }, 10, 1250, 15, 1200, "Deceit"));
+        Add(2, new BountyDefinition(5, "Drakes in the Dungeon Destard", new[] { typeof(Drake) }, 10, 1250, 15, 1200, "Destard"));
 
         // ==========================================
         // TIER 3: Great Slayer (Fame 2500) - Rewards: 30 Tokens, 2500g
