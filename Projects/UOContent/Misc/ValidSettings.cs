@@ -46,5 +46,14 @@ namespace Server
 
 			return stable;
 		}
+        public static double BountyBoardDelay()
+        {
+            int mins = Settings.S_DungeonBountyBoardDelay;
+            if ( mins > 1440 )
+                mins = 1440;
+            if (mins < 1 )
+                mins = 1;
+            return (double)mins;
+        }
     }
 }

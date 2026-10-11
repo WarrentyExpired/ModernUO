@@ -73,23 +73,23 @@ public static class BountyRegistry
         // ==========================================
         // TIER 2: Estimable Hunter (Fame 1250) - Rewards: 15 Tokens, 1200g
         // ==========================================
-        Add(2, new BountyDefinition(4, "Skeletal Knights in the Dungeon Deceit", new[] { typeof(SkeletalKnight) }, 10, 1250, 15, 1200, "Deceit"));
-        Add(2, new BountyDefinition(5, "Drakes in the Dungeon Destard", new[] { typeof(Drake) }, 10, 1250, 15, 1200, "Destard"));
+        Add(2, new BountyDefinition(5, "Skeletal Knights in the Dungeon Deceit", new[] { typeof(SkeletalKnight) }, 10, 1250, 15, 1200, "Deceit"));
+        Add(2, new BountyDefinition(6, "Drakes in the Dungeon Destard", new[] { typeof(Drake) }, 10, 1250, 15, 1200, "Destard"));
 
         // ==========================================
         // TIER 3: Great Slayer (Fame 2500) - Rewards: 30 Tokens, 2500g
         // ==========================================
-        Add(3, new BountyDefinition(6, "Despise Titans", new[] { typeof(Titan) }, 8, 2500, 30, 2500, "Despise"));
+        Add(3, new BountyDefinition(7, "Despise Titans", new[] { typeof(Titan) }, 8, 2500, 30, 2500, "Despise"));
 
         // ==========================================
         // TIER 4: Illustrious Champion (Fame 5000) - Rewards: 60 Tokens, 5000g
         // ==========================================
-        Add(4, new BountyDefinition(7, "Destard Dragons", new[] { typeof(Dragon) }, 3, 5000, 60, 5000, "Destard"));
+        Add(4, new BountyDefinition(8, "Destard Dragons", new[] { typeof(Dragon) }, 3, 5000, 60, 5000, "Destard"));
 
         // ==========================================
         // TIER 5: Glorious Lord (Fame 10000) - Rewards: 100 Tokens, 10000g
         // ==========================================
-        Add(5, new BountyDefinition(8, "Hythloth Balrons", new[] { typeof(Balron) }, 2, 10000, 100, 10000, "Hythloth"));
+        Add(5, new BountyDefinition(9, "Hythloth Balrons", new[] { typeof(Balron) }, 2, 10000, 100, 10000, "Hythloth"));
     }
 
     private static void Add(int tier, BountyDefinition bounty)
