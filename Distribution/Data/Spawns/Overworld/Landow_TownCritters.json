@@ -1,0 +1,19 @@
+[
+  {
+    "$type": "RegionSpawner",
+    "guid": "980b7cd4-40c6-40b9-8dd9-7cd99714c343",
+    "location": [1806, 1391, 2],
+    "map": "Veridia",
+    "count": 18,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the town of Landow",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 14 },
+      { "name": "cat", "probability": 100, "maxCount": 1 },
+      { "name": "rat", "probability": 100, "maxCount": 2 },
+      { "name": "dog", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

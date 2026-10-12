@@ -2089,6 +2089,16 @@
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
     "Parent": { "Name": "the Landow Docks", "Map": "Veridia" },
+    "Name": "the Dock Provisioner",
+    "Priority": 60,
+    "Area": [
+      { "x1": 1725, "y1": 1459, "x2": 1731, "y2": 1465 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Name": "the Landow Docks", "Map": "Veridia" },
     "Name": "the Dock Mapmaker",
     "Priority": 60,
     "Area": [
@@ -2113,6 +2123,17 @@
     "Priority": 60,
     "Area": [
       { "x1": 1741, "y1": 1460, "x2": 1746, "y2": 1470 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Name": "the End Point Dock",
+    "Priority": 60,
+    "Area": [
+      { "x1": 1531, "y1": 933, "x2": 1542, "y2": 962 },
+      { "x1": 1542, "y1": 953, "x2": 1554, "y2": 962 },
+      { "x1": 1547, "y1": 962, "x2": 1554, "y2": 963 }
     ]
   },
   {

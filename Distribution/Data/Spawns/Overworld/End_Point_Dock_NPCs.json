@@ -1,0 +1,44 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "8eb24c8c-e159-4d2d-b70b-e0f212d6d426",
+    "location": [1535, 936, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "fisherman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7dfa3ece-29c2-440c-8d9d-737fc34a81d1",
+    "location": [1536, 956, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "harbormaster", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fa4bebb5-85e4-4b3c-ac43-e49cc34872fc",
+    "location": [1536, 954, 8],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "merchant", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

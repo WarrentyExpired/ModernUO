@@ -15,7 +15,7 @@ public partial class HarborMaster : BaseCreature
         SetSpeed(0.2, 0.4);
         SpeechHue = Utility.RandomDyedHue();
         Hue = Race.Human.RandomSkinHue();
-        Blessed = true;
+        //Blessed = true;
 
         if (Female = Utility.RandomBool())
         {

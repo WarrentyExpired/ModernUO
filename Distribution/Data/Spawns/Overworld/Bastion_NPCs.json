@@ -909,5 +909,19 @@
     "entries": [
       { "name": "bountyvendor", "probability": 100, "maxCount": 1 }
     ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "79cc3fd0-1e54-48cc-b858-975101e285f0",
+    "location": [1886, 1947, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 10,
+    "entries": [
+      { "name": "harbormaster", "probability": 100, "maxCount": 1 }
+    ]
   }
 ]
