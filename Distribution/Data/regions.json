@@ -126,7 +126,7 @@
     ]
   },
   {
-    "$type": "GreetingBusinessRegion",
+    "$type": "GreetingInnRegion",
     "Map": "Veridia",
     "Name": "the Bastion Inn",
     "Parent": { "Name": "the Town of Bastion", "Map": "Veridia" },
@@ -312,7 +312,7 @@
   {
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
-    "Name": "Monster Points Dealer",
+    "Name": "the Bastion Bounty Trader",
     "Parent": { "Name": "the Town of Bastion", "Map": "Veridia" },
     "Priority": 55,
     "Area": [
@@ -476,7 +476,7 @@
     ]
   },
   {
-    "$type": "GreetingBusinessRegion",
+    "$type": "GreetingInnRegion",
     "Map": "Veridia",
     "Name": "the Fairwinds Dinner and Inn",
     "Parent": { "Name": "the Town of Fairwinds", "Map": "Veridia" },
@@ -498,7 +498,7 @@
   {
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
-    "Name": "the Fairwinds Hair Stylist",
+    "Name": "the Fairwinds Bounty Trader",
     "Parent": { "Name": "the Town of Fairwinds", "Map": "Veridia" },
     "Priority": 55,
     "Area": [
@@ -594,7 +594,7 @@
     ]
   },
   {
-    "$type": "GreetingBusinessRegion",
+    "$type": "GreetingInnRegion",
     "Map": "Veridia",
     "Name": "the Stonehollow Inn",
     "Parent": { "Name": "the Town of Stonehollow", "Map": "Veridia" },
@@ -762,7 +762,7 @@
     ]
   },
   {
-    "$type": "GreetingBusinessRegion",
+    "$type": "GreetingInnRegion",
     "Map": "Veridia",
     "Name": "the Mireport Tavern and Inn",
     "Parent": { "Name": "the Town of Mireport", "Map": "Veridia" },
@@ -784,7 +784,7 @@
   {
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
-    "Name": "the Mireport Hairstylist",
+    "Name": "the Mireport Bounty Trader",
     "Parent": { "Name": "the Town of Mireport", "Map": "Veridia" },
     "Priority": 55,
     "Area": [
@@ -1095,7 +1095,7 @@
     ]
   },
   {
-    "$type": "GreetingBusinessRegion",
+    "$type": "GreetingInnRegion",
     "Map": "Veridia",
     "Name": "West Rivermouth Dinner and Inn",
     "Parent": { "Name": "West Rivermouth", "Map": "Veridia" },
@@ -1269,7 +1269,7 @@
     ]
   },
   {
-    "$type": "GreetingBusinessRegion",
+    "$type": "GreetingInnRegion",
     "Map": "Veridia",
     "Name": "the East Rivermouth Dinner and Inn",
     "Parent": { "Name": "East Rivermouth", "Map": "Veridia" },
@@ -1415,7 +1415,7 @@
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
     "Parent": { "Name": "the Town of Teareek", "Map": "Veridia" },
-    "Name": "the Teareek Hairstylist",
+    "Name": "the Teareek Bounty Trader",
     "Priority": 55,
     "Area": [
       { "x1": 400, "y1": 1873, "x2": 410, "y2": 1880 }
@@ -1455,7 +1455,7 @@
     "GoLocation": { "x": 3005, "y": 543, "z": 2 }
   },
   {
-    "$type": "GreetingBusinessRegion",
+    "$type": "GreetingInnRegion",
     "Map": "Veridia",
     "Parent": { "Name": "the Town of Port Grim", "Map": "Veridia" },
     "Name": "the Port Grim Inn",
@@ -1538,7 +1538,7 @@
     ]
   },
   {
-    "$type": "GreetingBusinessRegion",
+    "$type": "GreetingInnRegion",
     "Map": "Veridia",
     "Parent": { "Name": "the Town of Coldbarrow", "Map": "Veridia" },
     "Name": "the Coldbarrow Inn",
@@ -1654,7 +1654,7 @@
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
     "Parent": { "Name": "the Town of Coldbarrow", "Map": "Veridia" },
-    "Name": "the Coldbarrow Hairstylist",
+    "Name": "the Coldbarrow Bounty Trader",
     "Priority": 55,
     "Area": [
       { "x1": 3378, "y1": 2383, "x2": 3385, "y2": 2391 }
@@ -1801,14 +1801,14 @@
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
     "Parent": { "Name": "the Town of Myrish", "Map": "Veridia" },
-    "Name": "the Myrish Hairstylist",
+    "Name": "the Myrish Bounty Trader",
     "Priority": 55,
     "Area": [
       { "x1": 1595, "y1": 2898, "x2": 1602, "y2": 2907 }
     ]
   },
   {
-    "$type": "GreetingBusinessRegion",
+    "$type": "GreetingInnRegion",
     "Map": "Veridia",
     "Parent": { "Name": "the Town of Myrish", "Map": "Veridia" },
     "Name": "the Myrish Inn",
@@ -1916,7 +1916,7 @@
     ]
   },
   {
-    "$type": "GreetingBusinessRegion",
+    "$type": "GreetingInnRegion",
     "Map": "Veridia",
     "Parent": { "Name": "the Town of Wharf's End", "Map": "Veridia" },
     "Name": "the Wharf's End Inn",

@@ -1,0 +1,520 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "4a7df8a5-377a-4e7e-95e1-2d703c1580b2",
+    "location": [2292, 2844, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2292, "y1": 2844, "z1": -128, "x2": 2293, "y2": 2845, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "warriorguard", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "418b097f-dd0b-4124-9f9b-eb880fbae848",
+    "location": [2324, 2787, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2324, "y1": 2787, "z1": -128, "x2": 2325, "y2": 2788, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "warriorguard", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "57ffcd48-fe4d-4301-9523-2650486480f0",
+    "location": [2285, 2818, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2285, "y1": 2818, "z1": -128, "x2": 2286, "y2": 2819, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "warriorguard", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c24baa71-9674-4050-86e4-503bc7774585",
+    "location": [2308, 2826, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 5,
+    "walkingRange": 10,
+    "entries": [
+      { "name": "animaltrainer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "92890742-101b-4fee-8d40-fda233241899",
+    "location": [2317, 2837, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2317, "y1": 2837, "z1": -128, "x2": 2318, "y2": 2838, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "veterinarian", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3681ab35-0670-4acd-81ff-8369c4368b36",
+    "location": [2336, 2835, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2336, "y1": 2835, "z1": -128, "x2": 2337, "y2": 2836, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "monk", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "88af19fe-70fe-434d-8365-8b35427b7e27",
+    "location": [2330, 2837, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2330, "y1": 2837, "z1": -128, "x2": 2331, "y2": 2838, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "healer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a2afcd12-56d4-480a-824a-ea9c6fc3efd7",
+    "location": [2329, 2825, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2329, "y1": 2825, "z1": -128, "x2": 2330, "y2": 2826, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "bard", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "03c41307-0e9c-4116-b62e-152dac170f1f",
+    "location": [2366, 2806, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2366, "y1": 2806, "z1": -128, "x2": 2367, "y2": 2807, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "baker", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2b7bdaeb-b37a-48f7-a2a5-117f77fb058d",
+    "location": [2365, 2812, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2365, "y1": 2812, "z1": -128, "x2": 2366, "y2": 2813, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "miller", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e539ea31-f211-4b98-a284-e9f9c7fd481a",
+    "location": [2365, 2817, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2365, "y1": 2817, "z1": -128, "x2": 2366, "y2": 2818, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "miller", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8fe8eb28-e204-4d1c-8862-e740c9816a86",
+    "location": [2350, 2808, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2350, "y1": 2808, "z1": -128, "x2": 2351, "y2": 2809, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "baker", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3bd70a8c-5fdc-4efd-b209-1a47bb09a2da",
+    "location": [2342, 2785, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2342, "y1": 2785, "z1": -128, "x2": 2343, "y2": 2786, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "bountyvendor", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3f01ba0c-7907-41af-99d5-15ac1645a6d7",
+    "location": [2343, 2821, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2343, "y1": 2821, "z1": -128, "x2": 2344, "y2": 2822, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "warriorguard", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a339aa62-b849-4e3b-aad0-8fbcf1a44699",
+    "location": [2330, 2798, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2330, "y1": 2798, "z1": -128, "x2": 2331, "y2": 2799, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "jeweler", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c52637b9-d730-49d7-beba-630e790f0389",
+    "location": [2308, 2802, 25],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2308, "y1": 2802, "z1": 25, "x2": 2309, "y2": 2803, "z2": 128 },
+    "walkingRange": 10,
+    "entries": [
+      { "name": "innkeeper", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7f4bf823-c893-40c5-b968-310a657659c2",
+    "location": [2315, 2796, 25],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2315, "y1": 2796, "z1": 25, "x2": 2316, "y2": 2797, "z2": 128 },
+    "walkingRange": 10,
+    "entries": [
+      { "name": "innkeeper", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ece30477-a19c-436a-9049-36138b297bd9",
+    "location": [2310, 2787, 5],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2307, "y1": 2784, "z1": 5, "x2": 2314, "y2": 2791, "z2": 128 },
+    "walkingRange": 10,
+    "entries": [
+      { "name": "waiter", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2d4a551e-bb23-4030-8576-f955a26419cd",
+    "location": [2304, 2799, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2304, "y1": 2799, "z1": -128, "x2": 2305, "y2": 2800, "z2": 128 },
+    "walkingRange": 2,
+    "entries": [
+      { "name": "barkeeper", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c7666a8e-8342-48ec-a250-c5141f73e508",
+    "location": [2304, 2797, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2304, "y1": 2797, "z1": -128, "x2": 2305, "y2": 2798, "z2": 128 },
+    "walkingRange": 2,
+    "entries": [
+      { "name": "tavernkeeper", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c129d83f-4199-440f-ab8c-2a1242a042a4",
+    "location": [2304, 2793, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2304, "y1": 2793, "z1": -128, "x2": 2305, "y2": 2794, "z2": 128 },
+    "walkingRange": 2,
+    "entries": [
+      { "name": "cook", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6fee2f18-db91-4510-898d-ab9d77852368",
+    "location": [2293, 2792, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2293, "y1": 2792, "z1": -128, "x2": 2294, "y2": 2793, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "scribe", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "28621267-1ad2-4df7-af7d-277315af4343",
+    "location": [2312, 2803, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2312, "y1": 2803, "z1": -128, "x2": 2313, "y2": 2804, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "innkeeper", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "31a58a16-6abd-40eb-82f9-455a0f244b39",
+    "location": [2271, 2786, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2271, "y1": 2786, "z1": -128, "x2": 2272, "y2": 2787, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "carpenter", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b7bad413-5ba8-4359-9fdb-33edf8e4e9a8",
+    "location": [2265, 2790, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2265, "y1": 2790, "z1": -128, "x2": 2266, "y2": 2791, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "carpenter", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "072d4a02-44a8-419c-9329-04d7661c4f86",
+    "location": [2284, 2787, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2284, "y1": 2787, "z1": -128, "x2": 2285, "y2": 2788, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "scribe", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d9c75317-93b5-4962-8159-bbfe82180ab1",
+    "location": [2248, 2786, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2248, "y1": 2786, "z1": -128, "x2": 2249, "y2": 2787, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "holymage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fdf4a4a9-e1b8-45b9-8896-bbc74f3a26f9",
+    "location": [2251, 2787, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2251, "y1": 2787, "z1": -128, "x2": 2252, "y2": 2788, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "mage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b1fbffb7-b754-43ca-9c69-22af4aa7617a",
+    "location": [2233, 2801, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "tinker", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "03bccd83-57ad-4862-93fd-2532172fec96",
+    "location": [2237, 2821, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "banker", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ef9ea6e0-272b-436a-a53a-da1678e832ee",
+    "location": [2238, 2817, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 2238, "y1": 2817, "z1": -128, "x2": 2239, "y2": 2818, "z2": 128 },
+    "walkingRange": 3,
+    "entries": [
+      { "name": "banker", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e449a0f8-56b4-43f7-a2fb-8469d182b819",
+    "location": [2238, 2813, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "warriorguard", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ea96f57c-4555-4921-b697-344f6a38efca",
+    "location": [2274, 2837, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "mapmaker", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "80799bd1-0595-44d4-a4b6-2ae1f290a8f2",
+    "location": [2277, 2830, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "shipwright", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c0f4520e-47ea-4349-9b67-b22f8e772384",
+    "location": [2275, 2850, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "fisherman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c0f41927-cb39-4fc2-940f-f50f2b8aedaa",
+    "location": [2261, 2836, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "provisioner", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9dda5527-dbbc-4a3a-b625-15e526e563a7",
+    "location": [2263, 2863, 1],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "fisherman", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

@@ -67,5 +67,6 @@ public static class RegionJsonRegistration
         RegionJsonSerializer.Register<MountlessTownRegion>();
         RegionJsonSerializer.Register<GreetingOverworldSpawnRegion>();
         RegionJsonSerializer.Register<NewbieDungeonRegion>();
+        RegionJsonSerializer.Register<GreetingInnRegion>();
     }
 }

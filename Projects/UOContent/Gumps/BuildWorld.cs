@@ -108,6 +108,7 @@ namespace Server.Gumps
                 case 1: InvokeCommand("TelGen", from); break;
                 case 2: InvokeCommand("Decorate", from); break;
                 case 3:
+                    InvokeCommand("WipeWildMobs", from);
                     InvokeCommand("IS Data/Spawns/Overworld/**.json", from);
                     InvokeCommand("IS Data/Spawns/Underworld/**.json", from);
                     break;
