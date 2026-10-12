@@ -146,7 +146,7 @@ public class BountyBoardGump : Gump
                 {
                     profile.ActiveBountyID = -1;
                     profile.CurrentKills = 0;
-                    profile.NextAvailableTime = DateTime.UtcNow + TimeSpan.FromMinutes(ValidSettings.BountyBoardDelay());
+                    profile.NextAvailableTime = DateTime.UtcNow + TimeSpan.FromMinutes(ValidSettings.BountyRefusalDelay());
                     _player.SendMessage(33, $"You paid the {cost} gold refusal fee and abandoned the bounty.");
                 }
                 else

@@ -55,5 +55,14 @@ namespace Server
                 mins = 1;
             return (double)mins;
         }
+        public static double BountyRefusalDelay()
+        {
+            int mins = Settings.S_DungeonBountyRefusalDelay;
+            if ( mins > 1440 )
+                mins = 1440;
+            if (mins < 1 )
+                mins = 1;
+            return (double)mins;
+        }
     }
 }
