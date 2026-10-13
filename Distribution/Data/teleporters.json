@@ -347,17 +347,22 @@
   },
   {
     "src": { "map": "Veridia", "loc": [ 1921, 1982, -18 ] },
-    "dst": { "map": "Underworld", "loc": [ 2622, 696, 38 ] },
-    "back": true
+    "dst": { "map": "Underworld", "loc": [ 2623, 695, 38 ] },
+    "back": false
   },
   {
     "src": { "map": "Veridia", "loc": [ 1922, 1982, -18 ] },
-    "dst": { "map": "Underworld", "loc": [ 2623, 696, 38 ] },
-    "back": true
+    "dst": { "map": "Underworld", "loc": [ 2624, 695, 38 ] },
+    "back": false
+  },
+  {
+    "src": { "map": "Underworld", "loc": [ 2623, 696, 38 ] },
+    "dst": { "map": "Veridia", "loc": [ 1921, 1983, -13 ] },
+    "back": false
   },
   {
     "src": { "map": "Underworld", "loc": [ 2624, 696, 38 ] },
-    "dst": { "map": "Veridia", "loc": [ 1921, 1982, -18 ] },
+    "dst": { "map": "Veridia", "loc": [ 1922, 1983, -13 ] },
     "back": false
   },
   {
