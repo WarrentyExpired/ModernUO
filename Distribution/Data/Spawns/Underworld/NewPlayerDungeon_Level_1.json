@@ -254,8 +254,8 @@
     "count": 1,
     "minDelay": "00:25:00",
     "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
+    "homeRange": 1,
+    "walkingRange": 5,
     "entries": [
       { "name": "cowardlybrigand", "probability": 25, "maxCount": 1 },
       { "name": "mangyratman", "probability": 25, "maxCount": 1 },

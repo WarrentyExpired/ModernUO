@@ -29,7 +29,7 @@ namespace Server.Mobiles
             SetSkill(SkillName.Wrestling, 5.1, 10.0);
 
             Fame = 150;
-            Karma = -150;
+            Karma = 0;
 
             VirtualArmor = 10;
 

@@ -152,6 +152,10 @@ public static class SkillCheck
                 {
                     gc *= 2.0;
                 }
+                else if (from.Region is GreetingDungeonRegion)
+                {
+                    gc *= 1.5;
+                }
 
                 if (gc >= Utility.RandomDouble())
                 {
