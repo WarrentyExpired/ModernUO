@@ -94,11 +94,19 @@ public partial class CustomMoongate : Item
     {
         if (m is PlayerMobile pm)
         {
-            pm.Hidden = true;
             // Close any existing moongate gumps before opening a new one
             pm.CloseGump<CustomMoongateGump>();
             pm.SendGump(new CustomMoongateGump(this));
             Effects.PlaySound(pm.Location, pm.Map, 0x20E);
+            Timer.DelayCall(() =>
+            {
+                if (pm.Alive && pm.Map == Map && pm.InRange(Location, 1))
+                {
+                    pm.Combatant = null;
+                    pm.Warmode = false;
+                    pm.Hidden = true;
+                }
+            });
         }
     }
 }
