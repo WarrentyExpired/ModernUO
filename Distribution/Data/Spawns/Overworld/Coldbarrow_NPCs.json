@@ -52,7 +52,7 @@
     "spawnBounds": { "x1": 3380, "y1": 2385, "z1": -128, "x2": 3381, "y2": 2386, "z2": 128 },
     "walkingRange": 5,
     "entries": [
-      { "name": "hairstylist", "probability": 100, "maxCount": 1 }
+      { "name": "bountyvendor", "probability": 100, "maxCount": 1 }
     ]
   },
   {

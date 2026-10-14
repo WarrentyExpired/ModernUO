@@ -56,7 +56,7 @@ public partial class CustomMoongate : Item
         {
             // Close any existing moongate gumps before opening a new one
             pm.CloseGump<CustomMoongateGump>();
-            pm.SendGump(new CustomMoongateGump());
+            pm.SendGump(new CustomMoongateGump(this));
         }
     }
 }

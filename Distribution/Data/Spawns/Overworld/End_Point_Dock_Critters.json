@@ -1,18 +1,32 @@
 [
   {
-    "$type": "RegionSpawner",
-    "guid": "7828a42b-6b29-4cda-87b5-88db80d9f506",
-    "location": [1537, 954, 8],
+    "$type": "Spawner",
+    "guid": "5f709ede-bf80-42ea-9c12-87bdb0186806",
+    "location": [1536, 957, 8],
     "map": "Veridia",
-    "count": 8,
+    "count": 3,
     "minDelay": "00:05:00",
     "maxDelay": "00:10:00",
-    "region": "the End Point Dock",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "rat", "probability": 100, "maxCount": 2 },
+      { "name": "cat", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2952bcb4-4a4e-4082-ae36-fc67b8c8b083",
+    "location": [1535, 942, 8],
+    "map": "Veridia",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
     "walkingRange": -1,
     "entries": [
-      { "name": "cat", "probability": 100, "maxCount": 2 },
       { "name": "rat", "probability": 100, "maxCount": 2 },
-      { "name": "dog", "probability": 100, "maxCount": 1 }
+      { "name": "cat", "probability": 100, "maxCount": 1 }
     ]
   }
 ]

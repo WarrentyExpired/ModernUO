@@ -2,7 +2,7 @@ using System;
 using Server;
 using Server.Gumps;
 using Server.Network;
-
+using Server.Items;
 namespace Server.Gumps;
 
 public class CustomMoongateGump : Gump
@@ -20,11 +20,15 @@ public class CustomMoongateGump : Gump
         new("Trails Moongate", new Point3D(3169, 2871, 0), Map.Trammel),
         new("Coldbarrow Moongate", new Point3D(3285, 2331, 0), Map.Trammel),
         new("Draco Island Moongate", new Point3D(3495, 3491, 2), Map.Trammel),
-        new("Piece Island Moongate", new Point3D(754, 3458, 0), Map.Trammel)
+        new("Piece Island Moongate", new Point3D(754, 3458, 0), Map.Trammel),
+        new("Shiver Island Moongate", new Point3D(3012, 445, 8), Map.Trammel)
     };
 
-    public CustomMoongateGump() : base(100, 100)
+    private readonly CustomMoongate _gate;
+
+    public CustomMoongateGump(CustomMoongate gate) : base(100, 100)
     {
+        _gate = gate;
         Closable = true;
         Disposable = true;
         Resizable = false;
@@ -32,10 +36,10 @@ public class CustomMoongateGump : Gump
         AddPage(0);
 
         // Background and Alpha Region for a clean, modern look
-        AddBackground(0, 0, 250, 320, 9270);
-        AddAlphaRegion(10, 10, 230, 300);
+        AddBackground(0, 0, 350, 370, 9270);
+        AddAlphaRegion(10, 10, 330, 350);
 
-        AddHtml(0, 15, 250, 20, "<CENTER><BASEFONT COLOR=#FFFFFF>Select Destination</BASEFONT></CENTER>", false, false);
+        AddHtml(0, 15, 350, 20, "<CENTER><BASEFONT COLOR=#FFFFFF>Select Destination</BASEFONT></CENTER>", false, false);
 
         // Dynamically build the 8 buttons based on the array above
         int yOffset = 50;
@@ -61,6 +65,12 @@ public class CustomMoongateGump : Gump
         // If they right-clicked to close the gump, do nothing
         if (buttonId == 0)
             return;
+
+        if (_gate == null || _gate.Deleted || mobile.Map != _gate.Map || !mobile.InRange(_gate.GetWorldLocation(), 2))
+        {
+            mobile.SendMessage("You have moved too far away from the moongate.");
+            return;
+        }
 
         // Subtract 1 from the ButtonID to get the actual array index (0 through 7)
         var index = buttonId - 1;

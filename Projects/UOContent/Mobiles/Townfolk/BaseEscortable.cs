@@ -36,39 +36,27 @@ public partial class BaseEscortable : BaseCreature
     // Used when: !MLQuestSystem.Enabled && !Core.ML
     public static readonly string[] TownNames =
     [
-        "Cove", "Britain", "Jhelom",
-        "Minoc", "Ocllo", "Trinsic",
-        "Vesper", "Yew", "Skara Brae",
-        "Nujel'm", "Moonglow", "Magincia"
+        "the town of Bastion", "the town of Myrish", "the town of Fairwinds",
+        "the town of Stonehollow", "the town of Mireport", "the town of Cresthaven",
+        "the town of Rivermouth", "the town of Teareek", "the town of Port Grim",
+        "the town of Coldbarrow", "the town of Wharf's End", "the town of Landow"
     ];
 
     // ML list, pre-ML quest system
     // Used when: !MLQuestSystem.Enabled && Core.ML
     public static readonly string[] MlTownNames =
     [
-        "Cove", "Serpent's Hold", "Jhelom", "Nujel'm"
+        "the town of Bastion", "the town of Myrish", "the town of Fairwinds",
+        "the town of Stonehollow", "the town of Mireport", "the town of Cresthaven",
+        "the town of Rivermouth", "the town of Teareek", "the town of Port Grim",
+        "the town of Coldbarrow", "the town of Wharf's End", "the town of Landow"
     ];
 
     // ML quest system general list
     // Used when: MLQuestSystem.Enabled && !Region.IsPartOf( "Haven Island" )
     private static readonly Dictionary<Type, (int[], int)> _mlQuestTypes = new()
     {
-        /*
-        { typeof(EscortToYew), (Array.Empty<int>(), 0) },
-        { typeof(EscortToVesper), (Array.Empty<int>(), 0) },
-        { typeof(EscortToTrinsic), (Array.Empty<int>(), 0) },
-        { typeof(EscortToSkaraBrae), (Array.Empty<int>(), 0) },
-        { typeof(EscortToSerpentsHold), (Array.Empty<int>(), 0) },
-        { typeof(EscortToNujelm), (Array.Empty<int>(), 0) },
-        { typeof(EscortToMoonglow), (Array.Empty<int>(), 0) },
-        { typeof(EscortToMinoc), (Array.Empty<int>(), 0) },
-        { typeof(EscortToMagincia), (Array.Empty<int>(), 0) },
-        { typeof(EscortToJhelom), (Array.Empty<int>(), 0) },
-        { typeof(EscortToCove), (Array.Empty<int>(), 0) },
-        { typeof(EscortToBritain), (Array.Empty<int>(), 0) }
-        // Ocllo was removed in pub 56
-        // { typeof(EscortToOcllo), (Array.Empty<int>(), 0) }
-        */
+        { typeof(EscortToBastion), (Array.Empty<int>(), 0) }
     };
 
     // ML quest system New Haven list
@@ -77,86 +65,7 @@ public partial class BaseEscortable : BaseCreature
     // that teach you where things are in a city instead of the randomly spawned ones.
     private static readonly Dictionary<Type, (int[], int)> _mlQuestTypesNH = new()
     {
-        /*
-        // I am missing several components for my new potions, and I need to find the local alchemist.
-        // My daughter is sick , and I need medicine. Do you know the way to the local alchemist?
-        // I need some potions before I set out for a long journey. Can you take me to the alchemist in The Bottled Imp?
-        // I’m looking to go to the Alchemist's shop. Will you take me?
-        { typeof(EscortToNHAlchemist), ([1042767, 1042768, 1042769, 1042824], 1042811) },
-
-        // I need new string for my lute, yet I do not know the way to the local music shop, could you take me?
-        // I was hoping to hire a bard for my birthday party. Can you take me to one?
-        // I fear my talent for music is less than my desire to learn, yet still I would like to try. Can you take me to the local music shop?
-        // I’m looking to go to the music center. Will you take me?
-        { typeof(EscortToNHBard), ([1042770, 1042771, 1042772, 1042825], 1042812) },
-
-        // A family heirloom, our armoire, is falling apart. I need to see the local carpenter. Would you guide me to her?
-        // My goat has broken through our fence, and I need new boards. Can you direct me to the local wood worker?
-        // I need a hammer and nails. Never mind for what. Take me to the local carpenter or leave me be.
-        // I’m looking to go to the local woodworker. Will you take me?
-        { typeof(EscortToNHCarpenter), ([1042773, 1042774, 1042775, 1042829], 1042816) },
-
-        //TODO: Add woodsman (camping, tracker, etc)
-        // 1042776 - I have a job for the local woodsman. I have lost my dog. Can you take me to see him?
-        // 1042777 - The tracker here is a good man. I know he will help me find my pet scorpion.  Do you know the way to his house?
-        // 1042778 - I am hoping to learn something about camping. Can you take me to the local woodsman?
-        // 1042836 - I’m looking to go to the local woodsman's. Will you take me?
-        // 1042814 - Lead on! Payment will be made when we arrive at the weapon trainer's.
-
-        // Me spouse's cookin' is too good. I fear me belly is outgrowin' me clothes. I need to find the local seamstress. Can you take me to her?
-        // I want to learn how to sew. Can you take me to see the tailor?
-        // I need new clothes for a party, and I was wondering if you could take me to the tailor?
-        // I’m looking to go to the local tailor. Will you take me?
-        { typeof(EscortToNHTailor), ([1042779, 1042780, 1042781, 1042828], 1042815) },
-
-        // I need to deposit some gold. You look like a trustworthy soul, so could you direct me to the local bank?
-        // A rich relative of mine said they deposited some gold in to my account. Would you be able to lead me to the bank?
-        // I have a debt I need to pay off at the bank. Do you know the way there?
-        // I’m looking to go to the city bank. Will you take me?
-        { typeof(EscortToNHBank), ([1042782, 1042783, 1042784, 1042832], 1042819) },
-
-        // I wish to travel and see the world, but I fear I need martial skills. Would you direct me to the local weapons trainer?
-        // I need a sword to accompany me on a journey. Would escort me to the local fighter's union?
-        // I need someone to help me rid my home of mongbats. Please take me to the local swordfighter.
-        // I’m looking to go to the weapon trainer's. Will you take me?
-        { typeof(EscortToNHWarrior), ([1042785, 1042786, 1042787, 1042827], 1042814) },
-
-        // My new house requires blessing, but I am not a mage and I have not the scroll. Would you take me to the local mages guild?
-        // I need a wizard. I can't say why. You'll take me to one, or won't you?
-        // You there. Take me to see a sorcerer so I can turn a friend back in to a human. He is currently a cat and keeps demanding milk.
-        // I’m looking to go to the magic shop. Will you take me?
-        { typeof(EscortToNHMage), ([1042788, 1042789, 1042790, 1042833], 1042820) },
-
-        // Psst - I hate to admit it, but I am lost. Can you take me to a place where they sell maps?
-        // I am trying to confirm the location of dungeons around here. Would you take me to a map maker so I might buy supplies?
-        // Where am I? Who am I? Do you know me? Hmmm - on second thought, I think I best stick with where I am first. Do you know where I can get a map?
-        // I’m looking to go to the local Map maker's. Will you take me?
-        { typeof(EscortToNHMapmaker), ([1042791, 1042792, 1042793, 1042835], 1042822) },
-
-        // I am in search of a loaf of fresh bread. Do you know where I might find some?
-        // I need to find some spices for my stew.  The local chef might have some for me, can you take me to see him?
-        // I need something to eat. I am starving. Can you take me to the inn?
-        // I’m looking to go to the New Haven Inn. Will you take me?
-        { typeof(EscortToNHInn), ([1042794, 1042795, 1042796, 1042834], 1042821) },
-
-        // Hey you!  I need to find a farmer because all my plants keep dying.  Please take me to one.
-        // Do you know where I might find a person who sells seeds for crops?
-        // I am hoping to swap soil stories with a local farmer, but I cannot find one. Can you take me to one?
-        // I’m looking to go to a local farm. Will you take me?
-        // { typeof(EscortToNHFarm), (new[] { 1042797, 1042798, 1042799, 1042830 }, 1042817) }, // Farm destination was remove
-
-        // Hey! I need to visit the local fisherman to ask about what kind of bait he is using. I keep pulling up sea serpents. Where is he?
-        // You know, I would really like some fish, but I do not know where a fisherman is. Do you?
-        // I have heard of a magical fish that grants wishes. I bet THAT fisherman knows where the fish is. Please take me to him.
-        // I’m looking to go to the fishing wharf. Will you take me?
-        { typeof(EscortToNHDocks), ([1042800, 1042801, 1042802, 1042826], 1042813) },
-
-        // I need arrows to hunt rabbits for me rabbit stew. Can you take me to the local archer?
-        // I have a huge amount of feathers for the local Fletcher. Where might I find him?
-        // You there. Do you know the way to the local archer?
-        // I’m looking to go to the local archery range. Will you take me?
-        { typeof(EscortToNHBowyer), ([1042803, 1042804, 1042805, 1042831], 1042818) },
-        */
+        { typeof(EscortToBastion), ([1042803, 1042804, 1042805, 1042831], 1042818) },
     };
 
     [SerializableField(0, setter: "private")]
@@ -780,7 +689,7 @@ public partial class BaseEscortable : BaseCreature
 
     public virtual string PickRandomDestination()
     {
-        if (Map.Felucca.Regions.Count == 0 || Map == null || Map == Map.Internal || Location == Point3D.Zero)
+        if (Map.Trammel.Regions.Count == 0 || Map == null || Map == Map.Internal || Location == Point3D.Zero)
         {
             return null; // Not yet fully initialized
         }
@@ -819,7 +728,7 @@ public partial class BaseEscortable : BaseCreature
             return _destination;
         }
 
-        if (Map.Felucca.Regions.Count > 0)
+        if (Map.Trammel.Regions.Count > 0)
         {
             _destination = EDI.Find(_destinationString);
 
@@ -858,7 +767,7 @@ public class EscortDestinationInfo
 
     public static void Initialize()
     {
-        var list = Map.Felucca.Regions.Values;
+        var list = Map.Trammel.Regions.Values;
 
         if (list.Count == 0)
         {
@@ -869,7 +778,7 @@ public class EscortDestinationInfo
 
         foreach (var r in list)
         {
-            if (r is DungeonRegion or TownRegion && r.Name != null)
+            if (r.Name != null)
             {
                 _table[r.Name] = new EDI(r.Name, r);
             }

@@ -104,7 +104,10 @@
     "world.enableAutoRestart": "False",
     "world.savePath": "Saves",
     "world.useMultithreadedSaves": "True",
-    "opl.enable": "Core.AOS",
-    "factions.enabled": "False"
+    "factions.enabled": "False",
+    "vendor.isInvulnerable": "True",
+    "melee.enableInstaHit": "True",
+    "t2aCraftMenus": "False",
+    "opl.enable": "False"
   }
 }
