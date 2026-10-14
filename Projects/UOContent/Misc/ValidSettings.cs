@@ -64,5 +64,14 @@ namespace Server
                 mins = 1;
             return (double)mins;
         }
+        public static double RegionDungeonTrapsChance()
+        {
+            int chance = Settings.S_RegionDungeonTrapsChance;
+            if (chance > 100)
+                chance = 100;
+            if (chance < 1 )
+                chance = 1;
+            return (double)chance;
+        }
     }
 }

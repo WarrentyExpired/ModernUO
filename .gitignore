@@ -13,7 +13,8 @@
 /Distribution/Logs
 /Distribution/Archives
 /Distribution/Backups
-/Distribution/Saves
+/Distribution/Saves/*
+/Distribution/Saves.*
 /Distribution/docs
 /Distribution/Client
 /Distribution/Data/Spawns/Exported/*

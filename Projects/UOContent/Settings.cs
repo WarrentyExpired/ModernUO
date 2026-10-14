@@ -9,5 +9,8 @@ namespace Server
         public static int S_Stables = 3; // 0-20 Extra stable slots
         public static int S_DungeonBountyBoardDelay = 60; // 1-1440 minutes delay between bountie quests
         public static int S_DungeonBountyRefusalDelay = 10; // 1-1440 minutes delay between refusing a quest
+        public static bool S_DungeonTraps = false; // Spawns Dugeon floor traps
+        public static bool S_RegionDungeonTraps = true; // Step activated dungeon traps
+        public static int S_RegionDungeonTrapsChance = 5; // 1-100 Chance to get a trap check per step
     }
 }
