@@ -1,8 +1,13 @@
 using System;
+using System.Collections.Generic;
 using ModernUO.Serialization;
+using Server.Collections;
+using Server.Factions;
 using Server.Gumps;
+using Server.Maps;
 using Server.Mobiles;
 using Server.Network;
+using Server.Spells;
 
 namespace Server.Items;
 
@@ -17,22 +22,19 @@ public partial class CustomMoongate : Item
         Name = "a moongate";
     }
 
-    // Required for ModernUO Serialization
     public CustomMoongate(Serial serial) : base(serial)
     {
     }
 
-    // Triggers when a player walks onto the gate
     public override bool OnMoveOver(Mobile m)
     {
         if (m.Player && m.Alive)
         {
-            SendGateGump(m);
+            UseGate(m);
         }
-        return true; // Return true to allow the player to step onto the tile
+        return true;
     }
 
-    // Triggers when a player double-clicks the gate
     public override void OnDoubleClick(Mobile from)
     {
         if (!from.Player || !from.Alive)
@@ -42,7 +44,7 @@ public partial class CustomMoongate : Item
 
         if (from.InRange(GetWorldLocation(), 2))
         {
-            SendGateGump(from);
+            UseGate(from);
         }
         else
         {
@@ -50,13 +52,53 @@ public partial class CustomMoongate : Item
         }
     }
 
+    public bool CanUseGate(Mobile m, bool sendMessage = true)
+    {
+        if (m == null || !m.Alive || !m.Player)
+            return false;
+
+        if (m.Criminal)
+        {
+            if (sendMessage)
+                m.SendLocalizedMessage(1005561, "", 0x22); // Thou'rt a criminal and cannot escape so easily.
+            return false;
+        }
+
+        if (SpellHelper.CheckCombat(m))
+        {
+            if (sendMessage)
+                m.SendLocalizedMessage(1005564, "", 0x22); // Wouldst thou flee during the heat of battle??
+            return false;
+        }
+
+        if (m.Spell != null)
+        {
+            if (sendMessage)
+                m.SendLocalizedMessage(1049616); // You are too busy to do that at the moment.
+            return false;
+        }
+
+        return true;
+    }
+
+    public bool UseGate(Mobile m)
+    {
+        if (!CanUseGate(m))
+            return false;
+
+        SendGateGump(m);
+        return true;
+    }
+
     private void SendGateGump(Mobile m)
     {
         if (m is PlayerMobile pm)
         {
+            pm.Hidden = true;
             // Close any existing moongate gumps before opening a new one
             pm.CloseGump<CustomMoongateGump>();
             pm.SendGump(new CustomMoongateGump(this));
+            Effects.PlaySound(pm.Location, pm.Map, 0x20E);
         }
     }
 }

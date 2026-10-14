@@ -39,7 +39,8 @@ public partial class BaseEscortable : BaseCreature
         "the town of Bastion", "the town of Myrish", "the town of Fairwinds",
         "the town of Stonehollow", "the town of Mireport", "the town of Cresthaven",
         "the town of Rivermouth", "the town of Teareek", "the town of Port Grim",
-        "the town of Coldbarrow", "the town of Wharf's End", "the town of Landow"
+        "the town of Coldbarrow", "the town of Wharf's End", "the town of Landow",
+        "East Rivermouth", "West Rivermouth"
     ];
 
     // ML list, pre-ML quest system
@@ -49,14 +50,26 @@ public partial class BaseEscortable : BaseCreature
         "the town of Bastion", "the town of Myrish", "the town of Fairwinds",
         "the town of Stonehollow", "the town of Mireport", "the town of Cresthaven",
         "the town of Rivermouth", "the town of Teareek", "the town of Port Grim",
-        "the town of Coldbarrow", "the town of Wharf's End", "the town of Landow"
+        "the town of Coldbarrow", "the town of Wharf's End", "the town of Landow",
+        "East Rivermouth", "West Rivermouth"
     ];
 
     // ML quest system general list
     // Used when: MLQuestSystem.Enabled && !Region.IsPartOf( "Haven Island" )
     private static readonly Dictionary<Type, (int[], int)> _mlQuestTypes = new()
     {
-        { typeof(EscortToBastion), (Array.Empty<int>(), 0) }
+        { typeof(EscortToBastion), (Array.Empty<int>(), 0) },
+        { typeof(EscortToMirePort), (Array.Empty<int>(), 0) },
+        { typeof(EscortToFairwinds), (Array.Empty<int>(), 0) },
+        { typeof(EscortToCresthaven), (Array.Empty<int>(), 0) },
+        { typeof(EscortToLandow), (Array.Empty<int>(), 0) },
+        { typeof(EscortToEastRivermouth), (Array.Empty<int>(), 0) },
+        { typeof(EscortToWestRivermouth), (Array.Empty<int>(), 0) },
+        { typeof(EscortToStonehollow), (Array.Empty<int>(), 0) },
+        { typeof(EscortToColdbarrow), (Array.Empty<int>(), 0) },
+        { typeof(EscortToWharfsEnd), (Array.Empty<int>(), 0) },
+        { typeof(EscortToLandowDock), (Array.Empty<int>(), 0) },
+        { typeof(EscortToEndPointDock), (Array.Empty<int>(), 0) },
     };
 
     // ML quest system New Haven list

@@ -6,9 +6,15 @@ namespace Server.Items
     public partial class MetallicClothDyetub : DyeTub
     {
         [Constructible]
-        public MetallicClothDyetub() => LootType = LootType.Blessed;
+        public MetallicClothDyetub()
+        {
+            LootType = LootType.Blessed;
 
-        public override int LabelNumber => 1152920; // Metallic Cloth ...
+            // Assign your custom string name here
+            Name = "a metallic cloth dyetub";
+        }
+
+        // The LabelNumber override has been removed so your custom Name displays correctly.
 
         public override bool MetallicHues => true;
     }

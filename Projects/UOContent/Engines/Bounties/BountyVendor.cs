@@ -82,12 +82,38 @@ public class BountyRewardGump : Gump
     private static readonly (string Name, int Cost, Func<Item> CreateItem)[] Rewards = new (string, int, Func<Item>)[]
     {
         ("Dungeon Hunter Ring", 25, () => new GoldRing()),
-        ("Decorative Dragon Statue", 50, () => new MonsterStatuette(MonsterStatuetteType.Dragon)),
-        ("Monster Statue Dyetub", 75, () => new StatuetteDyeTub()),
+
+        ("Random Monster Statue", 50, () =>
+        {
+            var types = Enum.GetValues(typeof(MonsterStatuetteType));
+
+            var randomType = (MonsterStatuetteType)types.GetValue(Utility.Random(types.Length));
+
+            return new MonsterStatuette(randomType);
+        }),
+
+        ("Random Specialty Dye Tub", 75, () =>
+        {
+            var tubs = new Func<Item>[]
+            {
+                () => new BlackDyeTub(),
+                () => new BlazeDyeTub(),
+                () => new FurnitureDyeTub(),
+                () => new LeatherDyeTub(),
+                () => new MetallicLeatherDyeTub(),
+                () => new RunebookDyeTub(),
+                () => new SpecialDyeTub(),
+                () => new StatuetteDyeTub(),
+                () => new WhiteClothDyeTub(),
+                () => new WhiteLeatherDyeTub()
+            };
+
+            return tubs[Utility.Random(tubs.Length)]();
+        }),
+
         ("Bag of Sending", 100, () => new BagOfSending())
     };
-
-    public BountyRewardGump(PlayerMobile player, BountyVendor vendor) : base(50, 50)
+     public BountyRewardGump(PlayerMobile player, BountyVendor vendor) : base(50, 50)
     {
         _player = player;
         _vendor = vendor;
@@ -96,11 +122,9 @@ public class BountyRewardGump : Gump
 
         AddPage(0);
 
-        // Matching BuildWorld.cs Frame Style
         AddBackground(0, 0, 450, 310, 9270);
         AddAlphaRegion(10, 10, 430, 290);
 
-        // Header Labels
         AddLabel(110, 15, 1152, "BOUNTY QUARTERMASTER STORE");
         AddLabel(20, 40, 0x3F, $"Your Bounty Tokens: {totalTokens}");
 

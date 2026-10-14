@@ -10,6 +10,7 @@ namespace Server.Items
         {
             Hue = DyedHue = 0x489;
             Redyable = false;
+            Name = "Blaze Dyetub";
         }
     }
 }

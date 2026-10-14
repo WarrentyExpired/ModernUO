@@ -21,7 +21,8 @@ public class CustomMoongateGump : Gump
         new("Coldbarrow Moongate", new Point3D(3285, 2331, 0), Map.Trammel),
         new("Draco Island Moongate", new Point3D(3495, 3491, 2), Map.Trammel),
         new("Piece Island Moongate", new Point3D(754, 3458, 0), Map.Trammel),
-        new("Shiver Island Moongate", new Point3D(3012, 445, 8), Map.Trammel)
+        new("Shiver Island Moongate", new Point3D(3012, 445, 8), Map.Trammel),
+        new("End Point Docks", new Point3D(1505, 1009, 4), Map.Trammel),
     };
 
     private readonly CustomMoongate _gate;
@@ -72,6 +73,11 @@ public class CustomMoongateGump : Gump
             return;
         }
 
+       if (!_gate.CanUseGate(mobile))
+        {
+            return; // Stops players who entered combat while the gump was open
+        }
+
         // Subtract 1 from the ButtonID to get the actual array index (0 through 7)
         var index = buttonId - 1;
 
@@ -86,9 +92,11 @@ public class CustomMoongateGump : Gump
             }
 
             // Move the player to the selected destination
+            Server.Mobiles.BaseCreature.TeleportPets(mobile, dest.Location, dest.Map);
             mobile.MoveToWorld(dest.Location, dest.Map);
-
-            // Play teleport sound and standard moongate visual effect
+            mobile.Combatant = null;
+            mobile.Warmode = false;
+            mobile.Hidden = true;
             mobile.PlaySound(0x1FE);
             Effects.SendLocationEffect(mobile.Location, mobile.Map, 0x3728, 10, 10);
         }

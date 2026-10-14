@@ -123,6 +123,7 @@
           "locations": [
             { "name": "Bastion", "location": [1839, 2005, 0], "map": "Veridia" },
             { "name": "Mireport", "location": [390, 1278, 0], "map": "Veridia" },
+            { "name": "Fairwinds", "location": [2286, 2813, 0], "map": "Veridia" },
             { "name": "Stonehollow", "location": [756, 1225, 0], "map": "Veridia" },
             { "name": "Cresthaven", "location": [1604, 1164, 2], "map": "Veridia" },
             { "name": "West Rivermouth", "location": [1162, 1723, 0], "map": "Veridia" },
