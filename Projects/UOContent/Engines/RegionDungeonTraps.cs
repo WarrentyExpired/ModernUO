@@ -23,25 +23,41 @@ namespace Server.Engines.DungeonTraps
         // The master method called when a region step roll succeeds
         public virtual void Trigger(PlayerMobile pm)
         {
-            // 1. Remove Trap Check (Absolute Disarm)
-            double removeTrap = pm.Skills[SkillName.RemoveTrap].Value;
-            if (removeTrap > 0 && removeTrap >= Utility.RandomDouble() * 100.0)
+            // 1. Detect Hidden Check (Spot and Avoid)
+            // Uses CheckSkill to allow for skill gains. 0.0 to 100.0 means the success chance scales exactly with their skill.
+            if (pm.Skills[SkillName.DetectHidden].Value > 0 && pm.CheckSkill(SkillName.DetectHidden, 0.0, 100.0))
             {
-                pm.SendMessage(0x35, $"You hear a click and instinctively jam the {Name} mechanism before it fires.");
-                pm.PlaySound(0x3A4); // Click sound
+                if (Settings.S_TrapDetected)
+                {
+                    pm.SendMessage(0x42, $"You spot a concealed {Name} and carefully step around it.");
+                }
                 return;
             }
 
-            // 2. Evasion Check: (Dex + Int) * 0.25
+            // 2. Remove Trap Check (Absolute Disarm)
+            if (pm.Skills[SkillName.RemoveTrap].Value > 0 && pm.CheckSkill(SkillName.RemoveTrap, 0.0, 100.0))
+            {
+                if (Settings.S_TrapDetected)
+                {
+                    pm.SendMessage(0x35, $"You hear a click and instinctively jam the {Name} mechanism before it fires.");
+                    pm.PlaySound(0x3A4); // Click sound
+                }
+                return;
+            }
+
+            // 3. Evasion Check: (Dex + Int) * 0.25
             double evasionChance = (pm.Dex + pm.Int) * 0.25;
             if (evasionChance >= Utility.RandomDouble() * 100.0)
             {
-                pm.SendMessage(0x59, $"A {Name} triggers, but your quick reflexes allow you to dodge it!");
-                PlayTrapEffect(pm); // Trap goes off, but misses
+                if (Settings.S_TrapDetected)
+                {
+                    pm.SendMessage(0x59, $"A {Name} triggers, but your quick reflexes allow you to dodge it!");
+                    PlayTrapEffect(pm); // Trap goes off, but misses
+                }
                 return;
             }
 
-            // 3. Mitigation Check (AR for Physical, Magic Resist for Magical)
+            // 4. Mitigation Check (AR for Physical, Magic Resist for Magical)
             PlayTrapEffect(pm);
             bool mitigated = false;
 
@@ -55,22 +71,29 @@ namespace Server.Engines.DungeonTraps
             }
             else // Magical
             {
-                if (pm.Skills[SkillName.MagicResist].Value >= Utility.RandomDouble() * 100.0)
+                // Magic Resist check with skill gain opportunity
+                if (pm.Skills[SkillName.MagicResist].Value > 0 && pm.CheckSkill(SkillName.MagicResist, 0.0, 100.0))
                 {
                     mitigated = true;
                 }
             }
 
-            // 4. Resolve Impact
+            // 5. Resolve Impact
             if (mitigated)
             {
-                pm.SendMessage(0x22, $"Your defenses absorb the {Name}, but your equipment takes a beating!");
-                DamageRandomArmor(pm);
+                if (Settings.S_TrapDamageMitigated)
+                {
+                    pm.SendMessage(0x22, $"Your defenses absorb the {Name}, but your equipment takes a beating!");
+                    DamageRandomArmor(pm);
+                }
             }
             else
             {
-                pm.SendMessage(0x22, $"You are struck by a {Name}!");
-                ApplyDamage(pm);
+                if (Settings.S_TrapDamageMitigated)
+                {
+                    pm.SendMessage(0x22, $"You are struck by a {Name}!");
+                    ApplyDamage(pm);
+                }
             }
         }
 
@@ -142,8 +165,8 @@ namespace Server.Engines.DungeonTraps
     {
         public override string Name => "hidden explosive";
         public override TrapDamageType DamageType => TrapDamageType.Physical;
-        public override int MinDamage => 20;
-        public override int MaxDamage => 40;
+        public override int MinDamage => 15;
+        public override int MaxDamage => 30;
 
         public override void PlayTrapEffect(PlayerMobile pm)
         {
@@ -156,8 +179,8 @@ namespace Server.Engines.DungeonTraps
     {
         public override string Name => "flame jet";
         public override TrapDamageType DamageType => TrapDamageType.Magical;
-        public override int MinDamage => 20;
-        public override int MaxDamage => 40;
+        public override int MinDamage => 15;
+        public override int MaxDamage => 30;
 
         public override void PlayTrapEffect(PlayerMobile pm)
         {

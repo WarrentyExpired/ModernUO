@@ -95,15 +95,10 @@ namespace Server.Regions
                 return; // Player is still in their grace period
             }
 
-            // 5. Calculate Trigger Chance (Base 5% chance per step)
-            // Detect Hidden actively reduces this chance.
-            // At 0 DH = 5% chance. At 100 DH = 1% chance.
             double baseChance = ValidSettings.RegionDungeonTrapsChance();
-            double detectHidden = pm.Skills[SkillName.DetectHidden].Value;
-            double finalChance = Math.Max(1.0, baseChance - (detectHidden / 25.0));
 
             // 6. Roll for Trap Trigger
-            if (Utility.RandomDouble() * 100.0 <= finalChance)
+            if (Utility.RandomDouble() * 100.0 <= baseChance)
             {
                 // Pick a random trap from the pool
                 BaseRegionTrap trap = _dungeonTraps[Utility.Random(_dungeonTraps.Length)];
