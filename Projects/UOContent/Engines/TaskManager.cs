@@ -35,7 +35,6 @@ public static class TaskManager
     // ==========================================
     public static void On30MinuteTick(Mobile from = null)
     {
-        //RespawnTrapSpawners(from);
     }
 
     // ==========================================
@@ -52,50 +51,5 @@ public static class TaskManager
     public static void On24HourTick(Mobile from = null)
     {
         // Add daily tasks here
-    }
-
-    private static void RespawnTrapSpawners(Mobile from = null)
-    {
-        List<RegionSpawner> trapSpawners = World.Items.Values
-            .OfType<RegionSpawner>()
-            .Where(spawner => spawner.Running && IsTrapSpawner(spawner))
-            .ToList();
-
-        foreach (RegionSpawner spawner in trapSpawners)
-        {
-            spawner.Respawn();
-        }
-
-        string logMsg = $"[TaskManager] Successfully respawned {trapSpawners.Count} trap region spawners.";
-
-        if (from != null)
-        {
-            from.SendMessage(0x35, logMsg);
-        }
-
-        Utility.PushColor(ConsoleColor.Green);
-        Console.WriteLine(logMsg);
-        Utility.PopColor();
-    }
-
-    private static bool IsTrapSpawner(RegionSpawner spawner)
-    {
-        if (spawner.Name != null && spawner.Name.Contains("Trap", StringComparison.OrdinalIgnoreCase))
-        {
-            return true;
-        }
-
-        if (spawner.Entries != null)
-        {
-            foreach (var entry in spawner.Entries)
-            {
-                if (entry.SpawnedName != null && entry.SpawnedName.Contains("Trap", StringComparison.OrdinalIgnoreCase))
-                {
-                    return true;
-                }
-            }
-        }
-
-        return false;
     }
 }
