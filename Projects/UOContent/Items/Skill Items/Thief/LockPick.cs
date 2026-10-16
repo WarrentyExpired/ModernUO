@@ -118,14 +118,39 @@ public partial class Lockpick : Item
                     return;
                 }
 
-                if (_from.Skills.Lockpicking.Value < _item.RequiredSkill)
+                // 1. Fetch default lock values (used for doors, house locks, standard crates)
+                double minSkill = _item.LockLevel;
+                double maxSkill = _item.MaxLockLevel;
+                double reqSkill = _item.RequiredSkill;
+
+                // 2. Intercept TreasureMapChest to apply our custom tier math
+                if (_item is TreasureMapChest tmChest)
                 {
-                    // The LockLevel is higher thant the LockPicking of the player
+                    minSkill = tmChest.Level switch
+                    {
+                        1 => 15.0,
+                        2 => 35.0,
+                        3 => 55.0,
+                        4 => 75.0,
+                        5 => 90.0,
+                        6 => 100.1, // Requires Lockpicking Power Scroll
+                        _ => tmChest.Level * 16.7
+                    };
+
+                    reqSkill = minSkill; // Sets the floor so they can't even attempt it if too low
+                    maxSkill = minSkill + 25.0;
+                }
+
+                // 3. Apply the dynamic required skill
+                if (_from.Skills.Lockpicking.Value < reqSkill)
+                {
+                    // The LockLevel is higher than the LockPicking of the player
                     item.SendLocalizedMessageTo(_from, 502072); // You don't see how that lock can be manipulated.
                     return;
                 }
 
-                if (_from.CheckTargetSkill(SkillName.Lockpicking, _item, _item.LockLevel, _item.MaxLockLevel))
+                // 4. Roll the dice using the dynamic min/max variables
+                if (_from.CheckTargetSkill(SkillName.Lockpicking, _item, minSkill, maxSkill))
                 {
                     // Success! Pick the lock!
                     item.SendLocalizedMessageTo(_from, 502076); // The lock quickly yields to your skill.

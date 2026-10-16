@@ -28,7 +28,7 @@ namespace Server.SkillHandlers
                 m.SendLocalizedMessage(502368); // Which trap will you attempt to disarm?
             }
 
-            return TimeSpan.FromSeconds(10.0); // 10 second delay before being able to re-use a skill
+            return TimeSpan.FromSeconds(5.0); // 5 second delay before being able to re-use a skill
         }
 
         private class InternalTarget : Target
@@ -58,7 +58,19 @@ namespace Server.SkillHandlers
 
                     from.PlaySound(0x241);
 
-                    if (from.CheckTargetSkill(SkillName.RemoveTrap, targ, targ.TrapPower, targ.TrapPower + 30))
+                    double minSkill = targ.TrapLevel switch
+                    {
+                        1 => 15.0,
+                        2 => 35.0,
+                        3 => 55.0,
+                        4 => 75.0,  // Level 4: 75.0 Min
+                        5 => 90.0,  // Level 5: 90.0 Min (GM has a 40% chance)
+                        6 => 100.1, // Level 6: 100.1 Min (Base GM has 0% chance. Requires Power Scroll)
+                        _ => targ.TrapLevel * 16.7 // Fallback for custom Level 7+ maps
+                    };
+                    double maxSkill = minSkill + 25.0;
+
+                    if (from.CheckTargetSkill(SkillName.RemoveTrap, targ, minSkill, maxSkill))
                     {
                         targ.TrapPower = 0;
                         targ.TrapLevel = 0;

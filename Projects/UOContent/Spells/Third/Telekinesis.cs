@@ -21,6 +21,12 @@ namespace Server.Spells.Third
 
         public void Target(Item item)
         {
+            if (item is TreasureMapChest)
+            {
+                Caster.SendLocalizedMessage(501857); // This spell won't work on that!
+                return;
+            }
+
             var t = item as ITelekinesisable;
             if (!(t != null || item is Container))
             {

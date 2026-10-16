@@ -8,6 +8,7 @@ using Server.Engines.Harvest;
 using Server.Mobiles;
 using Server.Network;
 using Server.Targeting;
+using Server.Gumps;
 
 namespace Server.Items;
 
@@ -63,7 +64,7 @@ public partial class TreasureMap : MapItem
     public TreasureMap(int level, Map map)
     {
         _level = level;
-        _chestMap = map;
+        _chestMap = Map.Trammel; //map;
 
         _chestLocation = level == 0 ? GetRandomHavenLocation() : GetRandomLocation();
 
@@ -377,7 +378,7 @@ public partial class TreasureMap : MapItem
             3 => 51.0,
             4 => 61.0,
             5 => 70.0,
-            6 => 70.0,
+            6 => 100.1,
             _ => 0.0
         };
     }
@@ -452,7 +453,11 @@ public partial class TreasureMap : MapItem
         }
 
         from.PlaySound(0x249);
-        base.DisplayTo(from);
+        if (from is PlayerMobile pm)
+        {
+            pm.CloseGump<TreasureLocationGump>();
+            pm.SendGump(new TreasureLocationGump(_level, ChestLocation, _chestMap));
+        }
     }
 
     public override void GetContextMenuEntries(Mobile from, ref PooledRefList<ContextMenuEntry> list)
