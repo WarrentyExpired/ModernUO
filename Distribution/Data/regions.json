@@ -2146,7 +2146,7 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
     "Name": "the Dungeon Shame",
     "Priority": 50,
@@ -2209,7 +2209,7 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
     "Name": "the Dungeon Deceit",
     "Priority": 50,
@@ -2261,7 +2261,7 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
     "Name": "the Dungeon Covetous",
     "Priority": 50,
@@ -2327,7 +2327,7 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
     "Name": "the Dungeon Hythloth",
     "Priority": 50,
@@ -2379,7 +2379,7 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
     "Name": "the Dungeon Despise",
     "Priority": 50,
@@ -2431,7 +2431,7 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
     "Name": "the Dungeon Destard",
     "Priority": 50,
@@ -2519,7 +2519,7 @@
     ]
   },
   {
-    "$type": "DungeonRegion",
+    "$type": "GreetingDungeonRegion",
     "Map": "Underworld",
     "Name": "the Dungeon of Ice",
     "Priority": 50,
