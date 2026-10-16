@@ -205,7 +205,7 @@ namespace Server.Misc
 
             m.Karma = newKarma;
 
-            if (message && offset != 0)
+            if (message)
             {
                 SendKarmaMessage(m, offset);
             }
@@ -252,7 +252,7 @@ namespace Server.Misc
 
             m.Karma += offset;
 
-            if (message)
+            if (message && offset != 0)
             {
                 SendKarmaMessage(m, offset);
             }

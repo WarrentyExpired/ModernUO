@@ -67,8 +67,8 @@ namespace Server
         public static double RegionDungeonTrapsChance()
         {
             int chance = Settings.S_RegionDungeonTrapsChance;
-            if (chance > 100)
-                chance = 100;
+            if (chance > 10)
+                chance = 10;
             if (chance < 1 )
                 chance = 1;
             return (double)chance;

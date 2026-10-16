@@ -11,7 +11,7 @@ namespace Server
         public static int S_DungeonBountyRefusalDelay = 10; // 1-1440 minutes delay between refusing a quest
         public static bool S_DungeonTraps = false; // Spawns Dugeon floor traps
         public static bool S_RegionDungeonTraps = true; // Step activated dungeon traps
-        public static int S_RegionDungeonTrapsChance = 3; // 1-100 Chance to get a trap check per step
+        public static int S_RegionDungeonTrapsChance = 3; // 1-10 Chance to get a trap check per step
         public static bool S_TrapDetected = false; // Get a message if the trap gets detected
         public static bool S_TrapDamageMitigated = true; // Get a message if the trap damage gets mitigated
     }
