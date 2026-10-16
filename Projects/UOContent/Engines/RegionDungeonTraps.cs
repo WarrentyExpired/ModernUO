@@ -146,7 +146,7 @@ namespace Server.Engines.DungeonTraps
         public override string Name => "tripwire";
         public override TrapDamageType DamageType => TrapDamageType.Physical;
         public override int MinDamage => 15;
-        public override int MaxDamage => 30;
+        public override int MaxDamage => 25;
 
         public override void PlayTrapEffect(PlayerMobile pm)
         {
@@ -166,7 +166,7 @@ namespace Server.Engines.DungeonTraps
         public override string Name => "hidden explosive";
         public override TrapDamageType DamageType => TrapDamageType.Physical;
         public override int MinDamage => 15;
-        public override int MaxDamage => 30;
+        public override int MaxDamage => 25;
 
         public override void PlayTrapEffect(PlayerMobile pm)
         {
@@ -180,7 +180,7 @@ namespace Server.Engines.DungeonTraps
         public override string Name => "flame jet";
         public override TrapDamageType DamageType => TrapDamageType.Magical;
         public override int MinDamage => 15;
-        public override int MaxDamage => 30;
+        public override int MaxDamage => 25;
 
         public override void PlayTrapEffect(PlayerMobile pm)
         {
