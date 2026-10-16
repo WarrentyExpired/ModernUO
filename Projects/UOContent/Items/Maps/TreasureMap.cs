@@ -407,6 +407,7 @@ public partial class TreasureMap : MapItem
             if (from.Skills.Cartography.Value < minSkill)
             {
                 from.SendLocalizedMessage(503013); // The map is too difficult to attempt to decode.
+                return;
             }
 
             var maxSkill = minSkill + 60.0;
