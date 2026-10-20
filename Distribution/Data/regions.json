@@ -2963,5 +2963,15 @@
     "Area": [
       { "x1": 441, "y1": 1189, "x2": 498, "y2": 1225 }
     ]
+  },
+  {
+    "$type": "GreetingCaveRegion",
+    "Map": "Underworld",
+    "Name": "Cave System",
+    "Priority": 55,
+    "Area": [
+      { "x1": 56, "y1": 527, "x2": 643, "y2": 756 },
+      { "x1": 56, "y1": 761, "x2": 1996, "y2": 1301 }
+    ]
   }
 ]
