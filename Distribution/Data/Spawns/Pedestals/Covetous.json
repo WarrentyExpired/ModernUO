@@ -1,0 +1,16 @@
+[
+  {
+    "$type": "RegionSpawner",
+    "guid": "df1d21da-940b-4e58-be29-5628422560d0",
+    "location": [1795, 72, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Covetous - Level 5",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]
