@@ -115,7 +115,7 @@ namespace Server.Gumps
                 case 4:
                     if (Settings.S_DungeonTraps)
                     {
-                        InvokeCommand("IS Data/Spawns/Underworld/traps.json", from);
+                        InvokeCommand("IS Data/Spawns/traps.json", from);
                     }
                     InvokeCommand("IS Data/Spawns/Chests/**.json", from);
                     break;
@@ -137,7 +137,7 @@ namespace Server.Gumps
                     InvokeCommand("IS Data/Spawns/Underworld/**.json", from);
                     if (Settings.S_DungeonTraps)
                     {
-                        InvokeCommand("IS Data/Spawns/Underworld/traps.json", from);
+                        InvokeCommand("IS Data/Spawns/traps.json", from);
                     }
                     InvokeCommand("IS Data/Spawns/Chests/**.json", from);
 
