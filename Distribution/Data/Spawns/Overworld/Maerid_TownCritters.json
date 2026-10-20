@@ -1,0 +1,19 @@
+[
+  {
+    "$type": "RegionSpawner",
+    "guid": "904839f6-1e37-41b6-bb7b-745b0bfa19f4",
+    "location": [3407, 3669, 5],
+    "map": "Veridia",
+    "count": 50,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the town of Maerid",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "bird", "probability": 100, "maxCount": 30 },
+      { "name": "cat", "probability": 100, "maxCount": 5 },
+      { "name": "dog", "probability": 100, "maxCount": 5 },
+      { "name": "rat", "probability": 100, "maxCount": 10 }
+    ]
+  }
+]

@@ -2137,6 +2137,291 @@
     ]
   },
   {
+    "$type": "GreetingTownRegion",
+    "Map": "Veridia",
+    "Name": "the town of Maerid",
+    "Priority": 50,
+    "Area": [
+      { "x1": 3347, "y1": 3673, "x2": 3462, "y2": 3689 },
+      { "x1": 3357, "y1": 3689, "x2": 3462, "y2": 3707 },
+      { "x1": 3365, "y1": 3707, "x2": 3462, "y2": 3720 },
+      { "x1": 3373, "y1": 3720, "x2": 3462, "y2": 3730 },
+      { "x1": 3379, "y1": 3730, "x2": 3463, "y2": 3737 },
+      { "x1": 3462, "y1": 3729, "x2": 3463, "y2": 3730 },
+      { "x1": 3431, "y1": 3737, "x2": 3447, "y2": 3742 },
+      { "x1": 3404, "y1": 3619, "x2": 3445, "y2": 3627 },
+      { "x1": 3339, "y1": 3627, "x2": 3445, "y2": 3632 },
+      { "x1": 3339, "y1": 3632, "x2": 3462, "y2": 3673 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Guard House",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3357, "y1": 3631, "x2": 3361, "y2": 3635 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Teleporter",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3350, "y1": 3640, "x2": 3355, "y2": 3645 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Tailor Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3354, "y1": 3650, "x2": 3360, "y2": 3655 },
+      { "x1": 3352, "y1": 3656, "x2": 3358, "y2": 3663 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Leather Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3359, "y1": 3669, "x2": 3364, "y2": 3677 },
+      { "x1": 3361, "y1": 3678, "x2": 3364, "y2": 3681 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Miners Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3372, "y1": 3697, "x2": 3377, "y2": 3705 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Blacksmith",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3373, "y1": 3710, "x2": 3377, "y2": 3713 },
+      { "x1": 3377, "y1": 3710, "x2": 3389, "y2": 3719 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Guard Hut",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3384, "y1": 3724, "x2": 3388, "y2": 3729 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Weaponsmiths",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3399, "y1": 3712, "x2": 3404, "y2": 3719 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Tavern",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3375, "y1": 3673, "x2": 3391, "y2": 3681 },
+      { "x1": 3375, "y1": 3681, "x2": 3379, "y2": 3684 },
+      { "x1": 3386, "y1": 3681, "x2": 3391, "y2": 3684 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Bank and Trust",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3377, "y1": 3653, "x2": 3389, "y2": 3659 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Bakery",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3375, "y1": 3638, "x2": 3380, "y2": 3645 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Bowyer",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3388, "y1": 3634, "x2": 3395, "y2": 3639 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Stables",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3407, "y1": 3627, "x2": 3414, "y2": 3632 },
+      { "x1": 3414, "y1": 3626, "x2": 3423, "y2": 3633 },
+      { "x1": 3423, "y1": 3627, "x2": 3429, "y2": 3632 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Healers",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3432, "y1": 3626, "x2": 3439, "y2": 3636 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Tinker Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3448, "y1": 3637, "x2": 3456, "y2": 3643 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Rogue Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3443, "y1": 3654, "x2": 3447, "y2": 3660 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Jewelery Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3441, "y1": 3665, "x2": 3447, "y2": 3677 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Carpentry Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3425, "y1": 3670, "x2": 3431, "y2": 3679 },
+      { "x1": 3431, "y1": 3670, "x2": 3438, "y2": 3676 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Magery Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3430, "y1": 3689, "x2": 3439, "y2": 3699 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Fish Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3427, "y1": 3719, "x2": 3434, "y2": 3724 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Shipwrights",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3451, "y1": 3705, "x2": 3455, "y2": 3708 },
+      { "x1": 3449, "y1": 3708, "x2": 3455, "y2": 3712 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
+    "Name": "the Maerid Counsol of Magic",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3415, "y1": 3702, "x2": 3425, "y2": 3717 },
+      { "x1": 3429, "y1": 3697, "x2": 3437, "y2": 3713 },
+      { "x1": 3437, "y1": 3697, "x2": 3438, "y2": 3711 },
+      { "x1": 3438, "y1": 3696, "x2": 3440, "y2": 3710 },
+      { "x1": 3425, "y1": 3698, "x2": 3429, "y2": 3713 },
+      { "x1": 3429, "y1": 3689, "x2": 3440, "y2": 3697 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the Maerid Counsol of Magic" },
+    "Name": "the Maerid Magery Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3429, "y1": 3689, "x2": 3440, "y2": 3697 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the Maerid Counsol of Magic" },
+    "Name": "the Maerid Library",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3429, "y1": 3697, "x2": 3437, "y2": 3713 },
+      { "x1": 3437, "y1": 3697, "x2": 3438, "y2": 3711 },
+      { "x1": 3438, "y1": 3696, "x2": 3440, "y2": 3710 },
+      { "x1": 3425, "y1": 3698, "x2": 3429, "y2": 3713 }
+    ]
+  },
+  {
+    "$type": "GreetingBusinessRegion",
+    "Map": "Veridia",
+    "Parent": { "Map": "Veridia", "Name": "the Maerid Counsol of Magic" },
+    "Name": "the Maerid Alchemy Shop",
+    "Priority": 55,
+    "Area": [
+      { "x1": 3415, "y1": 3702, "x2": 3425, "y2": 3717 }
+    ]
+  },
+  {
     "$type": "NewbieDungeonRegion",
     "Map": "Underworld",
     "Name": "the New Player Dungeon",
@@ -2323,7 +2608,7 @@
     "Name": "Covetous - Level 5",
     "Priority": 55,
     "Area": [
-      { "x1": 1725, "y1": 48, "x2": 1817, "y2": 102 }
+      { "x1": 1770, "y1": 53, "x2": 1817, "y2": 102 }
     ]
   },
   {
