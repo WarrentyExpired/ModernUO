@@ -10,9 +10,9 @@
             {
               "name": "New Player Dungeon",
               "locations": [
-                { "name": "Entrance", "location": [1922, 1986, 0], "map": "Veridia" },
-                { "name": "Level 1", "location": [2623, 695, 38], "map": "Underworld" },
-                { "name": "Level 2", "location": [2638, 585, 0], "map": "Underworld" }
+                { "name": "Entrance", "location": [1614, 2079, 22], "map": "Veridia" },
+                { "name": "Level 1", "location": [4656, 113, 0], "map": "Underworld" },
+                { "name": "Level 2", "location": [4700, 217, 0], "map": "Underworld" }
               ]
             },
             {
