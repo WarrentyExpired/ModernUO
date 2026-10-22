@@ -1,0 +1,72 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "62ea3b2f-2896-4684-8b0b-06d12a790b22",
+    "location": [1620, 2074, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1620, "y1": 2074, "z1": 22, "x2": 1621, "y2": 2075, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "provisioner", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fd2c78f7-cb34-483c-bb9d-b17b037337e1",
+    "location": [1618, 2079, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1618, "y1": 2079, "z1": 22, "x2": 1619, "y2": 2080, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "healer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "13a41f80-6c46-4c0a-95e1-6407f1db6507",
+    "location": [1619, 2084, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1619, "y1": 2084, "z1": 22, "x2": 1620, "y2": 2085, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "mage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cad4963a-d076-4280-966b-aa983a077388",
+    "location": [1621, 2084, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1621, "y1": 2084, "z1": 22, "x2": 1622, "y2": 2085, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "armorer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fb4c508a-be8b-4a59-9b83-7b1eb7a84025",
+    "location": [1623, 2074, 22],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1623, "y1": 2074, "z1": 22, "x2": 1624, "y2": 2075, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "alchemist", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

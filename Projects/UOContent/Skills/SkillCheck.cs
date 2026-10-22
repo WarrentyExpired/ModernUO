@@ -123,7 +123,7 @@ public static class SkillCheck
             {
                 Gain(from, skill);
             }
-            else if (AllowGain(from, skill, amObj))
+            else if (success && AllowGain(from, skill, amObj))
             {
                 var gc = (double)(from.Skills.Cap - from.Skills.Total) / from.Skills.Cap;
                 gc += (skill.Cap - skill.Base) / skill.Cap;
@@ -146,7 +146,7 @@ public static class SkillCheck
 
                 if (from.Region is NewbieDungeonRegion)
                 {
-                    gc *= 3.0;
+                    gc *= 2.5;
                 }
                 else if (DailyDungeonManager.IsActive(from.Region))
                 {

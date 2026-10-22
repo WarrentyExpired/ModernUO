@@ -2422,6 +2422,19 @@
     ]
   },
   {
+    "$type": "GreetingTownRegion",
+    "Map": "Veridia",
+    "Name": "the New Player Area",
+    "Priority": 60,
+    "Area": [
+      { "x1": 1605, "y1": 2063, "x2": 1638, "y2": 2101 },
+      { "x1": 1638, "y1": 2072, "x2": 1642, "y2": 2100 },
+      { "x1": 1641, "y1": 2071, "x2": 1652, "y2": 2072 },
+      { "x1": 1642, "y1": 2072, "x2": 1652, "y2": 2082 },
+      { "x1": 1642, "y1": 2082, "x2": 1650, "y2": 2096 }
+    ]
+  },
+  {
     "$type": "NewbieDungeonRegion",
     "Map": "Underworld",
     "Name": "the New Player Dungeon",
