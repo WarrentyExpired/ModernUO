@@ -1,0 +1,1163 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "ff5ace8a-b787-4513-9db0-c31b8973b1b6",
+    "location": [4641, 203, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "mongbat", "probability": 100, "maxCount": 1 },
+      { "name": "giantrat", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4ee1b652-e44a-448c-8c2a-f8e087db890b",
+    "location": [4703, 90, 0],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 8,
+    "walkingRange": 10,
+    "entries": [
+      { "name": "dustybonemagi", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 20, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 20, "maxCount": 1 },
+      { "name": "frailskeleton", "probability": 100, "maxCount": 2 },
+      { "name": "zombie", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "16b21dfe-127a-4749-b521-d4b83e9ded55",
+    "location": [4630, 216, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f9a457d5-b53a-437d-9e08-f2a775a6ccc9",
+    "location": [4635, 199, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "mongbat", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8331a9a3-30f7-4e22-a75f-235d6544a381",
+    "location": [4627, 188, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "clumsylizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ae2b5e9d-7948-4572-946e-8d5ae77473a0",
+    "location": [4637, 188, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "clumsylizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "78907c07-faec-49f1-a6e7-2b6b38a32235",
+    "location": [4609, 191, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cavetoad", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f06ee9b2-6698-4332-8488-5e1f8e839bc6",
+    "location": [4635, 213, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "be47e067-c4d7-499e-aadf-9af808330768",
+    "location": [4630, 202, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "mongbat", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4e8fc758-9aa2-474c-9e06-26c0ebec1774",
+    "location": [4650, 203, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "mongbat", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f0b7e064-7582-4f53-b1d2-8b538a51e9f0",
+    "location": [4649, 203, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "giantrat", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3c301d40-e213-47aa-827e-c17f320509de",
+    "location": [4634, 173, -10],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "clumsylizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f058b9e5-9e24-432f-b2ee-bfa445677850",
+    "location": [4632, 173, -10],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cavetoad", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2ed51a2e-d95b-4733-8eec-058f33f3e674",
+    "location": [4625, 160, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cowardlybrigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8cb4e297-6eec-4f0c-9ff7-ae6ee375dc01",
+    "location": [4625, 151, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cowardlybrigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fb47d296-fa6e-4fb2-9652-e21e064bd1ce",
+    "location": [4616, 160, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "dustybonemagi", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8a3e1961-52f3-4553-a623-ed3be9539a1d",
+    "location": [4596, 159, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "mangyratman", "probability": 75, "maxCount": 1 },
+      { "name": "sicklyratmanmage", "probability": 15, "maxCount": 1 },
+      { "name": "blindratmanarcher", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d41debf9-8f1f-4f54-9ed0-1715d7c33a72",
+    "location": [4601, 171, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "mangyratman", "probability": 75, "maxCount": 1 },
+      { "name": "sicklyratmanmage", "probability": 15, "maxCount": 1 },
+      { "name": "blindratmanarcher", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b46cf138-e9cf-4334-be53-6dce00c81f86",
+    "location": [4585, 179, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "mangyratman", "probability": 75, "maxCount": 1 },
+      { "name": "sicklyratmanmage", "probability": 15, "maxCount": 1 },
+      { "name": "blindratmanarcher", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1e7c6d5f-d7ee-482a-9130-9a26a371004f",
+    "location": [4603, 165, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "mangyratman", "probability": 75, "maxCount": 1 },
+      { "name": "sicklyratmanmage", "probability": 15, "maxCount": 1 },
+      { "name": "blindratmanarcher", "probability": 15, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "874002ec-1205-4baa-b075-f1bd5658f644",
+    "location": [4591, 214, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "lesserharpy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cd94c26c-e248-49ec-b02f-90cbc8234465",
+    "location": [4614, 219, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "lesserharpy", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a049a3e0-dfa6-4af8-8fb6-86d5c9d5764a",
+    "location": [4623, 202, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "mongbat", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "eeeb5c28-828d-4447-b39c-5f8ba81a1006",
+    "location": [4616, 203, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "giantrat", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "49356712-fc70-4a58-84c4-206cb76ced41",
+    "location": [4609, 203, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8c498da4-3094-49ce-a5e7-f14e65a56b2b",
+    "location": [4608, 202, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8fc84f72-5dd7-4925-bcb3-7e22e125911e",
+    "location": [4618, 188, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cavetoad", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5cd88a68-a13d-4594-98b7-5d8607c82549",
+    "location": [4659, 202, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b5f4f011-5596-4597-a67b-8de4a5e077a6",
+    "location": [4658, 202, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a2225180-bdd1-41cc-8c20-06a0987ccc46",
+    "location": [4668, 221, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 6,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "lesserharpy", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "926b19ff-b384-4b03-a1a3-a53ba826519a",
+    "location": [4653, 185, 1],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3088d2bc-2778-4254-bd90-23fb0b0e5487",
+    "location": [4615, 177, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 30, "maxCount": 1 },
+      { "name": "zombie", "probability": 30, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 10, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "387aaffd-8a25-4533-8910-c4c3e7c5b625",
+    "location": [4637, 158, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 30, "maxCount": 1 },
+      { "name": "zombie", "probability": 30, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 10, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "098e51bd-2add-423c-bb96-1b517018ffc8",
+    "location": [4640, 161, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 30, "maxCount": 1 },
+      { "name": "zombie", "probability": 30, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 10, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5afb9483-a31f-42a1-a7e1-27f61beb60e6",
+    "location": [4638, 151, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 30, "maxCount": 1 },
+      { "name": "zombie", "probability": 30, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 10, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "80e7d106-a43c-4de7-a927-272c43cd157a",
+    "location": [4639, 153, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 30, "maxCount": 1 },
+      { "name": "zombie", "probability": 30, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 10, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7a18a7e2-95f0-40f8-8f4e-4fcbb8a3c724",
+    "location": [4647, 153, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 30, "maxCount": 1 },
+      { "name": "zombie", "probability": 30, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 10, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4ce10f40-1e6a-483c-988b-03f4a1966862",
+    "location": [4652, 153, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 30, "maxCount": 1 },
+      { "name": "zombie", "probability": 30, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 10, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c6ca3ca3-efa0-4341-893b-c5e2fd72c517",
+    "location": [4653, 160, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 30, "maxCount": 1 },
+      { "name": "zombie", "probability": 30, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 10, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a27d0d0f-9975-4be5-987d-96a5e177548d",
+    "location": [4648, 160, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 30, "maxCount": 1 },
+      { "name": "zombie", "probability": 30, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 10, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "752f0a9e-8413-462a-b174-f2665f54fa72",
+    "location": [4652, 172, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 30, "maxCount": 1 },
+      { "name": "zombie", "probability": 30, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 10, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "031e5338-3cf9-430a-b519-6af2589a392c",
+    "location": [4654, 172, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 30, "maxCount": 1 },
+      { "name": "zombie", "probability": 30, "maxCount": 1 },
+      { "name": "lesserspectre", "probability": 10, "maxCount": 1 },
+      { "name": "lowerwraith", "probability": 20, "maxCount": 1 },
+      { "name": "dimshade", "probability": 10, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "327d5d1b-8b4e-4beb-867a-8fcafb2c6beb",
+    "location": [4650, 219, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "015ec7c4-ef7e-4b5c-bba4-44b1838e6723",
+    "location": [4671, 201, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "zombie", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e7936f7f-b2a2-442f-a2d0-8030c6eae034",
+    "location": [4665, 152, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 100, "maxCount": 2 },
+      { "name": "lesserspectre", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "428a4495-dcc6-4c00-9020-27cc70c46ed4",
+    "location": [4667, 171, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 6,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "frailskeleton", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e5d92cf4-f2bf-4263-ad0f-b7662912075b",
+    "location": [4636, 129, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "clumsylizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f3eae51d-f95a-4328-bd65-6ed59319a21d",
+    "location": [4663, 122, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "clumsylizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5c249e80-2793-4f59-b97a-3dd0ba0ea4e3",
+    "location": [4669, 112, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "clumsylizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8723a1e7-3393-4f0d-84b3-5bb90d91b127",
+    "location": [4652, 119, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "clumsylizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "58f89769-6198-41c4-a18c-1491fe79bfe4",
+    "location": [4610, 122, -20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "crackedearthelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "37772dbd-46f6-4848-a408-8004c8d73181",
+    "location": [4622, 126, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "crackedearthelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "44caed85-d6b3-4b10-95b4-32dfab5a82e7",
+    "location": [4557, 182, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "lessergiantspider", "probability": 40, "maxCount": 1 },
+      { "name": "lesserharpy", "probability": 40, "maxCount": 1 },
+      { "name": "fledglingimp", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c703e484-6955-44d5-b768-f78f220ec8bb",
+    "location": [4572, 213, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "lessergiantspider", "probability": 40, "maxCount": 1 },
+      { "name": "lesserharpy", "probability": 40, "maxCount": 1 },
+      { "name": "fledglingimp", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "94ce1fd5-28ce-4049-bf01-d9fb0f748ec1",
+    "location": [4563, 197, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "lessergiantspider", "probability": 40, "maxCount": 1 },
+      { "name": "lesserharpy", "probability": 40, "maxCount": 1 },
+      { "name": "fledglingimp", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2960ba7c-70a9-4282-84c4-051c78a73d78",
+    "location": [4550, 201, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "lessergiantspider", "probability": 40, "maxCount": 1 },
+      { "name": "lesserharpy", "probability": 40, "maxCount": 1 },
+      { "name": "fledglingimp", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "032fe562-0336-4166-93e1-cd74490c42de",
+    "location": [4569, 130, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "feebleorc", "probability": 20, "maxCount": 1 },
+      { "name": "lessergiantspider", "probability": 20, "maxCount": 1 },
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "orcgrunt", "probability": 20, "maxCount": 1 },
+      { "name": "weakorcishmage", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5cd04764-5cc3-4e03-b672-088a0901e97f",
+    "location": [4552, 160, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "feebleorc", "probability": 20, "maxCount": 1 },
+      { "name": "lessergiantspider", "probability": 20, "maxCount": 1 },
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "orcgrunt", "probability": 20, "maxCount": 1 },
+      { "name": "weakorcishmage", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "53cc73d8-aa46-4e4b-ad7f-fd0da223936c",
+    "location": [4553, 148, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "feebleorc", "probability": 20, "maxCount": 1 },
+      { "name": "lessergiantspider", "probability": 20, "maxCount": 1 },
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "orcgrunt", "probability": 20, "maxCount": 1 },
+      { "name": "weakorcishmage", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2280f836-a5c6-4ed6-8371-c6678bd28223",
+    "location": [4572, 149, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "feebleorc", "probability": 20, "maxCount": 1 },
+      { "name": "lessergiantspider", "probability": 20, "maxCount": 1 },
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "orcgrunt", "probability": 20, "maxCount": 1 },
+      { "name": "weakorcishmage", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1ea15244-93a9-4e84-8a12-dccecff415d3",
+    "location": [4569, 140, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "feebleorc", "probability": 20, "maxCount": 1 },
+      { "name": "lessergiantspider", "probability": 20, "maxCount": 1 },
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "orcgrunt", "probability": 20, "maxCount": 1 },
+      { "name": "weakorcishmage", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c39cd35c-84eb-4e1c-bde6-cccefdba018e",
+    "location": [4559, 133, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "feebleorc", "probability": 20, "maxCount": 1 },
+      { "name": "lessergiantspider", "probability": 20, "maxCount": 1 },
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "orcgrunt", "probability": 20, "maxCount": 1 },
+      { "name": "weakorcishmage", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c8ccbbc4-3fc3-43f7-b27b-3d6b3c209b84",
+    "location": [4580, 109, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "feebleorc", "probability": 20, "maxCount": 1 },
+      { "name": "lessergiantspider", "probability": 20, "maxCount": 1 },
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "orcgrunt", "probability": 20, "maxCount": 1 },
+      { "name": "weakorcishmage", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4a4d18bd-9848-45ce-8cda-abe321d9c3c4",
+    "location": [4573, 118, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "feebleorc", "probability": 20, "maxCount": 1 },
+      { "name": "lessergiantspider", "probability": 20, "maxCount": 1 },
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "orcgrunt", "probability": 20, "maxCount": 1 },
+      { "name": "weakorcishmage", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "248efb81-a4e3-48f2-9dfc-b6ed867e5d74",
+    "location": [4677, 68, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "oneeyedogre", "probability": 20, "maxCount": 1 },
+      { "name": "smallettin", "probability": 20, "maxCount": 1 },
+      { "name": "losttroll", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2106911f-97b7-4709-be75-1a3865d7d618",
+    "location": [4592, 86, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "oneeyedogre", "probability": 20, "maxCount": 1 },
+      { "name": "smallettin", "probability": 20, "maxCount": 1 },
+      { "name": "losttroll", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "09c2d07f-07c1-462b-b286-673dab6b57bc",
+    "location": [4608, 98, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "oneeyedogre", "probability": 20, "maxCount": 1 },
+      { "name": "smallettin", "probability": 20, "maxCount": 1 },
+      { "name": "losttroll", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "68ff6d9a-edd7-4004-a3f7-fa4c39b28d6f",
+    "location": [4626, 115, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "crackedearthelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "64095545-1747-45e6-8d06-1b5a2a071473",
+    "location": [4630, 100, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "oneeyedogre", "probability": 20, "maxCount": 1 },
+      { "name": "smallettin", "probability": 20, "maxCount": 1 },
+      { "name": "losttroll", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f881fd45-b6cc-4c3c-b127-1dcba164753e",
+    "location": [4617, 78, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "oneeyedogre", "probability": 20, "maxCount": 1 },
+      { "name": "smallettin", "probability": 20, "maxCount": 1 },
+      { "name": "losttroll", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "61ba13e8-7f52-492f-84be-56bcf98ec59f",
+    "location": [4639, 87, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "oneeyedogre", "probability": 20, "maxCount": 1 },
+      { "name": "smallettin", "probability": 20, "maxCount": 1 },
+      { "name": "losttroll", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3e452a82-e5d5-403e-9504-f4e54616fb6b",
+    "location": [4658, 91, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "oneeyedogre", "probability": 20, "maxCount": 1 },
+      { "name": "smallettin", "probability": 20, "maxCount": 1 },
+      { "name": "losttroll", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5e3d42c7-5891-4e6f-a65f-2eae1e149b30",
+    "location": [4671, 91, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "cavebear", "probability": 20, "maxCount": 1 },
+      { "name": "oneeyedogre", "probability": 20, "maxCount": 1 },
+      { "name": "smallettin", "probability": 20, "maxCount": 1 },
+      { "name": "losttroll", "probability": 20, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "323962ea-e2f2-4b88-aeb0-0d6e9d2276a5",
+    "location": [4678, 68, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 2,
+    "walkingRange": 6,
+    "entries": [
+      { "name": "smallettin", "probability": 33, "maxCount": 1 },
+      { "name": "oneeyedogre", "probability": 33, "maxCount": 1 },
+      { "name": "losttroll", "probability": 33, "maxCount": 1 }
+    ]
+  }
+]

@@ -604,8 +604,8 @@
     "location": [2127, 271, 22],
     "map": "Underworld",
     "count": 5,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 8,
     "walkingRange": -1,
     "entries": [

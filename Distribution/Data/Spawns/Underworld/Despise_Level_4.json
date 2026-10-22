@@ -20,8 +20,8 @@
     "location": [2612, 189, 10],
     "map": "Underworld",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "spawnBounds": { "x1": 2612, "y1": 189, "z1": -128, "x2": 2613, "y2": 190, "z2": 128 },
     "walkingRange": 8,
     "entries": [
@@ -333,8 +333,8 @@
     "location": [2681, 72, 60],
     "map": "Underworld",
     "count": 1,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "homeRange": 5,
     "walkingRange": 8,
     "entries": [
@@ -1714,8 +1714,8 @@
     "location": [2463, 309, 25],
     "map": "Underworld",
     "count": 3,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "spawnBounds": { "x1": 2461, "y1": 307, "z1": 25, "x2": 2466, "y2": 312, "z2": 128 },
     "walkingRange": -1,
     "entries": [

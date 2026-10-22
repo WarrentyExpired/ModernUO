@@ -6,8 +6,8 @@
     "location": [3966, 130, 0],
     "map": "Underworld",
     "count": 40,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "region": "the Terathan's Territory",
     "walkingRange": -1,
     "entries": [
@@ -24,8 +24,8 @@
     "location": [3967, 142, 0],
     "map": "Underworld",
     "count": 25,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "region": "the Ophidian's Territory",
     "walkingRange": -1,
     "entries": [

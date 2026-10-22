@@ -1,0 +1,316 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "c13f3690-38a0-42de-8bce-8a78258c44f7",
+    "location": [4701, 215, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "scorpion", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "48dbcf7a-f1e3-41ad-9a41-9c00c1c55649",
+    "location": [4721, 152, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "gazer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f9124455-7af8-431a-aa11-db219500b0d3",
+    "location": [4758, 212, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "113c4d40-9499-4fc9-8902-ae2a641eea7a",
+    "location": [4739, 228, -49],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "941e24f6-d624-42fd-a2d1-b6387fbe1ace",
+    "location": [4769, 192, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a6c2c140-c9a3-4f57-9d29-338f87364b8d",
+    "location": [4763, 203, -30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "lizardman", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b7f02373-59f1-4028-9268-5ce5696fc396",
+    "location": [4737, 236, -50],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1fef6201-2f8e-46b5-b4c5-450404c51829",
+    "location": [4765, 175, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ee5828d9-638e-4062-9c50-e3a459361dac",
+    "location": [4746, 160, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "brigand", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "023ce344-a21c-491b-a74e-eaed1fbdfccb",
+    "location": [4730, 168, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "gazer", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "95e706e8-d90d-41d9-a56b-44ba65346d02",
+    "location": [4730, 187, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "cavebear", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bc98de57-5423-4a5d-a074-f5a6cf28727a",
+    "location": [4722, 184, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "gazerlarva", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2edb4c6b-ac10-40d7-8fb4-3730bba9bfbb",
+    "location": [4698, 174, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "skeletalmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a6a6e63e-273d-404e-ae2a-8d5f1219cdd9",
+    "location": [4703, 171, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "skeletalknight", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "98d4a03c-2719-4eee-a85f-6c9cf5211006",
+    "location": [4706, 176, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "skeleton", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "99ef61af-af72-4532-b21e-98a59ea851b1",
+    "location": [4697, 179, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "skeleton", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7f612e03-fe7f-48a8-ba19-6086320ebc6b",
+    "location": [4703, 197, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "skeleton", "probability": 100, "maxCount": 1 },
+      { "name": "skeletalmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "03d05cb5-38f4-4ab7-916f-a6e8051889e6",
+    "location": [4725, 207, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "cavebear", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e84551f6-7b68-41cd-a96f-c38e10ca0b14",
+    "location": [4704, 142, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 10,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "ettin", "probability": 25, "maxCount": 3 },
+      { "name": "ogre", "probability": 25, "maxCount": 3 },
+      { "name": "troll", "probability": 25, "maxCount": 3 },
+      { "name": "evilmage", "probability": 25, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "baa06ca3-5526-4553-a088-9250ca427daf",
+    "location": [4711, 218, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "scorpion", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fcc9cf26-43fe-42b4-ad4b-98a9d66c6903",
+    "location": [4711, 209, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "cavebear", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e19baff0-d239-483d-872b-c7cbfab60a08",
+    "location": [4736, 193, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 7,
+    "entries": [
+      { "name": "gazerlarva", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

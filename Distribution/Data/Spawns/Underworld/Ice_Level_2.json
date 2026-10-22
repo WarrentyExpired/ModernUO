@@ -5,8 +5,8 @@
     "location": [2510, 694, -1],
     "map": "Underworld",
     "count": 15,
-    "minDelay": "00:05:00",
-    "maxDelay": "00:10:00",
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
     "region": "Ice - Level 2",
     "walkingRange": 4,
     "entries": [
