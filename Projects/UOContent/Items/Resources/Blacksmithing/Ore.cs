@@ -187,66 +187,79 @@ public abstract partial class BaseOre : Item
                     return;
                 }
 
-                if (from.CheckTargetSkill(SkillName.Mining, targeted, minSkill, maxSkill))
+                if (m_Ore.ItemID == 0x19B7 && m_Ore.Amount < 2)
                 {
-                    var toConsume = m_Ore.Amount;
+                    // There is not enough metal-bearing ore in this pile to make an ingot.
+                    from.SendLocalizedMessage(501987);
+                    return;
+                }
 
-                    if (toConsume <= 0)
+                // --- NEW BATCH SMELTING LOGIC ---
+                var toConsume = m_Ore.Amount;
+                if (toConsume > 30000)
+                {
+                    toConsume = 30000;
+                }
+
+                // 1. Calculate how many smelting attempts we can make based on the ore size
+                int attempts;
+                int consumedPerAttempt;
+                int ingotsPerSuccess;
+
+                if (m_Ore.ItemID == 0x19B7) // small ore (needs 2)
+                {
+                    attempts = toConsume / 2;
+                    consumedPerAttempt = 2;
+                    ingotsPerSuccess = 1;
+                    toConsume = attempts * 2; // Drop any remainder for this batch
+                }
+                else if (m_Ore.ItemID == 0x19B9) // large ore (yields 2)
+                {
+                    attempts = toConsume;
+                    consumedPerAttempt = 1;
+                    ingotsPerSuccess = 2;
+                }
+                else // standard ore (yields 1)
+                {
+                    attempts = toConsume;
+                    consumedPerAttempt = 1;
+                    ingotsPerSuccess = 1;
+                }
+
+                // 4. Roll a true UO skill check for every single attempt in the stack
+                int successfulAttempts = 0;
+                for (int i = 0; i < attempts; i++)
+                {
+                    if (from.CheckTargetSkill(SkillName.Mining, targeted, minSkill, maxSkill))
                     {
-                        // There is not enough metal-bearing ore in this pile to make an ingot.
-                        from.SendLocalizedMessage(501987);
-                        return;
+                        successfulAttempts++;
                     }
+                }
 
-                    if (toConsume > 30000)
-                    {
-                        toConsume = 30000;
-                    }
+                // 5. Calculate final yields and consume the ore
+                int totalIngots = successfulAttempts * ingotsPerSuccess;
+                int totalConsumed = attempts * consumedPerAttempt;
 
-                    int ingotAmount;
-
-                    if (m_Ore.ItemID == 0x19B7)
-                    {
-                        ingotAmount = toConsume / 2;
-
-                        if (toConsume % 2 != 0)
-                        {
-                            --toConsume;
-                        }
-                    }
-                    else if (m_Ore.ItemID == 0x19B9)
-                    {
-                        ingotAmount = toConsume * 2;
-                    }
-                    else
-                    {
-                        ingotAmount = toConsume;
-                    }
-
+                if (totalIngots > 0)
+                {
                     var ingot = m_Ore.GetIngot();
-                    ingot.Amount = ingotAmount;
-
-                    m_Ore.Consume(toConsume);
+                    ingot.Amount = totalIngots;
                     from.AddToBackpack(ingot);
-                    // from.PlaySound( 0x57 );
+                    from.SendLocalizedMessage(501988); // You smelt the ore removing the impurities...
 
-                    // You smelt the ore removing the impurities and put the metal in your backpack.
-                    from.SendLocalizedMessage(501988);
+                    // Optional: Tell the player exactly how many they lost if they didn't have a 100% success rate
+                    if (successfulAttempts < attempts)
+                    {
+                        int lostOre = (attempts - successfulAttempts) * consumedPerAttempt;
+                        from.SendMessage(33, $"You successfully smelted {totalIngots} ingots, but failed and destroyed {lostOre} ore.");
+                    }
                 }
                 else
                 {
-                    if (m_Ore.Amount < 2)
-                    {
-                        m_Ore.ItemID = m_Ore.ItemID == 0x19B9 ? 0x19B8 : 0x19B7;
-                    }
-                    else
-                    {
-                        m_Ore.Amount /= 2;
-                    }
-
-                    // You burn away the impurities but are left with less useable metal.
-                    from.SendLocalizedMessage(501990);
+                    from.SendLocalizedMessage(501990); // You burn away the impurities but are left with less useable metal.
                 }
+
+                m_Ore.Consume(totalConsumed);
             }
         }
 
