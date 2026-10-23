@@ -315,19 +315,6 @@ public static partial class CharacterCreation
             {
                 case "necromancer":
                     {
-                        if ((flags & ClientFlags.Malas) != 0 && availableMaps.Includes(MapSelectionFlags.Malas))
-                        {
-                            return new CityInfo("Umbra", "Mardoth's Tower", 2114, 1301, -50, Map.Malas);
-                        }
-
-                        /*
-                         * Unfortunately you are playing on a *NON-Age-Of-Shadows* game
-                         * installation and cannot be transported to Malas.
-                         * You will not be able to take your new player quest in Malas
-                         * without an AOS client.  You are now being taken to the city of
-                         * Haven on the Trammel facet.
-                         */
-                        Timer.StartTimer(BadStartMessageDelay, () => m.SendLocalizedMessage(1062205));
                         return GetStartingCities()[0];
                     }
                 case "paladin":
