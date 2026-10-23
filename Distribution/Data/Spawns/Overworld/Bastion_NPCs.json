@@ -907,7 +907,7 @@
     "spawnBounds": { "x1": 1731, "y1": 2032, "z1": -128, "x2": 1732, "y2": 2033, "z2": 128 },
     "walkingRange": -1,
     "entries": [
-      { "name": "bountyvendor", "probability": 100, "maxCount": 1 }
+      { "name": "keeperofchivalry", "probability": 100, "maxCount": 1 }
     ]
   },
   {
@@ -922,6 +922,34 @@
     "walkingRange": 10,
     "entries": [
       { "name": "harbormaster", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9ec7107f-644b-4b75-894e-5b6995fbb64a",
+    "location": [1851, 1958, 5],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1851, "y1": 1958, "z1": -128, "x2": 1852, "y2": 1959, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bountyvendor", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5e4bc4a1-7046-40d3-8050-608857cb9fca",
+    "location": [1749, 1991, 0],
+    "map": "Veridia",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1749, "y1": 1991, "z1": -128, "x2": 1750, "y2": 1992, "z2": 128 },
+    "walkingRange": 6,
+    "entries": [
+      { "name": "necromancer", "probability": 100, "maxCount": 1 }
     ]
   }
 ]
