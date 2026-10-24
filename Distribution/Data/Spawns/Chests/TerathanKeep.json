@@ -14,11 +14,7 @@
       { "name": "treasurechestlevel1", "probability": 25, "maxCount": 10 },
       { "name": "treasurechestlevel2", "probability": 25, "maxCount": 10 },
       { "name": "treasurechestlevel3", "probability": 25, "maxCount": 10 },
-      { "name": "treasurechestlevel4", "probability": 25, "maxCount": 10 },
-      { "name": "treasurebaglevel1", "probability": 25, "maxCount": 10 },
-      { "name": "treasurebaglevel2", "probability": 25, "maxCount": 10 },
-      { "name": "treasurebaglevel3", "probability": 25, "maxCount": 10 },
-      { "name": "treasurebaglevel4", "probability": 25, "maxCount": 10 }
+      { "name": "treasurechestlevel4", "probability": 25, "maxCount": 10 }
     ]
   },
   {
@@ -36,12 +32,7 @@
       { "name": "treasurechestlevel1", "probability": 25, "maxCount": 10 },
       { "name": "treasurechestlevel2", "probability": 25, "maxCount": 10 },
       { "name": "treasurechestlevel3", "probability": 25, "maxCount": 10 },
-      { "name": "treasurechestlevel4", "probability": 25, "maxCount": 10 },
-      { "name": "treasurebaglevel1", "probability": 25, "maxCount": 10 },
-      { "name": "treasurebaglevel2", "probability": 25, "maxCount": 10 },
-      { "name": "treasurebaglevel3", "probability": 25, "maxCount": 10 },
-      { "name": "treasurebaglevel4", "probability": 25, "maxCount": 10 }
-
+      { "name": "treasurechestlevel4", "probability": 25, "maxCount": 10 }
     ]
   }
 ]
