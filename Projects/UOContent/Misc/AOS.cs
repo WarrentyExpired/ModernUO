@@ -14,6 +14,8 @@ namespace Server
     {
         public static void DisableStatInfluences()
         {
+            if (Settings.S_StatInfluence)
+                return;
             for (var i = 0; i < SkillInfo.Table.Length; ++i)
             {
                 var info = SkillInfo.Table[i];
