@@ -1,0 +1,67 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "1d63e5cb-29d5-4bb4-85ee-91f4ebdd5160",
+    "location": [2241, 633, -6],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:45:00",
+    "maxDelay": "01:00:00",
+    "spawnBounds": { "x1": 2241, "y1": 633, "z1": -128, "x2": 2242, "y2": 634, "z2": 128 },
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ba9b8cc8-7865-48d9-a7c8-116fc3bc98ed",
+    "location": [2318, 602, 9],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:45:00",
+    "maxDelay": "01:00:00",
+    "spawnBounds": { "x1": 2318, "y1": 602, "z1": -128, "x2": 2319, "y2": 603, "z2": 128 },
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "72292b1b-7133-4077-9489-c6ed017d16b6",
+    "location": [2500, 607, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:45:00",
+    "maxDelay": "01:00:00",
+    "spawnBounds": { "x1": 2500, "y1": 607, "z1": -128, "x2": 2501, "y2": 608, "z2": 128 },
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8a66e2d7-2480-4814-b8bd-b5ba8a2202fa",
+    "location": [2519, 600, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:45:00",
+    "maxDelay": "01:00:00",
+    "spawnBounds": { "x1": 2519, "y1": 600, "z1": -128, "x2": 2520, "y2": 601, "z2": 128 },
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b6458933-e509-49aa-b83a-1d6526863ec0",
+    "location": [2519, 697, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:45:00",
+    "maxDelay": "01:00:00",
+    "spawnBounds": { "x1": 2519, "y1": 697, "z1": -128, "x2": 2520, "y2": 698, "z2": 128 },
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]

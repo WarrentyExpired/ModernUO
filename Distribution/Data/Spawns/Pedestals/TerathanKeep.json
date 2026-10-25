@@ -1,0 +1,80 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "09975452-ae11-46bb-8234-62bfd03e5938",
+    "location": [3775, 231, 6],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:45:00",
+    "maxDelay": "01:00:00",
+    "spawnBounds": { "x1": 3775, "y1": 231, "z1": -128, "x2": 3776, "y2": 232, "z2": 128 },
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9feaf584-0466-4378-bf5b-64eadfab7e12",
+    "location": [3827, 230, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:45:00",
+    "maxDelay": "01:00:00",
+    "spawnBounds": { "x1": 3827, "y1": 230, "z1": -128, "x2": 3828, "y2": 231, "z2": 128 },
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c8bef6d2-9dcf-4467-a987-e4938a0ca79a",
+    "location": [3995, 235, -67],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:45:00",
+    "maxDelay": "01:00:00",
+    "spawnBounds": { "x1": 3995, "y1": 235, "z1": -128, "x2": 3996, "y2": 236, "z2": 128 },
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c363460f-c986-406d-a569-1b6e2497c4f5",
+    "location": [3977, 73, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:45:00",
+    "maxDelay": "01:00:00",
+    "spawnBounds": { "x1": 3977, "y1": 73, "z1": -128, "x2": 3978, "y2": 74, "z2": 128 },
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "00a9c30b-1c51-431b-b6a7-b032581a11ce",
+    "location": [3883, 131, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:45:00",
+    "maxDelay": "01:00:00",
+    "spawnBounds": { "x1": 3883, "y1": 131, "z1": -128, "x2": 3884, "y2": 132, "z2": 128 },
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a312c5dd-0137-42f2-bb31-94c3b5b80335",
+    "location": [3804, 114, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:45:00",
+    "maxDelay": "01:00:00",
+    "spawnBounds": { "x1": 3804, "y1": 114, "z1": -128, "x2": 3805, "y2": 115, "z2": 128 },
+    "entries": [
+      { "name": "thiefpedestal", "probability": 100, "maxCount": 1 }
+    ]
+  }
+]
