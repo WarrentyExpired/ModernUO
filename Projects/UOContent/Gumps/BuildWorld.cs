@@ -113,8 +113,8 @@ namespace Server.Gumps
                     InvokeCommand("IS Data/Spawns/Underworld/**.json", from);
                     break;
                 case 4:
-                    InvokeCommand("IS Data/Spawns/DungeonCrates/**.json", from);
-                    InvokeCommand("IS Data/Spawns/Pedestals/**.json", from);
+                    InvokeCommand("IS Data/Spawns/Underworld/DungeonCrates/**.json", from);
+                    InvokeCommand("IS Data/Spawns/Underworld/Pedestals/**.json", from);
                     break;
                 case 5: InvokeCommand("WipeWildMobs", from); break;
 
@@ -132,8 +132,8 @@ namespace Server.Gumps
                     InvokeCommand("Decorate", from);
                     InvokeCommand("IS Data/Spawns/Overworld/**.json", from);
                     InvokeCommand("IS Data/Spawns/Underworld/**.json", from);
-                    InvokeCommand("IS Data/Spawns/DungeonCrates/**.json", from);
-                    InvokeCommand("IS Data/Spawns/Pedestals/**.json", from);
+                    InvokeCommand("IS Data/Spawns/Underworld/DungeonCrates/**.json", from);
+                    InvokeCommand("IS Data/Spawns/Underworld/Pedestals/**.json", from);
 
                     from.SendMessage(0x3F, "World population complete.");
                     break;
