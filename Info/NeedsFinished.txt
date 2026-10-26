@@ -1,0 +1,16 @@
+Bounty Vendor
+ - Needs more rewards
+
+Monster Kill Points
+ - Need a way to spend them
+ - Need things to spend them on
+
+Treasure Maps
+ - Need to set location
+
+Sos'
+ - Need to look into them
+
+Spawned Treasure Chests
+ - I need to figure out what to do with these. They are very lackluster.
+   The new DungeonLootCrates fill the void for now.

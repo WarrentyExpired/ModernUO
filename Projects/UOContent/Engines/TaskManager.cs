@@ -49,7 +49,6 @@ public static class TaskManager
     // ==========================================
     public static void On4HourTick(Mobile from = null)
     {
-        RespawnPedestals(from);
     }
 
 
@@ -105,35 +104,6 @@ public static class TaskManager
             {
                 Console.WriteLine($"TaskManager: S_DungeonTraps is FALSE. Purged {count} physical traps and trap spawners.");
             }
-        }
-    }
-
-    private static void RespawnPedestals(Mobile from = null)
-    {
-        string targetFolder = Path.Combine(Core.BaseDirectory, "Data", "Spawns", "Pedestals");
-        if (!Directory.Exists(targetFolder))
-        {
-            Directory.CreateDirectory(targetFolder);
-            return;
-        }
-        string[] jsonFiles = Directory.GetFiles(targetFolder, "*.json", SearchOption.AllDirectories);
-        if (jsonFiles.Length == 0)
-        {
-            return;
-        }
-        Utility.PushColor(ConsoleColor.Green);
-        Console.WriteLine($"[PedestalBootTask] Refreshing {jsonFiles.Length} pedestal spawner file(s)...");
-        Utility.PopColor();
-        Mobile executer = from ?? World.Mobiles.Values.FirstOrDefault(m => m.AccessLevel >= AccessLevel.GameMaster);
-        if (executer == null)
-        {
-            Console.WriteLine("[TaskManager] Automated pedestal respawn skipped. A GM must be online to execute the [is command.");
-            return;
-        }
-        foreach (string filePath in jsonFiles)
-        {
-            string relativePath = Path.GetRelativePath(Core.BaseDirectory, filePath);
-            CommandSystem.Handle(executer, $"[is {relativePath}");
         }
     }
 }

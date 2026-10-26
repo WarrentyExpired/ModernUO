@@ -134,6 +134,7 @@ public partial class ThiefPedestalLootBag : Bag
     {
         int bagTier = GetWeightedTier();
 
+        // Weapon
         int weaponCount = Utility.RandomMinMax(0, bagTier);
         for (var i = 0; i < weaponCount; i++)
         {
@@ -143,6 +144,7 @@ public partial class ThiefPedestalLootBag : Bag
             DropItem(weapon);
         }
 
+        // Armor
         int armorCount = Utility.RandomMinMax(0, bagTier);
         for (var i = 0; i < armorCount; i++)
         {
@@ -158,6 +160,7 @@ public partial class ThiefPedestalLootBag : Bag
             DropItem(armor);
         }
 
+        // Jewelry
         int jewelryCount = Utility.RandomMinMax(0, bagTier);
         for (var i = 0; i < jewelryCount; i++)
         {
@@ -167,6 +170,16 @@ public partial class ThiefPedestalLootBag : Bag
             DropItem(jewelry);
         }
 
+        // Gems
+        int gemCount = Utility.RandomMinMax(0, bagTier);
+        for (var i = 0; i < gemCount; i++)
+        {
+            var gems = Loot.RandomGem();
+            gems.Amount = Math.Max(1, bagTier * 2);
+            DropItem(gems);
+        }
+
+        // Reagents
         int reagentCount = Utility.RandomMinMax(0, bagTier);
         for (var i = 0; i < reagentCount; i++)
         {
@@ -182,25 +195,21 @@ public partial class ThiefPedestalLootBag : Bag
             DropItem(necroreagents);
         }
 
-        int gemCount = Utility.RandomMinMax(0, bagTier);
-        for (var i = 0; i < gemCount; i++)
-        {
-            var gems = Loot.RandomGem();
-            gems.Amount = Math.Max(1, bagTier * 2);
-            DropItem(gems);
-        }
-
+        // Magic Scrolls
         int mageScrollCount = Utility.RandomMinMax(0, bagTier);
         int mlevel = 0;
-        if (bagTier < 3)
-        {
-           mlevel = 42;
-        }
-        else
+        if (bagTier >= 4)
         {
            mlevel = 63;
         }
-
+        else if (bagTier >= 2)
+        {
+           mlevel = 46;
+        }
+        else
+        {
+            mlevel = 23;
+        }
         for (var i = 0; i < mageScrollCount; i++)
         {
             var scroll = Loot.RandomScroll(0, mlevel, SpellbookType.Regular);
@@ -212,7 +221,7 @@ public partial class ThiefPedestalLootBag : Bag
         int nlevel = 0;
         if (bagTier < 3)
         {
-            nlevel = 6;
+            nlevel = 7;
         }
         else
         {
@@ -225,6 +234,7 @@ public partial class ThiefPedestalLootBag : Bag
             DropItem(scroll);
         }
 
+        // Misc extras potions/clothing/arrows/blankscrolls
         for (var i = Math.Max(1, bagTier); i > 0; i--)
         {
             DropItem(Loot.RandomPotion());
@@ -248,6 +258,7 @@ public partial class ThiefPedestalLootBag : Bag
             DropItem(new BlankScroll(Math.Max(1, GetWeightedTier())));
         }
 
+        // Gold
         int minGold = 100 + (bagTier * 100);
         int maxGold = minGold + 99;
         DropItem(new Gold(Utility.RandomMinMax(minGold, maxGold)));
