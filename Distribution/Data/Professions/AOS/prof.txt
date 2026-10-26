@@ -7,9 +7,9 @@ Begin
 	TopLevel		true
 	Gump			5587
 	Type			Profession
-	Skill			Chivalry		50
-	Skill			Tactics 		50
-	Skill			Wrestling		0
+	Skill			Chivalry		40
+	Skill			Tactics 		30
+	Skill			MaceFighting		30
 	Stat			Str			45
 	Stat			Dex			20
 	Stat			Int			15
@@ -41,11 +41,11 @@ Begin
 	TopLevel		true
 	Gump			5577
 	Type			Profession
-	Skill			Tactics			50
-	Skill			Healing			45
-	Skill			Swordsmanship		5
-	Stat			Str			35
-	Stat			Dex			35
+	Skill			Tactics			30
+	Skill			Healing			30
+	Skill			Swordsmanship		40
+	Stat			Str			40
+	Stat			Dex			30
 	Stat			Int			10
 End
 
