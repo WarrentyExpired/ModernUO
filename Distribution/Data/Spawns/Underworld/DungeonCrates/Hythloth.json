@@ -1,0 +1,131 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "ad4fbf4b-058f-4bed-905e-36d7fd53b2e4",
+    "location": [2199, 266, 27],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 9,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 30, "maxCount": 5 },
+      { "name": "dungeonlootcrate", "probability": 70, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "914aba7f-7cab-4724-a905-71b776a617d0",
+    "location": [2126, 270, 22],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "ffa358b5-1ee2-45cc-a404-d39512910216",
+    "location": [2138, 140, 22],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Hythloth - Level 4",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0ac46cba-3881-4740-bdd8-370310e8f5d5",
+    "location": [1998, 281, 44],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9d8e86e2-ed7e-4e56-83be-e6ac31c0a987",
+    "location": [2071, 199, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2315bd4b-2d27-4ee4-84ab-f76ac22505dd",
+    "location": [2035, 274, 22],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 10,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "8d4dfac1-f8b3-4266-9236-8af800f86dc6",
+    "location": [2162, 196, -22],
+    "map": "Underworld",
+    "count": 10,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Hythloth - Level 3",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 30, "maxCount": 10 },
+      { "name": "dungeonlootcrate", "probability": 70, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "a1976946-5e01-455f-8d53-9a78e66371d6",
+    "location": [2050, 218, 0],
+    "map": "Underworld",
+    "count": 10,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Hythloth - Level 2",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 70, "maxCount": 10 },
+      { "name": "dungeonlootcrate", "probability": 30, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "61f715a2-d4e0-44d2-8a75-779110b7a93b",
+    "location": [1986, 72, 44],
+    "map": "Underworld",
+    "count": 10,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the Dungeon Hythloth - Level 1",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 100, "maxCount": 10 }
+    ]
+  }
+]

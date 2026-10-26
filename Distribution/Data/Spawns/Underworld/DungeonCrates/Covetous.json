@@ -1,0 +1,132 @@
+[
+  {
+    "$type": "RegionSpawner",
+    "guid": "f04b90ad-47ae-4ea6-acd4-3fd3a5365c00",
+    "location": [1785, 125, 0],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the Dungeon Covetous - Level 1",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3cbb2cfb-7290-40d6-9481-c03286f67241",
+    "location": [1740, 196, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "66e1efd7-c167-427c-9d18-7436b121f858",
+    "location": [1726, 123, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "becfb07a-c3a8-4d58-b3f6-5fe59f51944b",
+    "location": [1935, 263, 0],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Covetous - Level 2",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 70, "maxCount": 15 },
+      { "name": "dungeonlootcrate", "probability": 30, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8b209103-af5d-4c09-83f5-31f296aca1fc",
+    "location": [1762, 280, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "66366a5c-c9cf-4987-9e46-6e099006342f",
+    "location": [1826, 263, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 10,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 50, "maxCount": 2 },
+      { "name": "dungeonlootcrate", "probability": 50, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "51b5e2f7-d490-4899-bba0-eabf7cfc6786",
+    "location": [1907, 186, 0],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Covetous - Level 3",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 50, "maxCount": 10 },
+      { "name": "dungeonlootcrate", "probability": 50, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d587e16f-a640-451a-84d4-6385955ffbd2",
+    "location": [1795, 72, 0],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 15,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2be9b633-9660-4384-a86a-001b9d8143f7",
+    "location": [1855, 72, 0],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 15,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 40, "maxCount": 5 },
+      { "name": "dungeonlootcrate", "probability": 60, "maxCount": 5 }
+    ]
+  }
+]

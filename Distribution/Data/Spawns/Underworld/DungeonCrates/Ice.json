@@ -1,0 +1,130 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "3ebb63a6-2983-4a8c-9c08-0c31e8cd8b13",
+    "location": [2253, 636, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6c9c0e2d-305c-4906-84eb-355dbc5dd5f8",
+    "location": [2246, 632, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c0c8d0b4-7031-4f43-bcb2-d5e1348b7c5b",
+    "location": [2241, 633, -6],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "64b8b81f-00ae-45d2-af4f-a920c639db44",
+    "location": [2318, 602, 9],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "84f0fe92-7e5b-455f-b522-777e9c1f9f79",
+    "location": [2444, 605, 17],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the Dungeon of Ice - Level 1",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 50, "maxCount": 15 },
+      { "name": "dungeonlootcrate", "probability": 50, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "a59e4e62-e23e-49fd-a772-9f1fa2f71794",
+    "location": [2511, 693, 0],
+    "map": "Underworld",
+    "count": 7,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Ice - Level 2",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 70, "maxCount": 5 },
+      { "name": "dungeonlootcrate", "probability": 30, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4741f477-0b9f-4a48-a620-193d01571e67",
+    "location": [2505, 613, -1],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 8,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "81100fb1-6d19-4cda-9c81-8bf802fec23e",
+    "location": [2532, 593, 0],
+    "map": "Underworld",
+    "count": 10,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Ice - Level 3",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ab6ebd5d-4f8f-4b17-a2b2-a8df5fea17a3",
+    "location": [2519, 601, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": 8,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 3 }
+    ]
+  }
+]

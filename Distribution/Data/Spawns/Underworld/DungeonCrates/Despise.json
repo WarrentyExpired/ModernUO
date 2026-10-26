@@ -1,0 +1,243 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "810ca2d1-a604-4a52-b184-6dc84f0e0edd",
+    "location": [2678, 73, 60],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e4735e4b-d69b-46f8-bc42-d68c5a7f01d1",
+    "location": [2522, 288, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9f63dad4-2035-4ede-991c-93f73558cdf4",
+    "location": [2628, 183, 30],
+    "map": "Underworld",
+    "count": 4,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 25,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 2 },
+      { "name": "dungeonlootbag", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d31f8e21-fcb0-4138-b05d-0a368688bc2d",
+    "location": [2630, 112, 45],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 8,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "42ef200f-e7cb-47ad-8fbf-3f6b9afe18ba",
+    "location": [2470, 284, 5],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 10,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "26985389-490d-4fa2-b09b-d607ba096757",
+    "location": [2574, 299, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7c6f06af-2a30-41ac-a16d-fb8e4d350530",
+    "location": [2242, 212, 20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a30f8154-b391-4358-bfd9-ed955111f9ac",
+    "location": [2597, 292, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "770157bf-857d-488d-a287-9577204816ae",
+    "location": [2596, 293, 5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "849bfd98-fbae-4df9-be83-f7635945bb6f",
+    "location": [2259, 275, 15],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "4142af22-d7e8-4741-a794-509bbf9e2ebe",
+    "location": [2475, 147, 45],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Despise - Level 4",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 30, "maxCount": 5 },
+      { "name": "dungeonlootcrate", "probability": 70, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f50cd027-a08a-4463-b452-34507a112480",
+    "location": [2332, 308, 5],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "5bbff5d3-260e-488f-8426-0d6748797843",
+    "location": [2369, 224, 20],
+    "map": "Underworld",
+    "count": 10,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Despise - Level 3",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 70, "maxCount": 10 },
+      { "name": "dungeonlootcrate", "probability": 30, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "6052f95e-d12c-4d52-8fcb-88ca4ee66ed3",
+    "location": [2353, 122, 60],
+    "map": "Underworld",
+    "count": 12,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Despise - Level 2",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 100, "maxCount": 12 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "952eb4e3-4fc4-4ec9-9e1d-e2ce5b7574c4",
+    "location": [2568, 67, 70],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9d3f68c5-5f98-4196-b732-d45f7b01e3d4",
+    "location": [2676, 75, 62],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e6525b79-4335-4e5f-9cf5-6084d747e6b6",
+    "location": [2629, 112, 45],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 8,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 3 }
+    ]
+  }
+]

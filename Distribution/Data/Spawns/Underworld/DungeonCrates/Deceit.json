@@ -1,0 +1,130 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "184e498d-c345-4a08-a717-2ff219bbfa8c",
+    "location": [1642, 273, -20],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "1a4f1e39-48dc-4e15-adc0-43a2fb797af6",
+    "location": [1634, 184, 0],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Deceit - Level 4",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 30, "maxCount": 10 },
+      { "name": "dungeonlootcrate", "probability": 70, "maxCount": 15 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "eee4a9a5-c99e-4ada-83a9-de81925f7048",
+    "location": [1656, 73, 6],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "spawnBounds": { "x1": 1656, "y1": 73, "z1": -128, "x2": 1657, "y2": 74, "z2": 128 },
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6631ccab-1960-4b38-b313-5bf59fe9e523",
+    "location": [1624, 152, -5],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "09a07e45-e180-4775-b0ee-121e5df5fdff",
+    "location": [1473, 146, -50],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 10,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3ee951d3-b713-42e2-81cf-49e2091e0c0d",
+    "location": [1490, 95, -2],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "7e7f1390-2bb4-47f1-83a3-57b3638f600a",
+    "location": [1635, 64, 0],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Deceit - Level 2",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 70, "maxCount": 15 },
+      { "name": "dungeonlootcrate", "probability": 30, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c2bec9bf-34ac-40a3-88a6-13b61994b252",
+    "location": [1647, 111, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 2,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "d33dc81a-b875-453a-8a4e-e6d2a2dbca55",
+    "location": [1515, 163, 0],
+    "map": "Underworld",
+    "count": 15,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the Dungeon Deceit - Level 1",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 100, "maxCount": 15 }
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "$type": "Spawner",
+    "guid": "b1ed7b2f-acdb-4104-bc21-c3e68d9bd32f",
+    "location": [2765, 119, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "811f039e-b9b7-4c40-84cf-56d721203949",
+    "location": [2741, 266, 0],
+    "map": "Underworld",
+    "count": 5,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Destard - Level 3",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 100, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e5b43ae4-928e-4833-a656-444fff1ffb3a",
+    "location": [2784, 287, 0],
+    "map": "Underworld",
+    "count": 4,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 4 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "df1ea841-dd21-4d4a-aa73-45ff50d1540b",
+    "location": [2728, 129, 0],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 6,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "98395502-a5b7-4779-b559-2b65cce3ed82",
+    "location": [2805, 58, 0],
+    "map": "Underworld",
+    "count": 3,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 5,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 100, "maxCount": 3 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "d8fd92ff-1590-4e31-b88a-97e0b2ee8415",
+    "location": [2743, 85, 1],
+    "map": "Underworld",
+    "count": 10,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "Destard - Level 2",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootcrate", "probability": 80, "maxCount": 10 },
+      { "name": "dungeonlootbag", "probability": 20, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "eae1df26-034c-451d-a547-021c77bb2453",
+    "location": [2844, 281, 0],
+    "map": "Underworld",
+    "count": 30,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "region": "the Dungeon Destard - Level 1",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dungeonlootbag", "probability": 50, "maxCount": 20 },
+      { "name": "dungeonlootcrate", "probability": 50, "maxCount": 10 }
+    ]
+  }
+]
