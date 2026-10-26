@@ -106,7 +106,7 @@ namespace Server.Custom
         public override bool Decays => true;
         public override bool IsDecoContainer => false;
 
-        private readonly TimeSpan _decayTime = TimeSpan.FromMinutes(Utility.RandomMinMax(15, 60));
+        private readonly TimeSpan _decayTime = TimeSpan.FromMinutes(Utility.RandomMinMax(45, 60));
         public override TimeSpan DecayTime => _decayTime;
 
         public override Rectangle2D Bounds

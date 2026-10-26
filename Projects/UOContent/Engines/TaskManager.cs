@@ -64,46 +64,6 @@ public static class TaskManager
     // ==========================================
     private static void OnServerBoot()
     {
-        // Check if dungeon traps are disabled globally and if true deletes any spawners and traps.
-        if (!Settings.S_DungeonTraps)
-        {
-            List<Item> toDelete = new List<Item>();
-            foreach (Item item in World.Items.Values)
-            {
-                if (item is BaseTrap)
-                {
-                    toDelete.Add(item);
-                    continue;
-                }
-                if (item is BaseSpawner spawner)
-                {
-                    bool spawnsTraps = false;
-                    foreach (var entry in spawner.Entries)
-                    {
-                        if (entry?.SpawnedName != null && entry.SpawnedName.IndexOf("Trap", StringComparison.OrdinalIgnoreCase) >= 0)
-                        {
-                            spawnsTraps = true;
-                            break;
-                        }
-                    }
-                    if (spawnsTraps)
-                    {
-                        toDelete.Add(item);
-                    }
-                }
-            }
-            int count = toDelete.Count;
-            for (int i = 0; i < count; i++)
-            {
-                if (toDelete[i] != null && !toDelete[i].Deleted)
-                {
-                    toDelete[i].Delete();
-                }
-            }
-            if (count > 0)
-            {
-                Console.WriteLine($"TaskManager: S_DungeonTraps is FALSE. Purged {count} physical traps and trap spawners.");
-            }
-        }
+
     }
 }
