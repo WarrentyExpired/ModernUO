@@ -14,3 +14,9 @@ Sos'
 Spawned Treasure Chests
  - I need to figure out what to do with these. They are very lackluster.
    The new DungeonLootCrates fill the void for now.
+
+Citizens
+ - Town citizens that have there own personalitys
+
+ Hoard Piles
+ - Treausre hoard pile.

@@ -705,7 +705,7 @@
   {
     "$type": "Spawner",
     "guid": "e5d92cf4-f2bf-4263-ad0f-b7662912075b",
-    "location": [4636, 129, 0],
+    "location": [4632, 128, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -727,13 +727,13 @@
     "homeRange": 2,
     "walkingRange": 6,
     "entries": [
-      { "name": "clumsylizardman", "probability": 100, "maxCount": 1 }
+      { "name": "mongbat", "probability": 100, "maxCount": 1 }
     ]
   },
   {
     "$type": "Spawner",
     "guid": "5c249e80-2793-4f59-b97a-3dd0ba0ea4e3",
-    "location": [4669, 112, 0],
+    "location": [4672, 118, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -755,7 +755,7 @@
     "homeRange": 2,
     "walkingRange": 6,
     "entries": [
-      { "name": "clumsylizardman", "probability": 100, "maxCount": 1 }
+      { "name": "mongbat", "probability": 100, "maxCount": 1 }
     ]
   },
   {
