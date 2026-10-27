@@ -670,7 +670,8 @@ public abstract partial class BaseWeapon
 
             if (Quality == WeaponQuality.Exceptional)
             {
-                Attributes.WeaponDamage = 35;
+                Attributes.WeaponDamage = 25 + (int)(from.Skills.ArmsLore.Value / 10);
+                from.CheckSkill(SkillName.ArmsLore, 0, 100);
 
                 if (Core.ML)
                 {

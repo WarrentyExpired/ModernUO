@@ -608,7 +608,41 @@ namespace Server.Items
 
             if (Core.AOS)
             {
+                var bonus = (int)(from.Skills.ArmsLore.Value / 20);
+
+                for (var i = 0; i < bonus; i++)
+                {
+                    switch (Utility.Random(5))
+                    {
+                        case 0:
+                            {
+                                PhysicalBonus++;
+                                break;
+                            }
+                        case 1:
+                            {
+                                FireBonus++;
+                                break;
+                            }
+                        case 2:
+                            {
+                                ColdBonus++;
+                                break;
+                            }
+                        case 3:
+                            {
+                                EnergyBonus++;
+                                break;
+                            }
+                        case 4:
+                            {
+                                PoisonBonus++;
+                                break;
+                            }
+                    }
+                }
                 (tool as BaseRunicTool)?.ApplyAttributesTo(this);
+                from.CheckSkill(SkillName.ArmsLore, 0, 100);
             }
 
             return quality;

@@ -136,19 +136,9 @@ public class CraftGump : DynamicGump
                 resourceType = subResource.ItemType;
             }
 
-            var resourceCount = 0;
-
-            if (_from.Backpack != null)
-            {
-                foreach (var item in _from.Backpack.FindItems())
-                {
-                    if (resourceType.IsInstanceOfType(item))
-                    {
-                        resourceCount += item.Amount;
-                    }
-                }
-            }
-
+            // Calls the new static method to combine identical resources (Logs + Boards)
+            //var resourceCount = CraftItem.GetAvailableResourceAmount(_from, resourceType);
+            var resourceCount = Server.Engines.Craft.CraftItem.GetAvailableResourceAmount(_from, resourceType);
             builder.AddButton(15, 362, 4005, 4007, GetButtonID(6, 0));
 
             if (nameNumber > 0)
@@ -181,19 +171,9 @@ public class CraftGump : DynamicGump
                 resourceType = subResource.ItemType;
             }
 
-            var resourceCount = 0;
-
-            if (_from.Backpack != null)
-            {
-                foreach (var item in _from.Backpack.FindItems())
-                {
-                    if (resourceType.IsInstanceOfType(item))
-                    {
-                        resourceCount += item.Amount;
-                    }
-                }
-            }
-
+            // Calls the new static method to combine identical resources
+            //var resourceCount = CraftItem.GetAvailableResourceAmount(_from, resourceType);
+            var resourceCount = Server.Engines.Craft.CraftItem.GetAvailableResourceAmount(_from, resourceType);
             builder.AddButton(15, 382, 4005, 4007, GetButtonID(6, 7));
 
             if (nameNumber > 0)
@@ -260,20 +240,9 @@ public class CraftGump : DynamicGump
                 );
             }
 
-            var resourceCount = 0;
-
-            if (from.Backpack != null)
-            {
-                var type = subResource.ItemType;
-                foreach (var item in from.Backpack.FindItems())
-                {
-                    if (type.IsInstanceOfType(item))
-                    {
-                        resourceCount += item.Amount;
-                    }
-                }
-            }
-
+            // Calls the new static method to combine identical resources in the sub-menu selection
+            //var resourceCount = CraftItem.GetAvailableResourceAmount(from, subResource.ItemType);
+            var resourceCount = Server.Engines.Craft.CraftItem.GetAvailableResourceAmount(from, subResource.ItemType);
             builder.AddButton(220, 60 + index * 20, 4005, 4007, GetButtonID(5, i));
 
             if (subResource.Name.Number > 0)

@@ -571,7 +571,35 @@ namespace Server.Engines.Craft
 
             return amount;
         }
+        public static int GetAvailableResourceAmount(Mobile from, Type resType)
+        {
+            var pack = from.Backpack;
+            if (pack == null)
+            {
+                return 0;
+            }
 
+            // Find if this resource has interchangeable types (like Logs -> Boards)
+            Type[] linkedTypes = null;
+            for (var j = 0; j < m_TypesTable.Length; ++j)
+            {
+                if (m_TypesTable[j][0] == resType)
+                {
+                    linkedTypes = m_TypesTable[j];
+                    break;
+                }
+            }
+
+            linkedTypes ??= [resType];
+
+            int totalAmount = 0;
+            for (int i = 0; i < linkedTypes.Length; i++)
+            {
+                totalAmount += pack.GetAmount(linkedTypes[i]);
+            }
+
+            return totalAmount;
+        }
         public bool ConsumeRes(
             Mobile from, Type typeRes, CraftSystem craftSystem, ref int resHue, ref int maxAmount,
             ConsumeType consumeType, ref TextDefinition message
@@ -890,6 +918,7 @@ namespace Server.Engines.Craft
 
                 if (gainSkills) // This is a passive check. Success chance is entirely dependant on the main skill
                 {
+
                     from.CheckSkill(craftSkill.SkillToMake, minSkill, maxSkill);
                 }
             }

@@ -20,3 +20,5 @@ Citizens
 
 CentrED Stuff
  - Add unspawnable tiles around dungeons
+
+Skills
