@@ -5,9 +5,6 @@ Monster Kill Points
  - Need a way to spend them
  - Need things to spend them on
 
-Treasure Maps
- - Need to set location
-
 Sos'
  - Need to look into them
 
@@ -20,3 +17,6 @@ Citizens
 
  Hoard Piles
  - Treausre hoard pile.
+
+CentrED Stuff
+ - Add Trees west of stonehollow
