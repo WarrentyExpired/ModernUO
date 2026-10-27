@@ -122,23 +122,19 @@ public class BandageContext : Timer
 {
     private static readonly Dictionary<Mobile, BandageContext> _table = new();
 
-    // --- MEMENTO DEFERRED HEALING VARIABLES ---
     private int _currentTicks;
     private readonly int _maxTicks;
     private readonly int _tickHealAmount;
     private int _finalHealAmount;
 
     public BandageContext(Mobile healer, Mobile patient, TimeSpan delay)
-        // Run the timer every 250 milliseconds instead of waiting the full duration
         : base(TimeSpan.FromMilliseconds(250), TimeSpan.FromMilliseconds(250))
     {
         Healer = healer;
         Patient = patient;
 
-        // Calculate how many 250ms ticks fit into the total delay
         _maxTicks = (int)(delay.TotalMilliseconds / 250);
 
-        // Pre-calculate standard heal amounts for partial ticking
         var primarySkill = GetPrimarySkill(patient);
         var secondarySkill = GetSecondarySkill(patient);
         var healingVal = healer.Skills[primarySkill].Value;
@@ -169,13 +165,11 @@ public class BandageContext : Timer
 
         if (partialHealCount > 0)
         {
-            // Baseline as 33% of the total healing distributed across partial ticks, capped at 10% per tick
             _tickHealAmount = Math.Min(
                 (int)(0.33 * _finalHealAmount) / partialHealCount,
                 (int)(0.1 * _finalHealAmount)
             );
 
-            // Deduct what will be healed over time from the final burst
             _finalHealAmount -= _tickHealAmount * partialHealCount;
         }
     }
@@ -189,7 +183,6 @@ public class BandageContext : Timer
         Healer.SendLocalizedMessage(500961); // Your fingers slip!
         ++Slips;
 
-        // --- SKILL GAIN: On Interruption ---
         Healer.CheckSkill(GetSecondarySkill(Patient), 0.0, 120.0);
         Healer.CheckSkill(GetPrimarySkill(Patient), 0.0, 120.0);
     }
@@ -222,7 +215,6 @@ public class BandageContext : Timer
         return SkillName.Anatomy;
     }
 
-    // --- NEW: TICKING LOGIC (MEMENTO STYLE) ---
     protected override void OnTick()
     {
         _currentTicks++;
@@ -232,7 +224,6 @@ public class BandageContext : Timer
 
         if (isComplete)
         {
-            // Time is up! Run the standard ModernUO final heal/resurrect/cure logic
             DoFinalHeal();
             return;
         }
@@ -241,15 +232,12 @@ public class BandageContext : Timer
         {
             int totalSeconds = _currentTicks / 4;
 
-            // --- SKILL GAIN: Every 3 Seconds ---
             if (totalSeconds % 3 == 0)
             {
                 Healer.CheckSkill(GetSecondarySkill(Patient), 0.0, 120.0);
                 Healer.CheckSkill(GetPrimarySkill(Patient), 0.0, 120.0);
             }
 
-            // --- PARTIAL HEALS (HoT) ---
-            // Only tick HP if they are alive, unpoisoned, not bleeding, and not mortaled
             if (Patient.Alive && !Patient.Poisoned && !BleedAttack.IsBleeding(Patient) && !MortalStrike.IsWounded(Patient))
             {
                 if (_tickHealAmount > 0)
@@ -258,7 +246,6 @@ public class BandageContext : Timer
                     var healing = Healer.Skills[primarySkill].Value;
                     var chance = (healing + 10.0) / 100.0 - Slips * 0.02;
 
-                    // Still requires a successful chance roll to land the partial tick
                     if (chance > Utility.RandomDouble())
                     {
                         Patient.Heal(_tickHealAmount, Healer, false);
@@ -268,7 +255,6 @@ public class BandageContext : Timer
         }
     }
 
-    // --- THE ORIGINAL MODERNUO ONTICK LOGIC ---
     private void DoFinalHeal()
     {
         StopHeal();

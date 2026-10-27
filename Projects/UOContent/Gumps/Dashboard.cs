@@ -131,7 +131,7 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
         builder.AddLabel(ThirdCol, colY + 5, C_YELLOW, "Skills");
 
         double swingSpeed = from.Weapon is BaseWeapon weapon ? weapon.GetDelay(from).TotalSeconds : 0.0;
-        double bandageSeconds = Math.Clamp(Math.Ceiling(11.0 - from.Dex / 10.0), 2.0, 8.0);
+        double bandageSeconds = 5.0 + 0.5 * ((120.0 - from.Dex) / 10.0); //Math.Clamp(Math.Ceiling(11.0 - from.Dex / 10.0), 2.0, 8.0);
         int lAmmo = from.FindItemOnLayer(Layer.Cloak) is BaseQuiver quiver ? quiver.LowerAmmoCost : 0;
 
         StatRow[] ratings =
