@@ -11,10 +11,10 @@ namespace Server.Custom.UI
     {
         public static void Initialize()
         {
-            CommandSystem.Register("MyStats", AccessLevel.Player, new CommandEventHandler(OnCommand));
+            CommandSystem.Register("MyPoints", AccessLevel.Player, new CommandEventHandler(OnCommand));
         }
 
-        [Usage("MyStats")]
+        [Usage("MyPoints")]
         [Description("Opens the player statistics gump.")]
         public static void OnCommand(CommandEventArgs e)
         {

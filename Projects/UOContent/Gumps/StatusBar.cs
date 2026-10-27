@@ -68,23 +68,31 @@ namespace Server.Custom.UI
 
             if (m_IsVertical)
             {
-                AddBackground(0, 0, 150, 142, 9270);
+                // Expanded height by 25px to accommodate the new line
+                AddBackground(0, 0, 150, 167, 9270);
 
                 AddHtml(15, 15, 120, 20, $"<BASEFONT COLOR=#FCCA03>Fame:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Fame}</BASEFONT>", false, false);
                 AddHtml(15, 40, 120, 20, $"<BASEFONT COLOR=#FCCA03>Karma:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Karma}</BASEFONT>", false, false);
                 AddHtml(15, 65, 120, 20, $"<BASEFONT COLOR=#FCCA03>Hunger:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Hunger}/20</BASEFONT>", false, false);
                 AddHtml(15, 90, 120, 20, $"<BASEFONT COLOR=#FCCA03>Thirst:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Thirst}/20</BASEFONT>", false, false);
-                AddButton(115, 115, 9720, 9722, 2, GumpButtonType.Reply, 0);
+                AddHtml(15, 115, 120, 20, $"<BASEFONT COLOR=#FCCA03>Tithing:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.TithingPoints}</BASEFONT>", false, false);
+
+                // Shifted the toggle button down 25px
+                AddButton(115, 140, 9720, 9722, 2, GumpButtonType.Reply, 0);
             }
             else
             {
-                AddBackground(0, 0, 440, 45, 9270);
+                // Expanded width by 100px to accommodate the new column
+                AddBackground(0, 0, 540, 45, 9270);
 
                 AddHtml(15, 12, 110, 20, $"<BASEFONT COLOR=#FCCA03>Fame:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Fame}</BASEFONT>", false, false);
                 AddHtml(110, 12, 110, 20, $"<BASEFONT COLOR=#FCCA03>Karma:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Karma}</BASEFONT>", false, false);
                 AddHtml(215, 12, 110, 20, $"<BASEFONT COLOR=#FCCA03>Hunger:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Hunger}/20</BASEFONT>", false, false);
                 AddHtml(315, 12, 110, 20, $"<BASEFONT COLOR=#FCCA03>Thirst:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.Thirst}/20</BASEFONT>", false, false);
-                AddButton(410, 15, 9720, 9722, 2, GumpButtonType.Reply, 0);
+                AddHtml(415, 12, 110, 20, $"<BASEFONT COLOR=#FCCA03>Tithing:</BASEFONT> <BASEFONT COLOR=#FFFFFF>{pm.TithingPoints}</BASEFONT>", false, false);
+
+                // Shifted the toggle button right 100px
+                AddButton(510, 15, 9720, 9722, 2, GumpButtonType.Reply, 0);
             }
         }
 

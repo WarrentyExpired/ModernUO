@@ -19,5 +19,4 @@ Citizens
  - Treausre hoard pile.
 
 CentrED Stuff
- - Add Trees west of stonehollow
  - Add unspawnable tiles around dungeons
