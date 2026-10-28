@@ -15,12 +15,15 @@ namespace Server.Engines.Craft
         public CraftContext()
         {
             Items = new List<CraftItem>();
+            Queue = new List<CraftQueueOrder>();
             LastResourceIndex = -1;
             LastResourceIndex2 = -1;
             LastGroupIndex = -1;
         }
 
         public List<CraftItem> Items { get; }
+
+        public List<CraftQueueOrder> Queue { get; }
 
         public int LastResourceIndex { get; set; }
 
@@ -31,6 +34,8 @@ namespace Server.Engines.Craft
         public bool DoNotColor { get; set; }
 
         public CraftMarkOption MarkOption { get; set; }
+
+        public bool IsQueueRunning { get; set; }
 
         // T2A: last hue used for hue-aware crafting (tailoring cloth)
         public int LastHue { get; set; } = -1;
@@ -50,6 +55,22 @@ namespace Server.Engines.Craft
 
                 return null;
             }
+        }
+
+        /// <summary>
+        /// Retrieves the first uncompleted work order in the queue.
+        /// </summary>
+        public CraftQueueOrder GetActiveOrder()
+        {
+            for (int i = 0; i < Queue.Count; i++)
+            {
+                if (!Queue[i].IsFinished)
+                {
+                    return Queue[i];
+                }
+            }
+
+            return null;
         }
 
         public void OnMade(CraftItem item)

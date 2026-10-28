@@ -8,7 +8,7 @@ namespace Server.Engines.Craft;
 
 public class CraftGumpItem : DynamicGump
 {
-    private const int LabelHue = 0x480; // 0x384
+    private const int LabelHue = 0x480;
     private const int RedLabelHue = 0x20;
 
     private const int LabelColor = 0x7FFF;
@@ -79,8 +79,16 @@ public class CraftGumpItem : DynamicGump
         }
         else
         {
-            builder.AddButton(270, 387, 4005, 4007, 1);
-            builder.AddHtmlLocalized(305, 390, 150, 18, 1044151, LabelColor); // MAKE NOW
+            builder.AddButton(200, 387, 4005, 4007, 1);
+            builder.AddHtmlLocalized(235, 390, 80, 18, 1044151, LabelColor); // MAKE NOW
+
+            // --- Queue System Controls ---
+            builder.AddHtml(320, 390, 40, 18, "<BASEFONT COLOR=#FFFFFF>Qty:</BASEFONT>");
+            builder.AddImageTiled(350, 387, 40, 22, 0xBBC);
+            builder.AddTextEntry(352, 388, 36, 20, LabelHue, 1, "1");
+
+            builder.AddButton(400, 387, 4005, 4007, 2);
+            builder.AddHtml(435, 390, 80, 18, "<BASEFONT COLOR=#FFFFFF>Add Queue</BASEFONT>");
         }
 
         if (_craftItem.NameNumber > 0)
@@ -312,7 +320,7 @@ public class CraftGumpItem : DynamicGump
         {
             CraftItem.ShowCraftMenu(from, _craftSystem, _tool, null);
         }
-        else // Make Button
+        else if (info.ButtonID == 1) // Make Button
         {
             var num = _craftSystem.CanCraft(from, _tool, _craftItem.ItemType);
 
@@ -323,7 +331,6 @@ public class CraftGumpItem : DynamicGump
             else
             {
                 Type type = null;
-
                 var context = _craftSystem.GetContext(from);
 
                 if (context != null)
@@ -338,6 +345,35 @@ public class CraftGumpItem : DynamicGump
                 }
 
                 _craftSystem.CreateItem(from, _craftItem.ItemType, type, _tool, _craftItem);
+            }
+        }
+        else if (info.ButtonID == 2) // Queue Button
+        {
+            var text = info.GetTextEntry(1);
+            if (!string.IsNullOrEmpty(text) && int.TryParse(text, out int amount) && amount > 0)
+            {
+                Type type = null;
+                var context = _craftSystem.GetContext(from);
+
+                if (context != null)
+                {
+                    var res = _craftItem.UseSubRes2 ? _craftSystem.CraftSubRes2 : _craftSystem.CraftSubRes;
+                    var resIndex = _craftItem.UseSubRes2 ? context.LastResourceIndex2 : context.LastResourceIndex;
+
+                    if (resIndex > -1)
+                    {
+                        type = res.GetAt(resIndex).ItemType;
+                    }
+
+                    // Log the memory directly onto the player's clipboard
+                    context.Queue.Add(new CraftQueueOrder(_craftItem, type, amount));
+
+                    // Immediately render the side-panel queue window
+                    from.SendGump(new CraftQueueGump(from, _craftSystem, _tool));
+
+                    // Resend the details gump so they can queue additional orders
+                    from.SendGump(new CraftGumpItem(from, _craftSystem, _craftItem, _tool));
+                }
             }
         }
     }

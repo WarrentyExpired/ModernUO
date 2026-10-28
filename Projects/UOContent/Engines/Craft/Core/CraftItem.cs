@@ -1540,6 +1540,20 @@ namespace Server.Engines.Craft
 
                     from.AddToBackpack(item);
 
+                    // --- Queue System Tally (Success) ---
+                    {
+                        var queueContext = craftSystem.GetContext(from);
+                        var activeOrder = queueContext?.GetActiveOrder();
+                        if (activeOrder != null && activeOrder.Item == this)
+                        {
+                            activeOrder.AmountCompleted++;
+                            if (endquality == 2 || quality == 2)
+                            {
+                                activeOrder.AmountExceptional++;
+                            }
+                        }
+                    }
+
                     if (from.AccessLevel > AccessLevel.Player)
                     {
                         CommandLogging.WriteLine(
@@ -1547,6 +1561,10 @@ namespace Server.Engines.Craft
                             $"Crafting {CommandLogging.Format(item)} with craft system {craftSystem.GetType().Name}"
                         );
                     }
+
+                    num = craftSystem.PlayEndingEffect(from, false, true, toolBroken, endquality, false, this);
+                    ProcessPostCraft(from, craftSystem, tool, num);
+                    return;
 
                     // from.PlaySound( 0x57 );
                 }
@@ -1609,26 +1627,10 @@ namespace Server.Engines.Craft
                         )
                     );
                 }
-                else if (tool?.Deleted == false && tool.UsesRemaining > 0)
+                else
                 {
-                    if (T2ACraftSystem.Enabled)
-                    {
-                        if (num > 0)
-                        {
-                            from.SendLocalizedMessage(num);
-                        }
-                        ShowCraftMenu(from, craftSystem, tool);
-                    }
-                    else
-                    {
-                        ShowCraftMenu(from, craftSystem, tool, num);
-                    }
+                    ProcessPostCraft(from, craftSystem, tool, num);
                 }
-                else if (num > 0)
-                {
-                    from.SendLocalizedMessage(num);
-                }
-
                 return;
             }
 
@@ -1684,17 +1686,20 @@ namespace Server.Engines.Craft
                 }
             }
 
+            // --- Queue System Tally (Failure) ---
+            {
+                var queueContext = craftSystem.GetContext(from);
+                var activeOrder = queueContext?.GetActiveOrder();
+                if (activeOrder != null && activeOrder.Item == this)
+                {
+                    activeOrder.AmountFailed++;
+                }
+            }
+
             // SkillCheck failed.
             num = craftSystem.PlayEndingEffect(from, true, true, toolBroken, endquality, false, this);
 
-            if (tool?.Deleted == false && tool.UsesRemaining > 0)
-            {
-                ShowCraftMenu(from, craftSystem, tool, num);
-            }
-            else if (num > 0)
-            {
-                from.SendLocalizedMessage(num);
-            }
+            ProcessPostCraft(from, craftSystem, tool, num);
         }
 
         /// <summary>
@@ -1806,7 +1811,7 @@ namespace Server.Engines.Craft
                     item = ItemType.CreateInstance<Item>();
                 }
 
-                if (item != null)
+               if (item != null)
                 {
                     // Stamped here, not in OnCraft: most craftables do not implement ICraftable.
                     item.PlayerConstructed = true;
@@ -1822,33 +1827,23 @@ namespace Server.Engines.Craft
 
                     from.AddToBackpack(item);
 
+                    // --- Queue System Tally (Success) ---
+                    {
+                        var queueContext = craftSystem.GetContext(from);
+                        var activeOrder = queueContext?.GetActiveOrder();
+                        if (activeOrder != null && activeOrder.Item == this)
+                        {
+                            activeOrder.AmountCompleted++;
+                            if (endquality == 2 || quality == 2)
+                            {
+                                activeOrder.AmountExceptional++;
+                            }
+                        }
+                    }
+
                     num = craftSystem.PlayEndingEffect(from, false, true, toolBroken, endquality, false, this);
 
-                    if (T2ACraftSystem.Enabled)
-                    {
-                        if (tool?.Deleted == false && tool.UsesRemaining > 0)
-                        {
-                            if (num > 0)
-                            {
-                                from.SendLocalizedMessage(num);
-                            }
-
-                            ShowCraftMenu(from, craftSystem, tool);
-                        }
-                        else if (num > 0)
-                        {
-                            from.SendLocalizedMessage(num);
-                        }
-                    }
-                    else if (tool?.Deleted == false && tool.UsesRemaining > 0)
-                    {
-                        ShowCraftMenu(from, craftSystem, tool, num);
-                    }
-                    else if (num > 0)
-                    {
-                        from.SendLocalizedMessage(num);
-                    }
-
+                    ProcessPostCraft(from, craftSystem, tool, num);
                     return;
                 }
             }
@@ -1887,16 +1882,19 @@ namespace Server.Engines.Craft
                 }
             }
 
+            // --- Queue System Tally (Failure) ---
+            {
+                var queueContext = craftSystem.GetContext(from);
+                var activeOrder = queueContext?.GetActiveOrder();
+                if (activeOrder != null && activeOrder.Item == this)
+                {
+                    activeOrder.AmountFailed++;
+                }
+            }
+
             num = craftSystem.PlayEndingEffect(from, true, true, toolBroken, endquality, false, this);
 
-            if (tool?.Deleted == false && tool.UsesRemaining > 0)
-            {
-                ShowCraftMenu(from, craftSystem, tool, num);
-            }
-            else if (num > 0)
-            {
-                from.SendLocalizedMessage(num);
-            }
+            ProcessPostCraft(from, craftSystem, tool, num);
         }
 
         private class InternalTimer : Timer
@@ -2051,6 +2049,98 @@ namespace Server.Engines.Craft
             }
 
             from.SendGump(new CraftGump(from, system, tool, message));
+        }
+
+        /// <summary>
+        /// Scans the player's backpack for a valid, non-depleted tool for the specified craft system.
+        /// </summary>
+        public static BaseTool FindTool(Mobile from, CraftSystem system)
+        {
+            var pack = from.Backpack;
+            if (pack == null) return null;
+
+            foreach (var item in pack.FindItemsByType<BaseTool>())
+            {
+                if (item != null && !item.Deleted && item.UsesRemaining > 0 && item.CraftSystem == system)
+                {
+                    return item;
+                }
+            }
+
+            return null;
+        }
+        public static void ProcessPostCraft(Mobile from, CraftSystem craftSystem, BaseTool tool, TextDefinition message = null)
+        {
+            // T2A Era Override: Bypass the modern queue system entirely
+            if (T2ACraftSystem.Enabled)
+            {
+                ShowCraftMenu(from, craftSystem, tool, message);
+                return;
+            }
+
+            var context = craftSystem.GetContext(from);
+
+            // Auto-swap: If current tool broke or depleted, look for a replacement in the backpack
+            if (tool == null || tool.Deleted || tool.UsesRemaining <= 0)
+            {
+                tool = FindTool(from, craftSystem);
+            }
+
+            // If we have a valid tool
+            if (tool != null && !tool.Deleted && tool.UsesRemaining > 0)
+            {
+                if (context != null && context.Queue.Count > 0)
+                {
+                    from.SendGump(new CraftQueueGump(from, craftSystem, tool));
+                }
+
+                var activeOrder = context?.GetActiveOrder();
+
+                // ONLY kick off the next tick if the queue is explicitly set to running!
+                if (activeOrder != null && context != null && context.IsQueueRunning)
+                {
+                    activeOrder.Item.Craft(from, craftSystem, activeOrder.ResourceType, tool);
+                }
+                else
+                {
+                    // If finished or stopped, reset running state and reopen menu
+                    if (context != null)
+                    {
+                        context.IsQueueRunning = false;
+                    }
+                    ShowCraftMenu(from, craftSystem, tool, message);
+                    from.CloseGump<CraftQueueGump>();
+                    from.SendGump(new CraftQueueGump(from, craftSystem, tool));
+                }
+            }
+            else
+            {
+                if (context != null)
+                {
+                    context.IsQueueRunning = false;
+                }
+
+                // No valid tool remaining in backpack: close gumps cleanly
+                from.CloseGump<CraftQueueGump>();
+                from.CloseGump<CraftGump>();
+                from.CloseGump<CraftGumpItem>();
+
+                if (message != null)
+                {
+                    if (message.Number > 0)
+                    {
+                        from.SendLocalizedMessage(message.Number);
+                    }
+                    else if (!string.IsNullOrEmpty(message.String))
+                    {
+                        from.SendMessage(message.String);
+                    }
+                }
+                else
+                {
+                    from.SendMessage("Your tool broke and no replacement was found in your backpack.");
+                }
+            }
         }
     }
 }
