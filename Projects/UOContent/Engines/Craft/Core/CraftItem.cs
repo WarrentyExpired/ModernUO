@@ -1410,6 +1410,13 @@ namespace Server.Engines.Craft
             // Not enough resource to craft it
             if (!(consumeRes && ConsumeAttributes(from, ref checkMessage, false)))
             {
+                    // Reset the queue state and refresh the UI so the button reverts to "Start"
+                    var context = craftSystem.GetContext(from);
+                    if (context != null)
+                    {
+                        context.IsQueueRunning = false;
+                        from.SendGump(new CraftQueueGump(from, craftSystem, tool));
+                    }
                 if (tool?.Deleted == false && tool.UsesRemaining > 0)
                 {
                     ShowCraftMenu(from, craftSystem, tool, checkMessage);
@@ -1450,6 +1457,14 @@ namespace Server.Engines.Craft
                 // Not enough resource to craft it
                 if (!(consumeRes && ConsumeAttributes(from, ref message, true)))
                 {
+                    // Reset the queue state and refresh the UI so the button reverts to "Start"
+                    var context = craftSystem.GetContext(from);
+                    if (context != null)
+                    {
+                        context.IsQueueRunning = false;
+                        from.SendGump(new CraftQueueGump(from, craftSystem, tool));
+                    }
+
                     if (tool?.Deleted == false && tool.UsesRemaining > 0)
                     {
                         ShowCraftMenu(from, craftSystem, tool, message);
@@ -1652,6 +1667,13 @@ namespace Server.Engines.Craft
             // Not enough resource to craft it
             if (!ConsumeRes(from, typeRes, craftSystem, ref resHue, ref maxAmount, consumeType, ref message, true))
             {
+                    // Reset the queue state and refresh the UI so the button reverts to "Start"
+                    var context = craftSystem.GetContext(from);
+                    if (context != null)
+                    {
+                        context.IsQueueRunning = false;
+                        from.SendGump(new CraftQueueGump(from, craftSystem, tool));
+                    }
                 if (tool?.Deleted == false && tool.UsesRemaining > 0)
                 {
                     ShowCraftMenu(from, craftSystem, tool, message);
@@ -2046,6 +2068,14 @@ namespace Server.Engines.Craft
                 }
 
                 return;
+            }
+
+            var context = system.GetContext(from);
+            if (context != null && context.IsQueueRunning)
+            {
+                context.IsQueueRunning = false;
+                from.CloseGump<CraftQueueGump>();
+                from.SendGump(new CraftQueueGump(from, system, tool));
             }
 
             from.SendGump(new CraftGump(from, system, tool, message));

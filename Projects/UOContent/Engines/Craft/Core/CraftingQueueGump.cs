@@ -59,38 +59,38 @@ public class CraftQueueGump : DynamicGump
 
         builder.AddPage(0);
 
-        builder.AddBackground(0, 0, 300, 437, 5054);
-        builder.AddImageTiled(10, 10, 280, 22, 2624);
-        builder.AddAlphaRegion(10, 10, 280, 417);
+        builder.AddBackground(0, 0, 350, 437, 5054);
+        builder.AddImageTiled(10, 10, 330, 22, 2624);
+        builder.AddAlphaRegion(10, 10, 330, 417);
 
-        builder.AddHtml(10, 12, 280, 20, "<CENTER><BASEFONT COLOR=#FFCC00>Crafting Queue</BASEFONT></CENTER>");
+        builder.AddHtml(10, 12, 330, 20, "<CENTER><BASEFONT COLOR=#FFCC00>Crafting Queue</BASEFONT></CENTER>");
 
         // Bottom Action Controls
-        builder.AddButton(15, 402, 4017, 4019, 0);
-        builder.AddHtml(50, 405, 60, 18, "<BASEFONT COLOR=#FFFFFF>Close</BASEFONT>");
+        builder.AddButton(25, 402, 4017, 4019, 0);
+        builder.AddHtml(60, 405, 60, 18, "<BASEFONT COLOR=#FFFFFF>Close</BASEFONT>");
 
         // Start/Stop button
         if (context.IsQueueRunning)
         {
-            builder.AddButton(110, 402, 4005, 4007, 1);
-            builder.AddHtml(145, 405, 60, 18, "<BASEFONT COLOR=#FFFFFF>Stop</BASEFONT>");
+            builder.AddButton(140, 402, 4005, 4007, 1);
+            builder.AddHtml(175, 405, 60, 18, "<BASEFONT COLOR=#FFFFFF>Stop</BASEFONT>");
         }
         else
         {
-            builder.AddButton(110, 402, 4005, 4007, 1);
-            builder.AddHtml(145, 405, 60, 18, "<BASEFONT COLOR=#FFFFFF>Start</BASEFONT>");
+            builder.AddButton(140, 402, 4005, 4007, 1);
+            builder.AddHtml(175, 405, 60, 18, "<BASEFONT COLOR=#FFFFFF>Start</BASEFONT>");
         }
 
         // Clear queue button
-        builder.AddButton(205, 402, 4014, 4016, 2);
-        builder.AddHtml(240, 405, 60, 18, "<BASEFONT COLOR=#FFFFFF>Clear</BASEFONT>");
+        builder.AddButton(255, 402, 4014, 4016, 2);
+        builder.AddHtml(290, 405, 60, 18, "<BASEFONT COLOR=#FFFFFF>Clear</BASEFONT>");
 
         var queue = context.Queue;
 
         if (queue.Count == 0)
         {
             builder.AddPage(1);
-            builder.AddHtml(10, 50, 280, 20, "<CENTER><BASEFONT COLOR=#808080>Queue is empty.</BASEFONT></CENTER>");
+            builder.AddHtml(10, 50, 330, 20, "<CENTER><BASEFONT COLOR=#808080>Queue is empty.</BASEFONT></CENTER>");
             return;
         }
 
@@ -120,26 +120,31 @@ public class CraftQueueGump : DynamicGump
 
                     string formattedResName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(resName);
 
-                    builder.AddLabel(xPos, y, 1152, formattedResName);
+                    builder.AddLabel(xPos, y, 1270, formattedResName);
                     xPos += (formattedResName.Length * 7) + 5;
                 }
 
-                // Line 1: Localized Cliloc Name or Custom String Name
-                if (order.Item.NameNumber > 0)
+                // Line 1: Capitalized Item Name
+                string rawName = order.Item.NameString;
+
+                if (string.IsNullOrEmpty(rawName))
                 {
-                    builder.AddHtmlLocalized(xPos, y, 160, 20, order.Item.NameNumber, textColor);
+                    // Bypass the Cliloc API completely. Take the class name (e.g., "DragonBreastplate")
+                    // and insert a space between lowercase and uppercase letters to make "Dragon Breastplate".
+                    rawName = System.Text.RegularExpressions.Regex.Replace(order.Item.ItemType.Name, "([a-z])([A-Z])", "$1 $2");
                 }
-                else
-                {
-                    builder.AddLabel(xPos, y, order.IsFinished ? 0x384 : 0x480, order.Item.NameString ?? "Unknown Item");
-                }
+
+                string capitalizedItemName = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(rawName);
+
+                builder.AddLabel(xPos, y, order.IsFinished ? 0x384 : 0x480, capitalizedItemName);
+
                 // Line 2: Stats (Crafted / Exc / Fail)
                 builder.AddHtml(
                     25,
                     y + 18,
                     260,
                     20,
-                    $"<BASEFONT COLOR={statColor}>({order.AmountCompleted}/{order.AmountRequested}) | Exc: {order.AmountExceptional} | Fail: {order.AmountFailed}</BASEFONT>"
+                    $"<BASEFONT COLOR={statColor}>Crafted: {order.AmountCompleted}/{order.AmountRequested} | Exceptional: {order.AmountExceptional} | Failed: {order.AmountFailed}</BASEFONT>"
                 );
 
                 y += 46;
