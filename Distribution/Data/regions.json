@@ -292,7 +292,7 @@
   {
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
-    "Name": "another Empty House",
+    "Name": "a Bastion Empty House",
     "Parent": { "Name": "the Town of Bastion", "Map": "Veridia" },
     "Priority": 55,
     "Area": [
@@ -1731,7 +1731,7 @@
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
     "Parent": { "Name": "the Town of Myrish", "Map": "Veridia" },
-    "Name": "the Myrish Empty House",
+    "Name": "a Myrish Empty House",
     "Priority": 55,
     "Area": [
       { "x1": 1521, "y1": 2966, "x2": 1529, "y2": 2977 }
@@ -1741,7 +1741,7 @@
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
     "Parent": { "Name": "the Town of Myrish", "Map": "Veridia" },
-    "Name": "Another Empty House",
+    "Name": "another Myrish Empty House",
     "Priority": 55,
     "Area": [
       { "x1": 1531, "y1": 2988, "x2": 1540, "y2": 2996 }
@@ -2346,16 +2346,6 @@
     "$type": "GreetingBusinessRegion",
     "Map": "Veridia",
     "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
-    "Name": "the Maerid Magery Shop",
-    "Priority": 55,
-    "Area": [
-      { "x1": 3430, "y1": 3689, "x2": 3439, "y2": 3699 }
-    ]
-  },
-  {
-    "$type": "GreetingBusinessRegion",
-    "Map": "Veridia",
-    "Parent": { "Map": "Veridia", "Name": "the town of Maerid" },
     "Name": "the Maerid Fish Shop",
     "Priority": 55,
     "Area": [
@@ -2386,39 +2376,6 @@
       { "x1": 3438, "y1": 3696, "x2": 3440, "y2": 3710 },
       { "x1": 3425, "y1": 3698, "x2": 3429, "y2": 3713 },
       { "x1": 3429, "y1": 3689, "x2": 3440, "y2": 3697 }
-    ]
-  },
-  {
-    "$type": "GreetingBusinessRegion",
-    "Map": "Veridia",
-    "Parent": { "Map": "Veridia", "Name": "the Maerid Counsol of Magic" },
-    "Name": "the Maerid Magery Shop",
-    "Priority": 55,
-    "Area": [
-      { "x1": 3429, "y1": 3689, "x2": 3440, "y2": 3697 }
-    ]
-  },
-  {
-    "$type": "GreetingBusinessRegion",
-    "Map": "Veridia",
-    "Parent": { "Map": "Veridia", "Name": "the Maerid Counsol of Magic" },
-    "Name": "the Maerid Library",
-    "Priority": 55,
-    "Area": [
-      { "x1": 3429, "y1": 3697, "x2": 3437, "y2": 3713 },
-      { "x1": 3437, "y1": 3697, "x2": 3438, "y2": 3711 },
-      { "x1": 3438, "y1": 3696, "x2": 3440, "y2": 3710 },
-      { "x1": 3425, "y1": 3698, "x2": 3429, "y2": 3713 }
-    ]
-  },
-  {
-    "$type": "GreetingBusinessRegion",
-    "Map": "Veridia",
-    "Parent": { "Map": "Veridia", "Name": "the Maerid Counsol of Magic" },
-    "Name": "the Maerid Alchemy Shop",
-    "Priority": 55,
-    "Area": [
-      { "x1": 3415, "y1": 3702, "x2": 3425, "y2": 3717 }
     ]
   },
   {
