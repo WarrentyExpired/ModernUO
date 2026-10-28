@@ -1,0 +1,25 @@
+Mob Bodies
+unknown demon lord - 1071 0x42F
+Prive evil lich - 830 0x33E
+Rising colossus - 829 - 0x33D - Shame
+gargoyle guard - 755 - 0x2F3
+slasher of viels - 741 - 0x2E5
+navery night-eyes - 735 - 0x2DF - spider
+lowland boura - 715 - 0x2CB
+abyssmal invernal - 713 - 0x2C9
+hydra - 265 - 0x109
+dragon order - 198 - 0xC6
+dragon chaos - 197 - 0xC5
+succubi large - 174 - 0xAE
+
+Summon Items
+blood 0x122A
+chain 0x1A07
+lava 0x1A7E
+wrapped body 0x1C20
+book 0x1C11
+snowflake 0x232E
+stydragonhead 0x2DB4
+abyssalhorn 0x2DB7
+bone 0x318C
+

@@ -20,5 +20,7 @@ Citizens
 
 CentrED Stuff
  - Add unspawnable tiles around dungeons
-
+Dungeon Bosses
+ - Dungeon Arenas
+ - Duneon Arenas Region
 Skills

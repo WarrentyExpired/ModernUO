@@ -1,3 +1,7 @@
 Snack Pack
  - Holds food and water
  - Double click eats and drinks.
+
+Scrolls
+ - Item that raises your total skill cap by 1 up to 720
+ - Power scrolls but 1 point at a time.
