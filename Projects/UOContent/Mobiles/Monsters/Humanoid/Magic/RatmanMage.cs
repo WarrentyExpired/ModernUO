@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public RatmanMage() : base(AIType.AI_Mage)
         {
             Name = NameList.RandomName("ratman");
-            Body = 0x8F;
+            Body = 1079;
             BaseSoundID = 437;
 
             SetStr(146, 180);

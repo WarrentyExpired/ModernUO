@@ -8,7 +8,7 @@ namespace Server.Mobiles
         [Constructible]
         public ElderGazer() : base(AIType.AI_Mage)
         {
-            Body = 22;
+            Body = 1086;
             BaseSoundID = 377;
 
             SetStr(296, 325);

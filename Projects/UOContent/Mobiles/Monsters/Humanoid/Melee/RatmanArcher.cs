@@ -11,7 +11,7 @@ namespace Server.Mobiles
         public RatmanArcher() : base(AIType.AI_Archer)
         {
             Name = NameList.RandomName("ratman");
-            Body = 0x8E;
+            Body = 1078;
             BaseSoundID = 437;
 
             SetStr(146, 180);

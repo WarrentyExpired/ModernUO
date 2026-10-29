@@ -9,7 +9,7 @@ namespace Server.Mobiles
         [Constructible]
         public SkeletalMage() : base(AIType.AI_Mage)
         {
-            Body = 148;
+            Body = 1082;
             BaseSoundID = 451;
 
             SetStr(76, 100);

@@ -8,7 +8,7 @@ namespace Server.Mobiles
         [Constructible]
         public Ettin() : base(AIType.AI_Melee)
         {
-            Body = 18;
+            Body = 1075;
             BaseSoundID = 367;
 
             SetStr(136, 165);

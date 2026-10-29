@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public AncientLich() : base(AIType.AI_Mage)
         {
             Name = NameList.RandomName("ancient lich");
-            Body = 78;
+            Body = 1089;
             BaseSoundID = 412;
 
             SetStr(216, 305);

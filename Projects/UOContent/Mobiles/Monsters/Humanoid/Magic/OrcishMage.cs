@@ -10,7 +10,7 @@ namespace Server.Mobiles
         [Constructible]
         public OrcishMage() : base(AIType.AI_Mage)
         {
-            Body = 140;
+            Body = 1083;
             BaseSoundID = 0x45A;
 
             SetStr(116, 150);

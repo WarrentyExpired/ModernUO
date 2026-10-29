@@ -11,7 +11,7 @@ namespace Server.Mobiles
         [Constructible]
         public OgreLord() : base(AIType.AI_Melee)
         {
-            Body = 83;
+            Body = 1073;
             BaseSoundID = 427;
 
             SetStr(767, 945);

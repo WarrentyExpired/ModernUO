@@ -9,7 +9,7 @@ namespace Server.Mobiles
         [Constructible]
         public Corpser() : base(AIType.AI_Melee)
         {
-            Body = 8;
+            Body = 1084;
             BaseSoundID = 684;
 
             SetStr(156, 180);

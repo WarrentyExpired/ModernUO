@@ -9,7 +9,7 @@ namespace Server.Mobiles
         [Constructible]
         public Skeleton() : base(AIType.AI_Melee)
         {
-            Body = Utility.RandomList(50, 56);
+            Body = Utility.RandomList(50, 56, 1080, 1081);
             BaseSoundID = 0x48D;
 
             SetStr(56, 80);

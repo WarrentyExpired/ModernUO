@@ -9,7 +9,7 @@ namespace Server.Mobiles
         [Constructible]
         public Ogre() : base(AIType.AI_Melee)
         {
-            Body = 1;
+            Body = 1072;
             BaseSoundID = 427;
 
             SetStr(166, 195);

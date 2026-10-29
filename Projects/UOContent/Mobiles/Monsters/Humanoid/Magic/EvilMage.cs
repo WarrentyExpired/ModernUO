@@ -17,10 +17,10 @@ namespace Server.Mobiles
             }
             else
             {
-                Body = 0x190;
-                Hue = Race.Human.RandomSkinHue();
-                Utility.AssignRandomHair(this);
-                Utility.AssignRandomFacialHair(this, HairHue);
+                Body = 1087;
+                //Hue = Race.Human.RandomSkinHue();
+                //Utility.AssignRandomHair(this);
+                //Utility.AssignRandomFacialHair(this, HairHue);
             }
 
             SetStr(81, 105);
