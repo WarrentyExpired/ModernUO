@@ -7,7 +7,7 @@ namespace Server.Mobiles
     public partial class CaveToad : BaseCreature
     {
         [Constructible]
-        public CaveToad() : base(AIType.AI_Melee)
+        public CaveToad() : base(AIType.AI_Animal, FightMode.Aggressor)
         {
             Body = 80;
             BaseSoundID = 0x26B;
