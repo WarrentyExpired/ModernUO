@@ -14,8 +14,9 @@ namespace Server.Mobiles
         public WaterElemental() : base(AIType.AI_Mage)
         {
             _hasDecanter = true;
-            Body = 16;
+            Body = 1105; //16;
             BaseSoundID = 278;
+            Hue = 88;
 
             SetStr(126, 155);
             SetDex(66, 85);

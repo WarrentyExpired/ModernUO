@@ -8,7 +8,7 @@ namespace Server.Mobiles
         [Constructible]
         public AirElemental() : base(AIType.AI_Mage)
         {
-            Body = 13;
+            Body = 1106; //13;
             Hue = 0x4001;
             BaseSoundID = 655;
 

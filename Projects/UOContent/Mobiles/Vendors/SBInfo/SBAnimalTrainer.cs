@@ -18,6 +18,7 @@ namespace Server.Mobiles
                 Add(new AnimalBuyInfo(1, "a pack horse", typeof(PackHorse), 631, 10, 291, 0));
                 Add(new AnimalBuyInfo(1, "a pack llama", typeof(PackLlama), 565, 10, 292, 0));
                 Add(new AnimalBuyInfo(1, "a rabbit", typeof(Rabbit), 106, 10, 205, 0));
+                Add(new AnimalBuyInfo(1, "a clydesdale", typeof(ClydesdaleHorse), 1520, 10, 1140, 0));
 
                 if (!Core.AOS)
                 {

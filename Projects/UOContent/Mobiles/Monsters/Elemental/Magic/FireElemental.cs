@@ -9,7 +9,7 @@ namespace Server.Mobiles
         [Constructible]
         public FireElemental() : base(AIType.AI_Mage)
         {
-            Body = 15;
+            Body = 1103; //15;
             BaseSoundID = 838;
 
             SetStr(126, 155);
@@ -49,7 +49,7 @@ namespace Server.Mobiles
         public override string DefaultName => "a fire elemental";
 
         public override bool BleedImmune => true;
-        
+
         public override int TreasureMapLevel => 2;
 
         public override void GenerateLoot()

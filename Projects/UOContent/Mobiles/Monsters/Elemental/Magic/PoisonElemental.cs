@@ -9,7 +9,7 @@ namespace Server.Mobiles
         [Constructible]
         public PoisonElemental() : base(AIType.AI_Mage)
         {
-            Body = 162;
+            Body = 1105; //162;
             BaseSoundID = 263;
 
             SetStr(426, 515);

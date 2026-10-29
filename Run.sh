@@ -9,5 +9,5 @@ else
   echo "________________________________"
   echo "| Starting Server...."
   echo "--------------------------------"
-  dotnet ./Distribution/ModernUO.dll
+  dotnet publish Projects/Application/Application.csproj -c Release -r linux-x64 --self-contained=false && dotnet ./Distribution/ModernUO.dll
 fi

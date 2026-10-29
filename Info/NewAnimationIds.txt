@@ -1,0 +1,62 @@
+anim2.mul
+<ID> <Name>
+1072 Ogre - Added
+1073 Ogre Lord - Added
+1074 Ogre King
+1075 Ettin - Added
+1076 Ettin Lord
+1077 Ratman - Added
+1078 Ratman Archer - Added
+1079 Ratman Mage - Added
+1080 Skeleton - Added
+1081 Skeleton Warrior - Added
+1082 Skeletal Mage Flying -Added
+1083 Orcish Mage - Added
+1084 Corpser - Added
+1085 Large Corpser
+1086 Elder Gazer - Added
+1087 Evil Mage - Added
+1088 Evil Mage Lord - Added
+1089 Ancient Lich - Added
+1090 Shambler
+1091-1095 Balrons
+1096 Ent
+1097 Larger Ent
+1098 Ancient Ent
+1099 Dragon Turtle
+1100 Large Crab Monster Thing
+1101 Daemon Knight
+1102 Earth Elemental - Added
+1103 Fire Elemental Human - Added
+1104 Ice Elemental - Added
+1105 Poison/Blood/Acid/Water Elemental Add Hue - Added
+1106 Air Elemenatal - Added
+1107 Moss Elemental
+1108 Rock Monster Elemental?
+1109 Crystal Giant
+1110 Fire Giant
+1111 Fire God/Daemon
+1112 Ice Giant
+1113 Water Giant
+1114 Very Large Daemon
+1115 Very Large Daemon with Skull for Head
+1117 Giant Black Dragon
+1118 Giant Ice Dragon
+1119 - 1125 Different Color Wyrms
+1126 Black Knight
+1127 Exodus
+1128 Fire Lion - Added Smoldering Lion
+1129 Hell Beast
+1130 Large Winged Huminod Beast
+
+#anim5.mul
+1131 Fire Nightmare - Added Hellish Nightmare
+1132 Dark Lion - Added Dark Lion
+1133 Skeletal Lion
+1134 Fire Unicorn
+1135 Hell Steed
+1136 Griffon
+1137 Hippogriffon
+1139 Skeleton Archer - Added
+1140 - 1143 Clydesdale Horse - Added
+1144 - 1147 Clydesdale Horse with Saddles - Added

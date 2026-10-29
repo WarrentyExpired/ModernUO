@@ -9,7 +9,7 @@ namespace Server.Mobiles
         [Constructible]
         public EarthElemental() : base(AIType.AI_Melee)
         {
-            Body = 14;
+            Body = 1102; //14;
             BaseSoundID = 268;
 
             SetStr(126, 155);

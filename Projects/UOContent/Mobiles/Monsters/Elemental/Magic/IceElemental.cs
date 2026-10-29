@@ -9,7 +9,7 @@ namespace Server.Mobiles
         [Constructible]
         public IceElemental() : base(AIType.AI_Mage)
         {
-            Body = 161;
+            Body = 1104; //161;
             BaseSoundID = 268;
 
             SetStr(156, 185);

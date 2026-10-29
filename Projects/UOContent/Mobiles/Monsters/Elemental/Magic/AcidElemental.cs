@@ -9,8 +9,9 @@ namespace Server.Mobiles
         [Constructible]
         public AcidElemental() : base(AIType.AI_Mage)
         {
-            Body = 0x9E;
+            Body = 1105; //0x9E;
             BaseSoundID = 278;
+            Hue = 58;
 
             SetStr(326, 355);
             SetDex(66, 85);

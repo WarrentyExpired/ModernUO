@@ -8,8 +8,9 @@ namespace Server.Mobiles
         [Constructible]
         public BloodElemental() : base(AIType.AI_Mage)
         {
-            Body = 159;
+            Body = 1105; //159;
             BaseSoundID = 278;
+            Hue = 33;
 
             SetStr(526, 615);
             SetDex(66, 85);

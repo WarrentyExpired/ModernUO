@@ -52,7 +52,8 @@
     "homeRange": 4,
     "walkingRange": -1,
     "entries": [
-      { "name": "nightmare", "probability": 100, "maxCount": 1 }
+      { "name": "nightmare", "probability": 98, "maxCount": 1 },
+      { "name": "hellishnightmare", "probability": 2, "maxCount": 1}
     ]
   },
   {
