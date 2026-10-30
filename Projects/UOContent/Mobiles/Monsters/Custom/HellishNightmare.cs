@@ -90,17 +90,9 @@ namespace Server.Mobiles
         }
 
         public override int GetAttackSound() => 0x0AB;
-        //public override int GetAngerSound() => 0x0A9;
+        public override int GetAngerSound() => 0x16A;
         public override int GetDeathSound() => 0x0AC;
         public override int GetIdleSound() => 0x0A8;
         public override int GetHurtSound() => 0x0AA;
-        {
-            if (!Controlled)
-            {
-                return 0x16A;
-            }
-
-            return base.GetAngerSound();
-        }
     }
 }

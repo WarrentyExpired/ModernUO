@@ -15,11 +15,11 @@ namespace Server.Mobiles
             Body = 1128;
             BaseSoundID = 0x0B3;
 
-            SetStr(250, 300);
+            SetStr(170, 205);
             SetDex(100, 150);
             SetInt(50, 100);
 
-            SetHits(150, 2000);
+            SetHits(150, 200);
             SetDamage(8, 14);
 
             SetDamageType(ResistanceType.Physical, 50);

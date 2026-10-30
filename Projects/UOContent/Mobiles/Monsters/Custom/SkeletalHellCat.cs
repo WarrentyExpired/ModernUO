@@ -29,13 +29,7 @@ namespace Server.Mobiles
             SetResistance(ResistanceType.Fire, 60, 70);
             SetResistance(ResistanceType.Cold, 20, 30);
             SetResistance(ResistanceType.Poison, 10, 20);
-            SetResistance(ResistanceType.Energy, 20, 30);        public override int GetAttackSound() => 0x0B2;
-        public override int GetAngerSound() => 0x0B2
-        public override int GetDeathSound() => 0x0B6;
-        public override int GetIdleSound() => 0x0B5;
-        public override int GetHurtSound() => 0x0B4;
-
-
+            SetResistance(ResistanceType.Energy, 20, 30);
             SetSkill(SkillName.MagicResist, 50.0, 70.0);
             SetSkill(SkillName.Tactics, 65.0, 85.0);
             SetSkill(SkillName.Wrestling, 65.0, 85.0);

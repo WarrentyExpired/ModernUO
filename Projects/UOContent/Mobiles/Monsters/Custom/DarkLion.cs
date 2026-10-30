@@ -14,11 +14,11 @@ namespace Server.Mobiles
         {
 
             BaseSoundID = 0x0B3;
-            SetStr(801, 1010);
+            SetStr(601, 813);
             SetDex(171, 270);
             SetInt(301, 325);
 
-            SetHits(901, 1100);
+            SetHits(601, 900);
             SetMana(60);
 
             SetDamage(15, 25);
