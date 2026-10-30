@@ -8,6 +8,7 @@ namespace Server.Mobiles
         [Constructible]
         public AncientWyrm() : base(AIType.AI_Mage)
         {
+            Name = NameList.RandomName("ancient wyvern");
             Body = 46;
             BaseSoundID = 362;
 

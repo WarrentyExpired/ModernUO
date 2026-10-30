@@ -13,6 +13,7 @@ namespace Server.Mobiles
         public DarkLion() : base(1132, 1132, AIType.AI_Melee)
         {
 
+            BaseSoundID = 0x0B3;
             SetStr(801, 1010);
             SetDex(171, 270);
             SetInt(301, 325);
@@ -58,6 +59,11 @@ namespace Server.Mobiles
         private static MonsterAbility[] _abilities = { MonsterAbilities.BloodBathAttack };
         public override MonsterAbility[] GetMonsterAbilities() => _abilities;
 
+        public override int GetAttackSound() => 0x0B2;
+        public override int GetAngerSound() => 0x0B2;
+        public override int GetDeathSound() => 0x0B6;
+        public override int GetIdleSound() => 0x0B5;
+        public override int GetHurtSound() => 0x0B4;
 
         public override void GenerateLoot()
         {

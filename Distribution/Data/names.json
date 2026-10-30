@@ -597,5 +597,14 @@
       "Castoriel", "Celebrindal", "Chathmiru", "Davlien", "Gerrath", "Jerraintho", "Lewys", "Misran", "Nandrien", "Olonal",
       "Peorilien", "Regornolas", "Rylvarn", "Silnaliel", "Talendeor", "Uomo", "Verlolas"
     ]
+  },
+  {
+    "type": "ancient wyvern",
+    "names": [
+      "Malith", "Uira", "Larange", "Mogonth", "Coliath", "Nenith", "Cath", "Antarahi", "Ghilong", "Ngran",
+      "Marab", "Polarinth", "Emaleth", "Zilahed", "Nenith", "Halzanth", "Speth", "Meth", "Ptorahee",
+      "Naranoth", "Lauralare", "Olthonis", "Roth", "Camalanth", "Spath", "Halzanth", "Hrontr", "Takhansa",
+      "Santega", "Lant", "Weth"
+    ]
   }
 ]

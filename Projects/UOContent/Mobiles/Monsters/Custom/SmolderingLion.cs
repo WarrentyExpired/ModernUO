@@ -13,7 +13,7 @@ namespace Server.Mobiles
         public SmolderingLion() : base(AIType.AI_Melee, FightMode.Closest)
         {
             Body = 1128;
-            BaseSoundID = 0x69;
+            BaseSoundID = 0x0B3;
 
             SetStr(250, 300);
             SetDex(100, 150);
@@ -56,6 +56,11 @@ namespace Server.Mobiles
         private static MonsterAbility[] _abilities = { MonsterAbilities.FireBreath };
         public override MonsterAbility[] GetMonsterAbilities() => _abilities;
 
+        public override int GetAttackSound() => 0x0B2;
+        public override int GetAngerSound() => 0x0B2;
+        public override int GetDeathSound() => 0x0B6;
+        public override int GetIdleSound() => 0x0B5;
+        public override int GetHurtSound() => 0x0B4;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average);

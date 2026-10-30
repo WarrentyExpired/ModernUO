@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public Balron() : base(AIType.AI_Mage)
         {
             Name = NameList.RandomName("balron");
-            Body = 40;
+            Body = Utility.RandomList(1091, 1092, 1093, 1094); //40;
             BaseSoundID = 357;
 
             SetStr(986, 1185);

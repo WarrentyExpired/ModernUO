@@ -19,7 +19,7 @@ anim2.mul
 1088 Evil Mage Lord - Added
 1089 Ancient Lich - Added
 1090 Shambler
-1091-1095 Balrons
+1091-1095 Balrons - Added
 1096 Ent
 1097 Larger Ent
 1098 Ancient Ent
@@ -42,7 +42,7 @@ anim2.mul
 1115 Very Large Daemon with Skull for Head
 1117 Giant Black Dragon
 1118 Giant Ice Dragon
-1119 - 1125 Different Color Wyrms
+1119 - 1125 Different Color Wyrms - Added Ancient Wyvrens
 1126 Black Knight
 1127 Exodus
 1128 Fire Lion - Added Smoldering Lion
@@ -55,8 +55,24 @@ anim2.mul
 1133 Skeletal Lion
 1134 Fire Unicorn
 1135 Hell Steed
-1136 Griffon
-1137 Hippogriffon
+1136 Griffon - Added
+1137 Evil Griffon - Added
 1139 Skeleton Archer - Added
 1140 - 1143 Clydesdale Horse - Added
 1144 - 1147 Clydesdale Horse with Saddles - Added
+1148 Fire Unicorn
+1149 Large Moss Rock Guy
+1150 Fire Rock Elemental
+1151 - 1153 Medium Size Wyverns
+1154
+1155
+1156
+1157
+1158
+1159
+1160
+1161
+1162
+1163 Skeletal Hell Cat
+1164
+
