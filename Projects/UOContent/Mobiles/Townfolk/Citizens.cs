@@ -8,10 +8,8 @@ namespace Server.Mobiles
     [SerializationGenerator(0, false)]
     public partial class Citizen : BaseCreature
     {
-        // Unsaved variable so the timer resets naturally on server boot
         private DateTime _NextChatter;
 
-        // Add as many random rumors or phrases as you want here!
         private static readonly string[] _ChatterLines = new string[]
         {
             "Lovely weather we're having today.",
@@ -22,33 +20,108 @@ namespace Server.Mobiles
             "The guards seem on edge lately."
         };
 
+        // Add your custom titles here!
+        private static readonly string[] _FemaleTitles = new string[]
+        {
+            "the citizen", "the wanderer", "the peasant",
+            "the warrior", "the mage", "the archer"
+        };
+
+        private static readonly string[] _MaleTitles = new string[]
+        {
+            "the citizen", "the wanderer", "the peasant",
+            "the warrior", "the mage", "the archer"
+        };
+
         [Constructible]
         public Citizen() : base(AIType.AI_Animal, FightMode.None)
         {
             SetSpeed(0.2, 0.4);
-            Title = "the citizen";
             Hue = Race.Human.RandomSkinHue();
             SpeechHue = 48;
             //Blessed = true;
 
-         if (Female = Utility.RandomBool())
-        {
-            Body = 0x191;
-            Name = NameList.RandomName("female");
-            AddItem(new FancyDress(Utility.RandomDyedHue()));
-            Title = "the actress";
-        }
-        else
-        {
-            Body = 0x190;
-            Name = NameList.RandomName("male");
-            AddItem(new LongPants(Utility.RandomNeutralHue()));
-            AddItem(new FancyShirt(Utility.RandomDyedHue()));
-            Title = "the actor";
-        }
+            if (Female = Utility.RandomBool())
+            {
+                Body = 0x191;
+                Name = NameList.RandomName("female");
+                Title = _FemaleTitles[Utility.Random(_FemaleTitles.Length)];
+            }
+            else
+            {
+                Body = 0x190;
+                Name = NameList.RandomName("male");
+                Title = _MaleTitles[Utility.Random(_MaleTitles.Length)];
+            }
 
-            AddItem(new Shirt(Utility.RandomNeutralHue()));
-            AddItem(new Boots(Utility.RandomNeutralHue()));
+            switch (Title)
+            {
+                case "the citizen":
+                    if (Body == 0x191)
+                    {
+                        AddItem(new FancyDress(Utility.RandomNeutralHue()));
+                        AddItem(new FloppyHat(Utility.RandomNeutralHue()));
+                        AddItem(new Sandals());
+                    }
+                    else
+                    {
+                        AddItem(new LongPants(Utility.RandomNeutralHue()));
+                        AddItem(new FancyShirt(Utility.RandomNeutralHue()));
+                        AddItem(new Boots());
+                    }
+                    break;
+                case "the wanderer":
+                    AddItem(new QuarterStaff());
+                    AddItem(new Doublet(Utility.RandomNeutralHue()));
+                    AddItem(new LongPants(Utility.RandomNeutralHue()));
+                    AddItem(new BodySash(Utility.RandomNeutralHue()));
+                    AddItem(new WideBrimHat(Utility.RandomNeutralHue()));
+                    AddItem(new Boots());
+                    break;
+                case "the peasant":
+                    if (Body == 0x191)
+                    {
+                        AddItem(new Shirt(Utility.RandomNeutralHue()));
+                    }
+                    AddItem(new ShortPants(Utility.RandomNeutralHue()));
+                    AddItem(new SkullCap(Utility.RandomNeutralHue()));
+                    AddItem(new Sandals());
+                    break;
+                case "the warrior":
+                    AddItem(new VikingSword());
+                    AddItem(new HeaterShield());
+                    AddItem(new NorseHelm());
+                    AddItem(new PlateGloves());
+                    AddItem(new Doublet(Utility.RandomNeutralHue()));
+                    AddItem(new PlateLegs());
+                    break;
+                case "the mage":
+                    AddItem(new Spellbook());
+                    AddItem(new Robe(Utility.RandomNeutralHue()));
+                    AddItem(new WizardsHat(Utility.RandomNeutralHue()));
+                    AddItem(new Sandals());
+                    break;
+                case "the archer":
+                    AddItem(new Bow());
+                    AddItem(new FeatheredHat(Utility.RandomNeutralHue()));
+                    AddItem(new LongPants(Utility.RandomNeutralHue()));
+                    AddItem(new Shirt(Utility.RandomNeutralHue()));
+                    AddItem(new ThighBoots());
+                    AddItem(new BodySash(Utility.RandomNeutralHue()));
+                    break;
+                default:
+                    AddItem(new Shirt(Utility.RandomNeutralHue()));
+                    AddItem(new LongPants(Utility.RandomNeutralHue()));
+                    AddItem(new Shoes());
+                    break;
+            }
+
+            Utility.AssignRandomHair(this);
+
+            if (Body != 0x191)
+            {
+                Utility.AssignRandomFacialHair(this);
+            }
 
             _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(5, 15));
         }
@@ -62,7 +135,6 @@ namespace Server.Mobiles
 
             if (DateTime.UtcNow > _NextChatter)
             {
-                // Only talk if there is a player nearby to hear it (saves server CPU)
                 bool playerNearby = false;
                 foreach (Mobile m in GetMobilesInRange(8))
                 {
@@ -79,7 +151,6 @@ namespace Server.Mobiles
                     Say(line);
                 }
 
-                // Reset the timer (30 to 60 seconds between random barks)
                 _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(30, 60));
             }
         }
