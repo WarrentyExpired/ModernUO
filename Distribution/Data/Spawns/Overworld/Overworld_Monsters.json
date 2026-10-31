@@ -4562,5 +4562,155 @@
     "entries": [
       { "name": "spawnmobs", "probability": 100, "maxCount": 4 }
     ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "09620eaf-7609-4e1a-b2e3-f620edc4b690",
+    "location": [1647, 1849, 10],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "griffon", "probability": 100, "maxCount": 1 },
+      { "name": "evilgriffon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "afa3eb29-e2fa-45f8-b1a1-717a22bb9ba6",
+    "location": [650, 3185, 0],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "griffon", "probability": 100, "maxCount": 1 },
+      { "name": "evilgriffon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0e0e7bef-40a5-4535-a8d0-e359a6160476",
+    "location": [2342, 1819, 6],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "griffon", "probability": 100, "maxCount": 1 },
+      { "name": "evilgriffon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f019af8e-6098-48bb-862c-b4f065d12fa1",
+    "location": [2018, 2582, 6],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "griffon", "probability": 100, "maxCount": 1 },
+      { "name": "evilgriffon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "748839d1-bceb-49ce-846d-7e6fb0b5a7e7",
+    "location": [926, 1498, 6],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "griffon", "probability": 100, "maxCount": 1 },
+      { "name": "evilgriffon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ecf871be-c763-4e31-9ae8-77224ee51164",
+    "location": [687, 3437, 0],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "griffon", "probability": 100, "maxCount": 1 },
+      { "name": "evilgriffon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c8cddf1d-b6a8-4645-966c-03f613346298",
+    "location": [463, 3282, 2],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "griffon", "probability": 100, "maxCount": 1 },
+      { "name": "evilgriffon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fb852dfe-67e3-43c6-ae5f-2f69c2019cb9",
+    "location": [3174, 2779, 0],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "griffon", "probability": 100, "maxCount": 1 },
+      { "name": "evilgriffon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a2417cf0-6477-40a4-ab17-c4a03525e5bb",
+    "location": [398, 3474, 0],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "griffon", "probability": 100, "maxCount": 1 },
+      { "name": "evilgriffon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "07e7ed72-2631-49e8-a2cb-d7732cf32c44",
+    "location": [523, 3446, 0],
+    "map": "Veridia",
+    "count": 2,
+    "minDelay": "00:05:00",
+    "maxDelay": "00:10:00",
+    "homeRange": 50,
+    "walkingRange": 75,
+    "entries": [
+      { "name": "griffon", "probability": 100, "maxCount": 1 },
+      { "name": "evilgriffon", "probability": 100, "maxCount": 1 }
+    ]
   }
 ]

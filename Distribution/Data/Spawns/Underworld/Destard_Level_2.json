@@ -38,55 +38,27 @@
     "homeRange": 4,
     "walkingRange": -1,
     "entries": [
-      { "name": "drake", "probability": 100, "maxCount": 1 }
+      { "name": "ancientwyvern", "probability": 100, "maxCount": 1 }
     ]
   },
   {
     "$type": "Spawner",
-    "guid": "e85f86c8-d752-424f-b877-73065cebfe1b",
-    "location": [2778, 118, 0],
+    "guid": "b0204022-d28a-40f7-b3c7-b005fcbb5975",
+    "location": [2742, 89, 0],
     "map": "Underworld",
-    "count": 1,
+    "count": 2,
     "minDelay": "00:25:00",
     "maxDelay": "00:35:00",
     "homeRange": 4,
-    "walkingRange": 4,
+    "walkingRange": -1,
     "entries": [
-      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+      { "name": "wyvern", "probability": 100, "maxCount": 2 }
     ]
   },
   {
     "$type": "Spawner",
-    "guid": "6c64b184-11d7-45ee-a7ac-f503d81d2d1d",
-    "location": [2766, 131, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "evilmage", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "036675ed-d569-478d-a725-a9a8f4b514ce",
-    "location": [2769, 108, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "evilmage", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "62e511b4-9a73-40e1-bf76-ce68311cc5e2",
-    "location": [2761, 99, 0],
+    "guid": "6fdc1701-c27b-4525-89ac-a78e79be9ce2",
+    "location": [2742, 106, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -113,8 +85,8 @@
   },
   {
     "$type": "Spawner",
-    "guid": "6fdc1701-c27b-4525-89ac-a78e79be9ce2",
-    "location": [2742, 106, 0],
+    "guid": "62e511b4-9a73-40e1-bf76-ce68311cc5e2",
+    "location": [2761, 99, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -127,16 +99,44 @@
   },
   {
     "$type": "Spawner",
-    "guid": "b0204022-d28a-40f7-b3c7-b005fcbb5975",
-    "location": [2742, 89, 0],
+    "guid": "e85f86c8-d752-424f-b877-73065cebfe1b",
+    "location": [2778, 118, 0],
     "map": "Underworld",
-    "count": 2,
+    "count": 1,
     "minDelay": "00:25:00",
     "maxDelay": "00:35:00",
     "homeRange": 4,
-    "walkingRange": -1,
+    "walkingRange": 4,
     "entries": [
-      { "name": "wyvern", "probability": 100, "maxCount": 2 }
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "036675ed-d569-478d-a725-a9a8f4b514ce",
+    "location": [2769, 108, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6c64b184-11d7-45ee-a7ac-f503d81d2d1d",
+    "location": [2766, 131, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "evilmage", "probability": 100, "maxCount": 1 }
     ]
   }
 ]

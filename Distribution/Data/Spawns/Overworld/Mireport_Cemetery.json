@@ -26,7 +26,8 @@
     "spawnBounds": { "x1": 461, "y1": 1206, "z1": -128, "x2": 462, "y2": 1207, "z2": 128 },
     "walkingRange": 4,
     "entries": [
-      { "name": "zombie", "probability": 90, "maxCount": 1 },
+      { "name": "zombie", "probability": 45, "maxCount": 1 },
+      { "name": "skeletonarcher", "probablility": 45, "maxCount": 1},
       { "name": "lich", "probability": 10, "maxCount": 1 }
     ]
   },
@@ -43,7 +44,8 @@
     "entries": [
       { "name": "skeleton", "probability": 33, "maxCount": 1 },
       { "name": "wraith", "probability": 33, "maxCount": 1 },
-      { "name": "zombie", "probability": 33, "maxCount": 1 }
+      { "name": "zombie", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -59,7 +61,8 @@
     "entries": [
       { "name": "skeleton", "probability": 33, "maxCount": 1 },
       { "name": "wraith", "probability": 33, "maxCount": 1 },
-      { "name": "zombie", "probability": 33, "maxCount": 1 }
+      { "name": "zombie", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -75,7 +78,8 @@
     "entries": [
       { "name": "skeleton", "probability": 33, "maxCount": 1 },
       { "name": "wraith", "probability": 33, "maxCount": 1 },
-      { "name": "zombie", "probability": 33, "maxCount": 1 }
+      { "name": "zombie", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -91,7 +95,8 @@
     "entries": [
       { "name": "spectre", "probability": 33, "maxCount": 1 },
       { "name": "skeletalmage", "probability": 33, "maxCount": 1 },
-      { "name": "ghoul", "probability": 33, "maxCount": 1 }
+      { "name": "ghoul", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -107,7 +112,8 @@
     "entries": [
       { "name": "spectre", "probability": 33, "maxCount": 1 },
       { "name": "skeletalmage", "probability": 33, "maxCount": 1 },
-      { "name": "ghoul", "probability": 33, "maxCount": 1 }
+      { "name": "ghoul", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -122,7 +128,8 @@
     "walkingRange": 6,
     "entries": [
       { "name": "skeleton", "probability": 50, "maxCount": 1 },
-      { "name": "zombie", "probability": 50, "maxCount": 1 }
+      { "name": "zombie", "probability": 50, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -138,7 +145,8 @@
     "entries": [
       { "name": "skeleton", "probability": 33, "maxCount": 1 },
       { "name": "wraith", "probability": 33, "maxCount": 1 },
-      { "name": "zombie", "probability": 33, "maxCount": 1 }
+      { "name": "zombie", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -154,7 +162,8 @@
     "entries": [
       { "name": "skeleton", "probability": 33, "maxCount": 1 },
       { "name": "wraith", "probability": 33, "maxCount": 1 },
-      { "name": "zombie", "probability": 33, "maxCount": 1 }
+      { "name": "zombie", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -168,8 +177,9 @@
     "homeRange": 2,
     "walkingRange": 6,
     "entries": [
-      { "name": "skeleton", "probability": 50, "maxCount": 1 },
-      { "name": "zombie", "probability": 50, "maxCount": 1 }
+      { "name": "skeleton", "probability": 33, "maxCount": 1 },
+      { "name": "zombie", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probablility": 33, "maxCount": 1}
     ]
   },
   {
@@ -183,8 +193,9 @@
     "homeRange": 2,
     "walkingRange": 6,
     "entries": [
-      { "name": "skeleton", "probability": 50, "maxCount": 1 },
-      { "name": "zombie", "probability": 50, "maxCount": 1 }
+      { "name": "skeleton", "probability": 33, "maxCount": 1 },
+      { "name": "zombie", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probablility": 33, "maxCount": 1}
     ]
   },
   {
@@ -200,7 +211,8 @@
     "entries": [
       { "name": "skeleton", "probability": 33, "maxCount": 1 },
       { "name": "wraith", "probability": 33, "maxCount": 1 },
-      { "name": "zombie", "probability": 33, "maxCount": 1 }
+      { "name": "zombie", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -216,7 +228,8 @@
     "entries": [
       { "name": "skeleton", "probability": 33, "maxCount": 1 },
       { "name": "wraith", "probability": 33, "maxCount": 1 },
-      { "name": "zombie", "probability": 33, "maxCount": 1 }
+      { "name": "zombie", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -232,7 +245,8 @@
     "entries": [
       { "name": "skeleton", "probability": 33, "maxCount": 1 },
       { "name": "wraith", "probability": 33, "maxCount": 1 },
-      { "name": "zombie", "probability": 33, "maxCount": 1 }
+      { "name": "zombie", "probability": 33, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   }
 ]

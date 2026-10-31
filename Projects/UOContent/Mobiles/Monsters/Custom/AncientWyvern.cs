@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public AncientWyvern() : base(AIType.AI_Mage)
         {
             Name = NameList.RandomName("ancient wyvern");
-            Body = Utility.RandomList(1119, 1120, 1121, 1122, 1123, 1124, 1125);  //46;
+            Body = Utility.RandomList(1151, 1152, 1153);  //46;
             BaseSoundID = 362;
 
             SetStr(796, 825);
@@ -29,8 +29,8 @@ namespace Server.Mobiles
             SetResistance(ResistanceType.Poison, 100 );
             SetResistance(ResistanceType.Energy, 50, 60);
 
-            SetSkill(SkillName.EvalInt, 30.1, 40.0);
-            SetSkill(SkillName.Magery, 30.1, 40.0);
+            SetSkill(SkillName.EvalInt, 40.1, 53.0);
+            SetSkill(SkillName.Magery, 45.1, 60.0);
             SetSkill(SkillName.Meditation, 52.5, 75.0);
             SetSkill(SkillName.MagicResist, 99.1, 100.0);
             SetSkill(SkillName.Tactics, 97.6, 100.0);
@@ -71,8 +71,8 @@ namespace Server.Mobiles
             AddLoot(LootPack.Gems, 3);
         }
 
-        public override int GetIdleSound() => 0x16B;
+        public override int GetIdleSound() => 0x2D3;
 
-        public override int GetHurtSound() => 0x16D;
+        public override int GetHurtSound() => 0x2D1;
     }
 }

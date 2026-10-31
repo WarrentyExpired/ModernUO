@@ -1,729 +1,16 @@
 [
   {
     "$type": "Spawner",
-    "guid": "112e572e-8c1b-40f6-840b-9936c78b2ade",
-    "location": [2923, 59, 0],
+    "guid": "bc2fd588-060b-47f0-9270-3360f2820c56",
+    "location": [2835, 187, -41],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
     "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "a0e572ba-67d1-48d7-87fc-deff3aeba790",
-    "location": [2921, 72, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "5071358e-7acc-41fa-8234-87543e681f04",
-    "location": [2731, 179, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "3f2098ac-e246-4577-a485-5da8cfeb72eb",
-    "location": [2827, 239, -40],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "da9ca15f-dd8b-45f5-be57-895e75b8db68",
-    "location": [2809, 246, -40],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "daefe4f5-12fd-4873-8ff5-8c70dfe1948a",
-    "location": [2756, 185, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "434edf80-f004-4a30-808a-f7bdf026ff90",
-    "location": [2749, 187, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "0e0ceed9-754e-4f9f-adca-035669191604",
-    "location": [2900, 247, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "537cad5e-16dc-4f70-af51-a60fc4ca668e",
-    "location": [2901, 209, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "97afa929-62d2-446f-951e-82430485ab70",
-    "location": [2786, 198, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "6b76c54b-5203-451d-8983-0795765316bf",
-    "location": [2796, 188, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "7f06cd9d-26a9-430d-8cb5-822d08998b8b",
-    "location": [2804, 182, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "145bad43-f3ac-4f9c-92af-62c02746079e",
-    "location": [2867, 94, 13],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "3ccce6ec-4e5a-4cd6-a9be-c3f40d17306d",
-    "location": [2879, 96, 8],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "47d84f3c-319e-4708-a560-645834d2cc9d",
-    "location": [2908, 85, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "abccca81-97c1-4e85-b8d8-bbe915078204",
-    "location": [2828, 197, -31],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "spawnBounds": { "x1": 2828, "y1": 197, "z1": -128, "x2": 2829, "y2": 198, "z2": 128 },
+    "spawnBounds": { "x1": 2835, "y1": 187, "z1": -128, "x2": 2836, "y2": 188, "z2": 128 },
     "walkingRange": 5,
     "entries": [
       { "name": "waterelemental", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "3cbd4dd5-fe92-4bdd-8cba-287b42326ca2",
-    "location": [2951, 225, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": [
-      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "f4854398-6b4a-4c14-a514-daaeeff2145e",
-    "location": [2931, 238, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "010227a7-1079-4622-af6d-6aa56989413d",
-    "location": [2854, 191, -30],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "8600aae0-62fd-40f6-9125-07ee60f3341e",
-    "location": [2891, 185, -8],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "7e21ad8e-13cb-461e-b316-2e8b20ee9484",
-    "location": [2860, 170, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "b73ab7f4-027b-400d-8a12-0de38cc16131",
-    "location": [2871, 170, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "c30713b0-3f13-4392-aff2-b91c96fe9880",
-    "location": [2802, 197, -40],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "bb180b4d-d0eb-4c69-addf-c9e76ee518c5",
-    "location": [2835, 177, -40],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "4d63d42f-3456-497b-9b8b-7741b168952a",
-    "location": [2844, 240, -40],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "6c7cb12a-3dad-48d7-ae3a-80460285b3ac",
-    "location": [2845, 220, -30],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "2ed19a3d-0eef-416f-8e13-13534be705eb",
-    "location": [2859, 252, -39],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "3d201b1e-4ca4-4e2f-8ea9-b5c7f8d2899f",
-    "location": [2888, 125, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "ee339454-5a4b-4b82-bea8-192249ad04a3",
-    "location": [2798, 211, -39],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "e62558a5-348c-4aca-86a3-ac8f9cd791bc",
-    "location": [2816, 215, -39],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "194624bb-3435-4a09-a0f6-bca8ea885369",
-    "location": [2913, 242, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "0dd8c7c9-d87b-4a4b-8fb6-d5a78862729c",
-    "location": [2905, 231, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "59c17ad5-78c8-4854-a978-85555c825850",
-    "location": [2773, 222, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "9c4d8573-595b-42c7-a543-0c920c63a2bb",
-    "location": [2764, 212, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "d407397e-466a-4623-a031-fb12be84554e",
-    "location": [2760, 197, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "d4d1d31c-1ebd-4098-aed3-a3c996b3b2d9",
-    "location": [2908, 130, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "a7f754cf-ce0e-4a59-8ea6-532c48cc1780",
-    "location": [2902, 128, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "343d6cfe-0595-4678-93a0-92c905273d9f",
-    "location": [2771, 240, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "c0783806-9fbf-46ac-967b-2ebb9f20a771",
-    "location": [2785, 209, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "7130c4f5-1f2d-4621-835f-bcdcd47f15b8",
-    "location": [2887, 208, -39],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "d62e51f1-8c81-4e2a-a043-4c2181436bc0",
-    "location": [2961, 213, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "4858e08f-5b97-41ef-875a-e6454ebd7258",
-    "location": [2801, 61, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "aea0293c-e7e6-4cff-b5a2-f73319f7faf6",
-    "location": [2825, 65, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "spawnBounds": { "x1": 2825, "y1": 65, "z1": -128, "x2": 2826, "y2": 66, "z2": 128 },
-    "walkingRange": 4,
-    "entries": [
-      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "b369a6ea-2716-44d0-9e2f-7946c5131631",
-    "location": [2811, 121, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "2f884c3e-1f98-4a67-b5ff-1eafcbd5afaa",
-    "location": [2814, 107, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "b550b9f3-ec22-4daf-8ae6-61a3e0189f0e",
-    "location": [2815, 75, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "spawnBounds": { "x1": 2815, "y1": 75, "z1": -128, "x2": 2816, "y2": 76, "z2": 128 },
-    "walkingRange": 4,
-    "entries": [
-      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "fd8e3c31-9e05-4540-b634-df8333a54640",
-    "location": [2826, 90, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "dfcaf0b0-8770-4a40-b333-43251bc0a104",
-    "location": [2877, 248, -40],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "33c5d2b4-72cd-4229-9565-2c8d454e66e0",
-    "location": [2803, 230, -39],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "90ed704d-a7ff-422a-9c93-ab0aafef5e24",
-    "location": [2837, 71, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "0538d016-1257-4f0a-a00a-b7c62a99e7f2",
-    "location": [2859, 59, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
     ]
   },
   {
@@ -743,8 +30,8 @@
   },
   {
     "$type": "Spawner",
-    "guid": "7cf1d984-f741-4383-8a56-47fcc5813114",
-    "location": [2854, 131, 3],
+    "guid": "27b0b481-6ee3-41bd-a368-8429835b90ec",
+    "location": [2918, 68, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -757,8 +44,51 @@
   },
   {
     "$type": "Spawner",
-    "guid": "84e68ee4-6a6e-4b8a-8f5b-0ebda090c317",
-    "location": [2867, 130, 4],
+    "guid": "a5200bc3-91d7-4c66-8cc7-feed1d306646",
+    "location": [2871, 199, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "67dfc131-b9f7-4ea7-9133-3713102f5409",
+    "location": [2845, 267, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1a1cdcac-e319-4d44-9fcf-98f3066cc3ef",
+    "location": [2886, 233, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "16bdaa89-747a-4415-b0aa-f8a272ea7306",
+    "location": [2847, 161, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -772,22 +102,22 @@
   },
   {
     "$type": "Spawner",
-    "guid": "c2262ce3-9ee5-40b0-857a-38ca32bc1ccd",
-    "location": [2873, 85, 1],
+    "guid": "c24390a1-5460-405e-9aa0-7aaad50fe863",
+    "location": [2926, 263, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
     "maxDelay": "00:35:00",
     "homeRange": 4,
-    "walkingRange": -1,
+    "walkingRange": 4,
     "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
     ]
   },
   {
     "$type": "Spawner",
-    "guid": "100f011a-6333-422e-b24f-b5f4b0b4046d",
-    "location": [2900, 65, 0],
+    "guid": "f3c2b654-dfe2-48f6-8bfa-4c6ea9ae4aa0",
+    "location": [2916, 259, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -800,8 +130,208 @@
   },
   {
     "$type": "Spawner",
-    "guid": "90c0b2ae-a2ba-41a6-b15d-cca7d37eddde",
-    "location": [2766, 229, 0],
+    "guid": "cb8c7ecc-7cfd-4193-837a-f82805b33403",
+    "location": [2942, 215, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b5de4a0b-3752-4d05-9df1-6ae5127059a3",
+    "location": [2818, 193, -41],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "spawnBounds": { "x1": 2818, "y1": 193, "z1": -128, "x2": 2819, "y2": 194, "z2": 128 },
+    "walkingRange": 5,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6d8f509d-a1c8-4eaa-89a3-4b99a914c0d0",
+    "location": [2840, 205, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cef3e9e2-bd38-4736-b907-f47c15093c54",
+    "location": [2803, 198, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f715a673-baa8-481c-80c4-07bbe154a02c",
+    "location": [2816, 236, -28],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8d6b6474-e128-4029-b661-3b6bde918593",
+    "location": [2811, 221, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ea82dea0-1f6a-4fb2-82cb-ca21f8024008",
+    "location": [2825, 260, -41],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "aa4cc455-3b42-4dbe-8952-6ca6c73bdaa0",
+    "location": [2850, 215, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "03d5336e-c232-44c0-83e0-129d8173e9a3",
+    "location": [2923, 248, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d84040a0-ea6f-431c-80a2-aeb5f16ab23e",
+    "location": [2866, 222, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "91a8b57e-8a0b-42d2-b781-6715d6c07130",
+    "location": [2900, 121, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2e1deb1a-d56d-493b-bb82-28bf3dd5f472",
+    "location": [2846, 132, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5a2ae31a-ff65-4acb-8ea7-18eb1adde522",
+    "location": [2886, 108, -4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fe34be33-550d-4fca-b439-08c29c8c0fcc",
+    "location": [2915, 90, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bf8e54e4-ef1b-44ee-9bf5-9b3e164904e8",
+    "location": [2899, 92, 1],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -843,8 +373,67 @@
   },
   {
     "$type": "Spawner",
-    "guid": "27b0b481-6ee3-41bd-a368-8429835b90ec",
-    "location": [2918, 68, 0],
+    "guid": "90c0b2ae-a2ba-41a6-b15d-cca7d37eddde",
+    "location": [2766, 229, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "100f011a-6333-422e-b24f-b5f4b0b4046d",
+    "location": [2900, 65, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 50, "maxCount": 1 },
+      { "name": "ancientwyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c2262ce3-9ee5-40b0-857a-38ca32bc1ccd",
+    "location": [2873, 85, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "84e68ee4-6a6e-4b8a-8f5b-0ebda090c317",
+    "location": [2867, 130, 4],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0538d016-1257-4f0a-a00a-b7c62a99e7f2",
+    "location": [2859, 59, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -857,13 +446,485 @@
   },
   {
     "$type": "Spawner",
-    "guid": "bc2fd588-060b-47f0-9270-3360f2820c56",
-    "location": [2835, 187, -41],
+    "guid": "33c5d2b4-72cd-4229-9565-2c8d454e66e0",
+    "location": [2803, 230, -39],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
     "maxDelay": "00:35:00",
-    "spawnBounds": { "x1": 2835, "y1": 187, "z1": -128, "x2": 2836, "y2": 188, "z2": 128 },
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "dfcaf0b0-8770-4a40-b333-43251bc0a104",
+    "location": [2877, 248, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b550b9f3-ec22-4daf-8ae6-61a3e0189f0e",
+    "location": [2815, 75, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "spawnBounds": { "x1": 2815, "y1": 75, "z1": -128, "x2": 2816, "y2": 76, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9c4d8573-595b-42c7-a543-0c920c63a2bb",
+    "location": [2764, 212, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "fd8e3c31-9e05-4540-b634-df8333a54640",
+    "location": [2826, 90, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2f884c3e-1f98-4a67-b5ff-1eafcbd5afaa",
+    "location": [2814, 107, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b369a6ea-2716-44d0-9e2f-7946c5131631",
+    "location": [2811, 121, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c0783806-9fbf-46ac-967b-2ebb9f20a771",
+    "location": [2785, 209, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "aea0293c-e7e6-4cff-b5a2-f73319f7faf6",
+    "location": [2825, 65, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "spawnBounds": { "x1": 2825, "y1": 65, "z1": -128, "x2": 2826, "y2": 66, "z2": 128 },
+    "walkingRange": 4,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4858e08f-5b97-41ef-875a-e6454ebd7258",
+    "location": [2801, 61, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 50, "maxCount": 1 },
+      { "name": "ancientwyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "90ed704d-a7ff-422a-9c93-ab0aafef5e24",
+    "location": [2837, 71, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7130c4f5-1f2d-4621-835f-bcdcd47f15b8",
+    "location": [2887, 208, -39],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "59c17ad5-78c8-4854-a978-85555c825850",
+    "location": [2773, 222, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "343d6cfe-0595-4678-93a0-92c905273d9f",
+    "location": [2771, 240, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d4d1d31c-1ebd-4098-aed3-a3c996b3b2d9",
+    "location": [2908, 130, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ancientwyvern", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "2ed19a3d-0eef-416f-8e13-13534be705eb",
+    "location": [2859, 252, -39],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "a7f754cf-ce0e-4a59-8ea6-532c48cc1780",
+    "location": [2902, 128, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0dd8c7c9-d87b-4a4b-8fb6-d5a78862729c",
+    "location": [2905, 231, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e62558a5-348c-4aca-86a3-ac8f9cd791bc",
+    "location": [2816, 215, -39],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4d63d42f-3456-497b-9b8b-7741b168952a",
+    "location": [2844, 240, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ee339454-5a4b-4b82-bea8-192249ad04a3",
+    "location": [2798, 211, -39],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d407397e-466a-4623-a031-fb12be84554e",
+    "location": [2760, 197, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3d201b1e-4ca4-4e2f-8ea9-b5c7f8d2899f",
+    "location": [2888, 125, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "f4854398-6b4a-4c14-a514-daaeeff2145e",
+    "location": [2931, 238, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ancientwyvern", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6c7cb12a-3dad-48d7-ae3a-80460285b3ac",
+    "location": [2845, 220, -30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c30713b0-3f13-4392-aff2-b91c96fe9880",
+    "location": [2802, 197, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b73ab7f4-027b-400d-8a12-0de38cc16131",
+    "location": [2871, 170, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "d62e51f1-8c81-4e2a-a043-4c2181436bc0",
+    "location": [2961, 213, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7e21ad8e-13cb-461e-b316-2e8b20ee9484",
+    "location": [2860, 170, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "bb180b4d-d0eb-4c69-addf-c9e76ee518c5",
+    "location": [2835, 177, -40],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3cbd4dd5-fe92-4bdd-8cba-287b42326ca2",
+    "location": [2951, 225, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "8600aae0-62fd-40f6-9125-07ee60f3341e",
+    "location": [2891, 185, -8],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3ccce6ec-4e5a-4cd6-a9be-c3f40d17306d",
+    "location": [2879, 96, 8],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "abccca81-97c1-4e85-b8d8-bbe915078204",
+    "location": [2828, 197, -31],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "spawnBounds": { "x1": 2828, "y1": 197, "z1": -128, "x2": 2829, "y2": 198, "z2": 128 },
     "walkingRange": 5,
     "entries": [
       { "name": "waterelemental", "probability": 100, "maxCount": 1 }
@@ -871,97 +932,8 @@
   },
   {
     "$type": "Spawner",
-    "guid": "fe34be33-550d-4fca-b439-08c29c8c0fcc",
-    "location": [2915, 90, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "bf8e54e4-ef1b-44ee-9bf5-9b3e164904e8",
-    "location": [2899, 92, 1],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "5a2ae31a-ff65-4acb-8ea7-18eb1adde522",
-    "location": [2886, 108, -4],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": [
-      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "91a8b57e-8a0b-42d2-b781-6715d6c07130",
-    "location": [2900, 121, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "2e1deb1a-d56d-493b-bb82-28bf3dd5f472",
-    "location": [2846, 132, 1],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "16bdaa89-747a-4415-b0aa-f8a272ea7306",
-    "location": [2847, 161, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "drake", "probability": 50, "maxCount": 1 },
-      { "name": "wyvern", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "c24390a1-5460-405e-9aa0-7aaad50fe863",
-    "location": [2926, 263, 0],
+    "guid": "7f06cd9d-26a9-430d-8cb5-822d08998b8b",
+    "location": [2804, 182, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -974,8 +946,65 @@
   },
   {
     "$type": "Spawner",
-    "guid": "d84040a0-ea6f-431c-80a2-aeb5f16ab23e",
-    "location": [2866, 222, -40],
+    "guid": "145bad43-f3ac-4f9c-92af-62c02746079e",
+    "location": [2867, 94, 13],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0e0ceed9-754e-4f9f-adca-035669191604",
+    "location": [2900, 247, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "434edf80-f004-4a30-808a-f7bdf026ff90",
+    "location": [2749, 187, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "97afa929-62d2-446f-951e-82430485ab70",
+    "location": [2786, 198, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "3f2098ac-e246-4577-a485-5da8cfeb72eb",
+    "location": [2827, 239, -40],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -988,8 +1017,8 @@
   },
   {
     "$type": "Spawner",
-    "guid": "03d5336e-c232-44c0-83e0-129d8173e9a3",
-    "location": [2923, 248, 0],
+    "guid": "6b76c54b-5203-451d-8983-0795765316bf",
+    "location": [2796, 188, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -1002,8 +1031,8 @@
   },
   {
     "$type": "Spawner",
-    "guid": "aa4cc455-3b42-4dbe-8952-6ca6c73bdaa0",
-    "location": [2850, 215, -40],
+    "guid": "537cad5e-16dc-4f70-af51-a60fc4ca668e",
+    "location": [2901, 209, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -1016,78 +1045,8 @@
   },
   {
     "$type": "Spawner",
-    "guid": "ea82dea0-1f6a-4fb2-82cb-ca21f8024008",
-    "location": [2825, 260, -41],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "8d6b6474-e128-4029-b661-3b6bde918593",
-    "location": [2811, 221, -40],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "f715a673-baa8-481c-80c4-07bbe154a02c",
-    "location": [2816, 236, -28],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "cef3e9e2-bd38-4736-b907-f47c15093c54",
-    "location": [2803, 198, -40],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": [
-      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "b5de4a0b-3752-4d05-9df1-6ae5127059a3",
-    "location": [2818, 193, -41],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "spawnBounds": { "x1": 2818, "y1": 193, "z1": -128, "x2": 2819, "y2": 194, "z2": 128 },
-    "walkingRange": 5,
-    "entries": [
-      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "6d8f509d-a1c8-4eaa-89a3-4b99a914c0d0",
-    "location": [2840, 205, -40],
+    "guid": "194624bb-3435-4a09-a0f6-bca8ea885369",
+    "location": [2913, 242, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -1101,8 +1060,8 @@
   },
   {
     "$type": "Spawner",
-    "guid": "a5200bc3-91d7-4c66-8cc7-feed1d306646",
-    "location": [2871, 199, -40],
+    "guid": "5071358e-7acc-41fa-8234-87543e681f04",
+    "location": [2731, 179, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -1110,13 +1069,13 @@
     "homeRange": 4,
     "walkingRange": 4,
     "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
     ]
   },
   {
     "$type": "Spawner",
-    "guid": "cb8c7ecc-7cfd-4193-837a-f82805b33403",
-    "location": [2942, 215, 0],
+    "guid": "a0e572ba-67d1-48d7-87fc-deff3aeba790",
+    "location": [2921, 72, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -1124,13 +1083,13 @@
     "homeRange": 4,
     "walkingRange": 4,
     "entries": [
-      { "name": "waterelemental", "probability": 100, "maxCount": 1 }
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
     ]
   },
   {
     "$type": "Spawner",
-    "guid": "f3c2b654-dfe2-48f6-8bfa-4c6ea9ae4aa0",
-    "location": [2916, 259, 0],
+    "guid": "daefe4f5-12fd-4873-8ff5-8c70dfe1948a",
+    "location": [2756, 185, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -1138,36 +1097,79 @@
     "homeRange": 4,
     "walkingRange": 4,
     "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
     ]
   },
   {
     "$type": "Spawner",
-    "guid": "1a1cdcac-e319-4d44-9fcf-98f3066cc3ef",
-    "location": [2886, 233, -40],
+    "guid": "da9ca15f-dd8b-45f5-be57-895e75b8db68",
+    "location": [2809, 246, -40],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
     "maxDelay": "00:35:00",
     "homeRange": 4,
     "walkingRange": 4,
-    "entries": [
-      { "name": "dragon", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "67dfc131-b9f7-4ea7-9133-3713102f5409",
-    "location": [2845, 267, -40],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": -1,
     "entries": [
       { "name": "drake", "probability": 50, "maxCount": 1 },
       { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "112e572e-8c1b-40f6-840b-9936c78b2ade",
+    "location": [2923, 59, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "drake", "probability": 50, "maxCount": 1 },
+      { "name": "wyvern", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "47d84f3c-319e-4708-a560-645834d2cc9d",
+    "location": [2908, 85, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "010227a7-1079-4622-af6d-6aa56989413d",
+    "location": [2854, 191, -30],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "dragon", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "7cf1d984-f741-4383-8a56-47fcc5813114",
+    "location": [2854, 131, 3],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "giantserpent", "probability": 100, "maxCount": 1 }
     ]
   }
 ]

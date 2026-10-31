@@ -3,3 +3,5 @@ Smoldering Lion
 Dark Lion
 Griffon
 Evil Griffon
+SkeletalHellCat
+AncientWyvern

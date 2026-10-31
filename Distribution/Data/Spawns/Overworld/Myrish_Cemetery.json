@@ -43,7 +43,8 @@
     "walkingRange": 8,
     "entries": [
       { "name": "zombie", "probability": 50, "maxCount": 3 },
-      { "name": "skeleton", "probability": 50, "maxCount": 3 }
+      { "name": "skeleton", "probability": 50, "maxCount": 3 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -58,7 +59,8 @@
     "walkingRange": 8,
     "entries": [
       { "name": "zombie", "probability": 50, "maxCount": 2 },
-      { "name": "skeleton", "probability": 50, "maxCount": 2 }
+      { "name": "skeleton", "probability": 50, "maxCount": 2 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   },
   {
@@ -73,7 +75,8 @@
     "walkingRange": -1,
     "entries": [
       { "name": "zombie", "probability": 50, "maxCount": 3 },
-      { "name": "skeleton", "probability": 50, "maxCount": 3 }
+      { "name": "skeleton", "probability": 50, "maxCount": 3 },
+      { "name": "skeletonarcher", "probability": 20, "maxCount": 1 }
     ]
   }
 ]

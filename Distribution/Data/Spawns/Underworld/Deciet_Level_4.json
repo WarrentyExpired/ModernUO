@@ -1,8 +1,8 @@
 [
   {
     "$type": "Spawner",
-    "guid": "db09b5fd-09ba-44ff-87a2-0789b4734a12",
-    "location": [1644, 248, 0],
+    "guid": "8b2c8afd-b3f4-477d-a047-e6c327947b7a",
+    "location": [1628, 201, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -18,8 +18,22 @@
   },
   {
     "$type": "Spawner",
-    "guid": "0c8591cc-f435-4183-a216-96f6486e097a",
-    "location": [1591, 184, 0],
+    "guid": "bb2af22a-2f2e-4037-82f9-93ee37e71036",
+    "location": [1632, 200, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "silverserpent", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "e64d4aee-2724-42d0-8947-0d0117005192",
+    "location": [1586, 203, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -34,8 +48,8 @@
   },
   {
     "$type": "Spawner",
-    "guid": "5439a7e5-5e0b-4a88-a307-2145c8e33ce6",
-    "location": [1637, 280, -20],
+    "guid": "db912000-c553-4253-8fea-bc95032a38b4",
+    "location": [1635, 191, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -43,27 +57,16 @@
     "homeRange": 4,
     "walkingRange": -1,
     "entries": [
-      { "name": "ancientlich", "probability": 100, "maxCount": 1 }
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
     ]
   },
   {
     "$type": "Spawner",
-    "guid": "6e2cd898-38f7-446f-b187-060c3aa76bc9",
-    "location": [1604, 204, 6],
-    "map": "Underworld",
-    "count": 2,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 8,
-    "walkingRange": -1,
-    "entries": [
-      { "name": "fireelemental", "probability": 100, "maxCount": 2 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "96ef9622-f428-425a-94c8-61d9901df2a1",
-    "location": [1619, 226, 0],
+    "guid": "26b54394-7c4d-4438-860f-9a8518284cd8",
+    "location": [1635, 277, -20],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -75,6 +78,367 @@
       { "name": "zombie", "probability": 25, "maxCount": 1 },
       { "name": "ghoul", "probability": 25, "maxCount": 1 },
       { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0f659fe0-0d7e-4859-b9a9-9850abca1a5d",
+    "location": [1634, 211, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "lich", "probability": 33, "maxCount": 1 },
+      { "name": "boneknight", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "cf3def3b-21af-45e1-bcd6-4b04c0a333d0",
+    "location": [1659, 227, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "9fcf6946-2ca0-4dbc-ad57-6868470eaefd",
+    "location": [1611, 219, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "1f1fd451-555d-4b2c-9e7a-f2a8157d10b0",
+    "location": [1587, 203, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "6f009310-d63a-4507-9215-451d45d9aca0",
+    "location": [1635, 219, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "lich", "probability": 33, "maxCount": 1 },
+      { "name": "boneknight", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "c53237a8-5508-4291-bf56-f791e8a15fcf",
+    "location": [1612, 185, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "lich", "probability": 33, "maxCount": 1 },
+      { "name": "boneknight", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "26307f0a-d0b8-46af-8730-aa618d363539",
+    "location": [1603, 177, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0c375aa3-e99c-41ec-aa8d-773d74fb8a32",
+    "location": [1595, 219, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "lich", "probability": 33, "maxCount": 1 },
+      { "name": "boneknight", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "4f0eb290-e371-4328-a475-20125277f62a",
+    "location": [1642, 277, -20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "boneknight", "probability": 50, "maxCount": 1 },
+      { "name": "skeletalknight", "probability": 50, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0d408445-b0c8-4253-80ef-8aa924a0d856",
+    "location": [1611, 227, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "015c6043-ef66-4c94-b669-0d7ebeeae342",
+    "location": [1651, 265, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "boneknight", "probability": 50, "maxCount": 1 },
+      { "name": "skeletalknight", "probability": 50, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "62625aaa-7885-4868-b91e-0bb74f8b0547",
+    "location": [1635, 227, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "lich", "probability": 33, "maxCount": 1 },
+      { "name": "boneknight", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "897397da-102e-46a5-b6d6-2fe4ff849275",
+    "location": [1645, 265, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 },
+      { "name": "skeletonarcher", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "308afcfa-6c6f-43ac-b571-5a865571a02f",
+    "location": [1594, 177, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5327f32d-ceac-41d7-9369-8392f9ad5cbd",
+    "location": [1651, 277, -20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "daccade2-758b-4963-a873-fc2b09f2944a",
+    "location": [1651, 203, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "lich", "probability": 33, "maxCount": 1 },
+      { "name": "boneknight", "probability": 33, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "ae4812f3-5543-4c89-baa3-8da1417f4881",
+    "location": [1625, 227, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "b8ec886e-e3fe-492b-8be1-da21a1ba3a5e",
+    "location": [1642, 265, 1],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "boneknight", "probability": 50, "maxCount": 1 },
+      { "name": "skeletalknight", "probability": 50, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "df1c1344-57b5-4728-956e-b734aee870a9",
+    "location": [1612, 181, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "269da947-12f3-4654-8981-886263a9c2cf",
+    "location": [1653, 235, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5a3ffbae-3c4f-48a6-a870-17c4616d8a3b",
+    "location": [1649, 280, -20],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "ancientlich", "probability": 100, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "40daa13b-570e-4d3d-80c4-2cabe45e3733",
+    "location": [1659, 218, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
+      { "name": "lich", "probability": 33, "maxCount": 1 },
+      { "name": "boneknight", "probability": 33, "maxCount": 1 }
     ]
   },
   {
@@ -112,8 +476,25 @@
   },
   {
     "$type": "Spawner",
-    "guid": "40daa13b-570e-4d3d-80c4-2cabe45e3733",
-    "location": [1659, 218, 0],
+    "guid": "96ef9622-f428-425a-94c8-61d9901df2a1",
+    "location": [1619, 226, 0],
+    "map": "Underworld",
+    "count": 1,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 4,
+    "walkingRange": 4,
+    "entries": [
+      { "name": "bogle", "probability": 25, "maxCount": 1 },
+      { "name": "zombie", "probability": 25, "maxCount": 1 },
+      { "name": "ghoul", "probability": 25, "maxCount": 1 },
+      { "name": "wraith", "probability": 25, "maxCount": 1 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "0c8591cc-f435-4183-a216-96f6486e097a",
+    "location": [1591, 184, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
@@ -128,436 +509,42 @@
   },
   {
     "$type": "Spawner",
-    "guid": "5a3ffbae-3c4f-48a6-a870-17c4616d8a3b",
-    "location": [1649, 280, -20],
+    "guid": "6e2cd898-38f7-446f-b187-060c3aa76bc9",
+    "location": [1604, 204, 6],
+    "map": "Underworld",
+    "count": 2,
+    "minDelay": "00:25:00",
+    "maxDelay": "00:35:00",
+    "homeRange": 8,
+    "walkingRange": -1,
+    "entries": [
+      { "name": "fireelemental", "probability": 100, "maxCount": 2 }
+    ]
+  },
+  {
+    "$type": "Spawner",
+    "guid": "5439a7e5-5e0b-4a88-a307-2145c8e33ce6",
+    "location": [1637, 280, -20],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
     "maxDelay": "00:35:00",
     "homeRange": 4,
-    "walkingRange": 4,
+    "walkingRange": -1,
     "entries": [
       { "name": "ancientlich", "probability": 100, "maxCount": 1 }
     ]
   },
   {
     "$type": "Spawner",
-    "guid": "269da947-12f3-4654-8981-886263a9c2cf",
-    "location": [1653, 235, 0],
+    "guid": "db09b5fd-09ba-44ff-87a2-0789b4734a12",
+    "location": [1644, 248, 0],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",
     "maxDelay": "00:35:00",
     "homeRange": 4,
     "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "daccade2-758b-4963-a873-fc2b09f2944a",
-    "location": [1651, 203, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
-      { "name": "lich", "probability": 33, "maxCount": 1 },
-      { "name": "boneknight", "probability": 33, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "df1c1344-57b5-4728-956e-b734aee870a9",
-    "location": [1612, 181, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "308afcfa-6c6f-43ac-b571-5a865571a02f",
-    "location": [1594, 177, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "ae4812f3-5543-4c89-baa3-8da1417f4881",
-    "location": [1625, 227, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "30c2c482-6bf2-423a-84a1-9f7f94100be8",
-    "location": [1611, 219, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
-      { "name": "lich", "probability": 33, "maxCount": 1 },
-      { "name": "boneknight", "probability": 33, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "5327f32d-ceac-41d7-9369-8392f9ad5cbd",
-    "location": [1651, 277, -20],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "897397da-102e-46a5-b6d6-2fe4ff849275",
-    "location": [1645, 265, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "0d408445-b0c8-4253-80ef-8aa924a0d856",
-    "location": [1611, 227, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "b8ec886e-e3fe-492b-8be1-da21a1ba3a5e",
-    "location": [1642, 265, 1],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "boneknight", "probability": 50, "maxCount": 1 },
-      { "name": "skeletalknight", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "015c6043-ef66-4c94-b669-0d7ebeeae342",
-    "location": [1651, 265, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "boneknight", "probability": 50, "maxCount": 1 },
-      { "name": "skeletalknight", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "4f0eb290-e371-4328-a475-20125277f62a",
-    "location": [1642, 277, -20],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "boneknight", "probability": 50, "maxCount": 1 },
-      { "name": "skeletalknight", "probability": 50, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "0c375aa3-e99c-41ec-aa8d-773d74fb8a32",
-    "location": [1595, 219, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
-      { "name": "lich", "probability": 33, "maxCount": 1 },
-      { "name": "boneknight", "probability": 33, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "26307f0a-d0b8-46af-8730-aa618d363539",
-    "location": [1603, 177, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "c53237a8-5508-4291-bf56-f791e8a15fcf",
-    "location": [1612, 185, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
-      { "name": "lich", "probability": 33, "maxCount": 1 },
-      { "name": "boneknight", "probability": 33, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "1f1fd451-555d-4b2c-9e7a-f2a8157d10b0",
-    "location": [1587, 203, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "e64d4aee-2724-42d0-8947-0d0117005192",
-    "location": [1586, 203, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
-      { "name": "lich", "probability": 33, "maxCount": 1 },
-      { "name": "boneknight", "probability": 33, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "9fcf6946-2ca0-4dbc-ad57-6868470eaefd",
-    "location": [1611, 219, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "62625aaa-7885-4868-b91e-0bb74f8b0547",
-    "location": [1635, 227, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
-      { "name": "lich", "probability": 33, "maxCount": 1 },
-      { "name": "boneknight", "probability": 33, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "cf3def3b-21af-45e1-bcd6-4b04c0a333d0",
-    "location": [1659, 227, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "6f009310-d63a-4507-9215-451d45d9aca0",
-    "location": [1635, 219, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
-      { "name": "lich", "probability": 33, "maxCount": 1 },
-      { "name": "boneknight", "probability": 33, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "0f659fe0-0d7e-4859-b9a9-9850abca1a5d",
-    "location": [1634, 211, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": [
-      { "name": "fireelemental", "probability": 33, "maxCount": 1 },
-      { "name": "lich", "probability": 33, "maxCount": 1 },
-      { "name": "boneknight", "probability": 33, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "bb2af22a-2f2e-4037-82f9-93ee37e71036",
-    "location": [1632, 200, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": -1,
-    "entries": [
-      { "name": "silverserpent", "probability": 100, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "8b2c8afd-b3f4-477d-a047-e6c327947b7a",
-    "location": [1628, 201, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "26b54394-7c4d-4438-860f-9a8518284cd8",
-    "location": [1635, 277, -20],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": 4,
-    "entries": [
-      { "name": "bogle", "probability": 25, "maxCount": 1 },
-      { "name": "zombie", "probability": 25, "maxCount": 1 },
-      { "name": "ghoul", "probability": 25, "maxCount": 1 },
-      { "name": "wraith", "probability": 25, "maxCount": 1 }
-    ]
-  },
-  {
-    "$type": "Spawner",
-    "guid": "db912000-c553-4253-8fea-bc95032a38b4",
-    "location": [1635, 191, 0],
-    "map": "Underworld",
-    "count": 1,
-    "minDelay": "00:25:00",
-    "maxDelay": "00:35:00",
-    "homeRange": 4,
-    "walkingRange": -1,
     "entries": [
       { "name": "bogle", "probability": 25, "maxCount": 1 },
       { "name": "zombie", "probability": 25, "maxCount": 1 },
