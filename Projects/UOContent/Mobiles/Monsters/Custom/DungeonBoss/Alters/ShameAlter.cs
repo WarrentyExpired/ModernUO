@@ -11,7 +11,7 @@ namespace Server.Custom.Dungeons
     {
         public override Type SummonItem => typeof(PulsingBloodClot);
 
-        public override Type BossType => typeof(BloodstoneTitan);
+        public override Type BossType => typeof(CrystallineTitan);
 
         [Constructible]
         public ShameAlter() : base(0xFFBD)

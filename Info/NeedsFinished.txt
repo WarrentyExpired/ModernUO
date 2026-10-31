@@ -23,4 +23,11 @@ CentrED Stuff
 Dungeon Bosses
  - Dungeon Arenas
  - Duneon Arenas Region
+
 Skills
+
+PortalSpawners
+ - Need to spawn (regon spawner?)
+ - Need to add more mobs.
+
+Random Citizens
