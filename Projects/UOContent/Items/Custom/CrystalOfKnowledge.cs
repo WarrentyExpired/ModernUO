@@ -8,6 +8,24 @@ namespace Server.Items
     {
         private SkillName _Skill;
 
+        // The curated list of AOS skills. Delete or comment out any skills you don't want dropping!
+        private static readonly SkillName[] _ValidSkills = new SkillName[]
+        {
+            SkillName.Anatomy, SkillName.AnimalLore, SkillName.ItemID,
+            SkillName.ArmsLore, SkillName.Parry, SkillName.Begging,
+            SkillName.Peacemaking, SkillName.Camping,
+            SkillName.Cartography, SkillName.DetectHidden, SkillName.Discordance,
+            SkillName.EvalInt, SkillName.Healing, SkillName.Fishing, SkillName.Forensics,
+            SkillName.Herding, SkillName.Hiding, SkillName.Provocation,
+            SkillName.Lockpicking, SkillName.Magery, SkillName.MagicResist, SkillName.Tactics,
+            SkillName.Snooping, SkillName.Musicianship, SkillName.Poisoning, SkillName.Archery,
+            SkillName.SpiritSpeak, SkillName.Stealing, SkillName.AnimalTaming,
+            SkillName.TasteID, SkillName.Tracking, SkillName.Veterinary,
+            SkillName.Swords, SkillName.Macing, SkillName.Fencing, SkillName.Wrestling,
+            SkillName.Lumberjacking, SkillName.Mining, SkillName.Meditation, SkillName.Stealth,
+            SkillName.RemoveTrap, SkillName.Necromancy, SkillName.Focus, SkillName.Chivalry
+        };
+
         [CommandProperty(AccessLevel.GameMaster)]
         public SkillName Skill
         {
@@ -19,8 +37,9 @@ namespace Server.Items
             }
         }
 
+        // Now pulls exclusively from the _ValidSkills array
         [Constructible]
-        public CrystalOfKnowledge() : this((SkillName)Utility.Random(SkillInfo.Table.Length))
+        public CrystalOfKnowledge() : this(_ValidSkills[Utility.Random(_ValidSkills.Length)])
         {
         }
 
@@ -35,7 +54,7 @@ namespace Server.Items
 
         private void UpdateName()
         {
-            Name = $"a minor shard of {_Skill}";
+            Name = $"a crystalline shard of {_Skill}";
         }
 
         public override void OnDoubleClick(Mobile from)
@@ -67,7 +86,7 @@ namespace Server.Items
                 targetSkill.Cap = maxCap;
             }
 
-            from.SendMessage(0x501, $"The shard dissolves, permanently increasing your {_Skill} cap by 1.0!");
+            from.SendMessage(0x501, $"The crystal dissolves, permanently increasing your {_Skill} cap by 1.0!");
             from.PlaySound(0x243);
             from.FixedParticles(0x373A, 10, 15, 5012, EffectLayer.Waist);
 
@@ -78,13 +97,11 @@ namespace Server.Items
         {
         }
 
-        // --- ModernUO Manual Serialization ---
         public override void Serialize(IGenericWriter writer)
         {
             base.Serialize(writer);
-            writer.Write(0); // Version
+            writer.Write(0);
 
-            // Save the specific skill ID to the hard drive
             writer.Write((int)_Skill);
         }
 
@@ -93,7 +110,6 @@ namespace Server.Items
             base.Deserialize(reader);
             int version = reader.ReadInt();
 
-            // Load the specific skill ID back when the server boots
             _Skill = (SkillName)reader.ReadInt();
         }
     }
