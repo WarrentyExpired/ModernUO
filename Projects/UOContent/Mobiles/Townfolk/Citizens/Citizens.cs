@@ -2,6 +2,8 @@ using System;
 using Server;
 using Server.Items;
 using ModernUO.Serialization;
+using Server.Misc;
+using Server.Custom;
 
 namespace Server.Mobiles
 {
@@ -12,12 +14,29 @@ namespace Server.Mobiles
 
         private static readonly string[] _ChatterLines = new string[]
         {
+            // General
             "Lovely weather we're having today.",
-            "I heard the dungeons are more dangerous than usual...",
-            "Just another quiet day in town.",
             "I need to visit the provisioner soon.",
             "Have you seen my lost dog?",
-            "The guards seem on edge lately."
+            "The guards seem on edge lately.",
+            "Just another quiet day in town.",
+
+            // Real Dungeon
+            "I heard the {rdungeon} is more dangerous than usual...",
+            "Stay away from {rdungeon}, I lost a good friend there.",
+
+            // Real Town
+            "Did you hear the recent news from {rtown}?",
+
+            // Fake Dungeon
+            "Did you hear that {fdungeon} has been destroyed?",
+
+            // Fake Town
+            "I'm thinking of packing up and moving to {ftown}.",
+
+            // Active Dungeon of the Day
+            "I saw a huge group of adventurers heading toward {activedungeon} this morning.",
+            "They say the magical energies are shifting around {activedungeon} today."
         };
 
         // Add your custom titles here!
@@ -148,6 +167,29 @@ namespace Server.Mobiles
                 if (playerNearby)
                 {
                     string line = _ChatterLines[Utility.Random(_ChatterLines.Length)];
+
+                    if (line.Contains("{rdungeon}"))
+                        line = line.Replace("{rdungeon}", Server.Misc.RandomThings.GetRandomRealDungeon());
+
+                    if (line.Contains("{rtown}"))
+                        line = line.Replace("{rtown}", Server.Misc.RandomThings.GetRandomRealTown());
+
+                    if (line.Contains("{fdungeon}"))
+                        line = line.Replace("{fdungeon}", Server.Misc.RandomThings.GetRandomFakeDungeon());
+
+                    if (line.Contains("{ftown}"))
+                        line = line.Replace("{ftown}", Server.Misc.RandomThings.GetRandomFakeTown());
+
+                    if (line.Contains("{activedungeon}"))
+                    {
+                        string dotd = Server.Custom.DailyDungeonManager.ActiveDungeon;
+
+                        if (string.IsNullOrEmpty(dotd))
+                            dotd = "one of the local dungeons";
+
+                        line = line.Replace("{activedungeon}", dotd);
+                    }
+
                     Say(line);
                 }
 
