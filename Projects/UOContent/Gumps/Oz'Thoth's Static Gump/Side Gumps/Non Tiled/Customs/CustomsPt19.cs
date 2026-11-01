@@ -1,0 +1,63 @@
+/*
+ * Oz'Thoth's Static Tool - Custom Items Part 19 Gump
+ * Modernized for .NET 10 / ModernUO
+ */
+
+using System;
+using Server.Commands;
+
+namespace Server.Gumps.OzThoth;
+
+/// <summary>
+/// Gump for selecting custom static items (Part 19).
+/// </summary>
+public sealed class AddCustomPt19Gump : StaticItemGumpBase
+{
+    private static readonly int[] CustomItemIds =
+    [
+        42973, 42974, 42975, 42976, 42977, 42978, 42979, 42980, 42981,
+        42982, 42983, 42984, 42985, 42986, 42987, 42988, 42989, 42990,
+        42991, 42992, 42993, 42994, 42995, 42996, 42997, 42998, 42999,
+        43000, 43002, 43003, 43004, 43005, 43006, 43007, 43008, 43009,
+        43010, 43011, 43012, 43013, 43014, 43015, 43016, 43017, 43019,
+        43020, 43021, 43022, 43023, 43024, 43025, 43026, 43027, 43028,
+        43029, 43030, 43031, 43032, 43033, 43034, 43036, 43037, 43038,
+        43039, 43040, 43041, 43042, 43043, 43044, 43045, 43046, 43047,
+        43048, 43049, 43050, 43051, 43052, 43053, 43054, 43055, 43056,
+        43057, 43058, 43059, 43060, 43061, 43062, 43063, 43064, 43065,
+        43066, 43067, 43068, 43069, 43070, 43071, 43072, 43073, 43074,
+        43075, 43077, 43078, 43079, 43080, 43081, 43082, 43083, 43084,
+        43085, 43086, 43087, 43088, 43089, 43090, 43091, 43092, 43094,
+        43095, 43096, 43097, 43098, 43099, 43100, 43101, 43102, 43103,
+        43104, 43105, 43106, 43107, 43108, 43109, 43111, 43112, 43113,
+        43114, 43115, 43116, 43117, 43118, 43119, 43120, 43121, 43122,
+        43123, 43124, 43125, 43126, 43128, 43129, 43130, 43131, 43132,
+        43133, 43134, 43135, 43136, 43137, 43138, 43139, 43140, 43141,
+        43142, 43143, 43145, 43146, 43147, 43148, 43149, 43150, 43151,
+        43152, 43153, 43154, 43155, 43156, 43157, 43158, 43159, 43160,
+        43162, 43163, 43164, 43165, 43166, 43167, 43168, 43169, 43170,
+        43171, 43172, 43173, 43174, 43175, 43176, 43177, 43178, 43179,
+        43180, 43181, 43182, 43183, 43184, 43185, 43186, 43187, 43188
+    ];
+
+    protected override ReadOnlySpan<int> ItemIds => CustomItemIds;
+    protected override string CommandFormat => "{0}M Add Static {1}";
+    protected override StaticItemGumpBase CreateInstance(int page) => new AddCustomPt19Gump(page);
+
+    public static void Initialize()
+    {
+        CommandSystem.Register("AddCustomPt19", AccessLevel.GameMaster, AddCustomPt19_OnCommand);
+    }
+
+    [Usage("AddCustomPt19")]
+    [Description("Displays a menu for adding custom statics (Part 19).")]
+    private static void AddCustomPt19_OnCommand(CommandEventArgs e)
+    {
+        e.Mobile.CloseGump<AddCustomPt19Gump>();
+        e.Mobile.SendGump(new AddCustomPt19Gump());
+    }
+
+    public AddCustomPt19Gump(int page = 0) : base(page)
+    {
+    }
+}
