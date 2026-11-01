@@ -106,7 +106,9 @@ namespace Server.Gumps
             switch (info.ButtonID)
             {
                 case 1: InvokeCommand("TelGen", from); break;
-                case 2: InvokeCommand("Decorate", from); break;
+                case 2:
+                        InvokeCommand("Decorate", from); break;
+                        InvokeCommand("SignGen", from); break;
                 case 3:
                     InvokeCommand("WipeWildMobs", from);
                     InvokeCommand("IS Data/Spawns/Overworld/**.json", from);
@@ -130,6 +132,7 @@ namespace Server.Gumps
 
                     InvokeCommand("TelGen", from);
                     InvokeCommand("Decorate", from);
+                    InvokeCommand("SignGen", from);
                     InvokeCommand("IS Data/Spawns/Overworld/**.json", from);
                     InvokeCommand("IS Data/Spawns/Underworld/**.json", from);
                     InvokeCommand("IS Data/Spawns/Underworld/DungeonCrates/**.json", from);

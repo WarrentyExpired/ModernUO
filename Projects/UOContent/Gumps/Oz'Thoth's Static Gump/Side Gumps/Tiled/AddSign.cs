@@ -30,7 +30,7 @@ public sealed class AddSignStaticGump : StaticItemGumpBase
     ];
 
     protected override ReadOnlySpan<int> ItemIds => SignItemIds;
-    protected override string CommandFormat => "{0}M Add Static {1}";
+    protected override string CommandFormat => "{0}M Add Sign {1}";
     protected override StaticItemGumpBase CreateInstance(int page) => new AddSignStaticGump(page);
 
     public static void Initialize()
