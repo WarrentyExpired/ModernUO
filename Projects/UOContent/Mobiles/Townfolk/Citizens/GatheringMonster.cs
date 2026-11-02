@@ -3,7 +3,7 @@ using Server;
 
 namespace Server.Mobiles
 {
-    public class GatheringMonster : FriendlyTownMonster
+    public class GatheringMonster : MonsterCitizen
     {
         private Direction _GatherDirection;
 

@@ -50,15 +50,27 @@ namespace Server.Items
             }
             _Attendees.Clear();
 
-            Mobile east = new GatheringCitizen();
-            Mobile south = new GatheringCitizen();
-            Mobile west = new GatheringMonster();
-            Mobile north = new GatheringMonster();
+            Mobile east = RandomAttendee();
+            Mobile south = RandomAttendee();
+            Mobile west = RandomAttendee();
+            Mobile north = RandomAttendee();
 
             PlaceAndFace(east, Location.X + 3, Location.Y, Location.Z, Direction.West);
             PlaceAndFace(west, Location.X - 3, Location.Y, Location.Z, Direction.East);
             PlaceAndFace(south, Location.X, Location.Y + 3, Location.Z, Direction.North);
             PlaceAndFace(north, Location.X, Location.Y - 3, Location.Z, Direction.South);
+        }
+
+        private Mobile RandomAttendee()
+        {
+            if (Utility.RandomBool())
+            {
+                return new GatheringCitizen();
+            }
+            else
+            {
+                return new GatheringMonster();
+            }
         }
 
         private void PlaceAndFace(Mobile m, int x, int y, int z, Direction facing)

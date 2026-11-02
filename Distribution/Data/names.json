@@ -606,5 +606,11 @@
       "Naranoth", "Lauralare", "Olthonis", "Roth", "Camalanth", "Spath", "Halzanth", "Hrontr", "Takhansa",
       "Santega", "Lant", "Weth"
     ]
+  },
+  {
+    "type": "ghost",
+    "names": [
+      "Omen", "the Lost", "Aldous", "Alistair", "Eleanor", "Gideon", "the Pale"
+    ]
   }
 ]

@@ -59,7 +59,7 @@ namespace Server.Custom.CitizenSpawns
             }
         }
 
-        private static readonly Type[] Citizens = new Type[] { typeof(Citizen) };
+        private static readonly Type[] Citizens = new Type[] { typeof(Citizen), typeof(MonsterCitizen) };
 
         public static Terrain GetTerrain(Map map, Point3D location, int x, int y)
         {
