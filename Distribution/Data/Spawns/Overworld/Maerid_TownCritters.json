@@ -10,10 +10,10 @@
     "region": "the town of Maerid",
     "walkingRange": -1,
     "entries": [
-      { "name": "bird", "probability": 100, "maxCount": 30 },
-      { "name": "cat", "probability": 100, "maxCount": 5 },
-      { "name": "dog", "probability": 100, "maxCount": 5 },
-      { "name": "rat", "probability": 100, "maxCount": 10 }
+      { "name": "bird", "probability": 100, "maxCount": 20 },
+      { "name": "cat", "probability": 100, "maxCount": 3 },
+      { "name": "dog", "probability": 100, "maxCount": 3 },
+      { "name": "rat", "probability": 100, "maxCount": 8 }
     ]
   }
 ]

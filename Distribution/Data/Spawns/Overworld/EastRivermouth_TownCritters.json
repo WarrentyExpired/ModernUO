@@ -10,7 +10,7 @@
     "homeRange": 25,
     "walkingRange": 40,
     "entries": [
-      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "bird", "probability": 100, "maxCount": 5 },
       { "name": "rat", "probability": 100, "maxCount": 3 },
       { "name": "cat", "probability": 100, "maxCount": 2 },
       { "name": "dog", "probability": 100, "maxCount": 2 }
@@ -83,7 +83,7 @@
     "homeRange": 25,
     "walkingRange": 40,
     "entries": [
-      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "bird", "probability": 100, "maxCount": 5 },
       { "name": "rat", "probability": 100, "maxCount": 3 },
       { "name": "cat", "probability": 100, "maxCount": 2 },
       { "name": "dog", "probability": 100, "maxCount": 2 }

@@ -55,10 +55,10 @@ namespace Server.Items
             Mobile west = RandomAttendee();
             Mobile north = RandomAttendee();
 
-            PlaceAndFace(east, Location.X + 3, Location.Y, Location.Z, Direction.West);
-            PlaceAndFace(west, Location.X - 3, Location.Y, Location.Z, Direction.East);
-            PlaceAndFace(south, Location.X, Location.Y + 3, Location.Z, Direction.North);
-            PlaceAndFace(north, Location.X, Location.Y - 3, Location.Z, Direction.South);
+            PlaceAndFace(east, Location.X + 2, Location.Y, Location.Z, Direction.West);
+            PlaceAndFace(west, Location.X - 2, Location.Y, Location.Z, Direction.East);
+            PlaceAndFace(south, Location.X, Location.Y + 2, Location.Z, Direction.North);
+            PlaceAndFace(north, Location.X, Location.Y - 2, Location.Z, Direction.South);
         }
 
         private Mobile RandomAttendee()

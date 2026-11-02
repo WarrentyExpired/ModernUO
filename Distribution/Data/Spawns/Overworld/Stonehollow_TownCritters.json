@@ -10,7 +10,7 @@
     "homeRange": 20,
     "walkingRange": 30,
     "entries": [
-      { "name": "bird", "probability": 100, "maxCount": 10 }
+      { "name": "bird", "probability": 100, "maxCount": 5 }
     ]
   },
   {
@@ -26,7 +26,7 @@
     "entries": [
       { "name": "dog", "probability": 100, "maxCount": 2 },
       { "name": "cat", "probability": 100, "maxCount": 2 },
-      { "name": "bird", "probability": 100, "maxCount": 10 },
+      { "name": "bird", "probability": 100, "maxCount": 5 },
       { "name": "rat", "probability": 100, "maxCount": 3 }
     ]
   }

@@ -1,0 +1,198 @@
+[
+  {
+    "$type": "RegionSpawner",
+    "guid": "54be9ae3-b55c-49c6-9248-a3dea70cc8f9",
+    "location": [391, 1277, 0],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the Town of Mireport",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "179387c7-d8e4-4f4d-b6f2-2e32d6c7285c",
+    "location": [417, 1856, 1],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the Town of Teareek",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "563ff739-440c-4135-a93b-7d3c331a3bc0",
+    "location": [1560, 2942, 2],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the Town of Myrish",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "5072477b-cde7-4b1e-8e26-ad8828e9ef77",
+    "location": [1403, 1722, 0],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "East Rivermouth",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "93c54c66-91e8-48f1-a8cb-5acf1adf96ae",
+    "location": [3362, 2378, 2],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the Town of Coldbarrow",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 10 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "e811a49f-de35-4f48-ba0a-932f64443db6",
+    "location": [1199, 1723, 0],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "West Rivermouth",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "36306aec-4a73-417a-a855-c4e54baa4196",
+    "location": [756, 1224, 0],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the Town of Stonehollow",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "d87ed176-d5fd-4035-90b0-9d882a5e0399",
+    "location": [1605, 1164, 2],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the Town of Cresthaven",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "a6f83f19-d0ff-4814-8d48-4a5f9f1251d7",
+    "location": [1839, 2004, 0],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the Town of Bastion",
+    "walkingRange": -1,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "52d739d7-3621-4a68-983c-2fe82199b8e0",
+    "location": [2287, 2812, 0],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the Town of Fairwinds",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "ce30aa80-e83c-420e-8c19-62bfc8d9c6c3",
+    "location": [3500, 376, 2],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the Town of Wharf's End",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "4afbada4-1244-4d03-8f68-144122717373",
+    "location": [1808, 1388, 2],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the town of Landow",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 5 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "88f0ce94-bc20-4f2f-a44e-02e27423747d",
+    "location": [3394, 3691, 0],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the town of Maerid",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 20 }
+    ]
+  },
+  {
+    "$type": "RegionSpawner",
+    "guid": "ddf2fd00-1d69-41a7-88c8-8c1b2100c92d",
+    "location": [3004, 543, 2],
+    "map": "Veridia",
+    "count": 20,
+    "minDelay": "00:01:00",
+    "maxDelay": "00:03:00",
+    "region": "the Town of Port Grim",
+    "walkingRange": 4,
+    "entries": [
+      { "name": "spawncitizen", "probability": 100, "maxCount": 5 }
+    ]
+  }
+]
