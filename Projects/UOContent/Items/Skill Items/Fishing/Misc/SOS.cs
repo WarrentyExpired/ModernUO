@@ -10,7 +10,7 @@ public partial class SOS : Item
 {
     // We can only speculate, but I lack of support for non-ascii arguments in localized html gumps is why this wasn't used.
     // By default let's use the old gump, because we can.
-    private static bool UseNewMessages = false;
+    private static bool UseNewMessages = true;
 
     private static Rectangle2D[] BritRegions = { new(0, 0, 5120, 4096) };
 
@@ -200,18 +200,31 @@ public partial class SOS : Item
                 return;
             }
 
-            int xLong = 0, yLat = 0;
-            int xMins = 0, yMins = 0;
-            bool xEast = false, ySouth = false;
             string fmt;
 
-            if (Sextant.Format(loc, map, ref xLong, ref yLat, ref xMins, ref yMins, ref xEast, ref ySouth))
+            // Check if the player has a Sextant anywhere in their backpack
+            bool hasSextant = from.Backpack != null && from.Backpack.FindItemByType(typeof(Sextant)) != null;
+
+            if (hasSextant)
             {
-                fmt = $"{yLat}° {yMins}'{(ySouth ? "S" : "N")}, {xLong}°{xMins}'{(xEast ? "E" : "W")}";
+                // Player has a sextant: give exact X, Y coordinates
+                fmt = $"X: {loc.X}, Y: {loc.Y}";
             }
             else
             {
-                fmt = "?????";
+                // No sextant: default to the cryptic degree format
+                int xLong = 0, yLat = 0;
+                int xMins = 0, yMins = 0;
+                bool xEast = false, ySouth = false;
+
+                if (Sextant.Format(loc, map, ref xLong, ref yLat, ref xMins, ref yMins, ref xEast, ref ySouth))
+                {
+                    fmt = $"{yLat}° {yMins}'{(ySouth ? "S" : "N")}, {xLong}°{xMins}'{(xEast ? "E" : "W")}";
+                }
+                else
+                {
+                    fmt = "?????";
+                }
             }
 
             from.SendGump(new MessageGump(fmt));

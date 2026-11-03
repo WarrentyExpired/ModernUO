@@ -36,8 +36,9 @@ Command
   - [BuildWorld - Opens a new buldworld gump
   - [bandself - Applies a bandage to the player. Checks for bandages in the players pack
                 also won't reapply if a bandage is already ticking.
+  - [Bounties - Opens a gump showing your current bounty process.
 Dungeon Crates/Bags
-  - Bags are always trapped. They have level 0-3 loot
+  - Bags are always trapped. They have level 1-3 loot
   - Chests are locked and trapped. They have level 4-6 loot
 ThiefPedestals
   - Require Snooping and Stealing to take the bag. They are random level 0-6. They are trapped.
@@ -57,12 +58,39 @@ Settings.cs/ValidSettings.cs
   - There is a Settings.cs file that allows you to change some things.
   - The ValidSettings.cs sets hard limits for some of the settings.
 Bandages HoT/Healing active skill
+  - Bandages now if a small amount of hp over the druation of the bandage.
+    Doesn't cure poison. It subtracts that amount from the end total healed.
+  - Heal skill is now activatable. Instantly cure poison/bleed, but has a 15 second
+    skill timer lock.
 Bounty Board
+  - Towns now have a Bounty house, vendor, and bounty board. The board has different levels
+    of bounties depending on the players fame. Higher fame opens higher bounties.
+  - Players collect bounty coins that can be spent with the bounty vendor.
 Automount/Dismount
-Stats that are collected from creation
+  - Players are automatically dismount and remounted when they enter certian regions.
+    Dungeons and Town businesses.
+Stats that are collected from creation of the character
+  - Total gold looted
+  - Total Deaths
+  - Spendable Monster Kill points
+  - Lifetime total Monster Kill Points
 Food Changes
+  - 15+ hunger and thrirst give a small passive stat regen
+  - 5 and below a negative stat regen
 Exhaustion System
+  - Every 200 points of damage will lower your hunger/thirst by 1
 Innate weapon abilities
+  - You need at least 50 in weaponskill and tactics to unlock your first innate ability.
+  - You need at least 100 in weaponskill and tactics to unlock the second innate ability.
+  - There is a 10% chance to activate the ability with a 5 second cooldown.
+  - Each weapon class as 2 abilities. Except wreslting.
 FarmSpawner
+  - Simple farm plot spawner. Makes setting up new farm land easier.
+  - Also you only need to walk over the crop to harvest it. Drops in players backpack
 Spinningwheel/Loom Changes
-AUtoharvest Skills
+  - Spinning Wheels now process the entier stack of Cotton/Flax/Wool.
+  - Looms now process the entire stack of thread.
+Autoharvest Skills
+  - Lumberjacking/Mining/Fishing now automatically harvest. No need to click target repeat
+Fising
+  - SOS's will now display the X,Y location if the player has a sextant in thier backpack
