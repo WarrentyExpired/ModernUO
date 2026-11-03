@@ -2,7 +2,7 @@
   {
     "$type": "Spawner",
     "guid": "d1076bc7-dbc9-49bc-b7af-a47b2907faf9",
-    "location": [2505, 613, -1],
+    "location": [2506, 614, -1],
     "map": "Underworld",
     "count": 1,
     "minDelay": "00:25:00",

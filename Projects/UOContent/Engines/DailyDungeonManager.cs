@@ -163,10 +163,10 @@ namespace Server.Custom
             }
 
             string displayName = ActiveDungeon;
-            if (displayName.StartsWith("the Dungeon "))
+            /*if (displayName.StartsWith("the Dungeon "))
             {
                 displayName = displayName.Substring(12);
-            }
+            }*/
 
             m.SendMessage(1161, $"*** Dungeon of the Day: {displayName} ***");
             m.SendMessage(259, "Active Bonuses: Increased Skill gains, 50% more gold, 25% more Monster Kill  Points, and a chance for rare items!");
