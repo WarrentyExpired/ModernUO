@@ -303,6 +303,12 @@ namespace Server.Engines.Harvest
                 return false;
             }
 
+            if (tool.Parent != from)
+            {
+                from.SendMessage("You must equip this to mine ore.");
+                return false;
+            }
+
             if (from.IsBodyMod && !from.Body.IsHuman)
             {
                 from.SendLocalizedMessage(501865); // You can't mine while polymorphed.

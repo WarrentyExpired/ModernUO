@@ -519,6 +519,12 @@ namespace Server.Engines.Harvest
                 return false;
             }
 
+            if (tool.Parent != from)
+            {
+                from.SendMessage("You must equip your fishing pole to be able to catch fish.");
+                return false;
+            }
+
             if (from.Mounted)
             {
                 from.SendLocalizedMessage(500971); // You can't fish while riding!
