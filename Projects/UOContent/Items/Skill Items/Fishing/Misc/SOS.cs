@@ -12,7 +12,7 @@ public partial class SOS : Item
     // By default let's use the old gump, because we can.
     private static bool UseNewMessages = true;
 
-    private static Rectangle2D[] BritRegions = { new(0, 0, 5120, 4096) };
+    private static Rectangle2D[] BritRegions = { new(0, 0, 4275, 4095) };
 
     private static Rectangle2D[] IlshRegions =
         { new(1472, 272, 304, 240), new(1240, 1000, 312, 160) };
