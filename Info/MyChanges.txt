@@ -1,26 +1,61 @@
 Citizens
-TownGatheringspots
-Oz'Thoth Static Gump
-CrystalOfKnowlege/Fortitude
+  - Human and Monster citizens that wander around tows.
+  - They only spawn on specific tiles (dirt/gravel/stone) to keep them from spawning
+    in houses and businesses. They also spawn slower so the town fills up slowly.
+  - They also say unique things. Come false some true.
+Town Gathering Spots
+  - Same as citizens but the stand at a camp fire.
+CrystalOfKnowlege/Fortitude/Insight
+  - These act as power scrolls, but only raise skill/skill total/stat cap 1 point at a time.
 Portal Gates
+  - Gates that spawn all over the Overworld. The spawn hard monsters when you get with in a
+    set number of tiles.
+  - They despawn after 3 mins if there is not combatant near by.
 Dungeon Bosses
+  - These are bosses that need a special item to spawn them. The item can be gotten as loot
+    from certian monsters in that dungeon.
+  - They are also the only way to get the Crystals to raise skill/Cap/Stats
 New Player Dungeon
+  - Large 2 level dungeon that has weaker mobs on level 1.
+  - Skill gain is accellerated here, but skills stop gaining at 80 REAl skill.
 Crafting Queue
+  - Add items to the queue from the item crafting menu. Also add the amount to make.
+  - There is a button on the main crafting menu to open it.
 Crafting Skill Guide
+  - There is a button on the main crafting menu that will open a gump and show you what you can make
+    at your current skill level.
 Armslore changes
-[Dashboard
-[IS/[EAS
-[DOTD
-[BuildWorld
-[bandself
+  - Execption weapons now cap at 25% damage increase. Arms Lore can raise it up to 35%
+    1% for every 10 skill points.
+Command
+  - [Dashboard - Opens a dashboard that displays a lot of character stats
+  - [IS - Import Spawn "[IS Data/Spawns/Dungeon/Shame.json"
+  - [EAS - ExportAllSpawners will export all spawners on the current map to
+           Data/Spawns/Exported/<timestamp>.json
+  - [DOTD - Tells you what the current Dungeon of the Day is
+  - [BuildWorld - Opens a new buldworld gump
+  - [bandself - Applies a bandage to the player. Checks for bandages in the players pack
+                also won't reapply if a bandage is already ticking.
 Dungeon Crates/Bags
+  - Bags are always trapped. They have level 0-3 loot
+  - Chests are locked and trapped. They have level 4-6 loot
 ThiefPedestals
+  - Require Snooping and Stealing to take the bag. They are random level 0-6. They are trapped.
+    If the trap trips or the bag is taken the pedestal it spawned on goes *poof*
 Stats give some skill points
+  - Some skills get extra free points depending on your stats
 Ore and Smelting Changes
+  - Ore is only dug up with the large graphic.
+  - Smelting or now auto smelts 1 at a time with a chance to gain on each smelt
 New Dungeon Trap system
-Instrument delay 6 to 1 second
-Treasure map gump
+  - Traps now have a 2% chace to trigger with each step.
+  - Detect Hidden, Remove Traps can stop them from triggering.
+  - Dex/Int Physical Resists, Magig Resists can also prevent or lesses the damage.
+Treasure Maps
+  - Maps now have a new gump
 Settings.cs/ValidSettings.cs
+  - There is a Settings.cs file that allows you to change some things.
+  - The ValidSettings.cs sets hard limits for some of the settings.
 Bandages HoT/Healing active skill
 Bounty Board
 Automount/Dismount
