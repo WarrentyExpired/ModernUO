@@ -72,7 +72,7 @@ namespace Server.Engines.DungeonTraps
             else // Magical
             {
                 // Magic Resist check with skill gain opportunity
-                if (pm.Skills[SkillName.MagicResist].Value > 0 && pm.CheckSkill(SkillName.MagicResist, 0.0, 100.0))
+                if (pm.Skills[SkillName.MagicResist].Value > 0 && pm.CheckSkill(SkillName.MagicResist, 0.0, 120.0))
                 {
                     mitigated = true;
                 }

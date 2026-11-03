@@ -144,7 +144,7 @@ namespace Server.Custom
                 m_Tries++;
 
                 // If Snooping fails, roll RemoveTrap to see if they dodge the explosion/poison
-                if (from.CheckSkill(SkillName.RemoveTrap, 0, 125))
+                if (from.CheckSkill(SkillName.RemoveTrap, 0, 100))
                 {
                     from.SendMessage(54, "You trigger a pressure plate, but your knowledge of traps allows you to pull your hands back just in time!");
                 }

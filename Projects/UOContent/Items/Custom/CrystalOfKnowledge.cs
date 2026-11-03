@@ -11,19 +11,19 @@ namespace Server.Items
         // The curated list of AOS skills. Delete or comment out any skills you don't want dropping!
         private static readonly SkillName[] _ValidSkills = new SkillName[]
         {
-            SkillName.Anatomy, SkillName.AnimalLore, SkillName.ItemID,
-            SkillName.ArmsLore, SkillName.Parry, SkillName.Begging,
-            SkillName.Peacemaking, SkillName.Camping,
-            SkillName.Cartography, SkillName.DetectHidden, SkillName.Discordance,
-            SkillName.EvalInt, SkillName.Healing, SkillName.Fishing, SkillName.Forensics,
-            SkillName.Herding, SkillName.Hiding, SkillName.Provocation,
+            SkillName.Anatomy, SkillName.AnimalLore,
+            SkillName.Parry,
+            SkillName.Peacemaking,
+            SkillName.Discordance,
+            SkillName.EvalInt, SkillName.Healing, SkillName.Fishing,
+            SkillName.Provocation,
             SkillName.Lockpicking, SkillName.Magery, SkillName.MagicResist, SkillName.Tactics,
-            SkillName.Snooping, SkillName.Musicianship, SkillName.Poisoning, SkillName.Archery,
+            SkillName.Musicianship, SkillName.Archery,
             SkillName.SpiritSpeak, SkillName.Stealing, SkillName.AnimalTaming,
-            SkillName.TasteID, SkillName.Tracking, SkillName.Veterinary,
+            SkillName.Veterinary,
             SkillName.Swords, SkillName.Macing, SkillName.Fencing, SkillName.Wrestling,
-            SkillName.Lumberjacking, SkillName.Mining, SkillName.Meditation, SkillName.Stealth,
-            SkillName.RemoveTrap, SkillName.Necromancy, SkillName.Focus, SkillName.Chivalry
+            SkillName.Meditation, SkillName.Stealth,
+            SkillName.Necromancy, SkillName.Focus, SkillName.Chivalry
         };
 
         [CommandProperty(AccessLevel.GameMaster)]
