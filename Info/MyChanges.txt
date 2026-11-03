@@ -94,3 +94,5 @@ Autoharvest Skills
   - Lumberjacking/Mining/Fishing now automatically harvest. No need to click target repeat
 Fising
   - SOS's will now display the X,Y location if the player has a sextant in thier backpack
+Skill gains
+ - Dugeons, New Player Dungeon, and Dungeon of the Day have faster skill gain rates.
