@@ -32,7 +32,7 @@ namespace Server.Mobiles
             BaseSoundID = profile.SoundID;
             Karma = 1000;
             Fame = 1000;
-            _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 20));
+            _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(5, 15));
         }
 
         public override void OnThink()

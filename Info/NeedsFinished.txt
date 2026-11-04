@@ -13,7 +13,8 @@ Spawned Treasure Chests
    The new DungeonLootCrates fill the void for now.
 
 Citizens
- - Town citizens that have there own personalitys
+ - Need to add the Tradesmen spawn nodes to towns.
+ - Need to add more Tradesmen.
 
  Hoard Piles
  - Treausre hoard pile.

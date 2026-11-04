@@ -512,7 +512,7 @@ namespace Server.Commands
                     light.ItemID = m_ItemID;
                 }
             }
-            else if (item is TradesmanNode node)
+            else if (item is CitizenNode node)
             {
                 for (var i = 0; i < m_Params.Length; ++i)
                 {
@@ -522,8 +522,8 @@ namespace Server.Commands
 
                         if (indexOf >= 0)
                         {
-                            node.NodeType = (TradesmanNodeType)Enum.Parse(
-                                typeof(TradesmanNodeType),
+                            node.NodeType = (CitizenNodeType)Enum.Parse(
+                                typeof(CitizenNodeType),
                                 m_Params[i][++indexOf..],
                                 true
                             );
