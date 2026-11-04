@@ -512,6 +512,25 @@ namespace Server.Commands
                     light.ItemID = m_ItemID;
                 }
             }
+            else if (item is TradesmanNode node)
+            {
+                for (var i = 0; i < m_Params.Length; ++i)
+                {
+                    if (m_Params[i].StartsWithOrdinal("NodeType"))
+                    {
+                        var indexOf = m_Params[i].IndexOfOrdinal('=');
+
+                        if (indexOf >= 0)
+                        {
+                            node.NodeType = (TradesmanNodeType)Enum.Parse(
+                                typeof(TradesmanNodeType),
+                                m_Params[i][++indexOf..],
+                                true
+                            );
+                        }
+                    }
+                }
+            }
             else if (item is BaseSpawner sp)
             {
                 sp.NextSpawn = TimeSpan.Zero;
