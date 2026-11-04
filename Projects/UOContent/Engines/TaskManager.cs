@@ -6,6 +6,7 @@ using Server;
 using Server.Commands;
 using Server.Engines.Spawners;
 using Server.Items;
+using Server.Mobiles;
 
 namespace Server.Engines.Tasks;
 
@@ -31,10 +32,54 @@ public static class TaskManager
     }
 
     // ==========================================
-    // 30-MINUTE INTERVAL LOGIC (Trap Reshuffle)
+    // 30-MINUTE INTERVAL LOGIC
     // ==========================================
     public static void On30MinuteTick(Mobile from = null)
     {
+        // 1. Refresh ~33% of Tradesmen and Meeting Spots (CitizenNodes)
+        var nodes = World.Items.Values
+            .OfType<CitizenNode>()
+            .Where(n => !n.Deleted && n.Map != null && n.Map != Map.Internal)
+            .ToList();
+
+        int nodesRefreshed = 0;
+
+        if (nodes.Count > 0)
+        {
+            Utility.Shuffle(nodes);
+            int countToRefresh = Math.Max(1, nodes.Count / 3);
+
+            for (int i = 0; i < countToRefresh; i++)
+            {
+                nodes[i].RefreshNode();
+                nodesRefreshed++;
+            }
+        }
+
+        // 2. Despawn ~33% of wandering Citizens (standard spawners will naturally replace them)
+        var wanderers = World.Mobiles.Values
+            .OfType<Citizen>()
+            .Where(c => !c.Deleted && c.Map != null && c.Map != Map.Internal && !(c is GatheringCitizen))
+            .ToList();
+
+        int wanderersRemoved = 0;
+
+        if (wanderers.Count > 0)
+        {
+            Utility.Shuffle(wanderers);
+            int countToRemove = Math.Max(1, wanderers.Count / 3);
+
+            for (int i = 0; i < countToRemove; i++)
+            {
+                wanderers[i].Delete();
+                wanderersRemoved++;
+            }
+        }
+
+        if (from != null)
+        {
+            from.SendMessage($"[TaskManager 30M] Refreshed {nodesRefreshed} CitizenNode(s) and cycled {wanderersRemoved} wandering citizen(s).");
+        }
     }
 
     // ==========================================

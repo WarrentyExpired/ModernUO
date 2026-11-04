@@ -113,6 +113,12 @@ namespace Server.Items
             }
         }
 
+        public void RefreshNode()
+        {
+            ClearNode();
+            _nextRespawn = DateTime.UtcNow; // Ready to spawn fresh NPCs as soon as a player is nearby
+        }
+
         private (Point3D loc, Direction dir) GetSingleWorkerSpot()
         {
             if (Utility.RandomBool())
