@@ -43,8 +43,8 @@ namespace Server.Mobiles
 
             DressTradesman();
 
-            CantWalk = false;
-            _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 25));
+            CantWalk = true;
+            _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(5, 10));
         }
 
         public virtual void DressTradesman()
@@ -54,18 +54,36 @@ namespace Server.Mobiles
             AddItem(new Boots(Utility.RandomNeutralHue()));
         }
 
-        public override void OnMovement(Mobile m, Point3D oldLocation)
+        public override void OnThink()
         {
-            base.OnMovement(m, oldLocation);
+            base.OnThink();
 
-            if (m.Player && m.Alive && !m.Hidden && DateTime.UtcNow >= _NextChatter && InRange(m, 8))
+            if (Deleted) return;
+
+            // Check timer independently of player movement steps
+            if (DateTime.UtcNow >= _NextChatter)
             {
-                if (Utility.RandomBool())
+                bool playerNearby = false;
+                foreach (Mobile m in GetMobilesInRange(8))
                 {
-                    SayRandomChatter();
+                    if (m != null && m.Player && m.Alive && !m.Hidden)
+                    {
+                        playerNearby = true;
+                        break;
+                    }
                 }
 
-                _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(30, 60));
+                if (playerNearby)
+                {
+                    SayRandomChatter();
+                    // Set normal interval between chatter lines
+                    _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(15, 30));
+                }
+                else
+                {
+                    // Re-check every 5 seconds until a player enters range
+                    _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(5);
+                }
             }
         }
 

@@ -141,7 +141,7 @@ namespace Server.Mobiles
                 Utility.AssignRandomFacialHair(this);
             }
 
-            _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(0, 10));
+            _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 20));
         }
 
         public override void OnThink()
@@ -192,7 +192,7 @@ namespace Server.Mobiles
                     Say(line);
                 }
 
-                _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 15));
+                _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 20));
             }
         }
 

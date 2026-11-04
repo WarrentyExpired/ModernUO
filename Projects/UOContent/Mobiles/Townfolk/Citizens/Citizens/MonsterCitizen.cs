@@ -32,7 +32,7 @@ namespace Server.Mobiles
             BaseSoundID = profile.SoundID;
             Karma = 1000;
             Fame = 1000;
-            _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(5, 15));
+            _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 20));
         }
 
         public override void OnThink()
@@ -58,7 +58,7 @@ namespace Server.Mobiles
                     Say(lines[Utility.Random(lines.Length)]);
                 }
 
-                _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 15));
+                _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 20));
             }
         }
 
