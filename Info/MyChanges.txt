@@ -32,6 +32,7 @@ Command
   - [IS - Import Spawn "[IS Data/Spawns/Dungeon/Shame.json"
   - [EAS - ExportAllSpawners will export all spawners on the current map to
            Data/Spawns/Exported/<timestamp>.json
+  - [ECN - Exports all the CitizenNodes on the current map.
   - [DOTD - Tells you what the current Dungeon of the Day is
   - [BuildWorld - Opens a new buldworld gump
   - [bandself - Applies a bandage to the player. Checks for bandages in the players pack

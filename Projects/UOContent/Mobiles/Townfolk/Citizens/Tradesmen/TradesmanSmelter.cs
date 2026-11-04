@@ -25,10 +25,8 @@ namespace Server.Mobiles
             AddItem(new ShortPants(Utility.RandomNeutralHue()));
             AddItem(new Boots());
 
-            // Full apron for heat protection
             AddItem(new FullApron(Utility.RandomList(0x906, 0x8A5, 0x89A)));
 
-            // Tongs instead of a hammer
             Item hammer = new SmithHammer();
             hammer.Movable = false;
             AddItem(hammer);
@@ -68,7 +66,6 @@ namespace Server.Mobiles
                     _myForge.Smelt(this);
                 }
 
-                // Randomize the pause between smelts
                 _nextWork = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(3, 6));
             }
         }

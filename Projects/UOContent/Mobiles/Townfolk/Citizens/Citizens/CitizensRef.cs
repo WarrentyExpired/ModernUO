@@ -27,9 +27,6 @@ namespace Server.Items
 
         public void Respawn()
         {
-            // Proxy spawners do not handle their own respawns.
-            // When the monster dies, the proxy deletes itself,
-            // and the parent Master Spawner drops a new proxy.
         }
 
         public bool IsInSpawnBounds(Point3D loc)

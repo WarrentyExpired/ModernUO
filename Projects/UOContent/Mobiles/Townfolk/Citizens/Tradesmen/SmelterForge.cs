@@ -21,26 +21,21 @@ namespace Server.Items
         {
             if (from == null || from.Deleted) return;
 
-            // Snap the NPC to face the forge directly
             from.Direction = from.GetDirectionTo(Location);
 
-            // Play the blunt swing animation
             from.Animate(11, 5, 1, true, false, 0);
 
             if (_smeltedItem == null || _smeltedItem.Deleted)
             {
-                // Create Ore on the first strike
                 _smeltedItem = new Item(0x19B8);
                 _smeltedItem.Movable = false;
                 _smeltedItem.Name = "smelting ore";
 
-                // Elevate it so it sits on top of the forge
                 _smeltedItem.MoveToWorld(new Point3D(X, Y, Z + 5), Map);
                 from.PlaySound(0x2B); // Metal clink
             }
             else
             {
-                // Toggle between Ore and Ingots
                 if (_smeltedItem.ItemID == 0x19B8)
                 {
                     _smeltedItem.ItemID = 0x1BF3;
@@ -56,7 +51,6 @@ namespace Server.Items
             }
         }
 
-        // Cleanup: If a GM deletes the forge, delete the visual ore
         public override void OnDelete()
         {
             if (_smeltedItem != null && !_smeltedItem.Deleted)
@@ -66,7 +60,6 @@ namespace Server.Items
             base.OnDelete();
         }
 
-        // QoL: If a GM moves the forge, bring the visual ore with it
         public override void OnLocationChange(Point3D oldLocation)
         {
             base.OnLocationChange(oldLocation);

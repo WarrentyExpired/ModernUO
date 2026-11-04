@@ -39,7 +39,6 @@ namespace Server.Mobiles
             "They say the magical energies are shifting around {activedungeon} today."
         };
 
-        // Add your custom titles here!
         private static readonly string[] _FemaleTitles = new string[]
         {
             "the citizen", "the wanderer", "the peasant",
@@ -55,7 +54,7 @@ namespace Server.Mobiles
         [Constructible]
         public Citizen() : base(AIType.AI_Animal, FightMode.None)
         {
-            SetSpeed(0.2, 0.4);
+            //SetSpeed(0.2, 0.4);
             Hue = Race.Human.RandomSkinHue();
             SpeechHue = 48;
             //Blessed = true;
@@ -142,7 +141,7 @@ namespace Server.Mobiles
                 Utility.AssignRandomFacialHair(this);
             }
 
-            _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(5, 15));
+            _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(0, 10));
         }
 
         public override void OnThink()
@@ -193,7 +192,7 @@ namespace Server.Mobiles
                     Say(line);
                 }
 
-                _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(30, 60));
+                _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 15));
             }
         }
 

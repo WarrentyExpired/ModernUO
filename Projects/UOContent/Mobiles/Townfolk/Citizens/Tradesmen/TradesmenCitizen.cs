@@ -43,7 +43,7 @@ namespace Server.Mobiles
 
             DressTradesman();
 
-            CantWalk = false; // Allow them to wander
+            CantWalk = false;
             _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 25));
         }
 

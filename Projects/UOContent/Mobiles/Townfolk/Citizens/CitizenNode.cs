@@ -8,6 +8,7 @@ namespace Server.Items
 {
     public enum CitizenNodeType
     {
+        Butcher,
         Smith,
         Smelter,
         MeetingSpot
@@ -98,6 +99,11 @@ namespace Server.Items
                 case CitizenNodeType.MeetingSpot:
                     _workstation = new CampfireHit();
                     SpawnMeetingSpotCitizens();
+                    break;
+                case CitizenNodeType.Butcher:
+                    var butcherMeat = new ButcherHit();
+                    _workstation = butcherMeat;
+                    AddWorker(new TradesmanButcher(), butcherMeat.GetWorkerPlacement(Location));
                     break;
             }
 

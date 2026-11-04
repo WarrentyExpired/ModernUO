@@ -54,16 +54,14 @@ namespace Server.Mobiles
 
                 if (playerNearby)
                 {
-                    // Fetch the correct lines based on their current body type
                     string[] lines = GetChatterLines();
                     Say(lines[Utility.Random(lines.Length)]);
                 }
 
-                _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(30, 60));
+                _NextChatter = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 15));
             }
         }
 
-        // --- NEW: Helper method to organize dialogue by body ID ---
         private string[] GetChatterLines()
         {
             switch ((int)Body)
