@@ -77,9 +77,11 @@ namespace Server.Gumps
             AddLabel(55, y, 1152, "Generate Dungeon Stuff (Json)");
             y += 30;
 
+            /*
             AddButton(20, y, 4005, 4007, 5, GumpButtonType.Reply, 0);
             AddLabel(55, y, 1152, "Wipe Wild Creatures (Cleanup)");
             y += 30;
+            */
 
             AddLabel(20, y, 33, "--- Danger Zone ---");
             y += 30;
@@ -110,7 +112,7 @@ namespace Server.Gumps
                         InvokeCommand("Decorate", from); break;
                         InvokeCommand("SignGen", from); break;
                 case 3:
-                    InvokeCommand("WipeWildMobs", from);
+                    //InvokeCommand("WipeWildMobs", from);
                     InvokeCommand("IS Data/Spawns/Overworld/**.json", from);
                     InvokeCommand("IS Data/Spawns/Underworld/**.json", from);
                     break;
@@ -118,7 +120,7 @@ namespace Server.Gumps
                     InvokeCommand("IS Data/Spawns/Underworld/DungeonCrates/**.json", from);
                     InvokeCommand("IS Data/Spawns/Underworld/Pedestals/**.json", from);
                     break;
-                case 5: InvokeCommand("WipeWildMobs", from); break;
+                //case 5: InvokeCommand("WipeWildMobs", from); break;
 
                 case 7:
                     InvokeCommand("ClearAll", from);
@@ -128,7 +130,7 @@ namespace Server.Gumps
                     from.SendMessage(0x3F, "Starting full world population...");
 
                     // Surgically remove orphaned proxy spawns without wiping player data
-                    InvokeCommand("WipeWildMobs", from);
+                    //InvokeCommand("WipeWildMobs", from);
 
                     InvokeCommand("TelGen", from);
                     InvokeCommand("Decorate", from);
