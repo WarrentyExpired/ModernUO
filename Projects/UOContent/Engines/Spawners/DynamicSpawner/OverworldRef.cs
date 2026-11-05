@@ -27,9 +27,30 @@ namespace Server.Items
 
         public void Respawn()
         {
-            // Proxy spawners do not handle their own respawns.
-            // When the monster dies, the proxy deletes itself,
-            // and the parent Master Spawner drops a new proxy.
+            // Store and clear reference first to avoid deletion loop
+            Mobile m = _trackedMobile;
+            _trackedMobile = null;
+
+            if (m != null && !m.Deleted)
+            {
+                m.Delete();
+            }
+
+            ExecuteSpawn();
+        }
+
+        public override void OnDelete()
+        {
+            // Store and clear reference first to avoid deletion loop
+            Mobile m = _trackedMobile;
+            _trackedMobile = null;
+
+            if (m != null && !m.Deleted)
+            {
+                m.Delete();
+            }
+
+            base.OnDelete();
         }
 
         public bool IsInSpawnBounds(Point3D loc)
@@ -39,8 +60,12 @@ namespace Server.Items
 
         public void Remove(ISpawnable spawn)
         {
+            _trackedMobile = null;
+
             if (!Deleted)
+            {
                 Delete();
+            }
         }
 
         public BaseProxySpawner() : base(0x6519)
@@ -99,6 +124,14 @@ namespace Server.Items
             {
                 Delete();
                 return;
+            }
+
+            // Clean up existing mobile safely if one exists
+            Mobile existing = _trackedMobile;
+            _trackedMobile = null;
+            if (existing != null && !existing.Deleted)
+            {
+                existing.Delete();
             }
 
             _trackedMobile = SpawnList.RandomSpawn(this, savedLocation, savedMap);
