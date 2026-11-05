@@ -19,9 +19,9 @@ namespace Server.Mobiles
             {
                 if (Core.ML)
                 {
-                    Add(new GenericBuyInfo("1079931", typeof(SalvageBag), 1255, 20, 0xE76, Utility.RandomBlueHue()));
                 }
 
+                Add(new GenericBuyInfo("1079931", typeof(SalvageBag), 1255, 20, 0xE76, Utility.RandomBlueHue()));
                 Add(new GenericBuyInfo("1060834", typeof(PlantBowl), 2, 20, 0x15FD, 0));
 
                 Add(new GenericBuyInfo(typeof(Arrow), 2, 20, 0xF3F, 0));

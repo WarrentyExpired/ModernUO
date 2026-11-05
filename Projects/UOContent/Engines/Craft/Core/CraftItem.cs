@@ -1552,8 +1552,15 @@ namespace Server.Engines.Craft
                             item.Amount = maxAmount;
                         }
                     }
-
-                    from.AddToBackpack(item);
+                     Item salvageBag = from.Backpack.FindItemByType(typeof(Server.Items.SalvageBag));
+                    if (salvageBag is Container salvageContainer && !salvageContainer.Deleted)
+                    {
+                        salvageContainer.DropItem(item);
+                    }
+                    else
+                    {
+                        from.AddToBackpack(item);
+                    }
 
                     // --- Queue System Tally (Success) ---
                     {
