@@ -141,7 +141,7 @@ namespace Server.Custom.CitizenSpawns
         {
             if (types.Length > 0)
             {
-                Type typeToSpawn = types[Utility.Random(types.Length)];
+                Type typeToSpawn = Utility.RandomDouble() < 0.70 ? typeof(Citizen) : typeof(MonsterCitizen);
                 try
                 {
                     return Activator.CreateInstance(typeToSpawn) as Mobile;

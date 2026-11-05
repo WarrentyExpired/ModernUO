@@ -47,7 +47,7 @@ public static class TaskManager
         if (nodes.Count > 0)
         {
             Utility.Shuffle(nodes);
-            int countToRefresh = Math.Max(1, nodes.Count / 3);
+            int countToRefresh = Math.Max(1, nodes.Count / 2);
 
             for (int i = 0; i < countToRefresh; i++)
             {
@@ -67,7 +67,7 @@ public static class TaskManager
         if (wanderers.Count > 0)
         {
             Utility.Shuffle(wanderers);
-            int countToRemove = Math.Max(1, wanderers.Count / 3);
+            int countToRemove = Math.Max(1, wanderers.Count / 2);
 
             for (int i = 0; i < countToRemove; i++)
             {
