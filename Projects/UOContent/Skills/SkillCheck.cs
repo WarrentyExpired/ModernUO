@@ -123,7 +123,7 @@ public static class SkillCheck
             {
                 Gain(from, skill);
             }
-            else if (success && AllowGain(from, skill, amObj))
+            else if (/*success &&*/ AllowGain(from, skill, amObj))
             {
                 var gc = (double)(from.Skills.Cap - from.Skills.Total) / from.Skills.Cap;
                 gc += (skill.Cap - skill.Base) / skill.Cap;
