@@ -36,7 +36,6 @@ public static class TaskManager
     // ==========================================
     public static void On30MinuteTick(Mobile from = null)
     {
-        // 1. Refresh ~33% of Tradesmen and Meeting Spots (CitizenNodes)
         var nodes = World.Items.Values
             .OfType<CitizenNode>()
             .Where(n => !n.Deleted && n.Map != null && n.Map != Map.Internal)
@@ -56,10 +55,11 @@ public static class TaskManager
             }
         }
 
-        // 2. Despawn ~33% of wandering Citizens (standard spawners will naturally replace them)
         var wanderers = World.Mobiles.Values
-            .OfType<Citizen>()
-            .Where(c => !c.Deleted && c.Map != null && c.Map != Map.Internal && !(c is GatheringCitizen))
+            .OfType<BaseCreature>()
+            .Where(c => !c.Deleted && c.Map != null && c.Map != Map.Internal)
+            .Where(c => c is Citizen || c is MonsterCitizen)
+            .Where(c => !(c is GatheringCitizen) && !(c is GatheringMonster))
             .ToList();
 
         int wanderersRemoved = 0;
@@ -75,7 +75,6 @@ public static class TaskManager
                 wanderersRemoved++;
             }
         }
-
         if (from != null)
         {
             from.SendMessage($"[TaskManager 30M] Refreshed {nodesRefreshed} CitizenNode(s) and cycled {wanderersRemoved} wandering citizen(s).");
