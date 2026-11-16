@@ -1,0 +1,27 @@
+{
+  "version": 0,
+  "type": "Server.Custom.ThiefPedestal",
+  "properties": [
+    {
+      "name": "TrapDifficulty",
+      "type": "int",
+      "rule": "PrimitiveTypeMigrationRule",
+      "ruleArguments": [
+        ""
+      ]
+    },
+    {
+      "name": "PropBag",
+      "type": "Server.Custom.ThiefPedestalProp",
+      "rule": "SerializableInterfaceMigrationRule"
+    },
+    {
+      "name": "Tries",
+      "type": "int",
+      "rule": "PrimitiveTypeMigrationRule",
+      "ruleArguments": [
+        ""
+      ]
+    }
+  ]
+}

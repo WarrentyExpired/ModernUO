@@ -1,0 +1,14 @@
+{
+  "version": 0,
+  "type": "Server.Custom.BaseDungeonTreasure",
+  "properties": [
+    {
+      "name": "MasterTier",
+      "type": "int",
+      "rule": "PrimitiveTypeMigrationRule",
+      "ruleArguments": [
+        ""
+      ]
+    }
+  ]
+}

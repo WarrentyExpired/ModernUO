@@ -1,0 +1,11 @@
+{
+  "version": 0,
+  "type": "Server.Items.ForgeHit",
+  "properties": [
+    {
+      "name": "SmeltedItem",
+      "type": "Server.Item",
+      "rule": "SerializableInterfaceMigrationRule"
+    }
+  ]
+}

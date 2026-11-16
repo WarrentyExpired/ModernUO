@@ -1,0 +1,33 @@
+{
+  "version": 0,
+  "type": "Server.Items.CitizenNode",
+  "properties": [
+    {
+      "name": "NodeType",
+      "type": "Server.Items.CitizenNodeType",
+      "rule": "EnumMigrationRule"
+    },
+    {
+      "name": "Workers",
+      "type": "System.Collections.Generic.List\u003CServer.Mobile\u003E",
+      "rule": "ListMigrationRule",
+      "ruleArguments": [
+        "Server.Mobile",
+        "SerializableInterfaceMigrationRule"
+      ]
+    },
+    {
+      "name": "Workstation",
+      "type": "Server.Item",
+      "rule": "SerializableInterfaceMigrationRule"
+    },
+    {
+      "name": "NextRespawn",
+      "type": "System.DateTime",
+      "rule": "PrimitiveTypeMigrationRule",
+      "ruleArguments": [
+        ""
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": 0,
+  "type": "Server.Items.AnvilHit",
+  "properties": [
+    {
+      "name": "ForgedItem",
+      "type": "Server.Item",
+      "rule": "SerializableInterfaceMigrationRule"
+    }
+  ]
+}

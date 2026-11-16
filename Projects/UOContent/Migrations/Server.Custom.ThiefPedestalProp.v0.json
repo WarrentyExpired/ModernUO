@@ -1,0 +1,11 @@
+{
+  "version": 0,
+  "type": "Server.Custom.ThiefPedestalProp",
+  "properties": [
+    {
+      "name": "Pedestal",
+      "type": "Server.Custom.ThiefPedestal",
+      "rule": "SerializableInterfaceMigrationRule"
+    }
+  ]
+}
