@@ -1558,36 +1558,39 @@ namespace Server.Items
             }
 
             // 2. --- Sovereign Realm: Custom UOR Stat Display ---
+            // Hidden till Identified
+            if (!isMagicItem || _identified ) //|| from.AccessLevel >= AccessLevel.GameMaster)
+            {
+                // Armor Rating
+                double displayAR = ArmorRatingScaled;
+                if (this is BaseShield && Parent as Mobile == null)
+                {
+                    displayAR = (from.Skills.Parry.Value * ArmorRating / 200.0) + 1.0;
+                }
+                if (displayAR > 0)
+                {
+                    LabelTo(from, $"Armor Rating: {(int)Math.Round(displayAR, MidpointRounding.AwayFromZero)}");
+                }
 
-            // Armor Rating
-            double displayAR = ArmorRatingScaled;
-            if (this is BaseShield && Parent as Mobile == null)
-            {
-                displayAR = (from.Skills.Parry.Value * ArmorRating / 200.0) + 1.0;
-            }
-            if (displayAR > 0)
-            {
-                LabelTo(from, $"Armor Rating: {(int)Math.Round(displayAR, MidpointRounding.AwayFromZero)}");
-            }
+                // Show Strength Requirement
+                int strReq = ComputeStatReq(StatType.Str);
+                if (strReq > 0)
+                {
+                    LabelTo(from, $"Strength Requirement: {strReq}");
+                }
 
-            // Show Strength Requirement
-            int strReq = ComputeStatReq(StatType.Str);
-            if (strReq > 0)
-            {
-                LabelTo(from, $"Strength Requirement: {strReq}");
-            }
+                // Show Dexterity Penalty (using Math.Abs to format "-5" as just "5")
+                int dexBonus = ComputeStatBonus(StatType.Dex);
+                if (dexBonus < 0)
+                {
+                    LabelTo(from, $"Dexterity Penalty: {Math.Abs(dexBonus)}");
+                }
 
-            // Show Dexterity Penalty (using Math.Abs to format "-5" as just "5")
-            int dexBonus = ComputeStatBonus(StatType.Dex);
-            if (dexBonus < 0)
-            {
-                LabelTo(from, $"Dexterity Penalty: {Math.Abs(dexBonus)}");
-            }
-
-            // Show Durability (using HitPoints / MaxHitPoints)
-            if (_maxHitPoints > 0)
-            {
-                LabelTo(from, $"Durability: {_hitPoints} / {_maxHitPoints}");
+                // Show Durability (using HitPoints / MaxHitPoints)
+                if (_maxHitPoints > 0)
+                {
+                    LabelTo(from, $"Durability: {_hitPoints} / {_maxHitPoints}");
+                }
             }
         }
 

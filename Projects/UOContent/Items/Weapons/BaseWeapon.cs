@@ -3400,27 +3400,29 @@ public abstract partial class BaseWeapon
         }
 
         // 2. --- Sovereign Realm: Custom UOR Stat Display ---
-
-        // Show Damage
-        LabelTo(from, $"Damage: {MinDamage} to {MaxDamage}");
-
-        // Show Weapon Speed
-        LabelTo(from, $"Speed: {Speed}");
-
-        // Show Strength Requirement
-        int strReq = StrRequirement; // Usually named StrRequirement or DefStrReq depending on the emulator version
-        if (strReq > 0)
+        // Hidden if Identified
+        if (!isMagicItem || _identified) // || from.AccessLevel >= AccessLevel.GameMaster)
         {
-            LabelTo(from, $"Strength Requirement: {strReq}");
-        }
+            // Show Damage
+            LabelTo(from, $"Damage: {MinDamage} to {MaxDamage}");
 
-        // Show Durability
-        if (MaxHitPoints > 0)
-        {
-            LabelTo(from, $"Durability: {HitPoints} / {MaxHitPoints}");
+            // Show Weapon Speed
+            LabelTo(from, $"Speed: {Speed}");
+
+            // Show Strength Requirement
+            int strReq = StrRequirement; // Usually named StrRequirement or DefStrReq depending on the emulator version
+            if (strReq > 0)
+            {
+                LabelTo(from, $"Strength Requirement: {strReq}");
+            }
+
+            // Show Durability
+            if (MaxHitPoints > 0)
+            {
+                LabelTo(from, $"Durability: {HitPoints} / {MaxHitPoints}");
+            }
         }
     }
-
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     private string DurabilityText(out bool articleAn)
     {

@@ -129,6 +129,45 @@ public partial class ThiefPedestalLootBag : Bag
         }
     }
 
+    private static void ApplyPreAosWeaponStats(BaseWeapon weapon)
+    {
+        // Map tiers 0-6 to UOR DamageLevel:
+        // 0 = Regular, 1 = Ruin, 2 = Might, 3 = Force, 4 = Power, 5-6 = Vanquishing
+        var dmgTier = Math.Min(GetWeightedTier(), (int)WeaponDamageLevel.Vanq);
+        weapon.DamageLevel = (WeaponDamageLevel)dmgTier;
+
+        // Roll independently for Accuracy (Regular -> Supremely) and Durability (Regular -> Indestructible)
+        var accTier = Math.Min(GetWeightedTier(), (int)WeaponAccuracyLevel.Supremely);
+        weapon.AccuracyLevel = (WeaponAccuracyLevel)accTier;
+
+        var durTier = Math.Min(GetWeightedTier(), (int)WeaponDurabilityLevel.Indestructible);
+        weapon.DurabilityLevel = (WeaponDurabilityLevel)durTier;
+
+        if (weapon.DamageLevel > WeaponDamageLevel.Regular ||
+            weapon.AccuracyLevel > WeaponAccuracyLevel.Regular ||
+            weapon.DurabilityLevel > WeaponDurabilityLevel.Regular)
+        {
+            weapon.Identified = false;
+        }
+    }
+
+    private static void ApplyPreAosArmorStats(BaseArmor armor)
+    {
+        // Map tiers 0-6 to UOR ArmorProtectionLevel:
+        // 0 = Regular, 1 = Defense, 2 = Guarding, 3 = Hardening, 4 = Fortification, 5-6 = Invulnerability
+        var protTier = Math.Min(GetWeightedTier(), (int)ArmorProtectionLevel.Invulnerability);
+        armor.ProtectionLevel = (ArmorProtectionLevel)protTier;
+
+        var durTier = Math.Min(GetWeightedTier(), (int)ArmorDurabilityLevel.Indestructible);
+        armor.Durability = (ArmorDurabilityLevel)durTier;
+
+        if (armor.ProtectionLevel > ArmorProtectionLevel.Regular ||
+            armor.Durability > ArmorDurabilityLevel.Regular)
+        {
+            armor.Identified = false;
+        }
+    }
+
     [Constructible]
     public ThiefPedestalLootBag()
     {
@@ -139,8 +178,16 @@ public partial class ThiefPedestalLootBag : Bag
         for (var i = 0; i < weaponCount; i++)
         {
             var weapon = Loot.RandomWeapon();
-            GetRandomLevel(out var attributeCount, out var min, out var max);
-            BaseRunicTool.ApplyAttributesTo(weapon, attributeCount, min, max);
+            if (Core.AOS)
+            {
+                GetRandomLevel(out var attributeCount, out var min, out var max);
+                BaseRunicTool.ApplyAttributesTo(weapon, attributeCount, min, max);
+            }
+            else if (Core.UOR)
+            {
+                ApplyPreAosWeaponStats(weapon);
+            }
+
             DropItem(weapon);
         }
 
@@ -149,24 +196,36 @@ public partial class ThiefPedestalLootBag : Bag
         for (var i = 0; i < armorCount; i++)
         {
             var armor = Loot.RandomArmorOrShield();
-            GetRandomLevel(out var attributeCount, out var min, out var max);
-            BaseRunicTool.ApplyAttributesTo(armor, attributeCount, min, max);
-            GetRandomResists(out var phy, out var fire, out var cold, out var poison, out var energy);
-            armor.PhysicalBonus = phy;
-            armor.FireBonus = fire;
-            armor.ColdBonus = cold;
-            armor.PoisonBonus = poison;
-            armor.EnergyBonus = energy;
+            if (Core.AOS)
+            {
+                GetRandomLevel(out var attributeCount, out var min, out var max);
+                BaseRunicTool.ApplyAttributesTo(armor, attributeCount, min, max);
+                GetRandomResists(out var phy, out var fire, out var cold, out var poison, out var energy);
+                armor.PhysicalBonus = phy;
+                armor.FireBonus = fire;
+                armor.ColdBonus = cold;
+                armor.PoisonBonus = poison;
+                armor.EnergyBonus = energy;
+            }
+            else if (Core.UOR)
+            {
+                ApplyPreAosArmorStats(armor);
+            }
+
             DropItem(armor);
         }
 
-        // Jewelry
+        // Jewelry (Magic jewelry properties are AOS+; UOR jewelry is purely cosmetic/unenchanted unless scripted as magic clothing/wands)
         int jewelryCount = Utility.RandomMinMax(0, bagTier);
         for (var i = 0; i < jewelryCount; i++)
         {
             var jewelry = Loot.RandomJewelry();
-            GetRandomLevel(out var attributeCount, out var min, out var max);
-            BaseRunicTool.ApplyAttributesTo(jewelry, attributeCount, min, max);
+            if (Core.AOS)
+            {
+                GetRandomLevel(out var attributeCount, out var min, out var max);
+                BaseRunicTool.ApplyAttributesTo(jewelry, attributeCount, min, max);
+            }
+
             DropItem(jewelry);
         }
 
@@ -187,12 +246,16 @@ public partial class ThiefPedestalLootBag : Bag
             reagents.Amount = Math.Max(1, GetWeightedTier() * 2);
             DropItem(reagents);
         }
-        int necroreagentCount = Utility.RandomMinMax(0, bagTier);
-        for (var i = 0; i < necroreagentCount; i++)
+
+        if (Core.AOS)
         {
-            var necroreagents = Loot.RandomNecromancyReagent();
-            necroreagents.Amount = Math.Max(1, GetWeightedTier() * 2);
-            DropItem(necroreagents);
+            int necroreagentCount = Utility.RandomMinMax(0, bagTier);
+            for (var i = 0; i < necroreagentCount; i++)
+            {
+                var necroreagents = Loot.RandomNecromancyReagent();
+                necroreagents.Amount = Math.Max(1, GetWeightedTier() * 2);
+                DropItem(necroreagents);
+            }
         }
 
         // Magic Scrolls
@@ -200,16 +263,17 @@ public partial class ThiefPedestalLootBag : Bag
         int mlevel = 0;
         if (bagTier >= 4)
         {
-           mlevel = 63;
+            mlevel = 63;
         }
         else if (bagTier >= 2)
         {
-           mlevel = 46;
+            mlevel = 46;
         }
         else
         {
             mlevel = 23;
         }
+
         for (var i = 0; i < mageScrollCount; i++)
         {
             var scroll = Loot.RandomScroll(0, mlevel, SpellbookType.Regular);
@@ -217,21 +281,16 @@ public partial class ThiefPedestalLootBag : Bag
             DropItem(scroll);
         }
 
-        int necroScrollCount = Utility.RandomMinMax(0, bagTier);
-        int nlevel = 0;
-        if (bagTier < 3)
+        if (Core.AOS)
         {
-            nlevel = 7;
-        }
-        else
-        {
-            nlevel = 15;
-        }
-        for (var i = 0; i < necroScrollCount; i++)
-        {
-            var scroll = Loot.RandomScroll(0, nlevel, SpellbookType.Necromancer);
-            scroll.Amount = Math.Max(1, bagTier);
-            DropItem(scroll);
+            int necroScrollCount = Utility.RandomMinMax(0, bagTier);
+            int nlevel = bagTier < 3 ? 7 : 15;
+            for (var i = 0; i < necroScrollCount; i++)
+            {
+                var scroll = Loot.RandomScroll(0, nlevel, SpellbookType.Necromancer);
+                scroll.Amount = Math.Max(1, bagTier);
+                DropItem(scroll);
+            }
         }
 
         // Misc extras potions/clothing/arrows/blankscrolls
@@ -249,12 +308,13 @@ public partial class ThiefPedestalLootBag : Bag
         {
             if (Utility.RandomBool())
             {
-                DropItem(new Arrow((bagTier + (Utility.RandomMinMax(10, 20)))));
+                DropItem(new Arrow((bagTier + Utility.RandomMinMax(10, 20))));
             }
             else
             {
-                DropItem(new Bolt((bagTier + (Utility.RandomMinMax(10, 20)))));
+                DropItem(new Bolt((bagTier + Utility.RandomMinMax(10, 20))));
             }
+
             DropItem(new BlankScroll(Math.Max(1, GetWeightedTier())));
         }
 

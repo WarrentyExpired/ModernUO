@@ -252,17 +252,63 @@ namespace Server.Custom
             }
         }
 
+        private static void ApplyPreAosWeaponStats(BaseWeapon weapon, int maxTier)
+        {
+            // Scale weapon tiers up to container's MasterTier (0-3 for bags, 3-6 for crates)
+            // 0 = Regular, 1 = Ruin, 2 = Might, 3 = Force, 4 = Power, 5-6 = Vanquishing
+            var dmgRoll = Utility.RandomMinMax(0, maxTier);
+            weapon.DamageLevel = (WeaponDamageLevel)Math.Min(dmgRoll, (int)WeaponDamageLevel.Vanq);
+
+            var accRoll = Utility.RandomMinMax(0, maxTier);
+            weapon.AccuracyLevel = (WeaponAccuracyLevel)Math.Min(accRoll, (int)WeaponAccuracyLevel.Supremely);
+
+            var durRoll = Utility.RandomMinMax(0, maxTier);
+            weapon.DurabilityLevel = (WeaponDurabilityLevel)Math.Min(durRoll, (int)WeaponDurabilityLevel.Indestructible);
+
+            if (weapon.DamageLevel > WeaponDamageLevel.Regular ||
+                weapon.AccuracyLevel > WeaponAccuracyLevel.Regular ||
+                weapon.DurabilityLevel > WeaponDurabilityLevel.Regular)
+            {
+                weapon.Identified = false;
+            }
+        }
+
+        private static void ApplyPreAosArmorStats(BaseArmor armor, int maxTier)
+        {
+            // Scale armor tiers up to container's MasterTier (0-3 for bags, 3-6 for crates)
+            // 0 = Regular, 1 = Defense, 2 = Guarding, 3 = Hardening, 4 = Fortification, 5-6 = Invulnerability
+            var protRoll = Utility.RandomMinMax(0, maxTier);
+            armor.ProtectionLevel = (ArmorProtectionLevel)Math.Min(protRoll, (int)ArmorProtectionLevel.Invulnerability);
+
+            var durRoll = Utility.RandomMinMax(0, maxTier);
+            armor.Durability = (ArmorDurabilityLevel)Math.Min(durRoll, (int)ArmorDurabilityLevel.Indestructible);
+
+            if (armor.ProtectionLevel > ArmorProtectionLevel.Regular ||
+                armor.Durability > ArmorDurabilityLevel.Regular)
+            {
+                armor.Identified = false;
+            }
+        }
+
         protected void GenerateLoot()
         {
-            int dropCount = Utility.RandomMinMax(Math.Max(1, MasterTier -2), MasterTier + 1);
+            int dropCount = Utility.RandomMinMax(Math.Max(1, MasterTier - 2), MasterTier + 1);
 
             // Weapons
             for (var i = 0; i < dropCount; i++)
             {
                 var weapon = Loot.RandomWeapon();
-                int itemPower = Utility.RandomMinMax(0, MasterTier);
-                GetRandomLevel(itemPower, out var attributeCount, out var min, out var max);
-                BaseRunicTool.ApplyAttributesTo(weapon, attributeCount, min, max);
+                if (Core.AOS)
+                {
+                    int itemPower = Utility.RandomMinMax(0, MasterTier);
+                    GetRandomLevel(itemPower, out var attributeCount, out var min, out var max);
+                    BaseRunicTool.ApplyAttributesTo(weapon, attributeCount, min, max);
+                }
+                else if (Core.UOR)
+                {
+                    ApplyPreAosWeaponStats(weapon, MasterTier);
+                }
+
                 DropItem(weapon);
             }
 
@@ -270,31 +316,42 @@ namespace Server.Custom
             for (var i = 0; i < dropCount; i++)
             {
                 var armor = Loot.RandomArmorOrShield();
+                if (Core.AOS)
+                {
+                    // Roll #1: Determines the magical properties (Attributes)
+                    int attributePower = Utility.RandomMinMax(0, MasterTier);
+                    GetRandomLevel(attributePower, out var attributeCount, out var min, out var max);
+                    BaseRunicTool.ApplyAttributesTo(armor, attributeCount, min, max);
 
-                // Roll #1: Determines the magical properties (Attributes)
-                int attributePower = Utility.RandomMinMax(0, MasterTier);
-                GetRandomLevel(attributePower, out var attributeCount, out var min, out var max);
-                BaseRunicTool.ApplyAttributesTo(armor, attributeCount, min, max);
+                    // Roll #2: Determines the physical/elemental defense (Resists)
+                    int resistPower = Utility.RandomMinMax(0, MasterTier);
+                    GetRandomResists(resistPower, out var phy, out var fire, out var cold, out var poison, out var energy);
 
-                // Roll #2: Determines the physical/elemental defense (Resists)
-                int resistPower = Utility.RandomMinMax(0, MasterTier);
-                GetRandomResists(resistPower, out var phy, out var fire, out var cold, out var poison, out var energy);
+                    armor.PhysicalBonus = phy;
+                    armor.FireBonus = fire;
+                    armor.ColdBonus = cold;
+                    armor.PoisonBonus = poison;
+                    armor.EnergyBonus = energy;
+                }
+                else if (Core.UOR)
+                {
+                    ApplyPreAosArmorStats(armor, MasterTier);
+                }
 
-                armor.PhysicalBonus = phy;
-                armor.FireBonus = fire;
-                armor.ColdBonus = cold;
-                armor.PoisonBonus = poison;
-                armor.EnergyBonus = energy;
                 DropItem(armor);
             }
 
-            // Jewelry
+            // Jewelry (Magic jewelry properties are AOS+; UOR jewelry is unenchanted)
             for (var i = 0; i < dropCount; i++)
             {
                 var jewelry = Loot.RandomJewelry();
-                int itemPower = Utility.RandomMinMax(0, MasterTier);
-                GetRandomLevel(itemPower, out var attributeCount, out var min, out var max);
-                BaseRunicTool.ApplyAttributesTo(jewelry, attributeCount, min, max);
+                if (Core.AOS)
+                {
+                    int itemPower = Utility.RandomMinMax(0, MasterTier);
+                    GetRandomLevel(itemPower, out var attributeCount, out var min, out var max);
+                    BaseRunicTool.ApplyAttributesTo(jewelry, attributeCount, min, max);
+                }
+
                 DropItem(jewelry);
             }
 
@@ -314,11 +371,14 @@ namespace Server.Custom
                 DropItem(mReagent);
             }
 
-            for (var i = 0; i < dropCount; i++)
+            if (Core.AOS)
             {
-                var nReagent = Loot.RandomNecromancyReagent();
-                nReagent.Amount = Utility.RandomMinMax(1, dropCount);
-                DropItem(nReagent);
+                for (var i = 0; i < dropCount; i++)
+                {
+                    var nReagent = Loot.RandomNecromancyReagent();
+                    nReagent.Amount = Utility.RandomMinMax(1, dropCount);
+                    DropItem(nReagent);
+                }
             }
 
             // Magic Scrolls
@@ -335,6 +395,7 @@ namespace Server.Custom
             {
                 mlevel = 23;
             }
+
             for (var i = 0; i < dropCount; i++)
             {
                 var mscroll = Loot.RandomScroll(0, mlevel, SpellbookType.Regular);
@@ -342,20 +403,15 @@ namespace Server.Custom
                 DropItem(mscroll);
             }
 
-            int nlevel = 0;
-            if (MasterTier < 3)
+            if (Core.AOS)
             {
-                nlevel = 7;
-            }
-            else
-            {
-                nlevel = 15;
-            }
-            for (var i = 0; i < dropCount; i++)
-            {
-                var nscroll = Loot.RandomScroll(0, nlevel, SpellbookType.Necromancer);
-                nscroll.Amount = Utility.RandomMinMax(1, 3);
-                DropItem(nscroll);
+                int nlevel = MasterTier < 3 ? 7 : 15;
+                for (var i = 0; i < dropCount; i++)
+                {
+                    var nscroll = Loot.RandomScroll(0, nlevel, SpellbookType.Necromancer);
+                    nscroll.Amount = Utility.RandomMinMax(1, 3);
+                    DropItem(nscroll);
+                }
             }
 
             // Misc extras bandages/arrows/blankscrolls/potions/ETC
@@ -367,6 +423,7 @@ namespace Server.Custom
             {
                 DropItem(new Bolt(Utility.RandomMinMax(10, dropCount * 10)));
             }
+
             if (Utility.RandomBool())
                 DropItem(new Bandage(Utility.RandomMinMax(10, dropCount * 10)));
             if (Utility.RandomBool())
@@ -377,6 +434,7 @@ namespace Server.Custom
                 potion.Amount = Utility.RandomMinMax(1, 3);
                 DropItem(potion);
             }
+
             if (Utility.RandomBool())
                 DropItem(new RecallRune());
 
