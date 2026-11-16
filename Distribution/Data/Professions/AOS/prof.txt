@@ -1,38 +1,4 @@
 Begin
-	Name			Paladin
-	TrueName		"Paladin"
-	NameId			1061177
-	DescId			1061227
-	Desc			5
-	TopLevel		true
-	Gump			5587
-	Type			Profession
-	Skill			Chivalry		40
-	Skill			Tactics 		30
-	Skill			MaceFighting		30
-	Stat			Str			45
-	Stat			Dex			20
-	Stat			Int			15
-End
-
-Begin
-	Name			Necromancer
-	TrueName		"Necromancer"
-	NameId			1061178
-	DescId			1061228
-	Desc			4
-	TopLevel		true
-	Gump			5557
-	Type			Profession
-	Skill			Necromancy		50
-	Skill			Swordsmanship 		30
-	Skill			Tactics 		20
-	Stat			Str			25
-	Stat			Dex			20
-	Stat			Int			35
-End
-
-Begin
 	Name			Warrior
 	TrueName		"Warrior"
 	NameId			1061180
