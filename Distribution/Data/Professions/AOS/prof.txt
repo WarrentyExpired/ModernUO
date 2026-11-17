@@ -8,8 +8,8 @@ Begin
 	Gump			5577
 	Type			Profession
 	Skill			Tactics			30
-	Skill			Healing			30
-	Skill			Swordsmanship		40
+	Skill			Healing			35
+	Skill			Swordsmanship	35
 	Stat			Str			40
 	Stat			Dex			30
 	Stat			Int			10

@@ -7,9 +7,9 @@ Begin
 	TopLevel		true
 	Gump			5577
 	Type			Profession
-	Skill			Tactics			50
-	Skill			Healing			45
-	Skill			Swordsmanship		5
+	Skill			Tactics			30
+	Skill			Healing			35
+	Skill			Swordsmanship	35
 	Stat			Str			35
 	Stat			Dex			35
 	Stat			Int			10
