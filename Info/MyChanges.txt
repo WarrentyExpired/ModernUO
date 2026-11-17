@@ -67,6 +67,9 @@ Bounty Board
   - Towns now have a Bounty house, vendor, and bounty board. The board has different levels
     of bounties depending on the players fame. Higher fame opens higher bounties.
   - Players collect bounty coins that can be spent with the bounty vendor.
+Altar of Vanquishing
+  - Killing Monsters gives Kill Points (based on fame). Bounty Houses have an altar that you
+    can use to spend those points.
 Automount/Dismount
   - Players are automatically dismount and remounted when they enter certian regions.
     Dungeons and Town businesses.

@@ -255,6 +255,10 @@ public abstract partial class BaseWand : BaseBashing
         }
 
         LabelTo(from, isMagicItem ? $"{name} of {WandEffectText}" : name);
+        if (isMagicItem)
+        {
+            LabelTo(from, $"Charges: {_charges}");
+        }
     }
 
     private string WandEffectText

@@ -81,6 +81,24 @@ public class BountyRewardGump : Gump
     // Define Reward Store Items using factory functions: (Name, TokenCost, CreateItem)
     private static readonly (string Name, int Cost, Func<Item> CreateItem)[] Rewards = new (string, int, Func<Item>)[]
     {
+        ("Powder of Translocation (10)", 100, () => new PowderOfTranslocation(10)),
+        ("Bag of Sending (10 Charges)", 200, () => new BagOfSending
+        {
+          Charges = 10
+        }),
+        ("Powder of Fortifying (10 Charges)", 250, () => new PowderOfTemperament(10)),
+        ("Wand of Identification (100 Charges)", 300, () =>
+        {
+            var wand = new IDWand
+            {
+              Name = "a greater wand",
+              Hue = 1153,
+              Charges = 100,
+              Identified = true
+            };
+            return wand;
+        }),
+
         ("The Hunters Jewelry Set", 500, () => Utility.Random(3) switch
           {
             0 => new HuntersRing(),
@@ -95,7 +113,7 @@ public class BountyRewardGump : Gump
             _ => new ArchmageEarrings()
         }),
 
-        ("Random Monster Statue", 50, () =>
+        ("Random Monster Statue", 500, () =>
         {
             var types = Enum.GetValues(typeof(MonsterStatuetteType));
 
@@ -104,7 +122,7 @@ public class BountyRewardGump : Gump
             return new MonsterStatuette(randomType);
         }),
 
-        ("Random Specialty Dye Tub", 75, () =>
+        ("Random Specialty Dye Tub", 1000, () =>
         {
             var tubs = new Func<Item>[]
             {
@@ -122,8 +140,6 @@ public class BountyRewardGump : Gump
 
             return tubs[Utility.Random(tubs.Length)]();
         }),
-
-        ("Bag of Sending", 100, () => new BagOfSending())
     };
      public BountyRewardGump(PlayerMobile player, BountyVendor vendor) : base(50, 50)
     {
@@ -133,9 +149,10 @@ public class BountyRewardGump : Gump
         int totalTokens = player.Backpack != null ? player.Backpack.GetAmount(typeof(BountyToken)) : 0;
 
         AddPage(0);
+        int height = 130 + (Rewards.Length * 35);
 
-        AddBackground(0, 0, 450, 310, 9270);
-        AddAlphaRegion(10, 10, 430, 290);
+        AddBackground(0, 0, 450, height, 9270);
+        AddAlphaRegion(10, 10, 430, height - 20);
 
         AddLabel(110, 15, 1152, "BOUNTY QUARTERMASTER STORE");
         AddLabel(20, 40, 0x3F, $"Your Bounty Tokens: {totalTokens}");
