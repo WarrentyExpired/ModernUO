@@ -22,8 +22,7 @@ namespace Server.Items
             SkillName.SpiritSpeak, SkillName.Stealing, SkillName.AnimalTaming,
             SkillName.Veterinary,
             SkillName.Swords, SkillName.Macing, SkillName.Fencing, SkillName.Wrestling,
-            SkillName.Meditation, SkillName.Stealth,
-            SkillName.Necromancy, SkillName.Focus, SkillName.Chivalry
+            SkillName.Meditation, SkillName.Stealth
         };
 
         [CommandProperty(AccessLevel.GameMaster)]

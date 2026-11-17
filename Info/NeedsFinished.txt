@@ -5,9 +5,6 @@ Monster Kill Points
  - Need a way to spend them
  - Need things to spend them on
 
-Sos'
- - Need to look into them
-
 Spawned Treasure Chests
  - I need to figure out what to do with these. They are very lackluster.
    The new DungeonLootCrates fill the void for now.
@@ -20,7 +17,7 @@ Citizens
  - Treausre hoard pile.
 
 CentrED Stuff
- - Add unspawnable tiles around dungeons
+
 Dungeon Bosses
  - Dungeon Arenas
  - Duneon Arenas Region
