@@ -496,7 +496,7 @@ public class BandageContext : Timer
                 if (Core.AOS)
                     seconds = 5.0 + 0.5 * ((double)(120 - dex) / 10);
                 else
-                    seconds = 9.4 + 0.6 * ((double)(120 - dex) / 10);
+                    seconds = Math.Max(2.0, 11.0 - (dex/ 20));
             }
             else if (Core.AOS && GetPrimarySkill(patient) == SkillName.Veterinary)
             {

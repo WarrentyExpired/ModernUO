@@ -69,20 +69,17 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
     protected override void BuildLayout(ref DynamicGumpBuilder builder)
     {
         const int width = 960;
-
-        // Trimmed the height down from 780 to 700 so it ends perfectly past "Lower Ammo"
-        const int height = 700;
+        int height = Core.AOS ? 700 : 515;
 
         const int attrY = 55;
         const int resY = 145;
         const int colY = 205;
 
-        int Aos(AosAttribute attribute) => AosAttributes.GetValue(from, attribute);
         PlayerMobile pm = from as PlayerMobile;
 
         builder.AddPage();
         builder.AddBackground(0, 0, width, height, 9270);
-        builder.AddAlphaRegion(10, 10, width - 20 , height - 20);
+        builder.AddAlphaRegion(10, 10, width - 20, height - 20);
 
         // --- HEADER ---
         builder.AddHtml(0, 25, width, 25, ColorAndCenter("#FFCC00", from.Name));
@@ -90,25 +87,71 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
         builder.AddLabel(width - 110, 20, C_YELLOW, "Refresh");
         builder.AddButton(width - 55, 21, 0x15E1, 0x15E5, 1, GumpButtonType.Reply, 0);
 
-        // --- ATTRIBUTES ---
+        // --- ATTRIBUTES (Shared Across Eras) ---
         builder.AddLabel(LeftCol, attrY, C_YELLOW, "Attributes");
 
         StatRow[] stats =
         [
-            new(LeftCol,  attrY + 25, "Strength",   from.Str.ToString()),
-            new(LeftCol,  attrY + 50, "Hit Points", $"{from.Hits} / {from.HitsMax}"),
-            new(RightCol, attrY + 25, "Dexterity",  from.Dex.ToString()),
-            new(RightCol, attrY + 50, "Stamina",    $"{from.Stam} / {from.StamMax}"),
+            new(LeftCol,  attrY + 25, "Strength",     from.Str.ToString()),
+            new(LeftCol,  attrY + 50, "Hit Points",   $"{from.Hits} / {from.HitsMax}"),
+            new(RightCol, attrY + 25, "Dexterity",    from.Dex.ToString()),
+            new(RightCol, attrY + 50, "Stamina",      $"{from.Stam} / {from.StamMax}"),
             new(ThirdCol, attrY + 25, "Intelligence", from.Int.ToString()),
-            new(ThirdCol, attrY + 50, "Mana",       $"{from.Mana} / {from.ManaMax}"),
+            new(ThirdCol, attrY + 50, "Mana",         $"{from.Mana} / {from.ManaMax}"),
         ];
 
         AddRows(ref builder, stats);
 
-        // --- RESISTANCES ---
         DrawDivider(ref builder, 20, resY - 5, width - 40);
 
-        // Pushed X from LeftCol (30) to 435 to visually center the text over the 960px width
+        if (Core.AOS)
+        {
+            BuildAosLayout(ref builder, pm, width, resY, colY);
+        }
+        else
+        {
+            BuildUorLayout(ref builder, pm, width, resY, colY);
+        }
+
+        // --- 3rd Column: SKILL LIST (Shared Across Eras) ---
+        var skills = from.Skills;
+        double humanMinimum = Core.AOS && from.Race == Race.Human ? 20.0 : 0.0;
+        var visibleSkills = new List<Skill>(skills.Length);
+
+        for (int i = 0; i < skills.Length; i++)
+        {
+            Skill sk = skills[i];
+            if (sk.Base > 0 || (sk.Value > sk.Base && sk.Value > humanMinimum))
+            {
+                visibleSkills.Add(sk);
+            }
+        }
+
+        visibleSkills.Sort(static (a, b) => string.CompareOrdinal(a.Name, b.Name));
+        var skillHtml = new StringBuilder(2048);
+
+        for (int i = 0; i < visibleSkills.Count; i++)
+        {
+            Skill sk = visibleSkills[i];
+            if (i > 0)
+            {
+                skillHtml.Append("<BR>");
+            }
+            skillHtml.Append($"{sk.Name} {sk.Value:F1} / {sk.Cap:F1}");
+        }
+
+        int skillBoxHeight = Core.AOS ? 430 : 255;
+        builder.AddHtml(
+            ThirdCol, colY + 30, 280, skillBoxHeight,
+            $"<BASEFONT COLOR=#C8C8C8>{skillHtml}</BASEFONT>", scrollbar: true
+        );
+    }
+
+    private void BuildAosLayout(ref DynamicGumpBuilder builder, PlayerMobile pm, int width, int resY, int colY)
+    {
+        int Aos(AosAttribute attribute) => AosAttributes.GetValue(from, attribute);
+
+        // --- RESISTANCES ---
         builder.AddLabel(435, resY + 5, C_YELLOW, "Resistances");
 
         StatRow[] resists =
@@ -131,7 +174,7 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
         builder.AddLabel(ThirdCol, colY + 5, C_YELLOW, "Skills");
 
         double swingSpeed = from.Weapon is BaseWeapon weapon ? weapon.GetDelay(from).TotalSeconds : 0.0;
-        double bandageSeconds = 5.0 + 0.5 * ((120.0 - from.Dex) / 10.0); //Math.Clamp(Math.Ceiling(11.0 - from.Dex / 10.0), 2.0, 8.0);
+        double bandageSeconds = 5.0 + 0.5 * ((120.0 - from.Dex) / 10.0);
         int lAmmo = from.FindItemOnLayer(Layer.Cloak) is BaseQuiver quiver ? quiver.LowerAmmoCost : 0;
 
         StatRow[] ratings =
@@ -177,39 +220,86 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
         ];
 
         AddRows(ref builder, ratings);
+    }
 
-        // --- 3rd Column: SKILL LIST ---
-        var skills = from.Skills;
-        double humanMinimum = from.Race == Race.Human ? 20.0 : 0.0;
-        var visibleSkills = new List<Skill>(skills.Length);
+    private void BuildUorLayout(ref DynamicGumpBuilder builder, PlayerMobile pm, int width, int resY, int colY)
+    {
+        // --- DEFENSE & OVERVIEW BAR ---
+        builder.AddLabel(415, resY + 5, C_YELLOW, "Defense & Overview");
 
-        for (int i = 0; i < skills.Length; i++)
+        int ar = (int)Math.Round(from.ArmorRating, MidpointRounding.AwayFromZero);
+        double magicResist = from.Skills.MagicResist.Value;
+        double totalSkills = from.SkillsTotal / 10.0;
+        double skillCap = from.SkillsCap / 10.0;
+
+        StatRow[] overview =
+        [
+            new(120, resY + 30, "Armor Rating", $"{ar}", C_BLUE, 105),
+            new(400, resY + 30, "Magic Resist", $"{magicResist:F1}", C_PURPLE, 105),
+            new(680, resY + 30, "Skill Total",  $"{totalSkills:F1} / {skillCap:F1}", C_GREEN, 95),
+        ];
+
+        AddRows(ref builder, overview);
+
+        // --- MAIN COLUMNS ---
+        DrawDivider(ref builder, 20, colY - 5, width - 40);
+
+        builder.AddLabel(LeftCol, colY + 5, C_YELLOW, "Combat & Utility");
+        builder.AddLabel(RightCol, colY + 5, C_YELLOW, "Character & Progression");
+        builder.AddLabel(ThirdCol, colY + 5, C_YELLOW, "Skills");
+
+        BaseWeapon weapon = from.Weapon as BaseWeapon;
+        double swingSpeed = weapon != null ? weapon.GetDelay(from).TotalSeconds : 0.0;
+        string damageRange = weapon != null ? $"{weapon.MinDamage} - {weapon.MaxDamage}" : "---";
+
+        // Classic UOR self-bandage timer: 11.0s - (Dex / 20.0) (minimum 2.0s)
+        double selfBandage = Math.Max(2.0, 11.0 - (from.Dex / 20.0));
+        double otherBandage = Math.Max(1.5, 4.0 - (from.Dex / 60.0));
+
+        // Check if equipped armor allows active/passive meditation
+        bool canMeditate = CheckMeditationAllowed(from);
+
+        // Classic UOR Tactics + Anatomy melee damage % bonus
+        double tacticsBonus = (from.Skills.Tactics.Value - 50.0) / 2.0;
+        double anatomyBonus = from.Skills.Anatomy.Value / 5.0;
+        int totalDamageBonus = (int)Math.Round(tacticsBonus + anatomyBonus);
+
+        StatRow[] uorStats =
+        [
+            // 1st Column: Combat & Utility
+            new(LeftCol, colY + 30,  "Base Damage",   damageRange),
+            new(LeftCol, colY + 50,  "Swing Speed",   swingSpeed > 0 ? $"{swingSpeed:F2}s" : "---"),
+            new(LeftCol, colY + 70,  "Skill DMG Bonus", $"{totalDamageBonus:+#;-#;0}%"),
+            new(LeftCol, colY + 105, "Heal (Self)",   $"{selfBandage:F1}s"),
+            new(LeftCol, colY + 125, "Heal (Other)",  $"{otherBandage:F1}s"),
+            new(LeftCol, colY + 160, "Meditation",    canMeditate ? "Active" : "Blocked (Armor)", canMeditate ? C_GREEN : C_RED),
+            new(LeftCol, colY + 180, "Followers",     $"{from.Followers} / {from.FollowersMax}"),
+            new(LeftCol, colY + 200, "Weight",        $"{from.TotalWeight} / {from.MaxWeight}"),
+
+            // 2nd Column: Character & Progression
+            new(RightCol, colY + 30,  "Fame",            $"{from.Fame}"),
+            new(RightCol, colY + 50,  "Karma",           $"{from.Karma}"),
+            new(RightCol, colY + 85,  "Player Deaths",   pm != null ? pm.TotalPlayerDeaths.ToString("N0") : "0"),
+            new(RightCol, colY + 105, "Monsters Killed", pm != null ? pm.TotalMonstersKilled.ToString("N0") : "0"),
+            new(RightCol, colY + 125, "Gold Looted",     pm != null ? pm.TotalGoldLooted.ToString("N0") : "0"),
+            new(RightCol, colY + 160, "Spendable KP",    pm != null ? pm.MonsterKillPoints.ToString("N0") : "0"),
+            new(RightCol, colY + 180, "Lifetime KP",     pm != null ? pm.LifetimeKillPoints.ToString("N0") : "0"),
+        ];
+
+        AddRows(ref builder, uorStats);
+    }
+
+    private static bool CheckMeditationAllowed(Mobile m)
+    {
+        for (int i = 0; i < m.Items.Count; i++)
         {
-            Skill sk = skills[i];
-            if (sk.Base > 0 || (sk.Value > sk.Base && sk.Value > humanMinimum))
+            if (m.Items[i] is BaseArmor armor && armor.MeditationAllowance == ArmorMeditationAllowance.None)
             {
-                visibleSkills.Add(sk);
+                return false;
             }
         }
 
-        visibleSkills.Sort(static (a, b) => string.CompareOrdinal(a.Name, b.Name));
-        var skillHtml = new StringBuilder(2048);
-
-        for (int i = 0; i < visibleSkills.Count; i++)
-        {
-            Skill sk = visibleSkills[i];
-            if (i > 0)
-            {
-                skillHtml.Append("<BR>");
-            }
-            skillHtml.Append($"{sk.Name} {sk.Value:F1} / {sk.Cap:F1}");
-        }
-
-        // Reduced height from 500 to 430 so it seamlessly matches the new bottom edge
-        builder.AddHtml(
-            ThirdCol, colY + 30, 280, 430,
-            $"<BASEFONT COLOR=#C8C8C8>{skillHtml}</BASEFONT>", scrollbar: true
-        );
+        return true;
     }
 
     public override void OnResponse(NetState sender, in RelayInfo info)
