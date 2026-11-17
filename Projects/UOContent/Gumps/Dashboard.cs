@@ -69,7 +69,7 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
     protected override void BuildLayout(ref DynamicGumpBuilder builder)
     {
         const int width = 960;
-        int height = Core.AOS ? 700 : 515;
+        int height = Core.AOS ? 740 : 545;
 
         const int attrY = 55;
         const int resY = 145;
@@ -140,7 +140,7 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
             skillHtml.Append($"{sk.Name} {sk.Value:F1} / {sk.Cap:F1}");
         }
 
-        int skillBoxHeight = Core.AOS ? 430 : 255;
+        int skillBoxHeight = Core.AOS ? 470 : 285;
         builder.AddHtml(
             ThirdCol, colY + 30, 280, skillBoxHeight,
             $"<BASEFONT COLOR=#C8C8C8>{skillHtml}</BASEFONT>", scrollbar: true
@@ -176,7 +176,8 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
         double swingSpeed = from.Weapon is BaseWeapon weapon ? weapon.GetDelay(from).TotalSeconds : 0.0;
         double bandageSeconds = 5.0 + 0.5 * ((120.0 - from.Dex) / 10.0);
         int lAmmo = from.FindItemOnLayer(Layer.Cloak) is BaseQuiver quiver ? quiver.LowerAmmoCost : 0;
-
+        var (hungerText, hungerHue) = FormatNeeds(from.Hunger);
+        var (thirstText, thirstHue) = FormatNeeds(from.Thirst);
         StatRow[] ratings =
         [
             // 1st Column: Combat
@@ -197,6 +198,8 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
             new(LeftCol, colY + 385, "Int Bonus",     $"{Aos(AosAttribute.BonusInt)}"),
             new(LeftCol, colY + 425, "Enhance Pots",  $"{Aos(AosAttribute.EnhancePotions)} / 50"),
             new(LeftCol, colY + 445, "Lower Ammo",    $"{lAmmo}"),
+            new(LeftCol, colY + 220, "Hunger",          hungerText, hungerHue),
+            new(LeftCol, colY + 240, "Thirst",          thirstText, thirstHue),
 
             // 2nd Column: Magic
             new(RightCol, colY + 30,  "SDI",     $"{Aos(AosAttribute.SpellDamage)}%"),
@@ -263,6 +266,8 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
         double tacticsBonus = (from.Skills.Tactics.Value - 50.0) / 2.0;
         double anatomyBonus = from.Skills.Anatomy.Value / 5.0;
         int totalDamageBonus = (int)Math.Round(tacticsBonus + anatomyBonus);
+        var (hungerText, hungerHue) = FormatNeeds(from.Hunger);
+        var (thirstText, thirstHue) = FormatNeeds(from.Thirst);
 
         StatRow[] uorStats =
         [
@@ -275,6 +280,8 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
             new(LeftCol, colY + 160, "Meditation",    canMeditate ? "Active" : "Blocked (Armor)", canMeditate ? C_GREEN : C_RED),
             new(LeftCol, colY + 180, "Followers",     $"{from.Followers} / {from.FollowersMax}"),
             new(LeftCol, colY + 200, "Weight",        $"{from.TotalWeight} / {from.MaxWeight}"),
+            new(LeftCol, colY + 220, "Hunger",          hungerText, hungerHue),
+            new(LeftCol, colY + 240, "Thirst",          thirstText, thirstHue),
 
             // 2nd Column: Character & Progression
             new(RightCol, colY + 30,  "Fame",            $"{from.Fame}"),
@@ -301,6 +308,14 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
 
         return true;
     }
+
+    private static (string Label, int Hue) FormatNeeds(int value) => value switch
+    {
+        >= 15 => ($"{value} / 20 (Full)", C_GREEN),
+        >= 8  => ($"{value} / 20 (Good)", C_WHITE),
+        >= 4  => ($"{value} / 20 (Low)", C_YELLOW),
+        _     => ($"{value} / 20 (Starving)", C_RED)
+    };
 
     public override void OnResponse(NetState sender, in RelayInfo info)
     {
