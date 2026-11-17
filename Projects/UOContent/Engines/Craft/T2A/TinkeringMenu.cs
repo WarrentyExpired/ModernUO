@@ -36,7 +36,7 @@ public class TinkeringMenu : ItemListMenu
         typeof(DrawKnife), typeof(Froe), typeof(Inshave), typeof(Scorp),
         typeof(Scissors), typeof(Tongs),
         typeof(DovetailSaw), typeof(Saw), typeof(Hammer),
-        typeof(SmithHammer), typeof(SledgeHammer), typeof(Shovel),
+        typeof(SmithHammer), typeof(SledgeHammer),
         typeof(MortarPestle), typeof(Hatchet), typeof(Pickaxe), typeof(Lockpick)
     ];
 

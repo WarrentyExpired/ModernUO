@@ -225,7 +225,7 @@ public partial class Uzeraan : BaseQuester
                 var cont = GetNewContainer();
 
                 cont.DropItem(new TreasureMap(player.Young ? 0 : 1, Map.Trammel));
-                cont.DropItem(new Shovel());
+                //cont.DropItem(new Shovel());
                 cont.DropItem(new UzeraanTurmoilHorn());
 
                 if (!player.PlaceInBackpack(cont))

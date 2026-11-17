@@ -44,7 +44,7 @@ namespace Server.Mobiles
                     1 => new MortarPestle(),
                     2 => new Bottle(),
                     3 => new RawRibs(),
-                    _ => new Shovel() // 4
+                    _ => new Pickaxe() // 4
                 }
             );
 

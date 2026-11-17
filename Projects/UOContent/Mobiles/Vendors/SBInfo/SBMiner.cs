@@ -19,7 +19,7 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo(typeof(Lantern), 2, 10, 0xA25, 0));
                 // Add( new GenericBuyInfo( typeof( OilFlask ), 8, 10, 0x####, 0 ) );
                 Add(new GenericBuyInfo(typeof(Pickaxe), 25, 10, 0xE86, 0));
-                Add(new GenericBuyInfo(typeof(Shovel), 12, 10, 0xF39, 0));
+                //Add(new GenericBuyInfo(typeof(Shovel), 12, 10, 0xF39, 0));
             }
         }
 
@@ -28,7 +28,7 @@ namespace Server.Mobiles
             public InternalSellInfo()
             {
                 Add(typeof(Pickaxe), 12);
-                Add(typeof(Shovel), 6);
+                //Add(typeof(Shovel), 6);
                 Add(typeof(Lantern), 1);
                 // Add( typeof( OilFlask ), 4 );
                 Add(typeof(Torch), 3);

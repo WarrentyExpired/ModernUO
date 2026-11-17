@@ -275,22 +275,10 @@ public partial class TreasureMap : MapItem
         return null;
     }
 
-    public static bool HasDiggingTool(Mobile m)
+    private static bool HasDiggingTool(Mobile m)
     {
-        if (m.Backpack == null)
-        {
-            return false;
-        }
-
-        foreach (var tool in m.Backpack.FindItemsByType<BaseHarvestTool>())
-        {
-            if (tool.HarvestSystem == Mining.System)
-            {
-                return true;
-            }
-        }
-
-        return false;
+        return (m.FindItemOnLayer(Layer.OneHanded) is BaseAxe oneHand && oneHand.HarvestSystem == Mining.System) ||
+           (m.FindItemOnLayer(Layer.TwoHanded) is BaseAxe twoHand && twoHand.HarvestSystem == Mining.System);
     }
 
     public void OnBeginDig(Mobile from)

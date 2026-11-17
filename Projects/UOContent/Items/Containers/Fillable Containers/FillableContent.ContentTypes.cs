@@ -433,7 +433,7 @@ public partial class FillableContent
         [typeof(Miner)],
         [
             new FillableEntry(2, typeof(Pickaxe)),
-            new FillableEntry(2, typeof(Shovel)),
+            //new FillableEntry(2, typeof(Shovel)),
             new FillableEntry(2, typeof(IronIngot)),
             // new FillableEntry( 2, typeof( IronOre ) ),	TODO: Smaller Ore
             new FillableEntry(1, typeof(ForgedMetal))

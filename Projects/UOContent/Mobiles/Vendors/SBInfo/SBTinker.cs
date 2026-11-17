@@ -54,7 +54,7 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo(typeof(SmithHammer), 23, 20, 0x13E3, 0));
                 // TODO: Sledgehammer
 
-                Add(new GenericBuyInfo(typeof(Shovel), 12, 20, 0xF39, 0));
+                //Add(new GenericBuyInfo(typeof(Shovel), 12, 20, 0xF39, 0));
 
                 Add(new GenericBuyInfo(typeof(MouldingPlane), 11, 20, 0x102C, 0));
                 Add(new GenericBuyInfo(typeof(JointingPlane), 10, 20, 0x1030, 0));
@@ -78,7 +78,7 @@ namespace Server.Mobiles
                 Add(typeof(LapHarp), 10);
                 Add(typeof(Lute), 10);
 
-                Add(typeof(Shovel), 6);
+                //Add(typeof(Shovel), 6);
                 Add(typeof(SewingKit), 1);
                 Add(typeof(Scissors), 6);
                 Add(typeof(Tongs), 7);

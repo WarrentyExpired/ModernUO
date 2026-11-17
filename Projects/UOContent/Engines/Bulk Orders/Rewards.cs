@@ -196,7 +196,7 @@ namespace Server.Engines.BulkOrders
 
     public sealed class SmithRewardCalculator : RewardCalculator
     {
-        private static readonly ConstructCallback SturdyShovel = CreateSturdyShovel;
+        //private static readonly ConstructCallback SturdyShovel = CreateSturdyShovel;
         private static readonly ConstructCallback SturdyPickaxe = CreateSturdyPickaxe;
         private static readonly ConstructCallback MiningGloves = CreateMiningGloves;
         private static readonly ConstructCallback GargoylesPickaxe = CreateGargoylesPickaxe;
@@ -354,11 +354,11 @@ namespace Server.Engines.BulkOrders
         {
             Groups = new[]
             {
-                new RewardGroup(0, new RewardItem(1, SturdyShovel)),
+                //new RewardGroup(0, new RewardItem(1, SturdyShovel)),
                 new RewardGroup(25, new RewardItem(1, SturdyPickaxe)),
                 new RewardGroup(
                     50,
-                    new RewardItem(45, SturdyShovel),
+                    //new RewardItem(45, SturdyShovel),
                     new RewardItem(45, SturdyPickaxe),
                     new RewardItem(10, MiningGloves, 1)
                 ),
@@ -500,7 +500,7 @@ namespace Server.Engines.BulkOrders
             return Utility.RandomMinMax(min, max);
         }
 
-        private static Item CreateSturdyShovel(int type) => new SturdyShovel();
+        //private static Item CreateSturdyShovel(int type) => new SturdyShovel();
 
         private static Item CreateSturdyPickaxe(int type) => new SturdyPickaxe();
 
