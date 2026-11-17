@@ -6,7 +6,7 @@ Citizens
   - Tradesman Citizens are npc that look like they are working. Standing at an
     anvil making armor/weapons etc.
 CrystalOfKnowlege/Fortitude/Insight
-  - These act as power scrolls, but only raise skill/skill total/stat cap 1 point at a time.
+  - These act as power scrolls, but only raise skill cap/stat cap/total skill cap 1 point at a time.
 Portal Gates
   - Gates that spawn all over the Overworld. The spawn hard monsters when you get with in a
     set number of tiles.
@@ -25,7 +25,7 @@ Crafting Skill Guide
   - There is a button on the main crafting menu that will open a gump and show you what you can make
     at your current skill level.
 Armslore changes
-  - Execption weapons now cap at 25% damage increase. Arms Lore can raise it up to 35%
+  - AOS era only: Execption weapons now cap at 25% damage increase. Arms Lore can raise it up to 35%
     1% for every 10 skill points.
 Command
   - [Dashboard - Opens a dashboard that displays a lot of character stats

@@ -81,7 +81,19 @@ public class BountyRewardGump : Gump
     // Define Reward Store Items using factory functions: (Name, TokenCost, CreateItem)
     private static readonly (string Name, int Cost, Func<Item> CreateItem)[] Rewards = new (string, int, Func<Item>)[]
     {
-        ("Dungeon Hunter Ring", 25, () => new GoldRing()),
+        ("The Hunters Jewelry Set", 500, () => Utility.Random(3) switch
+          {
+            0 => new HuntersRing(),
+            1 => new HuntersBracelet(),
+            _ => new HuntersEarrings()
+        }),
+
+        ("The Archmage Jewelry Set", 500, () => Utility.Random(3) switch
+          {
+            0 => new ArchmageRing(),
+            1 => new ArchmageBracelet(),
+            _ => new ArchmageEarrings()
+        }),
 
         ("Random Monster Statue", 50, () =>
         {

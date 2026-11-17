@@ -20,4 +20,6 @@ public partial class BountyToken : Item
         Amount = amount;
         LootType = LootType.Blessed; // Keeps tokens safe in dungeons upon death
     }
+    public override double DefaultWeight => 0.001; // 1,000 tokens per 1 stone
+    // public override double DefaultWeight => 0.0; // Weightless
 }
