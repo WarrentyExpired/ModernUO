@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using ModernUO.Serialization;
@@ -3711,10 +3711,16 @@ namespace Server.Mobiles
                 }
 
                 Region deathRegion = Region.Find(c.Location, c.Map);
+                bool isDaily = DailyDungeonManager.IsActive(deathRegion);
+
+                if (!Summoned && !NoKillAwards && !(deathRegion is NewbieDungeonRegion))
+                {
+                    TreasureHoardPile.TrySpawnFromCreature(this, c.Location, c.Map, killer, isDaily);
+                }
 
                 int baseGold = c.GetAmount(typeof(Server.Items.Gold));
 
-                if (DailyDungeonManager.IsActive(deathRegion))
+                if (isDaily)
                 {
                     if (baseGold > 0)
                     {
