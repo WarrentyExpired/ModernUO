@@ -92,11 +92,11 @@
   {
     "Key": "bulk_orders",
     "Description": "Allow bulk order deeds",
-    "Enabled": true,
+    "Enabled": false,
     "DefaultEnabled": true,
     "Category": "Crafting",
-    "LastModified": "2026-11-16T15:07:11.1648248Z",
-    "LastModifiedBy": "System"
+    "LastModified": "2026-11-17T18:12:05.2633006Z",
+    "LastModifiedBy": "Dungeon Keeper"
   },
   {
     "Key": "passive_detect_hidden",
@@ -110,19 +110,19 @@
   {
     "Key": "young_player_system",
     "Description": "Enable the young player system",
-    "Enabled": true,
+    "Enabled": false,
     "DefaultEnabled": true,
     "Category": "System",
-    "LastModified": "2026-11-16T15:07:11.1648248Z",
-    "LastModifiedBy": "System"
+    "LastModified": "2026-11-17T18:12:30.6492546Z",
+    "LastModifiedBy": "Dungeon Keeper"
   },
   {
     "Key": "bitmap_pathfinding_cache",
     "Description": "Enable the bitmap pathfinding cache",
-    "Enabled": true,
+    "Enabled": false,
     "DefaultEnabled": true,
     "Category": "Performance",
-    "LastModified": "2026-11-16T15:07:11.1648248Z",
-    "LastModifiedBy": "System"
+    "LastModified": "2026-11-17T18:12:24.2570376Z",
+    "LastModifiedBy": "Dungeon Keeper"
   }
 ]

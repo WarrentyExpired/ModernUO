@@ -55,6 +55,7 @@ New Dungeon Trap system
   - Dex/Int Physical Resists, Magig Resists can also prevent or lesses the damage.
 Treasure Maps
   - Maps now have a new gump
+  - Pickaxes are now used to dig them up and it must be equiped.
 Settings.cs/ValidSettings.cs
   - There is a Settings.cs file that allows you to change some things.
   - The ValidSettings.cs sets hard limits for some of the settings.
@@ -100,3 +101,6 @@ Fising
   - SOS's will now display the X,Y location if the player has a sextant in thier backpack
 Skill gains
  - Dugeons, New Player Dungeon, and Dungeon of the Day have faster skill gain rates.
+Shovels are gone
+  - I removed shovels from the game. They have not equiped animation so they can't be equiped to use
+    them. Treasure maps and Mining are all done with a pickaxe now."
