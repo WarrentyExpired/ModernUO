@@ -14,6 +14,7 @@ A custom Ultima Online shard built on [ModernUO](https://github.com/ModernUO/Mod
 - `main` — Vanilla upstream ModernUO mirror (used for pulling engine updates)
 
 ## Getting Started
-
+<!--
 1. Clone the repository:
    git clone [https://github.com/Warrentyexpired/ModernUO.git](https://github.com/Warrentyexpired/ModernUO.git)
+-->
