@@ -53,7 +53,8 @@ And yes **AI** helped me!
 - **Activation:** 10% chance to trigger on hit with a 5-second cooldown.
 
 ### Healing & Bandage Rework
-- **Bandages (Heal Over Time):** Bandages now restore small ticks of HP over their duration instead of all at once (any HP ticked is subtracted from the final heal total), and bandages no longer cure poison.
+- **Bandages (Heal Over Time):** Bandages now restore small ticks of HP over their duration instead of all at once (any HP ticked is subtracted from the final heal total), the heal tick will not cure poison, only the final application of the bandage will.
+
 - **Active Healing Skill:** The **Healing** skill can now be activated directly to instantly cure poison and bleed effects, triggering a 15-second skill lock.
 
 ### Skill Gain & Stat Bonuses
