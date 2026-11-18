@@ -112,6 +112,7 @@ namespace Server.Items
         {
             base.OnHit(attacker, defender, damageBonus);
 
+            /*
             if (!Core.AOS && Core.UOR && (attacker.Player || attacker.Body.IsHuman) && Layer == Layer.TwoHanded &&
                 attacker.Skills.Anatomy.Value >= 80 &&
                 attacker.Skills.Anatomy.Value / 400.0 >= Utility.RandomDouble() &&
@@ -135,6 +136,7 @@ namespace Server.Items
                     attacker.PlaySound(0x308);
                 }
             }
+            */
         }
     }
 }

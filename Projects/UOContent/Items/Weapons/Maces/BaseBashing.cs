@@ -28,6 +28,7 @@ namespace Server.Items
         {
             var damage = base.GetBaseDamage(attacker);
 
+            /*
             if (!Core.AOS && Core.UOR && (attacker.Player || attacker.Body.IsHuman) && Layer == Layer.TwoHanded &&
                 attacker.Skills.Anatomy.Value >= 80 &&
                 attacker.Skills.Anatomy.Value / 400.0 >= Utility.RandomDouble() &&
@@ -38,6 +39,7 @@ namespace Server.Items
                 attacker.SendLocalizedMessage(1060090); // You have delivered a crushing blow!
                 attacker.PlaySound(0x11C);
             }
+            */
 
             return damage;
         }

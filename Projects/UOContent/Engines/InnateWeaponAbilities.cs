@@ -7,8 +7,6 @@ namespace Server.Combat
 {
     public static class InnateWeaponAbilities
     {
-        // Upgraded to a ConcurrentDictionary to handle ModernUO's multithreaded combat
-        // Using 'long' to track Core.TickCount instead of DateTime
         private static readonly ConcurrentDictionary<Mobile, long> _cooldowns = new ConcurrentDictionary<Mobile, long>();
 
         public static void CheckProc(Mobile attacker, Mobile defender, BaseWeapon weapon)
@@ -16,10 +14,8 @@ namespace Server.Combat
             if (attacker == null || defender == null || weapon == null || !defender.Alive)
                 return;
 
-            // 1. Thread-safe Cooldown Check
             if (_cooldowns.TryGetValue(attacker, out long nextAllowedProc))
             {
-                // If the current server tick is less than the allowed tick, they are still on cooldown
                 if (Core.TickCount < nextAllowedProc)
                     return;
             }
@@ -30,13 +26,11 @@ namespace Server.Combat
             if (wpnSkill < 69.9 || tactics < 69.9)
                 return;
 
-            // Ensure you drop this back down to 0.10 if you raised it for testing!
             double procChance = 0.10;
 
             if (Utility.RandomDouble() >= procChance)
                 return;
 
-            // 2. Proc Successful: Lock them out for 5000 milliseconds (5 seconds)
             _cooldowns[attacker] = Core.TickCount + 5000;
 
             bool isGrandmaster = (wpnSkill >= 99.9 && tactics >= 99.9);
@@ -77,7 +71,6 @@ namespace Server.Combat
                 BleedAttack.BeginBleed(defender, attacker);
             }
 
-            // Note: If you see double messages here, it's because BeginBleed() natively sends its own message too!
             attacker.SendMessage(0x3F, "Your blade inflicts a bleeding wound!");
             defender.SendMessage(0x22, "You are bleeding severely!");
         }
@@ -121,10 +114,9 @@ namespace Server.Combat
             defender.PlaySound(0x23B);
             defender.FixedParticles(0x3779, 1, 15, 9905, 32, 7, EffectLayer.Head);
 
-            // Heavy physical burst damage
             int damage = Utility.RandomMinMax(15, 25);
-            AOS.Damage(defender, attacker, damage, 100, 0, 0, 0, 0);
-
+            //AOS.Damage(defender, attacker, damage, 100, 0, 0, 0, 0);
+            defender.Damage(damage, attacker);
             attacker.SendMessage(0x21, $"You brutally sever your opponent, dealing extra damage!");
             defender.SendMessage(0x22, "A brutal strike tears into your flesh!");
         }
@@ -134,7 +126,6 @@ namespace Server.Combat
             defender.PlaySound(0x11C); // Heavy thud
             defender.FixedParticles(0x373A, 1, 15, 9905, 33, 7, EffectLayer.Head);
 
-            // Extreme armor-ignoring damage
             int directDamage = Utility.RandomMinMax(20, 30);
             AOS.Damage(defender, attacker, directDamage, true, 100, 0, 0, 0, 0, 0);
 
@@ -147,7 +138,6 @@ namespace Server.Combat
             defender.PlaySound(0x2B1); // Fast swish sound
             defender.FixedParticles(0x37B9, 1, 14, 9905, 32, 7, EffectLayer.Waist);
 
-            // Instantly resets the weapon swing timer so the next attack happens immediately
             attacker.NextCombatTime = Core.TickCount;
 
             attacker.SendMessage(0x42, "You strike with blinding speed, granting an immediate follow-up attack!");
@@ -159,11 +149,10 @@ namespace Server.Combat
             defender.PlaySound(0x308); // Breaking sound
             defender.FixedParticles(0x375A, 1, 15, 9905, 12, 7, EffectLayer.Waist);
 
-            // Halves current stamina and deals moderate crushing damage
             defender.Stam /= 2;
             int damage = Utility.RandomMinMax(10, 20);
-            AOS.Damage(defender, attacker, damage, 100, 0, 0, 0, 0);
-
+            //AOS.Damage(defender, attacker, damage, 100, 0, 0, 0, 0);
+            defender.Damage(damage, attacker);
             attacker.SendMessage(0x35, "You shatter your opponent's guard, decimating their stamina!");
             defender.SendMessage(0x22, "A shattering blow knocks the wind out of you!");
         }
