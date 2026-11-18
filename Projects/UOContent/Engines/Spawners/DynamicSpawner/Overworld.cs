@@ -233,7 +233,7 @@ namespace Server.Custom.DynamicSpawns
         private static readonly Type[] SwampAnimals = [typeof(Alligator), typeof(GiantToad), typeof(GiantSerpent), typeof(Mongbat), typeof(SwampDragon), typeof(CorrosiveSlime)];
         private static readonly Type[] SnowAnimals = [typeof(PolarBear), typeof(SnowLeopard), typeof(WhiteWolf), typeof(Walrus), typeof(IceSnake), typeof(FrostSpider), typeof(Walrus)];
         private static readonly Type[] WaterCreatures = [typeof(Dolphin), typeof(SeaHorse)];
-        private static readonly Type[] ForestMobs = [typeof(Reaper), typeof(Gazer), typeof(Imp), typeof(Troll), typeof(Wisp)];
+        private static readonly Type[] ForestMobs = [typeof(Reaper), typeof(Gazer), typeof(Imp), typeof(Troll), typeof(Wisp), typeof(Ogre)];
         private static readonly Type[] GrassMobs = [typeof(Corpser), typeof(Orc), typeof(Ettin), typeof(SkitteringHopper), typeof(HeadlessOne)];
         private static readonly Type[] JungleMobs = [typeof(Ogre), typeof(Orc), typeof(Bogle), typeof(VampireBat), typeof(Corpser)];
         private static readonly Type[] SandMobs = [typeof(Skeleton), typeof(Mummy), typeof(Shade), typeof(HellHound), typeof(SandVortex)];
