@@ -104,6 +104,7 @@ The map while custom, isn't mine. The main land mass is a Darkshard map called T
 
 ### Quality-of-Life Features
 - **Auto-Mount / Dismount:** Players automatically dismount when entering restricted regions (such as dungeons and town businesses) and automatically remount upon leaving.
+- **Farm Spawner:** I added a simple farm spawner system. I only have 1 farm spawning at the moment.
 
 ---
 
@@ -121,7 +122,6 @@ The map while custom, isn't mine. The main land mass is a Darkshard map called T
 | `[IS <path>` | Imports spawners from a JSON file (e.g., `[IS Data/Spawns/Dungeon/Shame.json`). |
 | `[EAS` | Exports all spawners on the current map to `Data/Spawns/Exported/<timestamp>.json`. |
 | `[ECN` | Exports all `CitizenNodes` on the current map. |
-| *(Spawner)* `FarmSpawner` | Simplified farm plot spawner for quickly setting up farmland. |
 
 ### Server Settings
 - **`Settings.cs` & `ValidSettings.cs`:** Server administrators can customize shard mechanics in `Settings.cs`, while `ValidSettings.cs` enforces safe minimum and maximum bounds.
