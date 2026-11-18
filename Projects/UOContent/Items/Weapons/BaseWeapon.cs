@@ -32,10 +32,12 @@ public abstract partial class BaseWeapon
     : Item, IWeapon, IFactionItem, ICraftable, ISlayer, IDurability, IAosItem, IIdentifiable
 {
     private static bool _enableInstaHit;
+    private static double _pvmDamageScalar;
 
     public static void Configure()
     {
         _enableInstaHit = ServerConfiguration.GetSetting("melee.enableInstaHit", !Core.UOR);
+        _pvmDamageScalar =  ServerConfiguration.GetSetting("melee.pvmMonsterDamageScalar", 1.0);
     }
 
     /* Weapon internals work differently now (Mar 13 2003)
@@ -1864,6 +1866,11 @@ public abstract partial class BaseWeapon
         damage = AOS.Scale(damage, 100 + percentageBonus);
         damage = ModifyDamage(attacker, defender, damage);
 
+        if (_pvmDamageScalar != 1.0 && attacker is BaseCreature && defender is PlayerMobile)
+        {
+            damage = (int)(damage * _pvmDamageScalar);
+        }
+
         var defLoc = new WorldLocation(defender);
         var bcAtt = attacker as BaseCreature;
         var bcDef = defender as BaseCreature;
@@ -2699,7 +2706,9 @@ public abstract partial class BaseWeapon
         var damage = (int)ScaleDamageOld(attacker, GetBaseDamage(attacker), true);
 
         // pre-AOS, halve damage if the defender is a player or the attacker is not a player
-        if (defender is PlayerMobile || attacker is not PlayerMobile)
+        // Default
+        // if (defender is PlayerMobile || attacker is not PlayerMobile)
+        if (defender is PlayerMobile && attacker is PlayerMobile)
         {
             damage /= 2;
         }

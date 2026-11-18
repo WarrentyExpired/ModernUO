@@ -108,6 +108,7 @@
     "opl.enable": "True",
     "t2aCraftMenus": "False",
     "vendor.isInvulnerable": "True",
-    "visibleDamage": "True"
+    "visibleDamage": "True",
+    "melee.pvmMonsterDamageScalar": "1.0"
   }
 }
