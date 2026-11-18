@@ -65,16 +65,16 @@ public static class BountyRegistry
         // ==========================================
         // TIER 1: Local Adventurer (Fame 0) - Rewards: 5 Tokens, 500g
         // ==========================================
-        Add(1, new BountyDefinition(1, "Headless Ones in the lands of Veridia.", new[] { typeof(HeadlessOne) }, 10, 0, 5, 500, "Veridia"));
-        Add(1, new BountyDefinition(2, "Orcs in the lands of Veridia.", new[] { typeof(Orc) }, 10, 0, 5, 500, "Veridia"));
-        Add(1, new BountyDefinition(3, "Ogres in the lands of Veridia.", new[] { typeof(Ogre) }, 10, 0, 5, 500, "Veridia"));
-        Add(1, new BountyDefinition(4, "Ettins in the lands of Veridia.", new[] { typeof(Ettin) }, 10, 0, 5, 500, "Veridia"));
-        Add(1, new BountyDefinition(5, "Imps in the lands of Veridia.", new[] { typeof(Imp) }, 10, 0, 5, 500, "Veridia"));
-        Add(1, new BountyDefinition(6, "Mongbats in the New Player Dungeon.", new[] { typeof(Mongbat) }, 10, 0, 5, 500, "New Player Dungeon"));
-        Add(1, new BountyDefinition(7, "Giant Rats in the New Player Dungeon.", new[] { typeof(GiantRat) }, 10, 0, 5, 500, "New Player Dungeon"));
-        Add(1, new BountyDefinition(8, "Frail Skeletons in the New Player Dungeon.", new[] { typeof(FrailSkeleton) }, 10, 0, 5, 500, "New Player Dungeon"));
-        Add(1, new BountyDefinition(9, "Cowardly Brigands in the New Player Dungeon.", new[] { typeof(CowardlyBrigand) }, 10, 0, 5, 500, "New Player Dungeon"));
-        Add(1, new BountyDefinition(10, "Feeble Orcs in the New Player Dungeon.", new[] { typeof(FeebleOrc) }, 10, 0, 5, 500, "New Player Dungeon"));
+        Add(1, new BountyDefinition(1, "Headless Ones in the lands of Veridia.", new[] { typeof(HeadlessOne) }, 5, 0, 5, 500, "Veridia"));
+        Add(1, new BountyDefinition(2, "Orcs in the lands of Veridia.", new[] { typeof(Orc) }, 5, 0, 5, 500, "Veridia"));
+        Add(1, new BountyDefinition(3, "Ogres in the lands of Veridia.", new[] { typeof(Ogre) }, 5, 0, 5, 500, "Veridia"));
+        Add(1, new BountyDefinition(4, "Ettins in the lands of Veridia.", new[] { typeof(Ettin) }, 5, 0, 5, 500, "Veridia"));
+        Add(1, new BountyDefinition(5, "Imps in the lands of Veridia.", new[] { typeof(Imp) }, 5, 0, 5, 500, "Veridia"));
+        Add(1, new BountyDefinition(6, "Mongbats in the New Player Dungeon.", new[] { typeof(Mongbat) }, 5, 0, 5, 500, "New Player Dungeon"));
+        Add(1, new BountyDefinition(7, "Giant Rats in the New Player Dungeon.", new[] { typeof(GiantRat) }, 5, 0, 5, 500, "New Player Dungeon"));
+        Add(1, new BountyDefinition(8, "Frail Skeletons in the New Player Dungeon.", new[] { typeof(FrailSkeleton) }, 5, 0, 5, 500, "New Player Dungeon"));
+        Add(1, new BountyDefinition(9, "Ratmen in the New Player Dungeon.", new[] { typeof(MangyRatman), typeof(SicklyRatmanMage), typeof(BlindRatmanArcher) }, 5, 0, 5, 500, "New Player Dungeon"));
+        Add(1, new BountyDefinition(10, "Orcs in the New Player Dungeon.", new[] { typeof(FeebleOrc), typeof(OrcGrunt), typeof(WeakOrcishMage) }, 5, 0, 5, 500, "New Player Dungeon"));
 
         // ==========================================
         // TIER 2: Estimable Hunter (Fame 1250) - Rewards: 15 Tokens, 1200g
