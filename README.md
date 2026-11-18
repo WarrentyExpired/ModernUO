@@ -4,6 +4,10 @@ A custom Ultima Online shard built on [ModernUO](https://github.com/ModernUO/Mod
 It is in very early stages, but it is playable. A few of the dungeons are spawned. Most of the telepoters have been place.
 And yes **AI** helped me!
 
+The map while custom, isn't mine. The main land mass is a Darkshard map called Teareek. Most of the cities come from the New Enhanced Sosaria map. Which again I think is a Darkshard map. The rest of the map is bits and pieces that I have found from all over the internet. The map still needs polish, but its pretty close to done.
+
+**Map 0** is the Underworld map. It has all the dungeons and mining caves.
+**Map 1** is the Overworld map. It has.. well the Overworld stuff.
 
 ## Repository Branches
 - `uor` *(Default)* — Active, playable Sovereign Realm server codebase
