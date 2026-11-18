@@ -75,9 +75,16 @@ public static class TaskManager
                 wanderersRemoved++;
             }
         }
+
+        string status = $"[TaskManager 30M] Refreshed {nodesRefreshed} CitizenNode(s) and cycled {wanderersRemoved} wandering citizen(s).";
+
+        Utility.PushColor(ConsoleColor.Cyan);
+        Console.WriteLine(status);
+        Utility.PopColor();
+
         if (from != null)
         {
-            from.SendMessage($"[TaskManager 30M] Refreshed {nodesRefreshed} CitizenNode(s) and cycled {wanderersRemoved} wandering citizen(s).");
+            from.SendMessage(0x35, status);
         }
     }
 
