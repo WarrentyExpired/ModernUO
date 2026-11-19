@@ -1,0 +1,4 @@
+Look into trap chance.
+Look in to magic jewelry.
+MR rating isn't adding up in dashboard right.
+Add AR/MR to Statusbar

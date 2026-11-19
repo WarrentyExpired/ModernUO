@@ -28,6 +28,22 @@ public partial class BaseShield : BaseArmor
         }
     }
 
+    public override double MagicResistance
+    {
+        get
+        {
+            var m = Parent as Mobile;
+            var mr = base.MagicResistance;
+
+            if (m != null)
+            {
+                return m.Skills.Parry.Value * mr / 200.0;
+            }
+
+            return mr;
+        }
+    }
+
     public override int OnHit(BaseWeapon weapon, int damage)
     {
         if (Core.AOS)

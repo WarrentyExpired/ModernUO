@@ -1095,7 +1095,7 @@ namespace Server.Spells
                 if (item is BaseArmor armor)
                 {
                     totalMR += armor is BaseShield
-                        ? (target.Skills.Parry.Value * armor.MagicResistance / 200.0)
+                        ? armor.MagicResistance
                         : armor.MagicResistanceScaled;
                 }
             }
@@ -1103,6 +1103,7 @@ namespace Server.Spells
             return totalMR;
         }
 
+        /*
         private static int ApplyMagicResistanceArmor(Mobile from, Mobile target, int damage)
         {
             if (Core.AOS || damage <= 1 || target == null)
@@ -1122,6 +1123,33 @@ namespace Server.Spells
             int mitigated = (int)Math.Round(damage * (1.0 - reductionPct));
 
             return Math.Max(1, mitigated);
+        }*/
+
+        private static int ApplyMagicResistanceArmor(Mobile from, Mobile target, int damage)
+        {
+            if (Core.AOS || damage <= 1 || target == null)
+            {
+                return damage;
+            }
+
+            double mr = GetMagicArmorRating(target);
+            bool isPvP = from is PlayerMobile && target is PlayerMobile;
+            double maxCap = isPvP ? 0.20 : 0.40;
+            double reductionPct = mr > 0 ? Math.Min(maxCap, mr * 0.0125) : 0.0;
+            int mitigated = mr > 0 ? Math.Max(1, (int)Math.Round(damage * (1.0 - reductionPct))) : damage;
+
+            // Debug output for GM+ testers
+            string debugMsg = $"[MR Debug] Raw: {damage} | Target MR: {mr:F1} | Reduction: {reductionPct * 100:F1}% ({(isPvP ? "PvP" : "PvM")}) | Final: {mitigated}";
+            if (from?.AccessLevel >= AccessLevel.GameMaster)
+            {
+                from.SendMessage(0x59, debugMsg);
+            }
+            if (target.AccessLevel >= AccessLevel.GameMaster && target != from)
+            {
+                target.SendMessage(0x59, debugMsg);
+            }
+
+            return mitigated;
         }
 
         private class SpellDamageTimerAOS : Timer

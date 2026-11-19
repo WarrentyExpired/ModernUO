@@ -11,3 +11,7 @@ Night Sight
     Lesser, normal, greater
   - Night sight increase trap detection
   - Night sight increases chance to find more ore/upgrade ore node.
+
+Point/Bounty rewards
+  - Increase innate proc chance
+  - Increase Magic armor resist cap

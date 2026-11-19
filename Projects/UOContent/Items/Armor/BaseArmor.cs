@@ -379,7 +379,7 @@ namespace Server.Items
             }
         }
 
-        public double MagicResistanceScaled => MagicResistance * ArmorScalar;
+        public virtual double MagicResistanceScaled => MagicResistance * ArmorScalar;
 
         [EncodedInt]
         [SerializableProperty(16, useField: nameof(_strBonus))]
@@ -1067,6 +1067,10 @@ namespace Server.Items
 
                 from.Delta(MobileDelta.Armor); // Tell them armor rating has changed
             }
+            if (parent is Mobile m)
+            {
+                Server.Custom.UI.StatusBar.Refresh(m);
+            }
         }
 
         public virtual double ScaleArmorByDurability(double armor)
@@ -1271,8 +1275,8 @@ namespace Server.Items
 
                 m.Delta(MobileDelta.Armor); // Tell them armor rating has changed
                 m.CheckStatTimers();
+                Server.Custom.UI.StatusBar.Refresh(m);
             }
-
             base.OnRemoved(parent);
         }
 
@@ -1613,6 +1617,7 @@ namespace Server.Items
             // Hidden till Identified
             if (!isMagicItem || _identified ) //|| from.AccessLevel >= AccessLevel.GameMaster)
             {
+                /*
                 // Armor Rating
                 double displayAR = ArmorRatingScaled;
                 if (this is BaseShield && Parent as Mobile == null)
@@ -1629,6 +1634,29 @@ namespace Server.Items
                 if (this is BaseShield && Parent is not Mobile)
                 {
                     displayMR = (from.Skills.Parry.Value * MagicResistance / 200.0) + 1.0;
+                }
+                if (displayMR > 0)
+                {
+                    LabelTo(from, $"Magic Resistance: {(int)Math.Round(displayMR, MidpointRounding.AwayFromZero)}");
+                }
+                */
+
+                // Armor Rating
+                double displayAR = this is BaseShield ? ArmorRating : ArmorRatingScaled;
+                if (this is BaseShield && Parent is not Mobile)
+                {
+                    displayAR = (from.Skills.Parry.Value * ArmorRating / 200.0) + 1.0;
+                }
+                if (displayAR > 0)
+                {
+                    LabelTo(from, $"Armor Rating: {(int)Math.Round(displayAR, MidpointRounding.AwayFromZero)}");
+                }
+
+                // Magic Rating
+                double displayMR = this is BaseShield ? MagicResistance : MagicResistanceScaled;
+                if (this is BaseShield && Parent is not Mobile)
+                {
+                    displayMR = from.Skills.Parry.Value * MagicResistance / 200.0;
                 }
                 if (displayMR > 0)
                 {

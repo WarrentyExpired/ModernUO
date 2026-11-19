@@ -105,10 +105,11 @@
     "world.useMultithreadedSaves": "True",
     "factions.enabled": "False",
     "melee.enableInstaHit": "True",
-    "opl.enable": "True",
     "t2aCraftMenus": "False",
     "vendor.isInvulnerable": "True",
     "visibleDamage": "True",
+    "opl.enable": "True",
+    "asciiClickMessage": "False",
     "melee.pvmMonsterDamageScalar": "1.0"
   }
 }
