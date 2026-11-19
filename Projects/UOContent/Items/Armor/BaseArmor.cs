@@ -329,6 +329,58 @@ namespace Server.Items
 
         public double ArmorRatingScaled => ArmorRating * ArmorScalar;
 
+        public virtual double MagicResistance
+        {
+            get
+            {
+                var mr = 0.0;
+
+                // Leather/Studded naturally resists magic better than bare iron
+                if (MaterialType is ArmorMaterialType.Leather or ArmorMaterialType.Studded)
+                {
+                    mr += 4;
+                }
+                else if (MaterialType is ArmorMaterialType.Bone or ArmorMaterialType.Dragon)
+                {
+                    mr += 6;
+                }
+
+                // Magic protection suffix adds a small MR boost
+                if (_protectionLevel != ArmorProtectionLevel.Regular)
+                {
+                    mr += 2 * (int)_protectionLevel;
+                }
+
+                // Colored resources infuse Magic Resistance alongside AR
+                mr += _resource switch
+                {
+                    CraftResource.DullCopper    => 2,
+                    CraftResource.ShadowIron    => 4,
+                    CraftResource.Copper        => 6,
+                    CraftResource.Bronze        => 8,
+                    CraftResource.Gold          => 10,
+                    CraftResource.Agapite       => 13,
+                    CraftResource.Verite        => 16,
+                    CraftResource.Valorite      => 20,
+                    CraftResource.SpinedLeather => 10,
+                    CraftResource.HornedLeather => 15,
+                    CraftResource.BarbedLeather => 20,
+                    CraftResource.RedScales     => 14,
+                    CraftResource.YellowScales  => 14,
+                    CraftResource.BlackScales   => 16,
+                    CraftResource.GreenScales   => 16,
+                    CraftResource.WhiteScales   => 18,
+                    CraftResource.BlueScales    => 18,
+                    _                           => 0
+                };
+
+                mr += 3 * (int)(_quality - 1);
+                return ScaleArmorByDurability(mr);
+            }
+        }
+
+        public double MagicResistanceScaled => MagicResistance * ArmorScalar;
+
         [EncodedInt]
         [SerializableProperty(16, useField: nameof(_strBonus))]
         [SaveFlag(nameof(ShouldSerializeStrBonus), nameof(StrBonusDefaultValue))]
@@ -1570,6 +1622,17 @@ namespace Server.Items
                 if (displayAR > 0)
                 {
                     LabelTo(from, $"Armor Rating: {(int)Math.Round(displayAR, MidpointRounding.AwayFromZero)}");
+                }
+
+                // Magic Armor Rating
+                double displayMR = MagicResistanceScaled;
+                if (this is BaseShield && Parent is not Mobile)
+                {
+                    displayMR = (from.Skills.Parry.Value * MagicResistance / 200.0) + 1.0;
+                }
+                if (displayMR > 0)
+                {
+                    LabelTo(from, $"Magic Resistance: {(int)Math.Round(displayMR, MidpointRounding.AwayFromZero)}");
                 }
 
                 // Show Strength Requirement

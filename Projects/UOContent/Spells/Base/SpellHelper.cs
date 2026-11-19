@@ -921,7 +921,7 @@ namespace Server.Spells
 
                 bcFrom?.AlterSpellDamageTo(target, ref damageGiven);
                 bcTarget?.AlterSpellDamageFrom(from, ref damageGiven);
-
+                damageGiven = ApplyMagicResistanceArmor(target, damageGiven);
                 target.Damage(damageGiven, from);
 
                 bcFrom?.OnDamageSpell(target, damageGiven);
@@ -989,6 +989,8 @@ namespace Server.Spells
                 bcFrom?.AlterSpellDamageTo(target, ref dmg);
 
                 bcTarget?.AlterSpellDamageFrom(from, ref dmg);
+
+                dmg = ApplyMagicResistanceArmor(target, dmg);
 
                 if (Feint.GetDamageReduction(from, target, out var feintReduction))
                 {
@@ -1073,10 +1075,52 @@ namespace Server.Spells
             {
                 (m_From as BaseCreature)?.AlterSpellDamageTo(m_Target, ref m_Damage);
                 (m_Target as BaseCreature)?.AlterSpellDamageFrom(m_From, ref m_Damage);
-
+                m_Damage = ApplyMagicResistanceArmor(m_Target, m_Damage);
                 m_Target.Damage(m_Damage);
                 m_Spell?.RemoveDelayedDamageContext(m_Target);
             }
+        }
+
+        public static double GetMagicArmorRating(Mobile target)
+        {
+            if (target == null)
+            {
+                return 0.0;
+            }
+
+            double totalMR = 0.0;
+
+            foreach (var item in target.Items)
+            {
+                if (item is BaseArmor armor)
+                {
+                    totalMR += armor is BaseShield
+                        ? (target.Skills.Parry.Value * armor.MagicResistance / 200.0)
+                        : armor.MagicResistanceScaled;
+                }
+            }
+
+            return totalMR;
+        }
+
+        private static int ApplyMagicResistanceArmor(Mobile target, int damage)
+        {
+            if (Core.AOS || damage <= 1 || target == null)
+            {
+                return damage;
+            }
+
+            double mr = GetMagicArmorRating(target);
+            if (mr <= 0)
+            {
+                return damage;
+            }
+
+            // Each point of total MR reduces spell damage by 1.25%, capped at 40% reduction (at ~32 MR)
+            double reductionPct = Math.Min(0.40, mr * 0.0125);
+            int mitigated = (int)Math.Round(damage * (1.0 - reductionPct));
+
+            return Math.Max(1, mitigated);
         }
 
         private class SpellDamageTimerAOS : Timer

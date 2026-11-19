@@ -13,6 +13,7 @@ using Server.Gumps;
 using Server.Items;
 using Server.Mobiles;
 using Server.Network;
+using Server.Spells;
 
 namespace Server.Gumps;
 
@@ -231,15 +232,19 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
         builder.AddLabel(415, resY + 5, C_YELLOW, "Defense & Overview");
 
         int ar = (int)Math.Round(from.ArmorRating, MidpointRounding.AwayFromZero);
+        double mrRaw = SpellHelper.GetMagicArmorRating(from);
+        int mr = (int)Math.Round(mrRaw, MidpointRounding.AwayFromZero);
+        int mrPct = (int)Math.Round(Math.Min(40.0, mrRaw * 1.25), MidpointRounding.AwayFromZero);
         double magicResist = from.Skills.MagicResist.Value;
         double totalSkills = from.SkillsTotal / 10.0;
         double skillCap = from.SkillsCap / 10.0;
 
         StatRow[] overview =
         [
-            new(120, resY + 30, "Armor Rating", $"{ar}", C_BLUE, 105),
-            new(400, resY + 30, "Magic Resist", $"{magicResist:F1}", C_PURPLE, 105),
-            new(680, resY + 30, "Skill Total",  $"{totalSkills:F1} / {skillCap:F1}", C_GREEN, 95),
+            new(55,  resY + 30, "Armor Rating", $"{ar}", C_BLUE, 100),
+            new(275, resY + 30, "Magic Armor",  $"{mr} (-{mrPct}%)", C_PURPLE, 95),
+            new(515, resY + 30, "Magic Resist", $"{magicResist:F1}", C_PURPLE, 100),
+            new(745, resY + 30, "Skill Total",  $"{totalSkills:F1} / {skillCap:F1}", C_GREEN, 90),
         ];
 
         AddRows(ref builder, overview);
