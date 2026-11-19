@@ -921,7 +921,7 @@ namespace Server.Spells
 
                 bcFrom?.AlterSpellDamageTo(target, ref damageGiven);
                 bcTarget?.AlterSpellDamageFrom(from, ref damageGiven);
-                damageGiven = ApplyMagicResistanceArmor(target, damageGiven);
+                damageGiven = ApplyMagicResistanceArmor(from, target, damageGiven);
                 target.Damage(damageGiven, from);
 
                 bcFrom?.OnDamageSpell(target, damageGiven);
@@ -990,7 +990,7 @@ namespace Server.Spells
 
                 bcTarget?.AlterSpellDamageFrom(from, ref dmg);
 
-                dmg = ApplyMagicResistanceArmor(target, dmg);
+                dmg = ApplyMagicResistanceArmor(from, target, dmg);
 
                 if (Feint.GetDamageReduction(from, target, out var feintReduction))
                 {
@@ -1075,7 +1075,7 @@ namespace Server.Spells
             {
                 (m_From as BaseCreature)?.AlterSpellDamageTo(m_Target, ref m_Damage);
                 (m_Target as BaseCreature)?.AlterSpellDamageFrom(m_From, ref m_Damage);
-                m_Damage = ApplyMagicResistanceArmor(m_Target, m_Damage);
+                m_Damage = ApplyMagicResistanceArmor(m_From, m_Target, m_Damage);
                 m_Target.Damage(m_Damage);
                 m_Spell?.RemoveDelayedDamageContext(m_Target);
             }
@@ -1103,7 +1103,7 @@ namespace Server.Spells
             return totalMR;
         }
 
-        private static int ApplyMagicResistanceArmor(Mobile target, int damage)
+        private static int ApplyMagicResistanceArmor(Mobile from, Mobile target, int damage)
         {
             if (Core.AOS || damage <= 1 || target == null)
             {
@@ -1116,8 +1116,9 @@ namespace Server.Spells
                 return damage;
             }
 
-            // Each point of total MR reduces spell damage by 1.25%, capped at 40% reduction (at ~32 MR)
-            double reductionPct = Math.Min(0.40, mr * 0.0125);
+            bool isPvP = from is PlayerMobile && target is PlayerMobile;
+            double maxCap = isPvP ? 0.20 : 0.40;
+            double reductionPct = Math.Min(maxCap, mr * 0.0125);
             int mitigated = (int)Math.Round(damage * (1.0 - reductionPct));
 
             return Math.Max(1, mitigated);

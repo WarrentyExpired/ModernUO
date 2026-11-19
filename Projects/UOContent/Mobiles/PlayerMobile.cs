@@ -2470,6 +2470,8 @@ namespace Server.Mobiles
                 {
                     deathRobe.Delete();
                 }
+
+                Server.Custom.AutoStable.RestoreMount(this);
             }
         }
 

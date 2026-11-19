@@ -9,7 +9,7 @@ namespace Server.Mobiles
         [Constructible]
         public EnslavedGargoyle() : base(AIType.AI_Melee)
         {
-            Body = 0x2F1;
+            Body = 753;
             BaseSoundID = 0x174;
 
             SetStr(302, 360);
