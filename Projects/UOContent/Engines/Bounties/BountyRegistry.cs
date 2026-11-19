@@ -84,7 +84,7 @@ public static class BountyRegistry
         Add(2, new BountyDefinition(13, "Lizardmen in the Dungeon Despise", new[] { typeof(Lizardman) }, 10, 1250, 15, 1200, "Despise"));
         Add(2, new BountyDefinition(14, "Ghosts in the Dungeon Deceit", new[] { typeof(Spectre), typeof(Shade), typeof(Wraith), typeof(Ghoul) }, 10, 1250, 15, 1200, "Deceit"));
         Add(2, new BountyDefinition(15, "Harpies in the Dungeon Covetous", new[] { typeof(Harpy) }, 10, 1250, 15, 1200, "Covetous"));
-        Add(2, new BountyDefinition(16, "Hell Hounds in the Dungeon Destard", new[] { typeof(HellHound) }, 10, 1250, 15, 1200, "Hythloth"));
+        Add(2, new BountyDefinition(16, "Hell Hounds in the Dungeon Hythloth", new[] { typeof(HellHound) }, 10, 1250, 15, 1200, "Hythloth"));
         Add(2, new BountyDefinition(17, "Ratmen in the Dungeon of Ice", new[] { typeof(Ratman), typeof(RatmanMage), typeof(RatmanArcher) }, 10, 1250, 15, 1200, "Ice"));
 
         // ==========================================

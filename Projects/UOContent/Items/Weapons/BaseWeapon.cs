@@ -2707,8 +2707,7 @@ public abstract partial class BaseWeapon
 
         // pre-AOS, halve damage if the defender is a player or the attacker is not a player
         // Default
-        // if (defender is PlayerMobile || attacker is not PlayerMobile)
-        if (defender is PlayerMobile && attacker is PlayerMobile)
+        if (defender is PlayerMobile || attacker is not PlayerMobile)
         {
             damage /= 2;
         }
