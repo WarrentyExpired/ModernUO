@@ -57,7 +57,7 @@ namespace Server.Regions
             base.OnExit(m);
             if (m is PlayerMobile player)
             {
-                Server.Custom.AutoStable.RestoreMount(player);
+                Server.Custom.AutoStable.RestoreMount(player); //, exitingNoMountRegion: true);
 
                 // Clean up the dictionary when they leave to free up memory
                 _safeSteps.Remove(player);

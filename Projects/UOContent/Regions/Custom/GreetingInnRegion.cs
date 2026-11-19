@@ -38,7 +38,7 @@ namespace Server.Regions
             base.OnExit(m);
             if ( m is PlayerMobile player )
             {
-                Server.Custom.AutoStable.RestoreMount(player);
+                Server.Custom.AutoStable.RestoreMount(player); //, exitingNoMountRegion: true);
             }
         }
     }
