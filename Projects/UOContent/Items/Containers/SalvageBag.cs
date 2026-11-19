@@ -1,8 +1,11 @@
 using System;
 using ModernUO.Serialization;
 using Server.Collections;
+using Server.Commands;
 using Server.ContextMenus;
 using Server.Engines.Craft;
+using Server.Gumps;
+using Server.Network;
 
 namespace Server.Items;
 
@@ -10,6 +13,45 @@ namespace Server.Items;
 public partial class SalvageBag : Bag
 {
     private bool m_Failure;
+
+    public static void Initialize()
+    {
+        CommandSystem.Register("salvage", AccessLevel.Player, Salvage_OnCommand);
+    }
+
+    [Usage("salvage [ingots|cloth]")]
+    [Description("Salvages metal and/or cloth/leather items inside your Salvage Bag.")]
+    private static void Salvage_OnCommand(CommandEventArgs e)
+    {
+        var from = e.Mobile;
+        if (!from.CheckAlive() || from.Backpack == null)
+        {
+            return;
+        }
+
+        var bag = from.Backpack.FindItemByType<SalvageBag>();
+        if (bag == null)
+        {
+            from.SendMessage("You do not have a salvage bag in your backpack.");
+            return;
+        }
+
+        var mode = e.ArgString.Trim().ToLowerInvariant();
+        switch (mode)
+        {
+            case "ingots":
+            case "metal":
+                bag.SalvageIngots(from);
+                break;
+            case "cloth":
+            case "leather":
+                bag.SalvageCloth(from);
+                break;
+            default:
+                bag.SalvageAll(from);
+                break;
+        }
+    }
 
     [Constructible]
     public SalvageBag() : this(Utility.RandomBlueHue())
@@ -27,6 +69,17 @@ public partial class SalvageBag : Bag
 
     public override int LabelNumber => 1079931; // Salvage Bag
 
+    public override void OnDoubleClick(Mobile from)
+    {
+        base.OnDoubleClick(from);
+
+        if (from.Alive && IsChildOf(from.Backpack))
+        {
+            from.CloseGump<SalvageBagGump>();
+            from.SendGump(new SalvageBagGump(this));
+        }
+    }
+
     public override void GetContextMenuEntries(Mobile from, ref PooledRefList<ContextMenuEntry> list)
     {
         base.GetContextMenuEntries(from, ref list);
@@ -38,7 +91,7 @@ public partial class SalvageBag : Bag
             var scissorables = inBackpack && Scissorables();
             list.Add(new SalvageIngotsEntry(resmeltables));
             list.Add(new SalvageClothEntry(scissorables));
-            list.Add(new SalvageAllEntry(resmeltables && scissorables));
+            list.Add(new SalvageAllEntry(resmeltables || scissorables));
         }
     }
 
@@ -137,30 +190,18 @@ public partial class SalvageBag : Bag
         return false;
     }
 
-    private bool Resmeltables() // Where context menu checks for metal items and dragon barding deeds
+    internal bool Resmeltables()
     {
         foreach (var i in Items)
         {
-            return i?.Deleted == false && (
-                i is BaseWeapon weapon && CraftResources.GetType(weapon.Resource) == CraftResourceType.Metal ||
-                i is BaseArmor armor && CraftResources.GetType(armor.Resource) == CraftResourceType.Metal ||
-                i is DragonBardingDeed
-            );
-        }
-
-        return false;
-    }
-
-    private bool Scissorables() // Where context menu checks for Leather items and cloth items
-    {
-        foreach (var i in Items)
-        {
-            if (i is not IScissorable || i.Deleted)
+            if (i?.Deleted != false)
             {
                 continue;
             }
 
-            if (i is BaseClothing or Cloth or BoltOfCloth or Hides or BonePile || i is BaseArmor armor && CraftResources.GetType(armor.Resource) == CraftResourceType.Leather)
+            if (i is BaseWeapon weapon && CraftResources.GetType(weapon.Resource) == CraftResourceType.Metal ||
+                i is BaseArmor armor && CraftResources.GetType(armor.Resource) == CraftResourceType.Metal ||
+                i is DragonBardingDeed)
             {
                 return true;
             }
@@ -169,7 +210,26 @@ public partial class SalvageBag : Bag
         return false;
     }
 
-    private void SalvageIngots(Mobile from)
+    internal bool Scissorables()
+    {
+        foreach (var i in Items)
+        {
+            if (i is not IScissorable || i.Deleted)
+            {
+                continue;
+            }
+
+            if (i is BaseClothing or Cloth or BoltOfCloth or Hides or BonePile ||
+                i is BaseArmor armor && CraftResources.GetType(armor.Resource) == CraftResourceType.Leather)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    internal void SalvageIngots(Mobile from)
     {
         var hasTool = false;
         if (from.Backpack != null)
@@ -233,14 +293,15 @@ public partial class SalvageBag : Bag
         }
     }
 
-    private static readonly Type[] _clothTypes = {
+    private static readonly Type[] _clothTypes =
+    {
         typeof(Leather), typeof(Cloth), typeof(SpinedLeather), typeof(HornedLeather), typeof(BarbedLeather),
         typeof(Bandage), typeof(Bone)
     };
 
-    private void SalvageCloth(Mobile from)
+    internal void SalvageCloth(Mobile from)
     {
-        var scissors = from.Backpack.FindItemByType<Scissors>();
+        var scissors = from.Backpack?.FindItemByType<Scissors>();
 
         if (scissors == null)
         {
@@ -286,10 +347,75 @@ public partial class SalvageBag : Bag
         }
     }
 
-    private void SalvageAll(Mobile from)
+    internal void SalvageAll(Mobile from)
     {
-        SalvageIngots(from);
-        SalvageCloth(from);
+        if (Resmeltables())
+        {
+            SalvageIngots(from);
+        }
+
+        if (Scissorables())
+        {
+            SalvageCloth(from);
+        }
+    }
+
+    private class SalvageBagGump : DynamicGump
+    {
+        private readonly SalvageBag _bag;
+
+        public override bool Singleton => true;
+
+        public SalvageBagGump(SalvageBag bag) : base(150, 150)
+        {
+            _bag = bag;
+        }
+
+        protected override void BuildLayout(ref DynamicGumpBuilder builder)
+        {
+            builder.AddPage();
+            builder.AddBackground(0, 0, 210, 145, 9270);
+            builder.AddAlphaRegion(10, 10, 190, 125);
+
+            builder.AddHtml(10, 16, 190, 20, "<BASEFONT COLOR=#FFCC00><CENTER>Salvage Bag</CENTER></BASEFONT>");
+
+            bool hasIngots = _bag is { Deleted: false } && _bag.Resmeltables();
+            bool hasCloth = _bag is { Deleted: false } && _bag.Scissorables();
+
+            builder.AddButton(25, 45, 4005, 4007, 1, GumpButtonType.Reply, 0);
+            builder.AddLabel(60, 47, hasIngots ? 1152 : 2401, "Salvage Ingots");
+
+            builder.AddButton(25, 73, 4005, 4007, 2, GumpButtonType.Reply, 0);
+            builder.AddLabel(60, 75, hasCloth ? 1152 : 2401, "Salvage Cloth / Leather");
+
+            builder.AddButton(25, 101, 4005, 4007, 3, GumpButtonType.Reply, 0);
+            builder.AddLabel(60, 103, (hasIngots || hasCloth) ? 2213 : 2401, "Salvage All");
+        }
+
+        public override void OnResponse(NetState sender, in RelayInfo info)
+        {
+            var from = sender.Mobile;
+            if (from == null || !from.CheckAlive() || _bag == null || _bag.Deleted || !_bag.IsChildOf(from.Backpack))
+            {
+                return;
+            }
+
+            switch (info.ButtonID)
+            {
+                case 1:
+                    _bag.SalvageIngots(from);
+                    from.SendGump(new SalvageBagGump(_bag));
+                    break;
+                case 2:
+                    _bag.SalvageCloth(from);
+                    from.SendGump(new SalvageBagGump(_bag));
+                    break;
+                case 3:
+                    _bag.SalvageAll(from);
+                    from.SendGump(new SalvageBagGump(_bag));
+                    break;
+            }
+        }
     }
 
     private class SalvageAllEntry : ContextMenuEntry
