@@ -12,7 +12,7 @@ using AMT = Server.Items.ArmorMaterialType;
 
 namespace Server.Items
 {
-    [SerializationGenerator(10, false)]
+    [SerializationGenerator(11, false)]
     public abstract partial class BaseArmor
         : Item, IScissorable, IFactionItem, ICraftable, IWearableDurability, IAosItem, IIdentifiable
     {
@@ -135,6 +135,10 @@ namespace Server.Items
         [SaveFlag(nameof(ShouldSerializeSkillBonuses), nameof(SkillBonusesDefaultValue))]
         [SerializedCommandProperty(AccessLevel.GameMaster, canModify: true)]
         public AosSkillBonuses _skillBonuses;
+
+        [SerializableField(24)]
+        [SerializedCommandProperty(AccessLevel.GameMaster)]
+        private CraftResource _enhancedResource;
 
         private bool ShouldSerializeSkillBonuses() => !_skillBonuses.IsEmpty;
 
@@ -351,8 +355,10 @@ namespace Server.Items
                     mr += 2 * (int)_protectionLevel;
                 }
 
-                // Colored resources infuse Magic Resistance alongside AR
-                mr += _resource switch
+                // Colored resources (crafted or infused) add Magic Resistance
+                var mrResource = _enhancedResource != CraftResource.None ? _enhancedResource : _resource;
+
+                mr += mrResource switch
                 {
                     CraftResource.DullCopper    => 2,
                     CraftResource.ShadowIron    => 4,
@@ -1260,6 +1266,7 @@ namespace Server.Items
 
         public override void OnRemoved(IEntity parent)
         {
+            base.OnRemoved(parent);
             if (parent is Mobile m)
             {
                 var serial = Serial;
@@ -1277,7 +1284,7 @@ namespace Server.Items
                 m.CheckStatTimers();
                 Server.Custom.UI.StatusBar.Refresh(m);
             }
-            base.OnRemoved(parent);
+
         }
 
         public override void AddNameProperty(IPropertyList list)
@@ -1641,6 +1648,11 @@ namespace Server.Items
                 }
                 */
 
+                // Enchanced Resource
+                if (_enhancedResource != CraftResource.None)
+                {
+                    LabelTo(from, $"[Infused: {CraftResources.GetName(_enhancedResource)}]");
+                }
                 // Armor Rating
                 double displayAR = this is BaseShield ? ArmorRating : ArmorRatingScaled;
                 if (this is BaseShield && Parent is not Mobile)
