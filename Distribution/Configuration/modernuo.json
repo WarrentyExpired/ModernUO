@@ -27,7 +27,7 @@
     "autoArchive.retryDelayMs": "500",
     "autoArchive.verifyArchives": "True",
     "autosave.enabled": "True",
-    "autosave.saveDelay": "00:05:00",
+    "autosave.saveDelay": "00:30:00",
     "autosave.warningDelay": "00:00:15",
     "buffIcons.enable": "True",
     "bulletinboards.creationTimeDelay": "00:02:00",
