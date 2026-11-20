@@ -15,7 +15,8 @@ The map while custom, isn't mine. The main land mass is a Darkshard map called T
 - `main` — Vanilla upstream ModernUO mirror (used for pulling engine updates)
 
 ## Getting Started
-- **Link to client coming soon!**
+- [**Client files link**](https://mega.nz/file/URR1VJYY#R1R6gaFeA-6nIYSqSuwWCmPNPWr8nXiYxtoJzJHDQug) hosted on Mega.nz.
+
 <!--
 1. Clone the repository:
    git clone [https://github.com/Warrentyexpired/ModernUO.git](https://github.com/Warrentyexpired/ModernUO.git)
