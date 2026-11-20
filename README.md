@@ -52,6 +52,9 @@ The map while custom, isn't mine. The main land mass is a Darkshard map called T
 
 ## Combat, Skills & Character Progression
 
+### Magic Rating (MR)
+- Armor crafted with colored resources (Valorite ingot, Barbed leather, etc) get a new MR property. This works like AR but
+  for magic spells. It is capped at 20% for PvP and 40% for PvM.
 ### Innate Weapon Abilities
 - Every weapon class (except Wrestling) features **2 innate abilities**.
 - **Unlock Requirements:** 50.0 Weapon Skill & Tactics for the first ability; 100.0 Weapon Skill & Tactics for the second.
@@ -106,7 +109,13 @@ The map while custom, isn't mine. The main land mass is a Darkshard map called T
 ### Quality-of-Life Features
 - **Auto-Mount / Dismount:** Players automatically dismount when entering restricted regions (such as dungeons and town businesses) and automatically remount upon leaving.
 - **Farm Spawner:** I added a simple farm spawner system. I only have 1 farm spawning at the moment.
-
+- **Salvage Bag:** If the salvage bag is in the top layer of your backpack and item crafted gets put into it. If there is no
+  bag it drops in your backpack as expected. Also added [salvage command to auto salvage anything in it. There is also a new
+  gump when double clicked that lets you choose what to salvage.
+- **Hover Text:** Hovering over Armor or Weapons now displays some item detail. Armor now shows AR Rating, MR Rating, Str
+  requirement, Dex penalty (if applicable), and Durability. Weapons show Damage, Weapon Speed, Str requirement, and
+  Durability. Shields will also adjust there AR/MR value based on the players adjusted value, not the base shield value. That
+  way you don't have to equip it to see what AR/MR it will give you.
 ---
 
 ## Commands & Server Configuration
@@ -115,6 +124,7 @@ The map while custom, isn't mine. The main land mass is a Darkshard map called T
 
 | Command | Description |
 | :--- | :--- |
+| `[Statusbar` | Opens a Statusbar. |
 | `[Dashboard` | Opens a comprehensive character statistics dashboard. |
 | `[Bounties` | Opens a gump displaying your current bounty progress. |
 | `[DOTD` | Displays the current **Dungeon of the Day**. |
@@ -123,6 +133,7 @@ The map while custom, isn't mine. The main land mass is a Darkshard map called T
 | `[IS <path>` | Imports spawners from a JSON file (e.g., `[IS Data/Spawns/Dungeon/Shame.json`). |
 | `[EAS` | Exports all spawners on the current map to `Data/Spawns/Exported/<timestamp>.json`. |
 | `[ECN` | Exports all `CitizenNodes` on the current map. |
+| `[Salvage` | Salvage all items in your salvage bag. |
 
 ### Server Settings
 - **`Settings.cs` & `ValidSettings.cs`:** Server administrators can customize shard mechanics in `Settings.cs`, while `ValidSettings.cs` enforces safe minimum and maximum bounds.

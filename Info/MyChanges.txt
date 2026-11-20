@@ -104,3 +104,11 @@ Skill gains
 Shovels are gone
   - I removed shovels from the game. They have not equiped animation so they can't be equiped to use
     them. Treasure maps and Mining are all done with a pickaxe now."
+Armor Change
+  - Armor crafted from colored resources (Gold, Valorite, Horned, Barbed, etc) now if a Magic Rating (MR).
+    It works similar to AR but for magic spells. It has a 20% cap for PvP and a 40% cap for PvM.
+Salvage Bag
+  - The Salvage Bag has been reworked. There is now a [salvage command that checks for a salvage bag in your
+    backpack and auto salvages everything in it. Also there is a new gump that opens when you double
+    click on it. Crafting and item will automatically drop into the bag is you have one in the top layer
+    of your backpack, if not it defaults to dropping in your backpack like expected.
