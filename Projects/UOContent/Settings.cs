@@ -17,6 +17,12 @@ namespace Server
         public static bool S_InnatesPvP = true; // Allow innate weapon abilities in PvP
         public static bool S_MonsterInnates = true; // Allow monsters/NPCs to proc innate weapon abilities
 
+        // Pre-AOS Melee / Ranged Damage Scalars (UOR default was 0.50 across all three)
+        public static double S_PvPMeleeDamageScalar = 0.50;
+        public static double S_MonsterMeleeDamageScalar = 0.85;
+        public static double S_CreatureVsCreatureDamageScalar = 0.75;
+
+
         // Not implimented yet
         public static bool S_TreasureBags = false; // Spawn random treasure bags.
     }

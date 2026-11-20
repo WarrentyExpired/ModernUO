@@ -840,6 +840,11 @@ namespace Server.Items
                         {
                             HitPoints -= wear;
                             wear = 0;
+
+                            if (_hitPoints == 0 && Parent is Mobile warnMobile)
+                            {
+                                warnMobile.LocalOverheadMessage(MessageType.Regular, 0x3B2, 1061121);
+                            }
                         }
                         else
                         {
@@ -861,6 +866,12 @@ namespace Server.Items
                             }
                             else
                             {
+                                if (Parent is Mobile mobile)
+                                {
+                                    var itemName = Name ?? Localization.GetText(LabelNumber);
+                                    mobile.SendMessage(0x22, $"Your {itemName} has been destroyed!");
+                                }
+                                MaxHitPoints = 0;
                                 Delete();
                             }
                         }

@@ -2088,6 +2088,12 @@ public abstract partial class BaseWeapon
                 else if (_hitPoints > 0)
                 {
                     --HitPoints;
+
+                    if (_hitPoints == 0 && Parent is Mobile warnMobile)
+                    {
+                        // Your equipment is severely damaged.
+                        warnMobile.LocalOverheadMessage(MessageType.Regular, 0x3B2, 1061121);
+                    }
                 }
                 else if (_maxHitPoints > 1)
                 {
@@ -2101,6 +2107,13 @@ public abstract partial class BaseWeapon
                 }
                 else
                 {
+                    if (Parent is Mobile mobile)
+                    {
+                        var itemName = Name ?? Localization.GetText(LabelNumber);
+                        mobile.SendMessage(0x22, $"Your {itemName} has been destroyed!");
+                    }
+
+                    MaxHitPoints = 0;
                     Delete();
                 }
             }
@@ -2696,6 +2709,7 @@ public abstract partial class BaseWeapon
         return AOS.Scale(damage, scale);
     }
 
+    /*
     public virtual int ComputeDamage(Mobile attacker, Mobile defender)
     {
         if (Core.AOS)
@@ -2710,6 +2724,35 @@ public abstract partial class BaseWeapon
         if (defender is PlayerMobile || attacker is not PlayerMobile)
         {
             damage /= 2;
+        }
+
+        return damage;
+    }
+    */
+
+    public virtual int ComputeDamage(Mobile attacker, Mobile defender)
+    {
+        if (Core.AOS)
+        {
+            return ComputeDamageAOS(attacker, defender);
+        }
+
+        var damage = (int)ScaleDamageOld(attacker, GetBaseDamage(attacker), true);
+
+        if (attacker is PlayerMobile && defender is PlayerMobile)
+        {
+            // PvP melee/ranged scalar (UOR default is 0.5)
+            damage = (int)(damage * Settings.S_PvPMeleeDamageScalar);
+        }
+        else if (attacker is not PlayerMobile && defender is PlayerMobile)
+        {
+            // Monster -> Player melee/ranged scalar (UOR default was 0.5; 0.85 - 1.0 makes melee mobs dangerous)
+            damage = (int)(damage * Settings.S_MonsterMeleeDamageScalar);
+        }
+        else if (attacker is not PlayerMobile && defender is not PlayerMobile)
+        {
+            // Pet/Monster -> Pet/Monster scalar (UOR default was 0.5)
+            damage = (int)(damage * Settings.S_CreatureVsCreatureDamageScalar);
         }
 
         return damage;
