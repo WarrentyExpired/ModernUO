@@ -64,6 +64,12 @@ namespace Server.Combat
 
         private static void ApplyBleed(Mobile attacker, Mobile defender)
         {
+            if (defender is BaseCreature { BleedImmune: true})
+            {
+                attacker.SendMessage("Your target is not effected by the bleed attack!");
+                return;
+            }
+
             defender.PlaySound(0x133);
 
             if (typeof(BaseWeapon).Assembly.GetType("Server.Items.BleedAttack") != null)
