@@ -14,6 +14,9 @@ namespace Server
         public static bool S_TrapDetected = false; // Get a message if the trap gets detected
         public static bool S_TrapDamageMitigated = true; // Get a message if the trap damage gets mitigated
         public static bool S_StatInfluence = true; // Do stats give skill points.
+        public static bool S_InnatesPvP = true; // Allow innate weapon abilities in PvP
+        public static bool S_MonsterInnates = true; // Allow monsters/NPCs to proc innate weapon abilities
+
         // Not implimented yet
         public static bool S_TreasureBags = false; // Spawn random treasure bags.
     }

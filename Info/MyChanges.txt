@@ -85,7 +85,7 @@ Food Changes
 Exhaustion System
   - Every 200 points of damage will lower your hunger/thirst by 1
 Innate weapon abilities
-  - You need at least 50 in weaponskill and tactics to unlock your first innate ability.
+  - You need at least 70 in weaponskill and tactics to unlock your first innate ability.
   - You need at least 100 in weaponskill and tactics to unlock the second innate ability.
   - There is a 10% chance to activate the ability with a 5 second cooldown.
   - Each weapon class as 2 abilities. Except wreslting.

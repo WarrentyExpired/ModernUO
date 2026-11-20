@@ -57,7 +57,7 @@ The map while custom, isn't mine. The main land mass is a Darkshard map called T
   for magic spells. It is capped at 20% for PvP and 40% for PvM.
 ### Innate Weapon Abilities
 - Every weapon class (except Wrestling) features **2 innate abilities**.
-- **Unlock Requirements:** 50.0 Weapon Skill & Tactics for the first ability; 100.0 Weapon Skill & Tactics for the second.
+- **Unlock Requirements:** 70.0 Weapon Skill & Tactics for the first ability; 100.0 Weapon Skill & Tactics for the second.
 - **Activation:** 10% chance to trigger on hit with a 5-second cooldown.
 
 ### Healing & Bandage Rework
