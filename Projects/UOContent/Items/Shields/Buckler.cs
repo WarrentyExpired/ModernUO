@@ -25,4 +25,5 @@ public partial class Buckler : BaseShield
     public override int OldStrReq => 20;
 
     public override int ArmorBase => 7;
+    public override int MagicBase => 4;
 }

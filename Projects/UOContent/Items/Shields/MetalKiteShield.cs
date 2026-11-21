@@ -25,6 +25,7 @@ public partial class MetalKiteShield : BaseShield, IDyable
     public override int OldStrReq => 45;
 
     public override int ArmorBase => 16;
+    public override int MagicBase => 10;
 
     public bool Dye(Mobile from, DyeTub sender)
     {

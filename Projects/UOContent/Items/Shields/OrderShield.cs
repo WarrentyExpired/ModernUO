@@ -30,6 +30,7 @@ public partial class OrderShield : BaseShield
     public override int OldStrReq => 95;
 
     public override int ArmorBase => 30;
+    public override int MagicBase => 14;
 
     public override bool OnEquip(Mobile from) => Validate(from) && base.OnEquip(from);
 

@@ -26,6 +26,7 @@ namespace Server.Items
         public override int OldStrReq => 35;
 
         public override int ArmorBase => 16;
+        public override int MagicBase => 12;
 
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Studded;
         public override CraftResource DefaultResource => CraftResource.RegularLeather;

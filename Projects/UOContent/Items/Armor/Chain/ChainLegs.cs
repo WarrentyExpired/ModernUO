@@ -25,9 +25,10 @@ namespace Server.Items
         public override int AosStrReq => 60;
         public override int OldStrReq => 20;
 
-        public override int OldDexBonus => -3;
+        public override int OldDexBonus => -4;
 
         public override int ArmorBase => 28;
+        public override int MagicBase => 16;
 
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Chainmail;
     }

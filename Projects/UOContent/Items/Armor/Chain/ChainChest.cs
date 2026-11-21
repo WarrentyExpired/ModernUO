@@ -28,6 +28,7 @@ namespace Server.Items
         public override int OldDexBonus => -5;
 
         public override int ArmorBase => 28;
+        public override int MagicBase => 16;
 
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Chainmail;
     }

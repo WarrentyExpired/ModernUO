@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Server.Spells.Bushido;
 
 namespace Server.Mobiles;
@@ -97,7 +97,9 @@ public class FireBreath : MonsterAbility
 
     public virtual void BreathEffect_Callback(BaseCreature source, Mobile target)
     {
-        if (!target.Alive || !source.CanBeHarmful(target))
+        if (source is not { Alive: true, Deleted: false } || !target.Alive ||
+            target.Map != source.Map || !target.InRange(source, BreathRange(source) + 4) ||
+            !source.CanBeHarmful(target))
         {
             return;
         }
@@ -135,11 +137,15 @@ public class FireBreath : MonsterAbility
             return;
         }
 
-        if (source.CanBeHarmful(target))
+        if (source is not { Alive: true, Deleted: false } || !target.Alive ||
+            target.Map != source.Map || !target.InRange(source, BreathRange(source) + 6) ||
+            !source.CanBeHarmful(target))
         {
-            source.DoHarmful(target);
-            BreathDealDamage(source, target);
+            return;
         }
+
+        source.DoHarmful(target);
+        BreathDealDamage(source, target);
     }
 
     public virtual void BreathDealDamage(BaseCreature source, Mobile target)

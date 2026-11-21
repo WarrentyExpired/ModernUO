@@ -170,6 +170,7 @@ namespace Server.Items
 
         public virtual int RevertArmorBase => ArmorBase;
         public virtual int ArmorBase => 0;
+        public virtual int MagicBase => 0;
 
         public virtual AMA DefMedAllowance => AMA.None;
         public virtual AMA AosMedAllowance => DefMedAllowance;
@@ -337,48 +338,12 @@ namespace Server.Items
         {
             get
             {
-                var mr = 0.0;
+                var mr = (double)MagicBase;
 
-                // Leather/Studded naturally resists magic better than bare iron
-                if (MaterialType is ArmorMaterialType.Leather or ArmorMaterialType.Studded)
-                {
-                    mr += 4;
-                }
-                else if (MaterialType is ArmorMaterialType.Bone or ArmorMaterialType.Dragon)
-                {
-                    mr += 6;
-                }
-
-                // Magic protection suffix adds a small MR boost
                 if (_protectionLevel != ArmorProtectionLevel.Regular)
                 {
                     mr += 2 * (int)_protectionLevel;
                 }
-
-                // Colored resources (crafted or infused) add Magic Resistance
-                var mrResource = _enhancedResource != CraftResource.None ? _enhancedResource : _resource;
-
-                mr += mrResource switch
-                {
-                    CraftResource.DullCopper    => 2,
-                    CraftResource.ShadowIron    => 4,
-                    CraftResource.Copper        => 6,
-                    CraftResource.Bronze        => 8,
-                    CraftResource.Gold          => 10,
-                    CraftResource.Agapite       => 13,
-                    CraftResource.Verite        => 16,
-                    CraftResource.Valorite      => 20,
-                    CraftResource.SpinedLeather => 10,
-                    CraftResource.HornedLeather => 15,
-                    CraftResource.BarbedLeather => 20,
-                    CraftResource.RedScales     => 14,
-                    CraftResource.YellowScales  => 14,
-                    CraftResource.BlackScales   => 16,
-                    CraftResource.GreenScales   => 16,
-                    CraftResource.WhiteScales   => 18,
-                    CraftResource.BlueScales    => 18,
-                    _                           => 0
-                };
 
                 mr += 3 * (int)(_quality - 1);
                 return ScaleArmorByDurability(mr);
@@ -1659,11 +1624,6 @@ namespace Server.Items
                 }
                 */
 
-                // Enchanced Resource
-                if (_enhancedResource != CraftResource.None)
-                {
-                    LabelTo(from, $"[Infused: {CraftResources.GetName(_enhancedResource)}]");
-                }
                 // Armor Rating
                 double displayAR = this is BaseShield ? ArmorRating : ArmorRatingScaled;
                 if (this is BaseShield && Parent is not Mobile)

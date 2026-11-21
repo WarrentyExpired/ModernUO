@@ -1,0 +1,43 @@
+Leather - ArmorBase = 13 Dex = -0
+Studded - ArmorBase = 16 Dex = -0
+
+Bone Arms - ArmorBase = 30 Dex = -2
+Bone Chests - ArmorBase = 30 Dex = -6
+Bone Gloves - ArmorBase = 30 Dex = -1
+Bone Legs - ArmorBase = 30 Dex = -4
+
+Ringmail Arms - ArmorBase = 22 Dex = -1
+Ringmail Chests - ArmorBase = 22 Dex = -2
+Ringmail Gloves - ArmorBase = 22 Dex = -1
+Ringmail Legs - ArmorBase = 22 Dex = -1
+
+Chainmail Chests - ArmorBase = 28 Dex = -5
+Chainmail Legs - ArmorBase = 28 Dex = -5
+
+Platemail Female Chest - ArmorBase = 30 Dex = -5
+Plate Arms - ArmorBase = 40 Dex = -2
+Plate Chests - ArmorBase = 40 Dex = -8
+Plate Gloves - ArmorBase = 40 Dex = -2
+Plate Gorget - ArmorBase = 40 Dex = -1
+Plate Legs - ArmorBase = 40 Dex = -6
+
+Helms
+Bascinet - ArmorBase = 18
+Bone - ArmorBase = 30
+Chain Coif - ArmorBase = 28
+Close - ArmorBase = 30
+Daemon - ArmorBase = 46
+Helmet - ArmorBase = 30
+Leather Cap - ArmorBase = 13
+Norse - ArmorBase = 30
+Orc - ArmorBase = 20
+Plate - ArmorBase 40 Dex = -1
+
+
+### How AR is calculated
+Chest (InnerBody / Tunic): 35% of ArmorBase
+Legs (Pants): 22% of ArmorBase
+Head (Helm): 14% of ArmorBase
+Arms: 14% of ArmorBase
+Hands (Gloves): 7% of ArmorBase
+Neck (Gorget): 7% of ArmorBase

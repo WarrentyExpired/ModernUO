@@ -25,6 +25,7 @@ public partial class WoodenKiteShield : BaseShield
     public override int OldStrReq => 20;
 
     public override int ArmorBase => 12;
+    public override int MagicBase => 8;
 
     public override ArmorMaterialType MaterialType => ArmorMaterialType.Wood;
 }

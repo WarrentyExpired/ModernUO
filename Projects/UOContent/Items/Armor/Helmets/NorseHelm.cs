@@ -25,6 +25,8 @@ namespace Server.Items
         public override int OldStrReq => 40;
 
         public override int ArmorBase => 30;
+        public override int MagicBase => 12;
+        public override int OldDexBonus => -1;
 
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
     }

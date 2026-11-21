@@ -25,4 +25,5 @@ public partial class HeaterShield : BaseShield
     public override int OldStrReq => 90;
 
     public override int ArmorBase => 23;
+    public override int MagicBase => 14;
 }

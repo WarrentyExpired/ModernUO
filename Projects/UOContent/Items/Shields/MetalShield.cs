@@ -25,4 +25,5 @@ public partial class MetalShield : BaseShield
     public override int OldStrReq => 45;
 
     public override int ArmorBase => 11;
+    public override int MagicBase => 8;
 }

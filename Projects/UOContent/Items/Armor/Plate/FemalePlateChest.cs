@@ -25,12 +25,12 @@ namespace Server.Items
         public override int AosStrReq => 95;
         public override int OldStrReq => 45;
 
-        public override int OldDexBonus => -5;
+        public override int OldDexBonus => -4;
 
         public override bool AllowMaleWearer => false;
 
         public override int ArmorBase => 30;
-
+        public override int MagicBase => 22;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
     }
 }
