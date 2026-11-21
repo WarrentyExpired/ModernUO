@@ -1639,7 +1639,7 @@ namespace Server.Items
                 double displayMR = this is BaseShield ? MagicResistance : MagicResistanceScaled;
                 if (this is BaseShield && Parent is not Mobile)
                 {
-                    displayMR = from.Skills.Parry.Value * MagicResistance / 200.0;
+                    displayMR = from.Skills.Parry.Value * (MagicResistance / 200.0) + 1.0;
                 }
                 if (displayMR > 0)
                 {

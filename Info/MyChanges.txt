@@ -105,8 +105,9 @@ Shovels are gone
   - I removed shovels from the game. They have not equiped animation so they can't be equiped to use
     them. Treasure maps and Mining are all done with a pickaxe now."
 Armor Change
-  - Armor crafted from colored resources (Gold, Valorite, Horned, Barbed, etc) now if a Magic Rating (MR).
-    It works similar to AR but for magic spells. It has a 20% cap for PvP and a 40% cap for PvM.
+  - Armor and Shields now have a Magic Rating (MR). It works similar to AR but for magic spells.
+    It has a 20% cap for PvP and a 40% cap for PvM. Crafting Armor with better resources in add more MR
+    just like better resources add more AR. Shield MR also scales with Parry exactly like AR does.
 Salvage Bag
   - The Salvage Bag has been reworked. There is now a [salvage command that checks for a salvage bag in your
     backpack and auto salvages everything in it. Also there is a new gump that opens when you double

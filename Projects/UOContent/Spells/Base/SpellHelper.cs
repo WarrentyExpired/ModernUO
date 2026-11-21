@@ -1140,11 +1140,11 @@ namespace Server.Spells
 
             // Debug output for GM+ testers
             string debugMsg = $"[MR Debug] Raw: {damage} | Target MR: {mr:F1} | Reduction: {reductionPct * 100:F1}% ({(isPvP ? "PvP" : "PvM")}) | Final: {mitigated}";
-            if (from?.AccessLevel >= AccessLevel.GameMaster)
+            if (from is PlayerMobile)
             {
                 from.SendMessage(0x59, debugMsg);
             }
-            if (target.AccessLevel >= AccessLevel.GameMaster && target != from)
+            if (target is PlayerMobile && target != from)
             {
                 target.SendMessage(0x59, debugMsg);
             }
