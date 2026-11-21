@@ -37,7 +37,7 @@ public partial class BaseShield : BaseArmor
 
             if (m != null)
             {
-                return m.Skills.Parry.Value * mr / 200.0;
+                return m.Skills.Parry.Value * mr / 200.0 + 1.0;
             }
 
             return mr;
