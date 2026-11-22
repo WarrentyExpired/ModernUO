@@ -23,9 +23,9 @@ namespace Server.Items
         public override float MlSpeed => 4.00f;
 
         public override int OldStrengthReq => 30;
-        public override int OldMinDamage => 10;
-        public override int OldMaxDamage => 30;
-        public override int OldSpeed => 32;
+        public override int OldMinDamage => 12;
+        public override int OldMaxDamage => 24;
+        public override int OldSpeed => 46;
 
         public override int InitMinHits => 31;
         public override int InitMaxHits => 110;

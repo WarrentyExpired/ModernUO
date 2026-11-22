@@ -25,8 +25,8 @@ namespace Server.Items
 
         public override int OldStrengthReq => 35;
         public override int OldMinDamage => 9;
-        public override int OldMaxDamage => 27;
-        public override int OldSpeed => 40;
+        public override int OldMaxDamage => 21;
+        public override int OldSpeed => 54;
 
         public override int DefHitSound => 0x233;
         public override int DefMissSound => 0x239;
