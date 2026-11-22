@@ -1600,29 +1600,6 @@ namespace Server.Items
             // Hidden till Identified
             if (!isMagicItem || _identified ) //|| from.AccessLevel >= AccessLevel.GameMaster)
             {
-                /*
-                // Armor Rating
-                double displayAR = ArmorRatingScaled;
-                if (this is BaseShield && Parent as Mobile == null)
-                {
-                    displayAR = (from.Skills.Parry.Value * ArmorRating / 200.0) + 1.0;
-                }
-                if (displayAR > 0)
-                {
-                    LabelTo(from, $"Armor Rating: {(int)Math.Round(displayAR, MidpointRounding.AwayFromZero)}");
-                }
-
-                // Magic Armor Rating
-                double displayMR = MagicResistanceScaled;
-                if (this is BaseShield && Parent is not Mobile)
-                {
-                    displayMR = (from.Skills.Parry.Value * MagicResistance / 200.0) + 1.0;
-                }
-                if (displayMR > 0)
-                {
-                    LabelTo(from, $"Magic Resistance: {(int)Math.Round(displayMR, MidpointRounding.AwayFromZero)}");
-                }
-                */
 
                 // Armor Rating
                 double displayAR = this is BaseShield ? ArmorRating : ArmorRatingScaled;

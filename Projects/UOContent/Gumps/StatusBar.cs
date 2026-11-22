@@ -65,8 +65,7 @@ namespace Server.Custom.UI
             AddPage(0);
 
             int ar = (int)Math.Round(pm.ArmorRating);
-            int mr = (int)Math.Ceiling(SpellHelper.GetMagicArmorRating(pm));
-
+            int mr = (int)Math.Round(SpellHelper.GetMagicArmorRating(pm), MidpointRounding.AwayFromZero);
             if (m_IsVertical)
             {
                 AddBackground(0, 0, 165, 255, 9270);

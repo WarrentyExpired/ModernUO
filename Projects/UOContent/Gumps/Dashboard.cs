@@ -233,7 +233,8 @@ public class PlayerStatsGump(Mobile from) : DynamicGump(50, 50)
 
         int ar = (int)Math.Round(from.ArmorRating, MidpointRounding.AwayFromZero);
         double mrRaw = SpellHelper.GetMagicArmorRating(from);
-        int mr = (int)Math.Round(mrRaw, MidpointRounding.AwayFromZero);
+        //int mr = (int)Math.Round(mrRaw, MidpointRounding.AwayFromZero);
+        int mr = (int)Math.Round(SpellHelper.GetMagicArmorRating(pm), MidpointRounding.AwayFromZero);
         int mrPct = (int)Math.Round(Math.Min(40.0, mrRaw * 1.25), MidpointRounding.AwayFromZero);
         double magicResist = from.Skills.MagicResist.Value;
         double totalSkills = from.SkillsTotal / 10.0;

@@ -1094,36 +1094,20 @@ namespace Server.Spells
             {
                 if (item is BaseArmor armor)
                 {
-                    totalMR += armor is BaseShield
-                        ? armor.MagicResistance
-                        : armor.MagicResistanceScaled;
+                    if (armor is BaseShield)
+                    {
+                        double parry = target.Skills?.Parry.Value ?? 0.0;
+                        totalMR += (parry * armor.MagicResistance / 200.0) + 1.0;
+                    }
+                    else
+                    {
+                        totalMR += armor.MagicResistanceScaled;
+                    }
                 }
             }
 
             return totalMR;
         }
-
-        /*
-        private static int ApplyMagicResistanceArmor(Mobile from, Mobile target, int damage)
-        {
-            if (Core.AOS || damage <= 1 || target == null)
-            {
-                return damage;
-            }
-
-            double mr = GetMagicArmorRating(target);
-            if (mr <= 0)
-            {
-                return damage;
-            }
-
-            bool isPvP = from is PlayerMobile && target is PlayerMobile;
-            double maxCap = isPvP ? 0.20 : 0.40;
-            double reductionPct = Math.Min(maxCap, mr * 0.0125);
-            int mitigated = (int)Math.Round(damage * (1.0 - reductionPct));
-
-            return Math.Max(1, mitigated);
-        }*/
 
         private static int ApplyMagicResistanceArmor(Mobile from, Mobile target, int damage)
         {
