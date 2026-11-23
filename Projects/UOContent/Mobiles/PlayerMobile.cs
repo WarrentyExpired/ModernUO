@@ -2470,7 +2470,8 @@ namespace Server.Mobiles
                 {
                     deathRobe.Delete();
                 }
-
+                this.Hunger = 20;
+                this.Thirst = 20;
                 Server.Custom.AutoStable.RestoreMount(this);
             }
         }
