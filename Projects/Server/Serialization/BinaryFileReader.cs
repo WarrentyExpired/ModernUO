@@ -15,37 +15,22 @@
 
 using System;
 using System.IO;
-using System.IO.MemoryMappedFiles;
 using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace Server;
 
 /// <summary>
-/// Read bits of data from a serialized file in a managed environment.
-/// <para>
-/// Uses the following components collectively:
-/// <br><see cref="MemoryMappedFile"/></br>
-/// <br><see cref="MemoryMappedViewStream"/></br>
-/// <br><see cref="UnmanagedDataReader"/></br>
-/// </para>
+/// Reads a serialized file through <see cref="ReadOnlyFileData" /> and <see cref="UnmanagedDataReader" />.
 /// </summary>
-public sealed unsafe class BinaryFileReader : IDisposable, IGenericReader
+public sealed class BinaryFileReader : IDisposable, IGenericReader
 {
     private readonly bool _usePrefixes;
-    private readonly MemoryMappedFile _mmf;
-    private readonly MemoryMappedViewStream _accessor;
+    private readonly ReadOnlyFileData _data;
     private readonly UnmanagedDataReader _reader;
 
     /// <summary>
-    /// Read bits of data from a serialized file in a managed environment.
-    /// <br>Encoding is UTF8 if left null.</br>
-    /// <para>
-    /// Uses the following components collectively:
-    /// <br><see cref="MemoryMappedFile"/></br>
-    /// <br><see cref="MemoryMappedViewStream"/></br>
-    /// <br><see cref="UnmanagedDataReader"/></br>
-    /// </para>
+    /// Opens a serialized file for reading. Encoding is UTF8 if left null.
     /// </summary>
     /// <param name="path">Full file path of the file to be deserialized.</param>
     /// <param name="usePrefixes">Sets if strings should be read with itern.</param>
@@ -53,20 +38,8 @@ public sealed unsafe class BinaryFileReader : IDisposable, IGenericReader
     public BinaryFileReader(string path, bool usePrefixes = true, Encoding encoding = null)
     {
         _usePrefixes = usePrefixes;
-        var fi = new FileInfo(path);
-
-        if (fi.Length > 0)
-        {
-            _mmf = MemoryMappedFile.CreateFromFile(path, FileMode.Open);
-            _accessor = _mmf.CreateViewStream();
-            byte* ptr = null;
-            _accessor.SafeMemoryMappedViewHandle.AcquirePointer(ref ptr);
-            _reader = new UnmanagedDataReader(ptr, _accessor.Length, encoding: encoding);
-        }
-        else
-        {
-            _reader = new UnmanagedDataReader(null, 0, encoding: encoding);
-        }
+        _data = new ReadOnlyFileData(path);
+        _reader = _data.CreateReader(encoding: encoding);
     }
 
     /// <summary>
@@ -86,12 +59,7 @@ public sealed unsafe class BinaryFileReader : IDisposable, IGenericReader
         set => _reader.AnchoredTimeOrigin = value;
     }
 
-    public void Dispose()
-    {
-        _accessor?.SafeMemoryMappedViewHandle.ReleasePointer();
-        _accessor?.Dispose();
-        _mmf?.Dispose();
-    }
+    public void Dispose() => _data.Dispose();
 
     /// <summary>
     /// If usePrefixes is true, return a ReadString(intern) else ReadStringRaw(intern).
@@ -178,6 +146,36 @@ public sealed unsafe class BinaryFileReader : IDisposable, IGenericReader
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public Serial ReadSerial() => _reader.ReadSerial();
 
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public int ReadEncodedInt() => _reader.ReadEncodedInt();
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public DateTime ReadDateTime() => _reader.ReadDateTime();
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public TimeSpan ReadTimeSpan() => _reader.ReadTimeSpan();
+
+    public DateTime ReadAnchoredTime() => _reader.ReadAnchoredTime();
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public Point3D ReadPoint3D() => _reader.ReadPoint3D();
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public Point2D ReadPoint2D() => _reader.ReadPoint2D();
+
+    public Rectangle2D ReadRect2D() => _reader.ReadRect2D();
+
+    public Rectangle3D ReadRect3D() => _reader.ReadRect3D();
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public Map ReadMap() => _reader.ReadMap();
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public Race ReadRace() => _reader.ReadRace();
+
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
+    public T ReadEnum<T>() where T : unmanaged, Enum => _reader.ReadEnum<T>();
+
     /// <summary>
     /// Reads the next Byte which helps determine how to read the following Type.
     /// <br>If the byte returns 1 => <see cref="ReadStringRaw"/> and translate into a Type via the <see cref="AssemblyHandler"/></br>
@@ -193,7 +191,7 @@ public sealed unsafe class BinaryFileReader : IDisposable, IGenericReader
     /// </summary>
     /// <param name="buffer">A reference span that will be filled with the next set of bytes.</param>
     /// <returns>The length of the buffer.</returns>
-    /// <exception cref="OutOfMemoryException">Thrown if the buffer is larger than the remaining data to read in the file.</exception>
+    /// <exception cref="EndOfStreamException">Thrown if the buffer is larger than the remaining data to read in the file.</exception>
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public int Read(Span<byte> buffer) => _reader.Read(buffer);
 

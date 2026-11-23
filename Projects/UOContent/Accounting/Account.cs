@@ -32,8 +32,16 @@ public partial class Account : IAccount, IComparable<Account>
     [SerializableField(2)]
     private string _password;
 
-    [SerializableField(3)]
+    [SerializableField(3, fieldChanged: nameof(OnAccessLevelChanged))]
     private AccessLevel _accessLevel;
+
+    private void OnAccessLevelChanged(AccessLevel oldValue, AccessLevel newValue)
+    {
+        if (newValue < oldValue)
+        {
+            Commands.StaffAccess.OnAccountDemoted(this);
+        }
+    }
 
     [SerializableField(4)]
     private int _flags;
@@ -352,9 +360,9 @@ public partial class Account : IAccount, IComparable<Account>
             _mobiles[i] = null;
         }
 
-        if (_loginIPs.Length != 0 && AccountHandler.IPTable.ContainsKey(_loginIPs[0]))
+        if (_loginIPs.Length != 0)
         {
-            --AccountHandler.IPTable[_loginIPs[0]];
+            AccountHandler.DecrementAccountCount(_loginIPs[0]);
         }
 
         Deleted = true;
@@ -1065,8 +1073,7 @@ public partial class Account : IAccount, IComparable<Account>
     {
         if (_loginIPs.Length == 0)
         {
-            AccountHandler.IPTable.TryGetValue(ipAddress, out var result);
-            AccountHandler.IPTable[ipAddress] = result + 1;
+            AccountHandler.IncrementAccountCount(ipAddress);
         }
 
         var contains = false;

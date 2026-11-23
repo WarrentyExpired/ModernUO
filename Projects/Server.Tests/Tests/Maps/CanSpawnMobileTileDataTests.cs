@@ -1,4 +1,5 @@
 using Server.Items;
+using Server.Tests.Terrain;
 using Xunit;
 
 namespace Server.Tests.Maps;
@@ -185,11 +186,217 @@ public class CanSpawnMobileTileDataTests
         }
     }
 
+    // CantWalk alone makes a stationary land mobile; only a swimmer that can't walk is water-only.
+    // The sea cell is far enough out that every corner is sea, so its average Z is the sea's.
+    private static Point2D SeaCell(Point3D grass) => new(grass.X - 8, grass.Y);
+
+    [Fact]
+    public void CanSpawnMobile_CantWalkNonSwimmer_FindsLandNotWater()
+    {
+        Prefabs.Coastline.AssertPresent();
+        var map = Map.Felucca;
+        var grass = Prefabs.Coastline.Anchor;
+        var sea = SeaCell(grass);
+
+        Assert.True(map.CanSpawnMobile(grass.X, grass.Y, -128, 127, false, true, out var landZ));
+        Assert.Equal(0, landZ);
+        Assert.False(map.CanSpawnMobile(sea.X, sea.Y, -128, 127, false, true, out _));
+    }
+
+    [Fact]
+    public void CanSpawnMobile_CantWalkSwimmer_IsWaterOnly()
+    {
+        Prefabs.Coastline.AssertPresent();
+        var map = Map.Felucca;
+        var grass = Prefabs.Coastline.Anchor;
+        var sea = SeaCell(grass);
+
+        Assert.False(map.CanSpawnMobile(grass.X, grass.Y, -128, 127, true, true, out _));
+        Assert.True(map.CanSpawnMobile(sea.X, sea.Y, -128, 127, true, true, out var waterZ));
+        Assert.Equal(-5, waterZ);
+    }
+
+    [Fact]
+    public void CanSpawnMobile_SwimmingWalker_FindsLandAndWater()
+    {
+        Prefabs.Coastline.AssertPresent();
+        var map = Map.Felucca;
+        var grass = Prefabs.Coastline.Anchor;
+        var sea = SeaCell(grass);
+
+        Assert.True(map.CanSpawnMobile(grass.X, grass.Y, -128, 127, true, false, out var landZ));
+        Assert.Equal(0, landZ);
+        Assert.True(map.CanSpawnMobile(sea.X, sea.Y, -128, 127, true, false, out var waterZ));
+        Assert.Equal(-5, waterZ);
+    }
+
+    [Fact]
+    public void CanSpawnMobile_Walker_FindsLandNotWater()
+    {
+        Prefabs.Coastline.AssertPresent();
+        var map = Map.Felucca;
+        var grass = Prefabs.Coastline.Anchor;
+        var sea = SeaCell(grass);
+
+        Assert.True(map.CanSpawnMobile(grass.X, grass.Y, -128, 127, false, false, out var landZ));
+        Assert.Equal(0, landZ);
+        Assert.False(map.CanSpawnMobile(sea.X, sea.Y, -128, 127, false, false, out _));
+    }
+
+    [Fact]
+    public void CanSpawnMobile_CantWalkNonSwimmer_StandsOnStaticFloor()
+    {
+        var map = Map.Felucca;
+        const int x = 1700;
+        const int y = 1700;
+
+        using var terrain = TestTerrain.Scope();
+        TestTerrain.AddStatic(x, y, TestTiles.Floor, 10);
+
+        // The Z range leaves out the land at Z 0, so only the floor can be found.
+        Assert.True(map.CanSpawnMobile(x, y, 5, 30, false, true, out var spawnZ));
+        Assert.Equal(10, spawnZ);
+    }
+
+    [Fact]
+    public void CanSpawnMobile_CantWalkNonSwimmer_StandsOnMultiFloor()
+    {
+        var map = Map.Felucca;
+        const int x = 1725;
+        const int y = 1725;
+
+        TestMulti multi = null;
+        try
+        {
+            multi = CreateFloorMulti(map, new Point3D(x, y, 0), floorZ: 10);
+
+            Assert.True(map.CanSpawnMobile(x, y, 5, 30, false, true, out var spawnZ));
+            Assert.Equal(10, spawnZ);
+        }
+        finally
+        {
+            multi?.Delete();
+        }
+    }
+
+    [Fact]
+    public void CanSpawnMobile_CantWalkNonSwimmer_StandsOnWorldItem()
+    {
+        var map = Map.Felucca;
+        const int x = 1750;
+        const int y = 1750;
+
+        Item surfaceItem = null;
+        try
+        {
+            surfaceItem = new Item(ServerFixture.SurfaceTileId)
+            {
+                Movable = false
+            };
+            surfaceItem.MoveToWorld(new Point3D(x, y, 10), map);
+
+            Assert.True(map.CanSpawnMobile(x, y, 5, 30, false, true, out var spawnZ));
+            Assert.Equal(10, spawnZ);
+        }
+        finally
+        {
+            surfaceItem?.Delete();
+        }
+    }
+
     private TestMulti CreateFloorMulti(Map map, Point3D location, int floorZ)
     {
         var multi = new TestMulti(CreateFloorComponents(floorZ));
         multi.MoveToWorld(location, map);
         return multi;
+    }
+
+    // A floor 16+ above the ground: the gap under it also passes the headroom check, so only preferredZ
+    // separates the floor from the ground beneath it.
+    [Fact]
+    public void CanSpawnMobile_PreferredZ_PicksRaisedFloorOverGroundBelow()
+    {
+        var map = Map.Felucca;
+        const int x = 1500;
+        const int y = 1500;
+
+        TestMulti multi = null;
+        try
+        {
+            map.GetAverageZ(x, y, out _, out var groundZ, out _);
+            var floorZ = groundZ + 20;
+            multi = CreateFloorMulti(map, new Point3D(x, y, 0), floorZ);
+            var floorTop = floorZ + TileData.ItemTable[ServerFixture.SurfaceTileId].CalcHeight;
+
+            Assert.True(map.CanSpawnMobile(x, y, -128, 127, false, false, out var lowestZ));
+            Assert.Equal(groundZ, lowestZ);
+
+            Assert.True(map.CanSpawnMobile(x, y, -128, 127, floorTop, false, false, out var nearZ));
+            Assert.Equal(floorTop, nearZ);
+        }
+        finally
+        {
+            multi?.Delete();
+        }
+    }
+
+    [Fact]
+    public void CanSpawnMobile_PreferredZ_PicksNearestOfSeveralFloors()
+    {
+        var map = Map.Felucca;
+        const int x = 1525;
+        const int y = 1525;
+
+        TestMulti multi = null;
+        try
+        {
+            map.GetAverageZ(x, y, out _, out var groundZ, out _);
+            multi = CreateTwoFloorMulti(map, new Point3D(x, y, 0), floor1Z: groundZ + 30, floor2Z: groundZ + 70);
+            var height = TileData.ItemTable[ServerFixture.SurfaceTileId].CalcHeight;
+
+            // Nearest to a point just under the upper floor is the upper floor, not the ground or the middle one
+            Assert.True(map.CanSpawnMobile(x, y, -128, 127, groundZ + 65, false, false, out var spawnZ));
+            Assert.Equal(groundZ + 70 + height, spawnZ);
+
+            // A preferredZ outside the range is clamped to it: above everything picks the highest surface
+            Assert.True(map.CanSpawnMobile(x, y, -128, 127, 1000, false, false, out spawnZ));
+            Assert.Equal(groundZ + 70 + height, spawnZ);
+
+            // The Z range still bounds the choice
+            Assert.True(map.CanSpawnMobile(x, y, -128, groundZ + 40, groundZ + 65, false, false, out spawnZ));
+            Assert.Equal(groundZ + 30 + height, spawnZ);
+        }
+        finally
+        {
+            multi?.Delete();
+        }
+    }
+
+    [Fact]
+    public void CanSpawnItem_PreferredZ_PicksRaisedFloorOverGroundBelow()
+    {
+        var map = Map.Felucca;
+        const int x = 1550;
+        const int y = 1550;
+
+        TestMulti multi = null;
+        try
+        {
+            map.GetAverageZ(x, y, out _, out var groundZ, out _);
+            var floorZ = groundZ + 20;
+            multi = CreateFloorMulti(map, new Point3D(x, y, 0), floorZ);
+            var floorTop = floorZ + TileData.ItemTable[ServerFixture.SurfaceTileId].CalcHeight;
+
+            Assert.True(map.CanSpawnItem(x, y, -128, 127, out var lowestZ));
+            Assert.Equal(groundZ, lowestZ);
+
+            Assert.True(map.CanSpawnItem(x, y, -128, 127, floorTop, out var nearZ));
+            Assert.Equal(floorTop, nearZ);
+        }
+        finally
+        {
+            multi?.Delete();
+        }
     }
 
     private TestMulti CreateTwoFloorMulti(Map map, Point3D location, int floor1Z, int floor2Z)

@@ -4,8 +4,8 @@
         <Authors>Kamron Batman</Authors>
         <Company>ModernUO</Company>
         <Copyright>2019-2026</Copyright>
-        <TargetFramework>net10.0</TargetFramework>
-        <LangVersion>14</LangVersion>
+        <TargetFramework>net11.0</TargetFramework>
+        <LangVersion>15</LangVersion>
         <PublicRelease>true</PublicRelease>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
         <NoWarn>NU1603</NoWarn>
@@ -69,6 +69,12 @@
          configuration groups above set DefineConstants to. -->
     <PropertyGroup Condition="'$(EventLoopProfiling)'=='true'">
         <DefineConstants>$(DefineConstants);EVENT_LOOP_PROFILING</DefineConstants>
+    </PropertyGroup>
+    <!-- STArrayPool wrong-thread audit, compiled out unless requested:
+         dotnet test -p:ArrayPoolThreadAudit=true
+         Writes starraypool-thread-audit.txt next to the test/server binaries on exit. -->
+    <PropertyGroup Condition="'$(ArrayPoolThreadAudit)'=='true'">
+        <DefineConstants>$(DefineConstants);DEBUG_ARRAYPOOL_THREADS</DefineConstants>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Serilog" Version="4.4.0" />

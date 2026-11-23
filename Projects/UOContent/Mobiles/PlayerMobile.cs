@@ -1491,7 +1491,7 @@ namespace Server.Mobiles
                         {
                             drop = true;
                         }
-                        else if (clothing.RequiredRace != null && clothing.RequiredRace != Race)
+                        else if (!clothing.CheckRace(Race))
                         {
                             drop = true;
                         }
@@ -1563,6 +1563,33 @@ namespace Server.Mobiles
             if ((flag & MobileDelta.Stat) != 0)
             {
                 ValidateEquipment();
+            }
+
+            // A follower can show this master's notoriety (NotorietyHandlers.MobileNotoriety), so it changes with ours.
+            if ((flag & MobileDelta.Noto) != 0 && _allFollowers != null)
+            {
+                foreach (var follower in _allFollowers)
+                {
+                    follower.Delta(MobileDelta.Noto);
+                }
+            }
+        }
+
+        protected override void OnShownNotorietyChanged(Mobile m)
+        {
+            // In ML a controlled pet shows its master's notoriety unless the aggression is with the pet itself.
+            if (!Core.ML || m is not PlayerMobile { _allFollowers: { } followers })
+            {
+                return;
+            }
+
+            foreach (var follower in followers)
+            {
+                if (follower is BaseCreature { Controlled: true } pet && pet.ControlMaster == m && CanSee(pet) &&
+                    Utility.InUpdateRange(Location, pet.Location))
+                {
+                    NetState.SendMobileMoving(this, pet);
+                }
             }
         }
 
@@ -3873,6 +3900,22 @@ namespace Server.Mobiles
 
         public override void OnGenderChanged(bool oldFemale)
         {
+            var race = Race;
+
+            if (!IsBodyMod)
+            {
+                Body = race.Body(this);
+            }
+
+            if (HairItemID != 0 && !race.ValidateHair(this, HairItemID))
+            {
+                HairItemID = 0;
+            }
+
+            if (FacialHairItemID != 0 && !race.ValidateFacialHair(this, FacialHairItemID))
+            {
+                FacialHairItemID = 0;
+            }
         }
 
         public override void OnGuildChange(BaseGuild oldGuild)
@@ -3925,6 +3968,7 @@ namespace Server.Mobiles
         public override void OnAccessLevelChanged(AccessLevel oldLevel)
         {
             IgnoreMobiles = AccessLevel != AccessLevel.Player;
+            Server.Commands.StaffAccess.OnAccessLevelChanged(this);
         }
 
         public override void OnRawStatChange(StatType stat, int oldValue)

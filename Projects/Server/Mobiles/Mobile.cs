@@ -3061,7 +3061,11 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
                 state.Send(facialHairPacket);
             }
 
-            SendOPLPacketTo(state);
+            // The remove (0x1D) makes the client drop its cached property list along with the mobile.
+            if (sendOPLUpdate || sendRemove)
+            {
+                SendOPLPacketTo(state);
+            }
         }
     }
 
@@ -3439,15 +3443,15 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
             if (info.Expired)
             {
                 var attacker = info.Attacker;
-                attacker.RemoveAggressed(this);
+                var oldNoto = GetShownNotoriety(attacker);
+                var attackerOldNoto = attacker.GetShownNotoriety(this);
 
+                attacker.RemoveAggressedEntry(this);
                 Aggressors.RemoveAt(i);
                 info.Free();
 
-                if (m_NetState != null && CanSee(attacker) && Utility.InUpdateRange(m_Location, attacker.m_Location))
-                {
-                    m_NetState.SendMobileIncoming(this, attacker);
-                }
+                SendNotorietyIfChanged(attacker, oldNoto);
+                attacker.SendNotorietyIfChanged(this, attackerOldNoto);
             }
         }
 
@@ -3463,19 +3467,52 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
             if (info.Expired)
             {
                 var defender = info.Defender;
-                defender.RemoveAggressor(this);
+                var oldNoto = GetShownNotoriety(defender);
+                var defenderOldNoto = defender.GetShownNotoriety(this);
 
+                defender.RemoveAggressorEntry(this);
                 Aggressed.RemoveAt(i);
                 info.Free();
 
-                if (m_NetState != null && CanSee(defender) && Utility.InUpdateRange(m_Location, defender.m_Location))
-                {
-                    m_NetState.SendMobileIncoming(this, defender);
-                }
+                SendNotorietyIfChanged(defender, oldNoto);
+                defender.SendNotorietyIfChanged(this, defenderOldNoto);
             }
         }
 
         UpdateAggrExpire();
+    }
+
+    // An aggression pair is stored on both sides (the defender's Aggressors, the attacker's Aggressed) and
+    // Notoriety.Compute reads both, so a change to either half can change what each side's client shows for
+    // the other. Callers take this for both sides before the change and pass it to SendNotorietyIfChanged
+    // after. -1 when this client could not be sent a refresh for m.
+    private int GetShownNotoriety(Mobile m) =>
+        m_NetState != null && CanSee(m) && Utility.InUpdateRange(m_Location, m.m_Location)
+            ? Notoriety.Compute(this, m)
+            : -1;
+
+    private void SendNotorietyIfChanged(Mobile m, int oldNoto)
+    {
+        if (oldNoto < 0)
+        {
+            return;
+        }
+
+        var noto = Notoriety.Compute(this, m);
+
+        if (noto != oldNoto)
+        {
+            m_NetState.SendMobileMoving(m, noto);
+            OnShownNotorietyChanged(m);
+        }
+    }
+
+    /// <summary>
+    ///     Overridable. Invoked after an aggression change sent this mobile's client a new notoriety for
+    ///     <paramref name="m" />, so mobiles whose notoriety is derived from <paramref name="m" />'s can follow.
+    /// </summary>
+    protected virtual void OnShownNotorietyChanged(Mobile m)
+    {
     }
 
     /// <summary>
@@ -3867,6 +3904,8 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
         }
 
         list = aggressor.Aggressed;
+        var aggressorOldNoto = -1;
+        var aggressorNotoTaken = false;
 
         for (var i = 0; i < list.Count; ++i)
         {
@@ -3875,10 +3914,30 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
             if (info.Defender == this)
             {
                 info.Refresh();
+
+                // Only non-criminal aggression makes us attackable to the aggressor, so a flip can change its view.
+                if (info.CriminalAggression != criminal && !aggressorNotoTaken)
+                {
+                    aggressorOldNoto = aggressor.GetShownNotoriety(this);
+                    aggressorNotoTaken = true;
+                }
+
                 info.CriminalAggression = criminal;
                 info.CanReportMurder = criminal;
 
                 addAggressed = false;
+            }
+        }
+
+        var oldNoto = -1;
+
+        if (addAggressor || addAggressed)
+        {
+            oldNoto = GetShownNotoriety(aggressor);
+
+            if (!aggressorNotoTaken)
+            {
+                aggressorOldNoto = aggressor.GetShownNotoriety(this);
             }
         }
 
@@ -3893,11 +3952,6 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
                     criminal
                 )
             );
-
-            if (CanSee(aggressor))
-            {
-                m_NetState.SendMobileIncoming(this, aggressor);
-            }
 
             if (Combatant == null)
             {
@@ -3917,11 +3971,6 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
                 )
             );
 
-            if (CanSee(aggressor))
-            {
-                m_NetState.SendMobileIncoming(this, aggressor);
-            }
-
             if (Combatant == null)
             {
                 setCombatant = true;
@@ -3929,6 +3978,10 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
 
             UpdateAggrExpire();
         }
+
+        // 0x77 carries the notoriety without making the client rebuild the aggressor's equipment the way 0x78 does.
+        SendNotorietyIfChanged(aggressor, oldNoto);
+        aggressor.SendNotorietyIfChanged(this, aggressorOldNoto);
 
         if (setCombatant)
         {
@@ -3940,11 +3993,37 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
 
     public void RemoveAggressed(Mobile aggressed)
     {
+        var oldNoto = GetShownNotoriety(aggressed);
+        var aggressedOldNoto = aggressed.GetShownNotoriety(this);
+
+        if (RemoveAggressedEntry(aggressed))
+        {
+            SendNotorietyIfChanged(aggressed, oldNoto);
+            aggressed.SendNotorietyIfChanged(this, aggressedOldNoto);
+        }
+    }
+
+    public void RemoveAggressor(Mobile aggressor)
+    {
+        var oldNoto = GetShownNotoriety(aggressor);
+        var aggressorOldNoto = aggressor.GetShownNotoriety(this);
+
+        if (RemoveAggressorEntry(aggressor))
+        {
+            SendNotorietyIfChanged(aggressor, oldNoto);
+            aggressor.SendNotorietyIfChanged(this, aggressorOldNoto);
+        }
+    }
+
+    // Removes only this side's half of the pair and refreshes no client; the caller owns both refreshes.
+    private bool RemoveAggressedEntry(Mobile aggressed)
+    {
         if (Deleted)
         {
-            return;
+            return false;
         }
 
+        var removed = false;
         var list = Aggressed;
 
         for (var i = 0; i < list.Count; ++i)
@@ -3953,28 +4032,25 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
 
             if (info.Defender == aggressed)
             {
-                Aggressed.RemoveAt(i);
+                list.RemoveAt(i);
                 info.Free();
-
-                if (m_NetState != null && CanSee(aggressed))
-                {
-                    m_NetState.SendMobileIncoming(this, aggressed);
-                }
-
+                removed = true;
                 break;
             }
         }
 
         UpdateAggrExpire();
+        return removed;
     }
 
-    public void RemoveAggressor(Mobile aggressor)
+    private bool RemoveAggressorEntry(Mobile aggressor)
     {
         if (Deleted)
         {
-            return;
+            return false;
         }
 
+        var removed = false;
         var list = Aggressors;
 
         for (var i = 0; i < list.Count; ++i)
@@ -3983,19 +4059,15 @@ public partial class Mobile : IHued, IComparable<Mobile>, ISpawnable, IObjectPro
 
             if (info.Attacker == aggressor)
             {
-                Aggressors.RemoveAt(i);
+                list.RemoveAt(i);
                 info.Free();
-
-                if (m_NetState != null && CanSee(aggressor))
-                {
-                    m_NetState.SendMobileIncoming(this, aggressor);
-                }
-
+                removed = true;
                 break;
             }
         }
 
         UpdateAggrExpire();
+        return removed;
     }
 
     public virtual int GetTotal(TotalType type) =>

@@ -128,6 +128,11 @@ namespace Server.Commands.Generic
                 }
                 else if (cur.InsensitiveEquals("or") || cur == "||")
                 {
+                    if (index + 1 >= size)
+                    {
+                        throw new Exception("Improperly formatted object conditional.");
+                    }
+
                     if (current.Count > 1)
                     {
                         conditions.Add(current.ToArray());
@@ -162,8 +167,7 @@ namespace Server.Commands.Generic
 
                 var prop = new Property(binding);
 
-                prop.BindTo(objectType, PropertyAccess.Read);
-                prop.CheckAccess(from);
+                prop.BindTo(objectType, PropertyAccess.Read, from.AccessLevel);
 
                 var condition = oper switch
                 {

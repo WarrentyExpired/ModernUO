@@ -17,7 +17,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.IO.MemoryMappedFiles;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -233,8 +232,8 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
         var lengths = worker.Lengths;
         var lengthIndex = segment.LengthsStart;
 
-        var heapPos = (int)segment.HeapStart;
-        var spanStart = heapPos;
+        var heapStart = (int)segment.HeapStart;
+        var heapPos = heapStart;
 
         if (segment.SlotOffset >= 0)
         {
@@ -253,16 +252,10 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
 
                 var length = lengths[lengthIndex++];
 
-                if (entity is Item { SkipSerialization: true } or Mobile { SkipSerialization: true })
+                // Decided while frozen and never serialized. Re-reading SkipSerialization here would see
+                // parent moves made after the unfreeze, disagreeing with the parents' frozen child lists.
+                if (length == SerializationThreadWorker.SkippedRecord)
                 {
-                    // The bytes exist in the heap but are not part of the save: split the span.
-                    if (heapPos > spanStart)
-                    {
-                        binFs.Write(worker.GetHeap(spanStart, heapPos - spanStart));
-                    }
-
-                    heapPos += length;
-                    spanStart = heapPos;
                     continue;
                 }
 
@@ -286,15 +279,8 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
                 var entity = (T)bufferEntities[segment.EntitiesStart + i];
                 var length = lengths[lengthIndex++];
 
-                if (entity is Item { SkipSerialization: true } or Mobile { SkipSerialization: true })
+                if (length == SerializationThreadWorker.SkippedRecord)
                 {
-                    if (heapPos > spanStart)
-                    {
-                        binFs.Write(worker.GetHeap(spanStart, heapPos - spanStart));
-                    }
-
-                    heapPos += length;
-                    spanStart = heapPos;
                     continue;
                 }
 
@@ -310,9 +296,10 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
             }
         }
 
-        if (heapPos > spanStart)
+        // Skipped records occupy no heap, so the segment's bytes are one contiguous span.
+        if (heapPos > heapStart)
         {
-            binFs.Write(worker.GetHeap(spanStart, heapPos - spanStart));
+            binFs.Write(worker.GetHeap(heapStart, heapPos - heapStart));
         }
 
         return binPosition;
@@ -382,7 +369,16 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
             // Occupied slots are exactly the non-null values: Dictionary clears reference
             // values on remove, and never-used capacity is zero-initialized.
             var entity = entry.Value;
-            if (entity != null)
+            if (entity == null)
+            {
+                continue;
+            }
+
+            if (SerializationThreadWorker.SkipsSerialization(entity))
+            {
+                lengths.Add(SerializationThreadWorker.SkippedRecord);
+            }
+            else
             {
                 var start = writer.Position;
                 entity.Serialize(writer);
@@ -438,12 +434,8 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
 
         Type[] ctorArguments = [typeof(Serial)];
 
-        using var mmf = MemoryMappedFile.CreateFromFile(typesPath, FileMode.Open);
-        using var accessor = mmf.CreateViewStream();
-
-        byte* ptr = null;
-        accessor.SafeMemoryMappedViewHandle.AcquirePointer(ref ptr);
-        var dataReader = new UnmanagedDataReader(ptr, accessor.Length);
+        using var data = new ReadOnlyFileData(typesPath);
+        var dataReader = new UnmanagedDataReader(data.Pointer, data.Length);
 
         var count = dataReader.ReadInt();
         var types = new Dictionary<ulong, ConstructorInfo>(count);
@@ -464,7 +456,6 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
             types.Add((ulong)i, ctor);
         }
 
-        accessor.SafeMemoryMappedViewHandle.ReleasePointer();
         return types;
     }
 
@@ -510,12 +501,8 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
         string filePath, Dictionary<ulong, string> typesDb, List<EntitySpan<T>> entities
     )
     {
-        using var mmf = MemoryMappedFile.CreateFromFile(filePath, FileMode.Open);
-        using var accessor = mmf.CreateViewStream();
-
-        byte* ptr = null;
-        accessor.SafeMemoryMappedViewHandle.AcquirePointer(ref ptr);
-        var dataReader = new UnmanagedDataReader(ptr, accessor.Length);
+        using var data = new ReadOnlyFileData(filePath);
+        var dataReader = new UnmanagedDataReader(data.Pointer, data.Length);
 
         var version = dataReader.ReadInt();
 
@@ -542,7 +529,6 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
 
             if (typesDb == null && ctors.Count == 0)
             {
-                accessor.SafeMemoryMappedViewHandle.ReleasePointer();
                 return;
             }
 
@@ -608,8 +594,6 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
                 }
             }
         }
-
-        accessor.SafeMemoryMappedViewHandle.ReleasePointer();
 
         if (EntitiesBySerial.Count > 0)
         {
@@ -703,12 +687,8 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
 
     private unsafe void InternalDeserialize(string filePath, int index, Dictionary<ulong, string> typesDb)
     {
-        using var mmf = MemoryMappedFile.CreateFromFile(filePath, FileMode.Open);
-        using var accessor = mmf.CreateViewStream();
-
-        byte* ptr = null;
-        accessor.SafeMemoryMappedViewHandle.AcquirePointer(ref ptr);
-        var dataReader = new UnmanagedDataReader(ptr, accessor.Length, typesDb)
+        using var data = new ReadOnlyFileData(filePath);
+        var dataReader = new UnmanagedDataReader(data.Pointer, data.Length, typesDb)
         {
             AnchoredTimeShift = _anchoredTimeShift,
             AnchoredTimeOrigin = World.LoadedSaveStartTime
@@ -777,8 +757,6 @@ public class GenericEntityPersistence<T> : GenericPersistence, IGenericEntityPer
                 _toDelete.Add(t);
             }
         }
-
-        accessor.SafeMemoryMappedViewHandle.ReleasePointer();
     }
 
     private void TryDeserializeMultithread(string savePath, Dictionary<ulong, string> typesDb)
