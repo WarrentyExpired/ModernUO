@@ -22,6 +22,9 @@ namespace Server
         public static double S_MonsterMeleeDamageScalar = 0.85;
         public static double S_CreatureVsCreatureDamageScalar = 0.75;
 
+        // Caps effective Str used for monster melee damage scaling
+        // (e.g. 250 Str = +50% max instead of +160%-240% on Dragons/Balrons)
+        public static int S_MonsterStrDamageCap = 250;
 
         // Not implimented yet
         public static bool S_TreasureBags = false; // Spawn random treasure bags.

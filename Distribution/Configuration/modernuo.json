@@ -51,7 +51,6 @@
     "factions.enabled": "False",
     "houseDecay.enable": "True",
     "melee.enableInstaHit": "True",
-    "melee.pvmMonsterDamageScalar": "1.0",
     "movement.delay.runFoot": "200",
     "movement.delay.runMount": "100",
     "movement.delay.turn": "0",

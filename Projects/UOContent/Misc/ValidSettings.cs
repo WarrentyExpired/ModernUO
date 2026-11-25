@@ -73,5 +73,16 @@ namespace Server
                 chance = 1;
             return (double)chance;
         }
+        public static double PvPMeleeDamageScalar() =>
+            Math.Clamp(Settings.S_PvPMeleeDamageScalar, 0.10, 2.00);
+
+        public static double MonsterMeleeDamageScalar() =>
+            Math.Clamp(Settings.S_MonsterMeleeDamageScalar, 0.10, 2.00);
+
+        public static double CreatureVsCreatureDamageScalar() =>
+            Math.Clamp(Settings.S_CreatureVsCreatureDamageScalar, 0.10, 2.00);
+
+        public static int MonsterStrDamageCap() =>
+            Math.Clamp(Settings.S_MonsterStrDamageCap, 100, 1500);
     }
 }

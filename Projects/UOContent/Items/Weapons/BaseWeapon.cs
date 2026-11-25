@@ -32,12 +32,10 @@ public abstract partial class BaseWeapon
     : Item, IWeapon, IFactionItem, ICraftable, ISlayer, IDurability, IAosItem, IIdentifiable
 {
     private static bool _enableInstaHit;
-    private static double _pvmDamageScalar;
 
     public static void Configure()
     {
         _enableInstaHit = ServerConfiguration.GetSetting("melee.enableInstaHit", !Core.UOR);
-        _pvmDamageScalar =  ServerConfiguration.GetSetting("melee.pvmMonsterDamageScalar", 1.0);
     }
 
     /* Weapon internals work differently now (Mar 13 2003)
@@ -1866,11 +1864,6 @@ public abstract partial class BaseWeapon
         damage = AOS.Scale(damage, 100 + percentageBonus);
         damage = ModifyDamage(attacker, defender, damage);
 
-        if (_pvmDamageScalar != 1.0 && attacker is BaseCreature && defender is PlayerMobile)
-        {
-            damage = (int)(damage * _pvmDamageScalar);
-        }
-
         var defLoc = new WorldLocation(defender);
         var bcAtt = attacker as BaseCreature;
         var bcDef = defender as BaseCreature;
@@ -2640,9 +2633,13 @@ public abstract partial class BaseWeapon
         damage += damage * ((attacker.Skills.Tactics.Value - 50.0) / 100.0);
 
         /* Compute strength modifier
-         * : 1% bonus for every 5 strength
+         * : 1% bonus for every 5 strength (capped for monsters via Settings)
          */
-        var modifiers = attacker.Str / 5.0 / 100.0;
+        var effectiveStr = attacker is BaseCreature
+            ? Math.Min(attacker.Str, ValidSettings.MonsterStrDamageCap())
+            : attacker.Str;
+
+        var modifiers = effectiveStr / 5.0 / 100.0;
 
         /* Compute anatomy modifier
          * : 1% bonus for every 5 points of anatomy
