@@ -140,6 +140,42 @@ namespace Server.Items
         [SerializedCommandProperty(AccessLevel.GameMaster)]
         private CraftResource _enhancedResource;
 
+        [EncodedInt]
+        [SerializableProperty(25)]
+        [SaveFlag(nameof(ShouldSerializeCraftArmorBonus))]
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int CraftArmorBonus
+        {
+            get => _craftArmorBonus;
+            set
+            {
+                _craftArmorBonus = value;
+                Invalidate();
+                InvalidateProperties();
+                this.MarkDirty();
+            }
+        }
+
+        private bool ShouldSerializeCraftArmorBonus() => _craftArmorBonus != 0;
+
+        [EncodedInt]
+        [SerializableProperty(26)]
+        [SaveFlag(nameof(ShouldSerializeCraftMagicBonus))]
+        [CommandProperty(AccessLevel.GameMaster)]
+        public int CraftMagicBonus
+        {
+            get => _craftMagicBonus;
+            set
+            {
+                _craftMagicBonus = value;
+                Invalidate();
+                InvalidateProperties();
+                this.MarkDirty();
+            }
+        }
+
+        private bool ShouldSerializeCraftMagicBonus() => _craftMagicBonus != 0;
+
         private bool ShouldSerializeSkillBonuses() => !_skillBonuses.IsEmpty;
 
         private AosSkillBonuses SkillBonusesDefaultValue() => new(this);
@@ -327,7 +363,14 @@ namespace Server.Items
                     };
                 }
 
-                ar += 8 * (int)(_quality - 1);
+            if (_quality == ArmorQuality.Low)
+                {
+                    ar -= 8;
+                }
+                else
+                {
+                    ar += _craftArmorBonus;
+                }
                 return ScaleArmorByDurability(ar);
             }
         }
@@ -345,7 +388,15 @@ namespace Server.Items
                     mr += 2 * (int)_protectionLevel;
                 }
 
-                mr += 3 * (int)(_quality - 1);
+                if (_quality == ArmorQuality.Low)
+                {
+                    mr -= 3;
+                }
+                else
+                {
+                    mr += _craftMagicBonus;
+                }
+
                 return ScaleArmorByDurability(mr);
             }
         }
@@ -579,53 +630,44 @@ namespace Server.Items
 
             if (Quality == ArmorQuality.Exceptional)
             {
-                // Guessed Core.ML removed exceptional resist bonuses from crafted shields
-                if (!(Core.ML && this is BaseShield))
+                if (!Core.AOS)
                 {
-                    DistributeBonuses(
-                        tool is BaseRunicTool ? 6 :
-                        // Not sure since when, but right now 15 points are added, not 14.
-                        Core.SE ? 15 : 14
-                    );
+                    // Base +10 AR / +2 MR at 0 Arms Lore, scaling up to +20 AR / +4 MR at 100 Arms Lore (Guarding cap)
+                    var armsLore = from.Skills.ArmsLore.Value;
+                    CraftArmorBonus = 10 + Math.Clamp((int)(armsLore / 10.0), 0, 10);
+                    CraftMagicBonus = 2 + Math.Clamp((int)(armsLore / 50.0), 0, 2);
+                    from.CheckSkill(SkillName.ArmsLore, 0, 100);
                 }
-
-                if (Core.ML && this is not BaseShield)
+                else
                 {
-                    var bonus = (int)(from.Skills.ArmsLore.Value / 20);
-
-                    for (var i = 0; i < bonus; i++)
+                    // Guessed Core.ML removed exceptional resist bonuses from crafted shields
+                    if (!(Core.ML && this is BaseShield))
                     {
-                        switch (Utility.Random(5))
-                        {
-                            case 0:
-                                {
-                                    PhysicalBonus++;
-                                    break;
-                                }
-                            case 1:
-                                {
-                                    FireBonus++;
-                                    break;
-                                }
-                            case 2:
-                                {
-                                    ColdBonus++;
-                                    break;
-                                }
-                            case 3:
-                                {
-                                    EnergyBonus++;
-                                    break;
-                                }
-                            case 4:
-                                {
-                                    PoisonBonus++;
-                                    break;
-                                }
-                        }
+                        DistributeBonuses(
+                            tool is BaseRunicTool ? 6 :
+                            // Not sure since when, but right now 15 points are added, not 14.
+                            Core.SE ? 15 : 14
+                        );
                     }
 
-                    from.CheckSkill(SkillName.ArmsLore, 0, 100);
+                    if (Core.ML && this is not BaseShield)
+                    {
+                        var bonus = (int)(from.Skills.ArmsLore.Value / 20);
+
+                        for (var i = 0; i < bonus; i++)
+                        {
+                            switch (Utility.Random(5))
+                            {
+                                case 0: PhysicalBonus++; break;
+                                case 1: FireBonus++; break;
+                                case 2: ColdBonus++; break;
+                                case 3: EnergyBonus++; break;
+                                case 4: PoisonBonus++; break;
+                            }
+                        }
+
+                        from.CheckSkill(SkillName.ArmsLore, 0, 100);
+                    }
                 }
             }
 
@@ -1601,6 +1643,26 @@ namespace Server.Items
             if (!isMagicItem || _identified ) //|| from.AccessLevel >= AccessLevel.GameMaster)
             {
 
+                if (_craftArmorBonus > 0 || _craftMagicBonus > 0)
+                {
+                    double scalar = this is BaseShield ? (from.Skills.Parry.Value / 200.0) : ArmorScalar;
+                    int effectiveAR = (int)Math.Round(_craftArmorBonus * scalar, MidpointRounding.AwayFromZero);
+                    int effectiveMR = (int)Math.Round(_craftMagicBonus * scalar, MidpointRounding.AwayFromZero);
+
+                    if (effectiveAR > 0 && effectiveMR > 0)
+                    {
+                        LabelTo(from, $"Crafted Bonus: +{effectiveAR} AR / +{effectiveMR} MR");
+                    }
+                    else if (effectiveAR > 0)
+                    {
+                        LabelTo(from, $"Crafted Bonus: +{effectiveAR} AR");
+                    }
+                    else if (effectiveMR > 0)
+                    {
+                        LabelTo(from, $"Crafted Bonus: +{effectiveMR} MR");
+                    }
+                }
+
                 // Armor Rating
                 double displayAR = this is BaseShield ? ArmorRating : ArmorRatingScaled;
                 if (this is BaseShield && Parent is not Mobile)
@@ -1618,6 +1680,7 @@ namespace Server.Items
                 {
                     displayMR = from.Skills.Parry.Value * (MagicResistance / 200.0) + 1.0;
                 }
+
                 if (displayMR > 0)
                 {
                     LabelTo(from, $"Magic Resistance: {(int)Math.Round(displayMR, MidpointRounding.AwayFromZero)}");

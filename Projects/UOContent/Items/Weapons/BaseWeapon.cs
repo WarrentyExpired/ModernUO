@@ -179,6 +179,24 @@ public abstract partial class BaseWeapon
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     private bool ShouldSerializeEngravedText() => !string.IsNullOrEmpty(_engravedText);
 
+    [SerializableProperty(30)]
+    [SaveFlag(nameof(ShouldSerializeCraftDamageBonus))]
+    [CommandProperty(AccessLevel.GameMaster)]
+    public int CraftDamageBonus
+    {
+        get => _craftDamageBonus;
+        set
+        {
+            _craftDamageBonus = value;
+            InvalidateProperties();
+            this.MarkDirty();
+        }
+    }
+
+    private bool ShouldSerializeCraftDamageBonus() => _craftDamageBonus != 0;
+
+    public virtual int VirtualDamageBonus => _craftDamageBonus;
+
     private FactionItem m_FactionState;
     private SkillMod m_SkillMod, m_MageMod;
 
@@ -214,7 +232,7 @@ public abstract partial class BaseWeapon
 
     public static bool InDoubleStrike { get; set; }
 
-    public virtual int VirtualDamageBonus => 0;
+    //public virtual int VirtualDamageBonus => 0;
 
     [Hue]
     [CommandProperty(AccessLevel.GameMaster)]
@@ -642,6 +660,14 @@ public abstract partial class BaseWeapon
     )
     {
         Quality = (WeaponQuality)quality;
+
+         if (!Core.AOS && Quality == WeaponQuality.Exceptional)
+        {
+            // Base +10% for Exceptional, up to +20% at 100 Arms Lore (caps at Might-tier power)
+            var armsLore = from.Skills.ArmsLore.Value;
+            CraftDamageBonus = 10 + Math.Clamp((int)(armsLore / 10.0), 0, 10);
+            from.CheckSkill(SkillName.ArmsLore, 0, 100);
+        }
 
         if (makersMark)
         {
@@ -2669,10 +2695,16 @@ public abstract partial class BaseWeapon
             }
         }
 
-        // New quality bonus:
-        if (_quality != WeaponQuality.Regular)
+        // Low quality penalty (-20%); Exceptional uses CraftDamageBonus via VirtualDamageBonus
+        if (_quality == WeaponQuality.Low)
         {
-            modifiers += ((int)_quality - 1) * 0.2;
+            modifiers -= 0.2;
+        }
+
+        // Virtual / Crafted damage bonus:
+        if (VirtualDamageBonus != 0)
+        {
+            modifiers += VirtualDamageBonus / 100.0;
         }
 
         // Virtual damage bonus:
@@ -3448,11 +3480,38 @@ public abstract partial class BaseWeapon
         }
 
         // 2. --- Sovereign Realm: Custom UOR Stat Display ---
+        // p
         // Hidden if Identified
         if (!isMagicItem || _identified) // || from.AccessLevel >= AccessLevel.GameMaster)
         {
-            // Show Damage
-            LabelTo(from, $"Damage: {MinDamage} to {MaxDamage}");
+            // Show Damage (including Crafted Damage Bonus & Magic Damage Level)
+            int displayMin = MinDamage;
+            int displayMax = MaxDamage;
+
+            if (!Core.AOS && _damageLevel != WeaponDamageLevel.Regular)
+            {
+                int magicOffset = !Core.T2A ? (int)_damageLevel : 2 * (int)_damageLevel - 1;
+                displayMin += magicOffset;
+                displayMax += magicOffset;
+            }
+
+            if (_craftDamageBonus > 0)
+            {
+                displayMin = (int)Math.Round(displayMin * (1.0 + _craftDamageBonus / 100.0));
+                displayMax = (int)Math.Round(displayMax * (1.0 + _craftDamageBonus / 100.0));
+            }
+            else if (_quality == WeaponQuality.Low)
+            {
+                displayMin = (int)Math.Round(displayMin * 0.8);
+                displayMax = (int)Math.Round(displayMax * 0.8);
+            }
+
+            if (_craftDamageBonus > 0)
+            {
+                LabelTo(from, $"Crafted Damage Bonus: +{_craftDamageBonus}%");
+            }
+
+            LabelTo(from, $"Damage: {displayMin} to {displayMax}");
 
             // Show Weapon Speed
             LabelTo(from, $"Speed: {Speed}");
