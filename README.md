@@ -59,6 +59,9 @@ The map while custom, isn't mine. The main land mass is a Darkshard map called T
 - Every weapon class (except Wrestling) features **2 innate abilities**.
 - **Unlock Requirements:** 70.0 Weapon Skill & Tactics for the first ability; 100.0 Weapon Skill & Tactics for the second.
 - **Activation:** 10% chance to trigger on hit with a 5-second cooldown.
+### Monster Rebalances
+- This is still a work in progress. I added some tweakable settings in Setting.cs to dial in monster damage. I'm trying to
+  find a balance for Solo/Small group play that doesn't rely on having a tamer or bard in your party.
 
 ### Healing & Bandage Rework
 - **Bandages (Heal Over Time):** Bandages now restore small ticks of HP over their duration instead of all at once (any HP ticked is subtracted from the final heal total), the heal tick will not cure poison, only the final application of the bandage will.
@@ -98,6 +101,9 @@ The map while custom, isn't mine. The main land mass is a Darkshard map called T
 ### Crafting UI Upgrades
 - **Crafting Queue:** Queue up specific items and quantities directly from the crafting menu, accessible via a new button on the main crafting gump.
 - **Crafting Skill Guide:** A new button on the main crafting gump opens a guide displaying everything you can craft at your current skill level.
+
+### Skill Bonuses
+- **Arms Lore:** Arms Lore skill now adds up to 20% more weapon damage, armor rating, and magic rating.
 
 ### Gathering & Processing
 - **Auto-Harvesting:** **Mining**, **Lumberjacking**, and **Fishing** automatically continue harvesting without needing to repeatedly re-target.
